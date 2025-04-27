@@ -179,7 +179,256 @@
         "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
         "correctOrder": ["Los Angeles", "San Francisco", "New York City", "Tokyo"]
       }
+    ],
+
+    [
+      {
+        "prompt": "Year it started",
+        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
+        "correctOrder": ["American Civil War", "World War II", "Korean War", "Vietnam War"]
+      },
+      {
+        "prompt": "How long it lasted",
+        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
+        "correctOrder": ["Korean War", "American Civil War", "World War II", "Vietnam War"]
+      },
+      {
+        "prompt": "Death count",
+        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
+        "correctOrder": ["American Civil War", "Vietnam War", "Korean War", "World War II"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Golden Gate Bridge", "Empire State Building", "Eiffel Tower", "Statue of Liberty"],
+        "correctOrder": ["Statue of Liberty", "Golden Gate Bridge", "Eiffel Tower", "Empire State Building"]
+      },
+      {
+        "prompt": "Year built",
+        "items": ["Golden Gate Bridge", "Empire State Building", "Eiffel Tower", "Statue of Liberty"],
+        "correctOrder": ["Statue of Liberty", "Eiffel Tower", "Empire State Building", "Golden Gate Bridge"]
+      },
+      {
+        "prompt": "Construction in years",
+        "items": ["Golden Gate Bridge", "Empire State Building", "Eiffel Tower", "Statue of Liberty"],
+        "correctOrder": ["Empire State Building", "Eiffel Tower", "Golden Gate Bridge", "Statue of Liberty"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Eye color frequency",
+        "items": ["Blue", "Green", "Brown", "Gray"],
+        "correctOrder": ["Gray", "Green", "Blue", "Brown"]
+      },
+      {
+        "prompt": "Car color frequency",
+        "items": ["Blue", "Green", "Brown", "Gray"],
+        "correctOrder": ["Brown", "Green", "Blue", "Gray"]
+      },
+      {
+        "prompt": "Flag color frequency",
+        "items": ["Blue", "Green", "Brown", "Gray"],
+        "correctOrder": ["Gray", "Brown", "Green", "Blue"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Distance from Sun",
+        "items": ["Earth", "Mercury", "Neptune", "Saturn"],
+        "correctOrder": ["Mercury", "Earth", "Saturn", "Neptune"]
+      },
+      {
+        "prompt": "Size",
+        "items": ["Earth", "Mercury", "Neptune", "Saturn"],
+        "correctOrder": ["Mercury", "Earth", "Neptune", "Saturn"]
+      },
+      {
+        "prompt": "Number of moons",
+        "items": ["Earth", "Mercury", "Neptune", "Saturn"],
+        "correctOrder": ["Mercury", "Earth", "Neptune", "Saturn"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "correctOrder": ["Allen Iverson", "Michael Jordan", "Larry Bird", "Shaq"]
+      },
+      {
+        "prompt": "Teams played for",
+        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "correctOrder": ["Larry Bird", "Michael Jordan", "Allen Iverson", "Shaq"]
+      },
+      {
+        "prompt": "Age",
+        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "correctOrder": ["Allen Iverson", "Shaq", "Michael Jordan", "Larry Bird"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Age rating",
+        "items": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
+        "correctOrder": ["Willy Wonka and the Chocolate Factory", "Back to the Future", "The Hunger Games", "The Silence of the Lambs"]
+      },
+      {
+        "prompt": "Year",
+        "items": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
+        "correctOrder": ["Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs", "The Hunger Games"]
+      },
+      {
+        "prompt": "Oscar nominations",
+        "items": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
+        "correctOrder": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Area",
+        "items": ["Egypt", "Australia", "USA", "France"],
+        "correctOrder": ["France", "Egypt", "Australia", "USA"]
+      },
+      {
+        "prompt": "Population",
+        "items": ["Egypt", "Australia", "USA", "France"],
+        "correctOrder": ["Australia", "France", "Egypt", "USA"]
+      },
+      {
+        "prompt": "GDP",
+        "items": ["Egypt", "Australia", "USA", "France"],
+        "correctOrder": ["Egypt", "Australia", "France", "USA"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Year Published",
+        "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
+        "correctOrder": ["Mein Kampf", "The Hobbit", "Animal Farm", "The Shining"]
+      },
+      {
+        "prompt": "Author Last Name",
+        "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
+        "correctOrder": ["Mein Kampf", "The Shining", "Animal Farm", "The Hobbit"]
+      },
+      {
+        "prompt": "Page Count",
+        "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
+        "correctOrder": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Release Year",
+        "items": ["Toy Story", "Jaws", "The Shawshank Redemption", "The Dark Knight"],
+        "correctOrder": ["Jaws", "The Shawshank Redemption", "Toy Story", "The Dark Knight"]
+      },
+      {
+        "prompt": "Box Office Gross",
+        "items": ["Toy Story", "Jaws", "The Shawshank Redemption", "The Dark Knight"],
+        "correctOrder": ["The Shawshank Redemption", "Toy Story", "Jaws", "The Dark Knight"]
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["Toy Story", "Jaws", "The Shawshank Redemption", "The Dark Knight"],
+        "correctOrder": ["Toy Story", "Jaws", "The Shawshank Redemption", "The Dark Knight"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Distance from Sun",
+        "items": ["Mars", "Uranus", "Venus", "Jupiter"],
+        "correctOrder": ["Venus", "Mars", "Jupiter", "Uranus"]
+      },
+      {
+        "prompt": "Size",
+        "items": ["Mars", "Uranus", "Venus", "Jupiter"],
+        "correctOrder": ["Mars", "Venus", "Uranus", "Jupiter"]
+      },
+      {
+        "prompt": "Number of Moons",
+        "items": ["Mars", "Uranus", "Venus", "Jupiter"],
+        "correctOrder": ["Venus", "Mars", "Uranus", "Jupiter"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Premier Year",
+        "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
+        "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "The Walking Dead"]
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
+        "correctOrder": ["Breaking Bad", "The Sopranos", "Lost", "The Walking Dead"]
+      },
+      {
+        "prompt": "Emmys Won",
+        "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
+        "correctOrder": ["The Walking Dead", "Lost", "Breaking Bad", "The Sopranos"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Georgia", "Vermont", "Texas", "Wyoming"],
+        "correctOrder": ["Wyoming", "Vermont", "Georgia", "Texas"]
+      },
+      {
+        "prompt": "Area",
+        "items": ["Georgia", "Vermont", "Texas", "Wyoming"],
+        "correctOrder": ["Vermont", "Georgia", "Wyoming", "Texas"]
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["Georgia", "Vermont", "Texas", "Wyoming"],
+        "correctOrder": ["Georgia", "Vermont", "Texas", "Wyoming"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Top speed",
+        "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
+        "correctOrder": ["Panda", "Rabbit", "Horse", "Cheetah"]
+      },
+      {
+        "prompt": "Weight",
+        "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
+        "correctOrder": ["Rabbit", "Cheetah", "Panda", "Horse"]
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
+        "correctOrder": ["Rabbit", "Cheetah", "Panda", "Horse"]
+      }
     ]
+    
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    
+    
 
   ]
 }
