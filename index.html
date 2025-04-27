@@ -117,119 +117,84 @@
     margin-top: 150px;
   }
 
+  /* Mobile-specific styles */
+  @media (max-width: 768px) {
+    /* Increase font sizes for mobile */
+    body {
+      font-size: 18px; /* Larger font size for body text */
+    }
 
+    h1 {
+      font-size: 7rem; /* Larger header size */
+    }
 
+    h2 {
+      font-size: 4rem; /* Larger h2 for game screen */
+    }
 
+    button {
+      font-size: 2rem; /* Larger buttons */
+      padding: 15px 30px;
+    }
 
+    .draggable-item {
+      font-size: 3rem; /* Larger draggable items */
+      width: 80%; /* Larger width for draggable elements */
+    }
 
-/* Mobile-specific styles */
-@media (pointer: coarse) and (max-width: 768px) {
-  /* Adjust button and text size */
-  h1 {
-    font-size: 5rem;
+    #itemList {
+      padding: 0;
+      list-style: none;
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .mobile-logo {
+      width: 400px; /* Larger size for mobile */
+      height: 200px; /* Larger size for mobile */
+    }
   }
 
-  button {
-    font-size: 1rem;
-    padding: 12px 25px;
+  @media (max-width: 480px) {
+    /* Further adjustments for smaller screens (smartphones) */
+    h1 {
+      font-size: 6rem; /* Slightly smaller header on very small screens */
+    }
+
+    h2 {
+      font-size: 3rem; /* Adjust h2 size */
+    }
+
+    button {
+      font-size: 1.5rem;
+      padding: 12px 25px;
+    }
+
+    .draggable-item {
+      font-size: 2rem; /* Larger draggable items */
+      width: 90%;
+    }
+
+    #strikeCount {
+      font-size: 1.5rem; /* Adjust strike count font size */
+    }
+
+    /* Item list adjustments */
+    #itemList {
+      width: 100%;
+      margin-top: 30px;
+    }
   }
 
-  #gameScreen h2 {
-    font-size: 2rem;
-  }
-
-  /* Adjust the draggable item size */
-  .draggable-item {
-    font-size: 1.1rem;
-    width: 90%;
-  }
-
-  /* Adjust the strike count font size */
-  #strikeCount {
-    font-size: 1rem;
-  }
-
-  /* Item list adjustments */
-  #itemList {
-    padding: 0;
-    list-style: none;
-    width: 100%;
-    margin-top: 50px;
-  }
-}
-
-@media (pointer: coarse) and (max-width: 480px) {
-  /* Further adjustments for smaller screens (smartphones) */
-  h1 {
-    font-size: 2rem;
-  }
-
-  button {
-    font-size: 0.9rem;
-    padding: 10px 20px;
-  }
-
-  #gameScreen h2 {
-    font-size: 1.5rem;
-  }
-
-  /* Smaller draggable item width and font size */
-  .draggable-item {
-    font-size: 1rem;
-    width: 95%;
-  }
-
-  #strikeCount {
-    font-size: 0.9rem;
-  }
-
-  /* Item list adjustments */
-  #itemList {
-    width: 100%;
-    margin-top: 30px;
-  }
-}
-
-/* General styles for the gif */
-.mobile-logo {
-  width: 200px; /* Default size */
-  height: 100px; /* Default size */
-}
-
-/* Adjust the size for mobile devices */
-@media (pointer: coarse) and (max-width: 768px) {
+  /* General styles for the gif */
   .mobile-logo {
-    width: 400px; /* Increase size for mobile */
-    height: 200px; /* Increase size for mobile */
+    width: 200px; /* Default size */
+    height: 100px; /* Default size */
   }
-}
 
-@media (pointer: coarse) and (max-width: 768px) {
-  .order-title {
-    font-size: 2em; /* Double the size for mobile */
-  }
-}
+</style>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </style>
 </head>
 <body>
 
@@ -240,7 +205,7 @@
 
 
 
-      <h1>2Order It.</h1>
+      <h1>3Order It.</h1>
       <p>Drag the items into the correct order based on the given category. <br> The item with the lowest value (smallest, shortest, lightest, etc.) should go at the top. <br>
         The item with the highest value (largest, tallest, heaviest, etc.) should go at the bottom. <br>3 rounds. 3 mistakes allowed.</p>
       <button onclick="startGame()">Play</button>
