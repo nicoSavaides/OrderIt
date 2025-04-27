@@ -117,6 +117,12 @@
     margin-top: 150px;
   }
 
+
+
+
+
+
+
   /* Mobile-specific styles */
   @media (max-width: 768px) {
     /* Adjust button and text size */
@@ -191,6 +197,8 @@
   height: 100px; /* Default size */
 }
 
+
+
 /* Adjust the size for mobile devices */
 @media (max-width: 768px) {
   .mobile-logo {
@@ -204,6 +212,31 @@
     font-size: 2em; /* Double the size for mobile */
   }
 }
+
+@media (max-width: 768px) {
+  /* Adjust logo size */
+  .logo {
+    width: 200px; /* or whatever is about 2x your current width */
+    height: auto; /* keep aspect ratio */
+  }
+
+  /* Adjust title size */
+  .title {
+    font-size: 2em; /* double the current size */
+  }
+
+  /* Adjust play button size */
+  .play-button {
+    font-size: 2em; /* text bigger */
+    padding: 20px 40px; /* button bigger */
+  }
+
+  /* Adjust date size */
+  .date {
+    font-size: 1.5em; /* slightly larger for dates */
+  }
+}
+
 
 
 
@@ -236,7 +269,7 @@
 
 
 
-      <h1>fOrder It.</h1>
+      <h1>1Order It.</h1>
       <p>Drag the items into the correct order based on the given category. <br> The item with the lowest value (smallest, shortest, lightest, etc.) should go at the top. <br>
         The item with the highest value (largest, tallest, heaviest, etc.) should go at the bottom. <br>3 rounds. 3 mistakes allowed.</p>
       <button onclick="startGame()">Play</button>
