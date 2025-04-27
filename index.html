@@ -134,6 +134,156 @@
       transform: translateX(-50%);
     }
 
+    /* General Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lora', sans-serif;
+}
+
+body {
+  background-color: #e9ece6;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#welcomeScreen h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+#welcomeScreen p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+button {
+  font-size: 1.2rem;
+  background-color: #000000;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+#itemList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.draggable-item {
+  padding: 10px;
+  margin: 5px;
+  background-color: #CCCCCC;
+  border: 1px solid #ccc;
+  cursor: grab;
+  font-weight: 900;
+  width: 90%; /* Adjust width to fit within container */
+  max-width: 400px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#gameStatus {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: #000000;
+  font-family: 'Milk And Honey', sans-serif;
+  text-align: center;
+}
+
+#currentDate {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#endScreen p {
+  font-size: 1.5rem;
+  margin-top: 150px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* For tablets and smaller screens */
+  #welcomeScreen h1 {
+    font-size: 3rem;
+  }
+
+  #welcomeScreen p {
+    font-size: 1.2rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 8px 16px;
+    margin-top: 20px;
+  }
+
+  #gameStatus {
+    font-size: 1.5rem;
+  }
+
+  #itemList {
+    margin-top: 20px;
+  }
+
+  .draggable-item {
+    width: 100%; /* Make draggable items full width */
+    max-width: none;
+  }
+
+  #currentDate {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For very small screens (e.g., phones) */
+  #welcomeScreen h1 {
+    font-size: 2.5rem;
+  }
+
+  #welcomeScreen p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+
+  #gameStatus {
+    font-size: 1.2rem;
+  }
+
+  .draggable-item {
+    font-size: 0.9rem;
+  }
+
+  #currentDate {
+    font-size: 0.7rem;
+  }
+}
+
+
 
 
 #endScreen p {
