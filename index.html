@@ -256,23 +256,36 @@
 /* Adjusting elements inside the #endScreen */
 #endScreen {
   text-align: center;  /* Optional, for centering the text */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;  /* Adds a small gap between the elements */
+  margin-bottom: 0;  /* Remove any bottom margin */
+  padding: 0;  /* Remove padding if it exists */
+  height: 100%;  /* Make sure the container takes full height */
+  overflow: hidden;  /* Prevent overflow */
 }
 
 /* Raise 'You scored...' and 'Share your score' */
 #finalScore, #shareButton {
-  position: relative;
-  top: -20px;  /* Adjust this value to raise them */
+  margin: 0;  /* Remove any default margin */
 }
 
 /* Lower 'Thanks for playing' */
 #endScreen p:first-child {
-  position: relative;
-  top: 40px;  /* Adjust this value to move it lower */
+  margin-top: 20px;  /* Add space above "Thanks for playing" */
 }
 
 /* Optionally adjust the Share Link position */
 #shareLink {
-  margin-top: 10px;  /* Adds space between share link and the button */
+  margin-top: 5px;  /* Adjust space between share link and the button */
+}
+
+/* Remove extra margin/padding from the date */
+#currentDate {
+  margin-top: 10px;  /* Optional, adjust space between the content and date */
+  padding-top: 0;
 }
 
 
