@@ -352,13 +352,17 @@
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
-  let startTouch = null;
   let currentItem = null;
-
+  let initialIndex = -1;
+  
+  // Desktop (Mouse) Events
   items.forEach(item => {
-    // Desktop (Mouse) Events
     item.addEventListener('dragstart', (e) => {
       draggedItem = item;
+      initialIndex = Array.from(item.parentNode.children).indexOf(item);
+      setTimeout(() => {
+        draggedItem.style.opacity = '0.5';  // Visual feedback when dragging
+      }, 0);
     });
 
     item.addEventListener('dragover', (e) => {
@@ -383,30 +387,40 @@ function makeItemsDraggable() {
           list.insertBefore(draggedItem, item);
         }
       }
+      draggedItem.style.opacity = '';  // Reset opacity after drop
+      draggedItem = null;
     });
 
-    // Mobile (Touch) Events
+    item.addEventListener('dragend', () => {
+      item.classList.remove('drag-over');
+      draggedItem.style.opacity = '';  // Reset opacity after drag ends
+      draggedItem = null;
+    });
+  });
+
+  // Mobile (Touch) Events
+  items.forEach(item => {
     item.addEventListener('touchstart', (e) => {
       e.preventDefault();  // Prevent default touch behavior
-      startTouch = e.touches[0];
       draggedItem = item;
-      item.classList.add('dragging');
       currentItem = item;
+      initialIndex = Array.from(item.parentNode.children).indexOf(item);
+      setTimeout(() => {
+        draggedItem.style.opacity = '0.5';  // Visual feedback when dragging
+      }, 0);
     });
 
     item.addEventListener('touchmove', (e) => {
-      if (!draggedItem || !startTouch) return;
       e.preventDefault();  // Prevent default touch behavior
-
       const touch = e.touches[0];
-      const deltaX = touch.pageX - startTouch.pageX;
-      const deltaY = touch.pageY - startTouch.pageY;
-
-      // Move the dragged item based on the touch movement
+      const deltaX = touch.pageX - currentItem.offsetLeft;
+      const deltaY = touch.pageY - currentItem.offsetTop;
+      
+      // Move the dragged item with the touch
       draggedItem.style.position = 'absolute';
       draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
 
-      // Optionally, you can add logic to rearrange items when moved over another
+      // Check if we need to reorder the items while dragging
       const allItems = Array.from(document.querySelectorAll('.draggable-item'));
       allItems.forEach((otherItem) => {
         if (otherItem === draggedItem) return;
@@ -414,7 +428,6 @@ function makeItemsDraggable() {
         const rect = otherItem.getBoundingClientRect();
         if (touch.pageY > rect.top && touch.pageY < rect.bottom) {
           if (touch.pageX > rect.left && touch.pageX < rect.right) {
-            // Reorder the dragged item based on its position
             const list = draggedItem.parentNode;
             const draggedIndex = Array.from(list.children).indexOf(draggedItem);
             const droppedIndex = Array.from(list.children).indexOf(otherItem);
@@ -430,28 +443,21 @@ function makeItemsDraggable() {
     });
 
     item.addEventListener('touchend', () => {
-      if (!draggedItem) return;
-      draggedItem.classList.remove('dragging');
       draggedItem.style.transform = '';  // Reset position
       draggedItem.style.position = '';  // Reset positioning
-
+      draggedItem.style.opacity = '';  // Reset opacity
       draggedItem = null;
-      startTouch = null;
-      currentItem = null;
     });
 
     item.addEventListener('touchcancel', () => {
-      if (!draggedItem) return;
-      draggedItem.classList.remove('dragging');
       draggedItem.style.transform = '';  // Reset position
       draggedItem.style.position = '';  // Reset positioning
-
+      draggedItem.style.opacity = '';  // Reset opacity
       draggedItem = null;
-      startTouch = null;
-      currentItem = null;
     });
   });
 }
+
 
 
 
