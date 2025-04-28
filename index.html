@@ -186,7 +186,7 @@
       /* Further adjustments for smaller screens (smartphones) */
       h1 {
         font-size: 3rem !important; 
-        margin-top: px !important;
+        margin-top: 10px !important
       }
 
       h2 {
@@ -211,7 +211,7 @@
       #currentDate {
       font-size: 0.8rem !important;
       position: relative; /* Now moves with the rest of the content */
-      padding-top: 20px !important;
+      padding-top: px !important;
       padding: 10px;
     }
      
@@ -276,6 +276,8 @@
       <button onclick="startGame()">Play</button>
     </div>
   </div>
+
+
 
   <div id="gameScreen" class="hidden">
     <h2 id="roundPrompt">Order by:</h2>
@@ -349,6 +351,24 @@
   updateStrikes();
   makeItemsDraggable();
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
@@ -482,6 +502,22 @@ function makeItemsDraggable() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     function submitOrder() {
       const itemList = document.getElementById('itemList');
       const submittedOrder = Array.from(itemList.children).map(li => li.textContent);
@@ -543,6 +579,23 @@ function makeItemsDraggable() {
       document.getElementById('strikeCount').textContent = `Strikes: ${strikes}/${maxStrikes}`;
     }
 
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+    
     let score = 0; // you should already be tracking this
 
 function endGame() {
