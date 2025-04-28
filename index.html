@@ -447,12 +447,11 @@
     item.addEventListener('touchmove', (e) => {
       e.preventDefault();  // Prevent default touch behavior
 
-      // Calculate the delta between the initial touch position and current touch position
+      // The item moves freely and independently of other items
       const touch = e.touches[0];
       const deltaX = touch.pageX - draggedItemInitialPosition.x;
       const deltaY = touch.pageY - draggedItemInitialPosition.y;
 
-      // Move the dragged item freely, but don't affect other tiles
       draggedItem.style.position = 'absolute';
       draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
     });
@@ -497,6 +496,7 @@
     });
   });
 }
+
 
 
 
