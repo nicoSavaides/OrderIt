@@ -240,18 +240,7 @@
       width: 200px; /* Default size */
       height: 100px; /* Default size */
     }
-
-
-    .draggable-item {
-    touch-action: none; /* Prevents conflicts with touch gestures */
-    user-select: none; /* Prevents text selection during drag */
-    position: relative;
-    transition: transform 0.1s ease; /* Optional: smooth transition for visual effect */
-}
-
-.draggable-item.dragging {
-    opacity: 0.5; /* Optional: Change appearance during drag */
-}
+    
 
 
 
@@ -361,8 +350,6 @@
       updateStrikes();
       makeItemsDraggable();
     }
-
-
 
 
 
@@ -510,125 +497,6 @@
     });
   });
 }
-
-
-
-// Function to handle drag start
-const handleDragStart = (e) => {
-    const draggedItem = e.target;
-    draggedItem.style.position = 'absolute'; // Fix position during drag
-    draggedItem.style.zIndex = 1000; // Bring the dragged item to the front
-    draggedItem.classList.add('dragging'); // Optional: Add a class for styling while dragging
-
-    // Calculate the initial offset of the dragged item
-    const offsetX = e.clientX - draggedItem.getBoundingClientRect().left;
-    const offsetY = e.clientY - draggedItem.getBoundingClientRect().top;
-
-    // Store the offset values in the dragged item for use in move
-    draggedItem.dataset.offsetX = offsetX;
-    draggedItem.dataset.offsetY = offsetY;
-
-    // Add event listeners for mouse/touchmove and mouse/touchend
-    document.addEventListener('mousemove', handleDragMove);
-    document.addEventListener('touchmove', handleDragMove);
-    document.addEventListener('mouseup', handleDragEnd);
-    document.addEventListener('touchend', handleDragEnd);
-    document.addEventListener('touchcancel', handleDragEnd);
-};
-
-// Function to handle drag movement
-const handleDragMove = (e) => {
-    const draggedItem = document.querySelector('.dragging');
-    if (!draggedItem) return;
-
-    // Determine the new position of the dragged item
-    const clientX = e.touches ? e.touches[0].clientX : e.clientX; 
-    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-
-    const offsetX = draggedItem.dataset.offsetX;
-    const offsetY = draggedItem.dataset.offsetY;
-
-    const deltaX = clientX - offsetX;
-    const deltaY = clientY - offsetY;
-
-    // Move the dragged item without affecting layout (using absolute positioning)
-    draggedItem.style.left = `${deltaX}px`;
-    draggedItem.style.top = `${deltaY}px`;
-};
-
-// Function to handle drag end (drop the item)
-const handleDragEnd = (e) => {
-    const draggedItem = document.querySelector('.dragging');
-    if (!draggedItem) return;
-
-    // Remove position and z-index changes after drop
-    draggedItem.style.position = '';
-    draggedItem.style.left = '';
-    draggedItem.style.top = '';
-    draggedItem.style.zIndex = '';
-
-    // Check if the item was dropped in the correct position and reorder
-    const list = draggedItem.parentNode;
-    const listItems = Array.from(list.children);
-    
-    // Get the closest element in the list to the dragged item (just like on desktop)
-    const closestItem = getClosestItem(e, draggedItem);
-
-    if (closestItem) {
-        const draggedIndex = listItems.indexOf(draggedItem);
-        const closestIndex = listItems.indexOf(closestItem);
-
-        // Reorder the tiles only after drop
-        if (draggedIndex < closestIndex) {
-            list.insertBefore(draggedItem, closestItem.nextSibling);
-        } else {
-            list.insertBefore(draggedItem, closestItem);
-        }
-    }
-
-    // Cleanup dragging state
-    draggedItem.classList.remove('dragging');
-    document.removeEventListener('mousemove', handleDragMove);
-    document.removeEventListener('touchmove', handleDragMove);
-    document.removeEventListener('mouseup', handleDragEnd);
-    document.removeEventListener('touchend', handleDragEnd);
-    document.removeEventListener('touchcancel', handleDragEnd);
-};
-
-// Function to determine the closest item during drag (for reordering)
-const getClosestItem = (e, draggedItem) => {
-    const list = draggedItem.parentNode;
-    const listItems = Array.from(list.children);
-    
-    let closestItem = null;
-    let minDistance = Infinity;
-
-    listItems.forEach(item => {
-        if (item !== draggedItem) {
-            const rect = item.getBoundingClientRect();
-            const distance = Math.abs(rect.top - e.clientY); // Check the vertical distance
-            if (distance < minDistance) {
-                minDistance = distance;
-                closestItem = item;
-            }
-        }
-    });
-
-    return closestItem;
-};
-
-// Add event listener for the drag start on each item
-const draggableItems = document.querySelectorAll('.draggable-item');
-draggableItems.forEach(item => {
-    item.addEventListener('mousedown', handleDragStart);
-    item.addEventListener('touchstart', handleDragStart);
-});
-
-
-
-
-
-
 
 
 
