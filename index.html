@@ -61,7 +61,7 @@
 
     @font-face {
       font-family: 'Milk And Honey';
-      src: url('orderItFont.ttf') format('truetype');
+      src: url('orderItFont2.otf') format('truetype');
     }
 
     h1, h2, h3 {
@@ -253,6 +253,27 @@
     
 
 
+/* Adjusting elements inside the #endScreen */
+#endScreen {
+  text-align: center;  /* Optional, for centering the text */
+}
+
+/* Raise 'You scored...' and 'Share your score' */
+#finalScore, #shareButton {
+  position: relative;
+  top: -20px;  /* Adjust this value to raise them */
+}
+
+/* Lower 'Thanks for playing' */
+#endScreen p:first-child {
+  position: relative;
+  top: 40px;  /* Adjust this value to move it lower */
+}
+
+/* Optionally adjust the Share Link position */
+#shareLink {
+  margin-top: 10px;  /* Adds space between share link and the button */
+}
 
 
 
@@ -308,11 +329,15 @@
   </div>
   
   <div id="endScreen" class="hidden">
-    <p>Thanks for playing. Come back tomorrow for a new challenge.</p>
     <p id="finalScore"></p> <!-- their score will appear here -->
+    <p>Thanks for playing. Come back tomorrow for a new challenge.</p>
     <button id="shareButton">Share your score</button> <!-- share button -->
     <p id="shareLink" style="word-break: break-all;"></p> <!-- link will show up here -->
+
   </div>
+
+
+
   
   <p id="currentDate"></p>
   
