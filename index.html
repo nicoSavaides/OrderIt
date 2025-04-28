@@ -375,108 +375,156 @@
     }
   
     function makeItemsDraggable() {
-      const items = document.querySelectorAll('.draggable-item');
-      let draggedItem = null;
-      let initialIndex = -1;
-  
-      // Desktop (Mouse) Events
-      items.forEach(item => {
-        item.addEventListener('dragstart', (e) => {
-          draggedItem = item;
-          initialIndex = Array.from(item.parentNode.children).indexOf(item);
-          draggedItem.classList.add('dragging');
-          setTimeout(() => {
-            draggedItem.style.opacity = '0.5';
-          }, 0);
-        });
-  
-        item.addEventListener('dragover', (e) => {
-          e.preventDefault();
-        });
-  
-        item.addEventListener('drop', () => {
-          if (draggedItem !== item) {
-            const list = item.parentNode;
-            const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-            const droppedIndex = Array.from(list.children).indexOf(item);
-  
-            if (draggedIndex < droppedIndex) {
-              list.insertBefore(draggedItem, item.nextSibling);
-            } else {
-              list.insertBefore(draggedItem, item);
-            }
+  const items = document.querySelectorAll('.draggable-item');
+  let draggedItem = null;
+  let draggedItemInitialPosition = { x: 0, y: 0 };
+
+  // Desktop (Mouse) Events
+  items.forEach(item => {
+    item.addEventListener('dragstart', (e) => {
+      draggedItem = item;
+      draggedItemInitialPosition = { x: e.pageX, y: e.pageY };
+
+      // Add class for visual feedback and make it semi-transparent
+      draggedItem.classList.add('dragging');
+      setTimeout(() => {
+        draggedItem.style.opacity = '0.5';
+      }, 0);
+    });
+
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();  // Allow the tile to be dropped
+    });
+
+    item.addEventListener('dragenter', () => {
+      item.classList.add('drag-over');  // Visual feedback when hovering
+    });
+
+    item.addEventListener('dragleave', () => {
+      item.classList.remove('drag-over');  // Remove hover effect
+    });
+
+    item.addEventListener('drop', () => {
+      item.classList.remove('drag-over');
+      if (draggedItem !== item) {
+        // Reorder the tiles when dropped
+        const list = item.parentNode;
+        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+        const droppedIndex = Array.from(list.children).indexOf(item);
+
+        if (draggedIndex < droppedIndex) {
+          list.insertBefore(draggedItem, item.nextSibling);
+        } else {
+          list.insertBefore(draggedItem, item);
+        }
+      }
+
+      // Reset the dragged tile's state after drop
+      draggedItem.style.opacity = '';
+      draggedItem.classList.remove('dragging');
+      draggedItem = null;
+    });
+
+    item.addEventListener('dragend', () => {
+      // Reset dragged item’s opacity and remove dragging class
+      draggedItem.style.opacity = '';
+      draggedItem.classList.remove('dragging');
+      draggedItem = null;
+    });
+  });
+
+  // Mobile (Touch) Events
+  items.forEach(item => {
+    item.addEventListener('touchstart', (e) => {
+      e.preventDefault();  // Prevent default touch behavior
+      draggedItem = item;
+      draggedItemInitialPosition = {
+        x: e.touches[0].pageX,
+        y: e.touches[0].pageY,
+      };
+
+      // Add class for visual feedback
+      draggedItem.classList.add('dragging');
+      setTimeout(() => {
+        draggedItem.style.opacity = '0.5';
+      }, 0);
+    });
+
+    item.addEventListener('touchmove', (e) => {
+      e.preventDefault();  // Prevent default touch behavior
+
+      // Calculate the delta between the initial touch position and current touch position
+      const touch = e.touches[0];
+      const deltaX = touch.pageX - draggedItemInitialPosition.x;
+      const deltaY = touch.pageY - draggedItemInitialPosition.y;
+
+      // Move the dragged item freely without affecting the other items
+      draggedItem.style.position = 'absolute';
+      draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+    });
+
+    item.addEventListener('touchend', (e) => {
+      draggedItem.style.transform = '';  // Reset position after release
+      draggedItem.style.position = '';  // Reset positioning
+      draggedItem.style.opacity = '';  // Reset opacity
+
+      // Check where the item should be placed
+      const allItems = Array.from(document.querySelectorAll('.draggable-item'));
+      allItems.forEach((otherItem) => {
+        if (otherItem === draggedItem) return;
+
+        const rect = otherItem.getBoundingClientRect();
+        if (e.changedTouches[0].pageY > rect.top && e.changedTouches[0].pageY < rect.bottom) {
+          const list = draggedItem.parentNode;
+          const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+          const droppedIndex = Array.from(list.children).indexOf(otherItem);
+
+          // Reorder after dropping the dragged item
+          if (draggedIndex < droppedIndex) {
+            list.insertBefore(draggedItem, otherItem.nextSibling);
+          } else {
+            list.insertBefore(draggedItem, otherItem);
           }
-  
-          draggedItem.style.opacity = '';
-          draggedItem.classList.remove('dragging');
-          draggedItem = null;
-        });
-  
-        item.addEventListener('dragend', () => {
-          draggedItem.style.opacity = '';
-          draggedItem.classList.remove('dragging');
-          draggedItem = null;
-        });
+        }
       });
-  
-      // Mobile (Touch) Events
-      items.forEach(item => {
-        item.addEventListener('touchstart', (e) => {
-          e.preventDefault();
-          draggedItem = item;
-          initialIndex = Array.from(item.parentNode.children).indexOf(item);
-          draggedItem.classList.add('dragging');
-          setTimeout(() => {
-            draggedItem.style.opacity = '0.5';
-          }, 0);
-        });
-  
-        item.addEventListener('touchmove', (e) => {
-          e.preventDefault();
-          const touch = e.touches[0];
-          const deltaX = touch.pageX - draggedItem.offsetLeft;
-          const deltaY = touch.pageY - draggedItem.offsetTop;
-  
-          draggedItem.style.position = 'absolute';
-          draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-        });
-  
-        item.addEventListener('touchend', (e) => {
-          draggedItem.style.transform = '';
-          draggedItem.style.position = '';
-          draggedItem.style.opacity = '';
-  
-          const allItems = Array.from(document.querySelectorAll('.draggable-item'));
-          allItems.forEach((otherItem) => {
-            if (otherItem === draggedItem) return;
-  
-            const rect = otherItem.getBoundingClientRect();
-            if (e.changedTouches[0].pageY > rect.top && e.changedTouches[0].pageY < rect.bottom) {
-              const list = draggedItem.parentNode;
-              const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-              const droppedIndex = Array.from(list.children).indexOf(otherItem);
-  
-              if (draggedIndex < droppedIndex) {
-                list.insertBefore(draggedItem, otherItem.nextSibling);
-              } else {
-                list.insertBefore(draggedItem, otherItem);
-              }
-            }
-          });
-  
-          draggedItem.classList.remove('dragging');
-          draggedItem = null;
-        });
-  
-        item.addEventListener('touchcancel', () => {
-          draggedItem.style.transform = '';
-          draggedItem.style.position = '';
-          draggedItem.style.opacity = '';
-          draggedItem.classList.remove('dragging');
-          draggedItem = null;
-        });
-      });
-    }
+
+      // Reset the dragged item state
+      draggedItem.classList.remove('dragging');
+      draggedItem = null;
+    });
+
+    item.addEventListener('touchcancel', () => {
+      draggedItem.style.transform = '';  // Reset position if canceled
+      draggedItem.style.position = '';  // Reset positioning if canceled
+      draggedItem.style.opacity = '';  // Reset opacity if canceled
+      draggedItem.classList.remove('dragging');  // Remove dragging class
+      draggedItem = null;
+    });
+  });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
     function submitOrder() {
       const itemList = document.getElementById('itemList');
