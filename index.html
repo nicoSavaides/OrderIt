@@ -61,7 +61,7 @@
 
     @font-face {
       font-family: 'Milk And Honey';
-      src: url('orderItFont2.otf') format('truetype');
+      src: url('orderItFont.ttf') format('truetype');
     }
 
     h1, h2, h3 {
@@ -226,12 +226,12 @@
 
       #strikeCount {
         font-size: 1.5rem; /* Adjust strike count font size */
-        margin-top: -40px !important;
+        margin-top: -20px !important;
       }
 
 
       #submitWrapper {
-      margin-top: 20px; /* <-- You can lower this number to move it closer to the list */
+      margin-top: 40px; /* <-- You can lower this number to move it closer to the list */
       }
       #submitWrapper button {
       margin-top: 0; /* Remove the big margin that button normally has */
@@ -253,40 +253,6 @@
     
 
 
-/* Adjusting elements inside the #endScreen */
-#endScreen {
-  text-align: center;  /* Optional, for centering the text */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;  /* Adds a small gap between the elements */
-  margin-bottom: 0;  /* Remove any bottom margin */
-  padding: 0;  /* Remove padding if it exists */
-  height: 100%;  /* Make sure the container takes full height */
-  overflow: hidden;  /* Prevent overflow */
-}
-
-/* Raise 'You scored...' and 'Share your score' */
-#finalScore, #shareButton {
-  margin: 0;  /* Remove any default margin */
-}
-
-/* Lower 'Thanks for playing' */
-#endScreen p:first-child {
-  margin-top: 20px;  /* Add space above "Thanks for playing" */
-}
-
-/* Optionally adjust the Share Link position */
-#shareLink {
-  margin-top: 5px;  /* Adjust space between share link and the button */
-}
-
-/* Remove extra margin/padding from the date */
-#currentDate {
-  margin-top: 10px;  /* Optional, adjust space between the content and date */
-  padding-top: 0;
-}
 
 
 
@@ -308,7 +274,7 @@
 
 
 
-      <h1>Order It.</h1>
+      <h1>5Order It.</h1>
       <p>Drag the items into the correct order based on the given category. The item with the lowest value (smallest, shortest, lightest, etc.) should go at the top. 
         The item with the highest value (largest, tallest, heaviest, etc.) should go at the bottom. 3 rounds. 3 mistakes allowed.</p>
       <button onclick="startGame()">Play</button>
@@ -342,15 +308,11 @@
   </div>
   
   <div id="endScreen" class="hidden">
-    <p id="finalScore"></p> <!-- their score will appear here -->
     <p>Thanks for playing. Come back tomorrow for a new challenge.</p>
+    <p id="finalScore"></p> <!-- their score will appear here -->
     <button id="shareButton">Share your score</button> <!-- share button -->
     <p id="shareLink" style="word-break: break-all;"></p> <!-- link will show up here -->
-
   </div>
-
-
-
   
   <p id="currentDate"></p>
   
