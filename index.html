@@ -366,12 +366,11 @@ function makeItemsDraggable() {
     });
 
     item.addEventListener('dragover', (e) => {
-      e.preventDefault();
-      item.classList.add('drag-over');
+      e.preventDefault();  // Allow drop
     });
 
     item.addEventListener('dragleave', () => {
-      item.classList.remove('drag-over');
+      item.classList.remove('drag-over');  // No changes in layout
     });
 
     item.addEventListener('drop', () => {
@@ -381,6 +380,7 @@ function makeItemsDraggable() {
         const draggedIndex = Array.from(list.children).indexOf(draggedItem);
         const droppedIndex = Array.from(list.children).indexOf(item);
 
+        // Reorder only when drop happens
         if (draggedIndex < droppedIndex) {
           list.insertBefore(draggedItem, item.nextSibling);
         } else {
@@ -392,7 +392,6 @@ function makeItemsDraggable() {
     });
 
     item.addEventListener('dragend', () => {
-      item.classList.remove('drag-over');
       draggedItem.style.opacity = '';  // Reset opacity after drag ends
       draggedItem = null;
     });
@@ -412,51 +411,54 @@ function makeItemsDraggable() {
 
     item.addEventListener('touchmove', (e) => {
       e.preventDefault();  // Prevent default touch behavior
+
+      // Don't move the other items while dragging
       const touch = e.touches[0];
       const deltaX = touch.pageX - currentItem.offsetLeft;
       const deltaY = touch.pageY - currentItem.offsetTop;
-      
-      // Move the dragged item with the touch
+
+      // Move the dragged item freely with touch
       draggedItem.style.position = 'absolute';
       draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+    });
 
-      // Check if we need to reorder the items while dragging
+    item.addEventListener('touchend', () => {
+      draggedItem.style.transform = '';  // Reset position after release
+      draggedItem.style.position = '';  // Reset positioning
+      draggedItem.style.opacity = '';  // Reset opacity
+
+      // After touchend, check where to place the item
       const allItems = Array.from(document.querySelectorAll('.draggable-item'));
       allItems.forEach((otherItem) => {
         if (otherItem === draggedItem) return;
 
         const rect = otherItem.getBoundingClientRect();
-        if (touch.pageY > rect.top && touch.pageY < rect.bottom) {
-          if (touch.pageX > rect.left && touch.pageX < rect.right) {
-            const list = draggedItem.parentNode;
-            const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-            const droppedIndex = Array.from(list.children).indexOf(otherItem);
+        if (e.changedTouches[0].pageY > rect.top && e.changedTouches[0].pageY < rect.bottom) {
+          const list = draggedItem.parentNode;
+          const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+          const droppedIndex = Array.from(list.children).indexOf(otherItem);
 
-            if (draggedIndex < droppedIndex) {
-              list.insertBefore(draggedItem, otherItem.nextSibling);
-            } else {
-              list.insertBefore(draggedItem, otherItem);
-            }
+          // Reorder only after dropping the dragged item
+          if (draggedIndex < droppedIndex) {
+            list.insertBefore(draggedItem, otherItem.nextSibling);
+          } else {
+            list.insertBefore(draggedItem, otherItem);
           }
         }
       });
-    });
 
-    item.addEventListener('touchend', () => {
-      draggedItem.style.transform = '';  // Reset position
-      draggedItem.style.position = '';  // Reset positioning
-      draggedItem.style.opacity = '';  // Reset opacity
       draggedItem = null;
     });
 
     item.addEventListener('touchcancel', () => {
-      draggedItem.style.transform = '';  // Reset position
-      draggedItem.style.position = '';  // Reset positioning
-      draggedItem.style.opacity = '';  // Reset opacity
+      draggedItem.style.transform = '';  // Reset position if canceled
+      draggedItem.style.position = '';  // Reset positioning if canceled
+      draggedItem.style.opacity = '';  // Reset opacity if canceled
       draggedItem = null;
     });
   });
 }
+
 
 
 
