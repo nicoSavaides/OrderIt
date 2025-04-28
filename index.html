@@ -284,13 +284,35 @@
 /* GAME OVER */
 @media (max-width: 768px) {
   #gameStatus {
-    top: 6%;  /* Move it closer to the top of the screen */
+    top: 5%;  /* Move it closer to the top of the screen */
   }
 }
 
 
     
     
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  /* Move the final score higher */
+  #finalScore {
+    margin-top: -20px; /* Adjust this to move it higher */
+  }
+
+  /* Move the 'Thanks for playing' message or similar message higher */
+  #thanksMessage {
+    margin-top: -20px; /* Adjust as needed */
+  }
+
+  /* Move 'Share Your Score' or the share button higher */
+  #shareLink, #shareButton {
+    margin-top: -20px; /* Adjust as needed */
+  }
+
+  /* Move current date higher if needed */
+  #currentDate {
+    margin-top: -10px; /* Adjust as needed */
+  }
+}
 
 
 
