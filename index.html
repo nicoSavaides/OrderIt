@@ -353,26 +353,23 @@ function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
   let startTouch = null;
+  let currentItem = null;
 
-  // Desktop (Mouse) Events
   items.forEach(item => {
-    // Mouse drag start
+    // Desktop (Mouse) Events
     item.addEventListener('dragstart', (e) => {
       draggedItem = item;
     });
 
-    // Mouse drag over
     item.addEventListener('dragover', (e) => {
       e.preventDefault();
       item.classList.add('drag-over');
     });
 
-    // Mouse drag leave
     item.addEventListener('dragleave', () => {
       item.classList.remove('drag-over');
     });
 
-    // Mouse drop
     item.addEventListener('drop', () => {
       item.classList.remove('drag-over');
       if (draggedItem !== item) {
@@ -394,6 +391,7 @@ function makeItemsDraggable() {
       startTouch = e.touches[0];
       draggedItem = item;
       item.classList.add('dragging');
+      currentItem = item;
     });
 
     item.addEventListener('touchmove', (e) => {
@@ -403,23 +401,54 @@ function makeItemsDraggable() {
       const touch = e.touches[0];
       const deltaX = touch.pageX - startTouch.pageX;
       const deltaY = touch.pageY - startTouch.pageY;
-      draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;  // Move the dragged item
+
+      // Move the dragged item based on the touch movement
+      draggedItem.style.position = 'absolute';
+      draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+
+      // Optionally, you can add logic to rearrange items when moved over another
+      const allItems = Array.from(document.querySelectorAll('.draggable-item'));
+      allItems.forEach((otherItem) => {
+        if (otherItem === draggedItem) return;
+
+        const rect = otherItem.getBoundingClientRect();
+        if (touch.pageY > rect.top && touch.pageY < rect.bottom) {
+          if (touch.pageX > rect.left && touch.pageX < rect.right) {
+            // Reorder the dragged item based on its position
+            const list = draggedItem.parentNode;
+            const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+            const droppedIndex = Array.from(list.children).indexOf(otherItem);
+
+            if (draggedIndex < droppedIndex) {
+              list.insertBefore(draggedItem, otherItem.nextSibling);
+            } else {
+              list.insertBefore(draggedItem, otherItem);
+            }
+          }
+        }
+      });
     });
 
     item.addEventListener('touchend', () => {
       if (!draggedItem) return;
-      item.classList.remove('dragging');
+      draggedItem.classList.remove('dragging');
       draggedItem.style.transform = '';  // Reset position
+      draggedItem.style.position = '';  // Reset positioning
+
       draggedItem = null;
       startTouch = null;
+      currentItem = null;
     });
 
     item.addEventListener('touchcancel', () => {
       if (!draggedItem) return;
-      item.classList.remove('dragging');
+      draggedItem.classList.remove('dragging');
       draggedItem.style.transform = '';  // Reset position
+      draggedItem.style.position = '';  // Reset positioning
+
       draggedItem = null;
       startTouch = null;
+      currentItem = null;
     });
   });
 }
