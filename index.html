@@ -217,7 +217,7 @@
 
 
     
-    /* Default styling for the correct order label */
+/* Default styling for the correct order label */
 .correct-order-label {
   position: relative;
   top: 150px; /* Original position */
@@ -225,11 +225,15 @@
   font-size: 1.2rem;
   margin-bottom: 0px;
 }
-     
 
-    .correct-order-label {
-    top: 30px !important; /* Move the label up on mobile */
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .correct-order-label {
+    position: relative !important;  /* Ensure position is relative */
+    top: 10px !important; /* Move the label up on mobile */
+    font-size: 1.5rem !important; /* Optional: adjust font size for mobile */
   }
+}
 
      
 
@@ -296,7 +300,7 @@
 
 
 
-      <h1>Order It.</h1>
+      <h1>2Order It.</h1>
       <p>Drag the items into the correct order based on the given category. The item with the lowest value (smallest, shortest, lightest, etc.) should go at the top. 
         The item with the highest value (largest, tallest, heaviest, etc.) should go at the bottom. 3 rounds. 3 mistakes allowed.</p>
       <button onclick="startGame()">Play</button>
