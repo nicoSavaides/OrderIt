@@ -221,25 +221,28 @@
 
 
 
-    .correct-order-label {
+.correct-order-label {
   position: absolute !important;
-  top: 250px !important;  /* Increased top to ensure it's further down */
-  left: 0;
+  top: 250px !important;  /* Adjust this to control vertical position */
+  left: 50% !important;  /* Center horizontally */
+  transform: translateX(-50%) !important;  /* Ensure it's centered */
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 0px;
   z-index: 10;
 }
 
-
-  /* Mobile-specific styling */
-  @media (max-width: 768px) {
-    .correct-order-label {
-      position: absolute !important;  /* Use absolute position for mobile too */
-      top: 10px !important;  /* Move the label up on mobile */
-      font-size: 1.5rem !important;
-    }
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .correct-order-label {
+    position: absolute !important;  /* Ensure it remains absolute on mobile */
+    top: 50% !important;  /* Vertically center on mobile */
+    left: 50% !important;  /* Center horizontally on mobile */
+    transform: translate(-50%, -50%) !important;  /* Center both vertically and horizontally */
+    font-size: 1.5rem !important;
   }
+}
+
 
 
 
