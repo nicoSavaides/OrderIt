@@ -386,7 +386,7 @@
       // Add class for visual feedback and make it semi-transparent
       draggedItem.classList.add('dragging');
       setTimeout(() => {
-        draggedItem.style.opacity = '0.5';
+        draggedItem.style.opacity = '0.5'; // Make the dragged item semi-transparent
       }, 0);
     });
 
@@ -394,22 +394,25 @@
       e.preventDefault();  // Allow the tile to be dropped
     });
 
-    item.addEventListener('dragenter', () => {
-      item.classList.add('drag-over');  // Visual feedback when hovering
+    item.addEventListener('dragenter', (e) => {
+      e.preventDefault(); // Allow the hover effect to apply (no other tiles are moved)
     });
 
-    item.addEventListener('dragleave', () => {
-      item.classList.remove('drag-over');  // Remove hover effect
+    item.addEventListener('dragend', () => {
+      // Reset after drag ends
+      draggedItem.style.opacity = ''; // Reset opacity
+      draggedItem.classList.remove('dragging'); // Remove dragging class
+      draggedItem = null; // Clear reference to the dragged item
     });
 
     item.addEventListener('drop', () => {
-      item.classList.remove('drag-over');
+      // The item is dropped
       if (draggedItem !== item) {
-        // Reorder the tiles when dropped
         const list = item.parentNode;
         const draggedIndex = Array.from(list.children).indexOf(draggedItem);
         const droppedIndex = Array.from(list.children).indexOf(item);
 
+        // Only reorder after the item is dropped
         if (draggedIndex < droppedIndex) {
           list.insertBefore(draggedItem, item.nextSibling);
         } else {
@@ -417,14 +420,7 @@
         }
       }
 
-      // Reset the dragged tile's state after drop
-      draggedItem.style.opacity = '';
-      draggedItem.classList.remove('dragging');
-      draggedItem = null;
-    });
-
-    item.addEventListener('dragend', () => {
-      // Reset dragged item’s opacity and remove dragging class
+      // Reset dragged item after drop
       draggedItem.style.opacity = '';
       draggedItem.classList.remove('dragging');
       draggedItem = null;
@@ -434,7 +430,7 @@
   // Mobile (Touch) Events
   items.forEach(item => {
     item.addEventListener('touchstart', (e) => {
-      e.preventDefault();  // Prevent default touch behavior
+      e.preventDefault(); // Prevent default touch behavior
       draggedItem = item;
       draggedItemInitialPosition = {
         x: e.touches[0].pageX,
@@ -444,7 +440,7 @@
       // Add class for visual feedback
       draggedItem.classList.add('dragging');
       setTimeout(() => {
-        draggedItem.style.opacity = '0.5';
+        draggedItem.style.opacity = '0.5'; // Make the dragged item semi-transparent
       }, 0);
     });
 
@@ -456,17 +452,18 @@
       const deltaX = touch.pageX - draggedItemInitialPosition.x;
       const deltaY = touch.pageY - draggedItemInitialPosition.y;
 
-      // Move the dragged item freely without affecting the other items
+      // Move the dragged item freely, but don't affect other tiles
       draggedItem.style.position = 'absolute';
       draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
     });
 
     item.addEventListener('touchend', (e) => {
-      draggedItem.style.transform = '';  // Reset position after release
-      draggedItem.style.position = '';  // Reset positioning
-      draggedItem.style.opacity = '';  // Reset opacity
+      // After touch ends, reset the position
+      draggedItem.style.transform = ''; // Reset position after release
+      draggedItem.style.position = ''; // Reset positioning
+      draggedItem.style.opacity = ''; // Reset opacity
 
-      // Check where the item should be placed
+      // Check where the item should be placed and reorder
       const allItems = Array.from(document.querySelectorAll('.draggable-item'));
       allItems.forEach((otherItem) => {
         if (otherItem === draggedItem) return;
@@ -477,7 +474,7 @@
           const draggedIndex = Array.from(list.children).indexOf(draggedItem);
           const droppedIndex = Array.from(list.children).indexOf(otherItem);
 
-          // Reorder after dropping the dragged item
+          // Reorder after the dragged item is dropped
           if (draggedIndex < droppedIndex) {
             list.insertBefore(draggedItem, otherItem.nextSibling);
           } else {
@@ -486,16 +483,16 @@
         }
       });
 
-      // Reset the dragged item state
+      // Reset dragged item state
       draggedItem.classList.remove('dragging');
       draggedItem = null;
     });
 
     item.addEventListener('touchcancel', () => {
-      draggedItem.style.transform = '';  // Reset position if canceled
-      draggedItem.style.position = '';  // Reset positioning if canceled
-      draggedItem.style.opacity = '';  // Reset opacity if canceled
-      draggedItem.classList.remove('dragging');  // Remove dragging class
+      draggedItem.style.transform = ''; // Reset position if canceled
+      draggedItem.style.position = ''; // Reset positioning if canceled
+      draggedItem.style.opacity = ''; // Reset opacity if canceled
+      draggedItem.classList.remove('dragging'); // Remove dragging class
       draggedItem = null;
     });
   });
