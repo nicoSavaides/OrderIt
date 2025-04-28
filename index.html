@@ -229,6 +229,15 @@
         margin-top: -20px !important;
       }
 
+
+      #submitWrapper {
+      margin-top: 50px; /* <-- You can lower this number to move it closer to the list */
+      }
+      #submitWrapper button {
+      margin-top: 0; /* Remove the big margin that button normally has */
+      }
+
+
       /* Item list adjustments */
       #itemList {
         width: 100%;
@@ -287,8 +296,13 @@
     <h2 id="roundPrompt">Order by:</h2>
     <p id="gameStatus"></p>
     <ul id="itemList"></ul>
+
+    <div id="submitWrapper">
+      <button onclick="submitOrder()">Submit</button>
+    </div>
+
     <p id="strikeCount">Strikes: 0/3</p>
-    <button onclick="submitOrder()">Submit</button>
+   
   </div>
   
   <div id="endScreen" class="hidden">
