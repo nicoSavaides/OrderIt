@@ -332,6 +332,14 @@
         return;
       }
   
+      
+      
+      
+      
+      
+      
+      
+      
       const { prompt, items } = rounds[currentRound];
       document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
   
@@ -353,36 +361,12 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
   let draggedItemInitialPosition = { x: 0, y: 0 };
+  let offsetX = 0;
+  let offsetY = 0;
 
   // Desktop (Mouse) Events
   items.forEach(item => {
@@ -409,7 +393,6 @@
       // Reset after drag ends
       draggedItem.style.opacity = ''; // Reset opacity
       draggedItem.classList.remove('dragging'); // Remove dragging class
-      draggedItem.style.position = ''; // Reset position
       draggedItem = null; // Clear reference to the dragged item
     });
 
@@ -455,15 +438,13 @@
     item.addEventListener('touchmove', (e) => {
       e.preventDefault();  // Prevent default touch behavior
 
-      // Move the item visually as you drag it
+      // Calculate how far the touch has moved
       const touch = e.touches[0];
-      const deltaX = touch.pageX - draggedItemInitialPosition.x;
-      const deltaY = touch.pageY - draggedItemInitialPosition.y;
+      offsetX = touch.pageX - draggedItemInitialPosition.x;
+      offsetY = touch.pageY - draggedItemInitialPosition.y;
 
-      // Move the item around based on the touch/mouse position
-      draggedItem.style.position = 'absolute';
-      draggedItem.style.left = `${touch.pageX - draggedItem.offsetWidth / 2}px`; // Center the dragged item on touch
-      draggedItem.style.top = `${touch.pageY - draggedItem.offsetHeight / 2}px`; // Center the dragged item on touch
+      // Update the position of the dragged item
+      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
     });
 
     item.addEventListener('touchend', (e) => {
