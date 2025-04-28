@@ -279,17 +279,40 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <div id="gameScreen" class="hidden">
     <h2 id="roundPrompt">Order by:</h2>
-    
     <p id="gameStatus"></p>
-    
-
     <ul id="itemList"></ul>
     <p id="strikeCount">Strikes: 0/3</p>
     <button onclick="submitOrder()">Submit</button>
   </div>
-
+  
   <div id="endScreen" class="hidden">
     <p>Thanks for playing. Come back tomorrow for a new challenge.</p>
     <p id="finalScore"></p> <!-- their score will appear here -->
@@ -298,17 +321,17 @@
   </div>
   
   <p id="currentDate"></p>
-
+  
   <script>
     let currentRound = 0;
     let rounds = [];
     let strikes = 0;
     const maxStrikes = 3;
-
+  
     function startGame() {
       document.getElementById('welcomeScreen').classList.add('hidden');
       document.getElementById('gameScreen').classList.remove('hidden');
-
+  
       fetch("rounds.json")
         .then(res => res.json())
         .then(data => {
@@ -316,213 +339,150 @@
           loadRound();
         });
     }
-
+  
     function displayCurrentDate() {
       const now = new Date();
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
       const formattedDate = now.toLocaleDateString(undefined, options);
       document.getElementById('currentDate').textContent = `${formattedDate}`;
     }
-
-    displayCurrentDate();
-
-    function loadRound() {
-  if (currentRound >= rounds.length) {
-    endGame();
-    return;
-  }
-
-  const { prompt, items } = rounds[currentRound];
-  document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
-
-  const itemList = document.getElementById('itemList');
-
-  // Only create the list once (on the first round)
-  if (currentRound === 0) {
-    items.forEach(item => {
-      const li = document.createElement('li');
-      li.textContent = item;
-      li.setAttribute('draggable', true);
-      li.classList.add('draggable-item');
-      itemList.appendChild(li);
-    });
-  }
-
-  updateStrikes();
-  makeItemsDraggable();
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-function makeItemsDraggable() {
-  const items = document.querySelectorAll('.draggable-item');
-  let draggedItem = null;
-  let currentItem = null;
-  let initialIndex = -1;
   
-  // Desktop (Mouse) Events
-  items.forEach(item => {
-    item.addEventListener('dragstart', (e) => {
-      draggedItem = item;
-      initialIndex = Array.from(item.parentNode.children).indexOf(item);
-      
-      // Gray out the original position
-      draggedItem.classList.add('dragging');
-      
-      // Visual feedback when dragging (opacity change)
-      setTimeout(() => {
-        draggedItem.style.opacity = '0.5';
-      }, 0);
-    });
-
-    item.addEventListener('dragover', (e) => {
-      e.preventDefault();  // Allow drop
-    });
-
-    item.addEventListener('dragleave', () => {
-      item.classList.remove('drag-over');  // No changes in layout
-    });
-
-    item.addEventListener('drop', () => {
-      item.classList.remove('drag-over');
-      if (draggedItem !== item) {
-        const list = item.parentNode;
-        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-        const droppedIndex = Array.from(list.children).indexOf(item);
-
-        // Reorder only when drop happens
-        if (draggedIndex < droppedIndex) {
-          list.insertBefore(draggedItem, item.nextSibling);
-        } else {
-          list.insertBefore(draggedItem, item);
-        }
+    displayCurrentDate();
+  
+    function loadRound() {
+      if (currentRound >= rounds.length) {
+        endGame();
+        return;
       }
-
-      // Reset opacity and class after drop
-      draggedItem.style.opacity = '';
-      draggedItem.classList.remove('dragging');
-      draggedItem = null;
-    });
-
-    item.addEventListener('dragend', () => {
-      // Reset opacity and class after drag ends
-      draggedItem.style.opacity = '';
-      draggedItem.classList.remove('dragging');
-      draggedItem = null;
-    });
-  });
-
-  // Mobile (Touch) Events
-  items.forEach(item => {
-    item.addEventListener('touchstart', (e) => {
-      e.preventDefault();  // Prevent default touch behavior
-      draggedItem = item;
-      currentItem = item;
-      initialIndex = Array.from(item.parentNode.children).indexOf(item);
-      
-      // Gray out the original position (same as desktop behavior)
-      draggedItem.classList.add('dragging');
-      
-      // Visual feedback when dragging (opacity change)
-      setTimeout(() => {
-        draggedItem.style.opacity = '0.5';
-      }, 0);
-    });
-
-    item.addEventListener('touchmove', (e) => {
-      e.preventDefault();  // Prevent default touch behavior
-
-      // Move the dragged item independently without shifting others
-      const touch = e.touches[0];
-      const deltaX = touch.pageX - currentItem.offsetLeft;
-      const deltaY = touch.pageY - currentItem.offsetTop;
-
-      // Move the dragged item freely with touch
-      draggedItem.style.position = 'absolute';
-      draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
-    });
-
-    item.addEventListener('touchend', (e) => {
-      draggedItem.style.transform = '';  // Reset position after release
-      draggedItem.style.position = '';  // Reset positioning
-      draggedItem.style.opacity = '';  // Reset opacity
-
-      // After touchend, check where to place the item
-      const allItems = Array.from(document.querySelectorAll('.draggable-item'));
-      allItems.forEach((otherItem) => {
-        if (otherItem === draggedItem) return;
-
-        const rect = otherItem.getBoundingClientRect();
-        if (e.changedTouches[0].pageY > rect.top && e.changedTouches[0].pageY < rect.bottom) {
-          const list = draggedItem.parentNode;
-          const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-          const droppedIndex = Array.from(list.children).indexOf(otherItem);
-
-          // Reorder only after dropping the dragged item
-          if (draggedIndex < droppedIndex) {
-            list.insertBefore(draggedItem, otherItem.nextSibling);
-          } else {
-            list.insertBefore(draggedItem, otherItem);
+  
+      const { prompt, items } = rounds[currentRound];
+      document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
+  
+      const itemList = document.getElementById('itemList');
+  
+      if (currentRound === 0) {
+        items.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item;
+          li.setAttribute('draggable', true);
+          li.classList.add('draggable-item');
+          itemList.appendChild(li);
+        });
+      }
+  
+      updateStrikes();
+      makeItemsDraggable();
+    }
+  
+    function makeItemsDraggable() {
+      const items = document.querySelectorAll('.draggable-item');
+      let draggedItem = null;
+      let initialIndex = -1;
+  
+      // Desktop (Mouse) Events
+      items.forEach(item => {
+        item.addEventListener('dragstart', (e) => {
+          draggedItem = item;
+          initialIndex = Array.from(item.parentNode.children).indexOf(item);
+          draggedItem.classList.add('dragging');
+          setTimeout(() => {
+            draggedItem.style.opacity = '0.5';
+          }, 0);
+        });
+  
+        item.addEventListener('dragover', (e) => {
+          e.preventDefault();
+        });
+  
+        item.addEventListener('drop', () => {
+          if (draggedItem !== item) {
+            const list = item.parentNode;
+            const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+            const droppedIndex = Array.from(list.children).indexOf(item);
+  
+            if (draggedIndex < droppedIndex) {
+              list.insertBefore(draggedItem, item.nextSibling);
+            } else {
+              list.insertBefore(draggedItem, item);
+            }
           }
-        }
+  
+          draggedItem.style.opacity = '';
+          draggedItem.classList.remove('dragging');
+          draggedItem = null;
+        });
+  
+        item.addEventListener('dragend', () => {
+          draggedItem.style.opacity = '';
+          draggedItem.classList.remove('dragging');
+          draggedItem = null;
+        });
       });
-
-      // Reset the dragged item state
-      draggedItem.classList.remove('dragging');
-      draggedItem = null;
-    });
-
-    item.addEventListener('touchcancel', () => {
-      draggedItem.style.transform = '';  // Reset position if canceled
-      draggedItem.style.position = '';  // Reset positioning if canceled
-      draggedItem.style.opacity = '';  // Reset opacity if canceled
-      draggedItem.classList.remove('dragging');  // Remove dragging class
-      draggedItem = null;
-    });
-  });
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+      // Mobile (Touch) Events
+      items.forEach(item => {
+        item.addEventListener('touchstart', (e) => {
+          e.preventDefault();
+          draggedItem = item;
+          initialIndex = Array.from(item.parentNode.children).indexOf(item);
+          draggedItem.classList.add('dragging');
+          setTimeout(() => {
+            draggedItem.style.opacity = '0.5';
+          }, 0);
+        });
+  
+        item.addEventListener('touchmove', (e) => {
+          e.preventDefault();
+          const touch = e.touches[0];
+          const deltaX = touch.pageX - draggedItem.offsetLeft;
+          const deltaY = touch.pageY - draggedItem.offsetTop;
+  
+          draggedItem.style.position = 'absolute';
+          draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
+        });
+  
+        item.addEventListener('touchend', (e) => {
+          draggedItem.style.transform = '';
+          draggedItem.style.position = '';
+          draggedItem.style.opacity = '';
+  
+          const allItems = Array.from(document.querySelectorAll('.draggable-item'));
+          allItems.forEach((otherItem) => {
+            if (otherItem === draggedItem) return;
+  
+            const rect = otherItem.getBoundingClientRect();
+            if (e.changedTouches[0].pageY > rect.top && e.changedTouches[0].pageY < rect.bottom) {
+              const list = draggedItem.parentNode;
+              const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+              const droppedIndex = Array.from(list.children).indexOf(otherItem);
+  
+              if (draggedIndex < droppedIndex) {
+                list.insertBefore(draggedItem, otherItem.nextSibling);
+              } else {
+                list.insertBefore(draggedItem, otherItem);
+              }
+            }
+          });
+  
+          draggedItem.classList.remove('dragging');
+          draggedItem = null;
+        });
+  
+        item.addEventListener('touchcancel', () => {
+          draggedItem.style.transform = '';
+          draggedItem.style.position = '';
+          draggedItem.style.opacity = '';
+          draggedItem.classList.remove('dragging');
+          draggedItem = null;
+        });
+      });
+    }
+  
     function submitOrder() {
       const itemList = document.getElementById('itemList');
       const submittedOrder = Array.from(itemList.children).map(li => li.textContent);
       const correctOrder = rounds[currentRound].correctOrder;
-
+  
       if (JSON.stringify(submittedOrder) === JSON.stringify(correctOrder)) {
         currentRound++;
         if (currentRound < rounds.length) {
@@ -533,40 +493,36 @@ function makeItemsDraggable() {
       } else {
         strikes++;
         document.getElementById('strikeCount').textContent = `Strikes: ${strikes}/${maxStrikes}`;
-
+  
         if (strikes >= maxStrikes) {
           document.getElementById('gameStatus').textContent = "Game Over";
-
-          // ✅ Clear the current list
+  
+          const itemList = document.getElementById('itemList');
           itemList.innerHTML = '';
-
-          // ✅ Show a label
+  
           const label = document.createElement('p');
           label.textContent = 'Correct Order:';
           label.style.fontWeight = 'bold';
           label.style.position = 'relative';
-          label.style.top = '150px'; // or however many pixels you want
-          label.style.marginBottom = '0px'; // to avoid extra spacing
-
+          label.style.top = '150px';
+          label.style.marginBottom = '0px';
+  
           label.style.fontSize = '1.2rem';
           itemList.parentNode.insertBefore(label, itemList);
-
-          // ✅ Populate correct order
+  
           correctOrder.forEach(item => {
             const li = document.createElement('li');
             li.textContent = item;
             li.classList.add('draggable-item');
-            li.style.backgroundColor = '#555555'; // Light green for visibility
+            li.style.backgroundColor = '#555555';
             li.style.fontWeight = 'bold';
             li.style.cursor = 'default';
-            li.setAttribute('draggable', false); // prevent dragging
+            li.setAttribute('draggable', false);
             itemList.appendChild(li);
           });
-
-          // ✅ Disable the submit button
+  
           document.querySelector("button[onclick='submitOrder()']").disabled = true;
-
-          // ✅ Transition to end screen after 5 seconds
+  
           setTimeout(() => {
             label.remove();
             endGame();
@@ -574,7 +530,7 @@ function makeItemsDraggable() {
         }
       }
     }
-
+  
     function updateStrikes() {
       document.getElementById('strikeCount').textContent = `Strikes: ${strikes}/${maxStrikes}`;
     }
