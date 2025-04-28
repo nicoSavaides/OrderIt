@@ -147,6 +147,8 @@
 
 
 
+
+
     @media (max-width: 480px) {
       /* Further adjustments for smaller screens (smartphones) */
       h1 {
@@ -173,41 +175,17 @@
       }
 
 
-      #currentDate {
-      font-size: 0.8rem !important;
-      position: relative; /* Now moves with the rest of the content */
-      margin-top: 50px !important;
-      padding: 10px;
+
+    .correct-order-label {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-bottom: 0px;
+      z-index: 10;
+      margin-top: 100px; /* Use margin to position it vertically */
     }
 
-    #itemList {
-  position: relative;  /* Make sure the parent container is positioned */
-}
 
 
-
-.correct-order-label {
-  font-weight: bold;
-  font-size: 1.2rem;
-  margin-bottom: 0px;
-  z-index: 10;
-  margin-top: 100px; /* Use margin to position it vertically */
-}
-
-/* CORRECT ORDER */
-@media (max-width: 768px) {
-  .correct-order-label {
-    font-size: 1.5rem;
-    margin-top: 10px; /* Adjust for mobile */
-  }
-}
-
-
-
-
-     
-
-     
 
       .draggable-item {
         font-size: 1.5rem; /* Larger draggable items */
@@ -235,6 +213,7 @@
       }
     }
 
+
     /* GIF */
     .mobile-logo {
       width: 200px; /* Default size */
@@ -242,30 +221,33 @@
       margin-left: 11px;
       
 
+
+    /*  */ 
+    #finalScore {
+      margin-top: -400px;
     }
 
+    /*  */ 
+    #thanksMessage {
+      margin-top: -400px;
+    }
 
+    /*  */ 
+    #shareLink, #shareButton {
+      margin-top: -30px;
+    }
 
-
+    /*  */ 
+    #currentDate {
+      margin-top: 5px;
+    }
     
-    
-@media (max-width: 480px) {
-  #finalScore {
-    margin-top: -400px;
-  }
-
-  #thanksMessage {
-    margin-top: -400px;
-  }
-
-  #shareLink, #shareButton {
-    margin-top: -30px;
-  }
-
-  #currentDate {
-    margin-top: 5px;
-  }
 }
+
+
+
+
+
 
 
 
