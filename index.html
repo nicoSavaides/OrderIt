@@ -215,25 +215,33 @@
       padding: 10px;
     }
 
+    #itemList {
+  position: relative;  /* Make sure the parent container is positioned */
+}
 
-    
-/* Default styling for the correct order label */
-.correct-order-label {
-  position: relative;
-  top: 150px; /* Original position */
+
+
+    .correct-order-label {
+  position: absolute !important;
+  top: 250px !important;  /* Increased top to ensure it's further down */
+  left: 0;
   font-weight: bold;
   font-size: 1.2rem;
   margin-bottom: 0px;
+  z-index: 10;
 }
 
-/* Mobile-specific styling */
-@media (max-width: 768px) {
-  .correct-order-label {
-    position: relative !important;  /* Ensure position is relative */
-    top: 10px !important; /* Move the label up on mobile */
-    font-size: 1.5rem !important; /* Optional: adjust font size for mobile */
+
+  /* Mobile-specific styling */
+  @media (max-width: 768px) {
+    .correct-order-label {
+      position: absolute !important;  /* Use absolute position for mobile too */
+      top: 10px !important;  /* Move the label up on mobile */
+      font-size: 1.5rem !important;
+    }
   }
-}
+
+
 
      
 
