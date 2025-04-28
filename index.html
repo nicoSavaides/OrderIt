@@ -360,8 +360,13 @@ function makeItemsDraggable() {
     item.addEventListener('dragstart', (e) => {
       draggedItem = item;
       initialIndex = Array.from(item.parentNode.children).indexOf(item);
+      
+      // Gray out the original position
+      draggedItem.classList.add('dragging');
+      
+      // Visual feedback when dragging (opacity change)
       setTimeout(() => {
-        draggedItem.style.opacity = '0.5';  // Visual feedback when dragging
+        draggedItem.style.opacity = '0.5';
       }, 0);
     });
 
@@ -387,12 +392,17 @@ function makeItemsDraggable() {
           list.insertBefore(draggedItem, item);
         }
       }
-      draggedItem.style.opacity = '';  // Reset opacity after drop
+
+      // Reset opacity and class after drop
+      draggedItem.style.opacity = '';
+      draggedItem.classList.remove('dragging');
       draggedItem = null;
     });
 
     item.addEventListener('dragend', () => {
-      draggedItem.style.opacity = '';  // Reset opacity after drag ends
+      // Reset opacity and class after drag ends
+      draggedItem.style.opacity = '';
+      draggedItem.classList.remove('dragging');
       draggedItem = null;
     });
   });
@@ -404,15 +414,20 @@ function makeItemsDraggable() {
       draggedItem = item;
       currentItem = item;
       initialIndex = Array.from(item.parentNode.children).indexOf(item);
+      
+      // Gray out the original position (same as desktop behavior)
+      draggedItem.classList.add('dragging');
+      
+      // Visual feedback when dragging (opacity change)
       setTimeout(() => {
-        draggedItem.style.opacity = '0.5';  // Visual feedback when dragging
+        draggedItem.style.opacity = '0.5';
       }, 0);
     });
 
     item.addEventListener('touchmove', (e) => {
       e.preventDefault();  // Prevent default touch behavior
 
-      // Don't move the other items while dragging
+      // Move the dragged item independently without shifting others
       const touch = e.touches[0];
       const deltaX = touch.pageX - currentItem.offsetLeft;
       const deltaY = touch.pageY - currentItem.offsetTop;
@@ -422,7 +437,7 @@ function makeItemsDraggable() {
       draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
     });
 
-    item.addEventListener('touchend', () => {
+    item.addEventListener('touchend', (e) => {
       draggedItem.style.transform = '';  // Reset position after release
       draggedItem.style.position = '';  // Reset positioning
       draggedItem.style.opacity = '';  // Reset opacity
@@ -447,6 +462,8 @@ function makeItemsDraggable() {
         }
       });
 
+      // Reset the dragged item state
+      draggedItem.classList.remove('dragging');
       draggedItem = null;
     });
 
@@ -454,6 +471,7 @@ function makeItemsDraggable() {
       draggedItem.style.transform = '';  // Reset position if canceled
       draggedItem.style.position = '';  // Reset positioning if canceled
       draggedItem.style.opacity = '';  // Reset opacity if canceled
+      draggedItem.classList.remove('dragging');  // Remove dragging class
       draggedItem = null;
     });
   });
