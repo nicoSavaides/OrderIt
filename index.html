@@ -252,9 +252,26 @@
     }
     
 
+    
+    
 
+    /* Default styling for the correct order label */
+.correct-order-label {
+  position: relative;
+  top: 150px; /* Original position */
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+}
 
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+  .correct-order-label {
+    top: 50px; /* Move the label up on mobile */
+  }
+}
 
+    
 
 
 
@@ -604,7 +621,7 @@ function endGame() {
   document.getElementById('endScreen').classList.remove('hidden');
 
   // Show their final score
-  document.getElementById('finalScore').textContent = `You scored ${score} out of 3!`;
+  document.getElementById('finalScore').textContent = `You scored ${score} out of 3`;
 
   // Set up the share button
   const shareButton = document.getElementById('shareButton');
