@@ -210,7 +210,7 @@
       #currentDate {
       font-size: 0.8rem !important;
       position: relative; /* Now moves with the rest of the content */
-      padding-top: 50px !important;
+      padding-top: px !important;
       padding: 10px;
     }
      
@@ -349,41 +349,82 @@
   makeItemsDraggable();
 }
 
+function makeItemsDraggable() {
+  const items = document.querySelectorAll('.draggable-item');
+  let draggedItem = null;
+  let startTouch = null;
 
-    function makeItemsDraggable() {
-      const items = document.querySelectorAll('.draggable-item');
-      let draggedItem = null;
+  // Desktop (Mouse) Events
+  items.forEach(item => {
+    // Mouse drag start
+    item.addEventListener('dragstart', (e) => {
+      draggedItem = item;
+    });
 
-      items.forEach(item => {
-        item.addEventListener('dragstart', (e) => {
-          draggedItem = item;
-        });
+    // Mouse drag over
+    item.addEventListener('dragover', (e) => {
+      e.preventDefault();
+      item.classList.add('drag-over');
+    });
 
-        item.addEventListener('dragover', (e) => {
-          e.preventDefault();
-          item.classList.add('drag-over');
-        });
+    // Mouse drag leave
+    item.addEventListener('dragleave', () => {
+      item.classList.remove('drag-over');
+    });
 
-        item.addEventListener('dragleave', () => {
-          item.classList.remove('drag-over');
-        });
+    // Mouse drop
+    item.addEventListener('drop', () => {
+      item.classList.remove('drag-over');
+      if (draggedItem !== item) {
+        const list = item.parentNode;
+        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+        const droppedIndex = Array.from(list.children).indexOf(item);
 
-        item.addEventListener('drop', () => {
-          item.classList.remove('drag-over');
-          if (draggedItem !== item) {
-            const list = item.parentNode;
-            const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-            const droppedIndex = Array.from(list.children).indexOf(item);
+        if (draggedIndex < droppedIndex) {
+          list.insertBefore(draggedItem, item.nextSibling);
+        } else {
+          list.insertBefore(draggedItem, item);
+        }
+      }
+    });
 
-            if (draggedIndex < droppedIndex) {
-              list.insertBefore(draggedItem, item.nextSibling);
-            } else {
-              list.insertBefore(draggedItem, item);
-            }
-          }
-        });
-      });
-    }
+    // Mobile (Touch) Events
+    item.addEventListener('touchstart', (e) => {
+      e.preventDefault();  // Prevent default touch behavior
+      startTouch = e.touches[0];
+      draggedItem = item;
+      item.classList.add('dragging');
+    });
+
+    item.addEventListener('touchmove', (e) => {
+      if (!draggedItem || !startTouch) return;
+      e.preventDefault();  // Prevent default touch behavior
+
+      const touch = e.touches[0];
+      const deltaX = touch.pageX - startTouch.pageX;
+      const deltaY = touch.pageY - startTouch.pageY;
+      draggedItem.style.transform = `translate(${deltaX}px, ${deltaY}px)`;  // Move the dragged item
+    });
+
+    item.addEventListener('touchend', () => {
+      if (!draggedItem) return;
+      item.classList.remove('dragging');
+      draggedItem.style.transform = '';  // Reset position
+      draggedItem = null;
+      startTouch = null;
+    });
+
+    item.addEventListener('touchcancel', () => {
+      if (!draggedItem) return;
+      item.classList.remove('dragging');
+      draggedItem.style.transform = '';  // Reset position
+      draggedItem = null;
+      startTouch = null;
+    });
+  });
+}
+
+
 
     function submitOrder() {
       const itemList = document.getElementById('itemList');
