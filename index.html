@@ -206,10 +206,19 @@
       }
 
 
+      
+    .correct-order-tile {
+    transform: translateY(-10px); /* Move up by 10px */
+    transition: transform 0.3s ease; /* Smooth animation */
+    }
+
+
+
+
       /* LIST */
       #itemList {
         width: 100%;
-        margin-top: -40px;
+        margin-top: 10px;
       }
 
       #finalScore {
@@ -549,6 +558,7 @@ function submitOrder() {
         const li = document.createElement('li');
         li.textContent = item;
         li.classList.add('draggable-item');
+        li.classList.add('correct-order-tile'); // <-- ADD THIS LINE
         li.style.backgroundColor = '#555555';
         li.style.fontWeight = 'bold';
         li.style.cursor = 'default';
