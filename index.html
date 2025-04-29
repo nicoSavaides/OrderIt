@@ -224,11 +224,11 @@
       }
 
       #thanksMessage {
-      position: absolute;
-      top: 50px; /* or whatever number you want */
-      left: 50%;
-      transform: translateX(-50%);
+      position: relative;
+      top: 50px;
+      text-align: center;
     }
+
 
 
       #shareLink,
@@ -325,7 +325,7 @@
   
   <div id="endScreen" class="hidden">
     <p id="finalScore"></p> <!-- their score will appear here -->
-    <p>Thanks for playing. Come back tomorrow for a new Order It!</p>
+    <p id="thanksMessage">Thanks for playing. Come back tomorrow for a new Order It!</p>
     <button id="shareButton">Share your score</button> <!-- share button -->
     <p id="shareLink" style="word-break: break-all;"></p> <!-- link will show up here -->
   </div>
