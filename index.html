@@ -197,6 +197,8 @@
 
       #submitWrapper button {
       margin-top: 0; /* Remove the big margin that button normally has */
+      z-index: 10; /* Ensure button is on top of other elements */
+      
       }
 
           .correct-order-label {
@@ -212,7 +214,7 @@
 
       
       .correct-order-tile {
-      transform: translateY(-100px); /* Move up by 10px */
+      transform: translateY(50px); /* Move up by 10px */
       transition: transform 0.3s ease; /* Smooth animation */
       }
 
