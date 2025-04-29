@@ -198,7 +198,7 @@
 
       #submitWrapper button {
       margin-top: 0; /* Remove the big margin that button normally has */
-      z-index: 10; /* Ensure button is on top of other elements */
+      z-index: 100 !important; /* Ensure button is on top of other elements */
       
       }
 
@@ -438,6 +438,14 @@
   
       updateStrikes();
       makeItemsDraggable();
+
+      document.getElementById("submitWrapper").querySelector("button").addEventListener('click', submitOrder);
+document.getElementById("submitWrapper").querySelector("button").addEventListener('touchstart', function(e) {
+    e.preventDefault();  // Prevent default touch behavior
+    submitOrder();
+});
+
+
     }
 
 
