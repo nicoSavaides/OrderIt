@@ -593,7 +593,26 @@
         "items": ["Leaning Tower", "Taj Mahal", "Colosseum", "Sydney Opera House"],
         "correctOrder": ["Colosseum", "Sydney Opera House", "Taj Mahal", "Leaning Tower"]
       }
+    ], 
+
+    [
+      {
+        "prompt": "Artist Name (Alphabetical)",
+        "items": ["Bohemian Rhapsody", "Don't Stop Believin", "Yesterday", "Sweet Caroline"],
+        "correctOrder": ["Yesterday", "Don't Stop Believin", "Sweet Caroline", "Bohemian Rhapsody"]
+      },
+      {
+        "prompt": "Release Year",
+        "items": ["Bohemian Rhapsody", "Don't Stop Believin", "Yesterday", "Sweet Caroline"],
+        "correctOrder": ["Yesterday", "Sweet Caroline", "Bohemian Rhapsody", "Don't Stop Believin"]
+      },
+      {
+        "prompt": "Song Length",
+        "items": ["Bohemian Rhapsody", "Don't Stop Believin", "Yesterday", "Sweet Caroline"],
+        "correctOrder": ["Yesterday", "Sweet Caroline", "Don't Stop Believin", "Bohemian Rhapsody"]
+      }
     ]
+    
     
     
     
