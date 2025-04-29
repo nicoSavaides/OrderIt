@@ -557,7 +557,45 @@
         "items": ["Athens", "Atlanta", "London", "Mumbai"],
         "correctOrder": ["Atlanta", "London", "Athens", "Mumbai"]
       }
+    ],
+
+    [
+      {
+        "prompt": "Release Year",
+        "items": ["Jurassic Park", "Inception", "Titanic", "Napoleon Dynamite"],
+        "correctOrder": ["Jurassic Park", "Titanic", "Napoleon Dynamite", "Inception"]
+      },
+      {
+        "prompt": "Box Office Gross",
+        "items": ["Jurassic Park", "Inception", "Titanic", "Napoleon Dynamite"],
+        "correctOrder": ["Napoleon Dynamite", "Inception", "Jurassic Park", "Titanic"]
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["Jurassic Park", "Inception", "Titanic", "Napoleon Dynamite"],
+        "correctOrder": ["Napoleon Dynamite", "Jurassic Park", "Inception", "Titanic"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Leaning Tower", "Taj Mahal", "Colosseum", "Sydney Opera House"],
+        "correctOrder": ["Colosseum", "Leaning Tower", "Sydney Opera House", "Taj Mahal"]
+      },
+      {
+        "prompt": "Year Built",
+        "items": ["Leaning Tower", "Taj Mahal", "Colosseum", "Sydney Opera House"],
+        "correctOrder": ["Colosseum", "Leaning Tower", "Taj Mahal", "Sydney Opera House"]
+      },
+      {
+        "prompt": "Construction in Years",
+        "items": ["Leaning Tower", "Taj Mahal", "Colosseum", "Sydney Opera House"],
+        "correctOrder": ["Colosseum", "Sydney Opera House", "Taj Mahal", "Leaning Tower"]
+      }
     ]
+    
+    
     
     
     
