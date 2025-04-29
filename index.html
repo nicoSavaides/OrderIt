@@ -524,6 +524,9 @@
 
 
 
+
+
+
   
 function submitOrder() {
   const itemList = document.getElementById('itemList');
@@ -541,8 +544,8 @@ function submitOrder() {
     strikes++;
     document.getElementById('strikeCount').textContent = `Strikes: ${strikes}/${maxStrikes}`;
 
-    if (strikes >= maxStrikes) {
-      document.getElementById('gameStatus').textContent = "Game Over";
+   if (strikes >= maxStrikes) {
+      //document.getElementById('gameStatus').textContent = "Game Over";
 
       const itemList = document.getElementById('itemList');
       itemList.innerHTML = '';
