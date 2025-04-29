@@ -262,8 +262,8 @@
       }
 
       .hidden {
-      display: none !important;
-    }
+    display: none !important;
+  }
 
 
  
@@ -355,7 +355,6 @@
 
     <div id="submitWrapper">
       <button onclick="submitOrder()">Submit</button>
-      <button id="submitButton" onclick="submitOrder()">Submit</button>
     </div>
 
    
@@ -613,7 +612,7 @@ function submitOrder() {
       });
 
       document.querySelector("button[onclick='submitOrder()']").disabled = true;
-      document.getElementById('submitButton').classList.add('hidden'); // Hide submit button
+      document.querySelector("button[onclick='submitOrder()']").style.display = 'none';
 
       setTimeout(() => {
         label.remove();
