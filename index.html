@@ -620,13 +620,19 @@ function submitOrder() {
   document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
   document.getElementById('endScreen').classList.remove('hidden'); // Show the end screen
 
-  // Check if all rounds were completed without exceeding strikes
-  if (roundsCompleted === rounds.length) {
-  document.getElementById('endGameStatus').textContent = "Good job!"; // Change this to endGameStatus
-} else {
-  document.getElementById('endGameStatus').textContent = "Nice!"; // Change this to endGameStatus
-}
+  let message = "";  // Default message
 
+  // Set message based on the rounds completed
+  if (roundsCompleted === 3) {
+    message = "Amazing!";
+  } else if (roundsCompleted === 2) {
+    message = "Great job!";
+  } else if (roundsCompleted === 1) {
+    message = "Not bad!";
+  } 
+
+  // Update the end game status message
+  document.getElementById('endGameStatus').textContent = message;
 
   // Show the player's final score
   document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
@@ -637,6 +643,7 @@ function submitOrder() {
     generateShareLink();
   };
 }
+
 
 
 
