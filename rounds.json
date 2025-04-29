@@ -485,7 +485,26 @@
         "items": ["Illinois", "California", "Wyoming", "Hawaii"],
         "correctOrder": ["Illinois", "California", "Wyoming", "Hawaii"]
       }
+    ], 
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Mount Rushmore", "Pyramids of Giza", "Burj Khalifa", "Big Ben"],
+        "correctOrder": ["Mount Rushmore", "Big Ben", "Pyramids of Giza", "Burj Khalifa"]
+      },
+      {
+        "prompt": "Year built",
+        "items": ["Mount Rushmore", "Pyramids of Giza", "Burj Khalifa", "Big Ben"],
+        "correctOrder": ["Pyramids of Giza", "Big Ben", "Mount Rushmore", "Burj Khalifa"]
+      },
+      {
+        "prompt": "Construction in years",
+        "items": ["Mount Rushmore", "Pyramids of Giza", "Burj Khalifa", "Big Ben"],
+        "correctOrder": ["Burj Khalifa", "Mount Rushmore", "Big Ben", "Pyramids of Giza"]
+      }
     ]
+    
     
     
     
