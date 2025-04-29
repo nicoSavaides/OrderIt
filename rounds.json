@@ -503,7 +503,26 @@
         "items": ["Mount Rushmore", "Pyramids of Giza", "Burj Khalifa", "Big Ben"],
         "correctOrder": ["Burj Khalifa", "Mount Rushmore", "Big Ben", "Pyramids of Giza"]
       }
+    ], 
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Johnny Depp", "Leonardo DiCaprio", "Kim Kardashian", "Dwayne Johnson"],
+        "correctOrder": ["Kim Kardashian", "Leonardo DiCaprio", "Dwayne Johnson", "Johnny Depp"]
+      },
+      {
+        "prompt": "Height",
+        "items": ["Johnny Depp", "Leonardo DiCaprio", "Kim Kardashian", "Dwayne Johnson"],
+        "correctOrder": ["Kim Kardashian", "Johnny Depp", "Leonardo DiCaprio", "Dwayne Johnson"]
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Johnny Depp", "Leonardo DiCaprio", "Kim Kardashian", "Dwayne Johnson"],
+        "correctOrder": ["Johnny Depp", "Leonardo DiCaprio", "Dwayne Johnson", "Kim Kardashian"]
+      }
     ]
+    
     
     
     
