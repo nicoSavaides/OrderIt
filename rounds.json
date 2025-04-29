@@ -611,7 +611,28 @@
         "items": ["Bohemian Rhapsody", "Don't Stop Believin", "Yesterday", "Sweet Caroline"],
         "correctOrder": ["Yesterday", "Sweet Caroline", "Don't Stop Believin", "Bohemian Rhapsody"]
       }
+    ], 
+
+    [
+      {
+        "prompt": "Year Released",
+        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
+        "correctOrder": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"]
+      },
+      {
+        "prompt": "Author Last Name",
+        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
+        "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"]
+      },
+      {
+        "prompt": "Page Count",
+        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
+        "correctOrder": ["Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath"]
+      }
     ]
+    
+
+
     
     
     
