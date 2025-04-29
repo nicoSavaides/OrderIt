@@ -453,21 +453,40 @@
 
     [
       {
-        "prompt": "Premier Year (smallest to largest)",
+        "prompt": "Premier Year",
         "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
         "correctOrder": ["Seinfeld", "Friends", "Mad Men", "Parks and Recreation"]
       },
       {
-        "prompt": "Number of Episodes (smallest to largest)",
+        "prompt": "Number of Episodes",
         "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
-        "correctOrder": ["Parks and Recreation", "Mad Men", "Friends", "Seinfeld"]
+        "correctOrder": ["Mad Men", "Parks and Recreation", "Seinfeld", "Friends"]
       },
       {
-        "prompt": "Emmys Won (smallest to largest)",
+        "prompt": "Emmys Won",
         "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
-        "correctOrder": ["Friends", "Parks and Recreation", "Seinfeld", "Mad Men"]
+        "correctOrder": ["Parks and Recreation", "Friends", "Seinfeld", "Mad Men"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Illinois", "California", "Wyoming", "Hawaii"],
+        "correctOrder": ["Wyoming", "Hawaii", "Illinois", "California"]
+      },
+      {
+        "prompt": "Area",
+        "items": ["Illinois", "California", "Wyoming", "Hawaii"],
+        "correctOrder": ["Hawaii", "Illinois", "Wyoming", "California"]
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["Illinois", "California", "Wyoming", "Hawaii"],
+        "correctOrder": ["Illinois", "California", "Wyoming", "Hawaii"]
       }
     ]
+    
     
     
     
