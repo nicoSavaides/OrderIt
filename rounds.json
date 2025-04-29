@@ -521,7 +521,45 @@
         "items": ["Johnny Depp", "Leonardo DiCaprio", "Kim Kardashian", "Dwayne Johnson"],
         "correctOrder": ["Johnny Depp", "Leonardo DiCaprio", "Dwayne Johnson", "Kim Kardashian"]
       }
+    ], 
+
+    [
+      {
+        "prompt": "Top speed",
+        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
+        "correctOrder": ["Sloth", "Mouse", "Pig", "Zebra"]
+      },
+      {
+        "prompt": "Weight",
+        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
+        "correctOrder": ["Mouse", "Sloth", "Pig", "Zebra"]
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
+        "correctOrder": ["Mouse", "Pig", "Zebra", "Sloth"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Number of Olympics Held",
+        "items": ["Athens", "Atlanta", "London", "Mumbai"],
+        "correctOrder": ["Mumbai", "Atlanta", "Athens", "London"]
+      },
+      {
+        "prompt": "Population",
+        "items": ["Athens", "Atlanta", "London", "Mumbai"],
+        "correctOrder": ["Atlanta", "Athens", "London", "Mumbai"]
+      },
+      {
+        "prompt": "Population Density",
+        "items": ["Athens", "Atlanta", "London", "Mumbai"],
+        "correctOrder": ["Atlanta", "London", "Athens", "Mumbai"]
+      }
     ]
+    
+    
     
     
     
