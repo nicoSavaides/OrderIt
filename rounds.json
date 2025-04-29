@@ -413,7 +413,26 @@
         "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
         "correctOrder": ["Rabbit", "Cheetah", "Panda", "Horse"]
       }
+    ],
+
+    [
+      {
+        "prompt": "Artist Name (Alphabetical)",
+        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
+        "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"]
+      },
+      {
+        "prompt": "Release Year",
+        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
+        "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"]
+      },
+      {
+        "prompt": "Song Length",
+        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
+        "correctOrder": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"]
+      }
     ]
+    
     
     
     
