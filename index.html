@@ -267,6 +267,17 @@
 
 
 
+#gameStatus {
+  display: block !important;
+}
+
+
+#gameStatus {
+  display: block !important;
+  background-color: #ffcc00; /* Just to make it visible */
+  color: #000;
+  font-size: 2rem;
+}
 
 
 
@@ -327,6 +338,7 @@
   </div>
   
   <div id="endScreen" class="hidden">
+    <p id="endGameStatus"></p>
     <p id="finalScore"></p> <!-- their score will appear here -->
     <p id="thanksMessage">Thanks for playing. Come back tomorrow for a new Order It!</p>
     <button id="shareButton">Share your score</button> <!-- share button -->
@@ -530,24 +542,22 @@
 
 let roundsCompleted = 0; // Track how many rounds the player has completed successfully.
 
-
 function submitOrder() {
   const itemList = document.getElementById('itemList');
   const submittedOrder = Array.from(itemList.children).map(li => li.textContent);
   const correctOrder = rounds[currentRound].correctOrder;
 
   if (JSON.stringify(submittedOrder) === JSON.stringify(correctOrder)) {
-    currentRound++;
     roundsCompleted++; // Increment rounds completed on correct order.
+    currentRound++;
     if (currentRound < rounds.length) {
       loadRound();
     } else {
-      // If all rounds are completed without strikes, show "Good job!" and move to the end screen
+      // If all rounds are completed without exceeding max strikes
       if (strikes < maxStrikes) {
-        document.getElementById('gameStatus').textContent = "Good job!"; // Display Good job!
-        setTimeout(endGame, 2000); // Wait for a moment, then end the game
+        setTimeout(endGame, 500); // Wait for a moment, then end the game
       } else {
-        document.getElementById('gameStatus').textContent = "Nice!"; // You can keep this message as fallback
+        document.getElementById('gameStatus').textContent = "Nice!"; // Fallback message if there are strikes
       }
     }
   } else {
@@ -587,6 +597,7 @@ function submitOrder() {
   }
 }
 
+
   
     function updateStrikes() {
       document.getElementById('strikeCount').textContent = `Strikes: ${strikes}/${maxStrikes}`;
@@ -604,18 +615,21 @@ function submitOrder() {
    
 
 
+    function endGame() {
+  console.log("End game triggered");  // Test if this is being reached
+  document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
+  document.getElementById('endScreen').classList.remove('hidden'); // Show the end screen
 
-function endGame() {
-  document.getElementById('gameScreen').classList.add('hidden');
-  document.getElementById('endScreen').classList.remove('hidden');
-
-  let score = roundsCompleted;  // The score is based on how many rounds they finished successfully
+  // Check if all rounds were completed without exceeding strikes
   if (roundsCompleted === rounds.length) {
-    score = 3;  // If they completed all rounds, they get a perfect score of 3/3.
-  }
+  document.getElementById('endGameStatus').textContent = "Good job!"; // Change this to endGameStatus
+} else {
+  document.getElementById('endGameStatus').textContent = "Nice!"; // Change this to endGameStatus
+}
 
-  // Show their final score
-  document.getElementById('finalScore').textContent = `You scored ${score} out of 3`;
+
+  // Show the player's final score
+  document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
 
   // Set up the share button
   const shareButton = document.getElementById('shareButton');
@@ -623,6 +637,9 @@ function endGame() {
     generateShareLink();
   };
 }
+
+
+
 
 
 
