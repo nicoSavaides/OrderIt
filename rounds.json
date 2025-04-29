@@ -431,7 +431,44 @@
         "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
         "correctOrder": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"]
       }
+    ], 
+
+    [
+      {
+        "prompt": "Area",
+        "items": ["Canada", "Germany", "India", "Jamaica"],
+        "correctOrder": ["Jamaica", "Germany", "India", "Canada"]
+      },
+      {
+        "prompt": "Population",
+        "items": ["Canada", "Germany", "India", "Jamaica"],
+        "correctOrder": ["Jamaica", "Canada", "Germany", "India"]
+      },
+      {
+        "prompt": "GDP",
+        "items": ["Canada", "Germany", "India", "Jamaica"],
+        "correctOrder": ["Jamaica", "Canada", "India", "Germany"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Premier Year (smallest to largest)",
+        "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
+        "correctOrder": ["Seinfeld", "Friends", "Mad Men", "Parks and Recreation"]
+      },
+      {
+        "prompt": "Number of Episodes (smallest to largest)",
+        "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
+        "correctOrder": ["Parks and Recreation", "Mad Men", "Friends", "Seinfeld"]
+      },
+      {
+        "prompt": "Emmys Won (smallest to largest)",
+        "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
+        "correctOrder": ["Friends", "Parks and Recreation", "Seinfeld", "Mad Men"]
+      }
     ]
+    
     
     
     
