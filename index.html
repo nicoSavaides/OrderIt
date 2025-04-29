@@ -528,11 +528,9 @@
 
 
 
+let roundsCompleted = 0; // Track how many rounds the player has completed successfully.
 
 
-
-
-  
 function submitOrder() {
   const itemList = document.getElementById('itemList');
   const submittedOrder = Array.from(itemList.children).map(li => li.textContent);
@@ -540,6 +538,7 @@ function submitOrder() {
 
   if (JSON.stringify(submittedOrder) === JSON.stringify(correctOrder)) {
     currentRound++;
+    roundsCompleted++; // Increment rounds completed on correct order.
     if (currentRound < rounds.length) {
       loadRound();
     } else {
@@ -602,10 +601,18 @@ function submitOrder() {
 
     
     let score = 0; // you should already be tracking this
+   
+
+
 
 function endGame() {
   document.getElementById('gameScreen').classList.add('hidden');
   document.getElementById('endScreen').classList.remove('hidden');
+
+  let score = roundsCompleted;  // The score is based on how many rounds they finished successfully
+  if (roundsCompleted === rounds.length) {
+    score = 3;  // If they completed all rounds, they get a perfect score of 3/3.
+  }
 
   // Show their final score
   document.getElementById('finalScore').textContent = `You scored ${score} out of 3`;
@@ -616,6 +623,10 @@ function endGame() {
     generateShareLink();
   };
 }
+
+
+
+
 
 function generateShareLink() {
   // Create a simple shareable link with score in the URL
