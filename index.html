@@ -261,6 +261,11 @@
 
       }
 
+      .hidden {
+      display: none !important;
+    }
+
+
  
   
 
@@ -607,6 +612,7 @@ function submitOrder() {
       });
 
       document.querySelector("button[onclick='submitOrder()']").disabled = true;
+      document.getElementById('submitButton').classList.add('hidden'); // Hide submit button
 
       setTimeout(() => {
         label.remove();
