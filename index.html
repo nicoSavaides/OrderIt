@@ -607,6 +607,8 @@ function submitOrder() {
       });
 
       document.querySelector("button[onclick='submitOrder()']").disabled = true;
+      document.getElementById("submitWrapper").style.display = "none";
+
 
       setTimeout(() => {
         label.remove();
