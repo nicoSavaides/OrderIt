@@ -691,12 +691,12 @@
 
     [
       {
-        "prompt": "Calories",
+        "prompt": "Weight",
         "items": ["Banana", "Potato", "Avocado", "Egg"],
         "correctOrder": ["Egg", "Banana", "Potato", "Avocado"]
       },
       {
-        "prompt": "Weight",
+        "prompt": "Calories",
         "items": ["Banana", "Potato", "Avocado", "Egg"],
         "correctOrder": ["Egg", "Banana", "Potato", "Avocado"]
       },
@@ -705,7 +705,122 @@
         "items": ["Banana", "Potato", "Avocado", "Egg"],
         "correctOrder": ["Banana", "Avocado", "Potato", "Egg"]
       }
+    ], 
+
+    [
+      {
+        "prompt": "Number of Doors",
+        "items": ["Boing 747", "Tank", "Helicopter", "Motorcycle"],
+        "correctOrder": ["Motorcycle", "Tank", "Helicopter", "Boing 747"]
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Boing 747", "Tank", "Helicopter", "Motorcycle"],
+        "correctOrder": ["Tank", "Motorcycle", "Helicopter", "Boing 747"]
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Boing 747", "Tank", "Helicopter", "Motorcycle"],
+        "correctOrder": ["Motorcycle", "Tank", "Helicopter", "Boing 747"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Number of Band Members",
+        "items": ["Earth Wind and Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
+        "correctOrder": ["Nirvana", "The Beatles", "Fleetwood Mac", "Earth Wind and Fire"]
+      },
+      {
+        "prompt": "Creation Date",
+        "items": ["Earth Wind and Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
+        "correctOrder": ["The Beatles", "Fleetwood Mac", "Earth Wind and Fire", "Nirvana"]
+      },
+      {
+        "prompt": "Number of Albums",
+        "items": ["Earth Wind and Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
+        "correctOrder": ["Nirvana", "The Beatles", "Fleetwood Mac", "Earth Wind and Fire"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Year Founded",
+        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
+        "correctOrder": ["Walgreens", "McDonald’s", "Walmart", "Costco"]
+      },
+      {
+        "prompt": "Number of Locations",
+        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
+        "correctOrder": ["Costco", "Walgreens", "Walmart", "McDonald’s"]
+      },
+      {
+        "prompt": "Valuation",
+        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
+        "correctOrder": ["Walgreens", "McDonald’s", "Costco", "Walmart"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Ball Weight",
+        "items": ["Baseball", "Tennis", "Football(US)", "Golf"],
+        "correctOrder": ["Golf", "Tennis", "Baseball", "Football(US)"]
+      },
+      {
+        "prompt": "Ball Speed",
+        "items": ["Baseball", "Tennis", "Football(US)", "Golf"],
+        "correctOrder": ["Football(US)", "Baseball", "Golf", "Tennis"]
+      },
+      {
+        "prompt": "Year Sport was Invented",
+        "items": ["Baseball", "Tennis", "Football(US)", "Golf"],
+        "correctOrder": ["Tennis", "Golf", "Baseball", "Football(US)"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Event Duration",
+        "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
+        "correctOrder": ["Super Bowl", "Masters Tournament", "Burning Man", "Olympics"]
+      },
+      {
+        "prompt": "Year Established",
+        "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
+        "correctOrder": ["Olympics", "Masters Tournament", "Super Bowl", "Burning Man"]
+      },
+      {
+        "prompt": "Number of Attendees",
+        "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
+        "correctOrder": ["Super Bowl", "Burning Man", "Masters Tournament", "Olympics"]
+      }
+      
+    ], 
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
+        "correctOrder": ["Cherry blossom", "Palm tree", "Oak tree", "Redwood tree"]
+      },
+      {
+        "prompt": "Trunk Width",
+        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
+        "correctOrder": ["Palm tree", "Cherry blossom", "Oak tree", "Redwood tree"]
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
+        "correctOrder": ["Cherry blossom", "Palm tree", "Oak tree", "Redwood tree"]
+      }
     ]
+    
+    
+    
+    
+    
+    
     
     
     
