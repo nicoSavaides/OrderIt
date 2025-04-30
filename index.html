@@ -349,7 +349,7 @@
     <p id="gameStatus"></p>
     <ul id="itemList"></ul>
 
-    <p id="strikeCount">Strikes: 0/3</p>
+
     
 
     <div id="submitWrapper">
@@ -384,16 +384,18 @@
 
     
     function startGame() {
+  // Hide the welcome screen
   document.getElementById('welcomeScreen').classList.add('hidden');
   
-  // Immediately show the game screen (but with opacity 0)
+  // Get the game screen and hide it initially
   const gameScreen = document.getElementById('gameScreen');
-  gameScreen.classList.remove('hidden'); // Make sure the game screen is no longer hidden
-  
-  // Use the fade-in transition
+  gameScreen.style.display = 'none';  // Hide the game screen completely
+
+  // Immediately make the game screen visible (but invisible) behind the scenes
   setTimeout(() => {
-    gameScreen.classList.add('visible'); // Apply fade-in after the game screen becomes visible
-    
+    gameScreen.style.display = 'block';  // Reveal the game screen after the timeout
+
+    // Fetch the rounds data and load content
     fetch("rounds.json")
       .then(res => res.json())
       .then(data => {
@@ -404,8 +406,10 @@
       .catch(error => {
         console.error("Error loading rounds data:", error);
       });
-  }, 200); // No delay, immediately make the game screen visible
+  }, 500); // Delay the reveal of the game screen for 300ms
 }
+
+
 
 
 
