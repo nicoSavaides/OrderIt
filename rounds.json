@@ -687,7 +687,26 @@
         "correctOrder": ["Top Gun", "Lord of the Rings", "Pirates of the Caribbean", "Fast & Furious"]
       }
      
+    ], 
+
+    [
+      {
+        "prompt": "Calories",
+        "items": ["Banana", "Potato", "Avocado", "Egg"],
+        "correctOrder": ["Egg", "Banana", "Potato", "Avocado"]
+      },
+      {
+        "prompt": "Weight",
+        "items": ["Banana", "Potato", "Avocado", "Egg"],
+        "correctOrder": ["Egg", "Banana", "Potato", "Avocado"]
+      },
+      {
+        "prompt": "Protein",
+        "items": ["Banana", "Potato", "Avocado", "Egg"],
+        "correctOrder": ["Banana", "Avocado", "Potato", "Egg"]
+      }
     ]
+    
     
     
     
