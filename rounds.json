@@ -194,7 +194,7 @@
         "correctOrder": ["Kangaroo", "Lion", "Giraffe", "Elephant"]
       },
       {
-        "prompt": "Average Lifespan",
+        "prompt": "Lifespan",
         "items": ["Lion", "Elephant", "Giraffe", "Kangaroo"],
         "correctOrder": ["Kangaroo", "Lion", "Giraffe", "Elephant"]
       }
@@ -261,12 +261,12 @@
         "correctOrder": ["Statue of Liberty", "Golden Gate Bridge", "Eiffel Tower", "Empire State Building"]
       },
       {
-        "prompt": "Year built",
+        "prompt": "Year Built",
         "items": ["Golden Gate Bridge", "Empire State Building", "Eiffel Tower", "Statue of Liberty"],
         "correctOrder": ["Statue of Liberty", "Eiffel Tower", "Empire State Building", "Golden Gate Bridge"]
       },
       {
-        "prompt": "Construction in years",
+        "prompt": "Construction in Years",
         "items": ["Golden Gate Bridge", "Empire State Building", "Eiffel Tower", "Statue of Liberty"],
         "correctOrder": ["Empire State Building", "Eiffel Tower", "Golden Gate Bridge", "Statue of Liberty"]
       }
@@ -302,7 +302,7 @@
         "correctOrder": ["Mercury", "Earth", "Neptune", "Saturn"]
       },
       {
-        "prompt": "Number of moons",
+        "prompt": "Number of Moons",
         "items": ["Earth", "Mercury", "Neptune", "Saturn"],
         "correctOrder": ["Mercury", "Earth", "Neptune", "Saturn"]
       }
@@ -315,7 +315,7 @@
         "correctOrder": ["Allen Iverson", "Michael Jordan", "Larry Bird", "Shaq"]
       },
       {
-        "prompt": "Teams played for",
+        "prompt": "Number of Teams Played For",
         "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
         "correctOrder": ["Larry Bird", "Michael Jordan", "Allen Iverson", "Shaq"]
       },
@@ -328,17 +328,17 @@
 
     [
       {
-        "prompt": "Age rating",
+        "prompt": "Age Rating",
         "items": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
         "correctOrder": ["Willy Wonka and the Chocolate Factory", "Back to the Future", "The Hunger Games", "The Silence of the Lambs"]
       },
       {
-        "prompt": "Year",
+        "prompt": "Year Released",
         "items": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
         "correctOrder": ["Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs", "The Hunger Games"]
       },
       {
-        "prompt": "Oscar nominations",
+        "prompt": "Oscar Nominations",
         "items": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
         "correctOrder": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"]
       }
@@ -636,7 +636,7 @@
 
     [
       {
-        "prompt": "Year Released",
+        "prompt": "Year Published",
         "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
         "correctOrder": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"]
       },
@@ -677,15 +677,16 @@
         "correctOrder": ["Top Gun", "Lord of the Rings", "Pirates of the Caribbean", "Fast & Furious"]
       },
       {
-        "prompt": "Total Gross",
-        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
-        "correctOrder": ["Top Gun", "Lord of the Rings", "Pirates of the Caribbean", "Fast & Furious"]
-      },
-      {
         "prompt": "Total Oscars Won",
         "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
         "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Top Gun", "Lord of the Rings"]
+      },
+      {
+        "prompt": "Total Gross",
+        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
+        "correctOrder": ["Top Gun", "Lord of the Rings", "Pirates of the Caribbean", "Fast & Furious"]
       }
+     
     ]
     
     
