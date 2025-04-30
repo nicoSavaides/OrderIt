@@ -375,18 +375,39 @@
     let rounds = [];
     let strikes = 0;
     const maxStrikes = 3;
+
+
+
+
+
+
+
+    
   
     function startGame() {
-      document.getElementById('welcomeScreen').classList.add('hidden');
-      document.getElementById('gameScreen').classList.remove('hidden');
-  
-      fetch("rounds.json")
-        .then(res => res.json())
-        .then(data => {
-          rounds = data.days[17];
-          loadRound();
-        });
-    }
+  document.getElementById('welcomeScreen').classList.add('hidden');
+
+  // Short delay before showing the game screen (e.g. 300ms)
+  setTimeout(() => {
+    document.getElementById('gameScreen').classList.remove('hidden');
+
+    fetch("rounds.json")
+      .then(res => res.json())
+      .then(data => {
+        rounds = data.days[17];
+        loadRound();
+      });
+  }, 300); // 300ms = 0.3 seconds
+}
+
+
+
+
+
+
+
+
+
   
     function displayCurrentDate() {
       const now = new Date();
