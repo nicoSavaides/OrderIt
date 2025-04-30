@@ -22,6 +22,42 @@
 
     [
       {
+        "prompt": "Top speed",
+        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
+        "correctOrder": ["Sloth", "Mouse", "Pig", "Zebra"]
+      },
+      {
+        "prompt": "Weight",
+        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
+        "correctOrder": ["Mouse", "Sloth", "Pig", "Zebra"]
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
+        "correctOrder": ["Mouse", "Pig", "Zebra", "Sloth"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Area",
+        "items": ["Egypt", "Australia", "USA", "France"],
+        "correctOrder": ["France", "Egypt", "Australia", "USA"]
+      },
+      {
+        "prompt": "Population",
+        "items": ["Egypt", "Australia", "USA", "France"],
+        "correctOrder": ["Australia", "France", "Egypt", "USA"]
+      },
+      {
+        "prompt": "GDP",
+        "items": ["Egypt", "Australia", "USA", "France"],
+        "correctOrder": ["Egypt", "Australia", "France", "USA"]
+      }
+    ], 
+
+    [
+      {
         "prompt": "Year Published",
         "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
         "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"]
@@ -308,23 +344,7 @@
       }
     ],
 
-    [
-      {
-        "prompt": "Area",
-        "items": ["Egypt", "Australia", "USA", "France"],
-        "correctOrder": ["France", "Egypt", "Australia", "USA"]
-      },
-      {
-        "prompt": "Population",
-        "items": ["Egypt", "Australia", "USA", "France"],
-        "correctOrder": ["Australia", "France", "Egypt", "USA"]
-      },
-      {
-        "prompt": "GDP",
-        "items": ["Egypt", "Australia", "USA", "France"],
-        "correctOrder": ["Egypt", "Australia", "France", "USA"]
-      }
-    ], 
+
 
     [
       {
@@ -544,24 +564,6 @@
 
     [
       {
-        "prompt": "Top speed",
-        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
-        "correctOrder": ["Sloth", "Mouse", "Pig", "Zebra"]
-      },
-      {
-        "prompt": "Weight",
-        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
-        "correctOrder": ["Mouse", "Sloth", "Pig", "Zebra"]
-      },
-      {
-        "prompt": "Lifespan",
-        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
-        "correctOrder": ["Mouse", "Pig", "Zebra", "Sloth"]
-      }
-    ], 
-
-    [
-      {
         "prompt": "Number of Olympics Held",
         "items": ["Athens", "Atlanta", "London", "Mumbai"],
         "correctOrder": ["Mumbai", "Atlanta", "Athens", "London"]
@@ -648,7 +650,45 @@
         "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
         "correctOrder": ["Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath"]
       }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Brad Pitt", "Beyoncé", "Rihanna", "Tom Hanks"],
+        "correctOrder": ["Rihanna", "Beyoncé", "Brad Pitt", "Tom Hanks"]
+      },
+      {
+        "prompt": "Height",
+        "items": ["Brad Pitt", "Beyoncé", "Rihanna", "Tom Hanks"],
+        "correctOrder": ["Beyoncé", "Rihanna", "Brad Pitt", "Tom Hanks"]
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Brad Pitt", "Beyoncé", "Rihanna", "Tom Hanks"],
+        "correctOrder": ["Brad Pitt", "Tom Hanks", "Beyoncé", "Rihanna"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Number of Films in Series",
+        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
+        "correctOrder": ["Top Gun", "Lord of the Rings", "Pirates of the Caribbean", "Fast & Furious"]
+      },
+      {
+        "prompt": "Total Gross",
+        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
+        "correctOrder": ["Top Gun", "Lord of the Rings", "Pirates of the Caribbean", "Fast & Furious"]
+      },
+      {
+        "prompt": "Total Oscars Won",
+        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
+        "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Top Gun", "Lord of the Rings"]
+      }
     ]
+    
+    
     
 
 
