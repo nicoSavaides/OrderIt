@@ -22,7 +22,7 @@
 
     [
       {
-        "prompt": "Top speed",
+        "prompt": "Top Speed",
         "items": ["Pig", "Mouse", "Sloth", "Zebra"],
         "correctOrder": ["Sloth", "Mouse", "Pig", "Zebra"]
       },
