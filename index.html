@@ -45,6 +45,19 @@
     }
 
 
+    #gameScreen {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+  pointer-events: none; /* Prevents accidental clicks during transition */
+}
+
+#gameScreen.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
 
     .hidden {
       display: none;
@@ -382,29 +395,27 @@
 
 
 
-    
     function startGame() {
   document.getElementById('welcomeScreen').classList.add('hidden');
-  
-  // Immediately show the game screen (but with opacity 0)
+
   const gameScreen = document.getElementById('gameScreen');
-  gameScreen.classList.remove('hidden'); // Make sure the game screen is no longer hidden
-  
-  // Use the fade-in transition
-  setTimeout(() => {
-    gameScreen.classList.add('visible'); // Apply fade-in after the game screen becomes visible
-    
-    fetch("rounds.json")
-      .then(res => res.json())
-      .then(data => {
-        const dayIndex = 0;  // Hardcoded for now
-        rounds = data.days[dayIndex];
-        loadRound(); // Load the first round's content
-      })
-      .catch(error => {
-        console.error("Error loading rounds data:", error);
-      });
-  }, 200); // No delay, immediately make the game screen visible
+  gameScreen.classList.remove('hidden');
+
+  // Ensure the screen is only faded in after layout
+  requestAnimationFrame(() => {
+    gameScreen.classList.add('visible');
+  });
+
+  fetch("rounds.json")
+    .then(res => res.json())
+    .then(data => {
+      const dayIndex = 0;
+      rounds = data.days[dayIndex];
+      loadRound();
+    })
+    .catch(error => {
+      console.error("Error loading rounds data:", error);
+    });
 }
 
 
