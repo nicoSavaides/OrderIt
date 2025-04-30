@@ -585,6 +585,7 @@ function submitOrder() {
     strikes++;
     document.getElementById('strikeCount').textContent = `Strikes: ${strikes}/${maxStrikes}`;
 
+
     if (strikes >= maxStrikes) {
       const itemList = document.getElementById('itemList');
       itemList.innerHTML = '';
@@ -623,7 +624,8 @@ function submitOrder() {
 
   
     function updateStrikes() {
-      document.getElementById('strikeCount').textContent = `Strikes: ${strikes}/${maxStrikes}`;
+      document.getElementById('strikeCount').textContent = `Mistakes Remaining: ${maxStrikes - strikes}`;
+
     }
 
 
