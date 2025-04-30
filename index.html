@@ -389,13 +389,15 @@
   
   // Get the game screen and hide it initially
   const gameScreen = document.getElementById('gameScreen');
-  gameScreen.style.display = 'none';  // Hide the game screen completely
+  gameScreen.style.display = 'block';  // Make sure it is displayed
+  gameScreen.style.opacity = '0';  // Set initial opacity to 0 to avoid flickering
 
-  // Immediately make the game screen visible (but invisible) behind the scenes
+  // Fetch the rounds data and load content
   setTimeout(() => {
-    gameScreen.style.display = 'block';  // Reveal the game screen after the timeout
+    // After the delay, reveal the game content
+    gameScreen.style.transition = 'opacity 0.3s ease'; // Smooth transition for opacity
+    gameScreen.style.opacity = '1';  // Fade it in slowly
 
-    // Fetch the rounds data and load content
     fetch("rounds.json")
       .then(res => res.json())
       .then(data => {
@@ -406,7 +408,8 @@
       .catch(error => {
         console.error("Error loading rounds data:", error);
       });
-  }, 500); // Delay the reveal of the game screen for 300ms
+  }, 300); // Set the delay to 300ms
+
 }
 
 
