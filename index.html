@@ -583,7 +583,8 @@ function submitOrder() {
     }
   } else {
     strikes++;
-    document.getElementById('strikeCount').textContent = `Strikes: ${strikes}/${maxStrikes}`;
+    updateStrikes();
+
 
 
     if (strikes >= maxStrikes) {
