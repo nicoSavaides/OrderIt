@@ -436,7 +436,7 @@
   fetch("rounds.json")
     .then(res => res.json())
     .then(data => {
-      const dayIndex = 24;
+      const dayIndex = 0;
       rounds = data.days[dayIndex];
       loadRound();
     })
