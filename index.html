@@ -468,14 +468,7 @@
         endGame();
         return;
       }
-  
-      
-      
-      
-      
-      
-      
-      
+
       
       const { prompt, items } = rounds[currentRound];
       document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
@@ -495,6 +488,15 @@
       updateStrikes();
       makeItemsDraggable();
     }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -589,47 +591,47 @@
 
     });
 
-    item.addEventListener('touchend', (e) => {
-        // After touch ends, reset the position
-        draggedItem.style.position = ''; // Reset position
-        draggedItem.style.left = ''; // Reset left position
-        draggedItem.style.top = ''; // Reset top position
-        draggedItem.style.opacity = ''; // Reset opacity
 
-      // Check where the item should be placed and reorder
-      const allItems = Array.from(document.querySelectorAll('.draggable-item'));
-      allItems.forEach((otherItem) => {
-        if (otherItem === draggedItem) return;
 
-        const rect = otherItem.getBoundingClientRect();
-        if (e.changedTouches[0].pageY > rect.top && e.changedTouches[0].pageY < rect.bottom) {
-          const list = draggedItem.parentNode;
-          const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-          const droppedIndex = Array.from(list.children).indexOf(otherItem);
 
-          // Reorder only after dropping the dragged item
-          if (draggedIndex < droppedIndex) {
-            list.insertBefore(draggedItem, otherItem.nextSibling);
-          } else {
-            list.insertBefore(draggedItem, otherItem);
-          }
-        }
-      });
+item.addEventListener('touchend', (e) => {
+  // Reset transform-based drag visuals
+  draggedItem.style.transform = '';
+  draggedItem.style.opacity = '';
 
-      // Reset dragged item state
-      draggedItem.classList.remove('dragging');
-      draggedItem = null;
-    });
+  // Use elementFromPoint to find what’s under the finger
+  const touch = e.changedTouches[0];
+  const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
+  const targetItem = dropTarget?.closest('.draggable-item');
 
-    item.addEventListener('touchcancel', () => {
-      draggedItem.style.transform = ''; // Reset position if canceled
-      draggedItem.style.position = ''; // Reset positioning if canceled
-      draggedItem.style.opacity = ''; // Reset opacity if canceled
-      draggedItem.classList.remove('dragging'); // Remove dragging class
-      draggedItem = null;
-    });
+  if (targetItem && targetItem !== draggedItem) {
+    const list = draggedItem.parentNode;
+    const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+    const targetIndex = Array.from(list.children).indexOf(targetItem);
+
+    if (draggedIndex < targetIndex) {
+      list.insertBefore(draggedItem, targetItem.nextSibling);
+    } else {
+      list.insertBefore(draggedItem, targetItem);
+    }
+  }
+
+  // Reset dragged item state
+  draggedItem.classList.remove('dragging');
+  draggedItem = null;
+});
+
   });
 }
+
+
+
+
+
+
+
+
+
 
 
 
