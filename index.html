@@ -198,9 +198,11 @@
       }
 
       #strikeCount {
-        position: absolute;
-        font-size: 1.2rem !important; /* Adjust strike count font size */
-        margin-top: -90px !important;
+        position: fixed;
+        font-size: 1.2rem !important;
+        top: 20px; /* Set how far from the top of the screen you want it */
+        left: 50%;
+        transform: translateX(-50%); /* Centers the element horizontally */
       }
 
 
