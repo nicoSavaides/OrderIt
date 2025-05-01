@@ -209,8 +209,12 @@
 
 
       #submitWrapper {
-      margin-top: 20px; /* <-- You can lower this number to move it closer to the list */
-      }
+      position: fixed;  /* Fix the element's position relative to the viewport */
+      bottom: 20px;     /* Position it 20px from the bottom of the screen */
+      left: 50%;        /* Center it horizontally */
+      transform: translateX(-50%); /* Ensure it's centered */
+    }
+
 
       #submitWrapper button {
       margin-top: 0; /* Remove the big margin that button normally has */
@@ -239,7 +243,7 @@
 
         #itemList {
       position: fixed;
-      top: 80; /* Or adjust as needed */
+      top: 70; /* Or adjust as needed */
       left: 50%;
       transform: translateX(-50%);
       width: 90%;
