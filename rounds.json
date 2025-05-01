@@ -4,17 +4,17 @@
 
     [
       {
-        "prompt": "Heading",
+        "prompt": "Artist Name (Alphabetical)",
         "items": ["one", "five thousand", "fourteen", "three million"],
         "correctOrder": ["one", "fourteen", "five thousand", "three million"]
       },
       {
-        "prompt": "This is a Different Heading",
+        "prompt": "Number of Band Members",
         "items": ["one", "five thousand", "fourteen", "three million"],
         "correctOrder": ["one", "fourteen", "five thousand", "three million"]
       },
       {
-        "prompt": "This is the Last Heading Which is Long",
+        "prompt": "Number of Films in Series",
         "items": ["one", "five thousand", "fourteen", "three million"],
         "correctOrder": ["one", "fourteen", "five thousand", "three million"]
       }
