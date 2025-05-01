@@ -281,7 +281,7 @@
 
 
         #itemList {
-      position: absolute;
+      position: fixed;
       top: 60px;
       left: 50%;
       transform: translateX(-50%);
@@ -601,14 +601,17 @@
       offsetY = touch.pageY - draggedItemInitialPosition.y;
 
       // Update the position of the dragged item
-      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+      draggedItem.style.position = 'absolute';
+        draggedItem.style.left = `${touch.pageX - draggedItem.offsetWidth / 2}px`; // Center the item on the touch
+        draggedItem.style.top = `${touch.pageY - draggedItem.offsetHeight / 2}px`;
     });
 
     item.addEventListener('touchend', (e) => {
-      // After touch ends, reset the position
-      draggedItem.style.transform = ''; // Reset position after release
-      draggedItem.style.position = ''; // Reset positioning
-      draggedItem.style.opacity = ''; // Reset opacity
+        // After touch ends, reset the position
+        draggedItem.style.position = ''; // Reset position
+        draggedItem.style.left = ''; // Reset left position
+        draggedItem.style.top = ''; // Reset top position
+        draggedItem.style.opacity = ''; // Reset opacity
 
       // Check where the item should be placed and reorder
       const allItems = Array.from(document.querySelectorAll('.draggable-item'));
