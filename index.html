@@ -280,14 +280,18 @@
     
 
 
-        #itemList {
-      position: fixed;
-      top: 60px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 90%;
-      z-index: 10; /* Ensure it is above other content */
-    }
+    @media (max-width: 480px) {
+  #itemList {
+    position: absolute;  /* Use absolute positioning to ensure it is centered */
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);  /* Center the element */
+    width: 90%;  /* Ensure it doesn't stretch beyond the screen width */
+    z-index: 10;  /* Ensure it's above other content */
+    box-sizing: border-box;  /* Prevent padding/margins from affecting width */
+  }
+}
+
 
 
       #endGameStatus {
