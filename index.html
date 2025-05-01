@@ -164,28 +164,21 @@
 
 
 
-    .shake-test {
-  width: 200px;
-  margin: 100px auto;
-  background: tomato;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  font-size: 1.5rem;
-}
 
-@keyframes shake {
-  0% { transform: translate3d(0, 0, 0); }
-  20% { transform: translate3d(-5px, 0, 0); }
-  40% { transform: translate3d(5px, 0, 0); }
-  60% { transform: translate3d(-5px, 0, 0); }
-  80% { transform: translate3d(5px, 0, 0); }
-  100% { transform: translate3d(0, 0, 0); }
-}
+        @keyframes shake {
+      0% { transform: translate3d(0, 0, 0); }
+      20% { transform: translate3d(-3px, 0, 0); }
+      40% { transform: translate3d(3px, 0, 0); }
+      60% { transform: translate3d(-3px, 0, 0); }
+      80% { transform: translate3d(3px, 0, 0); }
+      100% { transform: translate3d(0, 0, 0); }
+    }
 
-.shake {
-  animation: shake 0.4s ease;
-}
+
+    .shake {
+      animation: shake 0.4s ease;
+    }
+
 
 
 
@@ -380,7 +373,6 @@
 
 
 
-  <div id="testShake" class="shake-test">Shake me</div>
 
   <div id="gameScreen" class="hidden">
     <h2 id="roundPrompt"></h2>
