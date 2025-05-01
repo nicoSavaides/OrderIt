@@ -272,8 +272,8 @@
     }
 
 
-
-  #itemList {
+    
+    #itemListWrapper {
     position: absolute;  /* Use absolute positioning to ensure it is centered */
     top: 60px;
     left: 50%;
@@ -377,7 +377,12 @@
   <div id="gameScreen" class="hidden">
     <h2 id="roundPrompt"></h2>
     <p id="gameStatus"></p>
+
+    <div id="itemListWrapper">
     <ul id="itemList"></ul>
+  </div>
+
+  
 
     <p id="strikeCount"></p>
     
@@ -649,14 +654,14 @@ function submitOrder() {
 
   
 
-// Add the shake effect to the item list
+
 const itemList = document.getElementById('itemList');
 itemList.classList.add('shake');
 
-// Force reflow to ensure the animation is applied correctly
-itemList.offsetHeight;  // Reading a property forces a reflow
 
-// Remove the shake class after animation ends so it can be triggered again
+itemList.offsetHeight;  
+
+
 setTimeout(() => {
   itemList.classList.remove('shake');
 }, 400);
