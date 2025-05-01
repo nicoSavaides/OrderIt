@@ -169,9 +169,16 @@
       }
 
       h2 {
-        position: fixed;
-        font-size: 2.3rem !important;
-      }
+      position: fixed;
+      font-size: 2.3rem !important;
+      top: 20px;               /* Adjust to set how far from the top of the screen */
+      left: 50%;               /* Position horizontally at the center */
+      transform: translateX(-50%); /* Center it exactly by moving it back by 50% of its own width */
+      text-align: center;      /* Centers text if it wraps to the next line */
+      width: 100%;             /* Make sure the width is 100% of the screen width */
+      box-sizing: border-box;  /* Prevents padding/margins from affecting width */
+    }
+
 
 
       p {
