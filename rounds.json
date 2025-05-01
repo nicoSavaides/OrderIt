@@ -814,7 +814,26 @@
         "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
         "correctOrder": ["Cherry blossom", "Palm tree", "Oak tree", "Redwood tree"]
       }
+    ],
+
+    [
+      {
+        "prompt": "Wingspan",
+        "items": ["Blue Jay", "Great Horned Owl", "Bald Eagle", "Common Pigeon"],
+        "correctOrder": ["Blue Jay", "Common Pigeon", "Great Horned Owl", "Bald Eagle"]
+      },
+      {
+        "prompt": "Weight",
+        "items": ["Blue Jay", "Great Horned Owl", "Bald Eagle", "Common Pigeon"],
+        "correctOrder": ["Blue Jay", "Common Pigeon", "Great Horned Owl", "Bald Eagle"]
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Blue Jay", "Great Horned Owl", "Bald Eagle", "Common Pigeon"],
+        "correctOrder": ["Blue Jay", "Great Horned Owl", "Common Pigeon", "Bald Eagle"]
+      }
     ]
+    
     
     
     
