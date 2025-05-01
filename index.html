@@ -166,7 +166,17 @@
 
 
 
+        @keyframes shake {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-10px); }
+      50% { transform: translateX(10px); }
+      75% { transform: translateX(-10px); }
+      100% { transform: translateX(0); }
+    }
 
+    .shake {
+      animation: shake 0.4s ease;
+    }
 
 
 
@@ -659,8 +669,21 @@ function submitOrder() {
       }
     }
   } else {
-    strikes++;
-    updateStrikes();
+      strikes++;
+      updateStrikes();
+
+      strikes++;
+  updateStrikes();
+
+  // Add shake effect to item list
+  const itemList = document.getElementById('itemList');
+  itemList.classList.add('shake');
+
+  // Remove shake class after animation ends so it can be triggered again
+  setTimeout(() => {
+    itemList.classList.remove('shake');
+  }, 400);
+
 
 
 
@@ -806,6 +829,8 @@ window.onload = function() {
     alert(`Your friend's score: ${sharedScore}/3`);
   }
 };
+
+
 
 
    
