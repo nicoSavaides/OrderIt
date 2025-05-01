@@ -241,14 +241,14 @@
       }
 
       
-      .correct-order-tile {
-        position: fixed;
-  top: 100px; /* Or adjust as needed */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%) translateY(100px); /* Adjust both horizontal and vertical positioning */
-  transition: transform 0.3s ease; /* Smooth animation */
-  z-index: 1; /* Add a z-index for stacking */
-}
+          .correct-order-tile {
+      position: absolute; /* Use absolute to keep it in the normal flow but freely positioned */
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      transition: transform 0.3s ease;
+      z-index: 1;
+    }
 
 
 
