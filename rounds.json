@@ -9,12 +9,12 @@
         "correctOrder": ["one", "fourteen", "five thousand", "three million"]
       },
       {
-        "prompt": "Number of Band Members",
+        "prompt": "Height",
         "items": ["one", "five thousand", "fourteen", "three million"],
         "correctOrder": ["one", "fourteen", "five thousand", "three million"]
       },
       {
-        "prompt": "Number of Films in Series",
+        "prompt": "Number of Films",
         "items": ["one", "five thousand", "fourteen", "three million"],
         "correctOrder": ["one", "fourteen", "five thousand", "three million"]
       }
