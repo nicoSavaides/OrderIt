@@ -4,7 +4,7 @@
 
     [
       {
-        "prompt": "This is a Heading",
+        "prompt": "Heading",
         "items": ["one", "five thousand", "fourteen", "three million"],
         "correctOrder": ["one", "fourteen", "five thousand", "three million"]
       },
