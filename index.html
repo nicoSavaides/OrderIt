@@ -207,10 +207,7 @@
 
 
 
-      body, html {
-    touch-action: none; /* Prevents default scrolling and allows smoother custom drag */
-  }
-
+      
 
 
       p {
@@ -575,6 +572,10 @@
       }, 0);
     });
 
+
+
+
+
     item.addEventListener('touchmove', (e) => {
       e.preventDefault();  // Prevent default touch behavior
 
@@ -584,9 +585,8 @@
       offsetY = touch.pageY - draggedItemInitialPosition.y;
 
       // Update the position of the dragged item
-      draggedItem.style.position = 'absolute';
-        draggedItem.style.left = `${touch.pageX - draggedItem.offsetWidth / 2}px`; // Center the item on the touch
-        draggedItem.style.top = `${touch.pageY - draggedItem.offsetHeight / 2}px`;
+      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+
     });
 
     item.addEventListener('touchend', (e) => {
