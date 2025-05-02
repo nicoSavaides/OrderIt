@@ -280,7 +280,7 @@
     
     #itemListWrapper {
     position: absolute;  /* Use absolute positioning to ensure it is centered */
-    top: 45px;
+    top: 60px;
     left: 50%;
     transform: translateX(-50%);  /* Center the element */
     width: 90%;  /* Ensure it doesn't stretch beyond the screen width */
@@ -436,7 +436,7 @@
   fetch("rounds.json")
     .then(res => res.json())
     .then(data => {
-      const dayIndex = 0;
+      const dayIndex = 24;
       rounds = data.days[dayIndex];
       loadRound();
     })
