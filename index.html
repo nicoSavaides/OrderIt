@@ -848,13 +848,11 @@ setTimeout(() => {
 
 
     function endGame() {
-  console.log("End game triggered");  // Test if this is being reached
-  document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
-  document.getElementById('endScreen').classList.remove('hidden'); // Show the end screen
+  console.log("End game triggered");
+  document.getElementById('gameScreen').classList.add('hidden');
+  document.getElementById('endScreen').classList.remove('hidden');
 
-  let message = "";  // Default message
-
-  // Set message based on the rounds completed
+  let message = "";
   if (roundsCompleted === 3) {
     message = "Amazing!";
   } else if (roundsCompleted === 2) {
@@ -865,56 +863,39 @@ setTimeout(() => {
     message = "Nice try";
   }
 
-  // Update the end game status message
-    // Update the end game status message
-    document.getElementById('endGameStatus').textContent = message;
-
-    // Show the player's final score
-    document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
-
-
-
-
-
-
-
+  document.getElementById('endGameStatus').textContent = message;
+  document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
 
   const shareButton = document.getElementById('shareButton');
-shareButton.onclick = function () {
-  const strikesLeft = maxStrikes - strikes;
-  const scoreText = `I finished Order It with ${strikesLeft} strike${strikesLeft !== 1 ? 's' : ''} left! Score: ${roundsCompleted}/${rounds.length}`;
+  shareButton.onclick = function () {
+    const strikesLeft = maxStrikes - strikes;
+    const scoreText = `I finished Order It with ${strikesLeft} strike${strikesLeft !== 1 ? 's' : ''} left! Score: ${roundsCompleted}/${rounds.length}`;
 
-  navigator.clipboard.writeText(scoreText).then(() => {
-    alert("Your score was copied to the clipboard!");
-  }).catch(err => {
-    console.error("Clipboard copy failed:", err);
-  });
-};
+    const imageUrl = `images/score-${roundsCompleted}.png`;  // Image based on score
 
-    }
+    // Create HTML content to copy to clipboard
+    const htmlContent = `
+      <div>
+        <p>${scoreText}</p>
+        <img src="${imageUrl}" alt="Score Image" width="100" />
+      </div>
+    `;
 
+    // Use the Clipboard API to copy HTML content
+    navigator.clipboard.writeText(htmlContent).then(() => {
+      alert("Your score and image were copied to the clipboard!");
+    }).catch(err => {
+      console.error("Clipboard copy failed:", err);
+    });
+  };
+}
 
-
-
-
-  function generateShareBlock(score, strikes) {
-    const container = document.getElementById('shareBlockContainer');
-    const scoreImg = container.querySelector('.score-image');
-    const strikesText = container.querySelector('.strikes-text');
-
-    scoreImg.src = `images/score-${score}.png`;  // Optional image based on score
-    scoreImg.alt = `Score: ${score}/3`;
-    strikesText.textContent = `I finished Order It with ${strikes} strike${strikes !== 1 ? 's' : ''} left!`;
-
-    container.style.display = 'block'; // make it visible
+document.addEventListener("touchmove", function(e) {
+  if (e.target.closest(".draggable-item")) {
+    e.preventDefault();
   }
+}, { passive: false });
 
-  // Prevent scrolling while dragging
-  document.addEventListener("touchmove", function(e) {
-    if (e.target.closest(".draggable-item")) {
-      e.preventDefault();
-    }
-  }, { passive: false });
 
 
    
