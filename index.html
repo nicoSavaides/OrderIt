@@ -235,7 +235,7 @@
       #strikeCount {
         position: fixed;
         font-size: 1.2rem !important;
-        top: 380px; /* Set how far from the top of the screen you want it */
+        top: 381px; /* Set how far from the top of the screen you want it */
         left: 50%;
         transform: translateX(-50%); /* Centers the element horizontally */
         white-space: nowrap; /* Prevents the text from wrapping onto the next line */
@@ -348,51 +348,6 @@
   bottom: 6px !important; /* Lower value pushes it closer to the bottom */
   font-size: 0.9rem !important;
 }
-
-
-
-
-
-.share-block {
-  display: inline-block;
-  width: 300px;
-  background-color: #fdfdfd;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-decoration: none;
-  transition: transform 0.2s;
-  margin: 20px auto;
-}
-
-.share-block:hover {
-  transform: scale(1.03);
-}
-
-.share-content {
-  padding: 20px;
-  text-align: center;
-}
-
-.game-title {
-  font-size: 24px;
-  color: #222;
-  margin-bottom: 10px;
-  font-family: 'Helvetica Neue', sans-serif;
-}
-
-.score-image {
-  width: 100px;
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.strikes-text {
-  font-size: 16px;
-  color: #666;
-}
-
-
-
  
 }
 
@@ -413,10 +368,6 @@
 #gameStatus {
   display: block !important;
 }
-
-
-
-
 
 
 
@@ -478,21 +429,9 @@
     <p id="endGameStatus"></p>
     <p id="finalScore"></p> <!-- their score will appear here -->
     <p id="thanksMessage">Thanks for playing. Come back tomorrow for a new Order It!</p>
-
-
     <button id="shareButton">Share your score</button> <!-- share button -->
-
-
-<div id="shareBlockContainer" style="display: none;">
-  <a href="https://orderitgame.com" target="_blank" class="share-block">
-    <div class="share-content">
-      <h2 class="game-title">Order It</h2>
-      <img src="" alt="Score image" class="score-image" />
-      <p class="strikes-text"></p>
-    </div>
-  </a>
-</div>
-
+    <p id="shareLink" style="word-break: break-all;"></p> <!-- link will show up here -->
+  </div>
   
   <p id="currentDate"></p>
   
@@ -847,21 +786,14 @@ setTimeout(() => {
    
 
 
-
-    if (!navigator.clipboard) {
-  console.log("Clipboard API not supported in this browser.");
-  alert("Clipboard feature is not supported in your browser.");
-  return;  // Exit if Clipboard API is not supported
-}
-
-
-    
     function endGame() {
-  console.log("End game triggered");
-  document.getElementById('gameScreen').classList.add('hidden');
-  document.getElementById('endScreen').classList.remove('hidden');
+  console.log("End game triggered");  // Test if this is being reached
+  document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
+  document.getElementById('endScreen').classList.remove('hidden'); // Show the end screen
 
-  let message = "";
+  let message = "";  // Default message
+
+  // Set message based on the rounds completed
   if (roundsCompleted === 3) {
     message = "Amazing!";
   } else if (roundsCompleted === 2) {
@@ -872,37 +804,17 @@ setTimeout(() => {
     message = "Nice try";
   }
 
+  // Update the end game status message
   document.getElementById('endGameStatus').textContent = message;
+
+  // Show the player's final score
   document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
 
+  // Set up the share button
   const shareButton = document.getElementById('shareButton');
-
-
-
-shareButton.onclick = function () {
-  console.log("Share button clicked!");  // Debugging line
-  const strikesLeft = maxStrikes - strikes;
-  const scoreText = `I finished Order It with ${strikesLeft} strike${strikesLeft !== 1 ? 's' : ''} left! Score: ${roundsCompleted}/${rounds.length}`;
-
-  const imageUrl = `images/score-${roundsCompleted}.png`;  // Image based on score
-
-  // Fetch the image and convert it to a Blob
-  fetch(imageUrl)
-    .then(response => response.blob())
-    .then(imageBlob => {
-      const item = new ClipboardItem({
-        'image/png': imageBlob,
-        'text/plain': new Blob([scoreText], { type: 'text/plain' }),
-      });
-
-      navigator.clipboard.write([item]).then(() => {
-        alert("Your score and image were copied to the clipboard!");
-      }).catch(err => {
-        console.error("Clipboard copy failed:", err);
-      });
-    });
-};
-
+  shareButton.onclick = function() {
+    generateShareLink();
+  };
 }
 
 
@@ -911,11 +823,30 @@ shareButton.onclick = function () {
 
 
 
-document.addEventListener("touchmove", function(e) {
-  if (e.target.closest(".draggable-item")) {
-    e.preventDefault();
+
+
+function generateShareLink() {
+  // Create a simple shareable link with score in the URL
+  const baseUrl = window.location.origin + window.location.pathname; // current page
+  const shareUrl = `${baseUrl}?score=${score}`;
+
+  const shareLink = document.getElementById('shareLink');
+  shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
+
+  // Optionally, automatically copy to clipboard:
+  navigator.clipboard.writeText(shareUrl).then(() => {
+    alert('Link copied to clipboard!');
+  });
+}
+
+// If you want, you can ALSO read the ?score= part of URL and display it when someone clicks a shared link!
+window.onload = function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const sharedScore = urlParams.get('score');
+  if (sharedScore !== null) {
+    alert(`Your friend's score: ${sharedScore}/3`);
   }
-}, { passive: false });
+};
 
 
 
