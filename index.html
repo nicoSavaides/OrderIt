@@ -249,18 +249,28 @@
   bottom: 67px;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's on top */
 }
 
-.touch-buffer {
-  padding: 12px 25px;  /* Expands clickable area */
-  display: inline-block;
-  background: transparent; /* Ensure no visible change */
+.submit-hit-area {
+  position: relative;
+  width: 100px; /* or larger to increase hit target */
+  height: 60px; /* increase this for more vertical touch room */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.touch-buffer button {
-  padding: 8px 16px; /* Keep button's visible size as-is */
+.submit-hit-area button {
+  pointer-events: auto;
+  padding: 8px 16px; /* Keep visual size small */
   margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 
 
 
