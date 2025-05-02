@@ -873,20 +873,21 @@ setTimeout(() => {
 
     const imageUrl = `images/score-${roundsCompleted}.png`;  // Image based on score
 
-    // Create HTML content to copy to clipboard
-    const htmlContent = `
-      <div>
-        <p>${scoreText}</p>
-        <img src="${imageUrl}" alt="Score Image" width="100" />
-      </div>
-    `;
+    // Fetch the image and convert it to a Blob
+    fetch(imageUrl)
+      .then(response => response.blob())
+      .then(imageBlob => {
+        const item = new ClipboardItem({
+          'image/png': imageBlob,
+          'text/plain': new Blob([scoreText], { type: 'text/plain' }),
+        });
 
-    // Use the Clipboard API to copy HTML content
-    navigator.clipboard.writeText(htmlContent).then(() => {
-      alert("Your score and image were copied to the clipboard!");
-    }).catch(err => {
-      console.error("Clipboard copy failed:", err);
-    });
+        navigator.clipboard.write([item]).then(() => {
+          alert("Your score and image were copied to the clipboard!");
+        }).catch(err => {
+          console.error("Clipboard copy failed:", err);
+        });
+      });
   };
 }
 
@@ -895,6 +896,7 @@ document.addEventListener("touchmove", function(e) {
     e.preventDefault();
   }
 }, { passive: false });
+
 
 
 
