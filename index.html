@@ -167,10 +167,10 @@
 
         @keyframes shake {
       0% { transform: translate3d(0, 0, 0); }
-      20% { transform: translate3d(-5px, 0, 0); }
-      40% { transform: translate3d(5px, 0, 0); }
-      60% { transform: translate3d(-5px, 0, 0); }
-      80% { transform: translate3d(5px, 0, 0); }
+      20% { transform: translate3d(-4px, 0, 0); }
+      40% { transform: translate3d(4px, 0, 0); }
+      60% { transform: translate3d(-4px, 0, 0); }
+      80% { transform: translate3d(4px, 0, 0); }
       100% { transform: translate3d(0, 0, 0); }
     }
 
@@ -228,8 +228,6 @@
 
 
       .draggable-item {
-        position: fixed;
-        top: 400px;
         font-size: 1.5rem; /* Larger draggable items */
         width: 90%;
       }
@@ -237,7 +235,7 @@
       #strikeCount {
         position: fixed;
         font-size: 1.2rem !important;
-        top: 375px; /* Set how far from the top of the screen you want it */
+        top: 379px; /* Set how far from the top of the screen you want it */
         left: 50%;
         transform: translateX(-50%); /* Centers the element horizontally */
         white-space: nowrap; /* Prevents the text from wrapping onto the next line */
@@ -267,13 +265,13 @@
       font-weight: bold;
       font-size: 1.5rem !important;
       text-align: center;
-      margin-top: 60px !important; /* Use margin to position it vertically */
+      margin-top: 71px !important; /* Use margin to position it vertically */
       }
 
       
       .correct-order-tile {
       position: relative;
-      top: -110px !important;             /* Adjust vertical position as needed */
+      top: -150px !important;             /* Adjust vertical position as needed */
       transition: transform 0.3s ease;
       z-index: 1;             /* Ensure it's on top of other elements */
     }
@@ -725,7 +723,7 @@ setTimeout(() => {
         li.textContent = item;
         li.classList.add('draggable-item');
         li.classList.add('correct-order-tile');
-        li.style.backgroundColor = '#999999';
+        li.style.backgroundColor = '#777777';
         li.style.fontWeight = 'bold';
         li.style.cursor = 'default';
         li.setAttribute('draggable', false);
@@ -776,7 +774,7 @@ setTimeout(() => {
   } else if (roundsCompleted === 2) {
     message = "Good job!";
   } else if (roundsCompleted === 1) {
-    message = "Not bad!";
+    message = "Not bad";
   } else {
     message = "Nice try";
   }
