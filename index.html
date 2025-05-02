@@ -265,33 +265,16 @@
       font-weight: bold;
       font-size: 1.5rem !important;
       text-align: center;
-      top: 60px !important; /* Use margin to position it vertically */
+      margin-top: 60px !important; /* Use margin to position it vertically */
       }
 
       
       .correct-order-tile {
-  position: fixed;
-  left: 20px; /* Adjust to position horizontally */
-  transition: transform 0.3s ease;
-  z-index: 100;
-  background: lightyellow; /* Just for visibility */
-}
-
-.correct-order-tile:nth-of-type(1) {
-  top: 450px; /* Adjust as needed */
-}
-
-.correct-order-tile:nth-of-type(2) {
-  top: 510px; /* Adjust for the second tile */
-}
-
-.correct-order-tile:nth-of-type(3) {
-  top: 570px; /* Adjust for the third tile */
-}
-
-/* And so on for additional tiles */
-
-
+      position: fixed;
+      top: -110px !important;             /* Adjust vertical position as needed */
+      transition: transform 0.3s ease;
+      z-index: 1;             /* Ensure it's on top of other elements */
+    }
 
 
     
@@ -308,7 +291,7 @@
 
 
       #endGameStatus {
-      position: fixed;
+        
       font-size: 3.5rem !important; /* Adjust this size as needed for mobile */
       font-family: 'second' !important;
       /*font-weight: bold;*/
@@ -318,14 +301,13 @@
     }
 
       #finalScore {
-        position: fixed;
-        margin-top: 140px !important;
+        margin-top: -140px !important;
         font-size: 1.2rem !important;
       }
 
       #thanksMessage {
         
-      position: fixed;
+      position: relative;
       top: -130px !important;
       text-align: center;
       font-size: 1.2rem !important;
@@ -335,8 +317,7 @@
 
       #shareLink,
       #shareButton {
-        position: fixed;
-        margin-top: 200px !important;
+        margin-top: 5px !important;
       }
 
 
@@ -416,14 +397,9 @@
       <button onclick="submitOrder()">Submit</button>
     </div>
 
-
-    
-
    
    
   </div>
-
-
   
   <div id="endScreen" class="hidden">
     <p id="endGameStatus"></p>
