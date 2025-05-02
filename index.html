@@ -249,13 +249,19 @@
   bottom: 67px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 0; /* No extra padding around the wrapper */
 }
 
-#submitWrapper button {
-  margin-top: 0;
-  padding: 12px 25px; /* Apply touch-friendly padding here instead */
+.touch-buffer {
+  padding: 12px 25px;  /* Expands clickable area */
+  display: inline-block;
+  background: transparent; /* Ensure no visible change */
 }
+
+.touch-buffer button {
+  padding: 8px 16px; /* Keep button's visible size as-is */
+  margin: 0;
+}
+
 
 
 
@@ -398,9 +404,12 @@
     <p id="strikeCount"></p>
     
 
-    <div id="submitWrapper">
-      <button onclick="submitOrder()">Submit</button>
+    <div id="submitWrapper"> 
+      <div class="touch-buffer">
+        <button onclick="submitOrder()">Submit</button>
+      </div>
     </div>
+    
 
    
    
