@@ -900,7 +900,28 @@ function generateShareBlock(score, strikes) {
 }
 
 
+document.addEventListener("touchmove", function(e) {
+    if (e.target.closest(".draggable-item")) {
+      e.preventDefault();  // Prevent scrolling during drag
+    }
+  }, { passive: false });
+</script>
 
+<!-- ✅ Add this Share Button script block here -->
+<script>
+  document.getElementById('shareButton').addEventListener('click', () => {
+    const scoreText = document.getElementById('finalScore').textContent;
+    const strikesLeft = maxStrikes - strikes;
+
+    const strikeText = `I finished Order It with ${strikesLeft} strike${strikesLeft !== 1 ? 's' : ''} left!`;
+    document.querySelector('.strikes-text').textContent = strikeText;
+
+    const scoreImage = document.querySelector('.score-image');
+    scoreImage.src = 'score-placeholder.png'; // Optional: change this if needed
+    scoreImage.alt = 'Score';
+
+    document.getElementById('shareBlockContainer').style.display = 'block';
+  });
 
 
    
