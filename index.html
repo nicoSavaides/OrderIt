@@ -872,13 +872,30 @@ setTimeout(() => {
     // Show the player's final score
     document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
 
-    // Set up the share button to use your existing logic
-    const shareButton = document.getElementById('shareButton');
-    shareButton.onclick = function() {
-      const strikesLeft = maxStrikes - strikes;
-      generateShareBlock(roundsCompleted, strikesLeft);
-    };
-  }
+
+
+
+
+
+
+
+  const shareButton = document.getElementById('shareButton');
+shareButton.onclick = function () {
+  const strikesLeft = maxStrikes - strikes;
+  const scoreText = `I finished Order It with ${strikesLeft} strike${strikesLeft !== 1 ? 's' : ''} left! Score: ${roundsCompleted}/${rounds.length}`;
+
+  navigator.clipboard.writeText(scoreText).then(() => {
+    alert("Your score was copied to the clipboard!");
+  }).catch(err => {
+    console.error("Clipboard copy failed:", err);
+  });
+};
+
+    }
+
+
+
+
 
   function generateShareBlock(score, strikes) {
     const container = document.getElementById('shareBlockContainer');
