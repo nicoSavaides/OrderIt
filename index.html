@@ -348,6 +348,51 @@
   bottom: 6px !important; /* Lower value pushes it closer to the bottom */
   font-size: 0.9rem !important;
 }
+
+
+
+
+
+.share-block {
+  display: inline-block;
+  width: 300px;
+  background-color: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-decoration: none;
+  transition: transform 0.2s;
+  margin: 20px auto;
+}
+
+.share-block:hover {
+  transform: scale(1.03);
+}
+
+.share-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.game-title {
+  font-size: 24px;
+  color: #222;
+  margin-bottom: 10px;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+.score-image {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.strikes-text {
+  font-size: 16px;
+  color: #666;
+}
+
+
+
  
 }
 
@@ -368,6 +413,10 @@
 #gameStatus {
   display: block !important;
 }
+
+
+
+
 
 
 
@@ -429,9 +478,21 @@
     <p id="endGameStatus"></p>
     <p id="finalScore"></p> <!-- their score will appear here -->
     <p id="thanksMessage">Thanks for playing. Come back tomorrow for a new Order It!</p>
+
+
     <button id="shareButton">Share your score</button> <!-- share button -->
-    <p id="shareLink" style="word-break: break-all;"></p> <!-- link will show up here -->
-  </div>
+
+
+<div id="shareBlockContainer" style="display: none;">
+  <a href="https://orderitgame.com" target="_blank" class="share-block">
+    <div class="share-content">
+      <h2 class="game-title">Order It</h2>
+      <img src="" alt="Score image" class="score-image" />
+      <p class="strikes-text"></p>
+    </div>
+  </a>
+</div>
+
   
   <p id="currentDate"></p>
   
@@ -813,7 +874,8 @@ setTimeout(() => {
   // Set up the share button
   const shareButton = document.getElementById('shareButton');
   shareButton.onclick = function() {
-    generateShareLink();
+    generateShareBlock(currentScore, strikeCount); // Replace with your actual variable names
+
   };
 }
 
@@ -825,28 +887,18 @@ setTimeout(() => {
 
 
 
-function generateShareLink() {
-  // Create a simple shareable link with score in the URL
-  const baseUrl = window.location.origin + window.location.pathname; // current page
-  const shareUrl = `${baseUrl}?score=${score}`;
+function generateShareBlock(score, strikes) {
+  const container = document.getElementById('shareBlockContainer');
+  const scoreImg = container.querySelector('.score-image');
+  const strikesText = container.querySelector('.strikes-text');
 
-  const shareLink = document.getElementById('shareLink');
-  shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
+  scoreImg.src = `images/score-${score}.png`;
+  scoreImg.alt = `Score: ${score}/3`;
+  strikesText.textContent = `Strikes: ${strikes}`;
 
-  // Optionally, automatically copy to clipboard:
-  navigator.clipboard.writeText(shareUrl).then(() => {
-    alert('Link copied to clipboard!');
-  });
+  container.style.display = 'block'; // make it visible
 }
 
-// If you want, you can ALSO read the ?score= part of URL and display it when someone clicks a shared link!
-window.onload = function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const sharedScore = urlParams.get('score');
-  if (sharedScore !== null) {
-    alert(`Your friend's score: ${sharedScore}/3`);
-  }
-};
 
 
 
