@@ -245,17 +245,18 @@
 
 
       #submitWrapper {
-      position: fixed;  /* Fix the element's position relative to the viewport */
-      bottom: 67px;     /* Position it 20px from the bottom of the screen */
-      left: 50%;        /* Center it horizontally */
-      transform: translateX(-50%); /* Ensure it's centered */
-      padding: 12px 25px; /* Increase padding for better touch targets */
-    }
+  position: fixed;
+  bottom: 67px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0; /* No extra padding around the wrapper */
+}
 
+#submitWrapper button {
+  margin-top: 0;
+  padding: 12px 25px; /* Apply touch-friendly padding here instead */
+}
 
-      #submitWrapper button {
-      margin-top: 0; /* Remove the big margin that button normally has */
-      }
 
 
 
