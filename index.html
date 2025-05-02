@@ -290,15 +290,18 @@
   }
 
 
-      #endGameStatus {
-        position: fixed;
-      font-size: 3.5rem !important; /* Adjust this size as needed for mobile */
-      font-family: 'second' !important;
-      /*font-weight: bold;*/
-      color: #000;
-      text-align: center;
-      margin-top: 10px !important;
-    }
+  #endGameStatus {
+  position: fixed;
+  top: 60px; /* Or whatever vertical offset you want */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 3.5rem !important;
+  font-family: 'second' !important;
+  color: #000;
+  text-align: center;
+  width: 100%; /* Optional: makes sure it's full width if you want wrapping */
+}
+
 
       #finalScore {
         margin-top: -140px !important;
@@ -313,13 +316,12 @@
       font-size: 1.2rem !important;
     }
 
-
-
       #shareLink,
       #shareButton {
         margin-top: 5px !important;
       }
 
+      
 
     
       #currentDate {
