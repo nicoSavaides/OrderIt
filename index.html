@@ -866,63 +866,39 @@ setTimeout(() => {
   }
 
   // Update the end game status message
-  document.getElementById('endGameStatus').textContent = message;
+    // Update the end game status message
+    document.getElementById('endGameStatus').textContent = message;
 
-  // Show the player's final score
-  document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
+    // Show the player's final score
+    document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
 
-  // Set up the share button
-  const shareButton = document.getElementById('shareButton');
-  shareButton.onclick = function() {
-    generateShareBlock(currentScore, strikeCount); // Replace with your actual variable names
+    // Set up the share button to use your existing logic
+    const shareButton = document.getElementById('shareButton');
+    shareButton.onclick = function() {
+      const strikesLeft = maxStrikes - strikes;
+      generateShareBlock(roundsCompleted, strikesLeft);
+    };
+  }
 
-  };
-}
+  function generateShareBlock(score, strikes) {
+    const container = document.getElementById('shareBlockContainer');
+    const scoreImg = container.querySelector('.score-image');
+    const strikesText = container.querySelector('.strikes-text');
 
+    scoreImg.src = `images/score-${score}.png`;  // Optional image based on score
+    scoreImg.alt = `Score: ${score}/3`;
+    strikesText.textContent = `I finished Order It with ${strikes} strike${strikes !== 1 ? 's' : ''} left!`;
 
+    container.style.display = 'block'; // make it visible
+  }
 
-
-
-
-
-
-
-function generateShareBlock(score, strikes) {
-  const container = document.getElementById('shareBlockContainer');
-  const scoreImg = container.querySelector('.score-image');
-  const strikesText = container.querySelector('.strikes-text');
-
-  scoreImg.src = `images/score-${score}.png`;
-  scoreImg.alt = `Score: ${score}/3`;
-  strikesText.textContent = `Strikes: ${strikes}`;
-
-  container.style.display = 'block'; // make it visible
-}
-
-
-document.addEventListener("touchmove", function(e) {
+  // Prevent scrolling while dragging
+  document.addEventListener("touchmove", function(e) {
     if (e.target.closest(".draggable-item")) {
-      e.preventDefault();  // Prevent scrolling during drag
+      e.preventDefault();
     }
   }, { passive: false });
 </script>
-
-<!-- ✅ Add this Share Button script block here -->
-<script>
-  document.getElementById('shareButton').addEventListener('click', () => {
-    const scoreText = document.getElementById('finalScore').textContent;
-    const strikesLeft = maxStrikes - strikes;
-
-    const strikeText = `I finished Order It with ${strikesLeft} strike${strikesLeft !== 1 ? 's' : ''} left!`;
-    document.querySelector('.strikes-text').textContent = strikeText;
-
-    const scoreImage = document.querySelector('.score-image');
-    scoreImage.src = 'score-placeholder.png'; // Optional: change this if needed
-    scoreImage.alt = 'Score';
-
-    document.getElementById('shareBlockContainer').style.display = 'block';
-  });
-
 
    
   </script>
