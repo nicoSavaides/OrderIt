@@ -271,12 +271,26 @@
       
       .correct-order-tile {
   position: fixed;
-  top: 450px; /* Adjust this value as needed */
   left: 20px; /* Adjust to position horizontally */
   transition: transform 0.3s ease;
   z-index: 100;
   background: lightyellow; /* Just for visibility */
 }
+
+.correct-order-tile:nth-of-type(1) {
+  top: 450px; /* Adjust as needed */
+}
+
+.correct-order-tile:nth-of-type(2) {
+  top: 510px; /* Adjust for the second tile */
+}
+
+.correct-order-tile:nth-of-type(3) {
+  top: 570px; /* Adjust for the third tile */
+}
+
+/* And so on for additional tiles */
+
 
 
 
