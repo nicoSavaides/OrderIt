@@ -847,6 +847,15 @@ setTimeout(() => {
    
 
 
+
+    if (!navigator.clipboard) {
+  console.log("Clipboard API not supported in this browser.");
+  alert("Clipboard feature is not supported in your browser.");
+  return;  // Exit if Clipboard API is not supported
+}
+
+
+    
     function endGame() {
   console.log("End game triggered");
   document.getElementById('gameScreen').classList.add('hidden');
@@ -867,29 +876,40 @@ setTimeout(() => {
   document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
 
   const shareButton = document.getElementById('shareButton');
-  shareButton.onclick = function () {
-    const strikesLeft = maxStrikes - strikes;
-    const scoreText = `I finished Order It with ${strikesLeft} strike${strikesLeft !== 1 ? 's' : ''} left! Score: ${roundsCompleted}/${rounds.length}`;
 
-    const imageUrl = `images/score-${roundsCompleted}.png`;  // Image based on score
 
-    // Fetch the image and convert it to a Blob
-    fetch(imageUrl)
-      .then(response => response.blob())
-      .then(imageBlob => {
-        const item = new ClipboardItem({
-          'image/png': imageBlob,
-          'text/plain': new Blob([scoreText], { type: 'text/plain' }),
-        });
 
-        navigator.clipboard.write([item]).then(() => {
-          alert("Your score and image were copied to the clipboard!");
-        }).catch(err => {
-          console.error("Clipboard copy failed:", err);
-        });
+shareButton.onclick = function () {
+  console.log("Share button clicked!");  // Debugging line
+  const strikesLeft = maxStrikes - strikes;
+  const scoreText = `I finished Order It with ${strikesLeft} strike${strikesLeft !== 1 ? 's' : ''} left! Score: ${roundsCompleted}/${rounds.length}`;
+
+  const imageUrl = `images/score-${roundsCompleted}.png`;  // Image based on score
+
+  // Fetch the image and convert it to a Blob
+  fetch(imageUrl)
+    .then(response => response.blob())
+    .then(imageBlob => {
+      const item = new ClipboardItem({
+        'image/png': imageBlob,
+        'text/plain': new Blob([scoreText], { type: 'text/plain' }),
       });
-  };
+
+      navigator.clipboard.write([item]).then(() => {
+        alert("Your score and image were copied to the clipboard!");
+      }).catch(err => {
+        console.error("Clipboard copy failed:", err);
+      });
+    });
+};
+
 }
+
+
+
+
+
+
 
 document.addEventListener("touchmove", function(e) {
   if (e.target.closest(".draggable-item")) {
