@@ -825,12 +825,11 @@ setTimeout(() => {
 
 
 
-
-
 function generateShareLink() {
-  // Create a simple shareable link with score in the URL
+  // Create a simple shareable link with emoji score in the URL
   const baseUrl = window.location.origin + window.location.pathname; // current page
-  const shareUrl = `${baseUrl}?score=${score}`;
+  const emojiScore = getEmojiScore(roundsCompleted); // Get the emoji score
+  const shareUrl = `${baseUrl}?score=${emojiScore}`;
 
   const shareLink = document.getElementById('shareLink');
   shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
@@ -841,14 +840,22 @@ function generateShareLink() {
   });
 }
 
-// If you want, you can ALSO read the ?score= part of URL and display it when someone clicks a shared link!
-window.onload = function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const sharedScore = urlParams.get('score');
-  if (sharedScore !== null) {
-    alert(`Your friend's score: ${sharedScore}/3`);
+function getEmojiScore(roundsCompleted) {
+  const maxRounds = 3; // The total rounds possible
+  let score = '';
+
+  // Add green squares for completed rounds
+  for (let i = 0; i < roundsCompleted; i++) {
+    score += '🟩'; // Green square for correct rounds
   }
-};
+
+  // Add black squares for uncompleted rounds
+  for (let i = roundsCompleted; i < maxRounds; i++) {
+    score += '⬛'; // Black square for uncompleted rounds
+  }
+
+  return score;
+}
 
 
 
