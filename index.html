@@ -866,14 +866,16 @@ function getEmojiScore(roundsCompleted) {
 
 
 
-
 const shareButton = document.getElementById('shareButton');
 
 shareButton.addEventListener('click', () => {
-  const correctness = [true, false, true]; // <- Replace this with your actual correctness array
-  const emojiScore = correctness.map(isCorrect => isCorrect ? '🟩' : '⬛').join('');
-  const correctCount = correctness.filter(Boolean).length;
-  const total = correctness.length;
+  const roundsCompleted = 2; // Replace this with the actual number of rounds completed
+  
+  // Use the getEmojiScore function to get the emoji score
+  const emojiScore = getEmojiScore(roundsCompleted);
+  
+  const correctCount = roundsCompleted; // Assuming `roundsCompleted` equals the number of correct answers
+  const total = 3; // This can be dynamic if the total number of rounds is variable
 
   const text = `🧠 I scored ${correctCount}/${total} on Order It!\n${emojiScore}\nCan you beat me?`;
 
@@ -883,26 +885,18 @@ shareButton.addEventListener('click', () => {
     url: window.location.href
   };
 
-
-  
-
+  // Trigger the share functionality (this depends on your environment, e.g., for web sharing)
   if (navigator.share) {
     navigator.share(shareData)
-      .then(() => console.log('Shared successfully'))
-      .catch((err) => console.error('Error sharing:', err));
+      .then(() => console.log('Share successful!'))
+      .catch((error) => console.log('Error sharing:', error));
   } else {
-    const fullText = `${text}\n${shareData.url}`;
-    const shareLink = document.getElementById('shareLink');
-    shareLink.textContent = fullText;
-    navigator.clipboard.writeText(fullText)
-      .then(() => {
-        alert("Score copied to clipboard!");
-      })
-      .catch(() => {
-        alert("Unable to copy. Please copy the text manually.");
-      });
+    // Fallback if Web Share API is not supported
+    console.log('Web Share API not supported. Sharing manually via text:');
+    console.log(text);
   }
 });
+
 
 
 
