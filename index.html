@@ -878,7 +878,10 @@ shareButton.addEventListener('click', () => {
   const correctCount = roundsCompleted; // Assuming `roundsCompleted` equals the number of correct answers
   const total = 3; // This can be dynamic if the total number of rounds is variable
 
-  const text = `\n${emojiScore}\nWith ${strikeCount} mistakes`;
+  const strikeCountElement = document.getElementById('strikeCountElement');
+const strikeCount = parseInt(strikeCountElement.textContent, 10); // Ensure it's a number
+
+const text = `\n${emojiScore}\nWith ${strikeCount} mistakes`;
 
 
   const shareData = {
