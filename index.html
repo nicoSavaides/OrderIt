@@ -827,19 +827,6 @@ setTimeout(() => {
 
 
 
-function generateShareLink() {
-  // Create a simple shareable link with score in the URL
-  const baseUrl = window.location.origin + window.location.pathname; // current page
-  const shareUrl = `${baseUrl}?score=${score}`;
-
-  const shareLink = document.getElementById('shareLink');
-  shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
-
-  // Optionally, automatically copy to clipboard:
-  navigator.clipboard.writeText(shareUrl).then(() => {
-    alert('Link copied to clipboard!');
-  });
-}
 
 // If you want, you can ALSO read the ?score= part of URL and display it when someone clicks a shared link!
 window.onload = function() {
