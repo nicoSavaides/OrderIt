@@ -783,75 +783,57 @@ setTimeout(() => {
 
 
 
-    
-    let score = 0; // This should be updated based on the correctness array
-
-// Example correctness array after the game (replace this with actual data)
-const correctness = [true, false, true]; // Represents the player's results: true (correct), false (incorrect)
+    let score = 0; // Tracks the number of correct answers
+const correctness = []; // This array should hold true/false values for each round (true for correct, false for incorrect)
 
 function endGame() {
   console.log("End game triggered");
-  document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
-  document.getElementById('endScreen').classList.remove('hidden'); // Show the end screen
 
-  let message = ""; // Default message
+  // Hide game and show end screen
+  document.getElementById('gameScreen').classList.add('hidden');
+  document.getElementById('endScreen').classList.remove('hidden');
 
-  // Set message based on the rounds completed
-  if (roundsCompleted === 3) {
-    message = "Amazing!";
-  } else if (roundsCompleted === 2) {
-    message = "Good job!";
-  } else if (roundsCompleted === 1) {
-    message = "Not bad!";
-  } else {
-    message = "Nice try";
-  }
+  // Calculate the number of correct answers (score)
+  score = correctness.filter(isCorrect => isCorrect).length; // Count how many are correct (true)
 
-  // Update the end game status message
-  document.getElementById('endGameStatus').textContent = message;
-
-  // Calculate correct answers and score
-  const correctCount = correctness.filter(Boolean).length; // Number of correct answers
-
-  // Generate the emoji score
+  // Generate the emoji sequence based on the correctness array
   const emojiScore = correctness.map(isCorrect => isCorrect ? '🟩' : '⬛').join('');
 
-  // Show the player's final score
-  document.getElementById('finalScore').textContent = `You scored ${correctCount} out of ${correctness.length}`;
-
-  // Optionally show emoji score (you can style it or add it wherever you'd like)
+  // Display score and emoji score
+  document.getElementById('finalScore').textContent = `You scored ${score} out of ${correctness.length}`;
   document.getElementById('emojiScore').textContent = emojiScore;
 
-  // Set up the share button
+  // Set up the share button to generate the link with score and emoji sequence
   const shareButton = document.getElementById('shareButton');
   shareButton.onclick = function() {
-    generateShareLink(correctCount, correctness.length, emojiScore);
+    generateShareLink(score, correctness.length, emojiScore);
   };
 }
 
-// Generate shareable link with emoji score
-function generateShareLink(correctCount, total, emojiScore) {
-  // Create a simple shareable link with score in the URL
-  const baseUrl = window.location.origin + window.location.pathname; // current page
-  const shareUrl = `${baseUrl}?score=${correctCount}&emoji=${encodeURIComponent(emojiScore)}`;
+// Generate shareable link with score and emoji sequence
+function generateShareLink(score, total, emojiScore) {
+  const baseUrl = window.location.origin + window.location.pathname; // Current page URL
+  const shareUrl = `${baseUrl}?score=${score}&emoji=${encodeURIComponent(emojiScore)}`;
 
   const shareLink = document.getElementById('shareLink');
   shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
 
-  // Optionally, automatically copy to clipboard:
+  // Optionally, copy to clipboard
   navigator.clipboard.writeText(shareUrl).then(() => {
     alert('Link copied to clipboard!');
   });
 }
 
-// Handle sharing
+// Handle the share button event
 const shareButton = document.getElementById('shareButton');
 
 shareButton.addEventListener('click', () => {
+  // Generate the emoji score based on the correctness array
   const emojiScore = correctness.map(isCorrect => isCorrect ? '🟩' : '⬛').join('');
-  const correctCount = correctness.filter(Boolean).length;
+  const correctCount = correctness.filter(Boolean).length; // Count the number of correct answers
   const total = correctness.length;
 
+  // Text to share, including the score and emoji representation
   const text = `🧠 I scored ${correctCount}/${total} on Order It!\n${emojiScore}\nCan you beat me?`;
 
   const shareData = {
@@ -868,6 +850,7 @@ shareButton.addEventListener('click', () => {
     alert("Sharing not supported on this device.");
   }
 });
+
 
 
 
