@@ -245,17 +245,32 @@
 
 
       #submitWrapper {
-      position: fixed;  /* Fix the element's position relative to the viewport */
-      bottom: 67px;     /* Position it 20px from the bottom of the screen */
-      left: 50%;        /* Center it horizontally */
-      transform: translateX(-50%); /* Ensure it's centered */
-      padding: 12px 25px; /* Increase padding for better touch targets */
-    }
+  position: fixed;
+  bottom: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000; /* Ensure it's on top */
+}
 
+.submit-hit-area {
+  position: relative;
+  width: 100px; /* or larger to increase hit target */
+  height: 60px; /* increase this for more vertical touch room */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-      #submitWrapper button {
-      margin-top: 0; /* Remove the big margin that button normally has */
-      }
+.submit-hit-area button {
+  pointer-events: auto;
+  padding: 8px 16px; /* Keep visual size small */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 
 
