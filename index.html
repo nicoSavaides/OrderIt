@@ -196,7 +196,7 @@
       h2 {
       position: fixed;
       font-size: 2.3rem !important;
-      top: 35px;               /* Adjust to set how far from the top of the screen */
+      top: 30px;               /* Adjust to set how far from the top of the screen */
       left: 50%;               /* Position horizontally at the center */
       transform: translateX(-50%); /* Center it exactly by moving it back by 50% of its own width */
       text-align: center;      /* Centers text if it wraps to the next line */
@@ -223,7 +223,7 @@
       button {
         font-size: 1.5rem;
         padding: 12px 25px;
-        margin-top: 27px;
+        margin-top: 21px;
       }
 
 
@@ -235,7 +235,7 @@
       #strikeCount {
         position: fixed;
         font-size: 1.2rem !important;
-        top: 380px; /* Set how far from the top of the screen you want it */
+        top: 379px; /* Set how far from the top of the screen you want it */
         left: 50%;
         transform: translateX(-50%); /* Centers the element horizontally */
         white-space: nowrap; /* Prevents the text from wrapping onto the next line */
@@ -245,34 +245,17 @@
 
 
       #submitWrapper {
-  position: fixed;
-  bottom: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000; /* Ensure it's on top */
-}
-
-.submit-hit-area {
-  position: relative;
-  width: 100px; /* or larger to increase hit target */
-  height: 60px; /* increase this for more vertical touch room */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.submit-hit-area button {
-  pointer-events: auto;
-  padding: 8px 16px; /* Keep visual size small */
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+      position: fixed;  /* Fix the element's position relative to the viewport */
+      bottom: 67px;     /* Position it 20px from the bottom of the screen */
+      left: 50%;        /* Center it horizontally */
+      transform: translateX(-50%); /* Ensure it's centered */
+      padding: 12px 25px; /* Increase padding for better touch targets */
+    }
 
 
-
+      #submitWrapper button {
+      margin-top: 0; /* Remove the big margin that button normally has */
+      }
 
 
 
@@ -297,7 +280,7 @@
     
     #itemListWrapper {
     position: absolute;  /* Use absolute positioning to ensure it is centered */
-    top: 55px;
+    top: px;
     left: 50%;
     transform: translateX(-50%);  /* Center the element */
     width: 90%;  /* Ensure it doesn't stretch beyond the screen width */
@@ -414,12 +397,9 @@
     <p id="strikeCount"></p>
     
 
-    <div id="submitWrapper"> 
-      <div class="touch-buffer">
-        <button onclick="submitOrder()">Submit</button>
-      </div>
+    <div id="submitWrapper">
+      <button onclick="submitOrder()">Submit</button>
     </div>
-    
 
    
    
@@ -812,12 +792,8 @@ setTimeout(() => {
 
   // Set up the share button
   const shareButton = document.getElementById('shareButton');
-if (!shareButton) {
-  console.error('Share button not found!');
-} else {
   shareButton.onclick = function() {
-    console.log("Share button clicked");
-    shareResults(roundsCompleted);
+    generateShareLink();
   };
 }
 
@@ -829,35 +805,28 @@ if (!shareButton) {
 
 
 
+function generateShareLink() {
+  // Create a simple shareable link with score in the URL
+  const baseUrl = window.location.origin + window.location.pathname; // current page
+  const shareUrl = `${baseUrl}?score=${score}`;
 
-function generateEmojiScore(score) {
-  const emojis = ['⬜️', '🟥', '🟨', '🟩'];
-  return emojis[score] || '⬜️';
+  const shareLink = document.getElementById('shareLink');
+  shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
+
+  // Optionally, automatically copy to clipboard:
+  navigator.clipboard.writeText(shareUrl).then(() => {
+    alert('Link copied to clipboard!');
+  });
 }
 
-function getShareText(score) {
-  const emojis = Array(score).fill('🟩').concat(Array(3 - score).fill('⬜️')).join('');
-  return `Order It #${getTodayIndex()}
-${emojis}
-Try it: https://orderitgame.com`;
-}
-
-function shareResults(score) {
-  const text = getShareText(score);
-
-  if (navigator.share) {
-    navigator.share({ text }).catch(err => {
-      console.error('Share failed', err);
-    });
-  } else if (navigator.clipboard) {
-    navigator.clipboard.writeText(text)
-      .then(() => alert('Results copied to clipboard!'))
-      .catch(err => console.error('Clipboard copy failed', err));
-  } else {
-    alert('Sharing not supported on this device.');
+// If you want, you can ALSO read the ?score= part of URL and display it when someone clicks a shared link!
+window.onload = function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const sharedScore = urlParams.get('score');
+  if (sharedScore !== null) {
+    alert(`Your friend's score: ${sharedScore}/3`);
   }
-}
-
+};
 
 
 
