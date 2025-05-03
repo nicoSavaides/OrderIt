@@ -812,29 +812,12 @@ setTimeout(() => {
   // Show the player's final score
   document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
 
-  // Generate the emoji score (using roundsCompleted)
-  const emojiScore = generateEmojiScore(roundsCompleted);
-  document.getElementById('emojiScore').textContent = emojiScore; // Display emoji score
-
   // Set up the share button
   const shareButton = document.getElementById('shareButton');
   shareButton.onclick = function() {
-    generateShareLink(emojiScore); // Include emoji score in the shareable link
+    generateShareLink();
   };
 }
-
-// Function to generate emoji score based on rounds completed
-function generateEmojiScore(roundsCompleted) {
-  const emojiArray = ['⬛', '⬛', '⬛']; // Default to 3 black emojis
-
-  for (let i = 0; i < roundsCompleted; i++) {
-    emojiArray[i] = '🟩'; // Green emojis for correct rounds
-  }
-
-  return emojiArray.join('');
-}
-
-
 
 
 
