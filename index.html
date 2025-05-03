@@ -420,13 +420,6 @@
     </div>
 
 
-    <div id="scoreCard" style="background: #fff; padding: 20px; border-radius: 12px; text-align: center;">
-      <img src="logo.png" alt="Order It Logo" style="width: 100px; margin-bottom: 10px;">
-      <h2>🧠 I scored 9/10 on <strong>Order It!</strong></h2>
-      <p>Can you beat me in today’s challenge?</p>
-      <img src="medal.png" alt="Score Badge" style="width: 80px;">
-      <p>👉 orderit.game/today</p>
-    </div>
     
     
 
@@ -868,9 +861,16 @@ window.onload = function() {
 const shareButton = document.getElementById('shareButton');
 
 shareButton.addEventListener('click', () => {
+  const correctness = [true, false, true]; // <- Replace this with your actual correctness array
+  const emojiScore = correctness.map(isCorrect => isCorrect ? '🟩' : '⬛').join('');
+  const correctCount = correctness.filter(Boolean).length;
+  const total = correctness.length;
+
+  const text = `🧠 I scored ${correctCount}/${total} on Order It!\n${emojiScore}\nCan you beat me?`;
+
   const shareData = {
     title: 'Order It - My Score',
-    text: 'I just played Order It! Can you beat my score?',
+    text: text,
     url: window.location.href
   };
 
@@ -879,18 +879,19 @@ shareButton.addEventListener('click', () => {
       .then(() => console.log('Shared successfully'))
       .catch((err) => console.error('Error sharing:', err));
   } else {
-    // Fallback: Copy to clipboard or show shareable link
+    const fullText = `${text}\n${shareData.url}`;
     const shareLink = document.getElementById('shareLink');
-    shareLink.textContent = shareData.url;
-    navigator.clipboard.writeText(shareData.url)
+    shareLink.textContent = fullText;
+    navigator.clipboard.writeText(fullText)
       .then(() => {
-        alert("Link copied to clipboard!");
+        alert("Score copied to clipboard!");
       })
       .catch(() => {
-        alert("Unable to copy. Please copy the link manually.");
+        alert("Unable to copy. Please copy the text manually.");
       });
   }
 });
+
 
 
 
