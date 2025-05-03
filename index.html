@@ -874,24 +874,17 @@ shareButton.addEventListener('click', () => {
     url: window.location.href
   };
 
+
+
+
   if (navigator.share) {
     navigator.share(shareData)
       .then(() => console.log('Shared successfully'))
       .catch((err) => console.error('Error sharing:', err));
   } else {
-    const fullText = `${text}\n${shareData.url}`;
-    const shareLink = document.getElementById('shareLink');
-    shareLink.textContent = fullText;
-    navigator.clipboard.writeText(fullText)
-      .then(() => {
-        alert("Score copied to clipboard!");
-      })
-      .catch(() => {
-        alert("Unable to copy. Please copy the text manually.");
-      });
+    alert("Sharing not supported on this device.");
   }
 });
-
 
 
 
