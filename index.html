@@ -813,40 +813,47 @@ setTimeout(() => {
   // Set up the share button
   const shareButton = document.getElementById('shareButton');
   shareButton.onclick = function() {
-    generateShareLink();
-  };
-}
-
-
-
-
-
-
-
-
-
-function generateShareLink() {
-  // Create a simple shareable link with score in the URL
-  const baseUrl = window.location.origin + window.location.pathname; // current page
-  const shareUrl = `${baseUrl}?score=${score}`;
-
-  const shareLink = document.getElementById('shareLink');
-  shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
-
-  // Optionally, automatically copy to clipboard:
-  navigator.clipboard.writeText(shareUrl).then(() => {
-    alert('Link copied to clipboard!');
-  });
-}
-
-// If you want, you can ALSO read the ?score= part of URL and display it when someone clicks a shared link!
-window.onload = function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const sharedScore = urlParams.get('score');
-  if (sharedScore !== null) {
-    alert(`Your friend's score: ${sharedScore}/3`);
-  }
+  shareResults(roundsCompleted); // or use 3 - strikes if that's your scoring method
 };
+
+}
+
+
+
+
+
+
+
+
+
+function generateEmojiScore(score) {
+  const emojis = ['⬜️', '🟥', '🟨', '🟩'];
+  return emojis[score] || '⬜️';
+}
+
+function getShareText(score) {
+  const emojis = Array(score).fill('🟩').concat(Array(3 - score).fill('⬜️')).join('');
+  return `Order It #${getTodayIndex()}
+${emojis}
+Try it: https://orderitgame.com`;
+}
+
+function shareResults(score) {
+  const text = getShareText(score);
+
+  if (navigator.share) {
+    navigator.share({ text }).catch(err => {
+      console.error('Share failed', err);
+    });
+  } else if (navigator.clipboard) {
+    navigator.clipboard.writeText(text)
+      .then(() => alert('Results copied to clipboard!'))
+      .catch(err => console.error('Clipboard copy failed', err));
+  } else {
+    alert('Sharing not supported on this device.');
+  }
+}
+
 
 
 
