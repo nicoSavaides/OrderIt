@@ -812,11 +812,15 @@ setTimeout(() => {
 
   // Set up the share button
   const shareButton = document.getElementById('shareButton');
+if (!shareButton) {
+  console.error('Share button not found!');
+} else {
   shareButton.onclick = function() {
-  shareResults(roundsCompleted); // or use 3 - strikes if that's your scoring method
-};
-
+    console.log("Share button clicked");
+    shareResults(roundsCompleted);
+  };
 }
+
 
 
 
