@@ -844,18 +844,27 @@ function getEmojiScore(roundsCompleted) {
   const maxRounds = 3; // The total rounds possible
   let score = '';
 
-  // Add green squares for completed rounds
-  for (let i = 0; i < roundsCompleted; i++) {
-    score += '🟩'; // Green square for correct rounds
-  }
 
-  // Add black squares for uncompleted rounds
-  for (let i = roundsCompleted; i < maxRounds; i++) {
-    score += '⬛'; // Black square for uncompleted rounds
-  }
-
-  return score;
+  if(roundsCompleted == 0)
+{
+  score == '⬛⬛⬛'
 }
+else if(roundsCompleted == 1)
+{
+  score == '🟩⬛⬛'
+}
+else if(roundsCompleted == 2)
+{
+  score == '🟩🟩⬛'
+}
+else if(roundsCompleted == 3)
+{
+  score == '🟩🟩🟩'
+}
+
+return score;
+}
+
 
 
 
