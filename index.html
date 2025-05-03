@@ -847,6 +847,33 @@ window.onload = function() {
   }
 };
 
+const shareButton = document.getElementById('shareButton');
+
+shareButton.addEventListener('click', () => {
+  const shareData = {
+    title: 'Order It - My Score',
+    text: 'I just played Order It! Can you beat my score?',
+    url: window.location.href
+  };
+
+  if (navigator.share) {
+    navigator.share(shareData)
+      .then(() => console.log('Shared successfully'))
+      .catch((err) => console.error('Error sharing:', err));
+  } else {
+    // Fallback: Copy to clipboard or show shareable link
+    const shareLink = document.getElementById('shareLink');
+    shareLink.textContent = shareData.url;
+    navigator.clipboard.writeText(shareData.url)
+      .then(() => {
+        alert("Link copied to clipboard!");
+      })
+      .catch(() => {
+        alert("Unable to copy. Please copy the link manually.");
+      });
+  }
+});
+
 
 
 
