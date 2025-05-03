@@ -784,88 +784,57 @@ setTimeout(() => {
 
 
     
-    let score = 0; // you should already be tracking this
-   
+    let score = 0; // Tracks the number of correct answers
+let correctness = []; // This array holds the correctness of each round (true for correct, false for incorrect)
 
+function endGame() {
+  console.log("End game triggered");
 
-    function endGame() {
-  console.log("End game triggered");  // Test if this is being reached
-  document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
-  document.getElementById('endScreen').classList.remove('hidden'); // Show the end screen
+  // Hide game and show end screen
+  document.getElementById('gameScreen').classList.add('hidden');
+  document.getElementById('endScreen').classList.remove('hidden');
 
-  let message = "";  // Default message
+  // Calculate the number of correct answers (score)
+  score = correctness.filter(isCorrect => isCorrect).length; // Count how many are correct (true)
 
-  // Set message based on the rounds completed
-  if (roundsCompleted === 3) {
-    message = "Amazing!";
-  } else if (roundsCompleted === 2) {
-    message = "Good job!";
-  } else if (roundsCompleted === 1) {
-    message = "Not bad!";
-  } else {
-    message = "Nice try";
-  }
+  // Generate the emoji sequence based on the correctness array
+  const emojiScore = correctness.map(isCorrect => isCorrect ? '🟩' : '⬛').join('');
 
-  // Update the end game status message
-  document.getElementById('endGameStatus').textContent = message;
+  // Display score and emoji score
+  document.getElementById('finalScore').textContent = `You scored ${score} out of ${correctness.length}`;
+  document.getElementById('emojiScore').textContent = emojiScore;
 
-  // Show the player's final score
-  document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
-
-  // Set up the share button
+  // Set up the share button to generate the link with score and emoji sequence
   const shareButton = document.getElementById('shareButton');
   shareButton.onclick = function() {
-    generateShareLink();
+    generateShareLink(score, correctness.length, emojiScore);
   };
 }
 
-
-
-
-
-
-
-
-
-function generateShareLink() {
-  // Create a simple shareable link with score in the URL
-  const baseUrl = window.location.origin + window.location.pathname; // current page
-  const shareUrl = `${baseUrl}?score=${score}`;
+// Generate shareable link with score and emoji sequence
+function generateShareLink(score, total, emojiScore) {
+  const baseUrl = window.location.origin + window.location.pathname; // Current page URL
+  const shareUrl = `${baseUrl}?score=${score}&emoji=${encodeURIComponent(emojiScore)}`;
 
   const shareLink = document.getElementById('shareLink');
   shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
 
-  // Optionally, automatically copy to clipboard:
+  // Optionally, copy to clipboard
   navigator.clipboard.writeText(shareUrl).then(() => {
     alert('Link copied to clipboard!');
   });
 }
 
-// If you want, you can ALSO read the ?score= part of URL and display it when someone clicks a shared link!
-window.onload = function() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const sharedScore = urlParams.get('score');
-  if (sharedScore !== null) {
-    alert(`Your friend's score: ${sharedScore}/3`);
-  }
-};
-
-
-
-
-
-
-
-
-
+// Handle the share button event
 const shareButton = document.getElementById('shareButton');
 
 shareButton.addEventListener('click', () => {
-  const correctness = [true, false, true]; // <- Replace this with your actual correctness array
+  // Generate the emoji score based on the correctness array
   const emojiScore = correctness.map(isCorrect => isCorrect ? '🟩' : '⬛').join('');
-  const correctCount = correctness.filter(Boolean).length;
+  const correctCount = correctness.filter(Boolean).length; // Count the number of correct answers
   const total = correctness.length;
 
+  // Text to share, including the score and emoji representation
   const text = `🧠 I scored ${correctCount}/${total} on Order It!\n${emojiScore}\nCan you beat me?`;
 
   const shareData = {
@@ -874,24 +843,12 @@ shareButton.addEventListener('click', () => {
     url: window.location.href
   };
 
-
-  
-
   if (navigator.share) {
     navigator.share(shareData)
       .then(() => console.log('Shared successfully'))
       .catch((err) => console.error('Error sharing:', err));
   } else {
-    const fullText = `${text}\n${shareData.url}`;
-    const shareLink = document.getElementById('shareLink');
-    shareLink.textContent = fullText;
-    navigator.clipboard.writeText(fullText)
-      .then(() => {
-        alert("Score copied to clipboard!");
-      })
-      .catch(() => {
-        alert("Unable to copy. Please copy the text manually.");
-      });
+    alert("Sharing not supported on this device.");
   }
 });
 
