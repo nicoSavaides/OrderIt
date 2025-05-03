@@ -235,7 +235,7 @@
       #strikeCount {
         position: fixed;
         font-size: 1.2rem !important;
-        top: 381px; /* Set how far from the top of the screen you want it */
+        top: 380px; /* Set how far from the top of the screen you want it */
         left: 50%;
         transform: translateX(-50%); /* Centers the element horizontally */
         white-space: nowrap; /* Prevents the text from wrapping onto the next line */
@@ -246,7 +246,7 @@
 
       #submitWrapper {
   position: fixed;
-  bottom: 75px;
+  bottom: 70px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000; /* Ensure it's on top */
@@ -810,13 +810,6 @@ setTimeout(() => {
   // Show the player's final score
   document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
 
-  // Display the corresponding score image
-  const scoreImage = document.createElement('img');
-  scoreImage.src = `score-${roundsCompleted}.png`;  // Dynamically change the image based on the score
-  scoreImage.alt = `Score ${roundsCompleted}`;
-  scoreImage.style.width = '100px';  // Adjust image size as needed
-  document.getElementById('finalScore').appendChild(scoreImage); // Append the image below the score text
-
   // Set up the share button
   const shareButton = document.getElementById('shareButton');
   shareButton.onclick = function() {
@@ -824,10 +817,18 @@ setTimeout(() => {
   };
 }
 
+
+
+
+
+
+
+
+
 function generateShareLink() {
   // Create a simple shareable link with score in the URL
   const baseUrl = window.location.origin + window.location.pathname; // current page
-  const shareUrl = `${baseUrl}?score=${roundsCompleted}`;
+  const shareUrl = `${baseUrl}?score=${score}`;
 
   const shareLink = document.getElementById('shareLink');
   shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
@@ -843,15 +844,10 @@ window.onload = function() {
   const urlParams = new URLSearchParams(window.location.search);
   const sharedScore = urlParams.get('score');
   if (sharedScore !== null) {
-    // Display the corresponding image for the shared score
-    const scoreImage = document.createElement('img');
-    scoreImage.src = `score-${sharedScore}.png`;  // Load the correct image based on the score
-    scoreImage.alt = `Score ${sharedScore}`;
-    scoreImage.style.width = '100px';  // Adjust image size as needed
-    document.body.appendChild(scoreImage);  // Append to body or another container for shared view
     alert(`Your friend's score: ${sharedScore}/3`);
   }
 };
+
 
 
 
