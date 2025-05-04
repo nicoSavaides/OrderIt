@@ -828,7 +828,7 @@ setTimeout(() => {
 function generateShareLink() {
   const baseUrl = window.location.origin + window.location.pathname;
   const emojiScore = getEmojiScore(roundsCompleted);
-  const shareUrl = `${baseUrl}?score=${emojiScore}`;
+  const shareUrl = `${baseUrl}?score=${encodeURIComponent(emojiScore)}`;
 
   const shareLink = document.getElementById('shareLink');
   shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">Order It – ${emojiScore}</a>`;
