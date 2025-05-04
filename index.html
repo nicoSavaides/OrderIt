@@ -432,7 +432,8 @@
     <p id="finalScore"></p> <!-- their score will appear here -->
     <p id="thanksMessage">Thanks for playing. Come back tomorrow for a new Order It!</p>
     <button id="shareButton">Share your score</button> <!-- share button -->
-    <p id="shareLink" style="word-break: break-all;"></p> <!-- link will show up here -->
+    <p id="shareLink" style="word-break: normal; font-size: 1.2em; margin-top: 10px;"></p>
+
   </div>
   
   <p id="currentDate"></p>
@@ -834,6 +835,7 @@ function generateShareLink() {
   const shareLink = document.getElementById('shareLink');
 
   shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">Order It – ${emojiScore}</a>`;
+
 
 
   
