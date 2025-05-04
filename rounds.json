@@ -832,7 +832,209 @@
         "items": ["Blue Jay", "Great Horned Owl", "Bald Eagle", "Common Pigeon"],
         "correctOrder": ["Blue Jay", "Great Horned Owl", "Common Pigeon", "Bald Eagle"]
       }
+    ], 
+
+    [
+      {
+        "prompt": "Number of Countries",
+        "items": ["Asia", "Africa", "South America", "Europe"],
+        "correctOrder": ["South America", "Europe", "Asia", "Africa"]
+      },
+      {
+        "prompt": "Area",
+        "items": ["Asia", "Africa", "South America", "Europe"],
+        "correctOrder": ["Europe", "South America", "Africa", "Asia"]
+      },
+      {
+        "prompt": "Population",
+        "items": ["Asia", "Africa", "South America", "Europe"],
+        "correctOrder": ["South America", "Europe", "Africa", "Asia"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Number of Strings",
+        "items": ["Banjo","Sitar", "Ukulele", "Harp"],
+        "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
+      },
+      {
+        "prompt": "Length/Height",
+        "items": ["Banjo","Sitar", "Ukulele", "Harp"],
+        "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
+      },
+      {
+        "prompt": "Year",
+        "items": ["Banjo","Sitar", "Ukulele", "Harp"],
+        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"]
+      }
+    
+    ],
+
+    [
+      {
+        "prompt": "Average Temperature",
+        "items": ["Mexico City", "Toronto", "Honolulu", "Dubai"],
+        "correctOrder": ["Toronto", "Mexico City", "Honolulu", "Dubai"]
+      },
+      {
+        "prompt": "Elevation",
+        "items": ["Mexico City", "Toronto", "Honolulu", "Dubai"],
+        "correctOrder": ["Honolulu", "Dubai", "Toronto", "Mexico City"]
+      },
+      {
+        "prompt": "Population",
+        "items": ["Mexico City", "Toronto", "Honolulu", "Dubai"],
+        "correctOrder": ["Honolulu", "Dubai", "Toronto", "Mexico City"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Average Temperature",
+        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
+        "correctOrder": ["Moscow", "Denver", "Sydney", "Cairo"]
+      },
+      {
+        "prompt": "Elevation",
+        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
+        "correctOrder": ["Cairo", "Sydney", "Moscow", "Denver"]
+      },
+      {
+        "prompt": "Population",
+        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
+        "correctOrder": ["Denver", "Sydney", "Moscow", "Cairo"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Weight",
+        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
+        "correctOrder": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"]
+      },
+      {
+        "prompt": "Intelligence",
+        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
+        "correctOrder": ["Beagle", "Chihuahua", "Golden Retriever", "Border Collie"]
+      },
+      {
+        "prompt": "Speed",
+        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
+        "correctOrder": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Weight",
+        "items": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
+        "correctOrder": ["Bulldog", "Greyhound", "Labrador Retriever", "Great Dane"]
+      },
+      {
+        "prompt": "Intelligence",
+        "items": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
+        "correctOrder": ["Greyhound", "Bulldog", "Great Dane", "Labrador Retriever"]
+      },
+      {
+        "prompt": "Speed",
+        "items": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
+        "correctOrder": ["Bulldog", "Labrador Retriever", "Great Dane", "Greyhound"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Number of Children",
+        "items": ["Homer Simpson", "Darth Vader", "Iron Man", "Carol Brady"],
+        "correctOrder": ["Iron Man", "Darth Vader", "Homer Simpson", "Carol Brady"]
+      },
+      {
+        "prompt": "Height",
+        "items": ["Homer Simpson", "Darth Vader", "Iron Man", "Carol Brady"],
+        "correctOrder": ["Carol Brady", "Homer Simpson", "Iron Man", "Darth Vader"]
+      },
+      {
+        "prompt": "Year of First Appearance",
+        "items": ["Homer Simpson", "Darth Vader", "Iron Man", "Carol Brady"],
+        "correctOrder": ["Iron Man", "Carol Brady", "Darth Vader", "Homer Simpson"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Year Opened",
+        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "correctOrder": ["Disneyland", "Walt Disney World", "Disneyland Paris", "Disneyland Shanghai"]
+      },
+      {
+        "prompt": "Yearly Attendees",
+        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "correctOrder": ["Disneyland Paris", "Disneyland Shanghai", "Disneyland", "Walt Disney World"]
+      },
+      {
+        "prompt": "Total Land Size",
+        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "correctOrder": ["Disneyland", "Disneyland Shanghai", "Disneyland Paris", "Walt Disney World"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Number of Bordering Countries",
+        "items": ["China", "Italy", "France", "US"],
+        "correctOrder": ["US", "Italy", "France", "China"]
+      },
+      {
+        "prompt": "Military Size",
+        "items": ["China", "Italy", "France", "US"],
+        "correctOrder": ["France", "Italy", "US", "China"]
+      },
+      {
+        "prompt": "Tourism",
+        "items": ["China", "Italy", "France", "US"],
+        "correctOrder": ["China", "Italy", "US", "France"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Weight",
+        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
+        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
+      },
+      {
+        "prompt": "Population Size",
+        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
+        "correctOrder": ["Rhino", "Polar bear", "Hippo", "Elephant"]
+      },
+      {
+        "prompt": "Gestation Period",
+        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
+        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
+      }
     ]
+    
+    
+
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+
+  
     
     
     
