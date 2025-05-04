@@ -826,22 +826,24 @@ setTimeout(() => {
 
 
 
-function generateShareLink() {
-  // Create a simple shareable link with emoji score in the URL
-  const baseUrl = window.location.origin + window.location.pathname; // current page
-  const emojiScore = getEmojiScore(roundsCompleted); // Get the emoji score
+function generateShareLink(roundsCompleted) {
+  // Get the emoji score based on the rounds completed
+  const emojiScore = getEmojiScore(roundsCompleted);
+
+  // Create the shareable URL with the emoji score as a query parameter
+  const baseUrl = window.location.origin + window.location.pathname; // Current page URL
   const shareUrl = `${baseUrl}?score=${emojiScore}`;
 
+  // Set the inner HTML of the shareLink element to show the link with emoji score
   const shareLink = document.getElementById('shareLink');
-
   shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">Order It ${emojiScore}</a>`;
-
-
-
-
-
-  
 }
+
+
+
+
+
+
 
 function getEmojiScore(roundsCompleted) {
   const maxRounds = 3; // The total rounds possible
