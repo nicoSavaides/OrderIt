@@ -788,7 +788,6 @@ setTimeout(() => {
     let score = 0; // you should already be tracking this
    
 
-
     function endGame() {
   console.log("End game triggered");  // Test if this is being reached
   document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
@@ -816,34 +815,25 @@ setTimeout(() => {
   // Set up the share button
   const shareButton = document.getElementById('shareButton');
   shareButton.onclick = function() {
-    generateShareLink();
+    generateShareLink(roundsCompleted, strikes);  // Pass roundsCompleted and strikes to the function
   };
 }
 
-
-
-
-
-
-
-function generateShareLink(roundsCompleted) {
+function generateShareLink(roundsCompleted, strikes) {
   // Get the emoji score based on the rounds completed
   const emojiScore = getEmojiScore(roundsCompleted);
 
-  // Create the shareable URL with the emoji score as a query parameter
+  // Create the shareable URL with the emoji score and strikes as query parameters
   const baseUrl = window.location.origin + window.location.pathname; // Current page URL
-  const shareUrl = `${baseUrl}?score=${emojiScore}`;
+  const shareUrl = `${baseUrl}?score=${emojiScore}&mistakes=${strikes}`;
 
-  // Set the inner HTML of the shareLink element to show the link with emoji score
+  // Create the share text with both emoji score and mistakes
+  const shareText = `Order It – ${emojiScore} with ${strikes} mistakes`;
+
+  // Set the inner HTML of the shareLink element to show the link with emoji score and mistakes
   const shareLink = document.getElementById('shareLink');
-  shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">Order It ${emojiScore}</a>`;
+  shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">${shareText}</a>`;
 }
-
-
-
-
-
-
 
 function getEmojiScore(roundsCompleted) {
   const maxRounds = 3; // The total rounds possible
@@ -862,46 +852,11 @@ function getEmojiScore(roundsCompleted) {
   return score;
 }
 
-
-
-
-
-
-
-
-
-
+// Function to handle the share button click
 const shareButton = document.getElementById('shareButton');
-
 shareButton.addEventListener('click', () => {
-
-  
-  
-  // Use the getEmojiScore function to get the emoji score
-  const emojiScore = getEmojiScore(roundsCompleted);
-  
-  const correctCount = roundsCompleted; // Assuming `roundsCompleted` equals the number of correct answers
-  const total = 3; // This can be dynamic if the total number of rounds is variable
-
-  const text = `${emojiScore}\nWith ${strikes} mistakes`;
-
-
-  const shareData = {
-    title: 'Order It',
-    text: text,
-    url: window.location.href
-  };
-
-  // Trigger the share functionality (this depends on your environment, e.g., for web sharing)
-  if (navigator.share) {
-    navigator.share(shareData)
-      .then(() => console.log('Share successful!'))
-      .catch((error) => console.log('Error sharing:', error));
-  } else {
-    // Fallback if Web Share API is not supported
-    console.log('Web Share API not supported. Sharing manually via text:');
-    console.log(text);
-  }
+  // When the share button is clicked, generate the share link with roundsCompleted and strikes
+  generateShareLink(roundsCompleted, strikes);
 });
 
 
