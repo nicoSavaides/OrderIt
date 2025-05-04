@@ -834,10 +834,7 @@ function generateShareLink() {
   const shareLink = document.getElementById('shareLink');
   shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">${shareUrl}</a>`;
 
-  // Optionally, automatically copy to clipboard:
-  navigator.clipboard.writeText(shareUrl).then(() => {
-    alert('Link copied to clipboard!');
-  });
+  
 }
 
 function getEmojiScore(roundsCompleted) {
