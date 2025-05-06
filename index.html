@@ -351,11 +351,24 @@
     }
 
 
-      #shareLink,
-      #shareButton {
-        margin-top: 2px !important;
-        padding: 20px 40px; /* Increase padding for more clickable area */
-      }
+    #shareLink,
+#shareButton {
+  position: relative;
+  z-index: 1;
+  margin-top: 2px !important; /* Keep your margin-top */
+}
+
+#shareLink::after,
+#shareButton::after {
+  content: '';
+  position: absolute;
+  top: -10px; /* Adjust to expand clickable area vertically */
+  left: -10px; /* Adjust to expand clickable area horizontally */
+  right: -10px;
+  bottom: -10px;
+  z-index: -1; /* Invisible expanded clickable area */
+}
+
 
       
 
