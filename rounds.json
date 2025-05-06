@@ -847,136 +847,18 @@
         "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
         "correctOrder": ["Scarlett Johansson", "Tom Hanks", "Tom Cruise", "Rihanna"]
       }
-    ]
-    
-    
-
-    
-    
-    
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-
-
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    [
-      {
-        "prompt": "Top Speed",
-        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
-        "correctOrder": ["Sloth", "Mouse", "Pig", "Zebra"]
-      },
-      {
-        "prompt": "Weight",
-        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
-        "correctOrder": ["Mouse", "Sloth", "Pig", "Zebra"]
-      },
-      {
-        "prompt": "Lifespan",
-        "items": ["Pig", "Mouse", "Sloth", "Zebra"],
-        "correctOrder": ["Mouse", "Pig", "Zebra", "Sloth"]
-      }
-    ], 
-
-    [
-      {
-        "prompt": "Area",
-        "items": ["Egypt", "Australia", "USA", "France"],
-        "correctOrder": ["France", "Egypt", "Australia", "USA"]
-      },
-      {
-        "prompt": "Population",
-        "items": ["Egypt", "Australia", "USA", "France"],
-        "correctOrder": ["Australia", "France", "Egypt", "USA"]
-      },
-      {
-        "prompt": "GDP",
-        "items": ["Egypt", "Australia", "USA", "France"],
-        "correctOrder": ["Egypt", "Australia", "France", "USA"]
-      }
-    ], 
-
-
-    
-
-    
-    [
-      {
-        "prompt": "Area",
-        "items": ["Columbia", "Spain", "China", "Greece"],
-        "correctOrder": ["Greece", "Spain", "Columbia", "China"]
-      },
-      {
-        "prompt": "Population",
-        "items": ["Columbia", "Spain", "China", "Greece"],
-        "correctOrder": ["Greece", "Spain", "Columbia", "China"]
-      },
-      {
-        "prompt": "GDP",
-        "items": ["Columbia", "Spain", "China", "Greece"],
-        "correctOrder": ["Greece", "Columbia", "Spain", "China"]
-      }
     ],
 
     [
       {
-        "prompt": "Population",
-        "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["Alaska", "Idaho", "Ohio", "New York"]
-      },
-      {
         "prompt": "Area",
         "items": ["New York", "Ohio", "Alaska", "Idaho"],
         "correctOrder": ["Ohio", "New York", "Idaho", "Alaska"]
+      },
+      {
+        "prompt": "Population",
+        "items": ["New York", "Ohio", "Alaska", "Idaho"],
+        "correctOrder": ["Alaska", "Idaho", "Ohio", "New York"]
       },
       {
         "prompt": "Date of Statehood",
@@ -985,175 +867,23 @@
       }
     ],
 
-
-
-  
-
-
-
-
-
-
-
-
-
-    
-
-    
-
-
     [
       {
-        "prompt": "Height",
-        "items": ["Golden Gate Bridge", "Empire State Building", "Eiffel Tower", "Statue of Liberty"],
-        "correctOrder": ["Statue of Liberty", "Golden Gate Bridge", "Eiffel Tower", "Empire State Building"]
+        "prompt": "Weight",
+        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
+        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
       },
       {
-        "prompt": "Year Built",
-        "items": ["Golden Gate Bridge", "Empire State Building", "Eiffel Tower", "Statue of Liberty"],
-        "correctOrder": ["Statue of Liberty", "Eiffel Tower", "Empire State Building", "Golden Gate Bridge"]
+        "prompt": "Population Size",
+        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
+        "correctOrder": ["Rhino", "Polar bear", "Hippo", "Elephant"]
       },
       {
-        "prompt": "Construction in Years",
-        "items": ["Golden Gate Bridge", "Empire State Building", "Eiffel Tower", "Statue of Liberty"],
-        "correctOrder": ["Empire State Building", "Eiffel Tower", "Golden Gate Bridge", "Statue of Liberty"]
+        "prompt": "Gestation Period",
+        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
+        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
       }
     ],
-
-  
-
-
-
-  
-
-
-
- 
-
-  
-
-
-
-
-
-
-
-
-
-
-
-    [
-      {
-        "prompt": "Area",
-        "items": ["Canada", "Germany", "India", "Jamaica"],
-        "correctOrder": ["Jamaica", "Germany", "India", "Canada"]
-      },
-      {
-        "prompt": "Population",
-        "items": ["Canada", "Germany", "India", "Jamaica"],
-        "correctOrder": ["Jamaica", "Canada", "Germany", "India"]
-      },
-      {
-        "prompt": "GDP",
-        "items": ["Canada", "Germany", "India", "Jamaica"],
-        "correctOrder": ["Jamaica", "Canada", "India", "Germany"]
-      }
-    ], 
-
-    [
-      {
-        "prompt": "Premier Year",
-        "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
-        "correctOrder": ["Seinfeld", "Friends", "Mad Men", "Parks and Recreation"]
-      },
-      {
-        "prompt": "Number of Episodes",
-        "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
-        "correctOrder": ["Mad Men", "Parks and Recreation", "Seinfeld", "Friends"]
-      },
-      {
-        "prompt": "Emmys Won",
-        "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
-        "correctOrder": ["Parks and Recreation", "Friends", "Seinfeld", "Mad Men"]
-      }
-    ], 
-
-
-
-    [
-      {
-        "prompt": "Height",
-        "items": ["Mount Rushmore", "Pyramids of Giza", "Burj Khalifa", "Big Ben"],
-        "correctOrder": ["Mount Rushmore", "Big Ben", "Pyramids of Giza", "Burj Khalifa"]
-      },
-      {
-        "prompt": "Year built",
-        "items": ["Mount Rushmore", "Pyramids of Giza", "Burj Khalifa", "Big Ben"],
-        "correctOrder": ["Pyramids of Giza", "Big Ben", "Mount Rushmore", "Burj Khalifa"]
-      },
-      {
-        "prompt": "Construction in years",
-        "items": ["Mount Rushmore", "Pyramids of Giza", "Burj Khalifa", "Big Ben"],
-        "correctOrder": ["Burj Khalifa", "Mount Rushmore", "Big Ben", "Pyramids of Giza"]
-      }
-    ], 
-
-    [
-      {
-        "prompt": "Age",
-        "items": ["Johnny Depp", "Leonardo DiCaprio", "Kim Kardashian", "Dwayne Johnson"],
-        "correctOrder": ["Kim Kardashian", "Leonardo DiCaprio", "Dwayne Johnson", "Johnny Depp"]
-      },
-      {
-        "prompt": "Height",
-        "items": ["Johnny Depp", "Leonardo DiCaprio", "Kim Kardashian", "Dwayne Johnson"],
-        "correctOrder": ["Kim Kardashian", "Johnny Depp", "Leonardo DiCaprio", "Dwayne Johnson"]
-      },
-      {
-        "prompt": "Net Worth",
-        "items": ["Johnny Depp", "Leonardo DiCaprio", "Kim Kardashian", "Dwayne Johnson"],
-        "correctOrder": ["Johnny Depp", "Leonardo DiCaprio", "Dwayne Johnson", "Kim Kardashian"]
-      }
-    ], 
-
-
-
-    [
-      {
-        "prompt": "Release Year",
-        "items": ["Jurassic Park", "Inception", "Titanic", "Napoleon Dynamite"],
-        "correctOrder": ["Jurassic Park", "Titanic", "Napoleon Dynamite", "Inception"]
-      },
-      {
-        "prompt": "Box Office Gross",
-        "items": ["Jurassic Park", "Inception", "Titanic", "Napoleon Dynamite"],
-        "correctOrder": ["Napoleon Dynamite", "Inception", "Jurassic Park", "Titanic"]
-      },
-      {
-        "prompt": "Runtime",
-        "items": ["Jurassic Park", "Inception", "Titanic", "Napoleon Dynamite"],
-        "correctOrder": ["Napoleon Dynamite", "Jurassic Park", "Inception", "Titanic"]
-      }
-    ], 
-
-    [
-      {
-        "prompt": "Height",
-        "items": ["Leaning Tower", "Taj Mahal", "Colosseum", "Sydney Opera House"],
-        "correctOrder": ["Colosseum", "Leaning Tower", "Sydney Opera House", "Taj Mahal"]
-      },
-      {
-        "prompt": "Year Built",
-        "items": ["Leaning Tower", "Taj Mahal", "Colosseum", "Sydney Opera House"],
-        "correctOrder": ["Colosseum", "Leaning Tower", "Taj Mahal", "Sydney Opera House"]
-      },
-      {
-        "prompt": "Construction in Years",
-        "items": ["Leaning Tower", "Taj Mahal", "Colosseum", "Sydney Opera House"],
-        "correctOrder": ["Colosseum", "Sydney Opera House", "Taj Mahal", "Leaning Tower"]
-      }
-    ], 
-
 
     [
       {
@@ -1175,42 +905,75 @@
 
     [
       {
-        "prompt": "Age",
-        "items": ["Brad Pitt", "Beyoncé", "Rihanna", "Tom Hanks"],
-        "correctOrder": ["Rihanna", "Beyoncé", "Brad Pitt", "Tom Hanks"]
+        "prompt": "Area",
+        "items": ["Greece", "Canada", "China", "Japan"],
+        "correctOrder": ["Greece", "Japan", "China", "Canada"]
       },
       {
-        "prompt": "Height",
-        "items": ["Brad Pitt", "Beyoncé", "Rihanna", "Tom Hanks"],
-        "correctOrder": ["Beyoncé", "Rihanna", "Brad Pitt", "Tom Hanks"]
+        "prompt": "Population",
+        "items": ["Greece", "Canada", "China", "Japan"],
+        "correctOrder": ["Greece", "Canada", "Japan", "China"]
       },
       {
-        "prompt": "Net Worth",
-        "items": ["Brad Pitt", "Beyoncé", "Rihanna", "Tom Hanks"],
-        "correctOrder": ["Brad Pitt", "Tom Hanks", "Beyoncé", "Rihanna"]
+        "prompt": "GDP",
+        "items": ["Greece", "Canada", "China", "Japan"],
+        "correctOrder": ["Greece", "Canada", "Japan", "China"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Opened",
+        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "correctOrder": ["Disneyland", "Walt Disney World", "Disneyland Paris", "Disneyland Shanghai"]
+      },
+      {
+        "prompt": "Yearly Attendees",
+        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "correctOrder": ["Disneyland Paris", "Disneyland Shanghai", "Disneyland", "Walt Disney World"]
+      },
+      {
+        "prompt": "Total Land Size",
+        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "correctOrder": ["Disneyland", "Disneyland Shanghai", "Disneyland Paris", "Walt Disney World"]
       }
     ], 
 
+    [
+      {
+        "prompt": "Weight",
+        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
+        "correctOrder": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"]
+      },
+      {
+        "prompt": "Intelligence",
+        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
+        "correctOrder": ["Beagle", "Chihuahua", "Golden Retriever", "Border Collie"]
+      },
+      {
+        "prompt": "Speed",
+        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
+        "correctOrder": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"]
+      }
+    ],
 
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
-
-
-
+    [
+      {
+        "prompt": "Premier Year",
+        "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
+        "correctOrder": ["Seinfeld", "Friends", "Mad Men", "Parks and Recreation"]
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
+        "correctOrder": ["Mad Men", "Parks and Recreation", "Seinfeld", "Friends"]
+      },
+      {
+        "prompt": "Emmys Won",
+        "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
+        "correctOrder": ["Parks and Recreation", "Friends", "Seinfeld", "Mad Men"]
+      }
+    ], 
 
     [
       {
@@ -1232,123 +995,39 @@
 
     [
       {
-        "prompt": "Weight",
-        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
-        "correctOrder": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"]
+        "prompt": "Release Year",
+        "items": ["Jurassic Park", "Inception", "Titanic", "Napoleon Dynamite"],
+        "correctOrder": ["Jurassic Park", "Titanic", "Napoleon Dynamite", "Inception"]
       },
       {
-        "prompt": "Intelligence",
-        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
-        "correctOrder": ["Beagle", "Chihuahua", "Golden Retriever", "Border Collie"]
+        "prompt": "Box Office Gross",
+        "items": ["Jurassic Park", "Inception", "Titanic", "Napoleon Dynamite"],
+        "correctOrder": ["Napoleon Dynamite", "Inception", "Jurassic Park", "Titanic"]
       },
       {
-        "prompt": "Speed",
-        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
-        "correctOrder": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"]
+        "prompt": "Runtime",
+        "items": ["Jurassic Park", "Inception", "Titanic", "Napoleon Dynamite"],
+        "correctOrder": ["Napoleon Dynamite", "Jurassic Park", "Inception", "Titanic"]
       }
     ], 
 
-
-
-
-
     [
       {
-        "prompt": "Year Opened",
-        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
-        "correctOrder": ["Disneyland", "Walt Disney World", "Disneyland Paris", "Disneyland Shanghai"]
+        "prompt": "Area",
+        "items": ["USA", "India", "Egypt", "Spain"],
+        "correctOrder": ["Spain", "Egypt", "India", "USA"]
       },
       {
-        "prompt": "Yearly Attendees",
-        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
-        "correctOrder": ["Disneyland Paris", "Disneyland Shanghai", "Disneyland", "Walt Disney World"]
+        "prompt": "Population",
+        "items": ["USA", "India", "Egypt", "Spain"],
+        "correctOrder": ["Spain", "Egypt", "USA", "India"]
       },
       {
-        "prompt": "Total Land Size",
-        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
-        "correctOrder": ["Disneyland", "Disneyland Shanghai", "Disneyland Paris", "Walt Disney World"]
+        "prompt": "GDP",
+        "items": ["USA", "India", "Egypt", "Spain"],
+        "correctOrder": ["Egypt", "Spain", "India", "USA"]
       }
-    ], 
-
-
-
-    [
-      {
-        "prompt": "Weight",
-        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
-      },
-      {
-        "prompt": "Population Size",
-        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Rhino", "Polar bear", "Hippo", "Elephant"]
-      },
-      {
-        "prompt": "Gestation Period",
-        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
-      }
-    ]
-    
-    
-
-    
-    
-    
-    
-
-
-    
-    
-    
-    
-    
-
-
-    
-    
-    
-
-  
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    
-    
-
+    ]    
   ]
 }
 
