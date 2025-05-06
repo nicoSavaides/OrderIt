@@ -182,6 +182,21 @@
 
 
 
+        @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.05);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .pulse {
+      animation: pulse 300ms ease-in-out;
+    }
 
 
 
@@ -674,6 +689,9 @@ function submitOrder() {
   const correctOrder = rounds[currentRound].correctOrder;
 
   if (JSON.stringify(submittedOrder) === JSON.stringify(correctOrder)) {
+    const container = document.querySelector('.item-container'); // Use your actual wrapper class
+  showRoundPassedAnimation(container);
+
     roundsCompleted++; // Increment rounds completed on correct order.
     currentRound++;
     if (currentRound < rounds.length) {
@@ -903,6 +921,18 @@ shareButton.addEventListener('click', () => {
     console.log(text);
   }
 });
+
+
+
+
+
+function showRoundPassedAnimation(container) {
+  container.classList.add('pulse');
+  setTimeout(() => {
+    container.classList.remove('pulse');
+  }, 300); // Match animation duration
+}
+
 
 
 
