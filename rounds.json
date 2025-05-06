@@ -1063,8 +1063,25 @@
         "items": ["Sheep", "Mouse", "Sloth", "Zebra"],
         "correctOrder": ["Mouse", "Sheep", "Zebra", "Sloth"]
       }
+    ],
+
+    [
+      {
+        "prompt": "Area",
+        "items": ["Jamaica", "Brazil", "France", "Cuba"],
+        "correctOrder": ["Jamaica", "Cuba", "France", "Brazil"]
+      },
+      {
+        "prompt": "Population",
+        "items": ["Jamaica", "Brazil", "France", "Cuba"],
+        "correctOrder": ["Jamaica", "Cuba", "France", "Brazil"]
+      },
+      {
+        "prompt": "GDP",
+        "items": ["Jamaica", "Brazil", "France", "Cuba"],
+        "correctOrder": ["Jamaica", "Cuba", "Brazil", "France"]
+      }
     ]
-    
     
   ]
 }
