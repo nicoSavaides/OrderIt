@@ -1027,7 +1027,45 @@
         "items": ["USA", "India", "Egypt", "Spain"],
         "correctOrder": ["Egypt", "Spain", "India", "USA"]
       }
-    ]    
+    ], 
+    
+    [
+      {
+        "prompt": "Max Number of Players",
+        "items": ["Clue", "Monopoly", "Checkers", "Twister"],
+        "correctOrder": ["Checkers", "Twister", "Clue", "Monopoly"]
+      },
+      {
+        "prompt": "Avg Game Length",
+        "items": ["Clue", "Monopoly", "Checkers", "Twister"],
+        "correctOrder": ["Twister", "Checkers", "Clue", "Monopoly"]
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Clue", "Monopoly", "Checkers", "Twister"],
+        "correctOrder": ["Checkers", "Monopoly", "Clue", "Twister"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Top Speed",
+        "items": ["Sheep", "Mouse", "Sloth", "Zebra"],
+        "correctOrder": ["Sloth", "Mouse", "Sheep", "Zebra"]
+      },
+      {
+        "prompt": "Weight",
+        "items": ["Sheep", "Mouse", "Sloth", "Zebra"],
+        "correctOrder": ["Mouse", "Sloth", "Sheep", "Zebra"]
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Sheep", "Mouse", "Sloth", "Zebra"],
+        "correctOrder": ["Mouse", "Sheep", "Zebra", "Sloth"]
+      }
+    ]
+    
+    
   ]
 }
 
