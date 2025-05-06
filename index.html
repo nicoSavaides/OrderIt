@@ -354,6 +354,7 @@
       #shareLink,
       #shareButton {
         margin-top: 2px !important;
+        padding: 20px 40px; /* Increase padding for more clickable area */
       }
 
       
@@ -697,9 +698,9 @@ function submitOrder() {
     itemList.classList.add('correct-animation'); // Add the animation class
 
 // Remove the animation class after 600ms (duration of animation)
-setTimeout(() => {
-  itemList.classList.remove('correct-animation');
-}, 600); 
+    setTimeout(() => {
+      itemList.classList.remove('correct-animation');
+    }, 800); 
 
 
     if (currentRound < rounds.length) {
