@@ -180,23 +180,25 @@
     }
 
 
+    @keyframes correctFlash {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.correct-animation {
+  animation: correctFlash 0.6s ease-in-out;
+}
 
 
-        @keyframes pulse {
-      0% {
-        transform: scale(1);
-      }
-      50% {
-        transform: scale(1.05);
-      }
-      100% {
-        transform: scale(1);
-      }
-    }
 
-    .pulse {
-      animation: pulse 300ms ease-in-out;
-    }
+
 
 
 
@@ -689,11 +691,17 @@ function submitOrder() {
   const correctOrder = rounds[currentRound].correctOrder;
 
   if (JSON.stringify(submittedOrder) === JSON.stringify(correctOrder)) {
-    const container = document.querySelector('.item-container'); // Use your actual wrapper class
-  showRoundPassedAnimation(container);
-
     roundsCompleted++; // Increment rounds completed on correct order.
     currentRound++;
+
+    itemList.classList.add('correct-animation'); // Add the animation class
+
+// Remove the animation class after 600ms (duration of animation)
+setTimeout(() => {
+  itemList.classList.remove('correct-animation');
+}, 600); 
+
+
     if (currentRound < rounds.length) {
       loadRound();
     } else {
@@ -922,16 +930,6 @@ shareButton.addEventListener('click', () => {
   }
 });
 
-
-
-
-
-function showRoundPassedAnimation(container) {
-  container.classList.add('pulse');
-  setTimeout(() => {
-    container.classList.remove('pulse');
-  }, 300); // Match animation duration
-}
 
 
 
