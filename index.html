@@ -924,12 +924,13 @@ shareButton.addEventListener('click', () => {
   const correctCount = roundsCompleted; // Assuming `roundsCompleted` equals the number of correct answers
   const total = 3; // This can be dynamic if the total number of rounds is variable
 
-  if(roundsCompleted == 3){
-  const text = `${emojiScore}\n${roundsCompleted}/3 rounds\n${strikes} mistakes`;
-}
-else{
-  const text = `${emojiScore}\n${roundsCompleted}`;
-}
+  let text; // Declare `text` here
+
+  if (roundsCompleted == 3) {
+    text = `${emojiScore}\n${roundsCompleted}/3 rounds\n${strikes} mistakes`;
+  } else {
+    text = `${emojiScore}\n${roundsCompleted}`;
+  }
   
 
 
