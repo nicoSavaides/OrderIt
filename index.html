@@ -927,11 +927,15 @@ shareButton.addEventListener('click', () => {
   let text; // Declare `text` here
 
   if (roundsCompleted == 3) {
-    text = `${emojiScore}\n${roundsCompleted}/3 rounds\n${strikes} mistakes`;
+  if (strikes == 1) {
+    text = `${emojiScore}\n${roundsCompleted}/3 rounds\n${strikes} mistake`;
   } else {
-    text = `${emojiScore}`;
+    text = `${emojiScore}\n${roundsCompleted}/3 rounds\n${strikes} mistakes`;
   }
-  
+} else {
+  text = `${emojiScore}`;
+}
+
 
 
   const shareData = {
