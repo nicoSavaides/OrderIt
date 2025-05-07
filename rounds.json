@@ -455,17 +455,17 @@
 
     [
       {
-        "prompt": "Eye color frequency",
+        "prompt": "Eye Color frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
         "correctOrder": ["Gray", "Green", "Blue", "Brown"]
       },
       {
-        "prompt": "Car color frequency",
+        "prompt": "Car Color frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
         "correctOrder": ["Brown", "Green", "Blue", "Gray"]
       },
       {
-        "prompt": "Flag color frequency",
+        "prompt": "Flag Color frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
         "correctOrder": ["Gray", "Brown", "Green", "Blue"]
       }
@@ -671,17 +671,17 @@
 
     [
       {
-        "prompt": "Year it started",
+        "prompt": "Year it Started",
         "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
         "correctOrder": ["American Civil War", "World War II", "Korean War", "Vietnam War"]
       },
       {
-        "prompt": "How long it lasted",
+        "prompt": "Length of War",
         "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
         "correctOrder": ["Korean War", "American Civil War", "World War II", "Vietnam War"]
       },
       {
-        "prompt": "Death count",
+        "prompt": "Death Toll",
         "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
         "correctOrder": ["American Civil War", "Vietnam War", "Korean War", "World War II"]
       }
@@ -730,7 +730,7 @@
         "correctOrder": ["San Francisco", "Los Angeles", "New York City", "Tokyo"]
       },
       {
-        "prompt": "Area",
+        "prompt": "Land Area",
         "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
         "correctOrder": ["San Francisco", "New York City", "Los Angeles", "Tokyo"]
       },
@@ -874,7 +874,7 @@
         "correctOrder": ["Checkers", "Twister", "Clue", "Monopoly"]
       },
       {
-        "prompt": "Avg Game Length",
+        "prompt": "Average Game Length",
         "items": ["Clue", "Monopoly", "Checkers", "Twister"],
         "correctOrder": ["Twister", "Checkers", "Clue", "Monopoly"]
       },
@@ -910,7 +910,7 @@
         "correctOrder": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"]
       },
       {
-        "prompt": "Author Last Name",
+        "prompt": "Author Last Name (Alphabetical)",
         "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
         "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"]
       },
@@ -933,7 +933,7 @@
         "correctOrder": ["Disneyland Paris", "Disneyland Shanghai", "Disneyland", "Walt Disney World"]
       },
       {
-        "prompt": "Total Land Size",
+        "prompt": "Total Land Area",
         "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
         "correctOrder": ["Disneyland", "Disneyland Shanghai", "Disneyland Paris", "Walt Disney World"]
       }
@@ -941,7 +941,7 @@
 
     [
       {
-        "prompt": "Year Released",
+        "prompt": "Year",
         "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
         "correctOrder": ["Hey Jude", "All I Want for Christmas Is You", "Gangnam Style", "Despacito"]
       },
@@ -977,7 +977,7 @@
 
     [
       {
-        "prompt": "Area",
+        "prompt": "Land Area",
         "items": ["USA", "India", "Egypt", "Spain"],
         "correctOrder": ["Spain", "Egypt", "India", "USA"]
       },
@@ -992,6 +992,24 @@
         "correctOrder": ["Egypt", "Spain", "India", "USA"]
       }
     ], 
+
+    [
+      {
+        "prompt": "Year Founded",
+        "items": ["Doordash", "Amazon", "Twitter/X", "Tinder"],
+        "correctOrder": ["Amazon", "Twitter/X", "Tinder", "Doordash"]
+      },
+      {
+        "prompt": "Number of Employees",
+        "items": ["Doordash", "Amazon", "Twitter/X", "Tinder"],
+        "correctOrder": ["Tinder", "Twitter/X", "Doordash", "Amazon"]
+      },
+      {
+        "prompt": "Number of Monthly Users",
+        "items": ["Doordash", "Amazon", "Twitter/X", "Tinder"],
+        "correctOrder": ["Doordash", "Tinder", "Amazon", "Twitter/X"]
+      }
+    ],
 
     [
       {
@@ -1049,7 +1067,7 @@
 
     [
       {
-        "prompt": "Release Year",
+        "prompt": "Year",
         "items": ["Jurassic Park", "Inception", "Titanic", "Napoleon Dynamite"],
         "correctOrder": ["Jurassic Park", "Titanic", "Napoleon Dynamite", "Inception"]
       },
@@ -1067,7 +1085,7 @@
 
     [
       {
-        "prompt": "Area",
+        "prompt": "Land Area",
         "items": ["Jamaica", "Brazil", "France", "Cuba"],
         "correctOrder": ["Jamaica", "Cuba", "France", "Brazil"]
       },
@@ -1082,6 +1100,9 @@
         "correctOrder": ["Jamaica", "Cuba", "Brazil", "France"]
       }
     ]
+
+
+    
 
 
     
