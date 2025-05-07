@@ -642,6 +642,8 @@
 
 
 
+
+
 item.addEventListener('touchend', (e) => {
   // Reset visuals
   draggedItem.style.transform = '';
@@ -650,17 +652,23 @@ item.addEventListener('touchend', (e) => {
   draggedItem.style.zIndex = '';
 
   const touch = e.changedTouches[0];
-
-  // Temporarily hide draggedItem to detect element underneath
-  draggedItem.style.visibility = 'hidden';
-
-  // New: scan for drop target with wiggle room ±30px
-  let targetItem = null;
   const list = draggedItem.parentNode;
   const itemsArray = Array.from(list.children);
 
-  for (let deltaY = -50; deltaY <= 50; deltaY += 5) {
-    const el = document.elementFromPoint(touch.clientX, touch.clientY + deltaY);
+  let targetItem = null;
+
+  // Start scan from 0 to ±50px to prioritize closest elements
+  const scanOffsets = [];
+  for (let i = 0; i <= 50; i += 5) {
+    scanOffsets.push(i, -i); // [0, -0, 5, -5, 10, -10, ...]
+  }
+
+  for (const offset of scanOffsets) {
+    // Temporarily hide draggedItem for detection
+    draggedItem.style.visibility = 'hidden';
+    const el = document.elementFromPoint(touch.clientX, touch.clientY + offset);
+    draggedItem.style.visibility = 'visible';
+
     if (!el) continue;
     const candidate = el.closest('.draggable-item');
     if (candidate && candidate !== draggedItem) {
@@ -669,9 +677,6 @@ item.addEventListener('touchend', (e) => {
     }
   }
 
-  draggedItem.style.visibility = 'visible';
-
-  // If a valid target was found, swap
   if (targetItem) {
     const draggedIndex = itemsArray.indexOf(draggedItem);
     const targetIndex = itemsArray.indexOf(targetItem);
@@ -683,10 +688,10 @@ item.addEventListener('touchend', (e) => {
     }
   }
 
-  // Final cleanup
   draggedItem.classList.remove('dragging');
   draggedItem = null;
 });
+
 
   });
 }
