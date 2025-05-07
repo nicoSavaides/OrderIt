@@ -561,35 +561,24 @@
 
 
 
-
-
-
-
-
-
-
-
-
-function makeItemsDraggable() {
+    function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
   let draggedItemInitialPosition = { x: 0, y: 0 };
   let offsetX = 0;
   let offsetY = 0;
 
-  // Desktop (Mouse) Events
+  // Desktop drag & drop
   items.forEach(item => {
+    item.setAttribute('draggable', true);
+
     item.addEventListener('dragstart', (e) => {
       draggedItem = item;
-      draggedItemInitialPosition = { x: e.pageX, y: e.pageY };
       draggedItem.classList.add('dragging');
       setTimeout(() => {
         draggedItem.style.opacity = '0.5';
       }, 0);
     });
-
-    item.addEventListener('dragover', (e) => e.preventDefault());
-    item.addEventListener('dragenter', (e) => e.preventDefault());
 
     item.addEventListener('dragend', () => {
       draggedItem.style.opacity = '';
@@ -597,36 +586,37 @@ function makeItemsDraggable() {
       draggedItem = null;
     });
 
+    item.addEventListener('dragover', (e) => e.preventDefault());
+    item.addEventListener('dragenter', (e) => e.preventDefault());
+
     item.addEventListener('drop', () => {
       if (draggedItem && draggedItem !== item) {
         const list = item.parentNode;
         const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-        const droppedIndex = Array.from(list.children).indexOf(item);
-        if (draggedIndex < droppedIndex) {
+        const targetIndex = Array.from(list.children).indexOf(item);
+
+        if (draggedIndex < targetIndex) {
           list.insertBefore(draggedItem, item.nextSibling);
         } else {
           list.insertBefore(draggedItem, item);
         }
       }
-      draggedItem.style.opacity = '';
-      draggedItem.classList.remove('dragging');
-      draggedItem = null;
     });
   });
 
-  // Mobile (Touch) Events
+  // Mobile touch
   items.forEach(item => {
     item.addEventListener('touchstart', (e) => {
       e.preventDefault();
       draggedItem = item;
       draggedItemInitialPosition = {
         x: e.touches[0].pageX,
-        y: e.touches[0].pageY,
+        y: e.touches[0].pageY
       };
       draggedItem.classList.add('dragging');
-      setTimeout(() => {
-        draggedItem.style.opacity = '0.5';
-      }, 0);
+      draggedItem.style.transition = 'none';
+      draggedItem.style.zIndex = '1000';
+      draggedItem.style.opacity = '0.5';
     });
 
     item.addEventListener('touchmove', (e) => {
@@ -635,8 +625,21 @@ function makeItemsDraggable() {
       offsetX = touch.pageX - draggedItemInitialPosition.x;
       offsetY = touch.pageY - draggedItemInitialPosition.y;
       draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    });
 
+    item.addEventListener('touchend', (e) => {
+      // Reset visuals
+      draggedItem.style.transform = '';
+      draggedItem.style.transition = '';
+      draggedItem.style.opacity = '';
+      draggedItem.style.zIndex = '';
+      
+      // Temporarily hide draggedItem to detect real element underneath
+      draggedItem.style.visibility = 'hidden';
+      const touch = e.changedTouches[0];
       const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
+      draggedItem.style.visibility = 'visible';
+
       const targetItem = dropTarget?.closest('.draggable-item');
 
       if (targetItem && targetItem !== draggedItem) {
@@ -650,19 +653,12 @@ function makeItemsDraggable() {
           list.insertBefore(draggedItem, targetItem);
         }
       }
-    });
 
-    item.addEventListener('touchend', () => {
-      // Just reset visuals — no reordering here
-      draggedItem.style.transform = '';
-      draggedItem.style.opacity = '';
       draggedItem.classList.remove('dragging');
       draggedItem = null;
     });
   });
 }
-
-
 
 
 
