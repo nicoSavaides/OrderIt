@@ -386,16 +386,6 @@
   bottom: 6px !important; /* Lower value pushes it closer to the bottom */
   font-size: 0.9rem !important;
 }
-
-
-  #currentDayNumber {
-  font-size: 0.9rem;
-  position: absolute;
-  bottom: 35px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
  
 }
 
@@ -480,17 +470,12 @@
     <p id="endGameStatus"></p>
     <p id="finalScore"></p> 
     <p id="thanksMessage">Thanks for playing. Come back tomorrow for a new Order It!</p>
-    <button id="shareButton">Share Your Results</button> 
+    <button id="shareButton">Share Your Score</button> 
     <p id="shareLink" style="word-break: normal; font-size: 1.2em; margin-top: 10px;"></p>
 
   </div>
   
   <p id="currentDate"></p>
-  <p id="currentDayNumber"></p>
-
-  
-  
-  
   
   <script>
     let currentRound = 0;
@@ -519,8 +504,6 @@
     .then(res => res.json())
     .then(data => {
       const dayIndex = 0;
-      displayDayNumber(dayIndex);
-
       rounds = data.days[dayIndex];
       loadRound();
     })
@@ -539,15 +522,11 @@
 
 
   
-function displayCurrentDate() {
-  const now = new Date();
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
-  const formattedDate = now.toLocaleDateString(undefined, options);
-  document.getElementById('currentDate').textContent = `${formattedDate}`;
-
-  const dayNumber = now.getDate(); // e.g., 21 if today is May 21
-  document.getElementById('dayNumber').textContent = `No. ${dayNumber}`;
-
+    function displayCurrentDate() {
+      const now = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      const formattedDate = now.toLocaleDateString(undefined, options);
+      document.getElementById('currentDate').textContent = `${formattedDate}`;
     }
   
     displayCurrentDate();
@@ -577,11 +556,6 @@ function displayCurrentDate() {
       updateStrikes();
       makeItemsDraggable();
     }
-
-
-    function displayDayNumber(dayIndex) {
-  document.getElementById('currentDayNumber').textContent = `No. ${dayIndex + 1}`;
-}
 
 
 
