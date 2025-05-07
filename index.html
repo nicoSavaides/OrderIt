@@ -561,7 +561,16 @@
 
 
 
-    function makeItemsDraggable() {
+
+
+
+
+
+
+
+
+
+function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
   let draggedItemInitialPosition = { x: 0, y: 0 };
@@ -573,45 +582,32 @@
     item.addEventListener('dragstart', (e) => {
       draggedItem = item;
       draggedItemInitialPosition = { x: e.pageX, y: e.pageY };
-
-      // Add class for visual feedback and make it semi-transparent
       draggedItem.classList.add('dragging');
       setTimeout(() => {
-        draggedItem.style.opacity = '0.5'; // Make the dragged item semi-transparent
+        draggedItem.style.opacity = '0.5';
       }, 0);
     });
 
-    item.addEventListener('dragover', (e) => {
-      e.preventDefault();  // Allow the tile to be dropped, but do not change position during drag
-    });
-
-    item.addEventListener('dragenter', (e) => {
-      e.preventDefault();  // Allow the hover effect to apply
-    });
+    item.addEventListener('dragover', (e) => e.preventDefault());
+    item.addEventListener('dragenter', (e) => e.preventDefault());
 
     item.addEventListener('dragend', () => {
-      // Reset after drag ends
-      draggedItem.style.opacity = ''; // Reset opacity
-      draggedItem.classList.remove('dragging'); // Remove dragging class
-      draggedItem = null; // Clear reference to the dragged item
+      draggedItem.style.opacity = '';
+      draggedItem.classList.remove('dragging');
+      draggedItem = null;
     });
 
     item.addEventListener('drop', () => {
-      // Reorder the tiles only after the item is dropped
-      if (draggedItem !== item) {
+      if (draggedItem && draggedItem !== item) {
         const list = item.parentNode;
         const draggedIndex = Array.from(list.children).indexOf(draggedItem);
         const droppedIndex = Array.from(list.children).indexOf(item);
-
-        // Only reorder after the item is dropped
         if (draggedIndex < droppedIndex) {
           list.insertBefore(draggedItem, item.nextSibling);
         } else {
           list.insertBefore(draggedItem, item);
         }
       }
-
-      // Reset dragged item after drop
       draggedItem.style.opacity = '';
       draggedItem.classList.remove('dragging');
       draggedItem = null;
@@ -621,82 +617,63 @@
   // Mobile (Touch) Events
   items.forEach(item => {
     item.addEventListener('touchstart', (e) => {
-      e.preventDefault();  // Prevent default touch behavior
+      e.preventDefault();
       draggedItem = item;
       draggedItemInitialPosition = {
         x: e.touches[0].pageX,
         y: e.touches[0].pageY,
       };
-
-      // Add class for visual feedback
       draggedItem.classList.add('dragging');
       setTimeout(() => {
-        draggedItem.style.opacity = '0.5'; // Make the dragged item semi-transparent
+        draggedItem.style.opacity = '0.5';
       }, 0);
     });
 
-
-
-
-
     item.addEventListener('touchmove', (e) => {
-  e.preventDefault();
+      e.preventDefault();
+      const touch = e.touches[0];
+      offsetX = touch.pageX - draggedItemInitialPosition.x;
+      offsetY = touch.pageY - draggedItemInitialPosition.y;
+      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-  const touch = e.touches[0];
-  offsetX = touch.pageX - draggedItemInitialPosition.x;
-  offsetY = touch.pageY - draggedItemInitialPosition.y;
+      const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
+      const targetItem = dropTarget?.closest('.draggable-item');
 
-  draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+      if (targetItem && targetItem !== draggedItem) {
+        const list = draggedItem.parentNode;
+        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+        const targetIndex = Array.from(list.children).indexOf(targetItem);
 
-  const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
-  const targetItem = dropTarget?.closest('.draggable-item');
+        if (draggedIndex < targetIndex) {
+          list.insertBefore(draggedItem, targetItem.nextSibling);
+        } else {
+          list.insertBefore(draggedItem, targetItem);
+        }
+      }
+    });
 
-  if (targetItem && targetItem !== draggedItem) {
-    const list = draggedItem.parentNode;
-    const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-    const targetIndex = Array.from(list.children).indexOf(targetItem);
-
-    if (draggedIndex < targetIndex) {
-      list.insertBefore(draggedItem, targetItem.nextSibling);
-    } else {
-      list.insertBefore(draggedItem, targetItem);
-    }
-  }
-});
-
-
-
-
-
-item.addEventListener('touchend', (e) => {
-  // Reset transform-based drag visuals
-  draggedItem.style.transform = '';
-  draggedItem.style.opacity = '';
-
-  // Use elementFromPoint to find what’s under the finger
-  const touch = e.changedTouches[0];
-  const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
-  const targetItem = dropTarget?.closest('.draggable-item');
-
-  if (targetItem && targetItem !== draggedItem) {
-    const list = draggedItem.parentNode;
-    const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-    const targetIndex = Array.from(list.children).indexOf(targetItem);
-
-    if (draggedIndex < targetIndex) {
-      list.insertBefore(draggedItem, targetItem.nextSibling);
-    } else {
-      list.insertBefore(draggedItem, targetItem);
-    }
-  }
-
-  // Reset dragged item state
-  draggedItem.classList.remove('dragging');
-  draggedItem = null;
-});
-
+    item.addEventListener('touchend', () => {
+      // Just reset visuals — no reordering here
+      draggedItem.style.transform = '';
+      draggedItem.style.opacity = '';
+      draggedItem.classList.remove('dragging');
+      draggedItem = null;
+    });
   });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
