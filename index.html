@@ -386,6 +386,16 @@
   bottom: 6px !important; /* Lower value pushes it closer to the bottom */
   font-size: 0.9rem !important;
 }
+
+
+  #currentDayNumber {
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
  
 }
 
@@ -468,14 +478,19 @@
   
   <div id="endScreen" class="hidden">
     <p id="endGameStatus"></p>
-    <p id="finalScore"></p> <!-- their score will appear here -->
+    <p id="finalScore"></p> 
     <p id="thanksMessage">Thanks for playing. Come back tomorrow for a new Order It!</p>
-    <button id="shareButton">Share your score</button> <!-- share button -->
+    <button id="shareButton">Share Your Results</button> 
     <p id="shareLink" style="word-break: normal; font-size: 1.2em; margin-top: 10px;"></p>
 
   </div>
   
   <p id="currentDate"></p>
+  <p id="currentDayNumber"></p>
+
+  
+  
+  
   
   <script>
     let currentRound = 0;
@@ -504,6 +519,8 @@
     .then(res => res.json())
     .then(data => {
       const dayIndex = 0;
+      displayDayNumber(dayIndex);
+
       rounds = data.days[dayIndex];
       loadRound();
     })
@@ -556,6 +573,11 @@
       updateStrikes();
       makeItemsDraggable();
     }
+
+
+    function displayDayNumber(dayIndex) {
+  document.getElementById('currentDayNumber').textContent = `No. ${dayIndex + 1}`;
+}
 
 
 
