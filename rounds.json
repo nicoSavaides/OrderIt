@@ -1063,24 +1063,6 @@
         "items": ["Jamaica", "Brazil", "France", "Cuba"],
         "correctOrder": ["Jamaica", "Cuba", "Brazil", "France"]
       }
-    ],
-
-    [
-      {
-        "prompt": "Area",
-        "items": ["Japan", "Jamaica", "Italy", "Cuba"],
-        "correctOrder": ["Jamaica", "Cuba", "Italy", "Japan"]
-      },
-      {
-        "prompt": "Population",
-        "items": ["Japan", "Jamaica", "Italy", "Cuba"],
-        "correctOrder": ["Jamaica", "Cuba", "Italy", "Japan"]
-      },
-      {
-        "prompt": "GDP",
-        "items": ["Japan", "Jamaica", "Italy", "Cuba"],
-        "correctOrder": ["Jamaica", "Cuba", "Italy", "Japan"]
-      }
     ]
 
     
