@@ -640,17 +640,30 @@
 
 
     item.addEventListener('touchmove', (e) => {
-      e.preventDefault();  // Prevent default touch behavior
+  e.preventDefault();
 
-      // Calculate how far the touch has moved
-      const touch = e.touches[0];
-      offsetX = touch.pageX - draggedItemInitialPosition.x;
-      offsetY = touch.pageY - draggedItemInitialPosition.y;
+  const touch = e.touches[0];
+  offsetX = touch.pageX - draggedItemInitialPosition.x;
+  offsetY = touch.pageY - draggedItemInitialPosition.y;
 
-      // Update the position of the dragged item
-      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+  draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-    });
+  const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
+  const targetItem = dropTarget?.closest('.draggable-item');
+
+  if (targetItem && targetItem !== draggedItem) {
+    const list = draggedItem.parentNode;
+    const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+    const targetIndex = Array.from(list.children).indexOf(targetItem);
+
+    if (draggedIndex < targetIndex) {
+      list.insertBefore(draggedItem, targetItem.nextSibling);
+    } else {
+      list.insertBefore(draggedItem, targetItem);
+    }
+  }
+});
+
 
 
 
