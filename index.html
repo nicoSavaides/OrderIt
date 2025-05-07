@@ -382,6 +382,14 @@
 }
 
 
+  #roundNumber {
+  font-size: 14px;
+  color: #666;
+  margin-top: 4px;
+}
+
+
+
       
 
     
@@ -476,6 +484,8 @@
   </div>
   
   <p id="currentDate"></p>
+  <div id="roundNumber"></div>
+
   
   <script>
     let currentRound = 0;
@@ -483,6 +493,14 @@
     let strikes = 0;
     const maxStrikes = 3;
 
+
+
+    function updateRoundNumber() {
+  const roundDisplay = document.querySelectorAll("#roundNumber");
+  roundDisplay.forEach(div => {
+    div.textContent = `No. ${currentRound + 1}`;  
+  });
+}
 
 
 
@@ -510,6 +528,19 @@
     .catch(error => {
       console.error("Error loading rounds data:", error);
     });
+}
+
+function loadRound() {
+  // Load round information
+  const currentRoundData = rounds[currentRound];
+
+  // Update round prompt
+  document.getElementById("roundPrompt").textContent = `Round ${currentRound + 1}`;
+
+  // Update round number (No. x) displayed under the date
+  updateRoundNumber();
+  
+  // Other round logic here (items to be ordered, etc.)
 }
 
 
