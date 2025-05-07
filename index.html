@@ -573,7 +573,9 @@
 
 
 
-    function makeItemsDraggable() {
+  function makeItemsDraggable() {
+  let hasMoved = false;
+
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
   let draggedItemInitialPosition = { x: 0, y: 0 };
@@ -619,6 +621,8 @@
   // Mobile touch
   items.forEach(item => {
     item.addEventListener('touchstart', (e) => {
+      hasMoved = false;
+
       e.preventDefault();
       draggedItem = item;
       draggedItemInitialPosition = {
@@ -634,6 +638,14 @@
     item.addEventListener('touchmove', (e) => {
       e.preventDefault();
       const touch = e.touches[0];
+const dx = touch.pageX - draggedItemInitialPosition.x;
+const dy = touch.pageY - draggedItemInitialPosition.y;
+
+if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
+  hasMoved = true;
+}
+
+      
       offsetX = touch.pageX - draggedItemInitialPosition.x;
       offsetY = touch.pageY - draggedItemInitialPosition.y;
       draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
@@ -646,6 +658,18 @@
 
 item.addEventListener('touchend', (e) => {
   // Reset visuals
+
+  if (!hasMoved) {
+  // It's a tap, not a drag — just reset and exit
+  draggedItem.classList.remove('dragging');
+  draggedItem.style.transform = '';
+  draggedItem.style.transition = '';
+  draggedItem.style.opacity = '';
+  draggedItem.style.zIndex = '';
+  draggedItem = null;
+  return;
+}
+
   draggedItem.style.transform = '';
   draggedItem.style.transition = '';
   draggedItem.style.opacity = '';
