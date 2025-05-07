@@ -702,15 +702,16 @@ item.addEventListener('touchend', (e) => {
   }
 
   if (targetItem) {
-    const draggedIndex = itemsArray.indexOf(draggedItem);
-    const targetIndex = itemsArray.indexOf(targetItem);
+  const targetRect = targetItem.getBoundingClientRect();
+  const targetCenterY = targetRect.top + targetRect.height / 2;
 
-    if (draggedIndex < targetIndex) {
-      list.insertBefore(draggedItem, targetItem.nextSibling);
-    } else {
-      list.insertBefore(draggedItem, targetItem);
-    }
+  if (touch.clientY > targetCenterY) {
+    list.insertBefore(draggedItem, targetItem.nextSibling); // drop after
+  } else {
+    list.insertBefore(draggedItem, targetItem); // drop before
   }
+}
+
 
   draggedItem.classList.remove('dragging');
   draggedItem = null;
