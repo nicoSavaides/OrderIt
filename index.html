@@ -627,36 +627,57 @@
       draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
     });
 
-    item.addEventListener('touchend', (e) => {
-      // Reset visuals
-      draggedItem.style.transform = '';
-      draggedItem.style.transition = '';
-      draggedItem.style.opacity = '';
-      draggedItem.style.zIndex = '';
-      
-      // Temporarily hide draggedItem to detect real element underneath
-      draggedItem.style.visibility = 'hidden';
-      const touch = e.changedTouches[0];
-      const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
-      draggedItem.style.visibility = 'visible';
 
-      const targetItem = dropTarget?.closest('.draggable-item');
 
-      if (targetItem && targetItem !== draggedItem) {
-        const list = draggedItem.parentNode;
-        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-        const targetIndex = Array.from(list.children).indexOf(targetItem);
 
-        if (draggedIndex < targetIndex) {
-          list.insertBefore(draggedItem, targetItem.nextSibling);
-        } else {
-          list.insertBefore(draggedItem, targetItem);
-        }
-      }
 
-      draggedItem.classList.remove('dragging');
-      draggedItem = null;
-    });
+
+item.addEventListener('touchend', (e) => {
+  // Reset visuals
+  draggedItem.style.transform = '';
+  draggedItem.style.transition = '';
+  draggedItem.style.opacity = '';
+  draggedItem.style.zIndex = '';
+
+  const touch = e.changedTouches[0];
+
+  // Temporarily hide draggedItem to detect element underneath
+  draggedItem.style.visibility = 'hidden';
+
+  // New: scan for drop target with wiggle room ±30px
+  let targetItem = null;
+  const list = draggedItem.parentNode;
+  const itemsArray = Array.from(list.children);
+
+  for (let deltaY = -30; deltaY <= 30; deltaY += 10) {
+    const el = document.elementFromPoint(touch.clientX, touch.clientY + deltaY);
+    if (!el) continue;
+    const candidate = el.closest('.draggable-item');
+    if (candidate && candidate !== draggedItem) {
+      targetItem = candidate;
+      break;
+    }
+  }
+
+  draggedItem.style.visibility = 'visible';
+
+  // If a valid target was found, swap
+  if (targetItem) {
+    const draggedIndex = itemsArray.indexOf(draggedItem);
+    const targetIndex = itemsArray.indexOf(targetItem);
+
+    if (draggedIndex < targetIndex) {
+      list.insertBefore(draggedItem, targetItem.nextSibling);
+    } else {
+      list.insertBefore(draggedItem, targetItem);
+    }
+  }
+
+  // Final cleanup
+  draggedItem.classList.remove('dragging');
+  draggedItem = null;
+});
+
   });
 }
 
