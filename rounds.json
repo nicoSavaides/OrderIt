@@ -114,7 +114,7 @@
       {
         "prompt": "Number of Band Members",
         "items": ["Earth, Wind & Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
-        "correctOrder": ["Nirvana", "The Beatles", "Fleetwood Mac", "EEarth, Wind & Fire"]
+        "correctOrder": ["Nirvana", "The Beatles", "Fleetwood Mac", "Earth, Wind & Fire"]
       },
       {
         "prompt": "Year Formed",
@@ -582,24 +582,24 @@
     [
       {
         "prompt": "Number of Doors",
-        "items": ["Boing 747", "Tank", "Helicopter", "Motorcycle"],
-        "correctOrder": ["Motorcycle", "Tank", "Helicopter", "Boing 747"]
+        "items": ["Boeing 747", "Tank", "Helicopter", "Motorcycle"],
+        "correctOrder": ["Motorcycle", "Tank", "Helicopter", "Boeing 747"]
       },
       {
         "prompt": "Top Speed",
-        "items": ["Boing 747", "Tank", "Helicopter", "Motorcycle"],
-        "correctOrder": ["Tank", "Motorcycle", "Helicopter", "Boing 747"]
+        "items": ["Boeing 747", "Tank", "Helicopter", "Motorcycle"],
+        "correctOrder": ["Tank", "Motorcycle", "Helicopter", "Boeing 747"]
       },
       {
         "prompt": "Year Invented",
-        "items": ["Boing 747", "Tank", "Helicopter", "Motorcycle"],
-        "correctOrder": ["Motorcycle", "Tank", "Helicopter", "Boing 747"]
+        "items": ["Boeing 747", "Tank", "Helicopter", "Motorcycle"],
+        "correctOrder": ["Motorcycle", "Tank", "Helicopter", "Boeing 747"]
       }
     ], 
 
     [
       {
-        "prompt": "Premier Year",
+        "prompt": "First Airing",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "The Walking Dead"]
       },
@@ -941,6 +941,24 @@
 
     [
       {
+        "prompt": "Year Released",
+        "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
+        "correctOrder": ["Hey Jude", "All I Want for Christmas Is You", "Gangnam Style", "Despacito"]
+      },
+      {
+        "prompt": "BPM",
+        "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
+        "correctOrder": ["Hey Jude", "Despacito", "Gangnam Style", "All I Want for Christmas Is You"]
+      },
+      {
+        "prompt": "Number of Views on YouTube",
+        "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
+        "correctOrder": ["Hey Jude", "All I Want for Christmas Is You", "Gangnam Style", "Despacito"]
+      }
+    ],
+
+    [
+      {
         "prompt": "Weight",
         "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
         "correctOrder": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"]
@@ -1064,6 +1082,10 @@
         "correctOrder": ["Jamaica", "Cuba", "Brazil", "France"]
       }
     ]
+
+
+    
+    
 
     
   ]
