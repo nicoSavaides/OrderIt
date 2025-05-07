@@ -248,6 +248,9 @@
       will-change: transform;
       transform: translateZ(0);       /* Forces GPU layer */
       backface-visibility: hidden;    /* Avoids flickering/glitches */
+
+      transform-style: preserve-3d;
+      
       font-size: 1.5rem;
       width: 90%;
     }
@@ -567,6 +570,15 @@
 
 
 
+    document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') {
+    // Force a repaint to clear GPU artifacts
+    document.body.style.transform = 'translateZ(0)';
+    setTimeout(() => {
+      document.body.style.transform = '';
+    }, 50);
+  }
+});
 
 
 
