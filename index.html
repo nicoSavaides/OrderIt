@@ -382,11 +382,6 @@
 }
 
 
-  #roundNumber {
-  font-size: 14px;
-  color: #666;
-  margin-top: 4px;
-}
 
 
 
@@ -498,10 +493,9 @@
     function updateRoundNumber() {
   const roundDisplay = document.querySelectorAll("#roundNumber");
   roundDisplay.forEach(div => {
-    div.textContent = `No. ${currentRound + 1}`;  
+    div.textContent = `No. ${currentRoundIndex + 1}`;
   });
 }
-
 
 
 
@@ -530,35 +524,44 @@
     });
 }
 
-function loadRound() {
-  if (currentRound >= rounds.length) {
-    endGame();
-    return;
-  }
 
-  const { prompt, items } = rounds[currentRound];
+
+
   
-  // Update round prompt and number
-  document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
-  updateRoundNumber();
+    function displayCurrentDate() {
+      const now = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      const formattedDate = now.toLocaleDateString(undefined, options);
+      document.getElementById('currentDate').textContent = `${formattedDate}`;
+    }
+  
+    displayCurrentDate();
+  
+    function loadRound() {
+      if (currentRound >= rounds.length) {
+        endGame();
+        return;
+      }
 
-  const itemList = document.getElementById('itemList');
-
-  // Only add items during the first round
-  if (currentRound === 0) {
-    items.forEach(item => {
-      const li = document.createElement('li');
-      li.textContent = item;
-      li.setAttribute('draggable', true);
-      li.classList.add('draggable-item');
-      itemList.appendChild(li);
-    });
-  }
-
-  updateStrikes();
-  makeItemsDraggable();
-}
-
+      
+      const { prompt, items } = rounds[currentRound];
+      document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
+  
+      const itemList = document.getElementById('itemList');
+  
+      if (currentRound === 0) {
+        items.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = item;
+          li.setAttribute('draggable', true);
+          li.classList.add('draggable-item');
+          itemList.appendChild(li);
+        });
+      }
+  
+      updateStrikes();
+      makeItemsDraggable();
+    }
 
 
 
