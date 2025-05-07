@@ -22,7 +22,7 @@
 
     [
       {
-        "prompt": "Speed",
+        "prompt": "Top Speed",
         "items": ["Lion", "Elephant", "Giraffe", "Kangaroo"],
         "correctOrder": ["Elephant", "Giraffe", "Kangaroo", "Lion"]
       },
@@ -45,7 +45,7 @@
         "correctOrder": ["Wyoming", "Vermont", "Georgia", "Texas"]
       },
       {
-        "prompt": "Area",
+        "prompt": "Land Area",
         "items": ["Georgia", "Vermont", "Texas", "Wyoming"],
         "correctOrder": ["Vermont", "Georgia", "Wyoming", "Texas"]
       },
