@@ -561,6 +561,18 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
     function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
@@ -630,8 +642,6 @@
 
 
 
-
-
 item.addEventListener('touchend', (e) => {
   // Reset visuals
   draggedItem.style.transform = '';
@@ -649,7 +659,7 @@ item.addEventListener('touchend', (e) => {
   const list = draggedItem.parentNode;
   const itemsArray = Array.from(list.children);
 
-  for (let deltaY = -30; deltaY <= 30; deltaY += 10) {
+  for (let deltaY = -50; deltaY <= 50; deltaY += 5) {
     const el = document.elementFromPoint(touch.clientX, touch.clientY + deltaY);
     if (!el) continue;
     const candidate = el.closest('.draggable-item');
