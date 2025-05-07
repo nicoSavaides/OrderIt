@@ -410,8 +410,6 @@
 
 
 
-
-
   </style>
 </head>
 <body>
@@ -432,8 +430,6 @@
       <button onclick="startGame()">Play</button>
     </div>
   </div>
-
-
 
 
 
@@ -511,12 +507,6 @@
       console.error("Error loading rounds data:", error);
     });
 }
-
-
-
-
-
-
 
 
 
@@ -745,22 +735,6 @@ item.addEventListener('touchend', (e) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 let roundsCompleted = 0; // Track how many rounds the player has completed successfully.
 
 function submitOrder() {
@@ -814,22 +788,11 @@ setTimeout(() => {
 
 
 
-
-
-
-
-
-
-
     if (strikes >= maxStrikes) {
       const strikeCountEl = document.getElementById('strikeCount'); // This is the element showing "Mistakes Remaining"
       if (strikeCountEl) {
         strikeCountEl.style.display = 'none'; // This hides the text element
       }
-
-
-
-
 
 
 
@@ -884,10 +847,6 @@ setTimeout(() => {
 
 
 
-
-
-
-
     
     let score = 0; // you should already be tracking this
    
@@ -926,10 +885,6 @@ setTimeout(() => {
 
 
 
-
-
-
-
 function generateShareLink(roundsCompleted) {
   // Get the emoji score based on the rounds completed
   const emojiScore = getEmojiScore(roundsCompleted);
@@ -942,10 +897,6 @@ function generateShareLink(roundsCompleted) {
   const shareLink = document.getElementById('shareLink');
   shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">Order It ${emojiScore}</a>`;
 }
-
-
-
-
 
 
 
@@ -965,10 +916,6 @@ function getEmojiScore(roundsCompleted) {
 
   return score;
 }
-
-
-
-
 
 
 
@@ -1018,12 +965,6 @@ shareButton.addEventListener('click', () => {
     console.log(text);
   }
 });
-
-
-
-
-
-
 
 
 
