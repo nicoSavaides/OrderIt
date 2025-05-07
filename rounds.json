@@ -4,19 +4,19 @@
 
     [
       {
-        "prompt": "Testtt Test (Testestestes)",
-        "items": ["one", "five thousand", "fourteen", "three million"],
-        "correctOrder": ["one", "fourteen", "five thousand", "three million"]
+        "prompt": "Alphabetical",
+        "items": ["two hundred", "fourteen", "one", "three million"],
+        "correctOrder": ["fourteen", "one", "three million", "two hundred"]
       },
       {
-        "prompt": "Test",
-        "items": ["one", "five thousand", "fourteen", "three million"],
-        "correctOrder": ["one", "fourteen", "five thousand", "three million"]
+        "prompt": "Number of Letters",
+        "items": ["one", "fourteen", "two hundred", "three million"],
+        "correctOrder": ["one", "fourteen", "two hundred", "three million"]
       },
       {
-        "prompt": "Testes te Test te Testes",
-        "items": ["one", "five thousand", "fourteen", "three million"],
-        "correctOrder": ["one", "fourteen", "five thousand", "three million"]
+        "prompt": "Value",
+        "items": ["one", "two hundred", "fourteen", "three million"],
+        "correctOrder": ["one", "fourteen", "two hundred", "three million"]
       }
     ],
 
