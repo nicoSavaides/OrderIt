@@ -245,9 +245,13 @@
 
 
       .draggable-item {
-        font-size: 1.5rem; /* Larger draggable items */
-        width: 90%;
-      }
+      will-change: transform;
+      transform: translateZ(0);       /* Forces GPU layer */
+      backface-visibility: hidden;    /* Avoids flickering/glitches */
+      font-size: 1.5rem;
+      width: 90%;
+    }
+
 
       #strikeCount {
         position: fixed;
