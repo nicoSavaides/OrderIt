@@ -539,11 +539,15 @@
 
 
   
-    function displayCurrentDate() {
-      const now = new Date();
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      const formattedDate = now.toLocaleDateString(undefined, options);
-      document.getElementById('currentDate').textContent = `${formattedDate}`;
+function displayCurrentDate() {
+  const now = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDate = now.toLocaleDateString(undefined, options);
+  document.getElementById('currentDate').textContent = `${formattedDate}`;
+
+  const dayNumber = now.getDate(); // e.g., 21 if today is May 21
+  document.getElementById('dayNumber').textContent = `No. ${dayNumber}`;
+
     }
   
     displayCurrentDate();
