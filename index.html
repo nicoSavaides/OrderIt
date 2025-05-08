@@ -202,9 +202,37 @@
 
 
 
+/* already played already played  already played  already played  already played  already played  already played  already played  already played  */
 
 
-/* already played  already played already played already played already played already played already played already played already played */
+
+
+#playedTodayScreen h1 {
+  font-size: 5em !important;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#playedTodayScreen p {
+  font-size: 2em !important;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#playedTodayScreen button {
+  font-size: 1.5em;
+  padding: 12px 25px;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+/* Todays Answers   Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers */
 
 #playedRounds {
   margin-top: 20px;
@@ -247,18 +275,9 @@
 
 
 
-#playedTodayScreen h1 {
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 20px;
-  }
 
-  .round-heading {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-    text-align: center;
-    width: 100%;
-  }
+
+
 
 
 
@@ -460,23 +479,76 @@
 
 
 
-/* already played  already played already played already played already played already played already played already played already played */
+
+
+
+/* already played already played  already played  already played  already played  already played  already played  already played  already played  */
+
+
+
 
 #playedTodayScreen h1 {
-    font-size: 1.2em !important;
-    margin-bottom: 20px;
-  }
+  font-size: 5em !important;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-  .round-heading {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
+#playedTodayScreen p {
+  font-size: 2em !important;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-  .round-list {
+#playedTodayScreen button {
+  font-size: 1.5em;
+  padding: 12px 25px;
+  position: relative;
+  z-index: 1;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* Todays Answers   Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers */
+
+#playedRounds {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between each round */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.round-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.round-heading {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.round-list {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center; /* This centers the items horizontally */
+}
+
+
+.round-item {
+  background: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
 }
 
 
@@ -510,15 +582,21 @@
   </style>
 </head>
 <body>
-  <!-- Your body content here -->
+ 
 </body>
 
 
 
-<div id="playedTodayScreen" class="hidden">
-  <h1>You've Already Played Today!</h1>
-  <p>Come back tomorrow to play again.</p>
-  <div id="playedRounds"></div> <!-- This is where the rounds will appear -->
+<div id="playedTodayScreen">
+  <h1>Order It</h1>
+  <p>You've already played today! </p>
+  <button onclick="showAnswers()">See Today's Answers</button>
+</div>
+
+<div id="answersScreen" class="hidden">
+  <h1>Today's Rounds</h1>
+  <div id="playedRounds">
+  </div>
 </div>
 
 
@@ -721,6 +799,13 @@ function startGame() {
   });
 }
 
+
+
+
+function showAnswers() {
+    document.getElementById("playedTodayScreen").classList.add("hidden");
+    document.getElementById("answersScreen").classList.remove("hidden");
+  }
 
 
 
