@@ -616,6 +616,20 @@ function startGame() {
 
 
 
+    document.addEventListener('DOMContentLoaded', () => {
+  const lastPlayed = localStorage.getItem('lastPlayedDate');
+  const today = new Date().toISOString().split('T')[0];
+
+  if (lastPlayed === today) {
+    // Hide the welcome screen and show "played today" screen
+    document.getElementById('welcomeScreen').classList.add('hidden');
+    document.getElementById('playedTodayScreen').classList.remove('hidden');
+  } else {
+    // Allow the game to be played as it has not been played today
+    document.getElementById('welcomeScreen').classList.remove('hidden');
+    document.getElementById('playedTodayScreen').classList.add('hidden');
+  }
+});
 
 
 
