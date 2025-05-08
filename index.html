@@ -585,7 +585,7 @@
 <div id="playedTodayScreen">
   <img src="movingLogo.gif" alt="Moving Logo" class="mobile-logo">
   <h1>Order It.</h1>
-  <p>You've already played today! </p>
+  <p>You've already played today! Come back tomorrow! </p>
   <button onclick="showAnswers()">See Today's Answers</button>
 </div>
 
@@ -799,9 +799,10 @@ function startGame() {
 
 
 function showAnswers() {
-    document.getElementById("playedTodayScreen").classList.add("hidden");
-    document.getElementById("answersScreen").classList.remove("hidden");
-  }
+  document.getElementById('playedTodayScreen').style.display = 'none';
+  document.getElementById('answersScreen').classList.remove('hidden');
+}
+
 
 
 
