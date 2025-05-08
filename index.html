@@ -388,11 +388,22 @@
       
 
     
-      #currentDate {
+  #currentDate {
   position: fixed; 
   bottom: 6px !important; /* Lower value pushes it closer to the bottom */
   font-size: 0.9rem !important;
 }
+
+  #currentRound {
+  position: fixed; 
+  bottom: 20px !important; /* Lower value pushes it closer to the bottom */
+  font-size: 0.9rem !important;
+}
+
+
+
+
+
  
 }
 
@@ -479,7 +490,7 @@
   </div>
   
   <p id="currentDate"></p>
-  <div id="roundNumber"></div>
+  <div id="currentRound"></div>
 
   
   <script>
@@ -490,17 +501,11 @@
 
 
 
-    function updateRoundNumber() {
-  const roundDisplay = document.querySelectorAll("#roundNumber");
-  roundDisplay.forEach(div => {
-    div.textContent = `No. ${currentRoundIndex + 1}`;
-  });
-}
 
 
 
 
-
+    const dayIndex = 0;
     function startGame() {
   document.getElementById('welcomeScreen').classList.add('hidden');
 
@@ -515,7 +520,7 @@
   fetch("rounds.json")
     .then(res => res.json())
     .then(data => {
-      const dayIndex = 0;
+      
       rounds = data.days[dayIndex];
       loadRound();
     })
@@ -523,6 +528,18 @@
       console.error("Error loading rounds data:", error);
     });
 }
+
+
+
+
+
+    function displayCurrentRound() {
+      const roundDisplay = document.getElementById('currentRound');  // Directly target the correct element
+      roundDisplay.textContent = `No. ${dayIndex + 1}`;  // Display the round number
+    }
+
+    // Call the function
+    displayCurrentRound();
 
 
 
@@ -537,6 +554,14 @@
   
     displayCurrentDate();
   
+
+
+
+
+
+
+    
+
     function loadRound() {
       if (currentRound >= rounds.length) {
         endGame();
