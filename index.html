@@ -437,6 +437,15 @@
 </body>
 
 
+
+<div id="playedTodayScreen" style="display: none;">
+  <h1>You've Already Played Today!</h1>
+  <p>Good job! You can come back tomorrow to play again.</p>
+  <button id="viewStatsButton">View Stats</button>
+  <button id="startAgainButton">Play Again Tomorrow</button>
+</div>
+
+
   <div id="welcomeScreen">
     <div>
 
@@ -508,28 +517,39 @@
 
 
     const dayIndex = 0;
-    function startGame() {
-  document.getElementById('welcomeScreen').classList.add('hidden');
 
-  const gameScreen = document.getElementById('gameScreen');
-  gameScreen.classList.remove('hidden');
+function startGame() {
+  const lastPlayed = localStorage.getItem('lastPlayedDate');
+  const today = new Date().toISOString().split('T')[0];
 
-  // Ensure the screen is only faded in after layout
-  requestAnimationFrame(() => {
-    gameScreen.classList.add('visible');
-  });
-
-  fetch("rounds.json")
-    .then(res => res.json())
-    .then(data => {
-      
-      rounds = data.days[dayIndex];
-      loadRound();
-    })
-    .catch(error => {
-      console.error("Error loading rounds data:", error);
+  if (lastPlayed === today) {
+    // Hide welcome screen and show "played today" screen
+    document.getElementById('welcomeScreen').classList.add('hidden');
+    document.getElementById('playedTodayScreen').classList.remove('hidden');
+  } else {
+    // Hide welcome screen and show game screen if not played today
+    document.getElementById('welcomeScreen').classList.add('hidden');
+    const gameScreen = document.getElementById('gameScreen');
+    gameScreen.classList.remove('hidden');
+    
+    // Ensure the screen is only faded in after layout
+    requestAnimationFrame(() => {
+      gameScreen.classList.add('visible');
     });
+
+    // Fetch rounds data and load the first round
+    fetch("rounds.json")
+      .then(res => res.json())
+      .then(data => {
+        rounds = data.days[dayIndex];
+        loadRound();
+      })
+      .catch(error => {
+        console.error("Error loading rounds data:", error);
+      });
+  }
 }
+
 
 
 
@@ -774,6 +794,11 @@ item.addEventListener('touchend', (e) => {
 
 
 
+function markGameAsPlayed() {
+  const today = new Date().toISOString().split('T')[0];
+  localStorage.setItem('lastPlayedDate', today);
+}
+
 
 
 
@@ -791,27 +816,40 @@ function submitOrder() {
 
     itemList.classList.add('correct-animation'); // Add the animation class
 
-// Remove the animation class after 600ms (duration of animation)
+    // Remove the animation class after 600ms (duration of animation)
     setTimeout(() => {
       itemList.classList.remove('correct-animation');
     }, 900); 
-
 
     if (currentRound < rounds.length) {
       loadRound();
     } else {
       // If all rounds are completed without exceeding max strikes
       if (strikes < maxStrikes) {
-        setTimeout(endGame, 500); // Wait for a moment, then end the game
+        setTimeout(() => {
+          endGame(); // Wait for a moment, then end the game
+          markGameAsPlayed(); // Mark the game as played after it ends
+        }, 500);
       } else {
         document.getElementById('gameStatus').textContent = "Nice!"; // Fallback message if there are strikes
+        setTimeout(() => {
+          endGame(); // End the game with strikes
+          markGameAsPlayed(); // Mark the game as played after it ends
+        }, 500);
       }
     }
   } else {
-      strikes++;
-      updateStrikes();
+    strikes++;
+    updateStrikes(); // Update the strikes count
 
   
+
+
+
+
+
+
+
 
 
 const itemList = document.getElementById('itemList');
@@ -824,10 +862,6 @@ itemList.offsetHeight;
 setTimeout(() => {
   itemList.classList.remove('shake');
 }, 400);
-
-
-
-
 
 
 
@@ -1007,7 +1041,17 @@ shareButton.addEventListener('click', () => {
     console.log('Web Share API not supported. Sharing manually via text:');
     console.log(text);
   }
-});
+}
+
+);
+
+
+function alreadyPlayedToday() {
+  const today = new Date().toISOString().split('T')[0]; 
+  const lastPlayed = localStorage.getItem('lastPlayedDate');
+  return lastPlayed === today;
+}
+
 
 
 
