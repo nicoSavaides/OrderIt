@@ -516,16 +516,17 @@
 
 
 
-    const dayIndex = 0;
+const dayIndex = 0;
 
 function startGame() {
   const lastPlayed = localStorage.getItem('lastPlayedDate');
   const today = new Date().toISOString().split('T')[0];
 
   if (lastPlayed === today) {
-    // Hide welcome screen and show "played today" screen
+    
     document.getElementById('welcomeScreen').classList.add('hidden');
     document.getElementById('playedTodayScreen').classList.remove('hidden');
+    return;
   } else {
     // Hide welcome screen and show game screen if not played today
     document.getElementById('welcomeScreen').classList.add('hidden');
@@ -548,6 +549,14 @@ function startGame() {
         console.error("Error loading rounds data:", error);
       });
   }
+}
+
+
+
+
+function markGameAsPlayed() {
+  const today = new Date().toISOString().split('T')[0];
+  localStorage.setItem('lastPlayedDate', today);
 }
 
 
@@ -808,10 +817,6 @@ item.addEventListener('touchend', (e) => {
 
 
 
-function markGameAsPlayed() {
-  const today = new Date().toISOString().split('T')[0];
-  localStorage.setItem('lastPlayedDate', today);
-}
 
 
 
@@ -944,6 +949,7 @@ setTimeout(() => {
 
 
     function endGame() {
+  markGameAsPlayed();
   console.log("End game triggered");  // Test if this is being reached
   document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
   document.getElementById('endScreen').classList.remove('hidden'); // Show the end screen
