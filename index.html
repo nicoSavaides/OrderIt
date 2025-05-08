@@ -975,9 +975,7 @@ setTimeout(() => {
 
   // Set up the share button
   const shareButton = document.getElementById('shareButton');
-  shareButton.onclick = function() {
-    generateShareLink();
-  };
+ 
 }
 
 
@@ -1071,6 +1069,18 @@ function alreadyPlayedToday() {
   const lastPlayed = localStorage.getItem('lastPlayedDate');
   return lastPlayed === today;
 }
+
+window.onload = function() {
+  if (alreadyPlayedToday()) {
+    // They've already played today → Show the 'already played' screen
+    document.getElementById('startScreen').style.display = 'none';
+    document.getElementById('playedTodayScreen').style.display = 'block';
+  } else {
+    // They haven't played yet → Show the normal start screen
+    document.getElementById('startScreen').style.display = 'block';
+  }
+};
+
 
 
 
