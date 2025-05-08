@@ -438,12 +438,13 @@
 
 
 
-<div id="playedTodayScreen" style="display: none;">
+<div id="playedTodayScreen" class="hidden">
   <h1>You've Already Played Today!</h1>
   <p>Good job! You can come back tomorrow to play again.</p>
-  <button id="viewStatsButton">View Stats</button>
-  <button id="startAgainButton">Play Again Tomorrow</button>
+  <div id="playedRounds"></div> <!-- This is where the rounds will appear -->
 </div>
+
+
 
 
   <div id="welcomeScreen">
@@ -471,9 +472,6 @@
     <div id="itemListWrapper">
     <ul id="itemList"></ul>
   </div>
-
-  
-
     <p id="strikeCount"></p>
     
 
@@ -482,13 +480,6 @@
         <button onclick="submitOrder()">Submit</button>
       </div>
     </div>
-
-
-    
-    
-
-   
-   
   </div>
   
   <div id="endScreen" class="hidden">
@@ -522,42 +513,33 @@ function startGame() {
   const lastPlayed = localStorage.getItem('lastPlayedDate');
   const today = new Date().toISOString().split('T')[0];
 
-  if (lastPlayed === today) {
-    
-    document.getElementById('welcomeScreen').classList.add('hidden');
-    document.getElementById('playedTodayScreen').classList.remove('hidden');
-    return;
-  } else {
-    // Hide welcome screen and show game screen if not played today
-    document.getElementById('welcomeScreen').classList.add('hidden');
-    const gameScreen = document.getElementById('gameScreen');
-    gameScreen.classList.remove('hidden');
-    
-    // Ensure the screen is only faded in after layout
-    requestAnimationFrame(() => {
-      gameScreen.classList.add('visible');
+  fetch("rounds.json")
+    .then(res => res.json())
+    .then(data => {
+      rounds = data.days[dayIndex];
+
+      if (lastPlayed === today) {
+        showPlayedTodayScreen(); // ✅ call AFTER rounds is ready
+      } else {
+        document.getElementById('welcomeScreen').classList.add('hidden');
+        const gameScreen = document.getElementById('gameScreen');
+        gameScreen.classList.remove('hidden');
+        requestAnimationFrame(() => {
+          gameScreen.classList.add('visible');
+        });
+        loadRound(); // ✅ start game normally
+      }
+    })
+    .catch(error => {
+      console.error("Error loading rounds data:", error);
     });
-
-    // Fetch rounds data and load the first round
-    fetch("rounds.json")
-      .then(res => res.json())
-      .then(data => {
-        rounds = data.days[dayIndex];
-        loadRound();
-      })
-      .catch(error => {
-        console.error("Error loading rounds data:", error);
-      });
-  }
 }
 
 
 
 
-function markGameAsPlayed() {
-  const today = new Date().toISOString().split('T')[0];
-  localStorage.setItem('lastPlayedDate', today);
-}
+
+
 
 
 
@@ -625,23 +607,52 @@ function markGameAsPlayed() {
 
 
 
+
+
+    function showPlayedTodayScreen() {
+  document.getElementById('welcomeScreen').style.display = 'none';
+  document.getElementById('gameScreen').style.display = 'none';
+  document.getElementById('endScreen').style.display = 'none';
+  document.getElementById('playedTodayScreen').style.display = 'block';
+
+  // Clear previous content if needed
+  const roundsContainer = document.getElementById('playedRounds');
+  roundsContainer.innerHTML = '';
+
+  // Assume 'rounds' holds today's 3 rounds
+  rounds.forEach((round, index) => {
+    const roundDiv = document.createElement('div');
+    roundDiv.innerHTML = `
+      <h3>Round ${index + 1}: Order by ${round.prompt}</h3>
+      <p>${round.correctOrder.join(' → ')}</p>
+    `;
+    roundsContainer.appendChild(roundDiv);
+  });
+}
+
+
+
+
     document.addEventListener('DOMContentLoaded', () => {
   const lastPlayed = localStorage.getItem('lastPlayedDate');
   const today = new Date().toISOString().split('T')[0];
 
   if (lastPlayed === today) {
-    // Hide the welcome screen and show "played today" screen
-    document.getElementById('welcomeScreen').classList.add('hidden');
-    document.getElementById('playedTodayScreen').classList.remove('hidden');
-  } else {
-    // Allow the game to be played as it has not been played today
-    document.getElementById('welcomeScreen').classList.remove('hidden');
-    document.getElementById('playedTodayScreen').classList.add('hidden');
-  }
+  fetch("rounds.json")
+    .then(res => res.json())
+    .then(data => {
+      rounds = data.days[dayIndex];
+      showPlayedTodayScreen();
+    })
+    .catch(error => {
+      console.error("Error loading rounds for playedToday screen:", error);
+    });
+} else {
+  document.getElementById('welcomeScreen').classList.remove('hidden');
+  document.getElementById('playedTodayScreen').classList.add('hidden');
+}
+
 });
-
-
-
 
 
 
@@ -883,15 +894,11 @@ setTimeout(() => {
 }, 400);
 
 
-
     if (strikes >= maxStrikes) {
       const strikeCountEl = document.getElementById('strikeCount'); // This is the element showing "Mistakes Remaining"
       if (strikeCountEl) {
         strikeCountEl.style.display = 'none'; // This hides the text element
       }
-
-
-
 
 
       const itemList = document.getElementById('itemList');
@@ -901,9 +908,6 @@ setTimeout(() => {
       const label = document.createElement('p');
       label.textContent = 'Correct Order:';
       label.classList.add('correct-order-label');  // Add the CSS class here
-
-
-
 
 
 
@@ -948,7 +952,7 @@ setTimeout(() => {
    
 
 
-    function endGame() {
+  function endGame() {
   markGameAsPlayed();
   console.log("End game triggered");  // Test if this is being reached
   document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
@@ -967,13 +971,13 @@ setTimeout(() => {
     message = "Nice try";
   }
 
-  // Update the end game status message
+  
   document.getElementById('endGameStatus').textContent = message;
 
-  // Show the player's final score
+  
   document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
 
-  // Set up the share button
+ 
   const shareButton = document.getElementById('shareButton');
  
 }
@@ -1014,14 +1018,10 @@ function getEmojiScore(roundsCompleted) {
 
 
 
-
-
-
 const shareButton = document.getElementById('shareButton');
 
 shareButton.addEventListener('click', () => {
 
-  
   
   // Use the getEmojiScore function to get the emoji score
   const emojiScore = getEmojiScore(roundsCompleted);
@@ -1060,8 +1060,19 @@ shareButton.addEventListener('click', () => {
     console.log(text);
   }
 }
-
 );
+
+
+
+
+
+function markGameAsPlayed() {
+  const today = new Date().toISOString().split('T')[0];
+  localStorage.setItem('lastPlayedDate', today);
+  console.log('Saved lastPlayedDate as', today); 
+}
+
+
 
 
 function alreadyPlayedToday() {
@@ -1070,24 +1081,18 @@ function alreadyPlayedToday() {
   return lastPlayed === today;
 }
 
+
+
 window.onload = function() {
   if (alreadyPlayedToday()) {
-    // They've already played today → Show the 'already played' screen
-    document.getElementById('startScreen').style.display = 'none';
-    document.getElementById('playedTodayScreen').style.display = 'block';
+    showPlayedTodayScreen();
   } else {
-    // They haven't played yet → Show the normal start screen
-    document.getElementById('startScreen').style.display = 'block';
+    document.getElementById('welcomeScreen').style.display = 'block';
   }
 };
 
-
-
-
-
-
-
    
+
   </script>
 
 </body>
