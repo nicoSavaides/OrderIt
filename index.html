@@ -206,6 +206,46 @@
 
 
 
+#playedRounds {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Space between each round */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.round-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.round-heading {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.round-list {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.round-item {
+  background: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+
+
+
+}
+
+
+
+
 
     @media (max-width: 480px) {
       /* Further adjustments for smaller screens (smartphones) */
@@ -440,7 +480,7 @@
 
 <div id="playedTodayScreen" class="hidden">
   <h1>You've Already Played Today!</h1>
-  <p>Good job! You can come back tomorrow to play again.</p>
+  <p>Come back tomorrow to play again.</p>
   <div id="playedRounds"></div> <!-- This is where the rounds will appear -->
 </div>
 
@@ -620,13 +660,27 @@ function startGame() {
   roundsContainer.innerHTML = '';
 
   // Assume 'rounds' holds today's 3 rounds
-  rounds.forEach((round, index) => {
-    const roundDiv = document.createElement('div');
-    roundDiv.innerHTML = `
-      <h3>Round ${index + 1}: Order by ${round.prompt}</h3>
-      <p>${round.correctOrder.join(' → ')}</p>
-    `;
-    roundsContainer.appendChild(roundDiv);
+  rounds.forEach((round) => {
+    const section = document.createElement('div');
+    section.classList.add('round-section');
+
+    const heading = document.createElement('h3');
+    heading.classList.add('round-heading');
+    heading.textContent = round.prompt;
+
+    const listContainer = document.createElement('div');
+    listContainer.classList.add('round-list');
+
+    round.correctOrder.forEach((item) => {
+      const itemDiv = document.createElement('div');
+      itemDiv.classList.add('round-item');
+      itemDiv.textContent = item;
+      listContainer.appendChild(itemDiv);
+    });
+
+    section.appendChild(heading);
+    section.appendChild(listContainer);
+    roundsContainer.appendChild(section);
   });
 }
 
