@@ -739,7 +739,7 @@ function displayDateAndRound() {
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
   const formattedDate = now.toLocaleDateString(undefined, options);
   const roundNumber = dayIndex + 1;
-  document.getElementById('dateAndRound').textContent = `${formattedDate} — No. ${roundNumber}`;
+  document.getElementById('dateAndRound').textContent = `${formattedDate} — # ${roundNumber}`;
 }
 
 // Call the function
