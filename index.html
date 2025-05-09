@@ -583,7 +583,8 @@
 
 
 
-<div id="playedTodayScreen">
+<div id="playedTodayScreen" class="hidden">
+
   <img src="movingLogo.gif" alt="Moving Logo" class="mobile-logo">
   <h1>Order It.</h1>
   <p>You've already played today! Come back tomorrow! </p>
@@ -670,15 +671,11 @@ function startGame() {
     .then(data => {
       rounds = data.days[dayIndex];
 
-      // Hide all other screens explicitly
-      document.getElementById('welcomeScreen').classList.add('hidden');
-      document.getElementById('playedTodayScreen').classList.add('hidden');
-      document.getElementById('answersScreen').classList.add('hidden');
-      document.getElementById('endScreen').classList.add('hidden');
-
       if (lastPlayed === today) {
         showPlayedTodayScreen(); 
       } else {
+
+        document.getElementById('welcomeScreen').classList.add('hidden');
         const gameScreen = document.getElementById('gameScreen');
         gameScreen.classList.remove('hidden');
         requestAnimationFrame(() => {
@@ -691,7 +688,6 @@ function startGame() {
       console.error("Error loading rounds data:", error);
     });
 }
-
 
 
 
