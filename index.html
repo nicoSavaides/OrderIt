@@ -582,6 +582,7 @@
 
 
 
+
 <div id="playedTodayScreen">
   <img src="movingLogo.gif" alt="Moving Logo" class="mobile-logo">
   <h1>Order It.</h1>
@@ -669,22 +670,29 @@ function startGame() {
     .then(data => {
       rounds = data.days[dayIndex];
 
+      // Always hide all screens before showing the right one
+      document.getElementById('welcomeScreen').classList.add('hidden');
+      document.getElementById('playedTodayScreen').classList.add('hidden');
+      document.getElementById('answersScreen').classList.add('hidden');
+      document.getElementById('gameScreen').classList.add('hidden');
+      document.getElementById('endScreen').classList.add('hidden');
+
       if (lastPlayed === today) {
-        showPlayedTodayScreen(); // ✅ call AFTER rounds is ready
+        document.getElementById('playedTodayScreen').classList.remove('hidden');
       } else {
-        document.getElementById('welcomeScreen').classList.add('hidden');
         const gameScreen = document.getElementById('gameScreen');
         gameScreen.classList.remove('hidden');
         requestAnimationFrame(() => {
           gameScreen.classList.add('visible');
         });
-        loadRound(); // ✅ start game normally
+        loadRound();
       }
     })
     .catch(error => {
       console.error("Error loading rounds data:", error);
     });
 }
+
 
 
 
