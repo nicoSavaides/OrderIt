@@ -464,7 +464,7 @@
       
 
     
-  #currentDate {
+  #dateAndRound {
   position: fixed; 
   bottom: 16px !important; /* Lower value pushes it closer to the bottom */
   font-size: 0.9rem !important;
@@ -657,8 +657,7 @@
 
   </div>
   
-  <p id="currentDate"></p>
-  <div id="currentRound"></div>
+  <p id="dateAndRound"></p>
 
   
   <script>
@@ -676,7 +675,7 @@
 
 
 
-const LAUNCH_DATE = new Date(2025, 4, 9); // May 1, 2025 — months are 0-indexed
+const LAUNCH_DATE = new Date(2025, 4, 9); 
 const now = new Date();
 const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 const msPerDay = 1000 * 60 * 60 * 24;
@@ -738,26 +737,17 @@ function startGame() {
 
 
 
-    function displayCurrentRound() {
-      const roundDisplay = document.getElementById('currentRound');  // Directly target the correct element
-      roundDisplay.textContent = `No. ${dayIndex + 1}`;  // Display the round number
-    }
+function displayDateAndRound() {
+  const now = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  const formattedDate = now.toLocaleDateString(undefined, options);
+  const roundNumber = dayIndex + 1;
+  document.getElementById('dateAndRound').textContent = `${formattedDate} — No. ${roundNumber}`;
+}
 
-    // Call the function
-    displayCurrentRound();
+// Call the function
+displayDateAndRound();
 
-
-
-
-  
-    function displayCurrentDate() {
-      const now = new Date();
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      const formattedDate = now.toLocaleDateString(undefined, options);
-      document.getElementById('currentDate').textContent = `${formattedDate}`;
-    }
-  
-    displayCurrentDate();
   
 
 
