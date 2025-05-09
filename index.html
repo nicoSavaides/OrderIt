@@ -672,16 +672,16 @@
 
 
 
-    const dayIndex = 0;
+  const dayIndex = 0;
 
-    function startGame() {
+  function startGame() {
   const lastPlayed = localStorage.getItem('lastPlayedDate');
   const today = new Date().toISOString().split('T')[0];
 
   fetch("rounds.json")
     .then(res => res.json())
     .then(data => {
-      rounds = data.days[dayIndex]; // Make sure this is assigned before doing anything else
+      rounds = data.days[dayIndex]; 
 
       const savedStrikes = parseInt(localStorage.getItem('currentStrikes')) || 0;
       const savedRound = parseInt(localStorage.getItem('currentRound')) || 0;
