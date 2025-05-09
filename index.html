@@ -672,21 +672,25 @@
 
 
 
-    const LAUNCH_DATE = new Date("2025-05-01");
-const dayIndex = Math.floor(
-  (new Date().setHours(0, 0, 0, 0) - LAUNCH_DATE.setHours(0, 0, 0, 0)) /
-  (1000 * 60 * 60 * 24)
-);
+
+
+
+
+const LAUNCH_DATE = new Date(2025, 4, 9); // May 1, 2025 — months are 0-indexed
+const now = new Date();
+const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+const msPerDay = 1000 * 60 * 60 * 24;
+
+const dayIndex = Math.floor((localToday - LAUNCH_DATE) / msPerDay);
 
 function startGame() {
+  const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
   const lastPlayed = localStorage.getItem('lastPlayedDate');
-  const today = new Date().toISOString().split('T')[0];
 
   // Check if the user has already played today
-  if (lastPlayed === today) {
-    // Show the "Already Played" screen if the user played today
+  if (lastPlayed === todayString) {
     showPlayedTodayScreen();
-    return; // Stop further execution
+    return;
   }
 
   // If not, proceed with starting the game
@@ -701,7 +705,6 @@ function startGame() {
       strikes = savedStrikes;
       currentRound = savedRound;
 
-      // Hide the welcome screen and show the game screen
       document.getElementById('welcomeScreen').classList.add('hidden');
       const gameScreen = document.getElementById('gameScreen');
       gameScreen.classList.remove('hidden');
@@ -709,16 +712,20 @@ function startGame() {
         gameScreen.classList.add('visible');
       });
 
-      // ✅ Make sure to load the round AFTER everything is set
       loadRound();
 
-      // Save today's date to prevent playing again today
-      localStorage.setItem('lastPlayedDate', today);
+      // Save today's date
+      localStorage.setItem('lastPlayedDate', todayString);
     })
     .catch(error => {
       console.error("Error loading rounds data:", error);
     });
 }
+
+
+
+
+
 
 
 
