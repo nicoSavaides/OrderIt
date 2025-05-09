@@ -1070,10 +1070,9 @@ function submitOrder() {
         }, 500);
       }
     }
-  } strikes++;
-localStorage.setItem('currentStrikes', strikes); // Save the updated strikes immediately
-updateStrikes();
-
+  } else {
+    strikes++;
+    updateStrikes(); // Update the strikes count
 
   
 
