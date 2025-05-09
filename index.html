@@ -670,22 +670,21 @@ function startGame() {
     .then(data => {
       rounds = data.days[dayIndex];
 
-      // Always hide all screens before showing the right one
+      // Hide all other screens explicitly
       document.getElementById('welcomeScreen').classList.add('hidden');
       document.getElementById('playedTodayScreen').classList.add('hidden');
       document.getElementById('answersScreen').classList.add('hidden');
-      document.getElementById('gameScreen').classList.add('hidden');
       document.getElementById('endScreen').classList.add('hidden');
 
       if (lastPlayed === today) {
-        document.getElementById('playedTodayScreen').classList.remove('hidden');
+        showPlayedTodayScreen(); 
       } else {
         const gameScreen = document.getElementById('gameScreen');
         gameScreen.classList.remove('hidden');
         requestAnimationFrame(() => {
           gameScreen.classList.add('visible');
         });
-        loadRound();
+        loadRound(); // ✅ start game normally
       }
     })
     .catch(error => {
