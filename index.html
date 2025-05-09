@@ -661,31 +661,32 @@
 
     const dayIndex = 0;
 
-function startGame() {
+    function startGame() {
   const lastPlayed = localStorage.getItem('lastPlayedDate');
   const today = new Date().toISOString().split('T')[0];
 
   fetch("rounds.json")
     .then(res => res.json())
     .then(data => {
-      rounds = data.days[dayIndex];
+      rounds = data.days[dayIndex]; // Make sure this is assigned before doing anything else
+
+      const savedStrikes = parseInt(localStorage.getItem('currentStrikes')) || 0;
+      const savedRound = parseInt(localStorage.getItem('currentRound')) || 0;
+      strikes = savedStrikes;
+      currentRound = savedRound;
 
       if (lastPlayed === today) {
         showPlayedTodayScreen(); 
       } else {
-        // Restore state **only if they're allowed to play today**
-        const savedStrikes = parseInt(localStorage.getItem('currentStrikes')) || 0;
-        const savedRound = parseInt(localStorage.getItem('currentRound')) || 0;
-        strikes = savedStrikes;
-        currentRound = savedRound;
-
         document.getElementById('welcomeScreen').classList.add('hidden');
         const gameScreen = document.getElementById('gameScreen');
         gameScreen.classList.remove('hidden');
         requestAnimationFrame(() => {
           gameScreen.classList.add('visible');
         });
-        loadRound();
+
+        // ✅ Make sure to load the round AFTER everything is set
+        loadRound(); 
       }
     })
     .catch(error => {
@@ -734,30 +735,29 @@ function startGame() {
     
 
     function loadRound() {
-      if (currentRound >= rounds.length) {
-        endGame();
-        return;
-      }
+  if (currentRound >= rounds.length) {
+    endGame();
+    return;
+  }
 
-      
-      const { prompt, items } = rounds[currentRound];
-      document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
-  
-      const itemList = document.getElementById('itemList');
-  
-      if (currentRound === 0) {
-        items.forEach(item => {
-          const li = document.createElement('li');
-          li.textContent = item;
-          li.setAttribute('draggable', true);
-          li.classList.add('draggable-item');
-          itemList.appendChild(li);
-        });
-      }
-  
-      updateStrikes();
-      makeItemsDraggable();
-    }
+  const { prompt, items } = rounds[currentRound];
+  document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
+
+  const itemList = document.getElementById('itemList');
+  itemList.innerHTML = ''; // Always clear old items
+
+  items.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    li.setAttribute('draggable', true);
+    li.classList.add('draggable-item');
+    itemList.appendChild(li);
+  });
+
+  updateStrikes();
+  makeItemsDraggable();
+}
+
 
 
 
