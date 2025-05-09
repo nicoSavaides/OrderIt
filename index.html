@@ -1072,6 +1072,7 @@ function submitOrder() {
     }
   } else {
     strikes++;
+    localStorage.setItem('currentStrikes', strikes);
     updateStrikes(); // Update the strikes count
 
   
