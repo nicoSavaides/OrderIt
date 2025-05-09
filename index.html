@@ -708,8 +708,8 @@ function startGame() {
 
       loadRound();
 
-      // Save today's date
-      localStorage.setItem('lastPlayedDate', todayString);
+      
+      
     })
     .catch(error => {
       console.error("Error loading rounds data:", error);
@@ -1156,6 +1156,12 @@ setTimeout(() => {
 
   function endGame() {
   markGameAsPlayed();
+
+  const now = new Date();
+  const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  localStorage.setItem('lastPlayedDate', todayString);
+
+
   console.log("End game triggered");  // Test if this is being reached
   document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
   document.getElementById('endScreen').classList.remove('hidden'); // Show the end screen
