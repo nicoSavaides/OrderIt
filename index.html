@@ -785,7 +785,8 @@ displayDateAndRound();
 
 
 
-  function showPlayedTodayScreen() {
+function showPlayedTodayScreen() {
+  console.log("showPlayedTodayScreen is triggered.");
   document.getElementById('welcomeScreen').classList.add('hidden');
   document.getElementById('gameScreen').classList.add('hidden');
   document.getElementById('endScreen').classList.add('hidden');
@@ -1290,28 +1291,25 @@ function markGameAsPlayed() {
 function alreadyPlayedToday() {
   const today = new Date().toISOString().split('T')[0]; 
   const lastPlayed = localStorage.getItem('lastPlayedDate');
+  console.log(`Today: ${today}, Last Played: ${lastPlayed}`);
   return lastPlayed === today;
 }
 
 
 
-window.onload = function() {
-  // Immediately hide everything by default
-  document.body.style.display = 'none'; 
 
-  // Check if the player has already played today
+window.onload = function() {
+  document.body.style.display = 'none'; // Hide everything initially
+
   if (alreadyPlayedToday()) {
     console.log("Player already played today. Showing played screen.");
-    // Show the played today screen if the player has played today
-    showPlayedTodayScreen();
+    showPlayedTodayScreen(); // Show played screen if already played
   } else {
     console.log("Player has not played today. Showing welcome screen.");
-    // Otherwise, show the welcome screen
-    document.getElementById('welcomeScreen').style.display = 'block';
+    document.getElementById('welcomeScreen').style.display = 'block'; // Show welcome screen if not played today
   }
 
-  // Show the body once everything is ready
-  document.body.style.display = 'block';
+  document.body.style.display = 'block'; // Display the body after everything is loaded
 };
 
 
