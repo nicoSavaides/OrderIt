@@ -1390,6 +1390,8 @@ document.getElementById('answersScreen').classList.add('hidden');
 
   const statsDisplay = document.getElementById('statsDisplay');
   console.log("statsDisplay is", statsDisplay);
+  
+  document.getElementById('dateAndRound').style.display = 'none';
 
   statsDisplay.innerHTML = statsText;  // Populate stats display
   statsDisplay.classList.remove('hidden');
