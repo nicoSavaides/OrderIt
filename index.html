@@ -1364,7 +1364,7 @@ function updateStats(roundsCompleted) {
 
 
 document.getElementById('viewStatsButton').addEventListener('click', () => {
-  console.log("Stats button clicked");
+console.log("Stats button clicked");
 
 
   // Hide all other screens
@@ -1380,11 +1380,12 @@ document.getElementById('answersScreen').classList.add('hidden');
   };
 
   const statsText = `
-    <strong>Game History:</strong><br><br>
-    0 rounds games: ${stats.rounds0} <br>
-    1 rounds games: ${stats.rounds1} <br>
-    2 rounds games: ${stats.rounds2} <br>
-    3 rounds games: ${stats.rounds3} 
+  <strong>Game History:</strong><br><br>
+  Games with 0 rounds completed: ${stats.rounds0} <br>
+  Games with 1 round completed: ${stats.rounds1} <br>
+  Games with 2 rounds completed: ${stats.rounds2} <br>
+  Games with 3 rounds completed: ${stats.rounds3}
+
   `;
 
   const statsDisplay = document.getElementById('statsDisplay');
