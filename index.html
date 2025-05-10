@@ -466,7 +466,7 @@
     
   #dateAndRound {
   position: fixed; 
-  bottom: 2px !important; /* Lower value pushes it closer to the bottom */
+  bottom: 5px !important; /* Lower value pushes it closer to the bottom */
   left: 50%;
   transform: translateX(-50%);
   font-size: .9rem !important;
@@ -601,7 +601,7 @@
 
 <div id="answersScreen" class="hidden">
   
-  <div id="playedRounds">
+  <div id="playedRoundsAnswers">
   </div>
 </div>
 
@@ -784,9 +784,7 @@ displayDateAndRound();
 
 
 
-
 function showPlayedTodayScreen() {
-  console.log("showPlayedTodayScreen is triggered.");
   document.getElementById('welcomeScreen').classList.add('hidden');
   document.getElementById('gameScreen').classList.add('hidden');
   document.getElementById('endScreen').classList.add('hidden');
@@ -823,6 +821,9 @@ function showPlayedTodayScreen() {
 
 
 
+
+
+
 function showAnswers() {
   document.getElementById('playedTodayScreen').style.display = 'none';
   document.getElementById('answersScreen').classList.remove('hidden');
@@ -833,26 +834,49 @@ function showAnswers() {
 
 
 
-    document.addEventListener('DOMContentLoaded', () => {
-  const lastPlayed = localStorage.getItem('lastPlayedDate');
-  const today = new Date().toISOString().split('T')[0];
+function showAnswers() {
+  document.getElementById('playedTodayScreen').style.display = 'none'; 
+  document.getElementById('answersScreen').classList.remove('hidden');
+  document.getElementById('dateAndRound').style.display = 'none';
 
-  if (lastPlayed === today) {
+  // Clear any previous data
+  const roundsContainer = document.getElementById('playedRoundsAnswers');
+  roundsContainer.innerHTML = '';
+
+  // Display the rounds data for today
   fetch("rounds.json")
     .then(res => res.json())
     .then(data => {
-      rounds = data.days[dayIndex];
-      showPlayedTodayScreen();
+      const todaysRounds = data.days[dayIndex]; // Use `dayIndex` to get today's rounds
+
+      todaysRounds.forEach((round) => {
+        const section = document.createElement('div');
+        section.classList.add('round-section');
+
+        const heading = document.createElement('h3');
+        heading.classList.add('round-heading');
+        heading.textContent = round.prompt; // Add the prompt for the category
+
+        const listContainer = document.createElement('div');
+        listContainer.classList.add('round-list');
+
+        // Display the correct order of items for this round
+        round.correctOrder.forEach((item) => {
+          const itemDiv = document.createElement('div');
+          itemDiv.classList.add('round-item');
+          itemDiv.textContent = item;
+          listContainer.appendChild(itemDiv);
+        });
+
+        section.appendChild(heading);
+        section.appendChild(listContainer);
+        roundsContainer.appendChild(section);
+      });
     })
     .catch(error => {
-      console.error("Error loading rounds for playedToday screen:", error);
+      console.error("Error loading rounds data for answers:", error);
     });
-} else {
-  document.getElementById('welcomeScreen').classList.remove('hidden');
-  document.getElementById('playedTodayScreen').classList.add('hidden');
 }
-
-});
 
 
 
@@ -1152,7 +1176,7 @@ setTimeout(() => {
 
 
     
-    let score = 0; // you should already be tracking this
+  let score = 0; // you should already be tracking this
    
 
 
@@ -1162,6 +1186,7 @@ setTimeout(() => {
   const now = new Date();
   const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
   localStorage.setItem('lastPlayedDate', todayString);
+
 
 
   console.log("End game triggered");  // Test if this is being reached
@@ -1291,28 +1316,18 @@ function markGameAsPlayed() {
 function alreadyPlayedToday() {
   const today = new Date().toISOString().split('T')[0]; 
   const lastPlayed = localStorage.getItem('lastPlayedDate');
-  console.log(`Today: ${today}, Last Played: ${lastPlayed}`);
   return lastPlayed === today;
 }
 
 
 
-
 window.onload = function() {
-  document.body.style.display = 'none'; // Hide everything initially
-
   if (alreadyPlayedToday()) {
-    console.log("Player already played today. Showing played screen.");
-    showPlayedTodayScreen(); // Show played screen if already played
+    showPlayedTodayScreen();
   } else {
-    console.log("Player has not played today. Showing welcome screen.");
-    document.getElementById('welcomeScreen').style.display = 'block'; // Show welcome screen if not played today
+    document.getElementById('welcomeScreen').style.display = 'block';
   }
-
-  document.body.style.display = 'block'; // Display the body after everything is loaded
 };
-
-
 
    
 
