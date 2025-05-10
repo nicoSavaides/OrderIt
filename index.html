@@ -1382,7 +1382,7 @@ document.getElementById('answersScreen').classList.add('hidden');
   const statsText = `
   <strong>Game History:</strong><br><br>
   Games with 0 rounds completed: ${stats.rounds0} <br>
-  Games with 1 round completed: ${stats.rounds1} <br>
+  Games with 1 rounds completed: ${stats.rounds1} <br>
   Games with 2 rounds completed: ${stats.rounds2} <br>
   Games with 3 rounds completed: ${stats.rounds3}
 
@@ -1390,7 +1390,7 @@ document.getElementById('answersScreen').classList.add('hidden');
 
   const statsDisplay = document.getElementById('statsDisplay');
   console.log("statsDisplay is", statsDisplay);
-  
+
   document.getElementById('dateAndRound').style.display = 'none';
 
   statsDisplay.innerHTML = statsText;  // Populate stats display
