@@ -1296,17 +1296,24 @@ function alreadyPlayedToday() {
 
 
 window.onload = function() {
-  // Immediately hide the welcome screen (prevent flicker)
-  document.getElementById('welcomeScreen').style.display = 'none';
-  
+  // Immediately hide everything by default
+  document.body.style.display = 'none'; 
+
+  // Check if the player has already played today
   if (alreadyPlayedToday()) {
-    // If already played, show the played today screen
+    console.log("Player already played today. Showing played screen.");
+    // Show the played today screen if the player has played today
     showPlayedTodayScreen();
   } else {
-    // Otherwise, show the welcome screen (which is now hidden)
+    console.log("Player has not played today. Showing welcome screen.");
+    // Otherwise, show the welcome screen
     document.getElementById('welcomeScreen').style.display = 'block';
   }
+
+  // Show the body once everything is ready
+  document.body.style.display = 'block';
 };
+
 
 
    
