@@ -592,20 +592,18 @@
 
 
 <div id="playedTodayScreen" class="hidden">
-
   <img src="movingLogo.gif" alt="Moving Logo" class="mobile-logo">
   <h1>Order It.</h1>
-  <p>You've already played today! Come back tomorrow! </p>
+  <p>You've already played today! Come back tomorrow!</p>
   <button onclick="showAnswers()">See Today's Answers</button>
   <button id="viewStatsButton">View My Stats</button>
-  <div id="statsDisplay" style="display: none; margin-top: 10px;"></div>
-
 </div>
 
+<!-- MOVE THIS OUTSIDE -->
+<div id="statsDisplay" class="hidden" style="margin-top: 10px;"></div>
+
 <div id="answersScreen" class="hidden">
-  
-  <div id="playedRoundsAnswers">
-  </div>
+  <div id="playedRoundsAnswers"></div>
 </div>
 
 
@@ -1309,6 +1307,17 @@ shareButton.addEventListener('click', () => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 function updateStats(roundsCompleted) {
   const stats = JSON.parse(localStorage.getItem("orderItStats")) || {
     rounds0: 0,
@@ -1324,9 +1333,15 @@ function updateStats(roundsCompleted) {
 }
 
 
-
-
 document.getElementById('viewStatsButton').addEventListener('click', () => {
+  console.log("Stats button clicked");
+
+
+  // Hide all other screens
+document.getElementById('playedTodayScreen').classList.add('hidden');
+document.getElementById('answersScreen').classList.add('hidden');
+
+
   const stats = JSON.parse(localStorage.getItem("orderItStats")) || {
     rounds0: 0,
     rounds1: 0,
@@ -1335,17 +1350,26 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
   };
 
   const statsText = `
-    <strong>Your Stats:</strong><br>
-    0 rounds: ${stats.rounds0} time(s)<br>
-    1 round: ${stats.rounds1} time(s)<br>
-    2 rounds: ${stats.rounds2} time(s)<br>
-    3 rounds: ${stats.rounds3} time(s)
+    <strong>Rounds Won:</strong><br>
+    0 rounds: ${stats.rounds0} <br>
+    1 round: ${stats.rounds1} <br>
+    2 rounds: ${stats.rounds2} <br>
+    3 rounds: ${stats.rounds3} 
   `;
 
   const statsDisplay = document.getElementById('statsDisplay');
-  statsDisplay.innerHTML = statsText;
-  statsDisplay.style.display = 'block';
+  console.log("statsDisplay is", statsDisplay);
+
+  statsDisplay.innerHTML = statsText;  // Populate stats display
+  statsDisplay.classList.remove('hidden');
+
 });
+
+
+
+
+
+
 
 
 
