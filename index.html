@@ -597,6 +597,9 @@
   <h1>Order It.</h1>
   <p>You've already played today! Come back tomorrow! </p>
   <button onclick="showAnswers()">See Today's Answers</button>
+  <button id="viewStatsButton">View My Stats</button>
+  <div id="statsDisplay" style="display: none; margin-top: 10px;"></div>
+
 </div>
 
 <div id="answersScreen" class="hidden">
@@ -1145,7 +1148,7 @@ setTimeout(() => {
         li.textContent = item;
         li.classList.add('draggable-item');
         li.classList.add('correct-order-tile');
-        li.style.backgroundColor = '#999999';
+        li.style.backgroundColor = '#A8A8A8';
         li.style.fontWeight = 'bold';
         li.style.cursor = 'default';
         li.setAttribute('draggable', false);
@@ -1216,6 +1219,8 @@ setTimeout(() => {
 
   localStorage.removeItem('currentStrikes');
   localStorage.removeItem('currentRound');
+
+  updateStats(roundsCompleted);
  
 }
 
@@ -1263,6 +1268,7 @@ shareButton.addEventListener('click', () => {
   // Use the getEmojiScore function to get the emoji score
   const emojiScore = getEmojiScore(roundsCompleted);
   
+  
   const correctCount = roundsCompleted; // Assuming `roundsCompleted` equals the number of correct answers
   const total = 3; // This can be dynamic if the total number of rounds is variable
 
@@ -1277,6 +1283,7 @@ shareButton.addEventListener('click', () => {
 } else {
   text = `${emojiScore}`;
 }
+
 
 
 
@@ -1298,6 +1305,49 @@ shareButton.addEventListener('click', () => {
   }
 }
 );
+
+
+
+
+function updateStats(roundsCompleted) {
+  const stats = JSON.parse(localStorage.getItem("orderItStats")) || {
+    rounds0: 0,
+    rounds1: 0,
+    rounds2: 0,
+    rounds3: 0
+  };
+  const key = `rounds${roundsCompleted}`;
+  if (stats[key] !== undefined) {
+    stats[key]++;
+  }
+  localStorage.setItem("orderItStats", JSON.stringify(stats));
+}
+
+
+
+
+document.getElementById('viewStatsButton').addEventListener('click', () => {
+  const stats = JSON.parse(localStorage.getItem("orderItStats")) || {
+    rounds0: 0,
+    rounds1: 0,
+    rounds2: 0,
+    rounds3: 0
+  };
+
+  const statsText = `
+    <strong>Your Stats:</strong><br>
+    0 rounds: ${stats.rounds0} time(s)<br>
+    1 round: ${stats.rounds1} time(s)<br>
+    2 rounds: ${stats.rounds2} time(s)<br>
+    3 rounds: ${stats.rounds3} time(s)
+  `;
+
+  const statsDisplay = document.getElementById('statsDisplay');
+  statsDisplay.innerHTML = statsText;
+  statsDisplay.style.display = 'block';
+});
+
+
 
 
 
@@ -1347,6 +1397,8 @@ window.addEventListener('DOMContentLoaded', () => {
       });
   }
 });
+
+
 
 
    
