@@ -785,7 +785,7 @@ displayDateAndRound();
 
 
 
-    function showPlayedTodayScreen() {
+  function showPlayedTodayScreen() {
   document.getElementById('welcomeScreen').classList.add('hidden');
   document.getElementById('gameScreen').classList.add('hidden');
   document.getElementById('endScreen').classList.add('hidden');
@@ -1296,12 +1296,18 @@ function alreadyPlayedToday() {
 
 
 window.onload = function() {
+  // Immediately hide the welcome screen (prevent flicker)
+  document.getElementById('welcomeScreen').style.display = 'none';
+  
   if (alreadyPlayedToday()) {
+    // If already played, show the played today screen
     showPlayedTodayScreen();
   } else {
+    // Otherwise, show the welcome screen (which is now hidden)
     document.getElementById('welcomeScreen').style.display = 'block';
   }
 };
+
 
    
 
