@@ -202,7 +202,7 @@
 
     [
       {
-        "prompt": "Year Sport was Invented",
+        "prompt": "Year Invented",
         "items": ["Baseball", "Tennis", "Football(US)", "Golf"],
         "correctOrder": ["Tennis", "Golf", "Baseball", "Football(US)"]
       },
@@ -977,6 +977,24 @@
 
     [
       {
+        "prompt": "Birth Year",
+        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
+        "correctOrder": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"]
+      },
+      {
+        "prompt": "Number of Bond Films",
+        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
+        "correctOrder": ["George Lazenby", "Pierce Brosnan", "Daniel Craig", "Sean Connery"]
+      },
+      {
+        "prompt": "Age When First Played Bond",
+        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
+        "correctOrder": ["George Lazenby", "Sean Connery", "Daniel Craig", "Pierce Brosnan"]
+      }
+    ],
+
+    [
+      {
         "prompt": "Land Area",
         "items": ["USA", "India", "Egypt", "Spain"],
         "correctOrder": ["Spain", "Egypt", "India", "USA"]
@@ -1027,7 +1045,26 @@
         "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
         "correctOrder": ["Parks and Recreation", "Friends", "Seinfeld", "Mad Men"]
       }
-    ], 
+    ],
+    
+    [
+      {
+        "prompt": "Location Name Length",
+        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
+        "correctOrder": ["Cowboys", "Bears", "Packers", "Eagles"]
+      },
+      {
+        "prompt": "Superbowls Won",
+        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
+        "correctOrder": ["Bears", "Eagles", "Packers", "Cowboys"]
+      },
+      {
+        "prompt": "Team Valuation",
+        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
+        "correctOrder": ["Packers", "Bears", "Eagles", "Cowboys"]
+      }
+    ],
+    
 
     [
       {
@@ -1099,14 +1136,7 @@
         "items": ["Jamaica", "Brazil", "France", "Cuba"],
         "correctOrder": ["Jamaica", "Cuba", "Brazil", "France"]
       }
-    ]
-
-
-    
-
-
-    
-    
+    ] 
 
     
   ]
