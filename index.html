@@ -1370,6 +1370,8 @@ function updateStats(roundsCompleted) {
   localStorage.setItem("orderItStats", JSON.stringify(stats));
 }
 
+
+
 document.getElementById('viewStatsButton').addEventListener('click', () => {
   console.log("Stats button clicked");
 
@@ -1377,16 +1379,14 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
   document.getElementById('playedTodayScreen').classList.add('hidden');
   document.getElementById('answersScreen').classList.add('hidden');
 
-  // Load stats
-  const stats = JSON.parse(localStorage.getItem("orderItStats")) || {
-    gamesPlayed: 0,
-    rounds0: 0,
-    rounds1: 0,
-    rounds2: 0,
-    rounds3: 0
-  };
+  // Load stats and ensure all expected keys exist
+  const stats = JSON.parse(localStorage.getItem("orderItStats")) || {};
+  stats.gamesPlayed = stats.gamesPlayed || 0;
+  stats.rounds0 = stats.rounds0 || 0;
+  stats.rounds1 = stats.rounds1 || 0;
+  stats.rounds2 = stats.rounds2 || 0;
+  stats.rounds3 = stats.rounds3 || 0;
 
-  // Build stats display
   const statsText = `
     <strong>Game History:</strong><br><br>
     Games Played: ${stats.gamesPlayed} <br><br>
@@ -1397,13 +1397,11 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
   `;
 
   const statsDisplay = document.getElementById('statsDisplay');
-  console.log("statsDisplay is", statsDisplay);
-
   document.getElementById('dateAndRound').style.display = 'none';
-
   statsDisplay.innerHTML = statsText;
   statsDisplay.classList.remove('hidden');
 });
+
 
 
 
