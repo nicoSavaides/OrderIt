@@ -1388,13 +1388,26 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
   stats.rounds3 = stats.rounds3 || 0;
 
   const statsText = `
-    <strong>Game History:</strong><br><br>
-    Games Played: ${stats.gamesPlayed} <br><br>
-    0 round games: ${stats.rounds0} <br>
-    1 round games: ${stats.rounds1} <br>
-    2 round games: ${stats.rounds2} <br>
-    3 round games: ${stats.rounds3}
-  `;
+  <div style="font-family: sans-serif; color: #111; max-width: 300px; margin: auto;">
+    <h2 style="text-align: center; margin-top: 0;">My Stats</h2>
+    <p style="text-align: center;"><strong>Games Played:</strong> ${stats.gamesPlayed}</p>
+    <table style="width: 100%; border-spacing: 0 10px;">
+      <thead>
+        <tr>
+          <th style="text-align: left;">Rounds Completed</th>
+          <th style="text-align: right;">Count</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>3 Rounds</td><td style="text-align: right;">${stats.rounds3}</td></tr>
+        <tr><td>2 Rounds</td><td style="text-align: right;">${stats.rounds2}</td></tr>
+        <tr><td>1 Round</td><td style="text-align: right;">${stats.rounds1}</td></tr>
+        <tr><td>0 Rounds</td><td style="text-align: right;">${stats.rounds0}</td></tr>
+      </tbody>
+    </table>
+  </div>
+`;
+
 
   const statsDisplay = document.getElementById('statsDisplay');
   document.getElementById('dateAndRound').style.display = 'none';
