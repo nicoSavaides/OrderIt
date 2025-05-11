@@ -631,6 +631,8 @@
 
 
 <div id="statsDisplay" class="hidden" style="margin-top: 10px;"></div>
+<div id="gamesPlayedStat"></div>
+
 
 <div id="answersScreen" class="hidden">
   <div id="playedRoundsAnswers"></div>
@@ -1350,42 +1352,48 @@ shareButton.addEventListener('click', () => {
 
 function updateStats(roundsCompleted) {
   const stats = JSON.parse(localStorage.getItem("orderItStats")) || {
+    gamesPlayed: 0,
     rounds0: 0,
     rounds1: 0,
     rounds2: 0,
     rounds3: 0
   };
+
   const key = `rounds${roundsCompleted}`;
   if (stats[key] !== undefined) {
     stats[key]++;
   }
+
+  // Increment games played
+  stats.gamesPlayed = (stats.gamesPlayed || 0) + 1;
+
   localStorage.setItem("orderItStats", JSON.stringify(stats));
 }
 
-
 document.getElementById('viewStatsButton').addEventListener('click', () => {
-console.log("Stats button clicked");
-
+  console.log("Stats button clicked");
 
   // Hide all other screens
-document.getElementById('playedTodayScreen').classList.add('hidden');
-document.getElementById('answersScreen').classList.add('hidden');
+  document.getElementById('playedTodayScreen').classList.add('hidden');
+  document.getElementById('answersScreen').classList.add('hidden');
 
-
+  // Load stats
   const stats = JSON.parse(localStorage.getItem("orderItStats")) || {
+    gamesPlayed: 0,
     rounds0: 0,
     rounds1: 0,
     rounds2: 0,
     rounds3: 0
   };
 
+  // Build stats display
   const statsText = `
-  <strong>Game History:</strong><br><br>
-  0 round games: ${stats.rounds0} <br>
-  1 round games: ${stats.rounds1} <br>
-  2 round games: ${stats.rounds2} <br>
-  3 round games: ${stats.rounds3}
-
+    <strong>Game History:</strong><br><br>
+    Games Played: ${stats.gamesPlayed} <br><br>
+    0 round games: ${stats.rounds0} <br>
+    1 round games: ${stats.rounds1} <br>
+    2 round games: ${stats.rounds2} <br>
+    3 round games: ${stats.rounds3}
   `;
 
   const statsDisplay = document.getElementById('statsDisplay');
@@ -1393,10 +1401,10 @@ document.getElementById('answersScreen').classList.add('hidden');
 
   document.getElementById('dateAndRound').style.display = 'none';
 
-  statsDisplay.innerHTML = statsText;  // Populate stats display
+  statsDisplay.innerHTML = statsText;
   statsDisplay.classList.remove('hidden');
-
 });
+
 
 
 
@@ -1414,6 +1422,11 @@ function markGameAsPlayed() {
   const today = new Date().toISOString().split('T')[0];
   localStorage.setItem('lastPlayedDate', today);
   console.log('Saved lastPlayedDate as', today); 
+
+  let gamesPlayed = parseInt(localStorage.getItem('gamesPlayed')) || 0;
+  gamesPlayed += 1;
+  localStorage.setItem('gamesPlayed', gamesPlayed);
+
 }
 
 
