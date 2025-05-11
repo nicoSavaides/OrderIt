@@ -345,6 +345,24 @@
     ], 
 
     [
+      {
+        "prompt": "Professional Debut Year",
+        "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
+        "correctOrder": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"]
+      },
+      {
+        "prompt": "Social Media Followers",
+        "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
+        "correctOrder": ["Tiger Woods", "Simone Biles", "Mike Tyson", "Cristiano Ronaldo"]
+      },
+      {
+        "prompt": "Total Career Earnings",
+        "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
+        "correctOrder": ["Simone Biles", "Mike Tyson", "Cristiano Ronaldo", "Tiger Woods"]
+      }
+    ],
+
+    [
       {            
         "prompt": "Number of Films in Series",
         "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
@@ -653,6 +671,24 @@
 
     [
       {
+        "prompt": "Height",
+        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "correctOrder": ["Allen Iverson", "Michael Jordan", "Larry Bird", "Shaq"]
+      },
+      {
+        "prompt": "Number of Teams Played For",
+        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "correctOrder": ["Larry Bird", "Michael Jordan", "Allen Iverson", "Shaq"]
+      },
+      {
+        "prompt": "Age",
+        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "correctOrder": ["Allen Iverson", "Shaq", "Michael Jordan", "Larry Bird"]
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Bordering Countries",
         "items": ["China", "Italy", "France", "US"],
         "correctOrder": ["US", "Italy", "France", "China"]
@@ -797,6 +833,25 @@
 
     [
       {
+        "prompt": "Team Location Name Length",
+        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
+        "correctOrder": ["Cowboys", "Bears", "Packers", "Eagles"]
+      },
+      {
+        "prompt": "Superbowls Won",
+        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
+        "correctOrder": ["Bears", "Eagles", "Packers", "Cowboys"]
+      },
+      {
+        "prompt": "Team Valuation",
+        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
+        "correctOrder": ["Packers", "Bears", "Eagles", "Cowboys"]
+      }
+    ],
+
+
+    [
+      {
         "prompt": "Age",
         "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
         "correctOrder": ["Rihanna", "Scarlett Johansson", "Tom Cruise", "Tom Hanks"]
@@ -810,24 +865,6 @@
         "prompt": "Net Worth",
         "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
         "correctOrder": ["Scarlett Johansson", "Tom Hanks", "Tom Cruise", "Rihanna"]
-      }
-    ],
-
-    [
-      {
-        "prompt": "Height",
-        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
-        "correctOrder": ["Allen Iverson", "Michael Jordan", "Larry Bird", "Shaq"]
-      },
-      {
-        "prompt": "Number of Teams Played For",
-        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
-        "correctOrder": ["Larry Bird", "Michael Jordan", "Allen Iverson", "Shaq"]
-      },
-      {
-        "prompt": "Age",
-        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
-        "correctOrder": ["Allen Iverson", "Shaq", "Michael Jordan", "Larry Bird"]
       }
     ],
 
@@ -946,7 +983,7 @@
         "correctOrder": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"]
       },
       {
-        "prompt": "Number of Bond Films",
+        "prompt": "Number of Bond Films Starred In",
         "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
         "correctOrder": ["George Lazenby", "Pierce Brosnan", "Daniel Craig", "Sean Connery"]
       },
@@ -987,29 +1024,11 @@
         "correctOrder": ["Beagle", "Chihuahua", "Golden Retriever", "Border Collie"]
       },
       {
-        "prompt": "Speed",
+        "prompt": "Top Speed",
         "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
         "correctOrder": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"]
       }
     ],
-
-    [
-      {
-        "prompt": "Year Opened",
-        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
-        "correctOrder": ["Disneyland", "Walt Disney World", "Disneyland Paris", "Disneyland Shanghai"]
-      },
-      {
-        "prompt": "Yearly Attendees",
-        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
-        "correctOrder": ["Disneyland Paris", "Disneyland Shanghai", "Disneyland", "Walt Disney World"]
-      },
-      {
-        "prompt": "Total Land Area",
-        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
-        "correctOrder": ["Disneyland", "Disneyland Shanghai", "Disneyland Paris", "Walt Disney World"]
-      }
-    ], 
 
     [
       {
@@ -1031,6 +1050,24 @@
 
     [
       {
+        "prompt": "Year Opened",
+        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "correctOrder": ["Disneyland", "Walt Disney World", "Disneyland Paris", "Disneyland Shanghai"]
+      },
+      {
+        "prompt": "Yearly Attendees",
+        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "correctOrder": ["Disneyland Paris", "Disneyland Shanghai", "Disneyland", "Walt Disney World"]
+      },
+      {
+        "prompt": "Total Land Area",
+        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "correctOrder": ["Disneyland", "Disneyland Shanghai", "Disneyland Paris", "Walt Disney World"]
+      }
+    ], 
+
+    [
+      {
         "prompt": "Premier Year",
         "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
         "correctOrder": ["Seinfeld", "Friends", "Mad Men", "Parks and Recreation"]
@@ -1041,27 +1078,9 @@
         "correctOrder": ["Mad Men", "Parks and Recreation", "Seinfeld", "Friends"]
       },
       {
-        "prompt": "Emmys Won",
+        "prompt": "Number of Emmys Won",
         "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
         "correctOrder": ["Parks and Recreation", "Friends", "Seinfeld", "Mad Men"]
-      }
-    ],
-    
-    [
-      {
-        "prompt": "Location Name Length",
-        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
-        "correctOrder": ["Cowboys", "Bears", "Packers", "Eagles"]
-      },
-      {
-        "prompt": "Superbowls Won",
-        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
-        "correctOrder": ["Bears", "Eagles", "Packers", "Cowboys"]
-      },
-      {
-        "prompt": "Team Valuation",
-        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
-        "correctOrder": ["Packers", "Bears", "Eagles", "Cowboys"]
       }
     ],
     
@@ -1080,6 +1099,24 @@
         "prompt": "Population",
         "items": ["Cairo", "Denver", "Sydney", "Moscow"],
         "correctOrder": ["Denver", "Sydney", "Moscow", "Cairo"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Professional Debut Year",
+        "items": ["Tom Brady", "Serena Williams", "Lionel Messi", "Stephen Curry"],
+        "correctOrder": ["Serena Williams", "Tom Brady", "Lionel Messi", "Stephen Curry"]
+      },
+      {
+        "prompt": "Social Media Followers",
+        "items": ["Tom Brady", "Serena Williams", "Lionel Messi", "Stephen Curry"],
+        "correctOrder": ["Tom Brady", "Stephen Curry", "Serena Williams", "Lionel Messi"]
+      },
+      {
+        "prompt": "Total Career Earnings",
+        "items": ["Tom Brady", "Serena Williams", "Lionel Messi", "Stephen Curry"],
+        "correctOrder": ["Serena Williams", "Stephen Curry", "Tom Brady", "Lionel Messi"]
       }
     ],
 
@@ -1135,8 +1172,7 @@
         "items": ["Jamaica", "Brazil", "France", "Cuba"],
         "correctOrder": ["Jamaica", "Cuba", "Brazil", "France"]
       }
-    ] 
-
+    ]
     
   ]
 }
