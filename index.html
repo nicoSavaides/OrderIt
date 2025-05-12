@@ -576,13 +576,59 @@
 }
 
 
+
+
+
 /* stats  stats stats stats stats stats stats  stats stats stats stats stats stats  stats stats stats stats stats  */
 
-#statsDisplay {
-    margin-top: 80px !important;
-    padding: 12px;
-    font-size: 25px;
-  } 
+.stats-container {
+  font-family: sans-serif;
+  color: #111;
+  max-width: 320px;
+  margin: auto;
+}
+
+.stats-title {
+  font-size: 40px;
+  font-family: 'Second', sans-serif;
+  text-align: center;
+  margin: 0 0 60px 0;
+}
+
+.games-played {
+  font-size: 20px;
+  font-family: 'Lora', serif;
+  text-align: center;
+  margin: 0 0 100px 0;
+}
+
+.stats-table {
+  width: 100%;
+  border-spacing: 0 10px;
+  font-family: 'Lora', serif;
+}
+
+.rounds-completed-label {
+  font-size: 18px;
+  text-align: left;
+}
+
+.count-label {
+  font-size: 18px;
+  text-align: right;
+}
+
+.round-label {
+  font-size: 16px;
+  text-align: left;
+}
+
+.count {
+  font-size: 16px;
+  text-align: right;
+}
+
+  
 
 
 
@@ -1388,27 +1434,27 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
   stats.rounds3 = stats.rounds3 || 0;
 
   const statsText = `
-  <div style="font-family: sans-serif; color: #111; max-width: 300px; margin: auto;">
-<h2 style="text-align: center; margin: 0 0 60px 0; font-size: 70; font-family: 'second';">My Stats</h2>
-<p style="text-align: center; margin: 0 0 100px 0; font-size: 50; font-family: 'Lora';"><strong>Games Played:</strong> ${stats.gamesPlayed}</p>
-
-
-    <table style="width: 100%; border-spacing: 0 10px; font-family: 'Lora';">
+  <div class="stats-container">
+    <h2 class="stats-title">My Stats</h2>
+    <p class="games-played"><strong>Games Played:</strong> ${stats.gamesPlayed}</p>
+    <table class="stats-table">
       <thead>
         <tr>
-          <th style="text-align: left; font-size: 20px;">Rounds Completed</th>
-          <th style="text-align: right; font-size: 20px;">Count</th>
+          <th class="rounds-completed-label">Rounds Completed</th>
+          <th class="count-label">Count</th>
         </tr>
       </thead>
       <tbody>
-        <tr><td>3 Rounds</td><td style="text-align: right;">${stats.rounds3}</td></tr>
-        <tr><td>2 Rounds</td><td style="text-align: right;">${stats.rounds2}</td></tr>
-        <tr><td>1 Round</td><td style="text-align: right;">${stats.rounds1}</td></tr>
-        <tr><td>0 Rounds</td><td style="text-align: right;">${stats.rounds0}</td></tr>
+        <tr><td class="round-label">3 Rounds</td><td class="count">${stats.rounds3}</td></tr>
+        <tr><td class="round-label">2 Rounds</td><td class="count">${stats.rounds2}</td></tr>
+        <tr><td class="round-label">1 Round</td><td class="count">${stats.rounds1}</td></tr>
+        <tr><td class="round-label">0 Rounds</td><td class="count">${stats.rounds0}</td></tr>
       </tbody>
     </table>
   </div>
 `;
+
+
 
 
   const statsDisplay = document.getElementById('statsDisplay');
