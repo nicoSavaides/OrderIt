@@ -761,52 +761,64 @@
 
 
 
-
-const LAUNCH_DATE = new Date(2025, 2, 8); 
+const LAUNCH_DATE = new Date(2025, 4, 11);  // March 11, 2025
 const now = new Date();
-const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+// Normalize to midnight to avoid time-related issues
+const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate()); // Local today, set to midnight
+const launchDateMidnight = new Date(LAUNCH_DATE.getFullYear(), LAUNCH_DATE.getMonth(), LAUNCH_DATE.getDate()); // Launch date set to midnight
+
 const msPerDay = 1000 * 60 * 60 * 24;
 
-const dayIndex = Math.floor((localToday - LAUNCH_DATE) / msPerDay);
+const dayIndex = Math.round((localToday - launchDateMidnight) / msPerDay);
 
-function startGame() {
-  const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-  const lastPlayed = localStorage.getItem('lastPlayedDate');
 
-  // Check if the user has already played today
-  if (lastPlayed === todayString) {
-    showPlayedTodayScreen();
-    return;
-  }
+console.log("Calculated dayIndex:", dayIndex);
 
-  // If not, proceed with starting the game
-  fetch("rounds.json")
-    .then(res => res.json())
-    .then(data => {
-      rounds = data.days[dayIndex]; // Get the round for today
 
-      const savedStrikes = parseInt(localStorage.getItem('currentStrikes')) || 0;
-      const savedRound = parseInt(localStorage.getItem('currentRound')) || 0;
+fetch("rounds.json")
+  .then(res => res.json())
+  .then(data => {
+    console.log("Loaded rounds data:", data); // Debugging: Log the loaded rounds data
 
-      strikes = savedStrikes;
-      currentRound = savedRound;
+    const setIndex = Math.floor(dayIndex / 3); // Determine the set of rounds
+    const roundIndex = dayIndex % 3; // Get the round index within the set
 
-      document.getElementById('welcomeScreen').classList.add('hidden');
-      const gameScreen = document.getElementById('gameScreen');
-      gameScreen.classList.remove('hidden');
-      requestAnimationFrame(() => {
-        gameScreen.classList.add('visible');
-      });
+    console.log("Calculated setIndex:", setIndex); // Debugging: Log the set index
+    console.log("Calculated roundIndex:", roundIndex); // Debugging: Log the round index
 
-      loadRound();
+    // Get the rounds set based on setIndex
+    const roundsSet = data.days[setIndex];
 
-      
-      
-    })
-    .catch(error => {
-      console.error("Error loading rounds data:", error);
+    // Debugging: Log the selected rounds set
+    console.log("Selected rounds set:", roundsSet);
+
+    // Get the round for today based on roundIndex
+    const selectedRound = roundsSet[roundIndex];
+
+    // Debugging: Log the selected round
+    console.log("Selected round for today:", selectedRound);
+
+    // Proceed with the game logic
+    const savedStrikes = parseInt(localStorage.getItem('currentStrikes')) || 0;
+    const savedRound = parseInt(localStorage.getItem('currentRound')) || 0;
+
+    strikes = savedStrikes;
+    currentRound = savedRound;
+
+    document.getElementById('welcomeScreen').classList.add('hidden');
+    const gameScreen = document.getElementById('gameScreen');
+    gameScreen.classList.remove('hidden');
+    requestAnimationFrame(() => {
+      gameScreen.classList.add('visible');
     });
-}
+
+    loadRound();
+  })
+  .catch(error => {
+    console.error("Error loading rounds data:", error);
+  });
+
 
 
 
