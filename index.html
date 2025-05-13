@@ -864,10 +864,21 @@ displayDateAndRound();
     
 
     function loadRound() {
+
+      if (alreadyPlayedToday()) {
+  showPlayedTodayScreen();
+  return;
+
+
+
   if (currentRound >= rounds.length) {
     endGame();
     return;
   }
+
+
+}
+
 
   const { prompt, items } = rounds[currentRound];
   document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
@@ -1172,6 +1183,12 @@ item.addEventListener('touchend', (e) => {
 let roundsCompleted = 0; // Track how many rounds the player has completed successfully.
 
 function submitOrder() {
+
+  if (alreadyPlayedToday()) {
+  showPlayedTodayScreen();
+  return;
+}
+
   const itemList = document.getElementById('itemList');
   const submittedOrder = Array.from(itemList.children).map(li => li.textContent);
   const correctOrder = rounds[currentRound].correctOrder;
@@ -1294,6 +1311,13 @@ setTimeout(() => {
 
 
   function endGame() {
+
+    if (alreadyPlayedToday()) {
+    showPlayedTodayScreen();
+    return;
+  }
+
+    
   markGameAsPlayed();
 
   const now = new Date();
@@ -1561,32 +1585,23 @@ function alreadyPlayedToday() {
 
 
 window.onload = function () {
-  if (alreadyPlayedToday()) {
-    // 🛑 Block all game interaction and show only the already played screen
-    showPlayedTodayScreen();
-
-    // Fully hide any game-related UI
-    document.getElementById('welcomeScreen').classList.add('hidden');
-    document.getElementById('gameScreen').classList.add('hidden');
-    document.getElementById('endScreen').classList.add('hidden');
-    document.getElementById('answersScreen').classList.add('hidden');
-    document.getElementById('statsDisplay').classList.add('hidden');
-    document.getElementById('dateAndRound').style.display = 'none';
-
-    // Clean up any leftover game state from earlier
-    localStorage.removeItem('currentRound');
-    localStorage.removeItem('currentStrikes');
-
-    return; // 🚨 Stop here — do not allow game setup
-  }
-
-  // 👇 Normal game setup path — only if not already played
-  document.getElementById('welcomeScreen').style.display = 'block';
+  // Clean slate UI
+  document.getElementById('welcomeScreen').classList.add('hidden');
   document.getElementById('gameScreen').classList.add('hidden');
   document.getElementById('endScreen').classList.add('hidden');
   document.getElementById('playedTodayScreen').classList.add('hidden');
   document.getElementById('answersScreen').classList.add('hidden');
   document.getElementById('statsDisplay').classList.add('hidden');
+  document.getElementById('dateAndRound').style.display = 'none';
+
+  // 🚨 BLOCK if already played
+  if (alreadyPlayedToday()) {
+    showPlayedTodayScreen();
+    return; // nothing else should load
+  }
+
+  // ✅ Safe to start game
+  document.getElementById('welcomeScreen').classList.remove('hidden');
   document.getElementById('dateAndRound').style.display = 'block';
 
   currentRound = 0;
@@ -1594,6 +1609,7 @@ window.onload = function () {
   localStorage.removeItem('currentStrikes');
   localStorage.removeItem('currentRound');
 };
+
 
 
 
