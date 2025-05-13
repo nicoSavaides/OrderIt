@@ -202,6 +202,13 @@
 
 
 
+#playedTodayScreen * {
+  pointer-events: none;
+  user-select: none;
+}
+
+
+
 /* already played already played  already played  already played  already played  already played  already played  already played  already played  */
 
 
@@ -889,15 +896,23 @@ displayDateAndRound();
 
 
 function showPlayedTodayScreen() {
+  // 🚫 Hide ALL other screens
   document.getElementById('welcomeScreen').classList.add('hidden');
   document.getElementById('gameScreen').classList.add('hidden');
   document.getElementById('endScreen').classList.add('hidden');
   document.getElementById('answersScreen').classList.add('hidden');
-  document.getElementById('playedTodayScreen').classList.remove('hidden');
+  document.getElementById('statsDisplay').classList.add('hidden');
+  document.getElementById('dateAndRound').style.display = 'none';
 
+  // ✅ Only show the "already played" screen
+  const playedScreen = document.getElementById('playedTodayScreen');
+  playedScreen.classList.remove('hidden');
+
+  // 🧹 Clear any existing content to prevent stacking
   const roundsContainer = document.getElementById('playedRounds');
   roundsContainer.innerHTML = '';
 
+  // 🧠 Safely build and show correct answers
   rounds.forEach((round) => {
     const section = document.createElement('div');
     section.classList.add('round-section');
@@ -921,6 +936,7 @@ function showPlayedTodayScreen() {
     roundsContainer.appendChild(section);
   });
 }
+
 
 
 
@@ -1546,11 +1562,25 @@ function alreadyPlayedToday() {
 
 window.onload = function () {
   if (alreadyPlayedToday()) {
-    showPlayedTodayScreen(); // Only show the “already played” screen
-    return; // 🚨 Block any further loading
+    // 🛑 Block all game interaction and show only the already played screen
+    showPlayedTodayScreen();
+
+    // Fully hide any game-related UI
+    document.getElementById('welcomeScreen').classList.add('hidden');
+    document.getElementById('gameScreen').classList.add('hidden');
+    document.getElementById('endScreen').classList.add('hidden');
+    document.getElementById('answersScreen').classList.add('hidden');
+    document.getElementById('statsDisplay').classList.add('hidden');
+    document.getElementById('dateAndRound').style.display = 'none';
+
+    // Clean up any leftover game state from earlier
+    localStorage.removeItem('currentRound');
+    localStorage.removeItem('currentStrikes');
+
+    return; // 🚨 Stop here — do not allow game setup
   }
 
-  // Your normal game setup code here:
+  // 👇 Normal game setup path — only if not already played
   document.getElementById('welcomeScreen').style.display = 'block';
   document.getElementById('gameScreen').classList.add('hidden');
   document.getElementById('endScreen').classList.add('hidden');
@@ -1559,12 +1589,12 @@ window.onload = function () {
   document.getElementById('statsDisplay').classList.add('hidden');
   document.getElementById('dateAndRound').style.display = 'block';
 
-  // And reset any lingering state here
   currentRound = 0;
   strikes = 0;
   localStorage.removeItem('currentStrikes');
   localStorage.removeItem('currentRound');
 };
+
 
 
 
