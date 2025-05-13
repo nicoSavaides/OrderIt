@@ -1521,11 +1521,11 @@ function markGameAsPlayed() {
     let gamesPlayed = parseInt(localStorage.getItem('gamesPlayed')) || 0;
     gamesPlayed += 1;
     localStorage.setItem('gamesPlayed', gamesPlayed);
+    localStorage.setItem('lastPlayedDate', today);
+    console.log('Game marked as played for', today);
+  } else {
+    console.log('Game already marked as played today');
   }
-
-  // Save today's date as the last played date
-  localStorage.setItem('lastPlayedDate', today);
-  console.log('Saved lastPlayedDate as', today);
 }
 
 
@@ -1541,13 +1541,33 @@ function alreadyPlayedToday() {
 
 
 
+
+
+
 window.onload = function() {
+
+  document.getElementById('welcomeScreen').style.display = 'none';
+  document.getElementById('gameScreen').classList.add('hidden');
+  document.getElementById('endScreen').classList.add('hidden');
+  document.getElementById('playedTodayScreen').classList.add('hidden');
+  document.getElementById('answersScreen').classList.add('hidden');
+  document.getElementById('statsDisplay').classList.add('hidden');
+  document.getElementById('dateAndRound').style.display = 'block'; 
+
+
+
+
+
+
   if (alreadyPlayedToday()) {
     showPlayedTodayScreen();
   } else {
     document.getElementById('welcomeScreen').style.display = 'block';
   }
 };
+
+
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
