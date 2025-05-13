@@ -1546,6 +1546,19 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
+window.addEventListener('DOMContentLoaded', () => {
+  // Hide all screens initially
+  document.getElementById('gameScreen')?.classList.add('hidden');
+  document.getElementById('answersScreen')?.classList.add('hidden');
+  document.getElementById('statsDisplay')?.classList.add('hidden');
+  document.getElementById('playedTodayScreen')?.classList.add('hidden');
+
+  // Show only the default screen
+  document.getElementById('startScreen')?.classList.remove('hidden');
+});
+
+
+
 
 
    
