@@ -202,13 +202,6 @@
 
 
 
-#playedTodayScreen * {
-  pointer-events: none;
-  user-select: none;
-}
-
-
-
 /* already played already played  already played  already played  already played  already played  already played  already played  already played  */
 
 
@@ -605,7 +598,7 @@
 
 .games-played {
   
-  padding-top: 130px !important;
+  padding-top: 120px !important;
   font-size: 20px !important;
   font-family: 'Lora', serif;
   text-align: center;
@@ -896,23 +889,15 @@ displayDateAndRound();
 
 
 function showPlayedTodayScreen() {
-  // 🚫 Hide ALL other screens
   document.getElementById('welcomeScreen').classList.add('hidden');
   document.getElementById('gameScreen').classList.add('hidden');
   document.getElementById('endScreen').classList.add('hidden');
   document.getElementById('answersScreen').classList.add('hidden');
-  document.getElementById('statsDisplay').classList.add('hidden');
-  document.getElementById('dateAndRound').style.display = 'none';
+  document.getElementById('playedTodayScreen').classList.remove('hidden');
 
-  // ✅ Only show the "already played" screen
-  const playedScreen = document.getElementById('playedTodayScreen');
-  playedScreen.classList.remove('hidden');
-
-  // 🧹 Clear any existing content to prevent stacking
   const roundsContainer = document.getElementById('playedRounds');
   roundsContainer.innerHTML = '';
 
-  // 🧠 Safely build and show correct answers
   rounds.forEach((round) => {
     const section = document.createElement('div');
     section.classList.add('round-section');
@@ -936,7 +921,6 @@ function showPlayedTodayScreen() {
     roundsContainer.appendChild(section);
   });
 }
-
 
 
 
@@ -1580,7 +1564,7 @@ window.onload = function () {
   strikes = 0;
   localStorage.removeItem('currentStrikes');
   localStorage.removeItem('currentRound');
-}; 
+};
 
 
 
