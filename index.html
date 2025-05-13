@@ -1561,27 +1561,12 @@ function alreadyPlayedToday() {
 
 
 window.onload = function () {
-
   if (alreadyPlayedToday()) {
-    showPlayedTodayScreen();
-    return;
-
-    // Fully hide any game-related UI
-    document.getElementById('welcomeScreen').classList.add('hidden');
-    document.getElementById('gameScreen').classList.add('hidden');
-    document.getElementById('endScreen').classList.add('hidden');
-    document.getElementById('answersScreen').classList.add('hidden');
-    document.getElementById('statsDisplay').classList.add('hidden');
-    document.getElementById('dateAndRound').style.display = 'none';
-
-    // Clean up any leftover game state from earlier
-    localStorage.removeItem('currentRound');
-    localStorage.removeItem('currentStrikes');
-
-    return; // 🚨 Stop here — do not allow game setup
+    showPlayedTodayScreen(); // Only show the “already played” screen
+    return; // 🚨 Block any further loading
   }
 
-  // 👇 Normal game setup path — only if not already played
+  // Your normal game setup code here:
   document.getElementById('welcomeScreen').style.display = 'block';
   document.getElementById('gameScreen').classList.add('hidden');
   document.getElementById('endScreen').classList.add('hidden');
@@ -1590,12 +1575,12 @@ window.onload = function () {
   document.getElementById('statsDisplay').classList.add('hidden');
   document.getElementById('dateAndRound').style.display = 'block';
 
+  // And reset any lingering state here
   currentRound = 0;
   strikes = 0;
   localStorage.removeItem('currentStrikes');
   localStorage.removeItem('currentRound');
-};
-
+}; 
 
 
 
