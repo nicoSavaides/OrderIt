@@ -1443,7 +1443,7 @@ function updateStats(roundsCompleted) {
     }
 
     // Store today's date and update the stats
-    localStorage.setItem('lastPlayedDate', today);  // Store today's date
+    
     localStorage.setItem("orderItStats", JSON.stringify(stats));
   }
 }
@@ -1521,7 +1521,6 @@ function markGameAsPlayed() {
     let gamesPlayed = parseInt(localStorage.getItem('gamesPlayed')) || 0;
     gamesPlayed += 1;
     localStorage.setItem('gamesPlayed', gamesPlayed);
-    localStorage.setItem('lastPlayedDate', today);
     console.log('Game marked as played for', today);
   } else {
     console.log('Game already marked as played today');
@@ -1543,63 +1542,44 @@ function alreadyPlayedToday() {
 
 
 
-
-window.onload = function () {
-  if (alreadyPlayedToday()) {
-    showPlayedTodayScreen(); // Only show the “already played” screen
-    return; // 🚨 Block any further loading
-  }
-
-  // Your normal game setup code here:
-  document.getElementById('welcomeScreen').style.display = 'block';
-  document.getElementById('gameScreen').classList.add('hidden');
-  document.getElementById('endScreen').classList.add('hidden');
-  document.getElementById('playedTodayScreen').classList.add('hidden');
-  document.getElementById('answersScreen').classList.add('hidden');
-  document.getElementById('statsDisplay').classList.add('hidden');
-  document.getElementById('dateAndRound').style.display = 'block';
-
-  // And reset any lingering state here
-  currentRound = 0;
-  strikes = 0;
-  localStorage.removeItem('currentStrikes');
-  localStorage.removeItem('currentRound');
-};
-
-
-
-
-
-
 window.addEventListener('DOMContentLoaded', () => {
+  // Get today’s date
   const now = new Date();
-  const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  const todayString = now.toISOString().split('T')[0];
   const lastPlayed = localStorage.getItem('lastPlayedDate');
 
-  if (lastPlayed === todayString) {
-    // User has already played today
-    fetch("rounds.json")
-      .then(res => res.json())
-      .then(data => {
-        rounds = data.days[dayIndex]; // Set today's rounds for display
-        showPlayedTodayScreen(); // Show the correct screen immediately
-      })
-      .catch(error => {
-        console.error("Error loading rounds data for already played screen:", error);
-      });
-  }
-});
-
-
-window.addEventListener('DOMContentLoaded', () => {
-  // Hide all screens initially
+  // Hide all screens first
   document.getElementById('gameScreen')?.classList.add('hidden');
   document.getElementById('answersScreen')?.classList.add('hidden');
   document.getElementById('statsDisplay')?.classList.add('hidden');
   document.getElementById('playedTodayScreen')?.classList.add('hidden');
+  document.getElementById('startScreen')?.classList.add('hidden');
+  document.getElementById('welcomeScreen')?.classList.add('hidden');
+  document.getElementById('endScreen')?.classList.add('hidden');
+  document.getElementById('dateAndRound')?.style.display = 'none';
 
-  // Show only the default screen
-  document.getElementById('startScreen')?.classList.remove('hidden');
+  if (lastPlayed === todayString) {
+    // Already played today
+    fetch("rounds.json")
+      .then(res => res.json())
+      .then(data => {
+        rounds = data.days[dayIndex]; // Use your correct logic here
+        showPlayedTodayScreen(); // Show the already played screen
+      })
+      .catch(error => {
+        console.error("Error loading rounds data:", error);
+      });
+  } else {
+    // New game can be played
+    document.getElementById('startScreen')?.classList.remove('hidden');
+    document.getElementById('dateAndRound')?.style.display = 'block';
+
+    // Reset gameplay state
+    currentRound = 0;
+    strikes = 0;
+    localStorage.removeItem('currentStrikes');
+    localStorage.removeItem('currentRound');
+  }
 });
 
 
