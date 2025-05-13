@@ -598,7 +598,7 @@
 
 .games-played {
   
-  padding-top: 120px !important;
+  padding-top: 125px !important;
   font-size: 20px !important;
   font-family: 'Lora', serif;
   text-align: center;
@@ -606,7 +606,7 @@
 }
 
 .stats-table {
-  margin-top: -10px !important;
+  margin-top: -20px !important;
   width: 100%;
   border-spacing: 0 10px;
   font-family: 'Lora', serif;
@@ -1278,6 +1278,7 @@ setTimeout(() => {
 
 
   function endGame() {
+  console.log("End game triggered");
   markGameAsPlayed();
 
   const now = new Date();
@@ -1289,6 +1290,13 @@ setTimeout(() => {
   console.log("End game triggered");  // Test if this is being reached
   document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
   document.getElementById('endScreen').classList.remove('hidden'); // Show the end screen
+
+
+  if (roundsCompleted === 3) {
+    document.getElementById('gameScreen').classList.add('hidden');
+    document.getElementById('endScreen').classList.remove('hidden');
+  }
+
 
   let message = "";  // Default message
 
@@ -1533,9 +1541,12 @@ function markGameAsPlayed() {
 
 
 function alreadyPlayedToday() {
-  const today = new Date().toISOString().split('T')[0];  // Get today's date
-  const lastPlayed = localStorage.getItem('lastPlayedDate'); // Get the last played date from localStorage
-  return lastPlayed === today;  // Check if the game was already played today
+  const lastPlayedDate = localStorage.getItem('lastPlayedDate');
+  const today = new Date().toLocaleDateString();  // Get today's date in the same format as stored in localStorage
+  
+  console.log(`Last Played Date: ${lastPlayedDate}, Today: ${today}`);  // Debugging log
+
+  return lastPlayedDate === today;
 }
 
 
@@ -1544,27 +1555,34 @@ function alreadyPlayedToday() {
 
 
 
+
 window.onload = function () {
-  if (alreadyPlayedToday()) {
-    showPlayedTodayScreen(); // Only show the “already played” screen
-    return; // 🚨 Block any further loading
+  const lastPlayedDate = localStorage.getItem('lastPlayedDate');
+  const now = new Date();
+  const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+
+  if (lastPlayedDate !== todayString) {
+    // If the game hasn't been played today, show the welcome screen
+    console.log("Showing welcome screen");
+    document.getElementById('welcomeScreen').style.display = 'block';
+    document.getElementById('gameScreen').classList.add('hidden');
+    document.getElementById('endScreen').classList.add('hidden');
+  } else {
+    // If it has already been played today, check if the game was completed
+    if (roundsCompleted === 3) {
+      // Game was completed, show the end screen
+      console.log("Game completed today, showing end screen");
+      document.getElementById('gameScreen').classList.add('hidden');
+      document.getElementById('endScreen').classList.remove('hidden');
+    } else {
+      // Game wasn't completed, show the game screen
+      console.log("Game not completed today, showing game screen");
+      document.getElementById('gameScreen').classList.remove('hidden');
+      document.getElementById('endScreen').classList.add('hidden');
+    }
   }
-
-  // Your normal game setup code here:
-  document.getElementById('welcomeScreen').style.display = 'block';
-  document.getElementById('gameScreen').classList.add('hidden');
-  document.getElementById('endScreen').classList.add('hidden');
-  document.getElementById('playedTodayScreen').classList.add('hidden');
-  document.getElementById('answersScreen').classList.add('hidden');
-  document.getElementById('statsDisplay').classList.add('hidden');
-  document.getElementById('dateAndRound').style.display = 'block';
-
-  // And reset any lingering state here
-  currentRound = 0;
-  strikes = 0;
-  localStorage.removeItem('currentStrikes');
-  localStorage.removeItem('currentRound');
 };
+
 
 
 
