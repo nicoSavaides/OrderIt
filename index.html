@@ -1544,27 +1544,28 @@ function alreadyPlayedToday() {
 
 
 
-window.onload = function() {
+window.onload = function () {
+  if (alreadyPlayedToday()) {
+    showPlayedTodayScreen(); // Only show the “already played” screen
+    return; // 🚨 Block any further loading
+  }
 
-  document.getElementById('welcomeScreen').style.display = 'none';
+  // Your normal game setup code here:
+  document.getElementById('welcomeScreen').style.display = 'block';
   document.getElementById('gameScreen').classList.add('hidden');
   document.getElementById('endScreen').classList.add('hidden');
   document.getElementById('playedTodayScreen').classList.add('hidden');
   document.getElementById('answersScreen').classList.add('hidden');
   document.getElementById('statsDisplay').classList.add('hidden');
-  document.getElementById('dateAndRound').style.display = 'block'; 
+  document.getElementById('dateAndRound').style.display = 'block';
 
-
-
-
-
-
-  if (alreadyPlayedToday()) {
-    showPlayedTodayScreen();
-  } else {
-    document.getElementById('welcomeScreen').style.display = 'block';
-  }
+  // And reset any lingering state here
+  currentRound = 0;
+  strikes = 0;
+  localStorage.removeItem('currentStrikes');
+  localStorage.removeItem('currentRound');
 };
+
 
 
 
