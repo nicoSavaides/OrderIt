@@ -130,7 +130,7 @@
 
     [
       {
-      "prompt": "Release Date",
+      "prompt": "Year",
       "items": ["The Matrix", "E.T.", "Pulp Fiction", "The Godfather"],
       "correctOrder": ["The Godfather", "E.T.", "Pulp Fiction", "The Matrix"]
       },
@@ -194,7 +194,7 @@
         "correctOrder": ["Game of Thrones", "The Brady Bunch", "I Love Lucy", "The Big Bang Theory"]
       },
       {
-        "prompt": "Emmys Won",
+        "prompt": "Number of Emmys Won",
         "items": ["Game of Thrones", "The Brady Bunch", "I Love Lucy", "The Big Bang Theory"],
         "correctOrder": ["The Brady Bunch", "I Love Lucy", "The Big Bang Theory", "Game of Thrones"]
       }
@@ -369,7 +369,7 @@
         "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
       },
       {
-        "prompt": "Length/Height",
+        "prompt": "Height Standing Upright",
         "items": ["Banjo","Sitar", "Ukulele", "Harp"],
         "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
       },
@@ -418,17 +418,17 @@
 
     [
       {
-        "prompt": "Eye Color frequency",
+        "prompt": "Eye Color Frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
         "correctOrder": ["Gray", "Green", "Blue", "Brown"]
       },
       {
-        "prompt": "Car Color frequency",
+        "prompt": "Car Color Frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
         "correctOrder": ["Brown", "Green", "Blue", "Gray"]
       },
       {
-        "prompt": "Flag Color frequency",
+        "prompt": "National Flag Color Frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
         "correctOrder": ["Gray", "Brown", "Green", "Blue"]
       }
@@ -441,7 +441,7 @@
         "correctOrder": ["Wyoming", "Hawaii", "Illinois", "California"]
       },
       {
-        "prompt": "Area",
+        "prompt": "Land Area",
         "items": ["Illinois", "California", "Wyoming", "Hawaii"],
         "correctOrder": ["Hawaii", "Illinois", "Wyoming", "California"]
       },
@@ -513,7 +513,7 @@
         "correctOrder": ["Willy Wonka and the Chocolate Factory", "Back to the Future", "The Hunger Games", "The Silence of the Lambs"]
       },
       {
-        "prompt": "Year Released",
+        "prompt": "Year",
         "items": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
         "correctOrder": ["Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs", "The Hunger Games"]
       },
@@ -526,12 +526,12 @@
 
     [
       {
-        "prompt": "Number of Countries",
+        "prompt": "Number of Countries Within",
         "items": ["Asia", "Africa", "South America", "Europe"],
         "correctOrder": ["South America", "Europe", "Asia", "Africa"]
       },
       {
-        "prompt": "Area",
+        "prompt": "Land Area",
         "items": ["Asia", "Africa", "South America", "Europe"],
         "correctOrder": ["Europe", "South America", "Africa", "Asia"]
       },
@@ -603,7 +603,7 @@
         "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"]
       },
       {
-        "prompt": "Author Last Name",
+        "prompt": "Author Last Name (Alphabetical)",
         "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
         "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"]
       },
@@ -616,7 +616,7 @@
 
     [
       {
-        "prompt": "First Airing",
+        "prompt": "Year Premiered",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "The Walking Dead"]
       },
@@ -626,7 +626,7 @@
         "correctOrder": ["Breaking Bad", "The Sopranos", "Lost", "The Walking Dead"]
       },
       {
-        "prompt": "Emmys Won",
+        "prompt": "Number of Emmys Won",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
         "correctOrder": ["The Walking Dead", "Lost", "Breaking Bad", "The Sopranos"]
       }
@@ -724,7 +724,7 @@
 
     [
       {
-        "prompt": "Release Year",
+        "prompt": "Year",
         "items": ["Toy Story", "Jaws", "The Shawshank Redemption", "The Dark Knight"],
         "correctOrder": ["Jaws", "The Shawshank Redemption", "Toy Story", "The Dark Knight"]
       },
@@ -742,7 +742,7 @@
 
     [
       {
-        "prompt": "Year it Started",
+        "prompt": "Year Started",
         "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
         "correctOrder": ["American Civil War", "World War II", "Korean War", "Vietnam War"]
       },
@@ -783,7 +783,7 @@
         "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"]
       },
       {
-        "prompt": "Release Year",
+        "prompt": "Year Released",
         "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
         "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"]
       },
@@ -814,7 +814,7 @@
 
     [
       {
-        "prompt": "Team Location Name Length",
+        "prompt": "Length of Team Location Name",
         "items": ["Cowboys", "Bears", "Eagles", "Packers"],
         "correctOrder": ["Cowboys", "Bears", "Packers", "Eagles"]
       },
@@ -923,7 +923,7 @@
 
     [
       {
-        "prompt": "Area",
+        "prompt": "Land Area",
         "items": ["Greece", "Canada", "China", "Japan"],
         "correctOrder": ["Greece", "Japan", "China", "Canada"]
       },
@@ -964,7 +964,7 @@
         "correctOrder": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"]
       },
       {
-        "prompt": "Number of Bond Films Starred In",
+        "prompt": "Number of Bond Films Each Starred In",
         "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
         "correctOrder": ["George Lazenby", "Pierce Brosnan", "Daniel Craig", "Sean Connery"]
       },
@@ -1049,7 +1049,7 @@
 
     [
       {
-        "prompt": "Premier Year",
+        "prompt": "Year Premiered",
         "items": ["Seinfeld", "Parks and Recreation", "Mad Men", "Friends"],
         "correctOrder": ["Seinfeld", "Friends", "Mad Men", "Parks and Recreation"]
       },
