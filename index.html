@@ -1181,13 +1181,11 @@ function submitOrder() {
       if (strikes < maxStrikes) {
         setTimeout(() => {
           endGame(); // Wait for a moment, then end the game
-          markGameAsPlayed(); // Mark the game as played after it ends
         }, 500);
       } else {
         document.getElementById('gameStatus').textContent = "Nice!"; // Fallback message if there are strikes
         setTimeout(() => {
           endGame(); // End the game with strikes
-          markGameAsPlayed(); // Mark the game as played after it ends
         }, 500);
       }
     }
@@ -1276,6 +1274,9 @@ setTimeout(() => {
    
 
 
+
+
+
   function endGame() {
   markGameAsPlayed();
 
@@ -1317,6 +1318,8 @@ setTimeout(() => {
   updateStats(roundsCompleted);
  
 }
+
+
 
 
 
@@ -1423,16 +1426,29 @@ function updateStats(roundsCompleted) {
     rounds3: 0
   };
 
-  const key = `rounds${roundsCompleted}`;
-  if (stats[key] !== undefined) {
-    stats[key]++;
+  // Get today's date in YYYY-MM-DD format
+  const today = new Date().toISOString().split('T')[0];
+
+  // Get the last played date from localStorage
+  const lastPlayedDate = localStorage.getItem('lastPlayedDate');
+
+  // Only update stats if it's a new day (avoiding multiple updates in a single day)
+  if (lastPlayedDate !== today) {
+    // Increment games played only if it's a new day
+    stats.gamesPlayed = (stats.gamesPlayed || 0) + 1;
+
+    const key = `rounds${roundsCompleted}`;
+    if (stats[key] !== undefined) {
+      stats[key]++;  // Increment the appropriate round wins stat
+    }
+
+    // Store today's date and update the stats
+    localStorage.setItem('lastPlayedDate', today);  // Store today's date
+    localStorage.setItem("orderItStats", JSON.stringify(stats));
   }
-
-  // Increment games played
-  stats.gamesPlayed = (stats.gamesPlayed || 0) + 1;
-
-  localStorage.setItem("orderItStats", JSON.stringify(stats));
 }
+
+
 
 
 
@@ -1496,24 +1512,32 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
 
 
 function markGameAsPlayed() {
-  const today = new Date().toISOString().split('T')[0];
+  const today = new Date().toISOString().split('T')[0]; // Get today's date in YYYY-MM-DD format
+  const lastPlayed = localStorage.getItem('lastPlayedDate'); // Get the last played date from localStorage
+
+  // Only increment gamesPlayed if it hasn't been played today
+  if (lastPlayed !== today) {
+    // Increment the games played counter
+    let gamesPlayed = parseInt(localStorage.getItem('gamesPlayed')) || 0;
+    gamesPlayed += 1;
+    localStorage.setItem('gamesPlayed', gamesPlayed);
+  }
+
+  // Save today's date as the last played date
   localStorage.setItem('lastPlayedDate', today);
-  console.log('Saved lastPlayedDate as', today); 
-
-  let gamesPlayed = parseInt(localStorage.getItem('gamesPlayed')) || 0;
-  gamesPlayed += 1;
-  localStorage.setItem('gamesPlayed', gamesPlayed);
-
+  console.log('Saved lastPlayedDate as', today);
 }
+
 
 
 
 
 function alreadyPlayedToday() {
-  const today = new Date().toISOString().split('T')[0]; 
-  const lastPlayed = localStorage.getItem('lastPlayedDate');
-  return lastPlayed === today;
+  const today = new Date().toISOString().split('T')[0];  // Get today's date
+  const lastPlayed = localStorage.getItem('lastPlayedDate'); // Get the last played date from localStorage
+  return lastPlayed === today;  // Check if the game was already played today
 }
+
 
 
 
@@ -1566,4 +1590,4 @@ window.addEventListener('DOMContentLoaded', () => {
   </script>
 
 </body>
-</html>
+</html> 
