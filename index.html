@@ -770,37 +770,7 @@
 
 
 
-    function showScreen(screenId) {
-  const screens = ['playedTodayScreen', 'answersScreen', 'statsDisplay'];
-  screens.forEach(id => {
-    const el = document.getElementById(id);
-    if (el) {
-      el.classList.add('hidden');
-    }
-  });
-
-  const toShow = document.getElementById(screenId);
-  if (toShow) {
-    toShow.classList.remove('hidden');
-  }
-}
-
-function navigateTo(screenId) {
-  history.pushState({ screen: screenId }, '', `#${screenId}`);
-  showScreen(screenId);
-}
-
-// 👇 Place the listeners BELOW those functions
-window.addEventListener('popstate', () => {
-  const screenId = window.location.hash.substring(1);
-  showScreen(screenId || 'playedTodayScreen');
-});
-
-window.addEventListener('DOMContentLoaded', () => {
-  const initialScreen = window.location.hash.substring(1);
-  showScreen(initialScreen || 'playedTodayScreen');
-});
-
+    
 
 
 
