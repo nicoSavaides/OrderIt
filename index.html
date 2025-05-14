@@ -1591,9 +1591,9 @@ window.onload = function () {
 
 
 
-
 window.addEventListener('DOMContentLoaded', () => {
-  // Setup date check
+  console.log("Page loaded. Checking lastPlayedDate...");
+
   const now = new Date();
   const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
   const lastPlayed = localStorage.getItem('lastPlayedDate');
@@ -1603,23 +1603,44 @@ window.addEventListener('DOMContentLoaded', () => {
   document.getElementById('answersScreen')?.classList.add('hidden');
   document.getElementById('statsDisplay')?.classList.add('hidden');
   document.getElementById('playedTodayScreen')?.classList.add('hidden');
+  document.getElementById('startScreen')?.classList.add('hidden');
 
-  if (lastPlayed === todayString) {
-    // User already played today
-    fetch("rounds.json")
-      .then(res => res.json())
-      .then(data => {
-        rounds = data.days[dayIndex];
-        showPlayedTodayScreen(); // Show played today screen
-      })
-      .catch(error => {
-        console.error("Error loading rounds data for already played screen:", error);
-      });
-  } else {
-    // User hasn't played yet today
-    document.getElementById('startScreen')?.classList.remove('hidden');
-  }
+  console.log(`Last played date: ${lastPlayed}`);
+
+  fetch("rounds.json")
+    .then(res => res.json())
+    .then(data => {
+      console.log("Loaded rounds data:", data);
+      const allRounds = data.days;
+      const dayIndex = calculateDayIndex(); // Your logic for picking today's index
+      console.log("Calculated dayIndex:", dayIndex);
+
+      if (!allRounds || dayIndex >= allRounds.length || dayIndex < 0) {
+        console.log("Invalid dayIndex, showing error or end screen");
+        // Handle gracefully (show message or default to something safe)
+        showPlayedTodayScreen(); // or a special error screen
+        return;
+      }
+
+      rounds = allRounds[dayIndex];
+      console.log("Today's rounds:", rounds);
+
+      if (lastPlayed === todayString) {
+        console.log("User already played today");
+        showPlayedTodayScreen();
+      } else {
+        console.log("User has not played today. Showing start screen.");
+        document.getElementById('startScreen')?.classList.remove('hidden');
+      }
+    })
+    .catch(error => {
+      console.error("Failed to load rounds.json:", error);
+    });
 });
+
+
+
+
 
 
 
