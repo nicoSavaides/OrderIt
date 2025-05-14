@@ -676,15 +676,15 @@
 <body>
  
 
+  
 
 
 
-
-<div id="playedTodayScreen" class="hidden">
+  <div id="playedTodayScreen" class="screen hidden">
   <img src="movingLogo.gif" alt="Moving Logo" class="mobile-logo">
   <h1>Order It.</h1>
   <p>You've already played today! Check back tomorrow!</p>
-  <button onclick="showAnswers()">Today's Answers</button>
+  <button onclick="showScreen('answersScreen')">Today's Answers</button>
   <button id="viewStatsButton">My Stats</button>
 </div>
 
@@ -693,9 +693,10 @@
 <div id="gamesPlayedStat"></div>
 
 
-<div id="answersScreen" class="hidden">
+<div id="answersScreen" class="screen hidden">
   <div id="playedRoundsAnswers"></div>
 </div>
+
 
 
 
@@ -725,7 +726,7 @@
 
 
 
-  <div id="gameScreen" class="hidden">
+  <div id="gameScreen" class="screen hidden">
     <h2 id="roundPrompt"></h2>
     <p id="gameStatus"></p>
 
@@ -742,7 +743,7 @@
     </div>
   </div>
   
-  <div id="endScreen" class="hidden">
+  <div id="endScreen" class="screen hidden">
     <p id="endGameStatus"></p>
     <p id="finalScore"></p> 
     <p id="thanksMessage">Thanks for playing. Come back tomorrow for a new Order It!</p>
@@ -775,6 +776,30 @@
 
 
 
+
+    function showScreen(screenId, push = true) {
+  document.querySelectorAll('.screen').forEach(screen => {
+    screen.classList.add('hidden');
+  });
+
+  const target = document.getElementById(screenId);
+  if (target) {
+    target.classList.remove('hidden');
+  }
+
+  if (push) {
+    history.pushState({ screenId }, '', `#${screenId}`);
+  }
+}
+
+
+
+window.addEventListener('popstate', (event) => {
+  const screenId = event.state?.screenId;
+  if (screenId) {
+    showScreen(screenId, false);
+  }
+});
 
 
     
