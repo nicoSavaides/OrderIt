@@ -184,7 +184,7 @@
 
     [
       {
-        "prompt": "Area",
+        "prompt": "Land Area",
         "items": ["Australia", "Columbia", "Germany", "Switzerland"],
         "correctOrder": ["Switzerland", "Germany", "Columbia", "Australia"]
       },
@@ -315,12 +315,12 @@
         "correctOrder": ["Toronto", "Mexico City", "Honolulu", "Dubai"]
       },
       {
-        "prompt": "Elevation",
+        "prompt": "Population",
         "items": ["Mexico City", "Toronto", "Honolulu", "Dubai"],
         "correctOrder": ["Honolulu", "Dubai", "Toronto", "Mexico City"]
       },
       {
-        "prompt": "Population",
+        "prompt": "Elevation",
         "items": ["Mexico City", "Toronto", "Honolulu", "Dubai"],
         "correctOrder": ["Honolulu", "Dubai", "Toronto", "Mexico City"]
       }
@@ -378,7 +378,6 @@
         "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
         "correctOrder": ["Top Gun", "Lord of the Rings", "Pirates of the Caribbean", "Fast & Furious"]
       }
-     
     ], 
 
     [
@@ -437,17 +436,17 @@
 
     [
       {
-        "prompt": "Eye Color frequency",
+        "prompt": "Eye Color Frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
         "correctOrder": ["Gray", "Green", "Blue", "Brown"]
       },
       {
-        "prompt": "Car Color frequency",
+        "prompt": "Car Color Frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
         "correctOrder": ["Brown", "Green", "Blue", "Gray"]
       },
       {
-        "prompt": "National Flag Color frequency",
+        "prompt": "National Flag Color Frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
         "correctOrder": ["Gray", "Brown", "Green", "Blue"]
       }
@@ -622,7 +621,7 @@
         "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"]
       },
       {
-        "prompt": "Author Last Name",
+        "prompt": "Author Last Name (Alphabetical)",
         "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
         "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"]
       },
@@ -635,7 +634,7 @@
 
     [
       {
-        "prompt": "First Airing",
+        "prompt": "Premier Year",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "The Walking Dead"]
       },
@@ -761,7 +760,7 @@
 
     [
       {
-        "prompt": "Year it Started",
+        "prompt": "Year Started",
         "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
         "correctOrder": ["American Civil War", "World War II", "Korean War", "Vietnam War"]
       },
@@ -802,7 +801,7 @@
         "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"]
       },
       {
-        "prompt": "Release Year",
+        "prompt": "Year",
         "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
         "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"]
       },
@@ -848,7 +847,6 @@
         "correctOrder": ["Packers", "Bears", "Eagles", "Cowboys"]
       }
     ],
-
 
     [
       {
@@ -996,7 +994,7 @@
 
     [
       {
-        "prompt": "Year Released",
+        "prompt": "Year",
         "items": ["I Want to Hold Your Hand", "Dancing Queen", "Smells Like Teen Spirit", "Thriller"],
         "correctOrder": ["I Want to Hold Your Hand", "Dancing Queen", "Thriller", "Smells Like Teen Spirit"]
       },
