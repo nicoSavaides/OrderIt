@@ -684,9 +684,11 @@
   <img src="movingLogo.gif" alt="Moving Logo" class="mobile-logo">
   <h1>Order It.</h1>
   <p>You've already played today! Check back tomorrow!</p>
-  <button onclick="showAnswers()">Today's Answers</button>
 
-  <button id="viewStatsButton">My Stats</button>
+
+<button id="showAnswersButton">Today's Answers</button>
+<button id="viewStatsButton">My Stats</button>
+
 </div>
 
 
@@ -778,45 +780,58 @@
 
 
 
-    function showScreen(screenId, push = true) {
+// Function to show screens and manage history
+function showScreen(screenId, push = true) {
+  // Hide all screens
   document.querySelectorAll('.screen').forEach(screen => {
     screen.classList.add('hidden');
   });
 
+  // Show the target screen
   const target = document.getElementById(screenId);
   if (target) {
     target.classList.remove('hidden');
   }
 
+  // Push to history only if 'push' is true
   if (push) {
     history.pushState({ screenId }, '', `#${screenId}`);
   }
 }
-
 
 // Handle back navigation
 window.addEventListener('popstate', (event) => {
   const screenId = event.state?.screenId;
   if (screenId) {
     showScreen(screenId, false);  // Set push = false to prevent creating another history entry
+
+    // If going back to the playedTodayScreen, ensure the date and round are displayed
+    if (screenId === 'playedTodayScreen') {
+      document.getElementById('dateAndRound').style.display = 'block';  // Show the date and round information
+    } else {
+      document.getElementById('dateAndRound').style.display = 'none';  // Hide on other screens
+    }
+
+    // If going back to the playedTodayScreen, hide the stats content
+    if (screenId !== 'statsDisplay') {
+      document.getElementById('statsDisplay').classList.add('hidden');
+    }
   }
 });
 
-// For View Stats button click
+// Add event listener for "Today's Answers" button
+document.getElementById('showAnswersButton').addEventListener('click', () => {
+  showAnswers();  // Trigger the showAnswers function when the button is clicked
+});
+
+// Add event listener for "My Stats" button
 document.getElementById('viewStatsButton').addEventListener('click', () => {
-  showScreen('statsDisplay', true);  // Navigate to the stats screen and push to history
+  showScreen('statsDisplay', true);  // Show the stats screen and push to history
 });
 
-// For Today's Answers button click
-document.getElementById('playedTodayScreen').querySelector('button').addEventListener('click', () => {
-  showScreen('answersScreen', true);  // Navigate to the answers screen and push to history
-});
 
-// Update the showAnswers function to handle navigation properly
-function showAnswers() {
-  // Hide today's screen and show the answers screen
-  showScreen('answersScreen', true);
-}
+
+
 
 
 
@@ -996,7 +1011,7 @@ function showPlayedTodayScreen() {
 
 
 function showAnswers() {
-  
+  // Show the answers screen
   showScreen('answersScreen');
   document.getElementById('dateAndRound').style.display = 'none';
 
@@ -1039,6 +1054,10 @@ function showAnswers() {
     });
 }
 
+// Ensure initial screen load
+document.addEventListener('DOMContentLoaded', () => {
+  showScreen('playedTodayScreen', true);  // Start with the playedTodayScreen
+});
 
 
 
