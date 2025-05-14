@@ -684,8 +684,13 @@
   <img src="movingLogo.gif" alt="Moving Logo" class="mobile-logo">
   <h1>Order It.</h1>
   <p>You've already played today! Check back tomorrow!</p>
-  <button onclick="showAnswers()">Today's Answers</button>
-  <button id="viewStatsButton">My Stats</button>
+
+
+  <button onclick="navigateTo('answersScreen')">Today's Answers</button>
+  <button onclick="navigateTo('statsDisplay')">My Stats</button>
+
+
+
 </div>
 
 
@@ -746,12 +751,51 @@
   
   <p id="dateAndRound"></p>
 
+
+
+
+
+
+
+
+  
+
+
+
   
   <script>
     let currentRound = 0;
     let rounds = [];
     let strikes = 0;
     const maxStrikes = 3;
+
+
+
+
+    function showScreen(screenId) {
+    const screens = ['playedTodayScreen', 'answersScreen', 'statsDisplay'];
+  
+    screens.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.classList.add('hidden');
+      }
+    });
+  
+    const toShow = document.getElementById(screenId);
+    if (toShow) {
+      toShow.classList.remove('hidden');
+    }
+  }
+
+
+
+
+  function navigateTo(screenId) {
+  showScreen(screenId);
+  history.pushState({ screen: screenId }, '', `#${screenId}`);
+}
+
 
 
 
