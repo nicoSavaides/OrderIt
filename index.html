@@ -675,33 +675,26 @@
 </head>
 <body>
  
-</body>
 
 
 
 
-<!-- Already Played Screen -->
+
 <div id="playedTodayScreen" class="hidden">
   <img src="movingLogo.gif" alt="Moving Logo" class="mobile-logo">
   <h1>Order It.</h1>
   <p>You've already played today! Check back tomorrow!</p>
-  <button onclick="navigateTo('answersScreen')">Today's Answers</button>
-  <button onclick="navigateTo('statsScreen')">My Stats</button>
+  <button onclick="showAnswers()">Today's Answers</button>
+  <button id="viewStatsButton">My Stats</button>
 </div>
 
-<!-- Today's Answers Screen -->
+
+<div id="statsDisplay" class="hidden" style="margin-top: 10px;"></div>
+<div id="gamesPlayedStat"></div>
+
+
 <div id="answersScreen" class="hidden">
-  <img src="movingLogo.gif" alt="Moving Logo" class="mobile-logo">
-  <h1>Order It.</h1>
   <div id="playedRoundsAnswers"></div>
-</div>
-
-<!-- Stats Screen (wrap these in a proper screen div) -->
-<div id="statsScreen" class="hidden">
-  <img src="movingLogo.gif" alt="Moving Logo" class="mobile-logo">
-  <h1>Order It.</h1>
-  <div id="statsDisplay" style="margin-top: 10px;"></div>
-  <div id="gamesPlayedStat"></div>
 </div>
 
 
@@ -780,33 +773,6 @@
 
 
 
-
-
-    function showScreen(screenId) {
-  const screens = ['playedTodayScreen', 'answersScreen', 'statsScreen'];
-  screens.forEach(id => {
-    const el = document.getElementById(id);
-    if (el) el.classList.add('hidden');
-  });
-
-  const toShow = document.getElementById(screenId);
-  if (toShow) toShow.classList.remove('hidden');
-}
-
-function navigateTo(screenId) {
-  showScreen(screenId);
-  history.pushState({ screen: screenId }, '', `#${screenId}`);
-}
-
-window.addEventListener('popstate', () => {
-  const screenId = window.location.hash.substring(1);
-  showScreen(screenId || 'playedTodayScreen');
-});
-
-window.addEventListener('DOMContentLoaded', () => {
-  const initialScreen = window.location.hash.substring(1);
-  showScreen(initialScreen || 'playedTodayScreen');
-});
 
 
 
