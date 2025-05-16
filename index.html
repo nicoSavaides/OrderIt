@@ -1602,13 +1602,18 @@ function alreadyPlayedToday() {
 
 
 
-window.onload = function() {
+window.onload = () => {
   if (alreadyPlayedToday()) {
+    showScreen('playedTodayScreen');
+    // Also call your function to update the played rounds display if needed
     showPlayedTodayScreen();
   } else {
-    document.getElementById('welcomeScreen').style.display = 'block';
+    showScreen('welcomeScreen');
   }
 };
+
+
+
 
 
 window.addEventListener('DOMContentLoaded', () => {
