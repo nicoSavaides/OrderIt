@@ -1170,7 +1170,64 @@
         "items": ["Jamaica", "Brazil", "France", "Cuba"],
         "correctOrder": ["Jamaica", "Cuba", "Brazil", "France"]
       }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
+        "correctOrder": ["Lady Gaga", "Katy Perry", "Janet Jackson", "Madonna"]
+      },
+      {
+        "prompt": "Year of Super Bowl Performance",
+        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
+        "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"]
+      },
+      {
+        "prompt": "Spotify Monthly Listeners",
+        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
+        "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Number of Kids",
+        "items": ["Barack and Michelle", "Kim and Kanye", "John Lennon and Yoko Ono", "Brad and Angelina"],
+        "correctOrder": ["John Lennon and Yoko Ono", "Barack and Michelle", "Kim and Kanye", "Brad and Angelina"]
+      },
+      {
+        "prompt": "Age Difference in Years",
+        "items": ["Barack and Michelle", "Kim and Kanye", "John Lennon and Yoko Ono", "Brad and Angelina"],
+        "correctOrder": ["Barack and Michelle", "Kim and Kanye", "John Lennon and Yoko Ono", "Brad and Angelina"]
+      },
+      {
+        "prompt": "Years They Were/Are Married",
+        "items": ["Barack and Michelle", "Kim and Kanye", "John Lennon and Yoko Ono", "Brad and Angelina"],
+        "correctOrder": ["Brad and Angelina", "Kim and Kanye", "John Lennon and Yoko Ono", "Barack and Michelle"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Team Location Name Length",
+        "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
+        "correctOrder": ["Red Sox", "Yankees", "Dodgers", "Giants"]
+      },
+      {
+        "prompt": "Championships Won",
+        "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
+        "correctOrder": ["Dodgers", "Giants", "Red Sox", "Yankees"]
+      },
+      {
+        "prompt": "Valuation",
+        "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
+        "correctOrder": ["Giants", "Red Sox", "Dodgers", "Yankees"]
+      }
     ]
+    
+    
+    
     
   ]
 }
