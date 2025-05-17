@@ -238,7 +238,7 @@
 
     [
       {
-        "prompt": "Number of Olympics Held",
+        "prompt": "Number of Olympics Hosted",
         "items": ["Athens", "Atlanta", "London", "Mumbai"],
         "correctOrder": ["Mumbai", "Atlanta", "Athens", "London"]
       },
@@ -279,7 +279,7 @@
         "correctOrder": ["Mein Kampf", "The Hobbit", "Animal Farm", "The Shining"]
       },
       {
-        "prompt": "Author Last Name",
+        "prompt": "Author Last Name (Alphabetical)",
         "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
         "correctOrder": ["Mein Kampf", "The Shining", "Animal Farm", "The Hobbit"]
       },
@@ -292,7 +292,7 @@
 
     [
       {
-        "prompt": "Event Duration",
+        "prompt": "Length of Event",
         "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
         "correctOrder": ["Super Bowl", "Masters Tournament", "Burning Man", "Olympics"]
       },
