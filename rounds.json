@@ -16,7 +16,7 @@
       {
         "prompt": "Value",
         "items": ["one", "two hundred", "fourteen", "three million"],
-        "correctOrder": ["one", "fourteen", "two hundred", "three million"]
+        "correctOrder": ["one", "fourteen", "two hundred", "three million"]  
       }
     ],
 
@@ -167,18 +167,18 @@
     [
       {
         "prompt": "Year Invented",
-        "items": ["Baseball", "Tennis", "Football(US)", "Golf"],
-        "correctOrder": ["Tennis", "Golf", "Baseball", "Football(US)"]
+        "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
+        "correctOrder": ["Tennis", "Golf", "Baseball", "Football (American)"]
       },
       {
         "prompt": "Ball Weight",
-        "items": ["Baseball", "Tennis", "Football(US)", "Golf"],
-        "correctOrder": ["Golf", "Tennis", "Baseball", "Football(US)"]
+        "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
+        "correctOrder": ["Golf", "Tennis", "Baseball", "Football (American)"]
       },
       {
         "prompt": "U.S. TV Viewership",
-        "items": ["Baseball", "Tennis", "Football(US)", "Golf"],
-        "correctOrder": ["Tennis", "Golf", "Baseball", "Football(US)"]
+        "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
+        "correctOrder": ["Tennis", "Golf", "Baseball", "Football (American)"]
       } 
     ], 
 
