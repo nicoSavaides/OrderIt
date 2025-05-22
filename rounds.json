@@ -401,18 +401,18 @@
     [
       {
         "prompt": "Weight",
-        "items": ["Banana", "Potato", "Avocado", "Egg"],
-        "correctOrder": ["Egg", "Banana", "Potato", "Avocado"]
+        "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
+        "correctOrder": ["Egg", "Banana", "Russet Potato", "Avocado"]
       },
       {
         "prompt": "Calories",
-        "items": ["Banana", "Potato", "Avocado", "Egg"],
-        "correctOrder": ["Egg", "Banana", "Potato", "Avocado"]
+        "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
+        "correctOrder": ["Egg", "Banana", "Russet Potato", "Avocado"]
       },
       {
         "prompt": "Protein",
-        "items": ["Banana", "Potato", "Avocado", "Egg"],
-        "correctOrder": ["Banana", "Avocado", "Potato", "Egg"]
+        "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
+        "correctOrder": ["Banana", "Avocado", "Russet Potato", "Egg"]
       }
     ], 
 
