@@ -346,7 +346,7 @@
 
     [
       {
-        "prompt": "Professional Debut Year",
+        "prompt": "Debut Year as Pro",
         "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
         "correctOrder": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"]
       },
