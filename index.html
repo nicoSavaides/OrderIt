@@ -1601,10 +1601,18 @@ function markGameAsPlayed() {
 
 
 function alreadyPlayedToday() {
-  const today = new Date().toISOString().split('T')[0]; 
+  const now = new Date();
+  const todayIndex = Math.floor((new Date(now.getFullYear(), now.getMonth(), now.getDate()) - LAUNCH_DATE) / msPerDay);
   const lastPlayed = localStorage.getItem('lastPlayedDate');
-  return lastPlayed === today;
+
+  if (!lastPlayed) return false;
+
+  const lastDate = new Date(lastPlayed);
+  const lastPlayedIndex = Math.floor((new Date(lastDate.getFullYear(), lastDate.getMonth(), lastDate.getDate()) - LAUNCH_DATE) / msPerDay);
+
+  return todayIndex === lastPlayedIndex;
 }
+
 
 
 
