@@ -500,7 +500,7 @@
         "correctOrder": ["Colosseum", "Empire State Building", "Sydney Opera House", "Burj Khalifa"]
       },
       {
-        "prompt": "Construction in Years",
+        "prompt": "Number of Years to Build",
         "items": ["Colosseum", "Empire State Building", "Burj Khalifa", "Sydney Opera House"],
         "correctOrder": ["Empire State Building", "Burj Khalifa", "Colosseum", "Sydney Opera House"]
       }
