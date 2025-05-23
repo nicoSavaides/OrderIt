@@ -446,7 +446,7 @@
         "correctOrder": ["Brown", "Green", "Blue", "Gray"]
       },
       {
-        "prompt": "National Flag Color Frequency",
+        "prompt": "Flag Color Frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
         "correctOrder": ["Gray", "Brown", "Green", "Blue"]
       }
