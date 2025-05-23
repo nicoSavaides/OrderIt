@@ -527,18 +527,18 @@
     [
       {
         "prompt": "Age Rating",
-        "items": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
-        "correctOrder": ["Willy Wonka and the Chocolate Factory", "Back to the Future", "The Hunger Games", "The Silence of the Lambs"]
+        "items": ["The Hunger Games", "Willy Wonka & the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
+        "correctOrder": ["Willy Wonka & the Chocolate Factory", "Back to the Future", "The Hunger Games", "The Silence of the Lambs"]
       },
       {
         "prompt": "Year",
-        "items": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
-        "correctOrder": ["Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs", "The Hunger Games"]
+        "items": ["The Hunger Games", "Willy Wonka & the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
+        "correctOrder": ["Willy Wonka & the Chocolate Factory", "Back to the Future", "The Silence of the Lambs", "The Hunger Games"]
       },
       {
         "prompt": "Oscar Nominations",
-        "items": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
-        "correctOrder": ["The Hunger Games", "Willy Wonka and the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"]
+        "items": ["The Hunger Games", "Willy Wonka & the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"],
+        "correctOrder": ["The Hunger Games", "Willy Wonka & the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"]
       }
     ],
 
