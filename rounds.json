@@ -482,7 +482,7 @@
         "correctOrder": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"]
       },
       {
-        "prompt": "Years They Were/Are Married",
+        "prompt": "Years Married",
         "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
         "correctOrder": ["Brad and Angelina", "Kim and Kanye", "John and Yoko", "Barack and Michelle"]
       }
