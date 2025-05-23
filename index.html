@@ -941,7 +941,7 @@ displayDateAndRound();
 
     
 
-    function loadRound() {
+function loadRound() {
   if (currentRound >= rounds.length) {
     endGame();
     return;
@@ -951,19 +951,29 @@ displayDateAndRound();
   document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
 
   const itemList = document.getElementById('itemList');
-  itemList.innerHTML = ''; // Always clear old items
 
-  items.forEach(item => {
-    const li = document.createElement('li');
-    li.textContent = item;
-    li.setAttribute('draggable', true);
-    li.classList.add('draggable-item');
-    itemList.appendChild(li);
-  });
+  // Only populate the items for the FIRST round
+  if (currentRound === 0) {
+    itemList.innerHTML = ''; // Clear only on first round
 
+    items.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      li.setAttribute('draggable', true);
+      li.classList.add('draggable-item');
+      itemList.appendChild(li);
+    });
+
+    makeItemsDraggable(); // Only needed after creating new elements
+  }
+
+  // Update strikes and anything else every round
   updateStrikes();
-  makeItemsDraggable();
+
+  // Save the correct order for this round for answer checking
+  currentCorrectOrder = items;
 }
+
 
 
 
