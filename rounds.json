@@ -473,18 +473,18 @@
     [
       {
         "prompt": "Number of Kids",
-        "items": ["Barack and Michelle Obama", "Kim Kardashian and Kanye West", "John Lennon and Yoko Ono", "Brad Pitt and Angelina Jolie"],
-        "correctOrder": ["John Lennon and Yoko Ono", "Barack and Michelle Obama", "Kim Kardashian and Kanye West", "Brad Pitt and Angelina Jolie"]
+        "items": ["Barack and Michelle", "Kim and Kanye", "John Lennon and Yoko Ono", "Brad and Angelina"],
+        "correctOrder": ["John Lennon and Yoko Ono", "Barack and Michelle", "Kim and Kanye", "Brad and Angelina"]
       },
       {
         "prompt": "Age Difference in Years",
-        "items": ["Barack and Michelle Obama", "Kim Kardashian and Kanye West", "John Lennon and Yoko Ono", "Brad Pitt and Angelina Jolie"],
-        "correctOrder": ["Barack and Michelle Obama", "Kim Kardashian and Kanye West", "John Lennon and Yoko Ono", "Brad Pitt and Angelina Jolie"]
+        "items": ["Barack and Michelle", "Kim and Kanye", "John Lennon and Yoko Ono", "Brad and Angelina"],
+        "correctOrder": ["Barack and Michelle", "Kim and Kanye", "John Lennon and Yoko Ono", "Brad and Angelina"]
       },
       {
         "prompt": "Years They Were/Are Married",
-        "items": ["Barack and Michelle Obama", "Kim Kardashian and Kanye West", "John Lennon and Yoko Ono", "Brad Pitt and Angelina Jolie"],
-        "correctOrder": ["Brad Pitt and Angelina Jolie", "Kim Kardashian and Kanye West", "John Lennon and Yoko Ono", "Barack and Michelle Obama"]
+        "items": ["Barack and Michelle", "Kim and Kanye", "John Lennon and Yoko Ono", "Brad and Angelina"],
+        "correctOrder": ["Brad and Angelina", "Kim and Kanye", "John Lennon and Yoko Ono", "Barack and Michelle"]
       }
     ],
     
