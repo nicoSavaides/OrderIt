@@ -572,7 +572,7 @@
         "correctOrder": ["Hey Jude", "Despacito", "Gangnam Style", "All I Want for Christmas Is You"]
       },
       {
-        "prompt": "Number of Views on YouTube",
+        "prompt": "Views on YouTube",
         "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
         "correctOrder": ["Hey Jude", "All I Want for Christmas Is You", "Gangnam Style", "Despacito"]
       }
