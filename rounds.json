@@ -621,7 +621,7 @@
         "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"]
       },
       {
-        "prompt": "Author Last Name (Alphabetical)",
+        "prompt": "Author Last Name (A-Z)",
         "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
         "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"]
       },
