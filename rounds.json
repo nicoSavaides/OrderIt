@@ -801,7 +801,7 @@
         "correctOrder": ["Lady Gaga", "Katy Perry", "Janet Jackson", "Madonna"]
       },
       {
-        "prompt": "Year of Super Bowl Performance",
+        "prompt": "Super Bowl Performance Year",
         "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
         "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"]
       },
