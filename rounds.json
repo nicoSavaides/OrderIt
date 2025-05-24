@@ -675,14 +675,14 @@
         "correctOrder": ["Allen Iverson", "Michael Jordan", "Larry Bird", "Shaq"]
       },
       {
-        "prompt": "Number of Teams Played For",
-        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
-        "correctOrder": ["Larry Bird", "Michael Jordan", "Allen Iverson", "Shaq"]
-      },
-      {
         "prompt": "Age",
         "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
         "correctOrder": ["Allen Iverson", "Shaq", "Michael Jordan", "Larry Bird"]
+      },
+      {
+        "prompt": "Number of Teams Played For",
+        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "correctOrder": ["Larry Bird", "Michael Jordan", "Allen Iverson", "Shaq"]
       }
     ],
 
