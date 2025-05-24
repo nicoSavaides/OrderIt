@@ -813,11 +813,7 @@
     ],
 
     [
-      {
-        "prompt": "Age at Inauguration",
-        "items": ["George Washington", "Abraham Lincoln", "John F. Kennedy", "Richard Nixon"],
-        "correctOrder": ["John F. Kennedy", "Abraham Lincoln", "Richard Nixon", "George Washington"]
-      },
+
       {
         "prompt": "Height",
         "items": ["George Washington", "Abraham Lincoln", "John F. Kennedy", "Richard Nixon"],
@@ -827,6 +823,11 @@
         "prompt": "Age at Death",
         "items": ["George Washington", "Abraham Lincoln", "John F. Kennedy", "Richard Nixon"],
         "correctOrder": ["John F. Kennedy", "Abraham Lincoln", "George Washington", "Richard Nixon"]
+      },
+      {
+        "prompt": "Age at Inauguration",
+        "items": ["George Washington", "Abraham Lincoln", "John F. Kennedy", "Richard Nixon"],
+        "correctOrder": ["John F. Kennedy", "Abraham Lincoln", "Richard Nixon", "George Washington"]
       }
     ],
 
