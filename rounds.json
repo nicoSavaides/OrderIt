@@ -639,14 +639,14 @@
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "The Walking Dead"]
       },
       {
-        "prompt": "Number of Episodes",
-        "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
-        "correctOrder": ["Breaking Bad", "The Sopranos", "Lost", "The Walking Dead"]
-      },
-      {
         "prompt": "Emmys Won",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
         "correctOrder": ["The Walking Dead", "Lost", "Breaking Bad", "The Sopranos"]
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
+        "correctOrder": ["Breaking Bad", "The Sopranos", "Lost", "The Walking Dead"]
       }
     ], 
 
