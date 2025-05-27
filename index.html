@@ -39,9 +39,8 @@
 
     #welcomeScreen p {
       font-size: 1.5rem;
-      margin-top: 150px;
+      margin-top: 10px;
       line-height: 1.5;
-      padding: 0 50px;
     }
 
 
@@ -239,16 +238,15 @@
 
 /* Todays Answers   Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers  Todays Answers */
 
-#playedRoundsAnswers {
-  margin-top: 40px;
+#playedRounds {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  gap: 80px; /* Adjust this value as needed */
+  gap: 30px; /* Space between each round */
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
-
 
 .round-section {
   display: flex;
@@ -259,7 +257,7 @@
 
 .round-heading {
   font-size: 1.2em;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .round-list {
@@ -277,6 +275,9 @@
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 
 }
+
+
+
 
 
 #currentRound {
@@ -663,79 +664,6 @@
 #gameStatus {
   display: block !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 769px) {
-
-  #playedTodayScreen button{
-    margin-top: 180px !important;
-  }
-  #viewStatsButton {
-    margin-top: 10px !important;
-  }
-
-  #title {
-    font-size: 60px;
-  }
-
-  #playedTodayScreen h1 {
-    font-size: 64px !important;
-    position: relative;
-    top: -29px !important;
-  }
-
-  #dateAndRound {
-    /* Move it up or down as you want on desktop */
-    bottom: auto !important; /* Remove bottom */
-    top: 850px;               /* Move it down from top (change value as needed) */
-    left: 50%;
-    transform: translateX(-50%);
-    /* You can also add or change position */
-    position: fixed; /* keep fixed or change to absolute if needed */
-  }
-
-  .stats-title {
-  margin-top: 20px !important;
-  font-size: 40px !important;
-  font-family: 'second', sans-serif;
-  text-align: center;
-  margin: 0 0 60px 0;
-  }
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
