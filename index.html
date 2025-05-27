@@ -777,8 +777,7 @@
 
 
 
-// Function to show screens and manage history
-function showScreen(screenId, push = true) {
+    function showScreen(screenId, push = true) {
   // Hide all screens
   document.querySelectorAll('.screen').forEach(screen => {
     screen.classList.add('hidden');
@@ -790,11 +789,20 @@ function showScreen(screenId, push = true) {
     target.classList.remove('hidden');
   }
 
+  // ✅ Manage visibility of date and round
+  const dateAndRound = document.getElementById('dateAndRound');
+  if (screenId === 'playedTodayScreen') {
+    dateAndRound.style.display = 'block';
+  } else {
+    dateAndRound.style.display = 'none';
+  }
+
   // Push to history only if 'push' is true
   if (push) {
     history.pushState({ screenId }, '', `#${screenId}`);
   }
 }
+
 
 // Handle back navigation
 window.addEventListener('popstate', (event) => {
