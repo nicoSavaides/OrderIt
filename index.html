@@ -777,7 +777,8 @@
 
 
 
-    function showScreen(screenId, push = true) {
+
+function showScreen(screenId, push = true) {
   // Hide all screens
   document.querySelectorAll('.screen').forEach(screen => {
     screen.classList.add('hidden');
@@ -789,40 +790,37 @@
     target.classList.remove('hidden');
   }
 
-  // ✅ Manage visibility of date and round
+  // 🔁 Show or hide the date based on the screen
   const dateAndRound = document.getElementById('dateAndRound');
-  if (screenId === 'playedTodayScreen') {
+  const showDateScreens = ['playedTodayScreen', 'welcomeScreen'];
+  if (showDateScreens.includes(screenId)) {
     dateAndRound.style.display = 'block';
   } else {
     dateAndRound.style.display = 'none';
   }
 
-  // Push to history only if 'push' is true
+  // Push to history only if requested
   if (push) {
     history.pushState({ screenId }, '', `#${screenId}`);
   }
 }
 
 
-// Handle back navigation
+
+
+
 window.addEventListener('popstate', (event) => {
   const screenId = event.state?.screenId;
   if (screenId) {
-    showScreen(screenId, false);  // Set push = false to prevent creating another history entry
+    showScreen(screenId, false);
 
-    // If going back to the playedTodayScreen, ensure the date and round are displayed
-    if (screenId === 'playedTodayScreen') {
-      document.getElementById('dateAndRound').style.display = 'block';  // Show the date and round information
-    } else {
-      document.getElementById('dateAndRound').style.display = 'none';  // Hide on other screens
-    }
-
-    // If going back to the playedTodayScreen, hide the stats content
+    // Hide stats display if navigating away from it
     if (screenId !== 'statsDisplay') {
       document.getElementById('statsDisplay').classList.add('hidden');
     }
   }
 });
+
 
 // Add event listener for "Today's Answers" button
 document.getElementById('showAnswersButton').addEventListener('click', () => {
