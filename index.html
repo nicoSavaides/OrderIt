@@ -1282,10 +1282,10 @@ function makeItemsDraggable() {
       offsetX = touch.pageX - draggedItemInitialPos.x;
       offsetY = touch.pageY - draggedItemInitialPos.y;
 
-      // Move tile under finger
+      // Move tile visually under finger
       draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-      // Hide dragged item to detect element underneath finger
+      // Detect element under finger while hiding dragged item
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
@@ -1295,9 +1295,10 @@ function makeItemsDraggable() {
         const list = draggedItem.parentNode;
 
         if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
+          // Save current transform before moving in DOM
           const currentTransform = draggedItem.style.transform;
 
-          // Temporarily reset transform before DOM reorder
+          // Remove transform temporarily to prevent jump on DOM reorder
           draggedItem.style.transform = 'none';
 
           const draggedIndex = Array.from(list.children).indexOf(draggedItem);
@@ -1309,11 +1310,11 @@ function makeItemsDraggable() {
             list.insertBefore(draggedItem, targetItem);
           }
 
-          // Update draggedItemInitialPos so offset remains correct
+          // Update initial position reference for smooth continuous drag
           draggedItemInitialPos.x = touch.pageX - offsetX;
           draggedItemInitialPos.y = touch.pageY - offsetY;
 
-          // Reapply transform so tile stays under finger smoothly
+          // Reapply transform so tile stays visually under finger
           draggedItem.style.transform = currentTransform;
         }
       }
@@ -1332,6 +1333,8 @@ function makeItemsDraggable() {
     });
   });
 }
+
+
 
 
 
