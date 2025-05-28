@@ -1223,108 +1223,66 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+item.addEventListener('touchstart', (e) => {
+  draggedItem = item;
+  draggedItem.classList.add('dragging');
 
-function makeItemsDraggable() {
-  const items = document.querySelectorAll('.draggable-item');
-  let draggedItem = null;
-  let draggedItemInitialPos = { x: 0, y: 0 };
-  let offsetX = 0;
-  let offsetY = 0;
+  const touch = e.touches[0];
+  const rect = draggedItem.getBoundingClientRect();
+  
+  // Store the finger's position *within* the tile
+  offsetX = touch.clientX - rect.left;
+  offsetY = touch.clientY - rect.top;
 
-  items.forEach(item => {
-    item.setAttribute('draggable', true);
+  draggedItem.style.transition = 'none';
+  draggedItem.style.zIndex = '1000';
+  draggedItem.style.opacity = '0.7';
+});
 
-    // Desktop drag & drop (unchanged)
-    item.addEventListener('dragstart', () => {
-      draggedItem = item;
-      draggedItem.classList.add('dragging');
-      setTimeout(() => {
-        draggedItem.style.opacity = '0.5';
-      }, 0);
-    });
+item.addEventListener('touchmove', (e) => {
+  e.preventDefault();
+  if (!draggedItem) return;
 
-    item.addEventListener('dragend', () => {
-      draggedItem.style.opacity = '';
-      draggedItem.classList.remove('dragging');
-      draggedItem = null;
-    });
+  const touch = e.touches[0];
 
-    item.addEventListener('dragover', e => {
-      e.preventDefault();
-      if (draggedItem && draggedItem !== item) {
-        const list = item.parentNode;
-        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-        const targetIndex = Array.from(list.children).indexOf(item);
+  // Subtract the initial offset to keep the tile directly under the finger
+  const translateX = touch.pageX - offsetX;
+  const translateY = touch.pageY - offsetY;
 
-        if (draggedIndex < targetIndex) {
-          list.insertBefore(draggedItem, item.nextSibling);
-        } else {
-          list.insertBefore(draggedItem, item);
-        }
+  draggedItem.style.transform = `translate(${translateX}px, ${translateY}px)`;
+
+  // Reordering logic
+  draggedItem.style.visibility = 'hidden';
+  const el = document.elementFromPoint(touch.clientX, touch.clientY);
+  draggedItem.style.visibility = 'visible';
+
+  if (el) {
+    const targetItem = el.closest('.draggable-item');
+    const list = draggedItem.parentNode;
+
+    if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
+      const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+      const targetIndex = Array.from(list.children).indexOf(targetItem);
+      if (draggedIndex < targetIndex) {
+        list.insertBefore(draggedItem, targetItem.nextSibling);
+      } else {
+        list.insertBefore(draggedItem, targetItem);
       }
-    });
+    }
+  }
+});
 
-    // Mobile touch handlers
-    item.addEventListener('touchstart', e => {
-      const touch = e.touches[0];
-      draggedItem = item;
-      draggedItemInitialPos = { x: touch.pageX, y: touch.pageY };
-      offsetX = 0;
-      offsetY = 0;
+item.addEventListener('touchend', () => {
+  if (!draggedItem) return;
 
-      draggedItem.classList.add('dragging');
-      draggedItem.style.transition = 'none';
-      draggedItem.style.zIndex = '1000';
-      draggedItem.style.opacity = '0.7';
-    });
+  draggedItem.style.transition = '';
+  draggedItem.style.transform = '';
+  draggedItem.style.opacity = '';
+  draggedItem.style.zIndex = '';
+  draggedItem.classList.remove('dragging');
+  draggedItem = null;
+});
 
-    item.addEventListener('touchmove', e => {
-      e.preventDefault();
-      if (!draggedItem) return;
-
-      const touch = e.touches[0];
-      offsetX = touch.pageX - draggedItemInitialPos.x;
-      offsetY = touch.pageY - draggedItemInitialPos.y;
-
-      // Move dragged item visually under finger with offset
-      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-
-      // Temporarily hide dragged item to detect underlying element
-      draggedItem.style.visibility = 'hidden';
-      const el = document.elementFromPoint(touch.clientX, touch.clientY);
-      draggedItem.style.visibility = 'visible';
-
-      if (el) {
-        const targetItem = el.closest('.draggable-item');
-        const list = draggedItem.parentNode;
-
-        if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
-          const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-          const targetIndex = Array.from(list.children).indexOf(targetItem);
-
-          // Move draggedItem itself in the list (like desktop)
-          if (draggedIndex < targetIndex) {
-            list.insertBefore(draggedItem, targetItem.nextSibling);
-          } else {
-            list.insertBefore(draggedItem, targetItem);
-          }
-        }
-      }
-    });
-
-    item.addEventListener('touchend', () => {
-      if (!draggedItem) return;
-
-      draggedItem.style.transition = '';
-      draggedItem.style.transform = '';
-      draggedItem.style.opacity = '';
-      draggedItem.style.zIndex = '';
-      draggedItem.classList.remove('dragging');
-
-      draggedItem = null;
-    });
-  });
-}
 
 
 
