@@ -1222,16 +1222,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
+
+
+
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
+  let draggedItemInitialPos = { x: 0, y: 0 };
   let offsetX = 0;
   let offsetY = 0;
 
   items.forEach(item => {
     item.setAttribute('draggable', true);
 
-    // ----- Desktop drag -----
+    // Desktop drag
     item.addEventListener('dragstart', () => {
       draggedItem = item;
       draggedItem.classList.add('dragging');
@@ -1261,25 +1266,18 @@ function makeItemsDraggable() {
       }
     });
 
-    // ----- Mobile touch drag -----
+    // Touch drag (mobile)
     item.addEventListener('touchstart', e => {
       const touch = e.touches[0];
       draggedItem = item;
-
-      const rect = item.getBoundingClientRect();
-      offsetX = touch.clientX - rect.left;
-      offsetY = touch.clientY - rect.top;
+      draggedItemInitialPos = { x: touch.pageX, y: touch.pageY };
+      offsetX = 0;
+      offsetY = 0;
 
       draggedItem.classList.add('dragging');
       draggedItem.style.transition = 'none';
       draggedItem.style.zIndex = '1000';
       draggedItem.style.opacity = '0.7';
-      draggedItem.style.position = 'absolute';
-      draggedItem.style.pointerEvents = 'none';
-
-      // Position it initially under the finger
-      draggedItem.style.left = `${rect.left + window.scrollX}px`;
-      draggedItem.style.top = `${rect.top + window.scrollY}px`;
     });
 
     item.addEventListener('touchmove', e => {
@@ -1287,28 +1285,43 @@ function makeItemsDraggable() {
       if (!draggedItem) return;
 
       const touch = e.touches[0];
-      const x = touch.clientX - offsetX + window.scrollX;
-      const y = touch.clientY - offsetY + window.scrollY;
+      offsetX = touch.pageX - draggedItemInitialPos.x;
+      offsetY = touch.pageY - draggedItemInitialPos.y;
 
-      draggedItem.style.left = `${x}px`;
-      draggedItem.style.top = `${y}px`;
+      // Move tile visually under finger
+      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-      // Detect overlap
+      // Detect element under finger while hiding dragged item
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
 
-      const targetItem = el?.closest('.draggable-item');
-      const list = draggedItem.parentNode;
+      if (el) {
+        const targetItem = el.closest('.draggable-item');
+        const list = draggedItem.parentNode;
 
-      if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
-        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-        const targetIndex = Array.from(list.children).indexOf(targetItem);
+        if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
+          // Save current transform before moving in DOM
+          const currentTransform = draggedItem.style.transform;
 
-        if (draggedIndex < targetIndex) {
-          list.insertBefore(draggedItem, targetItem.nextSibling);
-        } else {
-          list.insertBefore(draggedItem, targetItem);
+          // Remove transform temporarily to prevent jump on DOM reorder
+          draggedItem.style.transform = 'none';
+
+          const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+          const targetIndex = Array.from(list.children).indexOf(targetItem);
+
+          if (draggedIndex < targetIndex) {
+            list.insertBefore(draggedItem, targetItem.nextSibling);
+          } else {
+            list.insertBefore(draggedItem, targetItem);
+          }
+
+          // Update initial position reference for smooth continuous drag
+          draggedItemInitialPos.x = touch.pageX - offsetX;
+          draggedItemInitialPos.y = touch.pageY - offsetY;
+
+          // Reapply transform so tile stays visually under finger
+          draggedItem.style.transform = currentTransform;
         }
       }
     });
@@ -1317,18 +1330,18 @@ function makeItemsDraggable() {
       if (!draggedItem) return;
 
       draggedItem.style.transition = '';
-      draggedItem.style.left = '';
-      draggedItem.style.top = '';
-      draggedItem.style.position = '';
-      draggedItem.style.zIndex = '';
+      draggedItem.style.transform = '';
       draggedItem.style.opacity = '';
-      draggedItem.style.pointerEvents = '';
+      draggedItem.style.zIndex = '';
       draggedItem.classList.remove('dragging');
 
       draggedItem = null;
     });
   });
 }
+
+
+
 
 
 
