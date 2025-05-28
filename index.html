@@ -1223,7 +1223,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
@@ -1234,7 +1233,7 @@ function makeItemsDraggable() {
   items.forEach(item => {
     item.setAttribute('draggable', true);
 
-    // Desktop drag & drop (unchanged)
+    // Desktop drag
     item.addEventListener('dragstart', () => {
       draggedItem = item;
       draggedItem.classList.add('dragging');
@@ -1263,10 +1262,8 @@ function makeItemsDraggable() {
         }
       }
     });
-    
 
-    
-    // Mobile touch handlers
+    // Touch drag (mobile)
     item.addEventListener('touchstart', e => {
       const touch = e.touches[0];
       draggedItem = item;
@@ -1288,10 +1285,10 @@ function makeItemsDraggable() {
       offsetX = touch.pageX - draggedItemInitialPos.x;
       offsetY = touch.pageY - draggedItemInitialPos.y;
 
-      // Move dragged item visually under finger with offset
+      // Move under finger
       draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-      // Temporarily hide dragged item to detect underlying element
+      // Detect overlap target
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
@@ -1301,15 +1298,23 @@ function makeItemsDraggable() {
         const list = draggedItem.parentNode;
 
         if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
+          // Save current offset
+          const currentTransform = draggedItem.style.transform;
+
+          // Temporarily disable transform before inserting to avoid jump
+          draggedItem.style.transform = 'none';
+
           const draggedIndex = Array.from(list.children).indexOf(draggedItem);
           const targetIndex = Array.from(list.children).indexOf(targetItem);
 
-          // Move draggedItem itself in the list (like desktop)
           if (draggedIndex < targetIndex) {
             list.insertBefore(draggedItem, targetItem.nextSibling);
           } else {
             list.insertBefore(draggedItem, targetItem);
           }
+
+          // Reapply transform after move to prevent visual jump
+          draggedItem.style.transform = currentTransform;
         }
       }
     });
@@ -1327,7 +1332,6 @@ function makeItemsDraggable() {
     });
   });
 }
-
 
 
 
