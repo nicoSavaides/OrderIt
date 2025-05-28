@@ -1266,46 +1266,74 @@ function makeItemsDraggable() {
 
 
   
-// Mobile touch
+// Mobile touch drag
 items.forEach(item => {
   item.addEventListener('touchstart', (e) => {
     hasMoved = false;
+    draggedItem = item;
+
+    const touch = e.touches[0];
+    const rect = item.getBoundingClientRect();
+
+    // Calculate initial offsets
+    offsetX = touch.pageX - rect.left;
+    offsetY = touch.pageY - rect.top;
+
+    // Clone width/height so it doesn't collapse when absolutely positioned
+    draggedItem.style.width = `${rect.width}px`;
+    draggedItem.style.height = `${rect.height}px`;
+
+    // Make the item float above everything
+    draggedItem.style.position = 'absolute';
+    draggedItem.style.left = `${rect.left}px`;
+    draggedItem.style.top = `${rect.top}px`;
+    draggedItem.style.zIndex = '1000';
+    draggedItem.style.opacity = '0.9';
+    draggedItem.style.pointerEvents = 'none';
+    draggedItem.classList.add('dragging');
+
+    document.body.appendChild(draggedItem); // Pull out of the list so layout doesn't shift
 
     e.preventDefault();
-    draggedItem = item;
-    draggedItemInitialPosition = {
-      x: e.touches[0].pageX,
-      y: e.touches[0].pageY
-    };
-    draggedItem.classList.add('dragging');
-    draggedItem.style.transition = 'none';
-    draggedItem.style.zIndex = '1000';
-    draggedItem.style.opacity = '0.5';
   });
 
   item.addEventListener('touchmove', (e) => {
-    e.preventDefault();
     const touch = e.touches[0];
-    const dx = touch.pageX - draggedItemInitialPosition.x;
-    const dy = touch.pageY - draggedItemInitialPosition.y;
+    const dx = touch.pageX - offsetX;
+    const dy = touch.pageY - offsetY;
 
-    if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
+    if (!hasMoved && (Math.abs(dx) > 5 || Math.abs(dy) > 5)) {
       hasMoved = true;
     }
 
-    offsetX = dx;
-    offsetY = dy;
-    draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    draggedItem.style.left = `${dx}px`;
+    draggedItem.style.top = `${dy}px`;
 
-    // 🔁 Live reordering logic
+    e.preventDefault();
+  });
+
+  item.addEventListener('touchend', (e) => {
+    if (!hasMoved) {
+      resetDraggedItem();
+      return;
+    }
+
+    const touch = e.changedTouches[0];
+    let targetItem = null;
+
+    // Look for nearest drop target
     draggedItem.style.visibility = 'hidden';
     const el = document.elementFromPoint(touch.clientX, touch.clientY);
     draggedItem.style.visibility = 'visible';
 
     if (el) {
-      const targetItem = el.closest('.draggable-item');
-      if (targetItem && targetItem !== draggedItem) {
-        const list = targetItem.parentNode;
+      targetItem = el.closest('.draggable-item');
+    }
+
+    // Return to list and insert in the right spot
+    if (targetItem && targetItem !== draggedItem) {
+      const list = document.querySelector('.your-draggable-list-class'); // change if needed
+      if (list && list.contains(targetItem)) {
         const draggedIndex = Array.from(list.children).indexOf(draggedItem);
         const targetIndex = Array.from(list.children).indexOf(targetItem);
 
@@ -1316,30 +1344,33 @@ items.forEach(item => {
         }
       }
     }
+
+    resetDraggedItem();
   });
 
-  item.addEventListener('touchend', (e) => {
-    if (!hasMoved) {
-      // It's a tap, not a drag — just reset and exit
-      draggedItem.classList.remove('dragging');
-      draggedItem.style.transform = '';
-      draggedItem.style.transition = '';
-      draggedItem.style.opacity = '';
-      draggedItem.style.zIndex = '';
-      draggedItem = null;
-      return;
+  function resetDraggedItem() {
+    if (!draggedItem) return;
+    draggedItem.style.position = '';
+    draggedItem.style.left = '';
+    draggedItem.style.top = '';
+    draggedItem.style.width = '';
+    draggedItem.style.height = '';
+    draggedItem.style.zIndex = '';
+    draggedItem.style.opacity = '';
+    draggedItem.style.pointerEvents = '';
+    draggedItem.style.transition = '';
+    draggedItem.classList.remove('dragging');
+
+    const list = document.querySelector('.your-draggable-list-class'); // adjust if needed
+    if (list && !list.contains(draggedItem)) {
+      list.appendChild(draggedItem); // Re-add it to the list if it was removed
     }
 
-    // Reset draggedItem visual styles
-    draggedItem.style.transform = '';
-    draggedItem.style.transition = '';
-    draggedItem.style.opacity = '';
-    draggedItem.style.zIndex = '';
-    draggedItem.classList.remove('dragging');
     draggedItem = null;
-  });
+  }
 });
 }
+
 
 
 
