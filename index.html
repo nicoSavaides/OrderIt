@@ -1223,8 +1223,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
@@ -1235,7 +1233,7 @@ function makeItemsDraggable() {
   items.forEach(item => {
     item.setAttribute('draggable', true);
 
-    // ----- Desktop drag -----
+    // DESKTOP DRAG
     item.addEventListener('dragstart', () => {
       draggedItem = item;
       draggedItem.classList.add('dragging');
@@ -1245,6 +1243,7 @@ function makeItemsDraggable() {
     });
 
     item.addEventListener('dragend', () => {
+      if (!draggedItem) return;
       draggedItem.style.opacity = '';
       draggedItem.classList.remove('dragging');
       draggedItem = null;
@@ -1252,20 +1251,20 @@ function makeItemsDraggable() {
 
     item.addEventListener('dragover', e => {
       e.preventDefault();
-      if (draggedItem && draggedItem !== item) {
-        const list = item.parentNode;
-        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-        const targetIndex = Array.from(list.children).indexOf(item);
+      if (!draggedItem || draggedItem === item) return;
 
-        if (draggedIndex < targetIndex) {
-          list.insertBefore(draggedItem, item.nextSibling);
-        } else {
-          list.insertBefore(draggedItem, item);
-        }
+      const list = item.parentNode;
+      const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+      const targetIndex = Array.from(list.children).indexOf(item);
+
+      if (draggedIndex < targetIndex) {
+        list.insertBefore(draggedItem, item.nextSibling);
+      } else {
+        list.insertBefore(draggedItem, item);
       }
     });
 
-    // ----- Mobile touch drag -----
+    // TOUCH DRAG
     item.addEventListener('touchstart', e => {
       const touch = e.touches[0];
       draggedItem = item;
@@ -1287,36 +1286,28 @@ function makeItemsDraggable() {
       offsetX = touch.pageX - draggedItemInitialPos.x;
       offsetY = touch.pageY - draggedItemInitialPos.y;
 
-      // Move under finger
+      // Follow finger
       draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-      // Detect overlap target
-      draggedItem.style.visibility = 'hidden';
+      // Detect overlap without hiding
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
-      draggedItem.style.visibility = 'visible';
+      if (!el) return;
 
-      if (el) {
-        const targetItem = el.closest('.draggable-item');
-        const list = draggedItem.parentNode;
+      const targetItem = el.closest('.draggable-item');
+      const list = draggedItem.parentNode;
 
-        if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
-          // Save current transform
-          const currentTransform = draggedItem.style.transform;
+      if (
+        targetItem &&
+        targetItem !== draggedItem &&
+        list.contains(targetItem)
+      ) {
+        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+        const targetIndex = Array.from(list.children).indexOf(targetItem);
 
-          // Temporarily disable transform before inserting to avoid jump
-          draggedItem.style.transform = 'none';
-
-          const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-          const targetIndex = Array.from(list.children).indexOf(targetItem);
-
-          if (draggedIndex < targetIndex) {
-            list.insertBefore(draggedItem, targetItem.nextSibling);
-          } else {
-            list.insertBefore(draggedItem, targetItem);
-          }
-
-          // Restore transform
-          draggedItem.style.transform = currentTransform;
+        if (draggedIndex < targetIndex) {
+          list.insertBefore(draggedItem, targetItem.nextSibling);
+        } else {
+          list.insertBefore(draggedItem, targetItem);
         }
       }
     });
@@ -1329,11 +1320,11 @@ function makeItemsDraggable() {
       draggedItem.style.opacity = '';
       draggedItem.style.zIndex = '';
       draggedItem.classList.remove('dragging');
-
       draggedItem = null;
     });
   });
 }
+
 
 
 
