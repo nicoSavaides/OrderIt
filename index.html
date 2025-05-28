@@ -1252,6 +1252,7 @@ function makeItemsDraggable() {
       }
     });
   });
+
   item.addEventListener('touchmove', (e) => {
   e.preventDefault();
   const touch = e.touches[0];
@@ -1266,6 +1267,7 @@ function makeItemsDraggable() {
   offsetY = dy;
   draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
+  // Hide draggedItem so elementFromPoint detects what's underneath finger
   draggedItem.style.visibility = 'hidden';
   const el = document.elementFromPoint(touch.clientX, touch.clientY);
   draggedItem.style.visibility = 'visible';
@@ -1278,10 +1280,14 @@ function makeItemsDraggable() {
       const draggedIndex = Array.from(list.children).indexOf(draggedItem);
       const targetIndex = Array.from(list.children).indexOf(targetItem);
 
-      if (draggedIndex < targetIndex) {
-        list.insertBefore(targetItem, draggedItem);
-      } else {
-        list.insertBefore(targetItem, draggedItem.nextSibling);
+      // Move the other tile around the dragged tile — NOT draggedItem itself
+      if (targetIndex !== currentTargetIndex) {
+        if (targetIndex > currentTargetIndex) {
+          list.insertBefore(targetItem, draggedItem);
+        } else {
+          list.insertBefore(targetItem, draggedItem.nextSibling);
+        }
+        currentTargetIndex = targetIndex;
       }
     }
   }
@@ -1294,32 +1300,21 @@ item.addEventListener('touchend', () => {
   draggedItem.style.zIndex = '';
   draggedItem.classList.remove('dragging');
 
-  // Find correct spot again
-  draggedItem.style.visibility = 'hidden';
-  const el = document.elementFromPoint(
-    draggedItemInitialPosition.x + offsetX,
-    draggedItemInitialPosition.y + offsetY
-  );
-  draggedItem.style.visibility = 'visible';
+  // Insert draggedItem at currentTargetIndex on touch end
+  const list = draggedItem.parentNode;
+  const children = Array.from(list.children).filter(child => child !== draggedItem);
 
-  if (el) {
-    const targetItem = el.closest('.draggable-item');
-    const list = draggedItem.parentNode;
-    if (targetItem && targetItem !== draggedItem) {
-      const targetIndex = Array.from(list.children).indexOf(targetItem);
-      const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-
-      if (draggedIndex < targetIndex) {
-        list.insertBefore(draggedItem, targetItem.nextSibling);
-      } else {
-        list.insertBefore(draggedItem, targetItem);
-      }
-    }
+  if (currentTargetIndex >= 0 && currentTargetIndex < children.length) {
+    list.insertBefore(draggedItem, children[currentTargetIndex]);
+  } else {
+    list.appendChild(draggedItem);
   }
 
   draggedItem = null;
+  currentTargetIndex = -1;
 });
 }
+
 
 
 
