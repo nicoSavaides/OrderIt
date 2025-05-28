@@ -755,17 +755,6 @@
         margin-top: 150px;
       }  
 }
-.dragging {
-  opacity: 0.9;
-  transition: none !important;
-}
-
-.drag-placeholder {
-  background: rgba(0, 0, 0, 0.05);
-  border: 2px dashed #ccc;
-  box-sizing: border-box;
-}
-
 
 
 
@@ -1267,93 +1256,103 @@ function makeItemsDraggable() {
     });
   });
 
-// Mobile touch with smooth drag and live reordering
-items.forEach(item => {
+  // Mobile touch
+  items.forEach(item => {
   item.addEventListener('touchstart', (e) => {
-    e.preventDefault();
     hasMoved = false;
+    e.preventDefault();
     draggedItem = item;
 
     const touch = e.touches[0];
     const rect = item.getBoundingClientRect();
 
-    // Create placeholder
-    draggedItem.placeholder = document.createElement('div');
-    draggedItem.placeholder.classList.add('drag-placeholder');
-    draggedItem.placeholder.style.height = `${rect.height}px`;
-    draggedItem.placeholder.style.width = `${rect.width}px`;
-    draggedItem.parentNode.insertBefore(draggedItem.placeholder, draggedItem);
+    // Create a placeholder so layout doesn't collapse
+    const placeholder = document.createElement('div');
+    placeholder.classList.add('draggable-item');
+    placeholder.style.height = `${rect.height}px`;
+    placeholder.style.background = 'transparent';
+    item.parentNode.insertBefore(placeholder, item.nextSibling);
 
-    // Set absolute styling for dragged item
-    draggedItem.classList.add('dragging');
-    draggedItem.style.position = 'fixed';
-    draggedItem.style.top = `${rect.top}px`;
-    draggedItem.style.left = `${rect.left}px`;
-    draggedItem.style.width = `${rect.width}px`;
-    draggedItem.style.zIndex = '1000';
-    draggedItem.style.pointerEvents = 'none';
-    draggedItem.startOffset = {
-      x: touch.clientX - rect.left,
-      y: touch.clientY - rect.top
+    // Position the dragged item absolutely over its original spot
+    draggedItemInitialPosition = {
+      x: touch.clientX,
+      y: touch.clientY
     };
+
+    draggedItem.style.position = 'fixed';
+    draggedItem.style.left = `${rect.left}px`;
+    draggedItem.style.top = `${rect.top}px`;
+    draggedItem.style.width = `${rect.width}px`;
+    draggedItem.style.pointerEvents = 'none';
+    draggedItem.style.zIndex = '1000';
+    draggedItem.style.opacity = '0.8';
+    draggedItem.classList.add('dragging');
   });
 
   item.addEventListener('touchmove', (e) => {
-    if (!draggedItem) return;
     e.preventDefault();
     const touch = e.touches[0];
-    const x = touch.clientX - draggedItem.startOffset.x;
-    const y = touch.clientY - draggedItem.startOffset.y;
-    draggedItem.style.top = `${y}px`;
-    draggedItem.style.left = `${x}px`;
+    const dx = touch.clientX - draggedItemInitialPosition.x;
+    const dy = touch.clientY - draggedItemInitialPosition.y;
 
-    hasMoved = true;
+    if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
+      hasMoved = true;
+    }
 
-    // Live reordering
+    // Follow finger
+    draggedItem.style.transform = `translate(${dx}px, ${dy}px)`;
+
+    // Check if it overlaps another item
     draggedItem.style.visibility = 'hidden';
     const el = document.elementFromPoint(touch.clientX, touch.clientY);
     draggedItem.style.visibility = 'visible';
 
-    const target = el?.closest('.draggable-item');
-    if (target && target !== draggedItem) {
-      const list = target.parentNode;
-      const placeholder = draggedItem.placeholder;
-      if (list.contains(placeholder)) {
-        const draggedIndex = Array.from(list.children).indexOf(placeholder);
-        const targetIndex = Array.from(list.children).indexOf(target);
+    if (el) {
+      const targetItem = el.closest('.draggable-item');
+      if (targetItem && targetItem !== draggedItem) {
+        const list = targetItem.parentNode;
+        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+        const targetIndex = Array.from(list.children).indexOf(targetItem);
 
         if (draggedIndex < targetIndex) {
-          list.insertBefore(placeholder, target.nextSibling);
+          list.insertBefore(draggedItem.nextSibling, targetItem.nextSibling);
         } else {
-          list.insertBefore(placeholder, target);
+          list.insertBefore(draggedItem.nextSibling, targetItem);
         }
       }
     }
   });
 
-  item.addEventListener('touchend', (e) => {
-    if (!draggedItem) return;
-
-    const placeholder = draggedItem.placeholder;
-
-    // Clean up dragged styles
-    draggedItem.style.position = '';
-    draggedItem.style.top = '';
-    draggedItem.style.left = '';
-    draggedItem.style.width = '';
-    draggedItem.style.zIndex = '';
-    draggedItem.style.pointerEvents = '';
-    draggedItem.classList.remove('dragging');
-
-    if (placeholder && placeholder.parentNode) {
-      placeholder.parentNode.insertBefore(draggedItem, placeholder);
-      placeholder.remove();
+  item.addEventListener('touchend', () => {
+    if (!hasMoved) {
+      resetDraggedItem();
+      return;
     }
 
-    draggedItem = null;
+    const placeholder = draggedItem.nextSibling;
+    placeholder.replaceWith(draggedItem); // drop in new spot
+
+    resetDraggedItem();
   });
+
+  function resetDraggedItem() {
+    if (!draggedItem) return;
+
+    draggedItem.style.position = '';
+    draggedItem.style.left = '';
+    draggedItem.style.top = '';
+    draggedItem.style.width = '';
+    draggedItem.style.pointerEvents = '';
+    draggedItem.style.zIndex = '';
+    draggedItem.style.opacity = '';
+    draggedItem.style.transform = '';
+    draggedItem.classList.remove('dragging');
+    draggedItem = null;
+  }
 });
 }
+
+
 
 
 
