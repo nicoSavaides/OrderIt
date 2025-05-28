@@ -1223,15 +1223,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 function makeItemsDraggable() {
+  let hasMoved = false;
+  const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
   let offsetX = 0;
   let offsetY = 0;
   let currentTargetIndex = -1;
 
-  const items = document.querySelectorAll('.draggable-item');
-
+  // Desktop drag & drop (unchanged)
   items.forEach(item => {
-    // Desktop drag and drop (unchanged)
     item.setAttribute('draggable', true);
 
     item.addEventListener('dragstart', () => {
@@ -1245,14 +1245,11 @@ function makeItemsDraggable() {
     item.addEventListener('dragend', () => {
       draggedItem.style.opacity = '';
       draggedItem.classList.remove('dragging');
-      draggedItem.style.position = '';
-      draggedItem.style.left = '';
-      draggedItem.style.top = '';
-      draggedItem.style.zIndex = '';
+      draggedItem.style.transform = '';
       draggedItem = null;
     });
 
-    item.addEventListener('dragover', e => {
+    item.addEventListener('dragover', (e) => {
       e.preventDefault();
       if (draggedItem && draggedItem !== item) {
         const list = item.parentNode;
@@ -1269,38 +1266,35 @@ function makeItemsDraggable() {
 
     // Mobile touch handlers
     item.addEventListener('touchstart', (e) => {
+      hasMoved = false;
       draggedItem = item;
-      const touch = e.touches[0];
-      const rect = draggedItem.getBoundingClientRect();
 
-      // Calculate offset inside the tile relative to viewport coordinates
+      const rect = draggedItem.getBoundingClientRect();
+      const touch = e.touches[0];
+
+      // Calculate offset of finger inside the tile (relative to viewport)
       offsetX = touch.clientX - rect.left;
       offsetY = touch.clientY - rect.top;
 
       currentTargetIndex = Array.from(item.parentNode.children).indexOf(item);
 
       draggedItem.classList.add('dragging');
-      draggedItem.style.position = 'fixed';
-      draggedItem.style.width = `${rect.width}px`; // Fix width so element doesn't collapse
-      draggedItem.style.left = `${rect.left}px`;
-      draggedItem.style.top = `${rect.top}px`;
+      draggedItem.style.transition = 'none';
       draggedItem.style.zIndex = '1000';
       draggedItem.style.opacity = '0.7';
-      draggedItem.style.transition = 'none';
     });
 
     item.addEventListener('touchmove', (e) => {
       e.preventDefault();
-      if (!draggedItem) return;
       const touch = e.touches[0];
 
-      // Move dragged item so finger stays at same offset inside it
-      const left = touch.clientX - offsetX;
-      const top = touch.clientY - offsetY;
-      draggedItem.style.left = `${left}px`;
-      draggedItem.style.top = `${top}px`;
+      // Calculate translate so tile top-left follows finger minus offset inside tile
+      const moveX = touch.clientX - offsetX;
+      const moveY = touch.clientY - offsetY;
 
-      // Temporarily hide dragged item so we can detect what's below finger
+      draggedItem.style.transform = `translate(${moveX}px, ${moveY}px)`;
+
+      // Temporarily hide draggedItem to get element under finger
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
@@ -1319,21 +1313,17 @@ function makeItemsDraggable() {
             } else {
               list.insertBefore(draggedItem, targetItem);
             }
-            currentTargetIndex = Array.from(list.children).indexOf(draggedItem);
+            currentTargetIndex = targetIndex;
           }
         }
       }
     });
 
     item.addEventListener('touchend', () => {
-      if (!draggedItem) return;
-
       draggedItem.style.transition = '';
-      draggedItem.style.position = '';
-      draggedItem.style.left = '';
-      draggedItem.style.top = '';
-      draggedItem.style.zIndex = '';
+      draggedItem.style.transform = '';
       draggedItem.style.opacity = '';
+      draggedItem.style.zIndex = '';
       draggedItem.classList.remove('dragging');
 
       draggedItem = null;
