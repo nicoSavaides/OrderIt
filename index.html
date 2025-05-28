@@ -1225,7 +1225,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
@@ -1236,7 +1235,7 @@ function makeItemsDraggable() {
   items.forEach(item => {
     item.setAttribute('draggable', true);
 
-    // Desktop drag
+    // ----- Desktop drag -----
     item.addEventListener('dragstart', () => {
       draggedItem = item;
       draggedItem.classList.add('dragging');
@@ -1266,7 +1265,7 @@ function makeItemsDraggable() {
       }
     });
 
-    // Touch drag (mobile)
+    // ----- Mobile touch drag -----
     item.addEventListener('touchstart', e => {
       const touch = e.touches[0];
       draggedItem = item;
@@ -1288,10 +1287,10 @@ function makeItemsDraggable() {
       offsetX = touch.pageX - draggedItemInitialPos.x;
       offsetY = touch.pageY - draggedItemInitialPos.y;
 
-      // Move tile visually under finger
+      // Move under finger
       draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-      // Detect element under finger while hiding dragged item
+      // Detect overlap target
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
@@ -1301,10 +1300,10 @@ function makeItemsDraggable() {
         const list = draggedItem.parentNode;
 
         if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
-          // Save current transform before moving in DOM
+          // Save current transform
           const currentTransform = draggedItem.style.transform;
 
-          // Remove transform temporarily to prevent jump on DOM reorder
+          // Temporarily disable transform before inserting to avoid jump
           draggedItem.style.transform = 'none';
 
           const draggedIndex = Array.from(list.children).indexOf(draggedItem);
@@ -1316,11 +1315,7 @@ function makeItemsDraggable() {
             list.insertBefore(draggedItem, targetItem);
           }
 
-          // Update initial position reference for smooth continuous drag
-          draggedItemInitialPos.x = touch.pageX - offsetX;
-          draggedItemInitialPos.y = touch.pageY - offsetY;
-
-          // Reapply transform so tile stays visually under finger
+          // Restore transform
           draggedItem.style.transform = currentTransform;
         }
       }
