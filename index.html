@@ -1226,6 +1226,7 @@ function makeItemsDraggable() {
   let hasMoved = false;
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
+  let draggedItemInitialPosition = { x: 0, y: 0 };
   let offsetX = 0;
   let offsetY = 0;
   let currentTargetIndex = -1;
@@ -1245,7 +1246,6 @@ function makeItemsDraggable() {
     item.addEventListener('dragend', () => {
       draggedItem.style.opacity = '';
       draggedItem.classList.remove('dragging');
-      draggedItem.style.transform = '';
       draggedItem = null;
     });
 
@@ -1268,14 +1268,12 @@ function makeItemsDraggable() {
     item.addEventListener('touchstart', (e) => {
       hasMoved = false;
       draggedItem = item;
-
-      const rect = draggedItem.getBoundingClientRect();
-      const touch = e.touches[0];
-
-      // Calculate offset of finger inside the tile (relative to viewport)
-      offsetX = touch.clientX - rect.left;
-      offsetY = touch.clientY - rect.top;
-
+      draggedItemInitialPosition = {
+        x: e.touches[0].pageX,
+        y: e.touches[0].pageY
+      };
+      offsetX = 0;
+      offsetY = 0;
       currentTargetIndex = Array.from(item.parentNode.children).indexOf(item);
 
       draggedItem.classList.add('dragging');
@@ -1287,14 +1285,18 @@ function makeItemsDraggable() {
     item.addEventListener('touchmove', (e) => {
       e.preventDefault();
       const touch = e.touches[0];
+      const dx = touch.pageX - draggedItemInitialPosition.x;
+      const dy = touch.pageY - draggedItemInitialPosition.y;
 
-      // Calculate translate so tile top-left follows finger minus offset inside tile
-      const moveX = touch.clientX - offsetX;
-      const moveY = touch.clientY - offsetY;
+      if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
+        hasMoved = true;
+      }
 
-      draggedItem.style.transform = `translate(${moveX}px, ${moveY}px)`;
+      offsetX = dx;
+      offsetY = dy;
+      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-      // Temporarily hide draggedItem to get element under finger
+      // Hide draggedItem so elementFromPoint detects what's underneath finger
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
@@ -1307,11 +1309,12 @@ function makeItemsDraggable() {
           const draggedIndex = Array.from(list.children).indexOf(draggedItem);
           const targetIndex = Array.from(list.children).indexOf(targetItem);
 
+          // Move the other tile around the dragged tile — NOT draggedItem itself
           if (targetIndex !== currentTargetIndex) {
             if (targetIndex > currentTargetIndex) {
-              list.insertBefore(draggedItem, targetItem.nextSibling);
+              list.insertBefore(targetItem, draggedItem);
             } else {
-              list.insertBefore(draggedItem, targetItem);
+              list.insertBefore(targetItem, draggedItem.nextSibling);
             }
             currentTargetIndex = targetIndex;
           }
@@ -1325,6 +1328,16 @@ function makeItemsDraggable() {
       draggedItem.style.opacity = '';
       draggedItem.style.zIndex = '';
       draggedItem.classList.remove('dragging');
+
+      // Insert draggedItem at currentTargetIndex on touch end
+      const list = draggedItem.parentNode;
+      const children = Array.from(list.children).filter(child => child !== draggedItem);
+
+      if (currentTargetIndex >= 0 && currentTargetIndex < children.length) {
+        list.insertBefore(draggedItem, children[currentTargetIndex]);
+      } else {
+        list.appendChild(draggedItem);
+      }
 
       draggedItem = null;
       currentTargetIndex = -1;
