@@ -1221,7 +1221,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
 function makeItemsDraggable() {
   let hasMoved = false;
   const items = document.querySelectorAll('.draggable-item');
@@ -1292,11 +1291,13 @@ function makeItemsDraggable() {
         hasMoved = true;
       }
 
+      // Update offsets with finger movement plus compensation for reorder (below)
       offsetX = dx;
       offsetY = dy;
+
       draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-      // Hide draggedItem so elementFromPoint detects what's underneath finger
+      // Hide draggedItem temporarily so elementFromPoint can detect underlying element
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
@@ -1309,14 +1310,31 @@ function makeItemsDraggable() {
           const draggedIndex = Array.from(list.children).indexOf(draggedItem);
           const targetIndex = Array.from(list.children).indexOf(targetItem);
 
-          // Move the other tile around the dragged tile — NOT draggedItem itself
           if (targetIndex !== currentTargetIndex) {
+            // Save dragged item's position before reorder
+            const draggedRectBefore = draggedItem.getBoundingClientRect();
+
+            // Reorder other tiles around draggedItem (not draggedItem itself)
             if (targetIndex > currentTargetIndex) {
               list.insertBefore(targetItem, draggedItem);
             } else {
               list.insertBefore(targetItem, draggedItem.nextSibling);
             }
             currentTargetIndex = targetIndex;
+
+            // Get dragged item's position after reorder
+            const draggedRectAfter = draggedItem.getBoundingClientRect();
+
+            // Calculate positional shift caused by DOM reorder
+            const deltaX = draggedRectBefore.left - draggedRectAfter.left;
+            const deltaY = draggedRectBefore.top - draggedRectAfter.top;
+
+            // Adjust offset to keep dragged item visually under finger
+            offsetX += deltaX;
+            offsetY += deltaY;
+
+            // Apply adjusted transform
+            draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
           }
         }
       }
@@ -1329,7 +1347,7 @@ function makeItemsDraggable() {
       draggedItem.style.zIndex = '';
       draggedItem.classList.remove('dragging');
 
-      // Insert draggedItem at currentTargetIndex on touch end
+      // Place draggedItem at currentTargetIndex after drag
       const list = draggedItem.parentNode;
       const children = Array.from(list.children).filter(child => child !== draggedItem);
 
@@ -1344,6 +1362,11 @@ function makeItemsDraggable() {
     });
   });
 }
+
+
+
+
+
 
 
 
