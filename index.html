@@ -1227,11 +1227,14 @@ document.addEventListener('DOMContentLoaded', () => {
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
+  let draggedItemInitialPos = { x: 0, y: 0 };
+  let offsetX = 0;
+  let offsetY = 0;
 
   items.forEach(item => {
     item.setAttribute('draggable', true);
 
-    // Desktop drag & drop unchanged
+    // Desktop drag & drop (unchanged)
     item.addEventListener('dragstart', () => {
       draggedItem = item;
       draggedItem.classList.add('dragging');
@@ -1252,6 +1255,7 @@ function makeItemsDraggable() {
         const list = item.parentNode;
         const draggedIndex = Array.from(list.children).indexOf(draggedItem);
         const targetIndex = Array.from(list.children).indexOf(item);
+
         if (draggedIndex < targetIndex) {
           list.insertBefore(draggedItem, item.nextSibling);
         } else {
@@ -1262,7 +1266,12 @@ function makeItemsDraggable() {
 
     // Mobile touch handlers
     item.addEventListener('touchstart', e => {
+      const touch = e.touches[0];
       draggedItem = item;
+      draggedItemInitialPos = { x: touch.pageX, y: touch.pageY };
+      offsetX = 0;
+      offsetY = 0;
+
       draggedItem.classList.add('dragging');
       draggedItem.style.transition = 'none';
       draggedItem.style.zIndex = '1000';
@@ -1274,10 +1283,13 @@ function makeItemsDraggable() {
       if (!draggedItem) return;
 
       const touch = e.touches[0];
-      // Move dragged item visually to finger position (no offset correction)
-      draggedItem.style.transform = `translate(${touch.pageX}px, ${touch.pageY}px)`;
+      offsetX = touch.pageX - draggedItemInitialPos.x;
+      offsetY = touch.pageY - draggedItemInitialPos.y;
 
-      // Hide dragged item to detect element under finger correctly
+      // Move dragged item visually under finger with offset
+      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+
+      // Temporarily hide dragged item to detect underlying element
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
@@ -1289,6 +1301,8 @@ function makeItemsDraggable() {
         if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
           const draggedIndex = Array.from(list.children).indexOf(draggedItem);
           const targetIndex = Array.from(list.children).indexOf(targetItem);
+
+          // Move draggedItem itself in the list (like desktop)
           if (draggedIndex < targetIndex) {
             list.insertBefore(draggedItem, targetItem.nextSibling);
           } else {
@@ -1306,6 +1320,7 @@ function makeItemsDraggable() {
       draggedItem.style.opacity = '';
       draggedItem.style.zIndex = '';
       draggedItem.classList.remove('dragging');
+
       draggedItem = null;
     });
   });
