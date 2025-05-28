@@ -1224,18 +1224,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
-  let placeholder = null;
   let offsetX = 0;
   let offsetY = 0;
+  let clone = null;
 
   items.forEach(item => {
     item.setAttribute('draggable', true);
 
-    // DESKTOP SUPPORT
+    // Desktop drag
     item.addEventListener('dragstart', () => {
       draggedItem = item;
       draggedItem.classList.add('dragging');
@@ -1245,7 +1244,6 @@ function makeItemsDraggable() {
     });
 
     item.addEventListener('dragend', () => {
-      if (!draggedItem) return;
       draggedItem.style.opacity = '';
       draggedItem.classList.remove('dragging');
       draggedItem = null;
@@ -1253,20 +1251,20 @@ function makeItemsDraggable() {
 
     item.addEventListener('dragover', e => {
       e.preventDefault();
-      if (!draggedItem || draggedItem === item) return;
+      if (draggedItem && draggedItem !== item) {
+        const list = item.parentNode;
+        const draggedIndex = [...list.children].indexOf(draggedItem);
+        const targetIndex = [...list.children].indexOf(item);
 
-      const list = item.parentNode;
-      const draggedIndex = [...list.children].indexOf(draggedItem);
-      const targetIndex = [...list.children].indexOf(item);
-
-      if (draggedIndex < targetIndex) {
-        list.insertBefore(draggedItem, item.nextSibling);
-      } else {
-        list.insertBefore(draggedItem, item);
+        if (draggedIndex < targetIndex) {
+          list.insertBefore(draggedItem, item.nextSibling);
+        } else {
+          list.insertBefore(draggedItem, item);
+        }
       }
     });
 
-    // TOUCH SUPPORT
+    // Touch drag
     item.addEventListener('touchstart', e => {
       const touch = e.touches[0];
       draggedItem = item;
@@ -1275,38 +1273,35 @@ function makeItemsDraggable() {
       offsetX = touch.clientX - rect.left;
       offsetY = touch.clientY - rect.top;
 
-      // Fix position and keep visual position unchanged
-      draggedItem.style.position = 'fixed';
+      // Fix its position
+      draggedItem.style.position = 'absolute';
       draggedItem.style.left = `${rect.left}px`;
       draggedItem.style.top = `${rect.top}px`;
       draggedItem.style.width = `${rect.width}px`;
       draggedItem.style.zIndex = '1000';
       draggedItem.style.opacity = '0.7';
-      draggedItem.style.pointerEvents = 'none'; // allow elementFromPoint to work
-
+      draggedItem.style.pointerEvents = 'none'; // allow detection of items below
       draggedItem.classList.add('dragging');
+
+      document.body.appendChild(draggedItem); // move out of flow
     });
 
     item.addEventListener('touchmove', e => {
-      e.preventDefault();
       if (!draggedItem) return;
-
       const touch = e.touches[0];
-      const x = touch.clientX - offsetX;
-      const y = touch.clientY - offsetY;
 
-      // Move tile under finger
-      draggedItem.style.left = `${x}px`;
-      draggedItem.style.top = `${y}px`;
+      // Move under finger
+      draggedItem.style.left = `${touch.clientX - offsetX}px`;
+      draggedItem.style.top = `${touch.clientY - offsetY}px`;
 
-      // Find tile under finger
+      // Detect item under finger
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
 
       if (el) {
         const target = el.closest('.draggable-item');
-        const list = draggedItem.parentNode;
+        const list = document.querySelector('.draggable-item').parentNode;
 
         if (target && target !== draggedItem && list.contains(target)) {
           const draggedIndex = [...list.children].indexOf(draggedItem);
@@ -1324,7 +1319,7 @@ function makeItemsDraggable() {
     item.addEventListener('touchend', () => {
       if (!draggedItem) return;
 
-      // Clean up
+      // Reset styles
       draggedItem.style.position = '';
       draggedItem.style.left = '';
       draggedItem.style.top = '';
@@ -1334,10 +1329,16 @@ function makeItemsDraggable() {
       draggedItem.style.pointerEvents = '';
       draggedItem.classList.remove('dragging');
 
+      // Return to list
+      const list = document.querySelector('.draggable-item').parentNode;
+      list.appendChild(draggedItem);
+
       draggedItem = null;
     });
   });
 }
+
+
 
 
 
