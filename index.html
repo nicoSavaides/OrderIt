@@ -743,7 +743,7 @@
         padding-top: 90px !important;
         font-size: 1.5rem !important;
         font-weight: 400 !important;
-        padding: 0 300px;
+        padding: 0 400px;
 
        }
 
@@ -762,6 +762,15 @@
 
 
 
+.draggable-item {
+  border: 1px solid red;
+  background: rgba(255, 255, 0, 0.2);
+  cursor: grab;
+  user-select: none;
+}
+.draggable-item.dragging {
+  cursor: grabbing;
+}
 
 
 
@@ -907,28 +916,33 @@ function showScreen(screenId, push = true) {
 
 
 
-
 window.addEventListener('popstate', (event) => {
   console.log('popstate event:', event);
   console.log('event.state:', event.state);
 
   const screenId = event.state?.screenId;
 
-  if (screenId) {
-    showScreen(screenId, false);
-
-    // Handle statsDisplay visibility if you still need it
-    if (screenId === 'statsDisplay') {
-      document.getElementById('statsDisplay').classList.remove('hidden');
-    } else {
-      document.getElementById('statsDisplay').classList.add('hidden');
-    }
-  } else {
-    // No valid state — maybe do nothing or handle gracefully
+  if (!screenId) {
     console.warn('No screenId in state; ignoring popstate');
-    // Optionally, you could show a default screen here or keep current
+    return;
+  }
+
+  // If trying to go back to "playedTodayScreen", make sure the user actually played
+  if (screenId === 'playedTodayScreen' && !alreadyPlayedToday()) {
+    console.warn('Tried to go to playedTodayScreen but user hasn’t played today');
+    return;
+  }
+
+  showScreen(screenId, false); // Show without pushing again
+
+  // Special handling for the stats section
+  if (screenId === 'statsDisplay') {
+    document.getElementById('statsDisplay').classList.remove('hidden');
+  } else {
+    document.getElementById('statsDisplay').classList.add('hidden');
   }
 });
+
 
 
 
@@ -1001,11 +1015,17 @@ function startGame() {
       currentRound = savedRound;
 
       document.getElementById('welcomeScreen').classList.add('hidden');
-      const gameScreen = document.getElementById('gameScreen');
-      gameScreen.classList.remove('hidden');
-      requestAnimationFrame(() => {
-        gameScreen.classList.add('visible');
-      });
+const gameScreen = document.getElementById('gameScreen');
+gameScreen.classList.remove('hidden');
+requestAnimationFrame(() => {
+  gameScreen.classList.add('visible');
+});
+
+// ✅ Push game screen to history if not already there
+if (!history.state || history.state.screenId !== 'gameScreen') {
+  history.pushState({ screenId: 'gameScreen' }, '', '#gameScreen');
+}
+
 
       loadRound();
 
@@ -1077,6 +1097,7 @@ function loadRound() {
     });
 
     makeItemsDraggable(); // Only needed after creating new elements
+    
   }
 
   // Update strikes and anything else every round
@@ -1214,7 +1235,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  function makeItemsDraggable() {
+function makeItemsDraggable() {
   let hasMoved = false;
 
   const items = document.querySelectorAll('.draggable-item');
@@ -1259,6 +1280,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+
+
+
+  
   // Mobile touch
   items.forEach(item => {
     item.addEventListener('touchstart', (e) => {
@@ -1751,20 +1776,24 @@ window.onload = () => {
       .then(res => res.json())
       .then(data => {
         rounds = data.days[dayIndex];
-        showScreen('playedTodayScreen', false); // Show without pushing
-        history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen'); // Replace initial state with playedTodayScreen
+        showScreen('playedTodayScreen', false); // Just show it
+        // ✅ Only replace state if history is empty or already something unrelated
+        if (!history.state || history.state.screenId !== 'playedTodayScreen') {
+          history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
+        }
       })
       .catch(error => {
         console.error("Error loading rounds data for already played screen:", error);
-        // Fallback to welcome screen or error screen
         showScreen('welcomeScreen');
         history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
       });
   } else {
     showScreen('welcomeScreen');
+    // ✅ Always replace with welcome screen on a new day
     history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
   }
 };
+
 
 
 
