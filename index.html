@@ -1223,27 +1223,46 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
-  let fingerOffsetX = 0;
-  let fingerOffsetY = 0;
 
   items.forEach(item => {
     item.setAttribute('draggable', true);
 
-    // Desktop drag & drop handlers unchanged...
+    // Desktop drag & drop unchanged
+    item.addEventListener('dragstart', () => {
+      draggedItem = item;
+      draggedItem.classList.add('dragging');
+      setTimeout(() => {
+        draggedItem.style.opacity = '0.5';
+      }, 0);
+    });
+
+    item.addEventListener('dragend', () => {
+      draggedItem.style.opacity = '';
+      draggedItem.classList.remove('dragging');
+      draggedItem = null;
+    });
+
+    item.addEventListener('dragover', e => {
+      e.preventDefault();
+      if (draggedItem && draggedItem !== item) {
+        const list = item.parentNode;
+        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+        const targetIndex = Array.from(list.children).indexOf(item);
+        if (draggedIndex < targetIndex) {
+          list.insertBefore(draggedItem, item.nextSibling);
+        } else {
+          list.insertBefore(draggedItem, item);
+        }
+      }
+    });
 
     // Mobile touch handlers
     item.addEventListener('touchstart', e => {
-      const touch = e.touches[0];
       draggedItem = item;
-      const rect = draggedItem.getBoundingClientRect();
-
-      // Calculate finger offset inside the tile
-      fingerOffsetX = touch.clientX - rect.left;
-      fingerOffsetY = touch.clientY - rect.top;
-
       draggedItem.classList.add('dragging');
       draggedItem.style.transition = 'none';
       draggedItem.style.zIndex = '1000';
@@ -1255,13 +1274,10 @@ function makeItemsDraggable() {
       if (!draggedItem) return;
 
       const touch = e.touches[0];
-      // Position dragged item so finger is exactly at fingerOffset inside tile
-      const posX = touch.pageX - fingerOffsetX;
-      const posY = touch.pageY - fingerOffsetY;
+      // Move dragged item visually to finger position (no offset correction)
+      draggedItem.style.transform = `translate(${touch.pageX}px, ${touch.pageY}px)`;
 
-      draggedItem.style.transform = `translate(${posX}px, ${posY}px)`;
-
-      // Temporarily hide dragged item to detect underlying element
+      // Hide dragged item to detect element under finger correctly
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
@@ -1273,7 +1289,6 @@ function makeItemsDraggable() {
         if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
           const draggedIndex = Array.from(list.children).indexOf(draggedItem);
           const targetIndex = Array.from(list.children).indexOf(targetItem);
-
           if (draggedIndex < targetIndex) {
             list.insertBefore(draggedItem, targetItem.nextSibling);
           } else {
@@ -1291,10 +1306,7 @@ function makeItemsDraggable() {
       draggedItem.style.opacity = '';
       draggedItem.style.zIndex = '';
       draggedItem.classList.remove('dragging');
-
       draggedItem = null;
-      fingerOffsetX = 0;
-      fingerOffsetY = 0;
     });
   });
 }
