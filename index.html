@@ -1257,36 +1257,30 @@ function makeItemsDraggable() {
   });
 // Mobile touch
 items.forEach(item => {
-  let dragClone = null;
-
   item.addEventListener('touchstart', (e) => {
     hasMoved = false;
     draggedItem = item;
-
     const touch = e.touches[0];
     draggedItemInitialPosition = {
       x: touch.pageX,
       y: touch.pageY
     };
-    offsetX = 0;
-    offsetY = 0;
+
+    const rect = draggedItem.getBoundingClientRect();
+    offsetX = touch.clientX - rect.left;
+    offsetY = touch.clientY - rect.top;
     currentTargetIndex = Array.from(item.parentNode.children).indexOf(item);
 
-    // Create a clone
-    dragClone = item.cloneNode(true);
-    dragClone.style.position = 'fixed';
-    dragClone.style.left = `${touch.clientX}px`;
-    dragClone.style.top = `${touch.clientY}px`;
-    dragClone.style.width = `${item.offsetWidth}px`;
-    dragClone.style.pointerEvents = 'none';
-    dragClone.style.zIndex = '1000';
-    dragClone.style.opacity = '0.7';
-    dragClone.classList.add('drag-clone');
-
-    document.body.appendChild(dragClone);
-
-    // Hide original to avoid layout shift
-    draggedItem.style.visibility = 'hidden';
+    // Apply fixed positioning to follow the finger without jumping
+    draggedItem.style.position = 'fixed';
+    draggedItem.style.left = `${touch.clientX - offsetX}px`;
+    draggedItem.style.top = `${touch.clientY - offsetY}px`;
+    draggedItem.style.width = `${rect.width}px`;
+    draggedItem.style.height = `${rect.height}px`;
+    draggedItem.style.zIndex = '1000';
+    draggedItem.style.opacity = '0.7';
+    draggedItem.style.transition = 'none';
+    draggedItem.classList.add('dragging');
   });
 
   item.addEventListener('touchmove', (e) => {
@@ -1299,11 +1293,14 @@ items.forEach(item => {
       hasMoved = true;
     }
 
-    // Move the clone with the finger
-    dragClone.style.transform = `translate(${dx}px, ${dy}px)`;
+    draggedItem.style.left = `${touch.clientX - offsetX}px`;
+    draggedItem.style.top = `${touch.clientY - offsetY}px`;
 
-    // Live reordering logic
+    // Live reordering
+    draggedItem.style.visibility = 'hidden';
     const el = document.elementFromPoint(touch.clientX, touch.clientY);
+    draggedItem.style.visibility = 'visible';
+
     if (el) {
       const targetItem = el.closest('.draggable-item');
       const list = draggedItem.parentNode;
@@ -1311,9 +1308,9 @@ items.forEach(item => {
         const targetIndex = Array.from(list.children).indexOf(targetItem);
         if (targetIndex !== currentTargetIndex) {
           if (targetIndex > currentTargetIndex) {
-            list.insertBefore(targetItem, draggedItem);
+            list.insertBefore(draggedItem, targetItem.nextSibling);
           } else {
-            list.insertBefore(targetItem, draggedItem.nextSibling);
+            list.insertBefore(draggedItem, targetItem);
           }
           currentTargetIndex = targetIndex;
         }
@@ -1322,16 +1319,22 @@ items.forEach(item => {
   });
 
   item.addEventListener('touchend', () => {
-    if (dragClone) dragClone.remove();
-
-    draggedItem.style.visibility = '';
+    // Reset styles
+    draggedItem.style.position = '';
+    draggedItem.style.left = '';
+    draggedItem.style.top = '';
+    draggedItem.style.width = '';
+    draggedItem.style.height = '';
+    draggedItem.style.zIndex = '';
+    draggedItem.style.opacity = '';
+    draggedItem.style.transition = '';
     draggedItem.classList.remove('dragging');
+
     draggedItem = null;
     currentTargetIndex = -1;
   });
 });
 }
-
 
 
 
