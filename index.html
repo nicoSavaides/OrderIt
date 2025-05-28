@@ -739,11 +739,12 @@
       font-weight: 700;
     }
 
-      p {
+      #welcomeScreen p {
         padding-top: 90px !important;
         font-size: 1.5rem !important;
         font-weight: 400 !important;
         padding: 0 400px;
+        
 
        }
 
@@ -752,26 +753,8 @@
         font-size: 1.5rem;
         padding: 12px 25px;
         margin-top: 150px;
-      }
-
-
-
-
-  
+      }  
 }
-
-
-
-.draggable-item {
-  border: 1px solid red;
-  background: rgba(255, 255, 0, 0.2);
-  cursor: grab;
-  user-select: none;
-}
-.draggable-item.dragging {
-  cursor: grabbing;
-}
-
 
 
 
@@ -780,9 +763,6 @@
   </style>
 </head>
 <body>
- 
-
-  
 
 
 
@@ -1265,129 +1245,101 @@ function makeItemsDraggable() {
     item.addEventListener('dragover', (e) => e.preventDefault());
     item.addEventListener('dragenter', (e) => e.preventDefault());
 
-    item.addEventListener('drop', () => {
-      if (draggedItem && draggedItem !== item) {
-        const list = item.parentNode;
-        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-        const targetIndex = Array.from(list.children).indexOf(item);
+    item.addEventListener('dragover', (e) => {
+  e.preventDefault();
+  if (draggedItem && draggedItem !== item) {
+    const list = item.parentNode;
+    const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+    const targetIndex = Array.from(list.children).indexOf(item);
 
-        if (draggedIndex < targetIndex) {
-          list.insertBefore(draggedItem, item.nextSibling);
-        } else {
-          list.insertBefore(draggedItem, item);
-        }
-      }
-    });
+    if (draggedIndex < targetIndex) {
+      list.insertBefore(draggedItem, item.nextSibling);
+    } else {
+      list.insertBefore(draggedItem, item);
+    }
+  }
+});
+
   });
 
 
 
 
   
-  // Mobile touch
-  items.forEach(item => {
-    item.addEventListener('touchstart', (e) => {
-      hasMoved = false;
+// Mobile touch
+items.forEach(item => {
+  item.addEventListener('touchstart', (e) => {
+    hasMoved = false;
 
-      e.preventDefault();
-      draggedItem = item;
-      draggedItemInitialPosition = {
-        x: e.touches[0].pageX,
-        y: e.touches[0].pageY
-      };
-      draggedItem.classList.add('dragging');
-      draggedItem.style.transition = 'none';
-      draggedItem.style.zIndex = '1000';
-      draggedItem.style.opacity = '0.5';
-    });
+    e.preventDefault();
+    draggedItem = item;
+    draggedItemInitialPosition = {
+      x: e.touches[0].pageX,
+      y: e.touches[0].pageY
+    };
+    draggedItem.classList.add('dragging');
+    draggedItem.style.transition = 'none';
+    draggedItem.style.zIndex = '1000';
+    draggedItem.style.opacity = '0.5';
+  });
 
-    item.addEventListener('touchmove', (e) => {
-      e.preventDefault();
-      const touch = e.touches[0];
-const dx = touch.pageX - draggedItemInitialPosition.x;
-const dy = touch.pageY - draggedItemInitialPosition.y;
+  item.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const dx = touch.pageX - draggedItemInitialPosition.x;
+    const dy = touch.pageY - draggedItemInitialPosition.y;
 
-if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
-  hasMoved = true;
-}
+    if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
+      hasMoved = true;
+    }
 
-      
-      offsetX = touch.pageX - draggedItemInitialPosition.x;
-      offsetY = touch.pageY - draggedItemInitialPosition.y;
-      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-    });
+    offsetX = dx;
+    offsetY = dy;
+    draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-
-
-
-
-
-item.addEventListener('touchend', (e) => {
-  // Reset visuals
-
-  if (!hasMoved) {
-  // It's a tap, not a drag — just reset and exit
-  draggedItem.classList.remove('dragging');
-  draggedItem.style.transform = '';
-  draggedItem.style.transition = '';
-  draggedItem.style.opacity = '';
-  draggedItem.style.zIndex = '';
-  draggedItem = null;
-  return;
-}
-
-  draggedItem.style.transform = '';
-  draggedItem.style.transition = '';
-  draggedItem.style.opacity = '';
-  draggedItem.style.zIndex = '';
-
-  const touch = e.changedTouches[0];
-  const list = draggedItem.parentNode;
-  const itemsArray = Array.from(list.children);
-
-  let targetItem = null;
-
-  // Start scan from 0 to ±50px to prioritize closest elements
-  const scanOffsets = [];
-  for (let i = 0; i <= 50; i += 5) {
-    scanOffsets.push(i, -i); // [0, -0, 5, -5, 10, -10, ...]
-  }
-
-  for (const offset of scanOffsets) {
-    // Temporarily hide draggedItem for detection
+    // 🔁 Live reordering logic
     draggedItem.style.visibility = 'hidden';
-    const el = document.elementFromPoint(touch.clientX, touch.clientY + offset);
+    const el = document.elementFromPoint(touch.clientX, touch.clientY);
     draggedItem.style.visibility = 'visible';
 
-    if (!el) continue;
-    const candidate = el.closest('.draggable-item');
-    if (candidate && candidate !== draggedItem) {
-      targetItem = candidate;
-      break;
+    if (el) {
+      const targetItem = el.closest('.draggable-item');
+      if (targetItem && targetItem !== draggedItem) {
+        const list = targetItem.parentNode;
+        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+        const targetIndex = Array.from(list.children).indexOf(targetItem);
+
+        if (draggedIndex < targetIndex) {
+          list.insertBefore(draggedItem, targetItem.nextSibling);
+        } else {
+          list.insertBefore(draggedItem, targetItem);
+        }
+      }
     }
-  }
-
-  if (targetItem) {
-  const targetRect = targetItem.getBoundingClientRect();
-  const targetCenterY = targetRect.top + targetRect.height / 2;
-
-  if (touch.clientY > targetCenterY) {
-    list.insertBefore(draggedItem, targetItem.nextSibling); // drop after
-  } else {
-    list.insertBefore(draggedItem, targetItem); // drop before
-  }
-}
-
-
-  draggedItem.classList.remove('dragging');
-  draggedItem = null;
-});
-
-
   });
+
+  item.addEventListener('touchend', (e) => {
+    if (!hasMoved) {
+      // It's a tap, not a drag — just reset and exit
+      draggedItem.classList.remove('dragging');
+      draggedItem.style.transform = '';
+      draggedItem.style.transition = '';
+      draggedItem.style.opacity = '';
+      draggedItem.style.zIndex = '';
+      draggedItem = null;
+      return;
+    }
+
+    // Reset draggedItem visual styles
+    draggedItem.style.transform = '';
+    draggedItem.style.transition = '';
+    draggedItem.style.opacity = '';
+    draggedItem.style.zIndex = '';
+    draggedItem.classList.remove('dragging');
+    draggedItem = null;
+  });
+});
 }
-
-
 
 
 
