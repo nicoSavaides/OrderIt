@@ -1226,14 +1226,12 @@ document.addEventListener('DOMContentLoaded', () => {
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
-  let draggedItemInitialPos = { x: 0, y: 0 };
-  let offsetX = 0;
-  let offsetY = 0;
+  let fingerOffset = { x: 0, y: 0 };
 
   items.forEach(item => {
     item.setAttribute('draggable', true);
 
-    // Desktop drag
+    // --- Desktop drag ---
     item.addEventListener('dragstart', () => {
       draggedItem = item;
       draggedItem.classList.add('dragging');
@@ -1263,18 +1261,24 @@ function makeItemsDraggable() {
       }
     });
 
-    // Touch drag (mobile)
+    // --- Mobile touch ---
     item.addEventListener('touchstart', e => {
       const touch = e.touches[0];
       draggedItem = item;
-      draggedItemInitialPos = { x: touch.pageX, y: touch.pageY };
-      offsetX = 0;
-      offsetY = 0;
+
+      const rect = item.getBoundingClientRect();
+      fingerOffset.x = touch.clientX - rect.left;
+      fingerOffset.y = touch.clientY - rect.top;
 
       draggedItem.classList.add('dragging');
-      draggedItem.style.transition = 'none';
+      draggedItem.style.position = 'fixed';
+      draggedItem.style.left = `${touch.clientX - fingerOffset.x}px`;
+      draggedItem.style.top = `${touch.clientY - fingerOffset.y}px`;
+      draggedItem.style.width = `${rect.width}px`;
       draggedItem.style.zIndex = '1000';
       draggedItem.style.opacity = '0.7';
+      draggedItem.style.transition = 'none';
+      draggedItem.style.pointerEvents = 'none'; // Don't block elements under finger
     });
 
     item.addEventListener('touchmove', e => {
@@ -1282,28 +1286,16 @@ function makeItemsDraggable() {
       if (!draggedItem) return;
 
       const touch = e.touches[0];
-      offsetX = touch.pageX - draggedItemInitialPos.x;
-      offsetY = touch.pageY - draggedItemInitialPos.y;
+      draggedItem.style.left = `${touch.clientX - fingerOffset.x}px`;
+      draggedItem.style.top = `${touch.clientY - fingerOffset.y}px`;
 
-      // Move under finger
-      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
-
-      // Detect overlap target
-      draggedItem.style.visibility = 'hidden';
+      // Detect element under finger
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
-      draggedItem.style.visibility = 'visible';
-
       if (el) {
         const targetItem = el.closest('.draggable-item');
         const list = draggedItem.parentNode;
 
         if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
-          // Save current offset
-          const currentTransform = draggedItem.style.transform;
-
-          // Temporarily disable transform before inserting to avoid jump
-          draggedItem.style.transform = 'none';
-
           const draggedIndex = Array.from(list.children).indexOf(draggedItem);
           const targetIndex = Array.from(list.children).indexOf(targetItem);
 
@@ -1312,9 +1304,6 @@ function makeItemsDraggable() {
           } else {
             list.insertBefore(draggedItem, targetItem);
           }
-
-          // Reapply transform after move to prevent visual jump
-          draggedItem.style.transform = currentTransform;
         }
       }
     });
@@ -1322,17 +1311,21 @@ function makeItemsDraggable() {
     item.addEventListener('touchend', () => {
       if (!draggedItem) return;
 
-      draggedItem.style.transition = '';
-      draggedItem.style.transform = '';
-      draggedItem.style.opacity = '';
+      // Reset styles
+      draggedItem.style.position = '';
+      draggedItem.style.left = '';
+      draggedItem.style.top = '';
+      draggedItem.style.width = '';
       draggedItem.style.zIndex = '';
+      draggedItem.style.opacity = '';
+      draggedItem.style.transition = '';
+      draggedItem.style.pointerEvents = '';
       draggedItem.classList.remove('dragging');
 
       draggedItem = null;
     });
   });
 }
-
 
 
 
