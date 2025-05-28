@@ -1246,6 +1246,7 @@ function makeItemsDraggable() {
     });
 
     item.addEventListener('dragend', () => {
+      if (!draggedItem) return;
       draggedItem.style.opacity = '';
       draggedItem.classList.remove('dragging');
       draggedItem = null;
@@ -1288,40 +1289,38 @@ function makeItemsDraggable() {
       offsetX = touch.pageX - draggedItemInitialPos.x;
       offsetY = touch.pageY - draggedItemInitialPos.y;
 
-      // Move tile visually under finger
+      // Move dragged item under finger
       draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-      // Detect element under finger while hiding dragged item
+      // Hide dragged item temporarily to detect what's under finger
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
 
-      if (el) {
-        const targetItem = el.closest('.draggable-item');
-        const list = draggedItem.parentNode;
+      if (!el) return;
+      const targetItem = el.closest('.draggable-item');
+      const list = draggedItem.parentNode;
 
-        if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
-          // Save current transform before moving in DOM
-          const currentTransform = draggedItem.style.transform;
+      // If we found a valid target and it's not the dragged one
+      if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
+        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
+        const targetIndex = Array.from(list.children).indexOf(targetItem);
 
-          // Remove transform temporarily to prevent jump on DOM reorder
+        // Only reorder if the finger is past the middle point of the target tile (to avoid jump at gap)
+        const targetRect = targetItem.getBoundingClientRect();
+        const middleY = targetRect.top + targetRect.height / 2;
+
+        if ((offsetY < 0 && touch.clientY < middleY && draggedIndex > targetIndex) ||
+            (offsetY > 0 && touch.clientY > middleY && draggedIndex < targetIndex)) {
+          // Temporarily remove transform to avoid jump during reordering
+          draggedItem.style.transition = 'none';
           draggedItem.style.transform = 'none';
-
-          const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-          const targetIndex = Array.from(list.children).indexOf(targetItem);
 
           if (draggedIndex < targetIndex) {
             list.insertBefore(draggedItem, targetItem.nextSibling);
           } else {
             list.insertBefore(draggedItem, targetItem);
           }
-
-          // Update initial position reference for smooth continuous drag
-          draggedItemInitialPos.x = touch.pageX - offsetX;
-          draggedItemInitialPos.y = touch.pageY - offsetY;
-
-          // Reapply transform so tile stays visually under finger
-          draggedItem.style.transform = currentTransform;
         }
       }
     });
