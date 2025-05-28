@@ -1255,84 +1255,81 @@ function makeItemsDraggable() {
       }
     });
   });
+// Mobile touch
+items.forEach(item => {
+  let dragClone = null;
 
-  // Mobile touch
-  items.forEach(item => {
-    item.addEventListener('touchstart', (e) => {
-      hasMoved = false;
-      draggedItem = item;
-      draggedItemInitialPosition = {
-        x: e.touches[0].pageX,
-        y: e.touches[0].pageY
-      };
-      offsetX = 0;
-      offsetY = 0;
-      currentTargetIndex = Array.from(item.parentNode.children).indexOf(item);
+  item.addEventListener('touchstart', (e) => {
+    hasMoved = false;
+    draggedItem = item;
 
-      draggedItem.classList.add('dragging');
-      draggedItem.style.transition = 'none';
-      draggedItem.style.zIndex = '1000';
-      draggedItem.style.opacity = '0.7';
-    });
+    const touch = e.touches[0];
+    draggedItemInitialPosition = {
+      x: touch.pageX,
+      y: touch.pageY
+    };
+    offsetX = 0;
+    offsetY = 0;
+    currentTargetIndex = Array.from(item.parentNode.children).indexOf(item);
 
-    item.addEventListener('touchmove', (e) => {
-      e.preventDefault();
-      const touch = e.touches[0];
-      const dx = touch.pageX - draggedItemInitialPosition.x;
-      const dy = touch.pageY - draggedItemInitialPosition.y;
+    // Create a clone
+    dragClone = item.cloneNode(true);
+    dragClone.style.position = 'fixed';
+    dragClone.style.left = `${touch.clientX}px`;
+    dragClone.style.top = `${touch.clientY}px`;
+    dragClone.style.width = `${item.offsetWidth}px`;
+    dragClone.style.pointerEvents = 'none';
+    dragClone.style.zIndex = '1000';
+    dragClone.style.opacity = '0.7';
+    dragClone.classList.add('drag-clone');
 
-      if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
-        hasMoved = true;
-      }
+    document.body.appendChild(dragClone);
 
-      offsetX = dx;
-      offsetY = dy;
-      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+    // Hide original to avoid layout shift
+    draggedItem.style.visibility = 'hidden';
+  });
 
-      // Find target item under finger for reordering (but don’t move draggedItem in DOM)
-      draggedItem.style.visibility = 'hidden';
-      const el = document.elementFromPoint(touch.clientX, touch.clientY);
-      draggedItem.style.visibility = 'visible';
+  item.addEventListener('touchmove', (e) => {
+    e.preventDefault();
+    const touch = e.touches[0];
+    const dx = touch.pageX - draggedItemInitialPosition.x;
+    const dy = touch.pageY - draggedItemInitialPosition.y;
 
-      if (el) {
-        const targetItem = el.closest('.draggable-item');
-        const list = draggedItem.parentNode;
-        if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
-          const targetIndex = Array.from(list.children).indexOf(targetItem);
-          if (targetIndex !== currentTargetIndex) {
-            // reorder visually by moving targetItem in DOM (not draggedItem)
-            if (targetIndex > currentTargetIndex) {
-              list.insertBefore(targetItem, draggedItem);
-            } else {
-              list.insertBefore(targetItem, draggedItem.nextSibling);
-            }
-            currentTargetIndex = targetIndex;
+    if (Math.abs(dx) > 5 || Math.abs(dy) > 5) {
+      hasMoved = true;
+    }
+
+    // Move the clone with the finger
+    dragClone.style.transform = `translate(${dx}px, ${dy}px)`;
+
+    // Live reordering logic
+    const el = document.elementFromPoint(touch.clientX, touch.clientY);
+    if (el) {
+      const targetItem = el.closest('.draggable-item');
+      const list = draggedItem.parentNode;
+      if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
+        const targetIndex = Array.from(list.children).indexOf(targetItem);
+        if (targetIndex !== currentTargetIndex) {
+          if (targetIndex > currentTargetIndex) {
+            list.insertBefore(targetItem, draggedItem);
+          } else {
+            list.insertBefore(targetItem, draggedItem.nextSibling);
           }
+          currentTargetIndex = targetIndex;
         }
       }
-    });
-
-    item.addEventListener('touchend', () => {
-      draggedItem.style.transition = '';
-      draggedItem.style.transform = '';
-      draggedItem.style.opacity = '';
-      draggedItem.style.zIndex = '';
-      draggedItem.classList.remove('dragging');
-
-      // Finally insert draggedItem at currentTargetIndex
-      const list = draggedItem.parentNode;
-      const children = Array.from(list.children).filter(child => child !== draggedItem);
-
-      if (currentTargetIndex >= 0 && currentTargetIndex < children.length) {
-        list.insertBefore(draggedItem, children[currentTargetIndex]);
-      } else {
-        list.appendChild(draggedItem);
-      }
-
-      draggedItem = null;
-      currentTargetIndex = -1;
-    });
+    }
   });
+
+  item.addEventListener('touchend', () => {
+    if (dragClone) dragClone.remove();
+
+    draggedItem.style.visibility = '';
+    draggedItem.classList.remove('dragging');
+    draggedItem = null;
+    currentTargetIndex = -1;
+  });
+});
 }
 
 
