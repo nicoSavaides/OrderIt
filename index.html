@@ -757,8 +757,15 @@
 }
 
 
-.draggable-item.invisible {
-  visibility: hidden;
+.draggable-item.dragging {
+  pointer-events: none;
+  touch-action: none;
+}
+
+.draggable-item.placeholder {
+  background: transparent;
+  border: 2px dashed #ccc;
+  box-sizing: border-box;
 }
 
 
@@ -1229,98 +1236,69 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
-
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
-  let draggedItemInitialPos = { x: 0, y: 0 };
-  let offsetX = 0;
-  let offsetY = 0;
+  let placeholder = document.createElement('div');
+  placeholder.className = 'draggable-item placeholder';
+
+  let startX = 0, startY = 0, offsetX = 0, offsetY = 0;
 
   items.forEach(item => {
-    item.setAttribute('draggable', true);
+    item.setAttribute('draggable', false);
 
-    // DESKTOP DRAG
-    item.addEventListener('dragstart', () => {
-      draggedItem = item;
-      draggedItem.classList.add('dragging');
-      setTimeout(() => {
-        draggedItem.style.opacity = '0.5';
-      }, 0);
-    });
-
-    item.addEventListener('dragend', () => {
-      draggedItem.style.opacity = '';
-      draggedItem.classList.remove('dragging');
-      draggedItem = null;
-    });
-
-    item.addEventListener('dragover', e => {
-      e.preventDefault();
-      if (draggedItem && draggedItem !== item) {
-        const list = item.parentNode;
-        const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-        const targetIndex = Array.from(list.children).indexOf(item);
-
-        if (draggedIndex < targetIndex) {
-          list.insertBefore(draggedItem, item.nextSibling);
-        } else {
-          list.insertBefore(draggedItem, item);
-        }
-      }
-    });
-
-    // TOUCH DRAG
     item.addEventListener('touchstart', e => {
       const touch = e.touches[0];
       draggedItem = item;
-      draggedItemInitialPos = { x: touch.pageX, y: touch.pageY };
-      offsetX = 0;
-      offsetY = 0;
 
+      const rect = item.getBoundingClientRect();
+      offsetX = touch.clientX - rect.left;
+      offsetY = touch.clientY - rect.top;
+
+      startX = touch.pageX;
+      startY = touch.pageY;
+
+      // Set styles to float above
       draggedItem.classList.add('dragging');
-      draggedItem.style.transition = 'none';
+      draggedItem.style.position = 'absolute';
       draggedItem.style.zIndex = '1000';
-      draggedItem.style.opacity = '0.7';
-      draggedItem.style.pointerEvents = 'none'; // allow detecting items under finger
+      draggedItem.style.width = `${rect.width}px`;
+      draggedItem.style.height = `${rect.height}px`;
+      draggedItem.style.left = `${rect.left + window.scrollX}px`;
+      draggedItem.style.top = `${rect.top + window.scrollY}px`;
+
+      // Insert placeholder
+      placeholder.style.height = `${rect.height}px`;
+      placeholder.style.margin = getComputedStyle(item).margin;
+      item.parentNode.insertBefore(placeholder, item.nextSibling);
     });
 
     item.addEventListener('touchmove', e => {
-      e.preventDefault();
       if (!draggedItem) return;
-
+      e.preventDefault();
       const touch = e.touches[0];
-      offsetX = touch.pageX - draggedItemInitialPos.x;
-      offsetY = touch.pageY - draggedItemInitialPos.y;
 
-      // Move the real tile under finger
-      draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+      const newX = touch.pageX - offsetX;
+      const newY = touch.pageY - offsetY;
 
-      // Detect overlap
+      draggedItem.style.left = `${newX}px`;
+      draggedItem.style.top = `${newY}px`;
+
+      // Hide dragged item to detect what's under it
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
 
-      if (el) {
-        const targetItem = el.closest('.draggable-item');
-        const list = draggedItem.parentNode;
+      const targetItem = el?.closest('.draggable-item');
+      const list = placeholder.parentNode;
 
-        if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
-          const currentTransform = draggedItem.style.transform;
-          draggedItem.style.transform = 'none'; // stop visual jump
-          const draggedIndex = Array.from(list.children).indexOf(draggedItem);
-          const targetIndex = Array.from(list.children).indexOf(targetItem);
-
-          if (draggedIndex < targetIndex) {
-            list.insertBefore(draggedItem, targetItem.nextSibling);
-          } else {
-            list.insertBefore(draggedItem, targetItem);
-          }
-
-          // Reapply position after reordering
-          draggedItem.style.transform = currentTransform;
+      if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
+        const rect = targetItem.getBoundingClientRect();
+        const midpoint = rect.top + rect.height / 2;
+        if (touch.clientY < midpoint) {
+          list.insertBefore(placeholder, targetItem);
+        } else {
+          list.insertBefore(placeholder, targetItem.nextSibling);
         }
       }
     });
@@ -1328,12 +1306,18 @@ function makeItemsDraggable() {
     item.addEventListener('touchend', () => {
       if (!draggedItem) return;
 
-      draggedItem.style.transition = '';
-      draggedItem.style.transform = '';
-      draggedItem.style.opacity = '';
-      draggedItem.style.zIndex = '';
-      draggedItem.style.pointerEvents = '';
+      placeholder.parentNode.insertBefore(draggedItem, placeholder);
+      placeholder.remove();
+
+      // Reset styles
       draggedItem.classList.remove('dragging');
+      draggedItem.style.position = '';
+      draggedItem.style.zIndex = '';
+      draggedItem.style.left = '';
+      draggedItem.style.top = '';
+      draggedItem.style.width = '';
+      draggedItem.style.height = '';
+      draggedItem.style.visibility = '';
 
       draggedItem = null;
     });
