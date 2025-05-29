@@ -1225,18 +1225,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
-  let draggedItemInitialPos = { x: 0, y: 0 };
   let offsetX = 0;
   let offsetY = 0;
+  let startX = 0;
+  let startY = 0;
 
   items.forEach(item => {
     item.setAttribute('draggable', true);
 
-    // Desktop drag
+    // DESKTOP DRAG
     item.addEventListener('dragstart', () => {
       draggedItem = item;
       draggedItem.classList.add('dragging');
@@ -1267,11 +1267,12 @@ function makeItemsDraggable() {
       }
     });
 
-    // Touch drag (mobile)
+    // TOUCH DRAG
     item.addEventListener('touchstart', e => {
       const touch = e.touches[0];
       draggedItem = item;
-      draggedItemInitialPos = { x: touch.pageX, y: touch.pageY };
+      startX = touch.pageX;
+      startY = touch.pageY;
       offsetX = 0;
       offsetY = 0;
 
@@ -1279,6 +1280,7 @@ function makeItemsDraggable() {
       draggedItem.style.transition = 'none';
       draggedItem.style.zIndex = '1000';
       draggedItem.style.opacity = '0.7';
+      draggedItem.style.pointerEvents = 'none'; // avoid weird behavior
     });
 
     item.addEventListener('touchmove', e => {
@@ -1286,13 +1288,11 @@ function makeItemsDraggable() {
       if (!draggedItem) return;
 
       const touch = e.touches[0];
-      offsetX = touch.pageX - draggedItemInitialPos.x;
-      offsetY = touch.pageY - draggedItemInitialPos.y;
+      offsetX = touch.pageX - startX;
+      offsetY = touch.pageY - startY;
 
-      // Move dragged item under finger
       draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
-      // Hide dragged item temporarily to detect what's under finger
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
@@ -1301,26 +1301,36 @@ function makeItemsDraggable() {
       const targetItem = el.closest('.draggable-item');
       const list = draggedItem.parentNode;
 
-      // If we found a valid target and it's not the dragged one
       if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
         const draggedIndex = Array.from(list.children).indexOf(draggedItem);
         const targetIndex = Array.from(list.children).indexOf(targetItem);
-
-        // Only reorder if the finger is past the middle point of the target tile (to avoid jump at gap)
         const targetRect = targetItem.getBoundingClientRect();
         const middleY = targetRect.top + targetRect.height / 2;
 
         if ((offsetY < 0 && touch.clientY < middleY && draggedIndex > targetIndex) ||
             (offsetY > 0 && touch.clientY > middleY && draggedIndex < targetIndex)) {
-          // Temporarily remove transform to avoid jump during reordering
-          draggedItem.style.transition = 'none';
-          draggedItem.style.transform = 'none';
+
+          // Preserve visual position before reordering
+          const beforeRect = draggedItem.getBoundingClientRect();
 
           if (draggedIndex < targetIndex) {
             list.insertBefore(draggedItem, targetItem.nextSibling);
           } else {
             list.insertBefore(draggedItem, targetItem);
           }
+
+          const afterRect = draggedItem.getBoundingClientRect();
+
+          // Adjust transform by the change in visual position
+          const dx = beforeRect.left - afterRect.left;
+          const dy = beforeRect.top - afterRect.top;
+
+          startX += dx;
+          startY += dy;
+          offsetX += dx;
+          offsetY += dy;
+
+          draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
         }
       }
     });
@@ -1332,14 +1342,13 @@ function makeItemsDraggable() {
       draggedItem.style.transform = '';
       draggedItem.style.opacity = '';
       draggedItem.style.zIndex = '';
+      draggedItem.style.pointerEvents = '';
       draggedItem.classList.remove('dragging');
 
       draggedItem = null;
     });
   });
 }
-
-
 
 
 
