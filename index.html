@@ -758,6 +758,10 @@
 
 
 
+.draggable-item.dragging {
+  pointer-events: none;
+  touch-action: none;
+}
 
 
 
@@ -1225,19 +1229,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
-
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
-  let placeholder = document.createElement('div');
-  placeholder.className = 'draggable-item placeholder';
-
   let startX = 0, startY = 0, offsetX = 0, offsetY = 0;
 
   items.forEach(item => {
-    item.setAttribute('draggable', false);
+    item.setAttribute('draggable', false); // disable native drag on mobile
 
+    // Touch start
     item.addEventListener('touchstart', e => {
       const touch = e.touches[0];
       draggedItem = item;
@@ -1249,72 +1249,64 @@ function makeItemsDraggable() {
       startX = touch.pageX;
       startY = touch.pageY;
 
-      // Set styles to float above
       draggedItem.classList.add('dragging');
-      draggedItem.style.position = 'absolute';
-      draggedItem.style.zIndex = '1000';
+      draggedItem.style.position = 'fixed';
+      draggedItem.style.left = `${rect.left}px`;
+      draggedItem.style.top = `${rect.top}px`;
       draggedItem.style.width = `${rect.width}px`;
-      draggedItem.style.height = `${rect.height}px`;
-      draggedItem.style.left = `${rect.left + window.scrollX}px`;
-      draggedItem.style.top = `${rect.top + window.scrollY}px`;
-
-      // Insert placeholder
-      placeholder.style.height = `${rect.height}px`;
-      placeholder.style.margin = getComputedStyle(item).margin;
-      item.parentNode.insertBefore(placeholder, item.nextSibling);
+      draggedItem.style.zIndex = '1000';
+      draggedItem.style.opacity = '0.7';
+      draggedItem.style.transition = 'none';
     });
 
+    // Touch move
     item.addEventListener('touchmove', e => {
       if (!draggedItem) return;
       e.preventDefault();
       const touch = e.touches[0];
-
-      const newX = touch.pageX - offsetX;
-      const newY = touch.pageY - offsetY;
+      const newX = touch.clientX - offsetX;
+      const newY = touch.clientY - offsetY;
 
       draggedItem.style.left = `${newX}px`;
       draggedItem.style.top = `${newY}px`;
 
-      // Hide dragged item to detect what's under it
+      // Detect overlap
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
 
-      const targetItem = el?.closest('.draggable-item');
-      const list = placeholder.parentNode;
+      const target = el?.closest('.draggable-item');
+      const list = draggedItem.parentNode;
 
-      if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
-        const rect = targetItem.getBoundingClientRect();
-        const midpoint = rect.top + rect.height / 2;
-        if (touch.clientY < midpoint) {
-          list.insertBefore(placeholder, targetItem);
+      if (target && target !== draggedItem && list.contains(target)) {
+        const draggedIndex = [...list.children].indexOf(draggedItem);
+        const targetIndex = [...list.children].indexOf(target);
+
+        if (draggedIndex < targetIndex) {
+          list.insertBefore(draggedItem, target.nextSibling);
         } else {
-          list.insertBefore(placeholder, targetItem.nextSibling);
+          list.insertBefore(draggedItem, target);
         }
       }
     });
 
+    // Touch end
     item.addEventListener('touchend', () => {
       if (!draggedItem) return;
 
-      placeholder.parentNode.insertBefore(draggedItem, placeholder);
-      placeholder.remove();
-
-      // Reset styles
-      draggedItem.classList.remove('dragging');
       draggedItem.style.position = '';
-      draggedItem.style.zIndex = '';
       draggedItem.style.left = '';
       draggedItem.style.top = '';
       draggedItem.style.width = '';
-      draggedItem.style.height = '';
-      draggedItem.style.visibility = '';
+      draggedItem.style.zIndex = '';
+      draggedItem.style.opacity = '';
+      draggedItem.style.transition = '';
+      draggedItem.classList.remove('dragging');
 
       draggedItem = null;
     });
   });
 }
-
 
 
 
