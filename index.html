@@ -1224,19 +1224,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-
 function makeItemsDraggable() {
   const items = document.querySelectorAll('.draggable-item');
   let draggedItem = null;
+  let draggedItemInitialPos = { x: 0, y: 0 };
   let offsetX = 0;
   let offsetY = 0;
-  let startX = 0;
-  let startY = 0;
 
   items.forEach(item => {
     item.setAttribute('draggable', true);
 
-    // DESKTOP DRAG
+    // Desktop drag
     item.addEventListener('dragstart', () => {
       draggedItem = item;
       draggedItem.classList.add('dragging');
@@ -1267,12 +1265,11 @@ function makeItemsDraggable() {
       }
     });
 
-    // TOUCH DRAG
+    // Touch drag (mobile)
     item.addEventListener('touchstart', e => {
       const touch = e.touches[0];
       draggedItem = item;
-      startX = touch.pageX;
-      startY = touch.pageY;
+      draggedItemInitialPos = { x: touch.pageX, y: touch.pageY };
       offsetX = 0;
       offsetY = 0;
 
@@ -1280,7 +1277,6 @@ function makeItemsDraggable() {
       draggedItem.style.transition = 'none';
       draggedItem.style.zIndex = '1000';
       draggedItem.style.opacity = '0.7';
-      draggedItem.style.pointerEvents = 'none'; // avoid weird behavior
     });
 
     item.addEventListener('touchmove', e => {
@@ -1288,11 +1284,13 @@ function makeItemsDraggable() {
       if (!draggedItem) return;
 
       const touch = e.touches[0];
-      offsetX = touch.pageX - startX;
-      offsetY = touch.pageY - startY;
+      offsetX = touch.pageX - draggedItemInitialPos.x;
+      offsetY = touch.pageY - draggedItemInitialPos.y;
 
+      // Move dragged item under finger
       draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
 
+      // Hide to detect element under finger
       draggedItem.style.visibility = 'hidden';
       const el = document.elementFromPoint(touch.clientX, touch.clientY);
       draggedItem.style.visibility = 'visible';
@@ -1304,13 +1302,14 @@ function makeItemsDraggable() {
       if (targetItem && targetItem !== draggedItem && list.contains(targetItem)) {
         const draggedIndex = Array.from(list.children).indexOf(draggedItem);
         const targetIndex = Array.from(list.children).indexOf(targetItem);
+
         const targetRect = targetItem.getBoundingClientRect();
         const middleY = targetRect.top + targetRect.height / 2;
 
-        if ((offsetY < 0 && touch.clientY < middleY && draggedIndex > targetIndex) ||
-            (offsetY > 0 && touch.clientY > middleY && draggedIndex < targetIndex)) {
+        if ((offsetY > 0 && touch.clientY > middleY && draggedIndex < targetIndex) ||
+            (offsetY < 0 && touch.clientY < middleY && draggedIndex > targetIndex)) {
 
-          // Preserve visual position before reordering
+          // Before reordering, measure position
           const beforeRect = draggedItem.getBoundingClientRect();
 
           if (draggedIndex < targetIndex) {
@@ -1319,16 +1318,16 @@ function makeItemsDraggable() {
             list.insertBefore(draggedItem, targetItem);
           }
 
+          // After reordering, measure new position
           const afterRect = draggedItem.getBoundingClientRect();
+          const deltaY = beforeRect.top - afterRect.top;
+          const deltaX = beforeRect.left - afterRect.left;
 
-          // Adjust transform by the change in visual position
-          const dx = beforeRect.left - afterRect.left;
-          const dy = beforeRect.top - afterRect.top;
-
-          startX += dx;
-          startY += dy;
-          offsetX += dx;
-          offsetY += dy;
+          // Adjust offset to cancel visual jump
+          offsetX += deltaX;
+          offsetY += deltaY;
+          draggedItemInitialPos.x -= deltaX;
+          draggedItemInitialPos.y -= deltaY;
 
           draggedItem.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
         }
@@ -1342,13 +1341,14 @@ function makeItemsDraggable() {
       draggedItem.style.transform = '';
       draggedItem.style.opacity = '';
       draggedItem.style.zIndex = '';
-      draggedItem.style.pointerEvents = '';
       draggedItem.classList.remove('dragging');
 
       draggedItem = null;
     });
   });
 }
+
+
 
 
 
