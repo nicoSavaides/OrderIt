@@ -727,7 +727,7 @@
 
       h2 {
       position: fixed;
-      font-size: 2.15rem !important;
+      font-size: 3rem !important;
       line-height: 1.4 !important;
       top: 36px;               /* Adjust to set how far from the top of the screen */
       left: 50%;               /* Position horizontally at the center */
@@ -754,6 +754,64 @@
         padding: 12px 25px;
         margin-top: 150px;
       }  
+
+
+
+
+
+      
+      .draggable-item {
+      will-change: transform;
+      transform: translateZ(0);       /* Forces GPU layer */
+      backface-visibility: hidden;    /* Avoids flickering/glitches */
+
+      transform-style: preserve-3d;
+      
+      font-size: 1.5rem;
+      width: 90%;
+    }
+
+
+       
+    #itemListWrapper {
+    position: absolute;  /* Use absolute positioning to ensure it is centered */
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);  /* Center the element */
+    width: 90%;  /* Ensure it doesn't stretch beyond the screen width */
+    z-index: 10;  /* Ensure it's above other content */
+    box-sizing: border-box;  /* Prevent padding/margins from affecting width */
+    will-change: transform; /* Optimize for mobile */
+  }
+
+
+      #strikeCount {
+        position: fixed;
+        font-size: 1.2rem !important;
+        top: 600px; /* Set how far from the top of the screen you want it */
+        left: 50%;
+        transform: translateX(-50%); /* Centers the element horizontally */
+        white-space: nowrap; /* Prevents the text from wrapping onto the next line */
+        min-width: 200px; 
+        
+      }
+
+
+          #submitWrapper {
+      position: fixed;
+      bottom: 200px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1000; /* Ensure it's on top */
+    }
+
+      #submitWrapper button {
+        width: 109px;
+        height: 52px;
+        font-size: 1.35rem;
+        padding: 8px 0; /* Vertical padding only if needed */
+      }
+
 }
 
 
