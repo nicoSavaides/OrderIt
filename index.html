@@ -1441,7 +1441,7 @@ function submitOrder() {
     // Remove the animation class after 600ms (duration of animation)
     setTimeout(() => {
       itemList.classList.remove('correct-animation');
-    }, 2000); 
+    }, 900); 
 
     if (currentRound < rounds.length) {
       loadRound();
@@ -1451,13 +1451,13 @@ function submitOrder() {
         setTimeout(() => {
           endGame(); // Wait for a moment, then end the game
           markGameAsPlayed(); // Mark the game as played after it ends
-        }, 500);
+        }, 1200);
       } else {
         document.getElementById('gameStatus').textContent = "Nice!"; // Fallback message if there are strikes
         setTimeout(() => {
           endGame(); // End the game with strikes
           markGameAsPlayed(); // Mark the game as played after it ends
-        }, 500);
+        }, 1200);
       }
     }
   } else {
