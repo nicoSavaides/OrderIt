@@ -996,17 +996,17 @@
     [
       {
         "prompt": "Weight",
-        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
+        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
         "correctOrder": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"]
       },
       {
         "prompt": "Intelligence",
-        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
+        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
         "correctOrder": ["Beagle", "Chihuahua", "Golden Retriever", "Border Collie"]
       },
       {
         "prompt": "Top Speed",
-        "items": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"],
+        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
         "correctOrder": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"]
       }
     ],
