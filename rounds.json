@@ -598,19 +598,19 @@
 
     [
       {
-        "prompt": "Premier Year",
-        "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
-        "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "The Walking Dead"]
-      },
-      {
         "prompt": "Emmys Won",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
         "correctOrder": ["The Walking Dead", "Lost", "Breaking Bad", "The Sopranos"]
       },
       {
-        "prompt": "Number of Episodes",
+        "prompt": "Series Finale Viewership",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
-        "correctOrder": ["Breaking Bad", "The Sopranos", "Lost", "The Walking Dead"]
+        "correctOrder": ["The Walking Dead", "Breaking Bad", "The Sopranos", "Lost"]
+      },
+      {
+        "prompt": "Premier Yea",
+        "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
+        "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "The Walking Dead"]
       }
     ],
 
