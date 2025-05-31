@@ -1103,7 +1103,7 @@
 
     [
       {
-        "prompt": "Release year",
+        "prompt": "Year",
         "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
         "correctOrder": ["E.T.", "Forrest Gump", "Titanic", "Inception"]
       },
