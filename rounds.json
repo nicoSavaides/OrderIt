@@ -1032,17 +1032,17 @@
     [
       {
         "prompt": "Professional Debut Year",
-        "items": ["Tom Brady", "Serena Williams", "Lionel Messi", "Stephen Curry"],
+        "items": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
         "correctOrder": ["Serena Williams", "Tom Brady", "Lionel Messi", "Stephen Curry"]
       },
       {
         "prompt": "Social Media Followers",
-        "items": ["Tom Brady", "Serena Williams", "Lionel Messi", "Stephen Curry"],
+        "items": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
         "correctOrder": ["Tom Brady", "Stephen Curry", "Serena Williams", "Lionel Messi"]
       },
       {
         "prompt": "Total Career Earnings",
-        "items": ["Tom Brady", "Serena Williams", "Lionel Messi", "Stephen Curry"],
+        "items": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
         "correctOrder": ["Serena Williams", "Stephen Curry", "Tom Brady", "Lionel Messi"]
       }
     ],
