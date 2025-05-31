@@ -1802,23 +1802,23 @@ window.onload = () => {
       .then(res => res.json())
       .then(data => {
         rounds = data.days[dayIndex];
-        showScreen('playedTodayScreen', false); // Just show it
-        // ✅ Only replace state if history is empty or already something unrelated
-        if (!history.state || history.state.screenId !== 'playedTodayScreen') {
-          history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
-        }
+        const initialScreen = 'playedTodayScreen';
+        showScreen(initialScreen, false);
+        history.replaceState({ screenId: initialScreen }, '', `#${initialScreen}`);
       })
       .catch(error => {
         console.error("Error loading rounds data for already played screen:", error);
-        showScreen('welcomeScreen');
-        history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
+        const fallbackScreen = 'welcomeScreen';
+        showScreen(fallbackScreen, false);
+        history.replaceState({ screenId: fallbackScreen }, '', `#${fallbackScreen}`);
       });
   } else {
-    showScreen('welcomeScreen');
-    // ✅ Always replace with welcome screen on a new day
-    history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
+    const initialScreen = 'welcomeScreen';
+    showScreen(initialScreen, false);
+    history.replaceState({ screenId: initialScreen }, '', `#${initialScreen}`);
   }
 };
+
 
 
 
