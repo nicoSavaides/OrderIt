@@ -978,17 +978,17 @@
     [
       {
         "prompt": "Year",
-        "items": ["I Want to Hold Your Hand", "Dancing Queen", "Smells Like Teen Spirit", "Thriller"],
+        "items": ["Dancing Queen", "Smells Like Teen Spirit", "Thriller", "I Want to Hold Your Hand"],
         "correctOrder": ["I Want to Hold Your Hand", "Dancing Queen", "Thriller", "Smells Like Teen Spirit"]
       },
       {
         "prompt": "Artist Name (Alphabetical)",
-        "items": ["I Want to Hold Your Hand", "Dancing Queen", "Smells Like Teen Spirit", "Thriller"],
+        "items": ["Dancing Queen", "Smells Like Teen Spirit", "Thriller", "I Want to Hold Your Hand"],
         "correctOrder": ["Dancing Queen", "I Want to Hold Your Hand", "Thriller", "Smells Like Teen Spirit"]
       },
       {
         "prompt": "Song Length",
-        "items": ["I Want to Hold Your Hand", "Dancing Queen", "Smells Like Teen Spirit", "Thriller"],
+        "items": ["Dancing Queen", "Smells Like Teen Spirit", "Thriller", "I Want to Hold Your Hand"],
         "correctOrder": ["I Want to Hold Your Hand", "Dancing Queen", "Smells Like Teen Spirit", "Thriller"]
       }
     ],
