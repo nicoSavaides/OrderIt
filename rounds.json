@@ -347,17 +347,17 @@
     [
       {
         "prompt": "Average Temperature",
-        "items": ["Mexico City", "Toronto", "Honolulu", "Dubai"],
+        "items": ["Honolulu", "Mexico City", "Dubai", "Toronto"],
         "correctOrder": ["Toronto", "Mexico City", "Honolulu", "Dubai"]
       },
       {
         "prompt": "Population",
-        "items": ["Mexico City", "Toronto", "Honolulu", "Dubai"],
+        "items": ["Honolulu", "Mexico City", "Dubai", "Toronto"],
         "correctOrder": ["Honolulu", "Dubai", "Toronto", "Mexico City"]
       },
       {
         "prompt": "Elevation",
-        "items": ["Mexico City", "Toronto", "Honolulu", "Dubai"],
+        "items": ["Honolulu", "Mexico City", "Dubai", "Toronto"],
         "correctOrder": ["Honolulu", "Dubai", "Toronto", "Mexico City"]
       }
     ], 
