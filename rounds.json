@@ -1050,17 +1050,17 @@
     [
       {
         "prompt": "Year Opened",
-        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
         "correctOrder": ["Disneyland", "Walt Disney World", "Disneyland Paris", "Disneyland Shanghai"]
       },
       {
         "prompt": "Yearly Attendees",
-        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
         "correctOrder": ["Disneyland Paris", "Disneyland Shanghai", "Disneyland", "Walt Disney World"]
       },
       {
         "prompt": "Total Land Area",
-        "items": ["Walt Disney World", "Disneyland Paris", "Disneyland", "Disneyland Shanghai"],
+        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
         "correctOrder": ["Disneyland", "Disneyland Shanghai", "Disneyland Paris", "Walt Disney World"]
       }
     ], 
