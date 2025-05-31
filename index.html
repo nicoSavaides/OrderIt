@@ -917,11 +917,14 @@
 
     let currentScreenId = null;
 
-function showScreen(screenId, push = true) {
+    function showScreen(screenId, push = true) {
   console.log('Showing screen:', screenId, 'Push:', push);
-  if (currentScreenId === screenId) {
-    return;
+
+  // For back navigation (push = false), always update screen
+  if (push && currentScreenId === screenId) {
+    return;  // only skip if pushing new state and same screen
   }
+
   currentScreenId = screenId;
 
   // Hide all screens
@@ -935,7 +938,7 @@ function showScreen(screenId, push = true) {
     target.classList.remove('hidden');
   }
 
-  // Show or hide the date based on the screen
+  // Show/hide date and round info as before
   const dateAndRound = document.getElementById('dateAndRound');
   const showDateScreens = ['playedTodayScreen', 'welcomeScreen'];
   if (showDateScreens.includes(screenId)) {
@@ -944,11 +947,11 @@ function showScreen(screenId, push = true) {
     dateAndRound.style.display = 'none';
   }
 
-  // Push to history only if requested
   if (push) {
     history.pushState({ screenId }, '', `#${screenId}`);
   }
 }
+
 
 
 
