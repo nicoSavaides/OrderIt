@@ -815,7 +815,7 @@
 
     [
       {
-        "prompt": "Team Location Length",
+        "prompt": "Team Location Name Length",
         "items": ["Cowboys", "Bears", "Eagles", "Packers"],
         "correctOrder": ["Cowboys", "Bears", "Packers", "Eagles"]
       },
