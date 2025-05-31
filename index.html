@@ -917,13 +917,15 @@
 
     let currentScreenId = null;
 
-    function showScreen(screenId, push = true) {
-  console.log('Showing screen:', screenId, 'Push:', push);
+  function showScreen(screenId, push = true) {
+  console.log('showScreen called with:', screenId, 'push:', push);
+  console.log('currentScreenId before:', currentScreenId);
 
-  // For back navigation (push = false), always update screen
-  if (push && currentScreenId === screenId) {
-    return;  // only skip if pushing new state and same screen
-  }
+  if (screenId === currentScreenId) {
+  console.log(`Attempted to show the current screen (${screenId}) again - skipping`);
+  return;
+}
+
 
   currentScreenId = screenId;
 
@@ -936,9 +938,11 @@
   const target = document.getElementById(screenId);
   if (target) {
     target.classList.remove('hidden');
+  } else {
+    console.warn('No element found with id:', screenId);
   }
 
-  // Show/hide date and round info as before
+  // dateAndRound logic...
   const dateAndRound = document.getElementById('dateAndRound');
   const showDateScreens = ['playedTodayScreen', 'welcomeScreen'];
   if (showDateScreens.includes(screenId)) {
@@ -948,8 +952,11 @@
   }
 
   if (push) {
+    console.log('Pushing state for:', screenId);
     history.pushState({ screenId }, '', `#${screenId}`);
   }
+
+  console.log('currentScreenId after:', currentScreenId);
 }
 
 
@@ -957,32 +964,33 @@
 
 
 
-window.addEventListener('popstate', (event) => {
-  console.log('popstate event:', event);
-  console.log('event.state:', event.state);
 
+
+window.addEventListener('popstate', (event) => {
   const screenId = event.state?.screenId;
+  console.log('popstate event fired. state:', event.state, 'screenId:', screenId);
 
   if (!screenId) {
-    console.warn('No screenId in state; ignoring popstate');
+    console.log('No screenId in state, ignoring popstate');
     return;
   }
 
-  // If trying to go back to "playedTodayScreen", make sure the user actually played
-  if (screenId === 'playedTodayScreen' && !alreadyPlayedToday()) {
-    console.warn('Tried to go to playedTodayScreen but user hasn’t played today');
-    return;
-  }
 
-  showScreen(screenId, false); // Show without pushing again
 
-  // Special handling for the stats section
-  if (screenId === 'statsDisplay') {
-    document.getElementById('statsDisplay').classList.remove('hidden');
-  } else {
-    document.getElementById('statsDisplay').classList.add('hidden');
+  showScreen(screenId, false); // false = do NOT push again
+
+  // Special logic for statsDisplay to toggle visibility if needed
+  const stats = document.getElementById('statsDisplay');
+  if (stats) {
+    if (screenId === 'statsDisplay') {
+      stats.classList.remove('hidden');
+    } else {
+      stats.classList.add('hidden');
+    }
   }
 });
+
+
 
 
 
@@ -1206,9 +1214,8 @@ function showPlayedTodayScreen() {
 
 
 function showAnswers() {
-  // Show the answers screen
-  showScreen('answersScreen');
-  document.getElementById('dateAndRound').style.display = 'none';
+
+
 
   // Clear any previous data
   const roundsContainer = document.getElementById('playedRoundsAnswers');
@@ -1249,10 +1256,19 @@ function showAnswers() {
     });
 }
 
-// Ensure initial screen load
 document.addEventListener('DOMContentLoaded', () => {
-  showScreen('playedTodayScreen', true);  // Start with the playedTodayScreen
+  console.log("alreadyPlayedToday?", alreadyPlayedToday());
+
+  if (alreadyPlayedToday()) {
+    showScreen('playedTodayScreen', false); // <-- no push
+  } else {
+    showScreen('welcomeScreen', false); // <-- no push
+  }
 });
+
+
+
+
 
 
 
@@ -1557,7 +1573,9 @@ setTimeout(() => {
   const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
   localStorage.setItem('lastPlayedDate', todayString);
 
-
+  // Save final rounds completed and strikes to localStorage
+  localStorage.setItem('roundsCompleted', roundsCompleted);
+  localStorage.setItem('strikes', strikes);
 
   console.log("End game triggered");  // Test if this is being reached
   document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
@@ -1770,55 +1788,54 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
 
 
 function markGameAsPlayed() {
-  const today = new Date().toISOString().split('T')[0];
-  localStorage.setItem('lastPlayedDate', today);
-  console.log('Saved lastPlayedDate as', today); 
-
+  const now = new Date();
+  const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+  localStorage.setItem('lastPlayedDate', todayString);
+  
   let gamesPlayed = parseInt(localStorage.getItem('gamesPlayed')) || 0;
   gamesPlayed += 1;
   localStorage.setItem('gamesPlayed', gamesPlayed);
-
 }
+
+
 
 
 
 
 function alreadyPlayedToday() {
-  const now = new Date();
-  const todayIndex = Math.floor((new Date(now.getFullYear(), now.getMonth(), now.getDate()) - LAUNCH_DATE) / msPerDay);
   const lastPlayed = localStorage.getItem('lastPlayedDate');
-
   if (!lastPlayed) return false;
 
-  const lastDate = new Date(lastPlayed);
-  const lastPlayedIndex = Math.floor((new Date(lastDate.getFullYear(), lastDate.getMonth(), lastDate.getDate()) - LAUNCH_DATE) / msPerDay);
-
-  return todayIndex === lastPlayedIndex;
+  const now = new Date();
+  const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
+  return lastPlayed === todayString;
 }
 
 
 
 
+
+
 window.onload = () => {
-  if (alreadyPlayedToday()) {
-    fetch("rounds.json")
-      .then(res => res.json())
-      .then(data => {
-        rounds = data.days[dayIndex];
-        const initialScreen = 'playedTodayScreen';
-        showScreen(initialScreen, false);
-        history.replaceState({ screenId: initialScreen }, '', `#${initialScreen}`);
-      })
-      .catch(error => {
-        console.error("Error loading rounds data for already played screen:", error);
-        const fallbackScreen = 'welcomeScreen';
-        showScreen(fallbackScreen, false);
-        history.replaceState({ screenId: fallbackScreen }, '', `#${fallbackScreen}`);
-      });
+  const lastPlayedDate = localStorage.getItem('lastPlayedDate'); 
+  const currentRound = parseInt(localStorage.getItem('currentRound'));
+  const currentStrikes = parseInt(localStorage.getItem('currentStrikes'));
+
+  if (lastPlayedDate && alreadyPlayedToday()) {
+    // User has already played today → show playedTodayScreen only
+    showScreen('playedTodayScreen', false);
+    history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
+  } else if (!isNaN(currentRound) && !isNaN(currentStrikes)) {
+    // User has unfinished game → show game screen
+    loadRound(); 
+    strikes = currentStrikes;
+    updateStrikes();
+    showScreen('gameScreen', false);
+    history.replaceState({ screenId: 'gameScreen' }, '', '#gameScreen');
   } else {
-    const initialScreen = 'welcomeScreen';
-    showScreen(initialScreen, false);
-    history.replaceState({ screenId: initialScreen }, '', `#${initialScreen}`);
+    // New user or new day → show welcome screen
+    showScreen('welcomeScreen', false);
+    history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
   }
 };
 
