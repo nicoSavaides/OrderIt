@@ -608,7 +608,7 @@
         "correctOrder": ["The Walking Dead", "Breaking Bad", "The Sopranos", "Lost"]
       },
       {
-        "prompt": "Premier Yea",
+        "prompt": "Premier Year",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "The Walking Dead"]
       }
