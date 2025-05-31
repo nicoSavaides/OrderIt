@@ -257,17 +257,17 @@
     [
       {
         "prompt": "Number of Children",
-        "items": ["Homer Simpson", "Darth Vader", "Iron Man", "Carol Brady"],
+        "items": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
         "correctOrder": ["Iron Man", "Darth Vader", "Homer Simpson", "Carol Brady"]
       },
       {
         "prompt": "Height",
-        "items": ["Homer Simpson", "Darth Vader", "Iron Man", "Carol Brady"],
+        "items": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
         "correctOrder": ["Carol Brady", "Homer Simpson", "Iron Man", "Darth Vader"]
       },
       {
         "prompt": "Year of First Appearance",
-        "items": ["Homer Simpson", "Darth Vader", "Iron Man", "Carol Brady"],
+        "items": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
         "correctOrder": ["Iron Man", "Carol Brady", "Darth Vader", "Homer Simpson"]
       }
     ], 
