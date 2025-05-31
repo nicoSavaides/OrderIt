@@ -724,7 +724,7 @@
 
     [
       {
-        "prompt": "Release year",
+        "prompt": "Year",
         "items": ["Toy Story", "Jaws", "Napoleon Dynamite", "Jurassic Park"],
         "correctOrder": ["Jaws", "Jurassic Park", "Toy Story", "Napoleon Dynamite"]
       },
