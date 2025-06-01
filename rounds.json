@@ -815,7 +815,7 @@
 
     [
       {
-        "prompt": "Team Location Length",
+        "prompt": "Location Name Length",
         "items": ["Cowboys", "Bears", "Eagles", "Packers"],
         "correctOrder": ["Cowboys", "Bears", "Packers", "Eagles"]
       },
@@ -1175,7 +1175,7 @@
 
     [
       {
-        "prompt": "Location Number of Letters",
+        "prompt": "Location Name Length",
         "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
         "correctOrder": ["Red Sox", "Yankees", "Dodgers", "Giants"]
       },
