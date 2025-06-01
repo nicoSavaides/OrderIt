@@ -592,10 +592,14 @@
   margin-top: 85px !important;
   margin-bottom: 5px;
   font-size: 20px !important;
-  font-family: monospace;
+ 
   text-align: center;
-  
 }
+
+.games-played-number {
+  font-family: monospace;
+}
+
 
 .stats-table {
   margin-top: 5px !important;
@@ -1744,24 +1748,28 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
   stats.rounds3 = stats.rounds3 || 0;
 
   const statsText = `
-  <div class="stats-container">
-    <h2 class="stats-title">My Stats</h2>
-    <p class="games-played"><strong>Games Played:&nbsp;</strong> ${stats.gamesPlayed}</p>
-    <table class="stats-table">
-      <thead>
-        <tr>
-          <th class="rounds-completed-label">Rounds Completed</th>
-          <th class="count-label">Count</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td class="round-label">3 Rounds</td><td class="count"><span class="count-number">${stats.rounds3}</span></td></tr>
-        <tr><td class="round-label">2 Rounds</td><td class="count"><span class="count-number">${stats.rounds2}</span></td></tr>
-        <tr><td class="round-label">1 Round</td><td class="count"><span class="count-number">${stats.rounds1}</span></td></tr>
-        <tr><td class="round-label">0 Rounds</td><td class="count"><span class="count-number">${stats.rounds0}</span></td></tr>
-      </tbody>
-    </table>
-  </div>
+<div class="stats-container">
+  <h2 class="stats-title">My Stats</h2>
+  <p class="games-played">
+    <strong>Games Played:&nbsp;</strong>
+    <span class="games-played-number">${stats.gamesPlayed}</span>
+  </p>
+  <table class="stats-table">
+    <thead>
+      <tr>
+        <th class="rounds-completed-label">Rounds Completed</th>
+        <th class="count-label">Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td class="round-label">3 Rounds</td><td class="count"><span class="count-number">${stats.rounds3}</span></td></tr>
+      <tr><td class="round-label">2 Rounds</td><td class="count"><span class="count-number">${stats.rounds2}</span></td></tr>
+      <tr><td class="round-label">1 Round</td><td class="count"><span class="count-number">${stats.rounds1}</span></td></tr>
+      <tr><td class="round-label">0 Rounds</td><td class="count"><span class="count-number">${stats.rounds0}</span></td></tr>
+    </tbody>
+  </table>
+</div>
+
 `;
 
 
