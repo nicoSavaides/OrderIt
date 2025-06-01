@@ -905,19 +905,19 @@
 
     [
       {
-        "prompt": "Number of Doors",
-        "items": ["Boeing 747", "Tank", "Helicopter", "Motorcycle"],
-        "correctOrder": ["Motorcycle", "Tank", "Helicopter", "Boeing 747"]
-      },
-      {
-        "prompt": "Top Speed",
-        "items": ["Boeing 747", "Tank", "Helicopter", "Motorcycle"],
-        "correctOrder": ["Tank", "Motorcycle", "Helicopter", "Boeing 747"]
+        "prompt": "Average Weight",
+        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
+        "correctOrder": ["Motorcycle", "Helicopter", "Tank", "Submarine"]
       },
       {
         "prompt": "Year Invented",
-        "items": ["Boeing 747", "Tank", "Helicopter", "Motorcycle"],
-        "correctOrder": ["Motorcycle", "Tank", "Helicopter", "Boeing 747"]
+        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
+        "correctOrder": ["Submarine", "Motorcycle", "Tank", "Helicopter"]
+      },
+      {
+        "prompt": "Top Speed Record",
+        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
+        "correctOrder": ["Tank", "Submarine", "Helicopter", "Motorcycle"]
       }
     ],
 
@@ -1207,8 +1207,44 @@
         "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
         "correctOrder": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"]
       }
-    ]
+    ],
 
+    [
+      {
+        "prompt": "Height",
+        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "correctOrder": ["Ellen DeGeneres", "Jimmy Fallon", "David Letterman", "Conan O’Brien"]
+      },
+      {
+        "prompt": "Age",
+        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "correctOrder": ["Jimmy Fallon", "Conan O’Brien", "Ellen DeGeneres", "David Letterman"]
+      },
+      {
+        "prompt": "Years as Host",
+        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "correctOrder": ["Jimmy Fallon", "Ellen DeGeneres", "Conan O’Brien", "David Letterman"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Year Released",
+        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
+        "correctOrder": ["Game Boy", "BlackBerry", "iPhone", "Apple Watch"]
+      },
+      {
+        "prompt": "Number of Physical Buttons",
+        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
+        "correctOrder": ["Apple Watch", "iPhone", "Game Boy", "BlackBerry"]
+      },
+      {
+        "prompt": "Price at Release",
+        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
+        "correctOrder": ["Game Boy", "Apple Watch", "iPhone", "BlackBerry"]
+      }
+    ]
+    
   ]
 }
 
