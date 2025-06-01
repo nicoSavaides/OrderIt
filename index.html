@@ -833,33 +833,33 @@
 
 
 
-      #endGameStatus {
+          #endGameStatus {
       font-size: 5rem !important; 
       font-family: 'second' !important;
       color: #000;
       text-align: center;
-      position: relative;
-      top: 70px !important;
+      margin-top: 85px !important; /* Use margin, not top */
     }
 
-       #finalScore {
-        margin-top: 140px !important;
-        font-size: 1.2rem !important;
-      }
-
-      #thanksMessage {
-      position: relative;
-      top: 150px !important;
-      text-align: center;
+    #finalScore {
       font-size: 1.2rem !important;
+      margin-top: 20px !important; /* Adjust as needed */
+      text-align: center;
     }
+
+    #thanksMessage {
+      font-size: 1.2rem !important;
+      margin-top: 60px !important; /* Adjust spacing */
+      text-align: center;
+    }
+
 
 
       #shareLink,
       #shareButton {
       position: relative;
       z-index: 1;
-      margin-top: 0px !important; /* Keep your margin-top */
+      margin-top: 100px !important; /* Keep your margin-top */
     }
 
       #shareLink::after,
@@ -1094,7 +1094,7 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
 
 
 
-const LAUNCH_DATE = new Date(2025, 3, 7); 
+const LAUNCH_DATE = new Date(2025, 4, 20); 
 const now = new Date();
 const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 const msPerDay = 1000 * 60 * 60 * 24;
