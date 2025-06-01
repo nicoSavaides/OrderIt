@@ -1031,7 +1031,7 @@
 
     [
       {
-        "prompt": "Professional Debut Year",
+        "prompt": "Debut Year as Pro.",
         "items": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
         "correctOrder": ["Serena Williams", "Tom Brady", "Lionel Messi", "Stephen Curry"]
       },
