@@ -964,7 +964,7 @@
         "correctOrder": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"]
       },
       {
-        "prompt": "Number of Bond Appearances",
+        "prompt": "Number of Appearances as Bond",
         "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
         "correctOrder": ["George Lazenby", "Pierce Brosnan", "Daniel Craig", "Sean Connery"]
       },
