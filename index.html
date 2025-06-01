@@ -818,6 +818,62 @@
         padding: 8px 0; /* Vertical padding only if needed */
       }
 
+      .correct-order-label {
+      font-weight: 600 !important;
+      
+      font-size: 1.5rem !important;
+      text-align: center;
+      position: relative;
+      top: 120px !important; /* Use margin to position it vertically */
+      }
+
+
+
+      
+
+
+
+      #endGameStatus {
+      font-size: 5rem !important; 
+      font-family: 'second' !important;
+      color: #000;
+      text-align: center;
+      position: relative;
+      top: 70px !important;
+    }
+
+       #finalScore {
+        margin-top: 140px !important;
+        font-size: 1.2rem !important;
+      }
+
+      #thanksMessage {
+      position: relative;
+      top: 150px !important;
+      text-align: center;
+      font-size: 1.2rem !important;
+    }
+
+
+      #shareLink,
+      #shareButton {
+      position: relative;
+      z-index: 1;
+      margin-top: 0px !important; /* Keep your margin-top */
+    }
+
+      #shareLink::after,
+      #shareButton::after {
+      content: '';
+      position: absolute;
+      top: -10px; /* Adjust to expand clickable area vertically */
+      left: -10px; /* Adjust to expand clickable area horizontally */
+      right: -10px;
+      bottom: -10px;
+      z-index: -1; /* Invisible expanded clickable area */
+    }
+
+
 }
 
 
