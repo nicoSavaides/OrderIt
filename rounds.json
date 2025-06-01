@@ -1175,7 +1175,7 @@
 
     [
       {
-        "prompt": "Team Location Name Length",
+        "prompt": "Location Number of Letters",
         "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
         "correctOrder": ["Red Sox", "Yankees", "Dodgers", "Giants"]
       },
