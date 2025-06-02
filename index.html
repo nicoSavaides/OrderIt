@@ -1386,9 +1386,14 @@ function showPlayedTodayScreen() {
     listContainer.classList.add('round-list');
 
     round.correctOrder.forEach((item) => {
+
+
       const itemDiv = document.createElement('div');
       itemDiv.classList.add('round-item');
       itemDiv.textContent = item;
+
+
+
       listContainer.appendChild(itemDiv);
     });
 
@@ -1422,29 +1427,49 @@ function showAnswers() {
     .then(data => {
       const todaysRounds = data.days[dayIndex]; // Use `dayIndex` to get today's rounds
 
+
+
+
+
+
+
+
       todaysRounds.forEach((round) => {
-        const section = document.createElement('div');
-        section.classList.add('round-section');
+  const section = document.createElement('div');
+  section.classList.add('round-section');
 
-        const heading = document.createElement('h3');
-        heading.classList.add('round-heading');
-        heading.textContent = round.prompt; // Add the prompt for the category
+  const heading = document.createElement('h3');
+  heading.classList.add('round-heading');
+  heading.textContent = round.prompt;
 
-        const listContainer = document.createElement('div');
-        listContainer.classList.add('round-list');
+  const listContainer = document.createElement('div');
+  listContainer.classList.add('round-list');
 
-        // Display the correct order of items for this round
-        round.correctOrder.forEach((item) => {
-          const itemDiv = document.createElement('div');
-          itemDiv.classList.add('round-item');
-          itemDiv.textContent = item;
-          listContainer.appendChild(itemDiv);
-        });
+  // Total character count across all answers
+  const totalChars = round.correctOrder.reduce((sum, item) => sum + item.length, 0);
 
-        section.appendChild(heading);
-        section.appendChild(listContainer);
-        roundsContainer.appendChild(section);
-      });
+  // Use 0.9rem if total is over 100, otherwise 1.2rem
+  const fontSize = totalChars > 90 ? '0.9rem' : '1.2rem';
+
+  round.correctOrder.forEach((item) => {
+    const itemDiv = document.createElement('div');
+    itemDiv.classList.add('round-item');
+    itemDiv.textContent = item;
+    itemDiv.style.fontSize = fontSize;
+    listContainer.appendChild(itemDiv);
+  });
+
+  section.appendChild(heading);
+  section.appendChild(listContainer);
+  roundsContainer.appendChild(section);
+});
+
+
+
+
+
+
+
     })
     .catch(error => {
       console.error("Error loading rounds data for answers:", error);
@@ -2057,20 +2082,14 @@ window.addEventListener('DOMContentLoaded', () => {
       .then(res => res.json())
       .then(data => {
         rounds = data.days[dayIndex];
-        showScreen('playedTodayScreen', false); // Show without pushing
-        history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen'); // Push it manually
+        showScreen('playedTodayScreen', false); 
+        history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen'); 
       })
       .catch(error => {
         console.error("Error loading rounds data for already played screen:", error);
       });
   }
 });
-
-
-
-
-
-   
 
   </script>
 
