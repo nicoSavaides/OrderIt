@@ -1221,7 +1221,7 @@
         "correctOrder": ["Jimmy Fallon", "Conan O’Brien", "Ellen DeGeneres", "David Letterman"]
       },
       {
-        "prompt": "Years as Host",
+        "prompt": "Years as Talk Show Host",
         "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
         "correctOrder": ["Jimmy Fallon", "Ellen DeGeneres", "Conan O’Brien", "David Letterman"]
       }
