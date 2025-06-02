@@ -167,18 +167,18 @@
     [
       {
         "prompt": "Land Area",
-        "items": ["Australia", "Columbia", "Germany", "Switzerland"],
-        "correctOrder": ["Switzerland", "Germany", "Columbia", "Australia"]
+        "items": ["Australia", "Colombia", "Germany", "Switzerland"],
+        "correctOrder": ["Switzerland", "Germany", "Colombia", "Australia"]
       },
       {
         "prompt": "Population",
-        "items": ["Australia", "Columbia", "Germany", "Switzerland"],
-        "correctOrder": ["Switzerland", "Australia", "Columbia", "Germany"]
+        "items": ["Australia", "Colombia", "Germany", "Switzerland"],
+        "correctOrder": ["Switzerland", "Australia", "Colombia", "Germany"]
       },
       {
         "prompt": "GDP",
-        "items": ["Australia", "Columbia", "Germany", "Switzerland"],
-        "correctOrder": ["Columbia", "Switzerland", "Australia", "Germany"]
+        "items": ["Australia", "Colombia", "Germany", "Switzerland"],
+        "correctOrder": ["Colombia", "Switzerland", "Australia", "Germany"]
       }
     ],
 
@@ -279,7 +279,7 @@
         "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
       },
       {
-        "prompt": "Height Standing Upright ",
+        "prompt": "Height Standing Upright",
         "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
         "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
       },
