@@ -1449,14 +1449,14 @@ function showAnswers() {
   const totalChars = round.correctOrder.reduce((sum, item) => sum + item.length, 0);
 
     let fontSize;
-  if (totalChars <= 45) {
-    fontSize = '1.2rem';
-  } else if (totalChars <= 55) {
-    fontSize = '1.1rem';
-  } else if (totalChars <= 65) {
-    fontSize = '1rem';
+  if (totalChars <= 50) {
+    fontSize = '1.25rem';
+  } else if (totalChars <= 60) {
+    fontSize = '1.15rem';
+  } else if (totalChars <= 70) {
+    fontSize = '1.5rem';
   } else {
-    fontSize = '0.9rem';
+    fontSize = '0.95rem';
   }
 
 
