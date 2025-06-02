@@ -1449,7 +1449,7 @@ function showAnswers() {
   const totalChars = round.correctOrder.reduce((sum, item) => sum + item.length, 0);
 
   // Use 0.9rem if total is over 100, otherwise 1.2rem
-  const fontSize = totalChars > 90 ? '0.9rem' : '1.2rem';
+  const fontSize = totalChars > 80 ? '0.9rem' : '1.2rem';
 
   round.correctOrder.forEach((item) => {
     const itemDiv = document.createElement('div');
