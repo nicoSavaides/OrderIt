@@ -1448,8 +1448,17 @@ function showAnswers() {
   // Total character count across all answers
   const totalChars = round.correctOrder.reduce((sum, item) => sum + item.length, 0);
 
-  // Use 0.9rem if total is over 100, otherwise 1.2rem
-  const fontSize = totalChars > 58 ? '0.9rem' : '1.1rem';
+    let fontSize;
+  if (totalChars <= 40) {
+    fontSize = '1.2rem';
+  } else if (totalChars <= 55) {
+    fontSize = '1.1rem';
+  } else if (totalChars <= 70) {
+    fontSize = '1rem';
+  } else {
+    fontSize = '0.9rem';
+  }
+
 
   round.correctOrder.forEach((item) => {
     const itemDiv = document.createElement('div');
