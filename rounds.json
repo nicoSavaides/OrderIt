@@ -526,14 +526,14 @@
 
     [
       {
-        "prompt": "Land Area",
-        "items": ["Asia", "Africa", "South America", "Europe"],
-        "correctOrder": ["Europe", "South America", "Africa", "Asia"]
-      },
-      {
         "prompt": "Number of Countries",
         "items": ["Asia", "Africa", "South America", "Europe"],
         "correctOrder": ["South America", "Europe", "Asia", "Africa"]
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["Asia", "Africa", "South America", "Europe"],
+        "correctOrder": ["Europe", "South America", "Africa", "Asia"]
       },
       {
         "prompt": "Population",
