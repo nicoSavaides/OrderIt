@@ -1229,7 +1229,7 @@
 
     [
       {
-        "prompt": "Year Released",
+        "prompt": "Initial Release Year",
         "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
         "correctOrder": ["Game Boy", "BlackBerry", "iPhone", "Apple Watch"]
       },
