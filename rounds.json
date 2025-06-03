@@ -1243,6 +1243,78 @@
         "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
         "correctOrder": ["Game Boy", "Apple Watch", "iPhone", "BlackBerry"]
       }
+    ], 
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
+        "correctOrder": ["Oprah Winfrey", "James Corden", "Johnny Carson", "Alex Trebek"]
+      },
+      {
+        "prompt": "Age When Retired from Show",
+        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
+        "correctOrder": ["James Corden", "Oprah Winfrey", "Johnny Carson", "Alex Trebek"]
+      },
+      {
+        "prompt": "Number of Years as Host",
+        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
+        "correctOrder": ["James Corden", "Oprah Winfrey", "Johnny Carson", "Alex Trebek"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Number of Teeth",
+        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
+        "correctOrder": ["Snapping Turtle", "Human", "Alligator", "Great White Shark"]
+      },
+      {
+        "prompt": "Bite Force",
+        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
+        "correctOrder": ["Human", "Snapping Turtle", "Alligator", "Great White Shark"]
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
+        "correctOrder": ["Snapping Turtle", "Alligator", "Human", "Great White Shark"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Year of First Film",
+        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"]
+      },
+      {
+        "prompt": "Number of Oscars Won",
+        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
+      },
+      {
+        "prompt": "Their Highest Grossing Film Revenue",
+        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Egg Size",
+        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Emu"],
+        "correctOrder": ["Turkey", "Emperor Penguin", "Emu", "Ostrich"]
+      },
+      {
+        "prompt": "Standing Height",
+        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Emu"],
+        "correctOrder": ["Turkey", "Emperor Penguin", "Emu", "Ostrich"]
+      },
+      {
+        "prompt": "Top Running Speed",
+        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Emu"],
+        "correctOrder": ["Emperor Penguin", "Turkey", "Emu", "Ostrich"]
+      }
     ]
     
   ]
