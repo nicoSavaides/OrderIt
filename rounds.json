@@ -849,77 +849,12 @@
       }
     ],
 
-    [
-      {
-        "prompt": "Land Area",
-        "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["Ohio", "New York", "Idaho", "Alaska"]
-      },
-      {
-        "prompt": "Population",
-        "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["Alaska", "Idaho", "Ohio", "New York"]
-      },
-      {
-        "prompt": "Date of Statehood",
-        "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"]
-      }
-    ],
 
-    [
-      {
-        "prompt": "Height",
-        "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
-        "correctOrder": ["Leaning Tower of Pisa", "Taj Mahal", "Big Ben", "Golden Gate Bridge"]
-      },
-      {
-        "prompt": "Year Built",
-        "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
-        "correctOrder": ["Leaning Tower of Pisa", "Taj Mahal", "Big Ben", "Golden Gate Bridge"]
-      },
-      {
-        "prompt": "Construction in Years",
-        "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
-        "correctOrder": ["Golden Gate Bridge", "Big Ben", "Taj Mahal", "Leaning Tower of Pisa"]
-      }
-    ],
 
-    [
-      {
-        "prompt": "Weight",
-        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
-      },
-      {
-        "prompt": "Population Size",
-        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Rhino", "Polar bear", "Hippo", "Elephant"]
-      },
-      {
-        "prompt": "Gestation Period",
-        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
-      }
-    ],
 
-    [
-      {
-        "prompt": "Average Weight",
-        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
-        "correctOrder": ["Motorcycle", "Helicopter", "Tank", "Submarine"]
-      },
-      {
-        "prompt": "Year Invented",
-        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
-        "correctOrder": ["Submarine", "Motorcycle", "Tank", "Helicopter"]
-      },
-      {
-        "prompt": "Top Speed Record",
-        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
-        "correctOrder": ["Tank", "Submarine", "Helicopter", "Motorcycle"]
-      }
-    ],
+
+
+
 
     [
       {
@@ -939,39 +874,122 @@
       }
     ],
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
     [
       {
-        "prompt": "Year Published",
-        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
-        "correctOrder": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"]
+        "prompt": "Age",
+        "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
+        "correctOrder": ["Leonardo DiCaprio", "Will Smith", "Johnny Depp", "Oprah Winfrey"]
       },
       {
-        "prompt": "Author Last Name (Alphabetical)",
-        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
-        "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"]
+        "prompt": "Height",
+        "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
+        "correctOrder": ["Oprah Winfrey", "Johnny Depp", "Leonardo DiCaprio", "Will Smith"]
       },
       {
-        "prompt": "Page Count",
-        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
-        "correctOrder": ["Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath"]
+        "prompt": "Net Worth",
+        "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
+        "correctOrder": ["Johnny Depp", "Leonardo DiCaprio", "Will Smith", "Oprah Winfrey"]
+      }
+    ],
+
+
+
+
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "correctOrder": ["Ellen DeGeneres", "Jimmy Fallon", "David Letterman", "Conan O’Brien"]
+      },
+      {
+        "prompt": "Age",
+        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "correctOrder": ["Jimmy Fallon", "Conan O’Brien", "Ellen DeGeneres", "David Letterman"]
+      },
+      {
+        "prompt": "Years as Talk Show Host",
+        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "correctOrder": ["Jimmy Fallon", "Ellen DeGeneres", "Conan O’Brien", "David Letterman"]
+      }
+    ], 
+
+
+
+
+
+    [
+      {
+        "prompt": "Number of Teeth",
+        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
+        "correctOrder": ["Snapping Turtle", "Human", "Alligator", "Great White Shark"]
+      },
+      {
+        "prompt": "Bite Force",
+        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
+        "correctOrder": ["Human", "Snapping Turtle", "Alligator", "Great White Shark"]
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
+        "correctOrder": ["Snapping Turtle", "Alligator", "Human", "Great White Shark"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Year of First Film",
+        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"]
+      },
+      {
+        "prompt": "Number of Oscars Won",
+        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
+      },
+      {
+        "prompt": "Their Highest Grossing Film Revenue",
+        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
       }
     ],
 
     [
       {
-        "prompt": "Birth Year",
-        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
-        "correctOrder": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"]
+        "prompt": "Land Area",
+        "items": ["New York", "Ohio", "Alaska", "Idaho"],
+        "correctOrder": ["Ohio", "New York", "Idaho", "Alaska"]
       },
       {
-        "prompt": "Number of Appearances as Bond",
-        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
-        "correctOrder": ["George Lazenby", "Pierce Brosnan", "Daniel Craig", "Sean Connery"]
+        "prompt": "Population",
+        "items": ["New York", "Ohio", "Alaska", "Idaho"],
+        "correctOrder": ["Alaska", "Idaho", "Ohio", "New York"]
       },
       {
-        "prompt": "Age When First Played Bond",
-        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
-        "correctOrder": ["George Lazenby", "Sean Connery", "Daniel Craig", "Pierce Brosnan"]
+        "prompt": "Date of Statehood",
+        "items": ["New York", "Ohio", "Alaska", "Idaho"],
+        "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"]
       }
     ],
 
@@ -993,23 +1011,42 @@
       }
     ],
 
+
     [
       {
         "prompt": "Weight",
-        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
-        "correctOrder": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"]
+        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
+        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
       },
       {
-        "prompt": "Intelligence",
-        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
-        "correctOrder": ["Beagle", "Chihuahua", "Golden Retriever", "Border Collie"]
+        "prompt": "Population Size",
+        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
+        "correctOrder": ["Rhino", "Polar bear", "Hippo", "Elephant"]
       },
       {
-        "prompt": "Top Speed",
-        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
-        "correctOrder": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"]
+        "prompt": "Gestation Period",
+        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
+        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
       }
     ],
+
+    [
+      {
+        "prompt": "Year Opened",
+        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
+        "correctOrder": ["Disneyland", "Walt Disney World", "Disneyland Paris", "Disneyland Shanghai"]
+      },
+      {
+        "prompt": "Yearly Attendees",
+        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
+        "correctOrder": ["Disneyland Paris", "Disneyland Shanghai", "Disneyland", "Walt Disney World"]
+      },
+      {
+        "prompt": "Total Land Area",
+        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
+        "correctOrder": ["Disneyland", "Disneyland Shanghai", "Disneyland Paris", "Walt Disney World"]
+      }
+    ], 
 
     [
       {
@@ -1049,21 +1086,75 @@
 
     [
       {
-        "prompt": "Year Opened",
-        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
-        "correctOrder": ["Disneyland", "Walt Disney World", "Disneyland Paris", "Disneyland Shanghai"]
+        "prompt": "Year",
+        "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
+        "correctOrder": ["E.T.", "Forrest Gump", "Titanic", "Inception"]
       },
       {
-        "prompt": "Yearly Attendees",
-        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
-        "correctOrder": ["Disneyland Paris", "Disneyland Shanghai", "Disneyland", "Walt Disney World"]
+        "prompt": "Box Office Gross",
+        "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
+        "correctOrder": ["Forrest Gump", "E.T.", "Inception", "Titanic"]
       },
       {
-        "prompt": "Total Land Area",
-        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
-        "correctOrder": ["Disneyland", "Disneyland Shanghai", "Disneyland Paris", "Walt Disney World"]
+        "prompt": "Runtime",
+        "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
+        "correctOrder": ["E.T.", "Forrest Gump", "Inception", "Titanic"]
       }
-    ], 
+    ],
+
+    [
+      {
+        "prompt": "Year Published",
+        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
+        "correctOrder": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"]
+      },
+      {
+        "prompt": "Author Last Name (Alphabetical)",
+        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
+        "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"]
+      },
+      {
+        "prompt": "Page Count",
+        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
+        "correctOrder": ["Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
+        "correctOrder": ["Leaning Tower of Pisa", "Taj Mahal", "Big Ben", "Golden Gate Bridge"]
+      },
+      {
+        "prompt": "Year Built",
+        "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
+        "correctOrder": ["Leaning Tower of Pisa", "Taj Mahal", "Big Ben", "Golden Gate Bridge"]
+      },
+      {
+        "prompt": "Construction in Years",
+        "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
+        "correctOrder": ["Golden Gate Bridge", "Big Ben", "Taj Mahal", "Leaning Tower of Pisa"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Average Weight",
+        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
+        "correctOrder": ["Motorcycle", "Helicopter", "Tank", "Submarine"]
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
+        "correctOrder": ["Submarine", "Motorcycle", "Tank", "Helicopter"]
+      },
+      {
+        "prompt": "Top Speed Record",
+        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
+        "correctOrder": ["Tank", "Submarine", "Helicopter", "Motorcycle"]
+      }
+    ],
 
     [
       {
@@ -1080,42 +1171,6 @@
         "prompt": "Number of Emmys Won",
         "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
         "correctOrder": ["The Office (US)", "Friends", "Seinfeld", "Mad Men"]
-      }
-    ],
-    
-    [
-      {
-        "prompt": "Average Temperature",
-        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
-        "correctOrder": ["Moscow", "Denver", "Sydney", "Cairo"]
-      },
-      {
-        "prompt": "Elevation",
-        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
-        "correctOrder": ["Cairo", "Sydney", "Moscow", "Denver"]
-      },
-      {
-        "prompt": "Population",
-        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
-        "correctOrder": ["Denver", "Sydney", "Moscow", "Cairo"]
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year",
-        "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
-        "correctOrder": ["E.T.", "Forrest Gump", "Titanic", "Inception"]
-      },
-      {
-        "prompt": "Box Office Gross",
-        "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
-        "correctOrder": ["Forrest Gump", "E.T.", "Inception", "Titanic"]
-      },
-      {
-        "prompt": "Runtime",
-        "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
-        "correctOrder": ["E.T.", "Forrest Gump", "Inception", "Titanic"]
       }
     ],
 
@@ -1139,40 +1194,57 @@
 
     [
       {
-        "prompt": "Age",
-        "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
-        "correctOrder": ["Leonardo DiCaprio", "Will Smith", "Johnny Depp", "Oprah Winfrey"]
+        "prompt": "Birth Year",
+        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
+        "correctOrder": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"]
       },
       {
-        "prompt": "Height",
-        "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
-        "correctOrder": ["Oprah Winfrey", "Johnny Depp", "Leonardo DiCaprio", "Will Smith"]
+        "prompt": "Number of Appearances as Bond",
+        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
+        "correctOrder": ["George Lazenby", "Pierce Brosnan", "Daniel Craig", "Sean Connery"]
       },
       {
-        "prompt": "Net Worth",
-        "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
-        "correctOrder": ["Johnny Depp", "Leonardo DiCaprio", "Will Smith", "Oprah Winfrey"]
+        "prompt": "Age When First Played Bond",
+        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
+        "correctOrder": ["George Lazenby", "Sean Connery", "Daniel Craig", "Pierce Brosnan"]
       }
     ],
 
     [
       {
-        "prompt": "Land Area",
-        "items": ["Cuba", "Brazil", "United Kingdom", "Iraq"],
-        "correctOrder": ["Cuba", "United Kingdom", "Iraq", "Brazil"]
+        "prompt": "Average Temperature",
+        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
+        "correctOrder": ["Moscow", "Denver", "Sydney", "Cairo"]
+      },
+      {
+        "prompt": "Elevation",
+        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
+        "correctOrder": ["Cairo", "Sydney", "Moscow", "Denver"]
       },
       {
         "prompt": "Population",
-        "items": ["Cuba", "Brazil", "United Kingdom", "Iraq"],
-        "correctOrder": ["Cuba", "Iraq", "United Kingdom", "Brazil"]
+        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
+        "correctOrder": ["Denver", "Sydney", "Moscow", "Cairo"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
+        "correctOrder": ["Oprah Winfrey", "James Corden", "Johnny Carson", "Alex Trebek"]
       },
       {
-        "prompt": "GDP",
-        "items": ["Cuba", "Brazil", "United Kingdom", "Iraq"],
-        "correctOrder": ["Cuba", "Iraq", "Brazil", "United Kingdom"]
+        "prompt": "Age When Retired from Show",
+        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
+        "correctOrder": ["James Corden", "Oprah Winfrey", "Johnny Carson", "Alex Trebek"]
+      },
+      {
+        "prompt": "Number of Years as Host",
+        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
+        "correctOrder": ["James Corden", "Oprah Winfrey", "Johnny Carson", "Alex Trebek"]
       }
-    ]
-    
+    ], 
 
     [
       {
@@ -1209,24 +1281,42 @@
         "correctOrder": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"]
       }
     ],
+    
+    [
+      {
+        "prompt": "Weight",
+        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
+        "correctOrder": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"]
+      },
+      {
+        "prompt": "Intelligence",
+        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
+        "correctOrder": ["Beagle", "Chihuahua", "Golden Retriever", "Border Collie"]
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
+        "correctOrder": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"]
+      }
+    ],
 
     [
       {
         "prompt": "Height",
-        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
-        "correctOrder": ["Ellen DeGeneres", "Jimmy Fallon", "David Letterman", "Conan O’Brien"]
+        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
+        "correctOrder": ["Prince", "Kendrick Lamar", "Michael Jackson", "Paul McCartney"]
       },
       {
-        "prompt": "Age",
-        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
-        "correctOrder": ["Jimmy Fallon", "Conan O’Brien", "Ellen DeGeneres", "David Letterman"]
+        "prompt": "Super Bowl Performance Year",
+        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
+        "correctOrder": ["Michael Jackson", "Paul McCartney", "Prince", "Kendrick Lamar"]
       },
       {
-        "prompt": "Years as Talk Show Host",
-        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
-        "correctOrder": ["Jimmy Fallon", "Ellen DeGeneres", "Conan O’Brien", "David Letterman"]
+        "prompt": "Spotify Monthly Listeners",
+        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
+        "correctOrder": ["Paul McCartney", "Prince", "Michael Jackson", "Kendrick Lamar"]
       }
-    ], 
+    ],
 
     [
       {
@@ -1248,57 +1338,39 @@
 
     [
       {
-        "prompt": "Height",
-        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
-        "correctOrder": ["Oprah Winfrey", "James Corden", "Johnny Carson", "Alex Trebek"]
+        "prompt": "Land Area",
+        "items": ["Cuba", "Brazil", "United Kingdom", "Iraq"],
+        "correctOrder": ["Cuba", "United Kingdom", "Iraq", "Brazil"]
       },
       {
-        "prompt": "Age When Retired from Show",
-        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
-        "correctOrder": ["James Corden", "Oprah Winfrey", "Johnny Carson", "Alex Trebek"]
+        "prompt": "Population",
+        "items": ["Cuba", "Brazil", "United Kingdom", "Iraq"],
+        "correctOrder": ["Cuba", "Iraq", "United Kingdom", "Brazil"]
       },
       {
-        "prompt": "Number of Years as Host",
-        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
-        "correctOrder": ["James Corden", "Oprah Winfrey", "Johnny Carson", "Alex Trebek"]
+        "prompt": "GDP",
+        "items": ["Cuba", "Brazil", "United Kingdom", "Iraq"],
+        "correctOrder": ["Cuba", "Iraq", "Brazil", "United Kingdom"]
       }
-    ], 
+    ],
 
     [
       {
-        "prompt": "Number of Teeth",
-        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
-        "correctOrder": ["Snapping Turtle", "Human", "Alligator", "Great White Shark"]
+        "prompt": "Age",
+        "items": ["Billy Crystal", "Whoopi Goldberg", "Elon Musk", "Seth MacFarlane"],
+        "correctOrder": ["Seth MacFarlane", "Elon Musk", "Whoopi Goldberg", "Billy Crystal"]
       },
       {
-        "prompt": "Bite Force",
-        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
-        "correctOrder": ["Human", "Snapping Turtle", "Alligator", "Great White Shark"]
+        "prompt": "Number of Times Hosting the Oscars",
+        "items": ["Billy Crystal", "Whoopi Goldberg", "Elon Musk", "Seth MacFarlane"],
+        "correctOrder": ["Elon Musk", "Seth MacFarlane", "Whoopi Goldberg", "Billy Crystal"]
       },
       {
-        "prompt": "Top Speed",
-        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
-        "correctOrder": ["Snapping Turtle", "Alligator", "Human", "Great White Shark"]
+        "prompt": "Net Worth",
+        "items": ["Billy Crystal", "Whoopi Goldberg", "Elon Musk", "Seth MacFarlane"],
+        "correctOrder": ["Whoopi Goldberg", "Billy Crystal", "Seth MacFarlane", "Elon Musk"]
       }
-    ], 
-
-    [
-      {
-        "prompt": "Year of First Film",
-        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
-        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"]
-      },
-      {
-        "prompt": "Number of Oscars Won",
-        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
-        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
-      },
-      {
-        "prompt": "Their Highest Grossing Film Revenue",
-        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
-        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
-      }
-    ], 
+    ],
 
     [
       {
