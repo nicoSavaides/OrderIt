@@ -849,13 +849,6 @@
       }
     ],
 
-
-
-
-
-
-
-
     [
       {
         "prompt": "Area",
@@ -873,27 +866,6 @@
         "correctOrder": ["Greece", "Canada", "Japan", "China"]
       }
     ],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
 
     [
       {
@@ -913,10 +885,6 @@
       }
     ],
 
-
-
-
-
     [
       {
         "prompt": "Height",
@@ -934,10 +902,6 @@
         "correctOrder": ["Jimmy Fallon", "Ellen DeGeneres", "Conan O’Brien", "David Letterman"]
       }
     ], 
-
-
-
-
 
     [
       {
@@ -974,6 +938,18 @@
         "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
       }
     ],
+
+
+
+
+
+
+
+
+
+    
+
+
 
     [
       {
