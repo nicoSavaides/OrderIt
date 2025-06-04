@@ -580,19 +580,19 @@
 
     [
       {
-        "prompt": "Year Published",
-        "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
-        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"]
+        "prompt": "Height",
+        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "correctOrder": ["Allen Iverson", "Michael Jordan", "Larry Bird", "Shaq"]
       },
       {
-        "prompt": "Author Last Name (A-Z)",
-        "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
-        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"]
+        "prompt": "Age",
+        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "correctOrder": ["Allen Iverson", "Shaq", "Michael Jordan", "Larry Bird"]
       },
       {
-        "prompt": "Page Count",
-        "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
-        "correctOrder": ["The Great Gatsby", "1984", "A Tale of Two Cities", "Twilight"]
+        "prompt": "Number of Teams Played For",
+        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "correctOrder": ["Larry Bird", "Michael Jordan", "Allen Iverson", "Shaq"]
       }
     ],
 
@@ -616,55 +616,19 @@
 
     [
       {
-        "prompt": "Distance from Sun",
-        "items": ["Neptune", "Venus", "Saturn", "Mars"],
-        "correctOrder": ["Venus", "Mars", "Saturn", "Neptune"]
+        "prompt": "Year Started",
+        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
+        "correctOrder": ["American Civil War", "World War II", "Korean War", "Vietnam War"]
       },
       {
-        "prompt": "Size",
-        "items": ["Neptune", "Venus", "Saturn", "Mars"],
-        "correctOrder": ["Mars", "Venus", "Neptune", "Saturn"]
+        "prompt": "Length of War",
+        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
+        "correctOrder": ["Korean War", "American Civil War", "World War II", "Vietnam War"]
       },
       {
-        "prompt": "Number of Moons",
-        "items": ["Neptune", "Venus", "Saturn", "Mars"],
-        "correctOrder": ["Venus", "Mars", "Neptune", "Saturn"]
-      }
-    ],
-  
-    [
-      {
-        "prompt": "Height",
-        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
-        "correctOrder": ["Cherry blossom", "Palm tree", "Oak tree", "Redwood tree"]
-      },
-      {
-        "prompt": "Trunk Width",
-        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
-        "correctOrder": ["Palm tree", "Cherry blossom", "Oak tree", "Redwood tree"]
-      },
-      {
-        "prompt": "Lifespan",
-        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
-        "correctOrder": ["Cherry blossom", "Palm tree", "Oak tree", "Redwood tree"]
-      }
-    ],
-
-    [
-      {
-        "prompt": "Height",
-        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
-        "correctOrder": ["Allen Iverson", "Michael Jordan", "Larry Bird", "Shaq"]
-      },
-      {
-        "prompt": "Age",
-        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
-        "correctOrder": ["Allen Iverson", "Shaq", "Michael Jordan", "Larry Bird"]
-      },
-      {
-        "prompt": "Number of Teams Played For",
-        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
-        "correctOrder": ["Larry Bird", "Michael Jordan", "Allen Iverson", "Shaq"]
+        "prompt": "Death Toll",
+        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
+        "correctOrder": ["American Civil War", "Vietnam War", "Korean War", "World War II"]
       }
     ],
 
@@ -688,37 +652,109 @@
 
     [
       {
-        "prompt": "Year Established",
-        "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
-        "correctOrder": ["Oxford", "Yale", "UC Berkeley", "Stanford"]
+        "prompt": "Height",
+        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "correctOrder": ["Ellen DeGeneres", "Jimmy Fallon", "David Letterman", "Conan O’Brien"]
       },
       {
-        "prompt": "Acceptance Rate",
-        "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
-        "correctOrder": ["Stanford", "Yale", "UC Berkeley", "Oxford"]
+        "prompt": "Age",
+        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "correctOrder": ["Jimmy Fallon", "Conan O’Brien", "Ellen DeGeneres", "David Letterman"]
       },
       {
-        "prompt": "Number of Students",
-        "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
-        "correctOrder": ["Yale", "Stanford", "Oxford", "UC Berkeley"]
+        "prompt": "Years as Talk Show Host",
+        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "correctOrder": ["Jimmy Fallon", "Ellen DeGeneres", "Conan O’Brien", "David Letterman"]
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Distance from Sun",
+        "items": ["Neptune", "Venus", "Saturn", "Mars"],
+        "correctOrder": ["Venus", "Mars", "Saturn", "Neptune"]
+      },
+      {
+        "prompt": "Size",
+        "items": ["Neptune", "Venus", "Saturn", "Mars"],
+        "correctOrder": ["Mars", "Venus", "Neptune", "Saturn"]
+      },
+      {
+        "prompt": "Number of Moons",
+        "items": ["Neptune", "Venus", "Saturn", "Mars"],
+        "correctOrder": ["Venus", "Mars", "Neptune", "Saturn"]
       }
     ],
 
     [
       {
-        "prompt": "Wingspan",
-        "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
-        "correctOrder": ["Common Pigeon", "Peregrine Falcon", "Great Horned Owl", "Bald Eagle"]
+        "prompt": "Year Published",
+        "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
+        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"]
       },
       {
-        "prompt": "Weight",
-        "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
-        "correctOrder": ["Common Pigeon", "Peregrine Falcon", "Great Horned Owl", "Bald Eagle"]
+        "prompt": "Author Last Name (A-Z)",
+        "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
+        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"]
       },
       {
-        "prompt": "Top Speed",
-        "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
-        "correctOrder": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"]
+        "prompt": "Page Count",
+        "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
+        "correctOrder": ["The Great Gatsby", "1984", "A Tale of Two Cities", "Twilight"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
+        "correctOrder": ["Cherry blossom", "Palm tree", "Oak tree", "Redwood tree"]
+      },
+      {
+        "prompt": "Trunk Width",
+        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
+        "correctOrder": ["Palm tree", "Cherry blossom", "Oak tree", "Redwood tree"]
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
+        "correctOrder": ["Cherry blossom", "Palm tree", "Oak tree", "Redwood tree"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
+        "correctOrder": ["Lady Gaga", "Katy Perry", "Janet Jackson", "Madonna"]
+      },
+      {
+        "prompt": "Super Bowl Performance Year",
+        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
+        "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"]
+      },
+      {
+        "prompt": "Spotify Monthly Listeners",
+        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
+        "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Area",
+        "items": ["Greece", "Canada", "China", "Japan"],
+        "correctOrder": ["Greece", "Japan", "China", "Canada"]
+      },
+      {
+        "prompt": "Population",
+        "items": ["Greece", "Canada", "China", "Japan"],
+        "correctOrder": ["Greece", "Canada", "Japan", "China"]
+      },
+      {
+        "prompt": "GDP",
+        "items": ["Greece", "Canada", "China", "Japan"],
+        "correctOrder": ["Greece", "Canada", "Japan", "China"]
       }
     ],
 
@@ -742,55 +778,19 @@
 
     [
       {
-        "prompt": "Year Started",
-        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
-        "correctOrder": ["American Civil War", "World War II", "Korean War", "Vietnam War"]
+        "prompt": "Wingspan",
+        "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
+        "correctOrder": ["Common Pigeon", "Peregrine Falcon", "Great Horned Owl", "Bald Eagle"]
       },
       {
-        "prompt": "Length of War",
-        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
-        "correctOrder": ["Korean War", "American Civil War", "World War II", "Vietnam War"]
+        "prompt": "Weight",
+        "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
+        "correctOrder": ["Common Pigeon", "Peregrine Falcon", "Great Horned Owl", "Bald Eagle"]
       },
       {
-        "prompt": "Death Toll",
-        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
-        "correctOrder": ["American Civil War", "Vietnam War", "Korean War", "World War II"]
-      }
-    ],
-
-    [
-      {
-        "prompt": "Population",
-        "items": ["San Francisco", "Tokyo", "New York City", "Los Angeles"],
-        "correctOrder": ["San Francisco", "Los Angeles", "New York City", "Tokyo"]
-      },
-      {
-        "prompt": "Land Area",
-        "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
-        "correctOrder": ["San Francisco", "New York City", "Los Angeles", "Tokyo"]
-      },
-      {
-        "prompt": "Population Density",
-        "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
-        "correctOrder": ["Los Angeles", "San Francisco", "New York City", "Tokyo"]
-      }
-    ],
-
-    [
-      {
-        "prompt": "Age",
-        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
-        "correctOrder": ["Lady Gaga", "Katy Perry", "Janet Jackson", "Madonna"]
-      },
-      {
-        "prompt": "Super Bowl Performance Year",
-        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
-        "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"]
-      },
-      {
-        "prompt": "Spotify Monthly Listeners",
-        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
-        "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"]
+        "prompt": "Top Speed",
+        "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
+        "correctOrder": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"]
       }
     ],
 
@@ -815,60 +815,6 @@
 
     [
       {
-        "prompt": "Location Name Length",
-        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
-        "correctOrder": ["Cowboys", "Bears", "Packers", "Eagles"]
-      },
-      {
-        "prompt": "Superbowls Won",
-        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
-        "correctOrder": ["Bears", "Eagles", "Packers", "Cowboys"]
-      },
-      {
-        "prompt": "Team Valuation",
-        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
-        "correctOrder": ["Packers", "Bears", "Eagles", "Cowboys"]
-      }
-    ],
-
-    [
-      {
-        "prompt": "Age",
-        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
-        "correctOrder": ["Rihanna", "Scarlett Johansson", "Tom Cruise", "Tom Hanks"]
-      },
-      {
-        "prompt": "Height",
-        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
-        "correctOrder": ["Scarlett Johansson", "Tom Cruise",  "Rihanna", "Tom Hanks"]
-      },
-      {
-        "prompt": "Net Worth",
-        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
-        "correctOrder": ["Scarlett Johansson", "Tom Hanks", "Tom Cruise", "Rihanna"]
-      }
-    ],
-
-    [
-      {
-        "prompt": "Area",
-        "items": ["Greece", "Canada", "China", "Japan"],
-        "correctOrder": ["Greece", "Japan", "China", "Canada"]
-      },
-      {
-        "prompt": "Population",
-        "items": ["Greece", "Canada", "China", "Japan"],
-        "correctOrder": ["Greece", "Canada", "Japan", "China"]
-      },
-      {
-        "prompt": "GDP",
-        "items": ["Greece", "Canada", "China", "Japan"],
-        "correctOrder": ["Greece", "Canada", "Japan", "China"]
-      }
-    ],
-
-    [
-      {
         "prompt": "Age",
         "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
         "correctOrder": ["Leonardo DiCaprio", "Will Smith", "Johnny Depp", "Oprah Winfrey"]
@@ -887,21 +833,57 @@
 
     [
       {
-        "prompt": "Height",
-        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
-        "correctOrder": ["Ellen DeGeneres", "Jimmy Fallon", "David Letterman", "Conan O’Brien"]
+        "prompt": "Population",
+        "items": ["San Francisco", "Tokyo", "New York City", "Los Angeles"],
+        "correctOrder": ["San Francisco", "Los Angeles", "New York City", "Tokyo"]
       },
       {
-        "prompt": "Age",
-        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
-        "correctOrder": ["Jimmy Fallon", "Conan O’Brien", "Ellen DeGeneres", "David Letterman"]
+        "prompt": "Land Area",
+        "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
+        "correctOrder": ["San Francisco", "New York City", "Los Angeles", "Tokyo"]
       },
       {
-        "prompt": "Years as Talk Show Host",
-        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
-        "correctOrder": ["Jimmy Fallon", "Ellen DeGeneres", "Conan O’Brien", "David Letterman"]
+        "prompt": "Population Density",
+        "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
+        "correctOrder": ["Los Angeles", "San Francisco", "New York City", "Tokyo"]
       }
-    ], 
+    ],
+
+    [
+      {
+        "prompt": "Location Name Length",
+        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
+        "correctOrder": ["Cowboys", "Bears", "Packers", "Eagles"]
+      },
+      {
+        "prompt": "Superbowls Won",
+        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
+        "correctOrder": ["Bears", "Eagles", "Packers", "Cowboys"]
+      },
+      {
+        "prompt": "Team Valuation",
+        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
+        "correctOrder": ["Packers", "Bears", "Eagles", "Cowboys"]
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year of First Film",
+        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"]
+      },
+      {
+        "prompt": "Number of Oscars Won",
+        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
+      },
+      {
+        "prompt": "Their Highest Grossing Film Revenue",
+        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
+      }
+    ],
 
     [
       {
@@ -923,33 +905,39 @@
 
     [
       {
-        "prompt": "Year of First Film",
-        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
-        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"]
+        "prompt": "Age",
+        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
+        "correctOrder": ["Rihanna", "Scarlett Johansson", "Tom Cruise", "Tom Hanks"]
       },
       {
-        "prompt": "Number of Oscars Won",
-        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
-        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
+        "prompt": "Height",
+        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
+        "correctOrder": ["Scarlett Johansson", "Tom Cruise",  "Rihanna", "Tom Hanks"]
       },
       {
-        "prompt": "Their Highest Grossing Film Revenue",
-        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
-        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
+        "prompt": "Net Worth",
+        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
+        "correctOrder": ["Scarlett Johansson", "Tom Hanks", "Tom Cruise", "Rihanna"]
       }
     ],
 
-
-
-
-
-
-
-
-
-    
-
-
+    [
+      {
+        "prompt": "Year Established",
+        "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
+        "correctOrder": ["Oxford", "Yale", "UC Berkeley", "Stanford"]
+      },
+      {
+        "prompt": "Acceptance Rate",
+        "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
+        "correctOrder": ["Stanford", "Yale", "UC Berkeley", "Oxford"]
+      },
+      {
+        "prompt": "Number of Students",
+        "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
+        "correctOrder": ["Yale", "Stanford", "Oxford", "UC Berkeley"]
+      }
+    ],
 
     [
       {
