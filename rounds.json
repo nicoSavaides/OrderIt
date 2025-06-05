@@ -1374,18 +1374,18 @@
     [
       {
         "prompt": "Volume Level (dB)",
-        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawnmower"],
-        "correctOrder": ["Elevator", "Lawnmower", "Chainsaw", "Fireworks"]
+        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn mower"],
+        "correctOrder": ["Elevator", "Lawn mower", "Chainsaw", "Fireworks"]
       },
       {
         "prompt": "Injuries per Year (US)",
-        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawnmower"],
-        "correctOrder": ["Fireworks", "Elevator", "Chainsaw", "Lawnmower"]
+        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn mower"],
+        "correctOrder": ["Fireworks", "Elevator", "Chainsaw", "Lawn mower"]
       },
       {
         "prompt": "Year Invented",
-        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawnmower"],
-        "correctOrder": ["Fireworks", "Chainsaw", "Lawnmower", "Elevator"]
+        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn mower"],
+        "correctOrder": ["Fireworks", "Chainsaw", "Lawn mower", "Elevator"]
       }
     ], 
     
