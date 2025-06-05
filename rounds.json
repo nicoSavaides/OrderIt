@@ -1324,7 +1324,7 @@
         "correctOrder": ["Seth MacFarlane", "Elon Musk", "Whoopi Goldberg", "Billy Crystal"]
       },
       {
-        "prompt": "Number of Times Hosting the Oscars",
+        "prompt": "Number of Oscars Hosted",
         "items": ["Billy Crystal", "Whoopi Goldberg", "Elon Musk", "Seth MacFarlane"],
         "correctOrder": ["Elon Musk", "Seth MacFarlane", "Whoopi Goldberg", "Billy Crystal"]
       },
