@@ -1387,7 +1387,25 @@
         "items": ["Fireworks", "Chainsaw", "Elevator", "Lawnmower"],
         "correctOrder": ["Fireworks", "Chainsaw", "Lawnmower", "Elevator"]
       }
-    ]    
+    ], 
+    
+    [
+      {
+        "prompt": "Number of Judges",
+        "items": ["American Idol", "Shark Tank", "The Voice", "Judge Judy"],
+        "correctOrder": ["Judge Judy", "American Idol", "The Voice", "Shark Tank"]
+      },
+      {
+        "prompt": "Year Premiered",
+        "items": ["American Idol", "Shark Tank", "The Voice", "Judge Judy"],
+        "correctOrder": ["Judge Judy", "American Idol", "Shark Tank", "The Voice"]
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["American Idol", "Shark Tank", "The Voice", "Judge Judy"],
+        "correctOrder": ["Shark Tank", "The Voice", "American Idol", "Judge Judy"]
+      }
+    ]
     
   ]
 }
