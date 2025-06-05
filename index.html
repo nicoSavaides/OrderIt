@@ -49,16 +49,7 @@
     }
 
 
-    #welcomeScreen {
-  opacity: 1;
-  transition: opacity 0.5s ease;
-  pointer-events: auto;
-}
-
-#welcomeScreen.fade-out {
-  opacity: 0;
-  pointer-events: none;
-}
+    
 
 
     #gameScreen {
@@ -1269,11 +1260,8 @@ function startGame() {
       strikes = savedStrikes;
       currentRound = savedRound;
 
-document.getElementById('welcomeScreen').classList.add('hidden');
-
-const welcomeScreen = document.getElementById('welcomeScreen');
+      document.getElementById('welcomeScreen').classList.add('hidden');
 const gameScreen = document.getElementById('gameScreen');
-
 gameScreen.classList.remove('hidden');
 requestAnimationFrame(() => {
   gameScreen.classList.add('visible');
