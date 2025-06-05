@@ -1355,6 +1355,24 @@
 
     [
       {
+        "prompt": "Egg Size",
+        "items": ["Turkey", "Ostrich", "Emperor Penguin", "Quail"],
+        "correctOrder": ["Quail", "Turkey", "Emperor Penguin", "Ostrich"]
+      },
+      {
+        "prompt": "Standing Height",
+        "items": ["Turkey", "Ostrich", "Emperor Penguin", "Quail"],
+        "correctOrder": ["Quail", "Turkey", "Emperor Penguin", "Ostrich"]
+      },
+      {
+        "prompt": "Number of Eggs Laid per Year",
+        "items": ["Turkey", "Ostrich", "Emperor Penguin", "Quail"],
+        "correctOrder": ["Emperor Penguin", "Ostrich", "Turkey", "Quail"]
+      }
+    ],
+
+    [
+      {
         "prompt": "Volume Level (dB)",
         "items": ["Fireworks", "Chainsaw", "Elevator", "Lawnmower"],
         "correctOrder": ["Elevator", "Lawnmower", "Chainsaw", "Fireworks"]
