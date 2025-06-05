@@ -1351,7 +1351,25 @@
         "items": ["Ostrich", "Emperor Penguin", "Turkey", "Emu"],
         "correctOrder": ["Emperor Penguin", "Turkey", "Emu", "Ostrich"]
       }
-    ]
+    ], 
+
+    [
+      {
+        "prompt": "Volume Level (dB)",
+        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawnmower"],
+        "correctOrder": ["Elevator", "Lawnmower", "Chainsaw", "Fireworks"]
+      },
+      {
+        "prompt": "Injuries per Year (US)",
+        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawnmower"],
+        "correctOrder": ["Fireworks", "Elevator", "Chainsaw", "Lawnmower"]
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawnmower"],
+        "correctOrder": ["Fireworks", "Chainsaw", "Lawnmower", "Elevator"]
+      }
+    ]    
     
   ]
 }
