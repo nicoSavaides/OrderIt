@@ -296,7 +296,7 @@
       /* Further adjustments for smaller screens (smartphones) */
       h1 {
         font-size: 3.1rem !important; 
-        margin-top: 23px !important
+        margin-top: 1.44rem !important
       }
 
       h2 {
@@ -308,19 +308,22 @@
       transform: translateX(-50%); /* Center it exactly by moving it back by 50% of its own width */
       text-align: center;      /* Centers text if it wraps to the next line */
       width: 100%;             /* Make sure the width is 100% of the screen width */
+      max-width: 350px;
       box-sizing: border-box;  /* Prevents padding/margins from affecting width */
       padding: 0 26px;
-      
     }
 
 
-      p {
-        margin-top: 70px!important;
-        font-size: 1.03rem !important;
-        font-weight: 400 !important;
-        padding: 0 20px;
+    p {
+      margin-top: 4.38rem !important; /* rounded */
+      font-size: 1.03rem !important;
+      font-weight: 400 !important;
+      padding: 0 20px;
+      max-width: 56ch; /* limit paragraph width */
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-       }
 
        
       button {
