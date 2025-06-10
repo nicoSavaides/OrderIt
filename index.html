@@ -1078,6 +1078,14 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 </head>
 <body>
 
+  <p id="screenDebug"></p>
+
+<script>
+  document.getElementById('screenDebug').innerText = 
+    `window.innerWidth: ${window.innerWidth}px, devicePixelRatio: ${window.devicePixelRatio}`;
+</script>
+
+
 
 
   <div id="playedTodayScreen" class="screen hidden">
