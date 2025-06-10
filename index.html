@@ -1,5 +1,5 @@
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     /* Ensure the body takes up the full viewport height */
     html, body {
@@ -658,7 +658,7 @@
 /* stats  stats stats stats stats stats stats  stats stats stats stats stats stats  stats stats stats stats stats  */
 
  
-}
+    }
 
 
 
@@ -1012,7 +1012,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 1366px) {
+@media only screen and (min-width: 768px) and (max-width: 1366px) { /* ipad */
   p {
 
   max-width: none !important;
@@ -1029,7 +1029,77 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
   h2 {
     font-size: 28px !important;
   }
+
+  
+  button {
+        font-size: 1.5rem;
+        padding: 12px 25px;
+        margin-top: 10px;
+      }
+
+
+
 }
+
+
+
+@media only screen and (min-width: 860px) and (max-width: 900px) {
+  /* Headings */
+  h1 {
+    font-size: 6.5rem !important;
+    margin-top: 30px !important;
+  }
+  
+  h2 {
+    font-size: 2.2rem !important;
+    top: 40px;
+    padding: 0 20px;
+  }
+  
+  /* Paragraph on welcome screen */
+  #welcomeScreen p {
+    font-size: 1.3rem !important;
+    padding: 0 60px;
+    padding-top: 60px !important;
+  }
+  
+  /* Buttons */
+  button {
+    font-size: 1.3rem !important;
+    padding: 12px 22px !important;
+    margin-top: 80px !important;
+  }
+  
+  /* Item list wrapper */
+  #itemListWrapper {
+    width: 85%;
+    top: 90px;
+  }
+  
+  /* Strike count */
+  #strikeCount {
+    top: 480px !important;
+    font-size: 1.1rem !important;
+  }
+  
+  /* Submit button wrapper */
+  #submitWrapper {
+    bottom: 160px !important;
+  }
+  
+  /* Played Today screen adjustments */
+  #playedTodayScreen p {
+    margin-top: 100px !important;
+    font-size: 1.25rem !important;
+    padding: 0 80px !important;
+  }
+  
+  #playedTodayScreen button {
+    margin-top: 140px !important;
+  }
+}
+
+
 
 
 
