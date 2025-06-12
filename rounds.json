@@ -1365,7 +1365,7 @@
         "correctOrder": ["Quail", "Turkey", "Emperor Penguin", "Ostrich"]
       },
       {
-        "prompt": "Number of Eggs Laid per Year",
+        "prompt": "Eggs Laid per Year",
         "items": ["Turkey", "Ostrich", "Emperor Penguin", "Quail"],
         "correctOrder": ["Emperor Penguin", "Ostrich", "Turkey", "Quail"]
       }
