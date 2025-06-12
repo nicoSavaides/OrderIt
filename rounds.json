@@ -752,7 +752,7 @@
         "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"]
       },
       {
-        "prompt": "Spotify Monthly Listeners",
+        "prompt": "Monthly Spotify Listeners",
         "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
         "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"]
       }
@@ -1293,7 +1293,7 @@
         "correctOrder": ["Michael Jackson", "Paul McCartney", "Prince", "Kendrick Lamar"]
       },
       {
-        "prompt": "Spotify Monthly Listeners",
+        "prompt": "Monthly Spotify Listeners",
         "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
         "correctOrder": ["Paul McCartney", "Prince", "Michael Jackson", "Kendrick Lamar"]
       }
