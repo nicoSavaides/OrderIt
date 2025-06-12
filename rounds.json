@@ -1247,6 +1247,24 @@
     
     [
       {
+        "prompt": "Initial Release Year",
+        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
+        "correctOrder": ["Game Boy", "BlackBerry", "iPhone", "Apple Watch"]
+      },
+      {
+        "prompt": "Number of Physical Buttons",
+        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
+        "correctOrder": ["Apple Watch", "iPhone", "Game Boy", "BlackBerry"]
+      },
+      {
+        "prompt": "Price at Release",
+        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
+        "correctOrder": ["Game Boy", "Apple Watch", "iPhone", "BlackBerry"]
+      }
+    ], 
+
+    [
+      {
         "prompt": "Weight",
         "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
         "correctOrder": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"]
@@ -1283,24 +1301,6 @@
 
     [
       {
-        "prompt": "Initial Release Year",
-        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
-        "correctOrder": ["Game Boy", "BlackBerry", "iPhone", "Apple Watch"]
-      },
-      {
-        "prompt": "Number of Physical Buttons",
-        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
-        "correctOrder": ["Apple Watch", "iPhone", "Game Boy", "BlackBerry"]
-      },
-      {
-        "prompt": "Price at Release",
-        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
-        "correctOrder": ["Game Boy", "Apple Watch", "iPhone", "BlackBerry"]
-      }
-    ], 
-
-    [
-      {
         "prompt": "Land Area",
         "items": ["Cuba", "Brazil", "United Kingdom", "Iraq"],
         "correctOrder": ["Cuba", "United Kingdom", "Iraq", "Brazil"]
@@ -1316,6 +1316,24 @@
         "correctOrder": ["Cuba", "Iraq", "Brazil", "United Kingdom"]
       }
     ],
+
+    [
+      {
+        "prompt": "Volume Level (dB)",
+        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn Mower"],
+        "correctOrder": ["Elevator", "Lawn Mower", "Chainsaw", "Fireworks"]
+      },
+      {
+        "prompt": "Injuries per Year (US)",
+        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn Mower"],
+        "correctOrder": ["Fireworks", "Elevator", "Chainsaw", "Lawn Mower"]
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn Mower"],
+        "correctOrder": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"]
+      }
+    ], 
 
     [
       {
@@ -1338,24 +1356,6 @@
     [
       {
         "prompt": "Egg Size",
-        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Emu"],
-        "correctOrder": ["Turkey", "Emperor Penguin", "Emu", "Ostrich"]
-      },
-      {
-        "prompt": "Standing Height",
-        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Emu"],
-        "correctOrder": ["Turkey", "Emperor Penguin", "Emu", "Ostrich"]
-      },
-      {
-        "prompt": "Top Running Speed",
-        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Emu"],
-        "correctOrder": ["Emperor Penguin", "Turkey", "Emu", "Ostrich"]
-      }
-    ], 
-
-    [
-      {
-        "prompt": "Egg Size",
         "items": ["Turkey", "Ostrich", "Emperor Penguin", "Quail"],
         "correctOrder": ["Quail", "Turkey", "Emperor Penguin", "Ostrich"]
       },
@@ -1370,24 +1370,6 @@
         "correctOrder": ["Emperor Penguin", "Ostrich", "Turkey", "Quail"]
       }
     ],
-
-    [
-      {
-        "prompt": "Volume Level (dB)",
-        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn mower"],
-        "correctOrder": ["Elevator", "Lawn mower", "Chainsaw", "Fireworks"]
-      },
-      {
-        "prompt": "Injuries per Year (US)",
-        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn mower"],
-        "correctOrder": ["Fireworks", "Elevator", "Chainsaw", "Lawn mower"]
-      },
-      {
-        "prompt": "Year Invented",
-        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn mower"],
-        "correctOrder": ["Fireworks", "Chainsaw", "Lawn mower", "Elevator"]
-      }
-    ], 
     
     [
       {
