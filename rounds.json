@@ -1302,18 +1302,18 @@
     [
       {
         "prompt": "Land Area",
-        "items": ["Cuba", "Brazil", "United Kingdom", "Iraq"],
-        "correctOrder": ["Cuba", "United Kingdom", "Iraq", "Brazil"]
+        "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
+        "correctOrder": ["United Kingdom", "Iraq", "Mexico", "Brazil"]
       },
       {
         "prompt": "Population",
-        "items": ["Cuba", "Brazil", "United Kingdom", "Iraq"],
-        "correctOrder": ["Cuba", "Iraq", "United Kingdom", "Brazil"]
+        "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
+        "correctOrder": ["Iraq", "United Kingdom", "Mexico", "Brazil"]
       },
       {
         "prompt": "GDP",
-        "items": ["Cuba", "Brazil", "United Kingdom", "Iraq"],
-        "correctOrder": ["Cuba", "Iraq", "Brazil", "United Kingdom"]
+        "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
+        "correctOrder": ["Iraq", "Mexico", "Brazil", "United Kingdom"]
       }
     ],
 
