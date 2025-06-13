@@ -328,12 +328,12 @@
 
     [
       {
-        "prompt": "Year",
+        "prompt": "Year Released",
         "items": ["Bohemian Rhapsody", "Don't Stop Believin", "Yesterday", "Sweet Caroline"],
         "correctOrder": ["Yesterday", "Sweet Caroline", "Bohemian Rhapsody", "Don't Stop Believin"]
       },
       {
-        "prompt": "Artist Name (Alphabetical)",
+        "prompt": "Artist Name (A-Z)",
         "items": ["Bohemian Rhapsody", "Don't Stop Believin", "Yesterday", "Sweet Caroline"],
         "correctOrder": ["Yesterday", "Don't Stop Believin", "Sweet Caroline", "Bohemian Rhapsody"]
       },
@@ -369,7 +369,7 @@
         "correctOrder": ["Mein Kampf", "The Hobbit", "Animal Farm", "The Shining"]
       },
       {
-        "prompt": "Author Last Name (Alphabetical)",
+        "prompt": "Author Last Name (A-Z)",
         "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
         "correctOrder": ["Mein Kampf", "The Shining", "Animal Farm", "The Hobbit"]
       },
@@ -544,7 +544,7 @@
 
     [
       {
-        "prompt": "Year",
+        "prompt": "Year Released",
         "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
         "correctOrder": ["Hey Jude", "All I Want for Christmas Is You", "Gangnam Style", "Despacito"]
       },
@@ -608,7 +608,7 @@
         "correctOrder": ["The Walking Dead", "Breaking Bad", "The Sopranos", "Lost"]
       },
       {
-        "prompt": "Premier Year",
+        "prompt": "Premiere Year",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "The Walking Dead"]
       }
@@ -644,7 +644,7 @@
         "correctOrder": ["France", "Italy", "US", "China"]
       },
       {
-        "prompt": "Yearly Tourism",
+        "prompt": "Annual Tourists",
         "items": ["China", "Italy", "France", "US"],
         "correctOrder": ["China", "Italy", "US", "France"]
       }
@@ -977,12 +977,12 @@
 
     [
       {
-        "prompt": "Year",
+        "prompt": "Year Released",
         "items": ["Dancing Queen", "Smells Like Teen Spirit", "Thriller", "I Want to Hold Your Hand"],
         "correctOrder": ["I Want to Hold Your Hand", "Dancing Queen", "Thriller", "Smells Like Teen Spirit"]
       },
       {
-        "prompt": "Artist Name (Alphabetical)",
+        "prompt": "Artist Name (A-Z)",
         "items": ["Dancing Queen", "Smells Like Teen Spirit", "Thriller", "I Want to Hold Your Hand"],
         "correctOrder": ["Dancing Queen", "I Want to Hold Your Hand", "Thriller", "Smells Like Teen Spirit"]
       },
@@ -1072,7 +1072,7 @@
         "correctOrder": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"]
       },
       {
-        "prompt": "Author Last Name (Alphabetical)",
+        "prompt": "Author Last Name (A-Z)",
         "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
         "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"]
       },
@@ -1113,7 +1113,7 @@
         "correctOrder": ["Submarine", "Motorcycle", "Tank", "Helicopter"]
       },
       {
-        "prompt": "Top Speed Record",
+        "prompt": "Top Recorded Speed",
         "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
         "correctOrder": ["Tank", "Submarine", "Helicopter", "Motorcycle"]
       }
@@ -1121,7 +1121,7 @@
 
     [
       {
-        "prompt": "Premier Year",
+        "prompt": "Premiere Year",
         "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
         "correctOrder": ["Seinfeld", "Friends", "The Office (US)", "Mad Men"]
       },
@@ -1229,12 +1229,12 @@
 
     [
       {
-        "prompt": "Artist Name (Alphabetical)",
+        "prompt": "Artist Name (A-Z)",
         "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
         "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"]
       },
       {
-        "prompt": "Year",
+        "prompt": "Year Released",
         "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
         "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"]
       },
