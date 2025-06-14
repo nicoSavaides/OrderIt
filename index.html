@@ -1374,8 +1374,11 @@ const LAUNCH_DATE = new Date(2025, 5, 13);
 const now = new Date();
 const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 const msPerDay = 1000 * 60 * 60 * 24;
-
 const dayIndex = Math.floor((localToday - LAUNCH_DATE) / msPerDay);
+
+
+
+
 
 function startGame() {
   const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
@@ -1464,6 +1467,8 @@ function loadRound() {
     console.warn("loadRound skipped: rounds or rounds[currentRound] missing");
     return;
   }
+
+  localStorage.setItem('maxRoundReachedToday', currentRound);
   
   if (isNaN(currentRound) || currentRound < 0 || currentRound >= rounds.length) {
     console.warn("Invalid currentRound:", currentRound);
@@ -1946,42 +1951,40 @@ setTimeout(() => {
   const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
   localStorage.setItem('lastPlayedDate', todayString);
 
-  // Save final rounds completed and strikes to localStorage
-  localStorage.setItem('roundsCompleted', roundsCompleted);
+  // Save strikes and clear game progress
   localStorage.setItem('strikes', strikes);
+  localStorage.removeItem('currentStrikes');
+  localStorage.removeItem('currentRound');
 
-  console.log("End game triggered");  // Test if this is being reached
-  document.getElementById('gameScreen').classList.add('hidden'); // Hide the game screen
-  document.getElementById('endScreen').classList.remove('hidden'); // Show the end screen
+  console.log("End game triggered");
+  document.getElementById('gameScreen').classList.add('hidden');
+  document.getElementById('endScreen').classList.remove('hidden');
 
-  let message = "";  // Default message
+  // Determine score from localStorage in case of refresh
+  const maxRound = parseInt(localStorage.getItem('maxRoundReachedToday')) || 0;
 
   // Set message based on the rounds completed
-  if (roundsCompleted === 3) {
+  let message = "";
+  if (maxRound === 3) {
     message = "Amazing!";
-  } else if (roundsCompleted === 2) {
+  } else if (maxRound === 2) {
     message = "Good job!";
-  } else if (roundsCompleted === 1) {
+  } else if (maxRound === 1) {
     message = "Not bad!";
   } else {
     message = "Nice try";
   }
 
-  
   document.getElementById('endGameStatus').textContent = message;
+  document.getElementById('finalScore').textContent = `You scored ${maxRound} out of ${rounds.length}`;
 
-  
-  document.getElementById('finalScore').textContent = `You scored ${roundsCompleted} out of ${rounds.length}`;
-
- 
-  const shareButton = document.getElementById('shareButton');
-
-  localStorage.removeItem('currentStrikes');
-  localStorage.removeItem('currentRound');
-
-  updateStats(roundsCompleted);
- 
+  updateStats(maxRound);
 }
+
+
+
+
+
 
 
 
@@ -2189,11 +2192,15 @@ function alreadyPlayedToday() {
 }
 
 
+
+
+
 window.onload = () => {
   const now = new Date();
+  const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
   const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
   const msPerDay = 1000 * 60 * 60 * 24;
-  const LAUNCH_DATE = new Date(2025, 5, 13);
+  const LAUNCH_DATE = new Date(2025, 5, 13); // Adjust if needed
   const currentDay = Math.floor((localToday - LAUNCH_DATE) / msPerDay);
 
   const lastPlayedDate = localStorage.getItem('lastPlayedDate');
@@ -2206,9 +2213,17 @@ window.onload = () => {
     .then(data => {
       rounds = data.days;
 
-      // Use savedDay only if it matches currentDay; otherwise start fresh day
-      if (lastPlayedDate === `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}` && savedDay === currentDay) {
-        if (!isNaN(savedRound) && !isNaN(savedStrikes)) {
+      // ✅ Check if already played today
+      if (lastPlayedDate === todayString) {
+        // ❗ If game is finished, go to already played screen immediately
+        if (isNaN(savedRound) || savedRound >= rounds[currentDay].length) {
+          showScreen('playedTodayScreen', false);
+          history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
+          return;
+        }
+
+        // ✅ Otherwise resume game in progress
+        if (!isNaN(savedDay) && savedDay === currentDay && !isNaN(savedRound) && !isNaN(savedStrikes)) {
           window.currentDay = savedDay;
           window.currentRound = savedRound;
           strikes = savedStrikes;
@@ -2218,16 +2233,12 @@ window.onload = () => {
           history.replaceState({ screenId: 'gameScreen' }, '', '#gameScreen');
           return;
         }
-        // Already played today but no unfinished game:
-        showScreen('playedTodayScreen', false);
-        history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
-        return;
       }
 
-      // New day or no saved data:
+      // ✅ If no saved progress or new day, show welcome
       window.currentDay = currentDay;
       window.currentRound = 0;
-      strikes = 0; 
+      strikes = 0;
       showScreen('welcomeScreen', false);
       history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
     })
@@ -2237,6 +2248,7 @@ window.onload = () => {
       history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
     });
 };
+
 
 
 
