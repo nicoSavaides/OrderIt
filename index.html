@@ -1469,7 +1469,7 @@ function loadRound() {
   }
 
   localStorage.setItem('maxRoundReachedToday', currentRound);
-  
+
   if (isNaN(currentRound) || currentRound < 0 || currentRound >= rounds.length) {
     console.warn("Invalid currentRound:", currentRound);
     endGame();
@@ -1480,22 +1480,26 @@ function loadRound() {
   document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
 
   const itemList = document.getElementById('itemList');
-  itemList.innerHTML = ''; // Clear items every round before adding
 
-  items.forEach(item => {
-    const li = document.createElement('li');
-    li.textContent = item;
-    li.setAttribute('draggable', true);
-    li.classList.add('draggable-item');
-    itemList.appendChild(li);
-  });
+  // ✅ Only generate tiles if it's the first round and nothing is rendered yet
+  if (currentRound === 0 && itemList.children.length === 0) {
+    itemList.innerHTML = ''; // Just in case
 
-  makeItemsDraggable(); // Always make items draggable after adding
+    items.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      li.setAttribute('draggable', true);
+      li.classList.add('draggable-item');
+      itemList.appendChild(li);
+    });
+
+    makeItemsDraggable(); // Only needed once, after creating the tiles
+  }
 
   updateStrikes();
-
   currentCorrectOrder = items;
 }
+
 
 
 
