@@ -1482,7 +1482,7 @@ function loadRound() {
   const itemList = document.getElementById('itemList');
 
   // ✅ Only generate tiles if it's the first round and nothing is rendered yet
-  if (currentRound === 0 && itemList.children.length === 0) {
+  if (itemList.children.length === 0) {
     itemList.innerHTML = ''; // Just in case
 
     items.forEach(item => {
