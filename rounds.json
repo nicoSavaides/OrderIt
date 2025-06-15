@@ -1288,7 +1288,7 @@
         "correctOrder": ["Prince", "Kendrick Lamar", "Michael Jackson", "Paul McCartney"]
       },
       {
-        "prompt": "Super Bowl Performance Year",
+        "prompt": "Year of Super Bowl Performance",
         "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
         "correctOrder": ["Michael Jackson", "Paul McCartney", "Prince", "Kendrick Lamar"]
       },

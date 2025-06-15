@@ -316,6 +316,11 @@
       padding: 0 26px;
     }
 
+    .smaller-font {
+      font-size: 1.83rem !important;
+    }
+
+
 
     p {
       margin-top: 5rem !important; /* rounded */
@@ -1478,11 +1483,22 @@ function loadRound() {
   }
 
   const { prompt, items } = rounds[currentRound];
-  document.getElementById('roundPrompt').textContent = "Order by: " + prompt;
+
+
+  const promptEl = document.getElementById('roundPrompt');
+promptEl.textContent = "Order by: " + prompt;
+
+if (prompt.length > 28) {
+  promptEl.classList.add('smaller-font');
+} else {
+  promptEl.classList.remove('smaller-font');
+}
+
+
 
   const itemList = document.getElementById('itemList');
 
-  // ✅ Only generate tiles if it's the first round and nothing is rendered yet
+  
   if (itemList.children.length === 0) {
     itemList.innerHTML = ''; // Just in case
 
