@@ -86,7 +86,7 @@
         "correctOrder": ["Mount Rushmore", "Statue of Liberty", "Pyramid of Giza", "Eiffel Tower"]
       },
       {
-        "prompt": "Construction in Years",
+        "prompt": "Length of Construction",
         "items": ["Eiffel Tower", "Mount Rushmore", "Statue of Liberty", "Pyramid of Giza"],
         "correctOrder": ["Eiffel Tower", "Statue of Liberty", "Mount Rushmore", "Pyramid of Giza"]
       }
@@ -220,7 +220,7 @@
 
     [
       {
-        "prompt": "Length of Event",
+        "prompt": "Event Duration",
         "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
         "correctOrder": ["Super Bowl", "Masters Tournament", "Burning Man", "Olympics"]
       },
@@ -234,6 +234,24 @@
         "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
         "correctOrder": ["Super Bowl", "Burning Man", "Masters Tournament", "Olympics"]
       } 
+    ],
+
+    [
+      {
+        "prompt": "Number of Strings",
+        "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
+        "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
+      },
+      {
+        "prompt": "Height Standing Upright",
+        "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
+        "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
+        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"]
+      }
     ],
 
     [
@@ -274,25 +292,7 @@
 
     [
       {
-        "prompt": "Number of Strings",
-        "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
-        "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
-      },
-      {
-        "prompt": "Height Standing Upright",
-        "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
-        "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
-      },
-      {
-        "prompt": "Year Invented",
-        "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
-        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"]
-      }
-    ],
-
-    [
-      {
-        "prompt": "Debut Year as Pro.",
+        "prompt": "Year They Turned Professional",
         "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
         "correctOrder": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"]
       },
@@ -312,7 +312,7 @@
       {
         "prompt": "Weight",
         "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
-        "correctOrder": ["Egg", "Banana", "Russet Potato", "Avocado"]
+        "correctOrder": ["Egg", "Banana", "Avocado", "Russet Potato"]
       },
       {
         "prompt": "Calories",
@@ -428,7 +428,7 @@
         "correctOrder": ["Brown", "Green", "Blue", "Gray"]
       },
       {
-        "prompt": "National Flag Color Frequency",
+        "prompt": "Flag Color Frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
         "correctOrder": ["Gray", "Brown", "Green", "Blue"]
       }
@@ -454,7 +454,7 @@
 
     [
       {
-        "prompt": "Number of Kids",
+        "prompt": "Number of Children",
         "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
         "correctOrder": ["John and Yoko", "Barack and Michelle", "Kim and Kanye", "Brad and Angelina"]
       },
@@ -482,7 +482,7 @@
         "correctOrder": ["Colosseum", "Empire State Building", "Sydney Opera House", "Burj Khalifa"]
       },
       {
-        "prompt": "Construction in Years",
+        "prompt": "Length of Construction",
         "items": ["Colosseum", "Empire State Building", "Burj Khalifa", "Sydney Opera House"],
         "correctOrder": ["Empire State Building", "Burj Khalifa", "Colosseum", "Sydney Opera House"]
       }
