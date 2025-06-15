@@ -1360,7 +1360,14 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
 
 
 
-    
+window.addEventListener('load', () => {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  const ratio = window.devicePixelRatio;
+
+  alert(`Width: ${width}px\nHeight: ${height}px\nDevice Pixel Ratio: ${ratio}`);
+});
+
 
 
 
