@@ -897,7 +897,7 @@
         "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
       },
       {
-        "prompt": "Their Highest Grossing Film Revenue",
+        "prompt": "Highest Grossing Movie",
         "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
         "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
       }
