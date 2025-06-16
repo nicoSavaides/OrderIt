@@ -861,9 +861,9 @@
         "correctOrder": ["San Francisco", "New York City", "Los Angeles", "Tokyo"]
       },
       {
-        "prompt": "Population Density",
+        "prompt": "Distance from Equator",
         "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
-        "correctOrder": ["Los Angeles", "San Francisco", "New York City", "Tokyo"]
+        "correctOrder": ["Los Angeles", "Tokyo", "San Francisco", "New York City"]
       }
     ],
 
