@@ -1230,6 +1230,10 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
     <button id="shareButton">Share Your Score</button> 
     
 
+
+
+    <div id="sharedScoreDisplay" class="hidden"></div>
+
   </div>
   
   <p id="dateAndRound"></p>
@@ -2274,6 +2278,18 @@ window.onload = () => {
       showScreen('welcomeScreen', false);
       history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
     });
+
+    const urlParams = new URLSearchParams(window.location.search);
+  const emojiScore = urlParams.get('score');
+
+  if (emojiScore) {
+    const display = document.getElementById('sharedScoreDisplay');
+    if (display) {
+      display.textContent = `Shared score: ${emojiScore}`;
+      display.classList.remove('hidden');
+    }
+  }
+
 };
 
 
