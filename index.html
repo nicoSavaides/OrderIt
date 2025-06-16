@@ -2066,30 +2066,29 @@ shareButton.addEventListener('click', () => {
   const baseUrl = window.location.origin + window.location.pathname;
   const shareUrl = baseUrl;
 
+  // Start with emoji
   let text = emojiScore;
 
-  // Only add mistake line if player completed all 3 rounds
+  // Only add mistakes if all 3 rounds were completed
   if (roundsCompleted === 3) {
     text += `\n${strikes} ${strikes === 1 ? 'mistake' : 'mistakes'}`;
   }
 
   const shareText = `${text}\n${shareUrl}`;
-
   const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   if (navigator.share && isMobile) {
     navigator.share({
       title: 'Order It',
       text: shareText
-    })
-    .then(() => console.log('Shared!'))
-    .catch(console.error);
+    }).catch(console.error);
   } else {
     navigator.clipboard.writeText(shareText)
       .then(() => alert("Score copied to clipboard!"))
       .catch(() => alert("Copy failed, here is your score:\n" + shareText));
   }
 });
+
 
 
 
