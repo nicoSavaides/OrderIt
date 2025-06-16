@@ -1216,7 +1216,7 @@
         "correctOrder": ["Red Sox", "Yankees", "Dodgers", "Giants"]
       },
       {
-        "prompt": "Championships Won",
+        "prompt": "World Series Won",
         "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
         "correctOrder": ["Dodgers", "Giants", "Red Sox", "Yankees"]
       },
