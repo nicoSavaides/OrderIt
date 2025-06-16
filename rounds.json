@@ -266,9 +266,9 @@
         "correctOrder": ["Atlanta", "Athens", "London", "Mumbai"]
       },
       {
-        "prompt": "Population Density",
+        "prompt": "Distance from Equator",
         "items": ["Athens", "Atlanta", "London", "Mumbai"],
-        "correctOrder": ["Atlanta", "London", "Athens", "Mumbai"]
+        "correctOrder": ["Mumbai", "Atlanta", "Athens", "London"]
       }
     ],
 
