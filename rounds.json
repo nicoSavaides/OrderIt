@@ -1108,14 +1108,14 @@
         "correctOrder": ["Motorcycle", "Helicopter", "Tank", "Submarine"]
       },
       {
-        "prompt": "Year Invented",
-        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
-        "correctOrder": ["Submarine", "Motorcycle", "Tank", "Helicopter"]
-      },
-      {
         "prompt": "Top Recorded Speed",
         "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
         "correctOrder": ["Tank", "Submarine", "Helicopter", "Motorcycle"]
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
+        "correctOrder": ["Submarine", "Motorcycle", "Tank", "Helicopter"]
       }
     ],
 
