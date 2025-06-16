@@ -2077,10 +2077,10 @@ shareButton.addEventListener('click', () => {
   }
 
   const shareData = {
-    title: 'Order It',
-    text: text,
-    url: shareUrl
-  };
+  title: 'Order It',
+  text: `I scored ${emojiScore} in Order It! Try it here:\n${shareUrl}`,
+  url: shareUrl,
+};
 
   if (navigator.share) {
     navigator.share(shareData)
