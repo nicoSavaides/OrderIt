@@ -2082,7 +2082,7 @@ shareButton.addEventListener('click', () => {
   url: shareUrl,
 };
 
-const shareText = `${emojiScore} - I scored this in Order It! Play here: ${shareUrl}`;
+const shareText = `${emojiScore} ${shareUrl}`;
 
 if (navigator.share) {
   navigator.share({
