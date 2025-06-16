@@ -2053,14 +2053,24 @@ function getEmojiScore(roundsCompleted) {
 
 const shareButton = document.getElementById('shareButton');
 
+
+
+
+
 shareButton.addEventListener('click', () => {
   const emojiScore = getEmojiScore(roundsCompleted);
-  
+
+  // Build URL with score embedded
+  const baseUrl = window.location.origin + window.location.pathname;
+  const shareUrl = `${baseUrl}?score=${encodeURIComponent(emojiScore)}`;
+
   let text;
-  if (roundsCompleted == 3) {
-    text = strikes === 1
-      ? `${emojiScore}\n${roundsCompleted}/3 rounds\n${strikes} mistake`
-      : `${emojiScore}\n${roundsCompleted}/3 rounds\n${strikes} mistakes`;
+  if (roundsCompleted === 3) {
+    if (strikes === 1) {
+      text = `${emojiScore}\n${roundsCompleted}/3 rounds\n${strikes} mistake`;
+    } else {
+      text = `${emojiScore}\n${roundsCompleted}/3 rounds\n${strikes} mistakes`;
+    }
   } else {
     text = `${emojiScore}`;
   }
@@ -2068,23 +2078,17 @@ shareButton.addEventListener('click', () => {
   const shareData = {
     title: 'Order It',
     text: text,
-    url: window.location.href
+    url: shareUrl // <-- Use URL with score here
   };
 
-  if (navigator.share && /Mobi|Android/i.test(navigator.userAgent)) {
-    // ✅ Mobile share
+  if (navigator.share) {
     navigator.share(shareData)
-      .then(() => console.log('Shared!'))
-      .catch((err) => console.log('Share error', err));
+      .then(() => console.log('Share successful!'))
+      .catch((error) => console.log('Error sharing:', error));
   } else {
-    // ✅ Desktop: copy to clipboard
-    navigator.clipboard.writeText(`${text}\n${shareData.url}`)
-      .then(() => {
-        alert("Score copied to clipboard! You can now paste it anywhere.");
-      })
-      .catch(() => {
-        alert("Unable to copy. Here's your score:\n" + text);
-      });
+    navigator.clipboard.writeText(`${text}\n${shareUrl}`)
+      .then(() => alert("Score copied to clipboard! You can now paste it anywhere."))
+      .catch(() => alert("Unable to copy. Here's your score:\n" + text));
   }
 });
 
