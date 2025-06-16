@@ -130,14 +130,14 @@
 
     [
       {
-        "prompt": "Year Invented",
-        "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
-        "correctOrder": ["Tennis", "Golf", "Baseball", "Football (American)"]
-      },
-      {
         "prompt": "Ball Weight",
         "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
         "correctOrder": ["Golf", "Tennis", "Baseball", "Football (American)"]
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
+        "correctOrder": ["Tennis", "Golf", "Baseball", "Football (American)"]
       },
       {
         "prompt": "U.S. TV Viewership",
@@ -266,9 +266,9 @@
         "correctOrder": ["Atlanta", "Athens", "London", "Mumbai"]
       },
       {
-        "prompt": "Population Density",
+        "prompt": "Distance from Equator",
         "items": ["Athens", "Atlanta", "London", "Mumbai"],
-        "correctOrder": ["Atlanta", "London", "Athens", "Mumbai"]
+        "correctOrder": ["Mumbai", "Atlanta", "Athens", "London"]
       }
     ],
 
@@ -760,7 +760,7 @@
 
     [
       {
-        "prompt": "Area",
+        "prompt": "Land Area",
         "items": ["Greece", "Canada", "China", "Japan"],
         "correctOrder": ["Greece", "Japan", "China", "Canada"]
       },
@@ -861,9 +861,9 @@
         "correctOrder": ["San Francisco", "New York City", "Los Angeles", "Tokyo"]
       },
       {
-        "prompt": "Population Density",
+        "prompt": "Distance from Equator",
         "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
-        "correctOrder": ["Los Angeles", "San Francisco", "New York City", "Tokyo"]
+        "correctOrder": ["Los Angeles", "Tokyo", "San Francisco", "New York City"]
       }
     ],
 
