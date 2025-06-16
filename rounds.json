@@ -1095,7 +1095,7 @@
         "correctOrder": ["Leaning Tower of Pisa", "Taj Mahal", "Big Ben", "Golden Gate Bridge"]
       },
       {
-        "prompt": "Construction in Years",
+        "prompt": "Length of Construction",
         "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
         "correctOrder": ["Golden Gate Bridge", "Big Ben", "Taj Mahal", "Leaning Tower of Pisa"]
       }
