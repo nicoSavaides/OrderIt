@@ -2082,15 +2082,22 @@ shareButton.addEventListener('click', () => {
   url: shareUrl,
 };
 
-  if (navigator.share) {
-    navigator.share(shareData)
-      .then(() => console.log('Share successful!'))
-      .catch((error) => console.log('Error sharing:', error));
-  } else {
-    navigator.clipboard.writeText(`${text}\n${shareUrl}`)
-      .then(() => alert("Score copied to clipboard! You can now paste it anywhere."))
-      .catch(() => alert("Unable to copy. Here's your score:\n" + text));
-  }
+const shareText = `${emojiScore} - I scored this in Order It! Play here: ${shareUrl}`;
+
+if (navigator.share) {
+  navigator.share({
+    title: 'Order It',
+    text: shareText,
+    // omit url to force full text share
+  })
+  .then(() => console.log('Shared!'))
+  .catch(console.error);
+} else {
+  navigator.clipboard.writeText(shareText)
+    .then(() => alert("Score copied to clipboard!"))
+    .catch(() => alert("Copy failed, here is your score:\n" + shareText));
+}
+
 });
 
 
