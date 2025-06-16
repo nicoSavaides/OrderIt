@@ -1180,14 +1180,14 @@
         "correctOrder": ["Moscow", "Denver", "Sydney", "Cairo"]
       },
       {
-        "prompt": "Elevation",
-        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
-        "correctOrder": ["Cairo", "Sydney", "Moscow", "Denver"]
-      },
-      {
         "prompt": "Population",
         "items": ["Cairo", "Denver", "Sydney", "Moscow"],
         "correctOrder": ["Denver", "Sydney", "Moscow", "Cairo"]
+      },
+      {
+        "prompt": "Elevation",
+        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
+        "correctOrder": ["Cairo", "Sydney", "Moscow", "Denver"]
       }
     ],
 
