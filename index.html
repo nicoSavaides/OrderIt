@@ -2063,14 +2063,18 @@ const shareButton = document.getElementById('shareButton');
 
 shareButton.addEventListener('click', () => {
   const emojiScore = getEmojiScore(roundsCompleted);
-
   const baseUrl = window.location.origin + window.location.pathname;
   const shareUrl = baseUrl;
 
-  const text = `${emojiScore}`;
+  let text = emojiScore;
+
+  // Only add mistake line if player completed all 3 rounds
+  if (roundsCompleted === 3) {
+    text += `\n${strikes} ${strikes === 1 ? 'mistake' : 'mistakes'}`;
+  }
+
   const shareText = `${text}\n${shareUrl}`;
 
-  // Simple mobile detection (true for phones and tablets)
   const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
   if (navigator.share && isMobile) {
@@ -2086,6 +2090,7 @@ shareButton.addEventListener('click', () => {
       .catch(() => alert("Copy failed, here is your score:\n" + shareText));
   }
 });
+
 
 
 
