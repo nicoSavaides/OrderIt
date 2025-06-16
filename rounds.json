@@ -1085,12 +1085,12 @@
 
     [
       {
-        "prompt": "Height",
+        "prompt": "Year Built",
         "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
         "correctOrder": ["Leaning Tower of Pisa", "Taj Mahal", "Big Ben", "Golden Gate Bridge"]
       },
       {
-        "prompt": "Year Built",
+        "prompt": "Height",
         "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
         "correctOrder": ["Leaning Tower of Pisa", "Taj Mahal", "Big Ben", "Golden Gate Bridge"]
       },
