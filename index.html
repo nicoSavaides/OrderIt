@@ -2071,7 +2071,7 @@ shareButton.addEventListener('click', () => {
 
   // Only add mistakes if all 3 rounds were completed
   if (roundsCompleted === 3) {
-    text += `\n${strikes} ${strikes === 1 ? 'mistake' : 'mistakes'}`;
+    text += `\nwith ${strikes} ${strikes === 1 ? 'mistake' : 'mistakes'}`;
   }
 
   const shareText = `${text}\n${shareUrl}`;
