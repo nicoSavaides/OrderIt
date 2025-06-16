@@ -2063,24 +2063,27 @@ const shareButton = document.getElementById('shareButton');
 
 shareButton.addEventListener('click', () => {
   const emojiScore = getEmojiScore(roundsCompleted);
+
   const baseUrl = window.location.origin + window.location.pathname;
   const shareUrl = baseUrl;
 
-  const textContent = `${emojiScore}\n${roundsCompleted}/3 rounds\n${strikes} ${strikes === 1 ? 'mistake' : 'mistakes'}`;
-  const shareText = `${textContent}\nPlay Order It:\n${shareUrl}`;
+  const text = `${emojiScore}\n${roundsCompleted}/3 rounds\n${strikes} ${strikes === 1 ? 'mistake' : 'mistakes'}`;
+  const shareText = `${text}\n${shareUrl}`;
 
-  const isMobile = /Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
+  // Simple mobile detection (true for phones and tablets)
+  const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-  if (isMobile && navigator.share) {
+  if (navigator.share && isMobile) {
     navigator.share({
       title: 'Order It',
       text: shareText
-    }).then(() => console.log('Shared!'))
-      .catch(err => console.error('Sharing failed', err));
+    })
+    .then(() => console.log('Shared!'))
+    .catch(console.error);
   } else {
     navigator.clipboard.writeText(shareText)
       .then(() => alert("Score copied to clipboard!"))
-      .catch(() => alert("Copy failed. Here's your score:\n" + shareText));
+      .catch(() => alert("Copy failed, here is your score:\n" + shareText));
   }
 });
 
