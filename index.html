@@ -172,43 +172,35 @@
 
 
     @keyframes shake {
-  0%   { transform: translateX(0); }
-  10%  { transform: translateX(-10px); }
-  20%  { transform: translateX(10px); }
-  30%  { transform: translateX(-8px); }
-  40%  { transform: translateX(8px); }
-  50%  { transform: translateX(-6px); }
-  60%  { transform: translateX(6px); }
-  70%  { transform: translateX(-4px); }
-  80%  { transform: translateX(4px); }
-  90%  { transform: translateX(-2px); }
-  100% { transform: translateX(0); }
-}
-
-.shake {
-  animation: shake 0.8s ease;
+  0%    { transform: translateX(0); background-color: #A8A8A8; }
+  10%   { transform: translateX(-9px); background-color: #A8A8A8; }
+  20%   { transform: translateX(9px); background-color: #A8A8A8; }
+  30%   { transform: translateX(-7px); background-color: #A8A8A8; }
+  40%   { transform: translateX(7px); background-color: #A8A8A8; }
+  50%   { transform: translateX(-5px); background-color: #A8A8A8; }
+  60%   { transform: translateX(5px); background-color: #A8A8A8; }
+  70%   { transform: translateX(0); background-color: #A8A8A8; }
+  90%   { transform: translateX(0); background-color: #A8A8A8; }
+  100%  { transform: translateX(0); background-color: #A8A8A8; }
 }
 
 
-
-
-
-
-@keyframes correctFlash {
-  0% {
-    transform: scale(1);
-  }
-  80% {
-    transform: scale(1.07); 
-  }
-  100% {
-    transform: scale(1);
-  }
+.shake li {
+  animation: shake 1.1s ease-in-out;
 }
 
-.correct-animation {
-  animation: correctFlash 1s ease-in-out;
-}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -373,6 +365,28 @@
     }
 
 
+    @keyframes flash-green {
+  0% { background-color: transparent; }
+  20%, 100% { background-color: #62a65b; } /* stays green at the end */
+}
+
+@keyframes grow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+.correct-animation li {
+  animation: 
+    flash-green 1.2s ease-in-out forwards, /* forwards to keep end style */
+    grow 1.2s ease-in-out forwards;
+}
+
+
+
+
+
+
+
       #strikeCount {
         position: fixed;
         font-size: 1.2rem !important;
@@ -416,9 +430,9 @@
       .correct-order-tile {
       font-weight: 650 !important;
       position: relative;
-      top: -204px !important;             /* -132 */
+      top: -134px !important;   /* -204px */    
       transition: transform 0.3s ease;
-      z-index: 1;             /* Ensure it's on top of other elements */
+      z-index: 1;             
     }
 
 
@@ -1904,43 +1918,51 @@ function submitOrder() {
   const correctOrder = rounds[currentRound].correctOrder;
 
   if (JSON.stringify(submittedOrder) === JSON.stringify(correctOrder)) {
-    roundsCompleted++; // Increment rounds completed on correct order.
-    currentRound++;
-    localStorage.setItem('currentRound', currentRound);
-    localStorage.setItem('currentStrikes', strikes);
-    localStorage.setItem('maxRoundReachedToday', currentRound);
+  roundsCompleted++; // Increment rounds completed on correct order.
+  currentRound++;
+  localStorage.setItem('currentRound', currentRound);
+  localStorage.setItem('currentStrikes', strikes);
+  localStorage.setItem('maxRoundReachedToday', currentRound);
 
+  // Add animation class to flash green and scale up
+  itemList.classList.add('correct-animation');
 
-    itemList.classList.add('correct-animation'); // Add the animation class
+// Wait for full animation (1.2s) + pause (0.3s) before removing class and proceeding
+setTimeout(() => {
+  itemList.classList.remove('correct-animation');
 
-    // Remove the animation class after 600ms (duration of animation)
-    setTimeout(() => {
-      itemList.classList.remove('correct-animation');
-    }, 900); 
-
-    if (currentRound < rounds.length) {
-      loadRound();
+  if (currentRound < rounds.length) {
+    loadRound();
+  } else {
+    if (strikes < maxStrikes) {
+      endGame();
+      markGameAsPlayed();
     } else {
-      // If all rounds are completed without exceeding max strikes
-      if (strikes < maxStrikes) {
-        setTimeout(() => {
-          endGame(); // Wait for a moment, then end the game
-          markGameAsPlayed(); // Mark the game as played after it ends
-        }, 1400);
-      } else {
-        document.getElementById('gameStatus').textContent = "Nice!"; // Fallback message if there are strikes
-        setTimeout(() => {
-          endGame(); // End the game with strikes
-          markGameAsPlayed(); // Mark the game as played after it ends
-        }, 1400);
-      }
+      document.getElementById('gameStatus').textContent = "Nice!";
+      endGame();
+      markGameAsPlayed();
     }
+  }
+}, 1500);  // 1200ms + 300ms pause combined
+
+    
+
+
   } else {
     strikes++;
-    localStorage.setItem('currentStrikes', strikes);
-    updateStrikes(); // Update the strikes count
+localStorage.setItem('currentStrikes', strikes);
+updateStrikes();
 
+
+if (strikes >= maxStrikes) {
+  const strikeCountEl = document.getElementById('strikeCount');
+  if (strikeCountEl) {
+    strikeCountEl.style.display = 'none';
+  }
+
+  document.getElementById("submitWrapper").style.display = "none";
   
+}
 
 
 
@@ -1950,73 +1972,75 @@ function submitOrder() {
 
 
 
-const itemList = document.getElementById('itemList');
-itemList.classList.add('shake');
+    const itemList = document.getElementById('itemList');
 
 
-itemList.offsetHeight;  
+    itemList.classList.add('shake');
 
-
+// Wait for the shake to finish before showing correct order
 setTimeout(() => {
   itemList.classList.remove('shake');
-}, 400);
 
-
-    if (strikes >= maxStrikes) {
-      const strikeCountEl = document.getElementById('strikeCount'); // This is the element showing "Mistakes Remaining"
-      if (strikeCountEl) {
-        strikeCountEl.style.display = 'none'; // This hides the text element
-      }
-
-      markGameAsPlayed();
-
-
-      const itemList = document.getElementById('itemList');
-      itemList.innerHTML = '';
-
-      // Create the label and add the class instead of inline styles
-      const label = document.createElement('p');
-      label.textContent = 'Correct Order:';
-      label.classList.add('correct-order-label');  // Add the CSS class here
-
-
-
-      itemList.parentNode.insertBefore(label, itemList);
-
-      correctOrder.forEach(item => {
-        const li = document.createElement('li');
-        li.textContent = item;
-        li.classList.add('draggable-item');
-        li.classList.add('correct-order-tile');
-        li.style.backgroundColor = '#A8A8A8';
-        li.style.fontWeight = 'bold';
-        li.style.cursor = 'default';
-        li.setAttribute('draggable', false);
-        itemList.appendChild(li);
-      });
-
-      document.querySelector("button[onclick='submitOrder()']").disabled = true;
-      document.getElementById("submitWrapper").style.display = "none";
-
-
-      setTimeout(() => {
-        label.remove();
-        endGame();
-      }, 5000);
+  if (strikes >= maxStrikes) {
+    const strikeCountEl = document.getElementById('strikeCount');
+    if (strikeCountEl) {
+      strikeCountEl.style.display = 'none';
     }
+
+    markGameAsPlayed();
+
+    itemList.innerHTML = ''; // Clear wrong tiles
+
+    const label = document.createElement('p');
+    label.textContent = 'Correct Order:';
+    label.classList.add('correct-order-label');
+    itemList.parentNode.insertBefore(label, itemList);
+
+    correctOrder.forEach(item => {
+      const li = document.createElement('li');
+      li.textContent = item;
+      li.classList.add('draggable-item', 'correct-order-tile');
+      li.style.backgroundColor = '#62a65b';
+      li.style.fontWeight = 'bold';
+      li.style.cursor = 'default';
+      li.setAttribute('draggable', false);
+      itemList.appendChild(li);
+    });
+
+    document.querySelector("button[onclick='submitOrder()']").disabled = true;
+    document.getElementById("submitWrapper").style.display = "none";
+
+    setTimeout(() => {
+      label.remove();
+      endGame();
+    }, 4000);
+  }
+
+}, 1100); 
+
   }
 }
 
 
+
+
+
+
+
+
+
+
+
   
     function updateStrikes() {
-      document.getElementById('strikeCount').textContent = `Mistakes Remaining: ${maxStrikes - strikes}`;
+      document.getElementById('strikeCount').textContent = `Attempts Remaining: ${maxStrikes - strikes}`;
 
     }
 
 
 
 
+    
     
   let score = 0; // you should already be tracking this
    
@@ -2288,6 +2312,14 @@ window.onload = () => {
   const msPerDay = 1000 * 60 * 60 * 24;
   const LAUNCH_DATE = new Date(2025, 5, 13); // Adjust if needed
   const currentDay = Math.floor((localToday - LAUNCH_DATE) / msPerDay);
+
+  const storedMaxRoundDay = parseInt(localStorage.getItem('maxRoundReachedDay'));
+  if (isNaN(storedMaxRoundDay) || storedMaxRoundDay !== currentDay) {
+    localStorage.removeItem('maxRoundReachedToday');
+    localStorage.removeItem('orderItScore');
+    localStorage.setItem('maxRoundReachedDay', currentDay);
+  }
+
 
   const lastPlayedDate = localStorage.getItem('lastPlayedDate');
   const savedDay = parseInt(localStorage.getItem('currentDay'));
