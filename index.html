@@ -171,29 +171,35 @@
 
 
 
+    @keyframes shake {
+  0%   { transform: translateX(0); }
+  10%  { transform: translateX(-10px); }
+  20%  { transform: translateX(10px); }
+  30%  { transform: translateX(-8px); }
+  40%  { transform: translateX(8px); }
+  50%  { transform: translateX(-6px); }
+  60%  { transform: translateX(6px); }
+  70%  { transform: translateX(-4px); }
+  80%  { transform: translateX(4px); }
+  90%  { transform: translateX(-2px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.8s ease;
+}
 
 
-        @keyframes shake {
-      0% { transform: translate3d(0, 0, 0); }
-      20% { transform: translate3d(-5px, 0, 0); }
-      40% { transform: translate3d(5px, 0, 0); }
-      60% { transform: translate3d(-5px, 0, 0); }
-      80% { transform: translate3d(5px, 0, 0); }
-      100% { transform: translate3d(0, 0, 0); }
-    }
 
 
-    .shake {
-      animation: shake 0.4s ease;
-    }
 
 
-    @keyframes correctFlash {
+@keyframes correctFlash {
   0% {
     transform: scale(1);
   }
-  50% {
-    transform: scale(1.10);
+  80% {
+    transform: scale(1.07); 
   }
   100% {
     transform: scale(1);
@@ -201,8 +207,10 @@
 }
 
 .correct-animation {
-  animation: correctFlash 0.6s ease-in-out;
+  animation: correctFlash 1s ease-in-out;
 }
+
+
 
 
 
@@ -330,6 +338,19 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+
+    .fade-in-text {
+  opacity: 0;
+  animation: fadeIn 2s forwards ease-in;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
 
 
        
@@ -507,24 +528,32 @@
   padding: 0 20px;
   font-size: 1.25em !important;
   font-weight: bold;
-  margin-top: 70px !important;
+  margin-top: 60px !important;
 }
 
 #playedTodayScreen button {
-  font-size: 1.4em;
+  font-size: 1.1em;
   padding: 10px 22px;
   position: relative;
   z-index: 1;
-  margin-top: 84px;
+  margin-top: 60px;
+}
+
+#shareScoreButton {
+  margin: 18px auto !important;   /* centers the block element horizontally */
+  display: block !important;
+  font-size: 1.1em;
+  padding: 10px 22px;
 }
 
 #viewStatsButton {
-  margin-top: 23px !important;
+  margin-top: 18px !important;
   display: block !important;
-  font-size: 1.4em;
+  font-size: 1.1em;
   padding: 10px 22px;
- 
 }
+
+
 
 
 
@@ -1173,7 +1202,11 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
 
 <button id="showAnswersButton">Today's Answers</button>
+<button id="shareScoreButton">Share Your Score</button>
 <button id="viewStatsButton">My Stats</button>
+
+
+
 
 </div>
 
@@ -1207,7 +1240,10 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
 
   <div id="gameScreen" class="screen hidden">
-    <h2 id="roundPrompt"></h2>
+    <h2 id="roundPrompt">
+      <span id="promptLabel">Order by: </span><span id="promptText"></span>
+    </h2>
+    
     <p id="gameStatus"></p>
 
     <div id="itemListWrapper">
@@ -1478,8 +1514,6 @@ function loadRound() {
     return;
   }
 
-  
-
   if (isNaN(currentRound) || currentRound < 0 || currentRound >= rounds.length) {
     console.warn("Invalid currentRound:", currentRound);
     endGame();
@@ -1488,21 +1522,32 @@ function loadRound() {
 
   const { prompt, items } = rounds[currentRound];
 
+  const promptLabel = document.getElementById('promptLabel');
+  const promptText = document.getElementById('promptText');
 
-  const promptEl = document.getElementById('roundPrompt');
-promptEl.textContent = "Order by: " + prompt;
+  // Remove animation classes to restart
+  promptLabel.classList.remove('fade-in-text');
+  promptText.classList.remove('fade-in-text');
 
-if (prompt.length > 25) {
-  promptEl.classList.add('smaller-font');
-} else {
-  promptEl.classList.remove('smaller-font');
-}
+  // Force reflow to restart animation
+  void promptLabel.offsetWidth;
+  void promptText.offsetWidth;
 
+  promptLabel.textContent = 'Order by: ';
+  promptText.textContent = prompt;
 
+  // Add fade-in classes
+  promptLabel.classList.add('fade-in-text');
+  promptText.classList.add('fade-in-text');
+
+  if (prompt.length > 25) {
+    promptText.classList.add('smaller-font');
+  } else {
+    promptText.classList.remove('smaller-font');
+  }
 
   const itemList = document.getElementById('itemList');
 
-  
   if (itemList.children.length === 0) {
     itemList.innerHTML = ''; // Just in case
 
@@ -1996,6 +2041,13 @@ setTimeout(() => {
   // Determine score from localStorage in case of refresh
   const maxRound = parseInt(localStorage.getItem('maxRoundReachedToday')) || 0;
 
+
+    // Save the final score and strikes for sharing
+    localStorage.setItem("orderItScore", JSON.stringify({
+    roundsCompleted: maxRound,
+    strikes: strikes
+  }));
+
   // Set message based on the rounds completed
   let message = "";
   if (maxRound === 3) {
@@ -2062,12 +2114,14 @@ const shareButton = document.getElementById('shareButton');
 
 
 shareButton.addEventListener('click', () => {
+  const roundNumber = dayIndex + 1;  // or however you track the current round/day
+
   const emojiScore = getEmojiScore(roundsCompleted);
   const baseUrl = window.location.origin + window.location.pathname;
   const shareUrl = baseUrl;
 
   // Start with emoji
-  let text = emojiScore;
+  let text = `Order It — #${roundNumber}\n${emojiScore}`;
 
   // Only add mistakes if all 3 rounds were completed
   if (roundsCompleted === 3) {
@@ -2088,6 +2142,10 @@ shareButton.addEventListener('click', () => {
       .catch(() => alert("Copy failed, here is your score:\n" + shareText));
   }
 });
+
+
+
+
 
 
 
@@ -2287,7 +2345,50 @@ window.onload = () => {
     }
   }
 
+
+
+  
+  const shareScoreButton = document.getElementById('shareScoreButton');
+
+if (shareScoreButton) {
+  shareScoreButton.addEventListener('click', () => {
+    const savedScore = JSON.parse(localStorage.getItem("orderItScore"));
+
+    if (!savedScore) {
+      alert("No score found to share.");
+      return;
+    }
+
+    const emojiScore = getEmojiScore(savedScore.roundsCompleted);
+    const roundNumber = dayIndex + 1;
+
+    const baseUrl = window.location.origin + window.location.pathname;
+    const shareUrl = baseUrl;
+
+    let text = `Order It — #${roundNumber}\n${emojiScore}`;
+    if (savedScore.roundsCompleted === 3) {
+      text += `\nwith ${savedScore.strikes} ${savedScore.strikes === 1 ? 'mistake' : 'mistakes'}`;
+    }
+
+    const shareText = `${text}\n${shareUrl}`;
+    const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+    if (navigator.share && isMobile) {
+      navigator.share({
+        title: 'Order It',
+        text: shareText
+      }).catch(console.error);
+    } else {
+      navigator.clipboard.writeText(shareText)
+        .then(() => alert("Score copied to clipboard!"))
+        .catch(() => alert("Copy failed, here is your score:\n" + shareText));
+    }
+  });
+}
+
 };
+
+
 
 
 

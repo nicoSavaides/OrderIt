@@ -40,24 +40,6 @@
 
     [
       {
-        "prompt": "Year Founded",
-        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
-        "correctOrder": ["Walgreens", "McDonald’s", "Walmart", "Costco"]
-      },
-      {
-        "prompt": "Number of Locations",
-        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
-        "correctOrder": ["Costco", "Walgreens", "Walmart", "McDonald’s"]
-      },
-      {
-        "prompt": "Valuation",
-        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
-        "correctOrder": ["Walgreens", "McDonald’s", "Costco", "Walmart"]
-      }
-    ], 
-
-    [
-      {
         "prompt": "Age",
         "items": ["Kim Kardashian", "Robert Downey Jr", "Beyoncé", "Taylor Swift"],
         "correctOrder": ["Taylor Swift", "Beyoncé", "Kim Kardashian", "Robert Downey Jr"]
@@ -73,6 +55,24 @@
         "correctOrder": ["Robert Downey Jr", "Beyoncé", "Taylor Swift", "Kim Kardashian"]
       }
     ],
+
+    [
+      {
+        "prompt": "Year Founded",
+        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
+        "correctOrder": ["Walgreens", "McDonald’s", "Walmart", "Costco"]
+      },
+      {
+        "prompt": "Number of Locations",
+        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
+        "correctOrder": ["Costco", "Walgreens", "Walmart", "McDonald’s"]
+      },
+      {
+        "prompt": "Valuation",
+        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
+        "correctOrder": ["Walgreens", "McDonald’s", "Costco", "Walmart"]
+      }
+    ], 
 
     [
       {
