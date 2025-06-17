@@ -2121,7 +2121,7 @@ shareButton.addEventListener('click', () => {
   const shareUrl = baseUrl;
 
   // Start with emoji
-  let text = `Order It — #${roundNumber}\n${emojiScore}`;
+  let text = `Order It  #${roundNumber}\n${emojiScore}`;
 
   // Only add mistakes if all 3 rounds were completed
   if (roundsCompleted === 3) {
@@ -2365,7 +2365,7 @@ if (shareScoreButton) {
     const baseUrl = window.location.origin + window.location.pathname;
     const shareUrl = baseUrl;
 
-    let text = `Order It — #${roundNumber}\n${emojiScore}`;
+    let text = `Order It  #${roundNumber}\n${emojiScore}`;
     if (savedScore.roundsCompleted === 3) {
       text += `\nwith ${savedScore.strikes} ${savedScore.strikes === 1 ? 'mistake' : 'mistakes'}`;
     }
