@@ -48,14 +48,14 @@
 
 
     #gameScreen h2 {
-      font-size: 3rem;  /* Adjust this value as needed */
+      font-size: 3rem;  
     }
 
 
 
   #gameScreen {
   opacity: 0;
-  transition: opacity 1s ease-in 0.6s;
+  transition: opacity 1s ease-in .5s;
   pointer-events: none;
 }
 
@@ -63,6 +63,8 @@
   opacity: 1;
   pointer-events: auto;
 }
+
+
 
 
 
@@ -332,16 +334,6 @@
     }
 
 
-    .fade-in-text {
-  opacity: 0;
-  animation: fadeIn 2s forwards ease-in;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
 
 
 
@@ -418,22 +410,21 @@
 
 
 
-        /* correct word */
       .correct-order-label {
-      font-weight: 600 !important;
-      font-size: 1.5rem !important;
-      text-align: center;
-      margin-top: 172px !important; /* Use margin to position it vertically */
-      }
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  text-align: center;
+  margin-top: 18px !important; /* space above label */
+  margin-bottom: 0 !important;
+}
 
-      
-      .correct-order-tile {
-      font-weight: 650 !important;
-      position: relative;
-      top: -134px !important;   /* -204px */    
-      transition: transform 0.3s ease;
-      z-index: 1;             
-    }
+.correct-order-tile {
+  font-weight: 650 !important;
+  position: relative;
+  top: 0px !important;  /* Move tiles up a bit if you want */
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
 
 
     
@@ -1187,6 +1178,13 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 }
 
 
+button.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+
 
 
 
@@ -1440,22 +1438,22 @@ const dayIndex = Math.floor((localToday - LAUNCH_DATE) / msPerDay);
 
 
 
+
+
 function startGame() {
   const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
   const lastPlayed = localStorage.getItem('lastPlayedDate');
 
   if (lastPlayed === todayString) {
-  showPlayedTodayScreen();                     // ✅ This builds the screen properly
-  history.pushState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen'); // ✅ Push to history
-  return;
-}
+    showPlayedTodayScreen();
+    history.pushState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
+    return;
+  }
 
-
-  // If not, proceed with starting the game
   fetch("rounds.json")
     .then(res => res.json())
     .then(data => {
-      rounds = data.days[dayIndex]; // Get the round for today
+      rounds = data.days[dayIndex];
 
       const savedStrikes = parseInt(localStorage.getItem('currentStrikes')) || 0;
       const savedRound = parseInt(localStorage.getItem('currentRound')) || 0;
@@ -1464,22 +1462,44 @@ function startGame() {
       currentRound = savedRound;
 
       document.getElementById('welcomeScreen').classList.add('hidden');
-const gameScreen = document.getElementById('gameScreen');
-gameScreen.classList.remove('hidden');
-requestAnimationFrame(() => {
-  gameScreen.classList.add('visible');
-});
+
+      const gameScreen = document.getElementById('gameScreen');
+      const submitButton = document.querySelector("#submitWrapper button");
+
+      // Disable submit button immediately
+      if (submitButton) {
+        submitButton.disabled = true;
+        submitButton.classList.add("disabled");
+      }
+
+      gameScreen.classList.remove('hidden');
+
+      requestAnimationFrame(() => {
+        gameScreen.classList.add('visible');
+
+        const submitWrapper = document.getElementById('submitWrapper');
+        submitWrapper.classList.add('visible');
 
 
-if (!history.state || history.state.screenId !== 'gameScreen') {
-  history.pushState({ screenId: 'gameScreen' }, '', '#gameScreen');
-}
+        // Listen for fade-in end to enable submit button
+        function onFadeInEnd(event) {
+          if (event.target === gameScreen) {
+            if (submitButton) {
+              submitButton.disabled = false;
+              submitButton.classList.remove("disabled");
+            }
+            gameScreen.removeEventListener('transitionend', onFadeInEnd);
+          }
+        }
 
+        gameScreen.addEventListener('transitionend', onFadeInEnd);
+      });
+
+      if (!history.state || history.state.screenId !== 'gameScreen') {
+        history.pushState({ screenId: 'gameScreen' }, '', '#gameScreen');
+      }
 
       loadRound();
-
-      
-      
     })
     .catch(error => {
       console.error("Error loading rounds data:", error);
@@ -1907,119 +1927,126 @@ function makeItemsDraggable() {
 
 
 
-
-
-
 let roundsCompleted = 0; // Track how many rounds the player has completed successfully.
 
 function submitOrder() {
+  const submitButton = document.querySelector("button[onclick='submitOrder()']");
+  if (submitButton) {
+    submitButton.disabled = true;
+    submitButton.classList.add("disabled"); // Optional styling
+  }
+
   const itemList = document.getElementById('itemList');
   const submittedOrder = Array.from(itemList.children).map(li => li.textContent);
   const correctOrder = rounds[currentRound].correctOrder;
 
   if (JSON.stringify(submittedOrder) === JSON.stringify(correctOrder)) {
-  roundsCompleted++; // Increment rounds completed on correct order.
-  currentRound++;
-  localStorage.setItem('currentRound', currentRound);
-  localStorage.setItem('currentStrikes', strikes);
-  localStorage.setItem('maxRoundReachedToday', currentRound);
+    roundsCompleted++;
+    currentRound++;
+    localStorage.setItem('currentRound', currentRound);
+    localStorage.setItem('currentStrikes', strikes);
+    localStorage.setItem('maxRoundReachedToday', currentRound);
 
-  // Add animation class to flash green and scale up
-  itemList.classList.add('correct-animation');
+    itemList.classList.add('correct-animation');
 
-// Wait for full animation (1.2s) + pause (0.3s) before removing class and proceeding
-setTimeout(() => {
-  itemList.classList.remove('correct-animation');
+    setTimeout(() => {
+      itemList.classList.remove('correct-animation');
 
-  if (currentRound < rounds.length) {
-    loadRound();
-  } else {
-    if (strikes < maxStrikes) {
-      endGame();
-      markGameAsPlayed();
-    } else {
-      document.getElementById('gameStatus').textContent = "Nice!";
-      endGame();
-      markGameAsPlayed();
-    }
-  }
-}, 1500);  // 1200ms + 300ms pause combined
+      if (currentRound < rounds.length) {
+        loadRound();
 
-    
-
+        // Re-enable button only if the game continues
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = "Submit";
+          submitButton.classList.remove("disabled");
+        }
+      } else {
+        if (strikes < maxStrikes) {
+          endGame();
+          markGameAsPlayed();
+        } else {
+          document.getElementById('gameStatus').textContent = "Nice!";
+          endGame();
+          markGameAsPlayed();
+        }
+      }
+    }, 1500); // 1.2s animation + 0.3s pause
 
   } else {
     strikes++;
-localStorage.setItem('currentStrikes', strikes);
-updateStrikes();
+    localStorage.setItem('currentStrikes', strikes);
+    updateStrikes();
 
-
-if (strikes >= maxStrikes) {
-  const strikeCountEl = document.getElementById('strikeCount');
-  if (strikeCountEl) {
-    strikeCountEl.style.display = 'none';
-  }
-
-  document.getElementById("submitWrapper").style.display = "none";
-  
-}
-
-
-
-
-
-
-
-
-
-    const itemList = document.getElementById('itemList');
-
+    if (strikes >= maxStrikes) {
+      const strikeCountEl = document.getElementById('strikeCount');
+      if (strikeCountEl) {
+        strikeCountEl.style.display = 'none';
+      }
+      document.getElementById("submitWrapper").style.display = "none";
+    }
 
     itemList.classList.add('shake');
 
-// Wait for the shake to finish before showing correct order
-setTimeout(() => {
-  itemList.classList.remove('shake');
 
-  if (strikes >= maxStrikes) {
-    const strikeCountEl = document.getElementById('strikeCount');
-    if (strikeCountEl) {
-      strikeCountEl.style.display = 'none';
-    }
 
-    markGameAsPlayed();
 
-    itemList.innerHTML = ''; // Clear wrong tiles
 
-    const label = document.createElement('p');
-    label.textContent = 'Correct Order:';
-    label.classList.add('correct-order-label');
-    itemList.parentNode.insertBefore(label, itemList);
-
-    correctOrder.forEach(item => {
-      const li = document.createElement('li');
-      li.textContent = item;
-      li.classList.add('draggable-item', 'correct-order-tile');
-      li.style.backgroundColor = '#62a65b';
-      li.style.fontWeight = 'bold';
-      li.style.cursor = 'default';
-      li.setAttribute('draggable', false);
-      itemList.appendChild(li);
-    });
-
-    document.querySelector("button[onclick='submitOrder()']").disabled = true;
-    document.getElementById("submitWrapper").style.display = "none";
 
     setTimeout(() => {
-      label.remove();
-      endGame();
-    }, 4000);
-  }
+      itemList.classList.remove('shake');
 
-}, 1100); 
+      if (strikes >= maxStrikes) {
+        const strikeCountEl = document.getElementById('strikeCount');
+        if (strikeCountEl) {
+          strikeCountEl.style.display = 'none';
+        }
 
+        markGameAsPlayed();
+
+itemList.innerHTML = ''; // Clear wrong tiles
+
+const label = document.createElement('p');
+label.textContent = 'Correct Order';
+label.classList.add('correct-order-label');
+itemList.parentNode.insertBefore(label, itemList.nextSibling);
+
+
+correctOrder.forEach(item => {
+  const li = document.createElement('li');
+  li.textContent = item;
+  li.classList.add('draggable-item', 'correct-order-tile');
+  li.style.backgroundColor = '#62a65b';
+  li.style.fontWeight = 'bold';
+  li.style.cursor = 'default';
+  li.setAttribute('draggable', false);
+  itemList.appendChild(li);
+});
+
+
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = "Submit";
+          submitButton.classList.remove("disabled");
+        }
+        document.getElementById("submitWrapper").style.display = "none";
+
+        setTimeout(() => {
+          label.remove();
+          endGame();
+        }, 4000);
+      } else {
+        // Re-enable the button after shake if still allowed to submit
+        if (submitButton) {
+          submitButton.disabled = false;
+          submitButton.textContent = "Submit";
+          submitButton.classList.remove("disabled");
+        }
+      }
+    }, 1100);
   }
 }
+
 
 
 
