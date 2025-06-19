@@ -1189,6 +1189,39 @@ button.disabled {
 
 
 
+#maintenanceLogo {
+  display: block;
+  margin: -30px auto;
+  max-width: 200px;
+  height: auto;
+}
+
+
+
+#maintenanceMessage {
+  text-align: center;
+  padding: 20px;
+  font-family: Lora, serif;  /* paragraph default font */
+  margin-top: 70px;
+}
+
+#maintenanceMessage h1 {
+  font-family: 'second', sans-serif; /* replace with your actual second font */
+  font-size: 2.3rem !important;
+  margin-top: 35px !important;
+}
+
+#maintenanceMessage p {
+  font-size: 1.17rem !important;
+  margin: 50px 0 !important;   /* probably 100px margin is too big? Adjust as you want */
+  line-height: 1.4;
+}
+
+
+
+
+
+
 
 
 
@@ -1202,6 +1235,10 @@ button.disabled {
   </style>
 </head>
 <body>
+
+
+  
+
 
   
 
@@ -1234,7 +1271,7 @@ button.disabled {
 <div id="welcomeScreen" class="screen hidden">
 
     <div>
-
+      <div id="maintenanceScreen" class="screen hidden">
       <img src="fastGif.gif" alt="Moving Logo" class="mobile-logo">
 
 
@@ -1299,6 +1336,26 @@ button.disabled {
 
   
   <script>
+
+
+    const maintenanceMode = true; // ← set to true to show maintenance screen
+
+
+
+    if (maintenanceMode) {
+  document.addEventListener('DOMContentLoaded', () => {
+    document.body.innerHTML = `
+      <div id="maintenanceMessage" class="screen">
+         <img src="fastGif.gif" alt="Logo" id="maintenanceLogo" />
+        <h1> Order It is Under Maintenance</h1>
+        <p>We're making updates to improve your experience. Thank you to all our amazing playtesters for your engagement and feedback! Order It will return. </p>
+      </div>
+    `;
+  });
+}else{
+  
+
+
     let currentRound = 0;
     let rounds = [];
     let strikes = 0;
@@ -2478,6 +2535,27 @@ window.addEventListener('DOMContentLoaded', () => {
       });
   }
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (maintenanceMode) {
+    showScreen('maintenanceScreen', false); // Don’t push to history
+    return;
+  }
+
+  console.log("alreadyPlayedToday?", alreadyPlayedToday());
+
+  if (alreadyPlayedToday()) {
+    showScreen('playedTodayScreen', false);
+  } else {
+    showScreen('welcomeScreen', false);
+  }
+});
+
+
+
+}
+
 
 
   </script>
