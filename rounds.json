@@ -4,19 +4,25 @@
 
     [
       {
-        "prompt": "Top Speed",
-        "items": ["Lion", "Elephant", "Giraffe", "Kangaroo"],
-        "correctOrder": ["Elephant", "Giraffe", "Kangaroo", "Lion"]
-      },
-      {
         "prompt": "Weight",
         "items": ["Lion", "Elephant", "Giraffe", "Kangaroo"],
-        "correctOrder": ["Kangaroo", "Lion", "Giraffe", "Elephant"]
+        "correctOrder": ["Elephant", "Giraffe", "Lion", "Kangaroo"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Lion", "Elephant", "Giraffe", "Kangaroo"],
+        "correctOrder": ["Lion", "Kangaroo", "Giraffe", "Elephant"],
+        "topLabel": "↑ Fastest", 
+        "bottomLabel": "↓ Slowest"
       },
       {
         "prompt": "Lifespan",
         "items": ["Lion", "Elephant", "Giraffe", "Kangaroo"],
-        "correctOrder": ["Kangaroo", "Lion", "Giraffe", "Elephant"]
+        "correctOrder": ["Elephant", "Giraffe", "Lion", "Kangaroo"],
+        "topLabel": "↑ Longest Lifespan", 
+        "bottomLabel": "↓ Shortest Lifespan"
       }
     ],
 
@@ -24,17 +30,23 @@
       {
         "prompt": "Population",
         "items": ["Georgia", "Vermont", "Texas", "Wyoming"],
-        "correctOrder": ["Wyoming", "Vermont", "Georgia", "Texas"]
+        "correctOrder": ["Texas", "Georgia", "Vermont", "Wyoming"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Land Area",
         "items": ["Georgia", "Vermont", "Texas", "Wyoming"],
-        "correctOrder": ["Vermont", "Georgia", "Wyoming", "Texas"]
+        "correctOrder": ["Texas", "Wyoming", "Georgia", "Vermont"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Date of Statehood",
         "items": ["Georgia", "Vermont", "Texas", "Wyoming"],
-        "correctOrder": ["Georgia", "Vermont", "Texas", "Wyoming"]
+        "correctOrder": ["Wyoming", "Texas", "Vermont", "Georgia"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       }
     ],
 
@@ -42,17 +54,23 @@
       {
         "prompt": "Age",
         "items": ["Kim Kardashian", "Robert Downey Jr", "Beyoncé", "Taylor Swift"],
-        "correctOrder": ["Taylor Swift", "Beyoncé", "Kim Kardashian", "Robert Downey Jr"]
+        "correctOrder": ["Robert Downey Jr", "Kim Kardashian", "Beyoncé", "Taylor Swift"],
+        "topLabel": "↑ Oldest", 
+        "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Height",
         "items": ["Kim Kardashian", "Robert Downey Jr", "Beyoncé", "Taylor Swift"],
-        "correctOrder": ["Kim Kardashian", "Beyoncé", "Robert Downey Jr", "Taylor Swift"]
+        "correctOrder": ["Taylor Swift", "Robert Downey Jr", "Beyoncé", "Kim Kardashian"],
+        "topLabel": "↑ Tallest", 
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Net Worth",
         "items": ["Kim Kardashian", "Robert Downey Jr", "Beyoncé", "Taylor Swift"],
-        "correctOrder": ["Robert Downey Jr", "Beyoncé", "Taylor Swift", "Kim Kardashian"]
+        "correctOrder": ["Kim Kardashian", "Taylor Swift", "Beyoncé", "Robert Downey Jr"],
+        "topLabel": "↑ Highest Net Worth", 
+        "bottomLabel": "↓ Lowest Net Worth"
       }
     ],
 
@@ -60,53 +78,71 @@
       {
         "prompt": "Year Founded",
         "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
-        "correctOrder": ["Walgreens", "McDonald’s", "Walmart", "Costco"]
+        "correctOrder": ["Costco", "Walmart", "McDonald’s", "Walgreens"],
+        "topLabel": "↑ Most Recent", 
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Number of Locations",
         "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
-        "correctOrder": ["Costco", "Walgreens", "Walmart", "McDonald’s"]
+        "correctOrder": ["McDonald’s", "Walmart", "Walgreens", "Costco"],
+        "topLabel": "↑ Most Locations",
+        "bottomLabel": "↓ Fewest Locations"
       },
       {
         "prompt": "Valuation",
         "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
-        "correctOrder": ["Walgreens", "McDonald’s", "Costco", "Walmart"]
+        "correctOrder": ["Walmart", "Costco", "McDonald’s", "Walgreens"],
+        "topLabel": "↑ Highest Valuation",
+        "bottomLabel": "↓ Lowest Valuation"
       }
-    ], 
+    ],
 
     [
       {
-        "prompt": "Year Built",
-        "items": ["Eiffel Tower", "Mount Rushmore", "Statue of Liberty", "Pyramid of Giza"],
-        "correctOrder": ["Pyramid of Giza", "Statue of Liberty", "Eiffel Tower", "Mount Rushmore"]
+        "prompt": "Height",
+        "items": ["Big Ben", "Colosseum", "Empire State Building", "Leaning Tower of Pisa"],
+        "correctOrder": ["Empire State Building", "Big Ben", "Leaning Tower of Pisa", "Colosseum"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
-        "prompt": "Height",
-        "items": ["Eiffel Tower", "Mount Rushmore", "Statue of Liberty", "Pyramid of Giza"],
-        "correctOrder": ["Mount Rushmore", "Statue of Liberty", "Pyramid of Giza", "Eiffel Tower"]
+        "prompt": "Year Built",
+        "items": ["Big Ben", "Colosseum", "Empire State Building", "Leaning Tower of Pisa"],
+        "correctOrder": ["Empire State Building", "Big Ben", "Leaning Tower of Pisa", "Colosseum"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Length of Construction",
-        "items": ["Eiffel Tower", "Mount Rushmore", "Statue of Liberty", "Pyramid of Giza"],
-        "correctOrder": ["Eiffel Tower", "Statue of Liberty", "Mount Rushmore", "Pyramid of Giza"]
+        "items": ["Big Ben", "Colosseum", "Empire State Building", "Leaning Tower of Pisa"],
+        "correctOrder": ["Empire State Building", "Colosseum", "Big Ben", "Leaning Tower of Pisa"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       }
-    ], 
+    ],
 
     [
       {
-        "prompt": "Number of Band Members",
-        "items": ["Earth, Wind & Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
-        "correctOrder": ["Nirvana", "The Beatles", "Fleetwood Mac", "Earth, Wind & Fire"]
+      "prompt": "Year Formed",
+      "items": ["Earth, Wind & Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
+      "correctOrder": ["Nirvana", "Earth, Wind & Fire", "Fleetwood Mac", "The Beatles"],
+      "topLabel": "↑ Most Recent",
+      "bottomLabel": "↓ Earliest"
       },
       {
-        "prompt": "Year Formed",
+        "prompt": "Number of Band Members",
         "items": ["Earth, Wind & Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
-        "correctOrder": ["The Beatles", "Fleetwood Mac", "Earth, Wind & Fire", "Nirvana"]
+        "correctOrder": ["Earth, Wind & Fire", "Fleetwood Mac", "The Beatles", "Nirvana"],
+        "topLabel": "↑ Most Members",
+        "bottomLabel": "↓ Least Members"
       },
       {
         "prompt": "Number of Albums",
         "items": ["Earth, Wind & Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
-        "correctOrder": ["Nirvana", "The Beatles", "Fleetwood Mac", "Earth, Wind & Fire"]
+        "correctOrder": ["Earth, Wind & Fire", "Fleetwood Mac", "The Beatles", "Nirvana"],
+        "topLabel": "↑ Most Albums",
+        "bottomLabel": "↓ Fewest Albums"
       }
     ], 
 
@@ -114,17 +150,23 @@
       {
         "prompt": "Distance from Sun",
         "items": ["Jupiter", "Mars", "Uranus", "Earth"],
-        "correctOrder": ["Earth", "Mars", "Jupiter", "Uranus"]
+        "correctOrder": ["Uranus", "Jupiter", "Mars", "Earth"],
+        "topLabel": "↑ Farthest from Sun",
+        "bottomLabel": "↓ Closest to Sun"
       },
       {
         "prompt": "Size",
         "items": ["Jupiter", "Mars", "Uranus", "Earth"],
-        "correctOrder": ["Mars", "Earth", "Uranus", "Jupiter"]
+        "correctOrder": ["Jupiter", "Uranus", "Earth", "Mars"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
       },
       {
         "prompt": "Number of Moons",
         "items": ["Jupiter", "Mars", "Uranus", "Earth"],
-        "correctOrder": ["Earth", "Mars", "Uranus", "Jupiter"]
+        "correctOrder": ["Jupiter", "Uranus", "Mars", "Earth"],
+        "topLabel": "↑ Most Moons",
+        "bottomLabel": "↓ Fewest Moons"
       }
     ],
 
@@ -132,35 +174,47 @@
       {
         "prompt": "Ball Weight",
         "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
-        "correctOrder": ["Golf", "Tennis", "Baseball", "Football (American)"]
+        "correctOrder": ["Football (American)", "Baseball", "Tennis", "Golf"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Year Invented",
         "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
-        "correctOrder": ["Tennis", "Golf", "Baseball", "Football (American)"]
+        "correctOrder": ["Football (American)", "Baseball", "Golf", "Tennis"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "U.S. TV Viewership",
         "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
-        "correctOrder": ["Tennis", "Golf", "Baseball", "Football (American)"]
+        "correctOrder": ["Football (American)", "Baseball", "Golf", "Tennis"],
+        "topLabel": "↑ Most Watched",
+        "bottomLabel": "↓ Least Watched"
       } 
     ], 
-    
+
     [
       {
         "prompt": "Year",
         "items": ["The Shawshank Redemption", "Avatar", "The Godfather", "Grease"],
-        "correctOrder": ["The Godfather", "Grease", "The Shawshank Redemption", "Avatar"]
+        "correctOrder": ["Avatar", "The Shawshank Redemption", "Grease", "The Godfather"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Box Office Gross",
         "items": ["The Shawshank Redemption", "Avatar", "The Godfather", "Grease"],
-        "correctOrder": ["The Shawshank Redemption", "The Godfather", "Grease", "Avatar"]
+        "correctOrder": ["Avatar", "Grease", "The Godfather", "The Shawshank Redemption"],
+        "topLabel": "↑ Highest Gross",
+        "bottomLabel": "↓ Lowest Gross"
       },
       {
         "prompt": "Runtime",
         "items": ["The Shawshank Redemption", "Avatar", "The Godfather", "Grease"],
-        "correctOrder": ["Grease", "The Shawshank Redemption", "Avatar", "The Godfather"]
+        "correctOrder": ["The Godfather", "Avatar", "The Shawshank Redemption", "Grease"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
       }
     ],
 
@@ -168,17 +222,23 @@
       {
         "prompt": "Land Area",
         "items": ["Australia", "Colombia", "Germany", "Switzerland"],
-        "correctOrder": ["Switzerland", "Germany", "Colombia", "Australia"]
+        "correctOrder": [ "Australia", "Colombia", "Germany", "Switzerland"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Population",
         "items": ["Australia", "Colombia", "Germany", "Switzerland"],
-        "correctOrder": ["Switzerland", "Australia", "Colombia", "Germany"]
+        "correctOrder": ["Germany", "Colombia", "Australia", "Switzerland"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "GDP",
         "items": ["Australia", "Colombia", "Germany", "Switzerland"],
-        "correctOrder": ["Colombia", "Switzerland", "Australia", "Germany"]
+        "correctOrder": ["Germany", "Australia", "Switzerland", "Colombia"],
+        "topLabel": "↑ Highest GDP",
+        "bottomLabel": "↓ Lowest GDP"
       }
     ],
 
@@ -186,17 +246,23 @@
       {
         "prompt": "Weight",
         "items": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
-        "correctOrder": ["Bulldog", "Greyhound", "Labrador Retriever", "Great Dane"]
+        "correctOrder": ["Great Dane", "Labrador Retriever",  "Greyhound", "Bulldog"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Speed",
         "items": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
-        "correctOrder": ["Bulldog", "Labrador Retriever", "Great Dane", "Greyhound"]
+        "correctOrder": ["Greyhound", "Great Dane", "Labrador Retriever", "Bulldog"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       },
       {
         "prompt": "Intelligence",
         "items": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
-        "correctOrder": ["Greyhound", "Bulldog", "Great Dane", "Labrador Retriever"]
+        "correctOrder": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
+        "topLabel": "↑ Most Intelligent",
+        "bottomLabel": "↓ Least Intelligent"
       } 
     ], 
 
@@ -204,17 +270,23 @@
       {
         "prompt": "Year Premiered",
         "items": ["Game of Thrones", "The Brady Bunch", "I Love Lucy", "The Big Bang Theory"],
-        "correctOrder": ["I Love Lucy", "The Brady Bunch", "The Big Bang Theory", "Game of Thrones"]
+        "correctOrder": [ "Game of Thrones", "The Big Bang Theory", "The Brady Bunch", "I Love Lucy"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Emmys Won",
         "items": ["Game of Thrones", "The Brady Bunch", "I Love Lucy", "The Big Bang Theory"],
-        "correctOrder": ["The Brady Bunch", "I Love Lucy", "The Big Bang Theory", "Game of Thrones"]
+        "correctOrder": ["Game of Thrones", "The Big Bang Theory", "I Love Lucy", "The Brady Bunch"],
+        "topLabel": "↑ Most Emmys",
+        "bottomLabel": "↓ Fewest Emmys"
       },
       {
         "prompt": "Number of Episodes",
         "items": ["Game of Thrones", "The Brady Bunch", "I Love Lucy", "The Big Bang Theory"],
-        "correctOrder": ["Game of Thrones", "The Brady Bunch", "I Love Lucy", "The Big Bang Theory"]
+        "correctOrder": ["The Big Bang Theory", "I Love Lucy", "The Brady Bunch", "Game of Thrones"],
+        "topLabel": "↑ Most Episodes",
+        "bottomLabel": "↓ Fewest Episodes"
       }
     ],
 
@@ -222,17 +294,23 @@
       {
         "prompt": "Event Duration",
         "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
-        "correctOrder": ["Super Bowl", "Masters Tournament", "Burning Man", "Olympics"]
+        "correctOrder": ["Olympics", "Burning Man", "Masters Tournament", "Super Bowl"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Year Established",
         "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
-        "correctOrder": ["Olympics", "Masters Tournament", "Super Bowl", "Burning Man"]
+        "correctOrder": ["Burning Man", "Super Bowl", "Masters Tournament", "Olympics"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Number of Attendees",
         "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
-        "correctOrder": ["Super Bowl", "Burning Man", "Masters Tournament", "Olympics"]
+        "correctOrder": ["Olympics", "Masters Tournament", "Burning Man", "Super Bowl"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       } 
     ],
 
@@ -240,17 +318,23 @@
       {
         "prompt": "Number of Strings",
         "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
-        "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
+        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
+        "topLabel": "↑ Most Strings",
+        "bottomLabel": "↓ Fewest Strings"
       },
       {
         "prompt": "Height Standing Upright",
         "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
-        "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"]
+        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Year Invented",
         "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
-        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"]
+        "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       }
     ],
 
@@ -258,17 +342,23 @@
       {
         "prompt": "Number of Olympics Hosted",
         "items": ["Athens", "Atlanta", "London", "Mumbai"],
-        "correctOrder": ["Mumbai", "Atlanta", "Athens", "London"]
+        "correctOrder": ["London", "Athens", "Atlanta", "Mumbai"],
+        "topLabel": "↑ Most Hosted",
+        "bottomLabel": "↓ Fewest Hosted"
       },
       {
         "prompt": "Population",
         "items": ["Athens", "Atlanta", "London", "Mumbai"],
-        "correctOrder": ["Atlanta", "Athens", "London", "Mumbai"]
+        "correctOrder": ["Mumbai", "London", "Athens", "Atlanta"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Distance from Equator",
         "items": ["Athens", "Atlanta", "London", "Mumbai"],
-        "correctOrder": ["Mumbai", "Atlanta", "Athens", "London"]
+        "correctOrder": ["London", "Athens", "Atlanta", "Mumbai"],
+        "topLabel": "↑ Farthest from Equator",
+        "bottomLabel": "↓ Closest to Equator"
       }
     ],
 
@@ -276,35 +366,47 @@
       {
         "prompt": "Number of Children",
         "items": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
-        "correctOrder": ["Iron Man", "Darth Vader", "Homer Simpson", "Carol Brady"]
+        "correctOrder": ["Carol Brady", "Homer Simpson", "Darth Vader", "Iron Man"],
+        "topLabel": "↑ Most Children",
+        "bottomLabel": "↓ Fewest Children"
       },
       {
         "prompt": "Height",
         "items": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
-        "correctOrder": ["Carol Brady", "Homer Simpson", "Iron Man", "Darth Vader"]
+        "correctOrder": ["Darth Vader", "Iron Man", "Homer Simpson", "Carol Brady"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Year of First Appearance",
         "items": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
-        "correctOrder": ["Iron Man", "Carol Brady", "Darth Vader", "Homer Simpson"]
+        "correctOrder": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       }
     ], 
-
+ 
     [
       {
-        "prompt": "Year They Turned Professional",
+        "prompt": "Debut Year as Pro",
         "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
-        "correctOrder": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"]
+        "correctOrder": ["Simone Biles", "Cristiano Ronaldo", "Tiger Woods", "Mike Tyson"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Social Media Followers",
         "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
-        "correctOrder": ["Tiger Woods", "Simone Biles", "Mike Tyson", "Cristiano Ronaldo"]
+        "correctOrder": ["Cristiano Ronaldo", "Mike Tyson", "Simone Biles", "Tiger Woods"],
+        "topLabel": "↑ Most Followers",
+        "bottomLabel": "↓ Fewest Followers"
       },
       {
         "prompt": "Total Career Earnings",
         "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
-        "correctOrder": ["Simone Biles", "Mike Tyson", "Cristiano Ronaldo", "Tiger Woods"]
+        "correctOrder": ["Tiger Woods", "Cristiano Ronaldo", "Mike Tyson", "Simone Biles"],
+        "topLabel": "↑ Most Earnings",
+        "bottomLabel": "↓ Least Earnings"
       }
     ],
 
@@ -312,35 +414,47 @@
       {
         "prompt": "Weight",
         "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
-        "correctOrder": ["Egg", "Banana", "Avocado", "Russet Potato"]
+        "correctOrder": ["Russet Potato", "Avocado", "Banana", "Egg"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Calories",
         "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
-        "correctOrder": ["Egg", "Banana", "Russet Potato", "Avocado"]
+        "correctOrder": ["Avocado", "Russet Potato", "Banana", "Egg"],
+        "topLabel": "↑ Most Calories",
+        "bottomLabel": "↓ Fewest Calories"
       },
       {
         "prompt": "Protein",
         "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
-        "correctOrder": ["Banana", "Avocado", "Russet Potato", "Egg"]
+        "correctOrder": ["Egg", "Russet Potato", "Avocado", "Banana"],
+        "topLabel": "↑ Most Protein",
+        "bottomLabel": "↓ Least Protein"
       }
     ],
 
     [
       {
         "prompt": "Year Released",
-        "items": ["Bohemian Rhapsody", "Don't Stop Believin", "Yesterday", "Sweet Caroline"],
-        "correctOrder": ["Yesterday", "Sweet Caroline", "Bohemian Rhapsody", "Don't Stop Believin"]
+        "items": ["Bohemian Rhapsody", "Don't Stop Believin'", "Yesterday", "Sweet Caroline"],
+        "correctOrder": ["Don't Stop Believin'", "Bohemian Rhapsody", "Sweet Caroline", "Yesterday"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Artist Name (A-Z)",
-        "items": ["Bohemian Rhapsody", "Don't Stop Believin", "Yesterday", "Sweet Caroline"],
-        "correctOrder": ["Yesterday", "Don't Stop Believin", "Sweet Caroline", "Bohemian Rhapsody"]
+        "items": ["Bohemian Rhapsody", "Don't Stop Believin'", "Yesterday", "Sweet Caroline"],
+        "correctOrder": ["Yesterday", "Don't Stop Believin'", "Sweet Caroline", "Bohemian Rhapsody"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Song Length",
-        "items": ["Bohemian Rhapsody", "Don't Stop Believin", "Yesterday", "Sweet Caroline"],
-        "correctOrder": ["Yesterday", "Sweet Caroline", "Don't Stop Believin", "Bohemian Rhapsody"]
+        "items": ["Bohemian Rhapsody", "Don't Stop Believin'", "Yesterday", "Sweet Caroline"],
+        "correctOrder": ["Bohemian Rhapsody", "Don't Stop Believin'", "Sweet Caroline", "Yesterday"],
+        "topLabel": "↑ Longest Song",
+        "bottomLabel": "↓ Shortest Song"
       }
     ], 
 
@@ -348,17 +462,23 @@
       {
         "prompt": "Average Temperature",
         "items": ["Honolulu", "Mexico City", "Dubai", "Toronto"],
-        "correctOrder": ["Toronto", "Mexico City", "Honolulu", "Dubai"]
+        "correctOrder": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
+        "topLabel": "↑ Hottest",
+        "bottomLabel": "↓ Coldest"
       },
       {
         "prompt": "Population",
         "items": ["Honolulu", "Mexico City", "Dubai", "Toronto"],
-        "correctOrder": ["Honolulu", "Dubai", "Toronto", "Mexico City"]
+        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Elevation",
         "items": ["Honolulu", "Mexico City", "Dubai", "Toronto"],
-        "correctOrder": ["Honolulu", "Dubai", "Toronto", "Mexico City"]
+        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
+        "topLabel": "↑ Highest Elevation",
+        "bottomLabel": "↓ Lowest Elevation"
       }
     ], 
 
@@ -366,17 +486,24 @@
       {
         "prompt": "Year Published",
         "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
-        "correctOrder": ["Mein Kampf", "The Hobbit", "Animal Farm", "The Shining"]
+        "correctOrder": ["The Shining", "Animal Farm", "The Hobbit", "Mein Kampf"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Author Last Name (A-Z)",
         "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
-        "correctOrder": ["Mein Kampf", "The Shining", "Animal Farm", "The Hobbit"]
+        "correctOrder": ["Mein Kampf", "The Shining", "Animal Farm", "The Hobbit"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+
       },
       {
         "prompt": "Page Count",
         "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
-        "correctOrder": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"]
+        "correctOrder": ["Mein Kampf", "The Shining", "The Hobbit", "Animal Farm"],
+        "topLabel": "↑ Longest Book",
+        "bottomLabel": "↓ Shortest Book"
       }
     ], 
 
@@ -384,17 +511,23 @@
       {            
         "prompt": "Number of Films in Series",
         "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
-        "correctOrder": ["Top Gun", "Lord of the Rings", "Pirates of the Caribbean", "Fast & Furious"]
+        "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Lord of the Rings", "Top Gun"],
+        "topLabel": "↑ Most Films",
+        "bottomLabel": "↓ Fewest Films"
       },
       {
         "prompt": "Total Oscars Won",
         "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
-        "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Top Gun", "Lord of the Rings"]
+        "correctOrder": ["Lord of the Rings", "Top Gun", "Pirates of the Caribbean", "Fast & Furious"],
+        "topLabel": "↑ Most Won",
+        "bottomLabel": "↓ Least Won"
       },
       {
         "prompt": "Total Gross",
         "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
-        "correctOrder": ["Top Gun", "Lord of the Rings", "Pirates of the Caribbean", "Fast & Furious"]
+        "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Lord of the Rings", "Top Gun"],
+        "topLabel": "↑ Highest Gross",
+        "bottomLabel": "↓ Lowest Gross"
       }
     ], 
 
@@ -402,17 +535,23 @@
       {
         "prompt": "Top Speed",
         "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
-        "correctOrder": ["Panda", "Rabbit", "Horse", "Cheetah"]
+        "correctOrder": ["Cheetah", "Horse", "Rabbit", "Panda"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       },
       {
         "prompt": "Weight",
         "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
-        "correctOrder": ["Rabbit", "Cheetah", "Panda", "Horse"]
+        "correctOrder": ["Horse", "Panda", "Cheetah", "Rabbit"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Lifespan",
         "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
-        "correctOrder": ["Rabbit", "Cheetah", "Panda", "Horse"]
+        "correctOrder": ["Horse", "Panda", "Cheetah", "Rabbit"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
       }
     ],
 
@@ -420,17 +559,23 @@
       {
         "prompt": "Eye Color Frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
-        "correctOrder": ["Gray", "Green", "Blue", "Brown"]
+        "correctOrder": ["Brown", "Blue", "Green", "Gray"],
+        "topLabel": "↑ Most Common",
+        "bottomLabel": "↓ Least Common"
       },
       {
         "prompt": "Car Color Frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
-        "correctOrder": ["Brown", "Green", "Blue", "Gray"]
+        "correctOrder": ["Gray", "Blue", "Green", "Brown"],
+        "topLabel": "↑ Most Popular",
+        "bottomLabel": "↓ Least Popular"
       },
       {
         "prompt": "Flag Color Frequency",
         "items": ["Blue", "Green", "Brown", "Gray"],
-        "correctOrder": ["Gray", "Brown", "Green", "Blue"]
+        "correctOrder": ["Blue", "Green", "Brown", "Gray"],
+        "topLabel": "↑ Most Common",
+        "bottomLabel": "↓ Least Common"
       }
     ],
 
@@ -438,17 +583,23 @@
       {
         "prompt": "Population",
         "items": ["Illinois", "California", "Wyoming", "Hawaii"],
-        "correctOrder": ["Wyoming", "Hawaii", "Illinois", "California"]
+        "correctOrder": ["California", "Illinois", "Hawaii", "Wyoming"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Land Area",
         "items": ["Illinois", "California", "Wyoming", "Hawaii"],
-        "correctOrder": ["Hawaii", "Illinois", "Wyoming", "California"]
+        "correctOrder": ["California", "Wyoming", "Illinois", "Hawaii"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Date of Statehood",
         "items": ["Illinois", "California", "Wyoming", "Hawaii"],
-        "correctOrder": ["Illinois", "California", "Wyoming", "Hawaii"]
+        "correctOrder": ["Hawaii", "Wyoming", "California", "Illinois"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       }
     ], 
 
@@ -456,53 +607,71 @@
       {
         "prompt": "Number of Children",
         "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
-        "correctOrder": ["John and Yoko", "Barack and Michelle", "Kim and Kanye", "Brad and Angelina"]
+        "correctOrder": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
+        "topLabel": "↑ Most Children",
+        "bottomLabel": "↓ Fewest Children"
       },
       {
         "prompt": "Age Difference in Years",
         "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
-        "correctOrder": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"]
+        "correctOrder": ["Brad and Angelina", "John and Yoko", "Kim and Kanye", "Barack and Michelle"],
+        "topLabel": "↑ Largest Gap",
+        "bottomLabel": "↓ Smallest Gap"
       },
       {
         "prompt": "Years Married",
         "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
-        "correctOrder": ["Brad and Angelina", "Kim and Kanye", "John and Yoko", "Barack and Michelle"]
-      }
-    ],
-    
-    [
-      {
-        "prompt": "Height",
-        "items": ["Colosseum", "Empire State Building", "Burj Khalifa", "Sydney Opera House"],
-        "correctOrder": ["Colosseum", "Sydney Opera House", "Empire State Building", "Burj Khalifa"]
-      },
-      {
-        "prompt": "Year Built",
-        "items": ["Colosseum", "Empire State Building", "Burj Khalifa", "Sydney Opera House"],
-        "correctOrder": ["Colosseum", "Empire State Building", "Sydney Opera House", "Burj Khalifa"]
-      },
-      {
-        "prompt": "Length of Construction",
-        "items": ["Colosseum", "Empire State Building", "Burj Khalifa", "Sydney Opera House"],
-        "correctOrder": ["Empire State Building", "Burj Khalifa", "Colosseum", "Sydney Opera House"]
+        "correctOrder": ["Barack and Michelle", "John and Yoko", "Kim and Kanye", "Brad and Angelina"],
+        "topLabel": "↑ Longest Marriage",
+        "bottomLabel": "↓ Shortest Marriage"
       }
     ],
 
     [
       {
+        "prompt": "Year Built",
+        "items": ["Eiffel Tower", "Burj Khalifa", "Pyramid of Giza", "Statue of Liberty"],
+        "correctOrder": ["Burj Khalifa", "Eiffel Tower", "Statue of Liberty", "Pyramid of Giza"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Eiffel Tower", "Burj Khalifa", "Pyramid of Giza", "Statue of Liberty"],
+        "correctOrder": ["Burj Khalifa", "Eiffel Tower", "Pyramid of Giza", "Statue of Liberty"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Length of Construction",
+        "items": ["Eiffel Tower", "Burj Khalifa", "Pyramid of Giza", "Statue of Liberty"],
+        "correctOrder": ["Eiffel Tower", "Burj Khalifa", "Statue of Liberty", "Pyramid of Giza"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      }
+    ], 
+
+    [
+      {
         "prompt": "Max Number of Players",
         "items": ["Clue", "Monopoly", "Checkers", "Twister"],
-        "correctOrder": ["Checkers", "Twister", "Clue", "Monopoly"]
+        "correctOrder": ["Monopoly", "Clue", "Twister", "Checkers"],
+        "topLabel": "↑ Most Players",
+        "bottomLabel": "↓ Fewest Players"
       },
       {
         "prompt": "Average Game Length",
         "items": ["Clue", "Monopoly", "Checkers", "Twister"],
-        "correctOrder": ["Twister", "Checkers", "Clue", "Monopoly"]
+        "correctOrder": ["Monopoly", "Clue", "Checkers", "Twister"],
+        "topLabel": "↑ Longest Game",
+        "bottomLabel": "↓ Shortest Game"
       },
       {
         "prompt": "Year Released",
         "items": ["Clue", "Monopoly", "Checkers", "Twister"],
-        "correctOrder": ["Checkers", "Monopoly", "Clue", "Twister"]
+        "correctOrder": ["Twister", "Clue", "Monopoly", "Checkers"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       }
     ],
 
@@ -510,17 +679,23 @@
       {
         "prompt": "Age Rating",
         "items": ["The Hunger Games", "Willy Wonka & the Chocolate Factory", "The Silence of the Lambs", "Back to the Future"],
-        "correctOrder": ["Willy Wonka & the Chocolate Factory", "Back to the Future", "The Hunger Games", "The Silence of the Lambs"]
+        "correctOrder": ["The Silence of the Lambs", "The Hunger Games", "Back to the Future", "Willy Wonka & the Chocolate Factory"],
+        "topLabel": "↑ Most Mature",
+        "bottomLabel": "↓ Most Family-Friendly"
       },
       {
         "prompt": "Year",
         "items": ["The Hunger Games", "Willy Wonka & the Chocolate Factory", "The Silence of the Lambs", "Back to the Future"],
-        "correctOrder": ["Willy Wonka & the Chocolate Factory", "Back to the Future", "The Silence of the Lambs", "The Hunger Games"]
+        "correctOrder": ["The Hunger Games", "The Silence of the Lambs", "Back to the Future", "Willy Wonka & the Chocolate Factory"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Oscar Nominations",
         "items": ["The Hunger Games", "Willy Wonka & the Chocolate Factory", "The Silence of the Lambs", "Back to the Future"],
-        "correctOrder": ["The Hunger Games", "Willy Wonka & the Chocolate Factory", "Back to the Future", "The Silence of the Lambs"]
+        "correctOrder": ["The Silence of the Lambs", "Back to the Future", "Willy Wonka & the Chocolate Factory", "The Hunger Games"],
+        "topLabel": "↑ Most Nominations",
+        "bottomLabel": "↓ Fewest Nominations"
       }
     ],
 
@@ -528,17 +703,23 @@
       {
         "prompt": "Land Area",
         "items": ["Asia", "Africa", "South America", "Europe"],
-        "correctOrder": ["Europe", "South America", "Africa", "Asia"]
+        "correctOrder": ["Asia", "Africa", "South America", "Europe"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Number of Countries",
         "items": ["Asia", "Africa", "South America", "Europe"],
-        "correctOrder": ["South America", "Europe", "Asia", "Africa"]
+        "correctOrder": ["Africa", "Asia", "Europe", "South America"],
+        "topLabel": "↑ Most Countries",
+        "bottomLabel": "↓ Fewest Countries"
       },
       {
         "prompt": "Population",
         "items": ["Asia", "Africa", "South America", "Europe"],
-        "correctOrder": ["South America", "Europe", "Africa", "Asia"]
+        "correctOrder": ["Asia", "Africa", "Europe", "South America"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       }
     ], 
 
@@ -546,17 +727,47 @@
       {
         "prompt": "Year Released",
         "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
-        "correctOrder": ["Hey Jude", "All I Want for Christmas Is You", "Gangnam Style", "Despacito"]
+        "correctOrder": ["Despacito", "Gangnam Style", "All I Want for Christmas Is You", "Hey Jude"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Beats Per Minute (Tempo)",
         "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
-        "correctOrder": ["Hey Jude", "Despacito", "Gangnam Style", "All I Want for Christmas Is You"]
+        "correctOrder": ["All I Want for Christmas Is You", "Gangnam Style", "Despacito", "Hey Jude"],
+        "topLabel": "↑ Fastest Tempo",
+        "bottomLabel": "↓ Slowest Tempo"
       },
       {
         "prompt": "Views on YouTube",
         "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
-        "correctOrder": ["Hey Jude", "All I Want for Christmas Is You", "Gangnam Style", "Despacito"]
+        "correctOrder": ["Despacito", "Gangnam Style", "All I Want for Christmas Is You", "Hey Jude"],
+        "topLabel": "↑ Most Views",
+        "bottomLabel": "↓ Fewest Views"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Popularity as Pet",
+        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
+        "correctOrder": ["Dog", "Cat", "Goldfish", "Hamster"],
+        "topLabel": "↑ Most Popular",
+        "bottomLabel": "↓ Least Popular"
+      },
+      {
+        "prompt": "Number of Teeth",
+        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
+        "correctOrder": ["Dog", "Cat", "Hamster", "Goldfish"],
+        "topLabel": "↑ Most Teeth",
+        "bottomLabel": "↓ Fewest Teeth"
+      },
+      {
+        "prompt": "Average Lifespan",
+        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
+        "correctOrder": ["Cat", "Goldfish", "Dog", "Hamster"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
       }
     ],
 
@@ -564,17 +775,23 @@
       {
         "prompt": "Year Founded",
         "items": ["Doordash", "Amazon", "Twitter/X", "Tinder"],
-        "correctOrder": ["Amazon", "Twitter/X", "Tinder", "Doordash"]
+        "correctOrder": ["Doordash", "Tinder", "Twitter/X", "Amazon"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Number of Employees",
         "items": ["Doordash", "Amazon", "Twitter/X", "Tinder"],
-        "correctOrder": ["Tinder", "Twitter/X", "Doordash", "Amazon"]
+        "correctOrder": ["Amazon", "Doordash", "Twitter/X", "Tinder"],
+        "topLabel": "↑ Most Employees",
+        "bottomLabel": "↓ Fewest Employees"
       },
       {
         "prompt": "Number of Monthly Users",
         "items": ["Doordash", "Amazon", "Twitter/X", "Tinder"],
-        "correctOrder": ["Doordash", "Tinder", "Amazon", "Twitter/X"]
+        "correctOrder": ["Twitter/X", "Amazon", "Tinder", "Doordash"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       }
     ],
 
@@ -582,17 +799,23 @@
       {
         "prompt": "Height",
         "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
-        "correctOrder": ["Allen Iverson", "Michael Jordan", "Larry Bird", "Shaq"]
+        "correctOrder": ["Shaq", "Larry Bird", "Michael Jordan", "Allen Iverson"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Age",
         "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
-        "correctOrder": ["Allen Iverson", "Shaq", "Michael Jordan", "Larry Bird"]
+        "correctOrder": ["Larry Bird", "Michael Jordan", "Shaq", "Allen Iverson"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Number of Teams Played For",
         "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
-        "correctOrder": ["Larry Bird", "Michael Jordan", "Allen Iverson", "Shaq"]
+        "correctOrder": ["Shaq", "Allen Iverson", "Michael Jordan", "Larry Bird"],
+        "topLabel": "↑ Most Teams",
+        "bottomLabel": "↓ Fewest Teams"
       }
     ],
 
@@ -600,17 +823,23 @@
       {
         "prompt": "Emmys Won",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
-        "correctOrder": ["The Walking Dead", "Lost", "Breaking Bad", "The Sopranos"]
+        "correctOrder": ["The Sopranos", "Breaking Bad", "Lost", "The Walking Dead"],
+        "topLabel": "↑ Most Emmys",
+        "bottomLabel": "↓ Fewest Emmys"
       },
       {
         "prompt": "Series Finale Viewership",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
-        "correctOrder": ["The Walking Dead", "Breaking Bad", "The Sopranos", "Lost"]
+        "correctOrder": ["Lost", "The Sopranos", "Breaking Bad", "The Walking Dead"],
+        "topLabel": "↑ Most Watched",
+        "bottomLabel": "↓ Least Watched"
       },
       {
-        "prompt": "Premiere Year",
+        "prompt": "Year Premiered",
         "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
-        "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "The Walking Dead"]
+        "correctOrder": ["The Walking Dead", "Breaking Bad", "Lost", "The Sopranos"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       }
     ],
 
@@ -618,35 +847,47 @@
       {
         "prompt": "Year Started",
         "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
-        "correctOrder": ["American Civil War", "World War II", "Korean War", "Vietnam War"]
+        "correctOrder": ["Vietnam War", "Korean War", "World War II", "American Civil War"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Length of War",
         "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
-        "correctOrder": ["Korean War", "American Civil War", "World War II", "Vietnam War"]
+        "correctOrder": ["Vietnam War", "World War II", "American Civil War", "Korean War"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Death Toll",
         "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
-        "correctOrder": ["American Civil War", "Vietnam War", "Korean War", "World War II"]
+        "correctOrder": ["World War II", "Korean War", "Vietnam War", "American Civil War"],
+        "topLabel": "↑ Most Deaths",
+        "bottomLabel": "↓ Fewest Deaths"
       }
     ],
 
     [
       {
-        "prompt": "Number of Bordering Countries",
-        "items": ["China", "Italy", "France", "US"],
-        "correctOrder": ["US", "Italy", "France", "China"]
+        "prompt": "Military Budget",
+        "items": ["China", "Canada", "France", "USA"],
+        "correctOrder": ["USA", "China", "France", "Canada"],
+        "topLabel": "↑ Largest Budget",
+        "bottomLabel": "↓ Smallest Budget"
       },
       {
-        "prompt": "Military Size",
-        "items": ["China", "Italy", "France", "US"],
-        "correctOrder": ["France", "Italy", "US", "China"]
+        "prompt": "Number of Bordering Countries",
+        "items": ["China", "Canada", "France", "USA"],
+        "correctOrder": ["China", "France", "USA", "Canada"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       },
       {
         "prompt": "Annual Tourists",
-        "items": ["China", "Italy", "France", "US"],
-        "correctOrder": ["China", "Italy", "US", "France"]
+        "items": ["China", "Canada", "France", "USA"],
+        "correctOrder": ["France", "USA", "China", "Canada"],
+        "topLabel": "↑ Most Tourists",
+        "bottomLabel": "↓ Fewest Tourists"
       }
     ], 
 
@@ -654,17 +895,23 @@
       {
         "prompt": "Height",
         "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
-        "correctOrder": ["Ellen DeGeneres", "Jimmy Fallon", "David Letterman", "Conan O’Brien"]
+        "correctOrder": ["Conan O’Brien", "David Letterman", "Jimmy Fallon", "Ellen DeGeneres"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Age",
         "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
-        "correctOrder": ["Jimmy Fallon", "Conan O’Brien", "Ellen DeGeneres", "David Letterman"]
+        "correctOrder": ["David Letterman", "Ellen DeGeneres", "Conan O’Brien", "Jimmy Fallon"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Years as Talk Show Host",
         "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
-        "correctOrder": ["Jimmy Fallon", "Ellen DeGeneres", "Conan O’Brien", "David Letterman"]
+        "correctOrder": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "topLabel": "↑ Longest Tenure",
+        "bottomLabel": "↓ Shortest Tenure"
       }
     ], 
 
@@ -672,17 +919,23 @@
       {
         "prompt": "Distance from Sun",
         "items": ["Neptune", "Venus", "Saturn", "Mars"],
-        "correctOrder": ["Venus", "Mars", "Saturn", "Neptune"]
+        "correctOrder": ["Neptune", "Saturn", "Mars", "Venus"],
+        "topLabel": "↑ Farthest from Sun",
+        "bottomLabel": "↓ Closest to Sun"
       },
       {
         "prompt": "Size",
         "items": ["Neptune", "Venus", "Saturn", "Mars"],
-        "correctOrder": ["Mars", "Venus", "Neptune", "Saturn"]
+        "correctOrder": ["Saturn", "Neptune", "Venus", "Mars"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
       },
       {
         "prompt": "Number of Moons",
         "items": ["Neptune", "Venus", "Saturn", "Mars"],
-        "correctOrder": ["Venus", "Mars", "Neptune", "Saturn"]
+        "correctOrder": ["Saturn", "Neptune", "Mars", "Venus"],
+        "topLabel": "↑ Most Moons",
+        "bottomLabel": "↓ Fewest Moons"
       }
     ],
 
@@ -690,17 +943,23 @@
       {
         "prompt": "Wingspan",
         "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
-        "correctOrder": ["Common Pigeon", "Peregrine Falcon", "Great Horned Owl", "Bald Eagle"]
+        "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
+        "topLabel": "↑ Largest Wingspan",
+        "bottomLabel": "↓ Smallest Wingspan"
       },
       {
         "prompt": "Weight",
         "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
-        "correctOrder": ["Common Pigeon", "Peregrine Falcon", "Great Horned Owl", "Bald Eagle"]
+        "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Top Speed",
         "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
-        "correctOrder": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"]
+        "correctOrder": ["Peregrine Falcon", "Bald Eagle", "Common Pigeon", "Great Horned Owl"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       }
     ],
 
@@ -708,17 +967,23 @@
       {
         "prompt": "Year Published",
         "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
-        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"]
+        "correctOrder": ["Twilight", "1984", "The Great Gatsby", "A Tale of Two Cities"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Author Last Name (A-Z)",
         "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
-        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"]
+        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Page Count",
         "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
-        "correctOrder": ["The Great Gatsby", "1984", "A Tale of Two Cities", "Twilight"]
+        "correctOrder": ["Twilight", "A Tale of Two Cities", "1984", "The Great Gatsby"],
+        "topLabel": "↑ Longest Book",
+        "bottomLabel": "↓ Shortest Book"
       }
     ],
 
@@ -726,17 +991,23 @@
       {
         "prompt": "Height",
         "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
-        "correctOrder": ["Cherry blossom", "Palm tree", "Oak tree", "Redwood tree"]
+        "correctOrder": ["Redwood tree", "Oak tree", "Palm tree", "Cherry blossom"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Trunk Width",
         "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
-        "correctOrder": ["Palm tree", "Cherry blossom", "Oak tree", "Redwood tree"]
+        "correctOrder": ["Redwood tree", "Oak tree", "Cherry blossom", "Palm tree"],
+        "topLabel": "↑ Thickest Trunk",
+        "bottomLabel": "↓ Thinnest Trunk"
       },
       {
         "prompt": "Lifespan",
         "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
-        "correctOrder": ["Cherry blossom", "Palm tree", "Oak tree", "Redwood tree"]
+        "correctOrder": ["Redwood tree", "Oak tree", "Palm tree", "Cherry blossom"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
       }
     ],
 
@@ -744,35 +1015,47 @@
       {
         "prompt": "Age",
         "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
-        "correctOrder": ["Lady Gaga", "Katy Perry", "Janet Jackson", "Madonna"]
+        "correctOrder": ["Madonna", "Janet Jackson", "Katy Perry", "Lady Gaga"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Super Bowl Performance Year",
         "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
-        "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"]
+        "correctOrder": ["Lady Gaga", "Katy Perry", "Madonna", "Janet Jackson"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Monthly Spotify Listeners",
         "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
-        "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"]
+        "correctOrder": ["Lady Gaga", "Katy Perry", "Madonna", "Janet Jackson"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       }
     ],
 
     [
       {
         "prompt": "Land Area",
-        "items": ["Greece", "Canada", "China", "Japan"],
-        "correctOrder": ["Greece", "Japan", "China", "Canada"]
+        "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
+        "correctOrder": ["Brazil", "Mexico", "Iraq", "United Kingdom"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Population",
-        "items": ["Greece", "Canada", "China", "Japan"],
-        "correctOrder": ["Greece", "Canada", "Japan", "China"]
+        "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
+        "correctOrder": ["Brazil", "Mexico", "United Kingdom", "Iraq"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "GDP",
-        "items": ["Greece", "Canada", "China", "Japan"],
-        "correctOrder": ["Greece", "Canada", "Japan", "China"]
+        "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
+        "correctOrder": ["United Kingdom", "Brazil", "Mexico", "Iraq"],
+        "topLabel": "↑ Highest GDP",
+        "bottomLabel": "↓ Lowest GDP"
       }
     ],
 
@@ -780,17 +1063,23 @@
       {
         "prompt": "Year",
         "items": ["Toy Story", "Jaws", "Napoleon Dynamite", "Jurassic Park"],
-        "correctOrder": ["Jaws", "Jurassic Park", "Toy Story", "Napoleon Dynamite"]
+        "correctOrder": ["Napoleon Dynamite", "Toy Story", "Jurassic Park", "Jaws"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Box Office Gross",
         "items": ["Toy Story", "Jaws", "Napoleon Dynamite", "Jurassic Park"],
-        "correctOrder": ["Napoleon Dynamite", "Toy Story", "Jaws", "Jurassic Park"]
+        "correctOrder": ["Jurassic Park", "Jaws", "Toy Story", "Napoleon Dynamite"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
       },
       {
         "prompt": "Runtime",
         "items": ["Toy Story", "Jaws", "Napoleon Dynamite", "Jurassic Park"],
-        "correctOrder": ["Toy Story", "Napoleon Dynamite", "Jaws", "Jurassic Park"]
+        "correctOrder": ["Jurassic Park", "Jaws", "Napoleon Dynamite", "Toy Story"],
+        "topLabel": "↑ Longest Runtime",
+        "bottomLabel": "↓ Shortest Runtime"
       }
     ],
 
@@ -799,17 +1088,23 @@
       {
         "prompt": "Height",
         "items": ["George Washington", "Abraham Lincoln", "John F. Kennedy", "Richard Nixon"],
-        "correctOrder": ["Richard Nixon", "John F. Kennedy", "George Washington", "Abraham Lincoln"]
+        "correctOrder": ["Abraham Lincoln", "George Washington", "John F. Kennedy", "Richard Nixon"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Age at Death",
         "items": ["George Washington", "Abraham Lincoln", "John F. Kennedy", "Richard Nixon"],
-        "correctOrder": ["John F. Kennedy", "Abraham Lincoln", "George Washington", "Richard Nixon"]
+        "correctOrder": ["Richard Nixon", "George Washington", "Abraham Lincoln", "John F. Kennedy"],
+        "topLabel": "↑ Oldest at Death",
+        "bottomLabel": "↓ Youngest at Death"
       },
       {
         "prompt": "Age at Inauguration",
         "items": ["George Washington", "Abraham Lincoln", "John F. Kennedy", "Richard Nixon"],
-        "correctOrder": ["John F. Kennedy", "Abraham Lincoln", "Richard Nixon", "George Washington"]
+        "correctOrder": ["George Washington", "Richard Nixon", "Abraham Lincoln", "John F. Kennedy"],
+        "topLabel": "↑ Oldest at Inauguration",
+        "bottomLabel": "↓ Youngest at Inauguration"
       }
     ],
 
@@ -817,17 +1112,23 @@
       {
         "prompt": "Age",
         "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
-        "correctOrder": ["Leonardo DiCaprio", "Will Smith", "Johnny Depp", "Oprah Winfrey"]
+        "correctOrder": ["Oprah Winfrey", "Johnny Depp", "Will Smith", "Leonardo DiCaprio"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Height",
         "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
-        "correctOrder": ["Oprah Winfrey", "Johnny Depp", "Leonardo DiCaprio", "Will Smith"]
+        "correctOrder": ["Will Smith", "Leonardo DiCaprio", "Johnny Depp", "Oprah Winfrey"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Net Worth",
         "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
-        "correctOrder": ["Johnny Depp", "Leonardo DiCaprio", "Will Smith", "Oprah Winfrey"]
+        "correctOrder": ["Oprah Winfrey", "Will Smith", "Leonardo DiCaprio", "Johnny Depp"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
       }
     ],
 
@@ -835,17 +1136,23 @@
       {
         "prompt": "Number of Teeth",
         "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
-        "correctOrder": ["Snapping Turtle", "Human", "Alligator", "Great White Shark"]
+        "correctOrder": ["Great White Shark", "Alligator", "Human", "Snapping Turtle"],
+        "topLabel": "↑ Most Teeth",
+        "bottomLabel": "↓ Fewest Teeth"
       },
       {
         "prompt": "Bite Force",
         "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
-        "correctOrder": ["Human", "Snapping Turtle", "Alligator", "Great White Shark"]
+        "correctOrder": ["Great White Shark", "Alligator", "Snapping Turtle", "Human"],
+        "topLabel": "↑ Strongest Bite",
+        "bottomLabel": "↓ Weakest Bite"
       },
       {
         "prompt": "Top Speed",
         "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
-        "correctOrder": ["Snapping Turtle", "Alligator", "Human", "Great White Shark"]
+        "correctOrder": ["Great White Shark", "Human", "Alligator", "Snapping Turtle"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       }
     ], 
 
@@ -853,17 +1160,23 @@
       {
         "prompt": "Population",
         "items": ["San Francisco", "Tokyo", "New York City", "Los Angeles"],
-        "correctOrder": ["San Francisco", "Los Angeles", "New York City", "Tokyo"]
-      },
-      {
-        "prompt": "Land Area",
-        "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
-        "correctOrder": ["San Francisco", "New York City", "Los Angeles", "Tokyo"]
+        "correctOrder": ["Tokyo", "New York City", "Los Angeles", "San Francisco"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Distance from Equator",
         "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
-        "correctOrder": ["Los Angeles", "Tokyo", "San Francisco", "New York City"]
+        "correctOrder": ["New York City", "San Francisco", "Tokyo", "Los Angeles"],
+        "topLabel": "↑ Farthest from Equator",
+        "bottomLabel": "↓ Closest to Equator"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
+        "correctOrder": ["Tokyo", "Los Angeles", "New York City", "San Francisco"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
       }
     ],
 
@@ -871,17 +1184,23 @@
       {
         "prompt": "Location Name Length",
         "items": ["Cowboys", "Bears", "Eagles", "Packers"],
-        "correctOrder": ["Cowboys", "Bears", "Packers", "Eagles"]
+        "correctOrder": ["Eagles", "Packers", "Bears", "Cowboys"],
+        "topLabel": "↑ Longest Name",
+        "bottomLabel": "↓ Shortest Name"
       },
       {
-        "prompt": "Superbowls Won",
+        "prompt": "Super Bowls Won",
         "items": ["Cowboys", "Bears", "Eagles", "Packers"],
-        "correctOrder": ["Bears", "Eagles", "Packers", "Cowboys"]
+        "correctOrder": ["Cowboys", "Packers", "Eagles", "Bears"],
+        "topLabel": "↑ Most Wins",
+        "bottomLabel": "↓ Fewest Wins"
       },
       {
         "prompt": "Team Valuation",
         "items": ["Cowboys", "Bears", "Eagles", "Packers"],
-        "correctOrder": ["Packers", "Bears", "Eagles", "Cowboys"]
+        "correctOrder": ["Cowboys", "Eagles", "Bears", "Packers"],
+        "topLabel": "↑ Highest Valuation",
+        "bottomLabel": "↓ Lowest Valuation"
       }
     ],
 
@@ -889,35 +1208,47 @@
       {
         "prompt": "Year of First Film",
         "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
-        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"]
+        "correctOrder": ["Quentin Tarantino", "Steven Spielberg", "Martin Scorsese", "Alfred Hitchcock"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Number of Oscars Won",
         "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
-        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
+        "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
+        "topLabel": "↑ Most Oscars",
+        "bottomLabel": "↓ Fewest Oscars"
       },
       {
         "prompt": "Highest Grossing Movie",
         "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
-        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Quentin Tarantino", "Steven Spielberg"]
+        "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
       }
     ],
 
     [
       {
         "prompt": "Age",
-        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
-        "correctOrder": ["Rihanna", "Scarlett Johansson", "Tom Cruise", "Tom Hanks"]
+        "items": ["Scarlett Johansson", "Tom Hanks", "Rihanna", "Tom Cruise"],
+        "correctOrder": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Height",
-        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
-        "correctOrder": ["Scarlett Johansson", "Tom Cruise",  "Rihanna", "Tom Hanks"]
+        "items": ["Scarlett Johansson", "Tom Hanks", "Rihanna", "Tom Cruise"],
+        "correctOrder": ["Tom Hanks", "Rihanna", "Tom Cruise", "Scarlett Johansson"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Net Worth",
-        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
-        "correctOrder": ["Scarlett Johansson", "Tom Hanks", "Tom Cruise", "Rihanna"]
+        "items": ["Scarlett Johansson", "Tom Hanks", "Rihanna", "Tom Cruise"],
+        "correctOrder": ["Rihanna", "Tom Cruise", "Tom Hanks", "Scarlett Johansson"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
       }
     ],
 
@@ -925,17 +1256,47 @@
       {
         "prompt": "Year Established",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
-        "correctOrder": ["Oxford", "Yale", "UC Berkeley", "Stanford"]
+        "correctOrder": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
+        "topLabel": "↑ Newest",
+        "bottomLabel": "↓ Oldest"
       },
       {
         "prompt": "Acceptance Rate",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
-        "correctOrder": ["Stanford", "Yale", "UC Berkeley", "Oxford"]
+        "correctOrder": ["Stanford", "Yale", "UC Berkeley", "Oxford"],
+        "topLabel": "↑ Most Selective",
+        "bottomLabel": "↓ Least Selective"
       },
       {
         "prompt": "Number of Students",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
-        "correctOrder": ["Yale", "Stanford", "Oxford", "UC Berkeley"]
+        "correctOrder": ["UC Berkeley", "Oxford", "Stanford", "Yale"],
+        "topLabel": "↑ Most Students",
+        "bottomLabel": "↓ Fewest Students"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Grams of Sugar",
+        "items": ["Coca-Cola", "Gatorade", "Coke Zero", "Mountain Dew"],
+        "correctOrder": ["Mountain Dew", "Coca-Cola", "Gatorade", "Coke Zero"],
+        "topLabel": "↑ Most Sugar",
+        "bottomLabel": "↓ Least Sugar"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Coca-Cola", "Gatorade", "Coke Zero", "Mountain Dew"],
+        "correctOrder": ["Coke Zero", "Gatorade", "Mountain Dew", "Coca-Cola"],
+        "topLabel": "↑ Newest",
+        "bottomLabel": "↓ Oldest"
+      },
+      {
+        "prompt": "Sales",
+        "items": ["Coca-Cola", "Gatorade", "Coke Zero", "Mountain Dew"],
+        "correctOrder": ["Coca-Cola", "Mountain Dew", "Gatorade", "Coke Zero"],
+        "topLabel": "↑ Most Sold",
+        "bottomLabel": "↓ Least Sold"
       }
     ],
 
@@ -943,17 +1304,23 @@
       {
         "prompt": "Land Area",
         "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["Ohio", "New York", "Idaho", "Alaska"]
+        "correctOrder": ["Alaska", "Idaho", "New York", "Ohio"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Population",
         "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["Alaska", "Idaho", "Ohio", "New York"]
+        "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Date of Statehood",
         "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"]
+        "correctOrder": ["Alaska", "Idaho", "Ohio", "New York"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       }
     ],
 
@@ -961,17 +1328,23 @@
       {
         "prompt": "Weight",
         "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
+        "correctOrder": ["Elephant", "Rhino", "Hippo", "Polar bear"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Population Size",
         "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Rhino", "Polar bear", "Hippo", "Elephant"]
+        "correctOrder": ["Elephant", "Hippo", "Polar bear", "Rhino"],
+        "topLabel": "↑ Most Abundant",
+        "bottomLabel": "↓ Rarest"
       },
       {
         "prompt": "Gestation Period",
         "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Polar bear", "Hippo", "Rhino", "Elephant"]
+        "correctOrder": ["Elephant", "Rhino", "Hippo", "Polar bear"],
+        "topLabel": "↑ Longest Pregnancy",
+        "bottomLabel": "↓ Shortest Pregnancy"
       }
     ],
 
@@ -979,17 +1352,23 @@
       {
         "prompt": "Year Released",
         "items": ["Dancing Queen", "Smells Like Teen Spirit", "Thriller", "I Want to Hold Your Hand"],
-        "correctOrder": ["I Want to Hold Your Hand", "Dancing Queen", "Thriller", "Smells Like Teen Spirit"]
+        "correctOrder": ["Smells Like Teen Spirit", "Thriller", "Dancing Queen", "I Want to Hold Your Hand"],
+        "topLabel": "↑ Newest Release",
+        "bottomLabel": "↓ Oldest Release"
       },
       {
         "prompt": "Artist Name (A-Z)",
         "items": ["Dancing Queen", "Smells Like Teen Spirit", "Thriller", "I Want to Hold Your Hand"],
-        "correctOrder": ["Dancing Queen", "I Want to Hold Your Hand", "Thriller", "Smells Like Teen Spirit"]
+        "correctOrder": ["Dancing Queen", "I Want to Hold Your Hand", "Thriller", "Smells Like Teen Spirit"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Song Length",
         "items": ["Dancing Queen", "Smells Like Teen Spirit", "Thriller", "I Want to Hold Your Hand"],
-        "correctOrder": ["I Want to Hold Your Hand", "Dancing Queen", "Smells Like Teen Spirit", "Thriller"]
+        "correctOrder": ["Thriller", "Smells Like Teen Spirit", "Dancing Queen", "I Want to Hold Your Hand"],
+        "topLabel": "↑ Longest Song",
+        "bottomLabel": "↓ Shortest Song"
       }
     ],
 
@@ -997,17 +1376,23 @@
       {
         "prompt": "Year Opened",
         "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
-        "correctOrder": ["Disneyland", "Walt Disney World", "Disneyland Paris", "Disneyland Shanghai"]
+        "correctOrder": ["Disneyland Shanghai", "Disneyland Paris", "Walt Disney World", "Disneyland"],
+        "topLabel": "↑ Newest Park",
+        "bottomLabel": "↓ Oldest Park"
       },
       {
         "prompt": "Yearly Attendees",
         "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
-        "correctOrder": ["Disneyland Paris", "Disneyland Shanghai", "Disneyland", "Walt Disney World"]
+        "correctOrder": ["Walt Disney World", "Disneyland", "Disneyland Shanghai", "Disneyland Paris"],
+        "topLabel": "↑ Most Visitors",
+        "bottomLabel": "↓ Fewest Visitors"
       },
       {
         "prompt": "Total Land Area",
         "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
-        "correctOrder": ["Disneyland", "Disneyland Shanghai", "Disneyland Paris", "Walt Disney World"]
+        "correctOrder": ["Walt Disney World", "Disneyland Paris", "Disneyland Shanghai", "Disneyland"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
       }
     ], 
 
@@ -1015,35 +1400,48 @@
       {
         "prompt": "Land Area",
         "items": ["USA", "India", "Egypt", "Spain"],
-        "correctOrder": ["Spain", "Egypt", "India", "USA"]
+        "correctOrder": ["USA", "India", "Egypt", "Spain"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Population",
         "items": ["USA", "India", "Egypt", "Spain"],
-        "correctOrder": ["Spain", "Egypt", "USA", "India"]
+        "correctOrder": ["India", "USA", "Egypt", "Spain"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+        
       },
       {
         "prompt": "GDP",
         "items": ["USA", "India", "Egypt", "Spain"],
-        "correctOrder": ["Egypt", "Spain", "India", "USA"]
+        "correctOrder": ["USA", "India", "Spain", "Egypt"],
+        "topLabel": "↑ Largest GDP",
+        "bottomLabel": "↓ Smallest GDP"
       }
     ], 
 
     [
       {
-        "prompt": "Debut Year as Pro.",
+        "prompt": "Debut Year as Pro",
         "items": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
-        "correctOrder": ["Serena Williams", "Tom Brady", "Lionel Messi", "Stephen Curry"]
+        "correctOrder": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
+        "topLabel": "↑ Most Recent Debut",
+        "bottomLabel": "↓ Earliest Debut"
       },
       {
         "prompt": "Social Media Followers",
         "items": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
-        "correctOrder": ["Tom Brady", "Stephen Curry", "Serena Williams", "Lionel Messi"]
+        "correctOrder": ["Lionel Messi", "Serena Williams", "Stephen Curry", "Tom Brady"],
+        "topLabel": "↑ Most Followers",
+        "bottomLabel": "↓ Fewest Followers"
       },
       {
         "prompt": "Total Career Earnings",
         "items": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
-        "correctOrder": ["Serena Williams", "Stephen Curry", "Tom Brady", "Lionel Messi"]
+        "correctOrder": ["Lionel Messi", "Tom Brady", "Stephen Curry", "Serena Williams"],
+        "topLabel": "↑ Most Earnings",
+        "bottomLabel": "↓ Least Earnings"
       }
     ],
 
@@ -1051,17 +1449,23 @@
       {
         "prompt": "Year",
         "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
-        "correctOrder": ["E.T.", "Forrest Gump", "Titanic", "Inception"]
+        "correctOrder": ["Inception", "Titanic", "Forrest Gump", "E.T."],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Oldest Film"
       },
       {
         "prompt": "Box Office Gross",
         "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
-        "correctOrder": ["Forrest Gump", "E.T.", "Inception", "Titanic"]
+        "correctOrder": ["Titanic", "Inception", "E.T.", "Forrest Gump"],
+        "topLabel": "↑ Highest Gross",
+        "bottomLabel": "↓ Lowest Gross"
       },
       {
         "prompt": "Runtime",
         "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
-        "correctOrder": ["E.T.", "Forrest Gump", "Inception", "Titanic"]
+        "correctOrder": ["Titanic", "Inception", "Forrest Gump", "E.T."],
+        "topLabel": "↑ Longest Runtime",
+        "bottomLabel": "↓ Shortest Runtime"
       }
     ],
 
@@ -1069,35 +1473,47 @@
       {
         "prompt": "Year Published",
         "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
-        "correctOrder": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"]
+        "correctOrder": ["Harry Potter and the Sorcerer's Stone", "Fahrenheit 451", "The Grapes of Wrath", "Pride and Prejudice"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Author Last Name (A-Z)",
         "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
-        "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"]
+        "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Page Count",
         "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
-        "correctOrder": ["Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath"]
+        "correctOrder": ["The Grapes of Wrath", "Pride and Prejudice", "Harry Potter and the Sorcerer's Stone", "Fahrenheit 451"],
+        "topLabel": "↑ Most Pages",
+        "bottomLabel": "↓ Fewest Pages"
       }
     ],
 
     [
       {
-        "prompt": "Year Built",
-        "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
-        "correctOrder": ["Leaning Tower of Pisa", "Taj Mahal", "Big Ben", "Golden Gate Bridge"]
+        "prompt": "Height",
+        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
+        "correctOrder": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
-        "prompt": "Height",
-        "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
-        "correctOrder": ["Leaning Tower of Pisa", "Taj Mahal", "Big Ben", "Golden Gate Bridge"]
+        "prompt": "Year Built",
+        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
+        "correctOrder": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Length of Construction",
-        "items": ["Big Ben", "Golden Gate Bridge", "Taj Mahal", "Leaning Tower of Pisa"],
-        "correctOrder": ["Golden Gate Bridge", "Big Ben", "Taj Mahal", "Leaning Tower of Pisa"]
+        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
+        "correctOrder": ["Golden Gate Bridge", "The White House", "Taj Mahal", "Stonehenge"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       }
     ],
 
@@ -1105,35 +1521,47 @@
       {
         "prompt": "Average Weight",
         "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
-        "correctOrder": ["Motorcycle", "Helicopter", "Tank", "Submarine"]
+        "correctOrder": ["Submarine", "Tank", "Helicopter", "Motorcycle"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Top Recorded Speed",
         "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
-        "correctOrder": ["Tank", "Submarine", "Helicopter", "Motorcycle"]
+        "correctOrder": ["Motorcycle", "Helicopter", "Submarine", "Tank"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       },
       {
         "prompt": "Year Invented",
         "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
-        "correctOrder": ["Submarine", "Motorcycle", "Tank", "Helicopter"]
+        "correctOrder": ["Helicopter", "Tank", "Motorcycle", "Submarine"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       }
     ],
 
     [
       {
-        "prompt": "Premiere Year",
+        "prompt": "Year Premiered",
         "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
-        "correctOrder": ["Seinfeld", "Friends", "The Office (US)", "Mad Men"]
+        "correctOrder": ["Mad Men", "The Office (US)", "Friends", "Seinfeld"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Number of Episodes",
         "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
-        "correctOrder": ["Mad Men", "Seinfeld", "The Office (US)", "Friends"]
+        "correctOrder": ["Friends", "The Office (US)", "Seinfeld", "Mad Men"],
+        "topLabel": "↑ Most Episodes",
+        "bottomLabel": "↓ Fewest Episodes"
       },
       {
         "prompt": "Number of Emmys Won",
         "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
-        "correctOrder": ["The Office (US)", "Friends", "Seinfeld", "Mad Men"]
+        "correctOrder": ["Mad Men", "Seinfeld", "Friends", "The Office (US)"],
+        "topLabel": "↑ Most Emmys",
+        "bottomLabel": "↓ Fewest Emmys"
       }
     ],
 
@@ -1141,17 +1569,23 @@
       {
         "prompt": "Top Speed",
         "items": ["Sheep", "Mouse", "Sloth", "Zebra"],
-        "correctOrder": ["Sloth", "Mouse", "Sheep", "Zebra"]
+        "correctOrder": ["Zebra", "Sheep", "Mouse", "Sloth"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       },
       {
         "prompt": "Weight",
         "items": ["Sheep", "Mouse", "Sloth", "Zebra"],
-        "correctOrder": ["Mouse", "Sloth", "Sheep", "Zebra"]
+        "correctOrder": ["Zebra", "Sheep", "Sloth", "Mouse"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Lifespan",
         "items": ["Sheep", "Mouse", "Sloth", "Zebra"],
-        "correctOrder": ["Mouse", "Sheep", "Zebra", "Sloth"]
+        "correctOrder": ["Sloth", "Zebra", "Sheep", "Mouse"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
       }
     ],
 
@@ -1159,17 +1593,23 @@
       {
         "prompt": "Birth Year",
         "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
-        "correctOrder": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"]
+        "correctOrder": ["Daniel Craig", "Pierce Brosnan", "George Lazenby", "Sean Connery"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Number of Appearances as Bond",
         "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
-        "correctOrder": ["George Lazenby", "Pierce Brosnan", "Daniel Craig", "Sean Connery"]
+        "correctOrder": ["Sean Connery", "Daniel Craig", "Pierce Brosnan", "George Lazenby"],
+        "topLabel": "↑ Most Films",
+        "bottomLabel": "↓ Fewest Films"
       },
       {
         "prompt": "Age When First Played Bond",
         "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
-        "correctOrder": ["George Lazenby", "Sean Connery", "Daniel Craig", "Pierce Brosnan"]
+        "correctOrder": ["Pierce Brosnan", "Daniel Craig", "Sean Connery", "George Lazenby"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       }
     ],
 
@@ -1177,17 +1617,23 @@
       {
         "prompt": "Average Temperature",
         "items": ["Cairo", "Denver", "Sydney", "Moscow"],
-        "correctOrder": ["Moscow", "Denver", "Sydney", "Cairo"]
+        "correctOrder": ["Cairo", "Sydney", "Denver", "Moscow"],
+        "topLabel": "↑ Hottest",
+        "bottomLabel": "↓ Coldest"
       },
       {
         "prompt": "Population",
         "items": ["Cairo", "Denver", "Sydney", "Moscow"],
-        "correctOrder": ["Denver", "Sydney", "Moscow", "Cairo"]
+        "correctOrder": ["Cairo", "Moscow", "Sydney", "Denver"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Elevation",
         "items": ["Cairo", "Denver", "Sydney", "Moscow"],
-        "correctOrder": ["Cairo", "Sydney", "Moscow", "Denver"]
+        "correctOrder": ["Denver", "Moscow", "Sydney", "Cairo"],
+        "topLabel": "↑ Highest Elevation",
+        "bottomLabel": "↓ Lowest Elevation"
       }
     ],
 
@@ -1195,17 +1641,23 @@
       {
         "prompt": "Height",
         "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
-        "correctOrder": ["Oprah Winfrey", "James Corden", "Johnny Carson", "Alex Trebek"]
+        "correctOrder": ["Alex Trebek", "Johnny Carson", "James Corden", "Oprah Winfrey"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Age When Retired from Show",
         "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
-        "correctOrder": ["James Corden", "Oprah Winfrey", "Johnny Carson", "Alex Trebek"]
+        "correctOrder": ["Alex Trebek", "Johnny Carson", "Oprah Winfrey", "James Corden"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Number of Years as Host",
         "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
-        "correctOrder": ["James Corden", "Oprah Winfrey", "Johnny Carson", "Alex Trebek"]
+        "correctOrder": ["Alex Trebek", "Johnny Carson", "Oprah Winfrey", "James Corden"],
+        "topLabel": "↑ Most Years",
+        "bottomLabel": "↓ Fewest Years"
       }
     ], 
 
@@ -1213,17 +1665,23 @@
       {
         "prompt": "Location Name Length",
         "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
-        "correctOrder": ["Red Sox", "Yankees", "Dodgers", "Giants"]
+        "correctOrder": ["Giants", "Dodgers", "Yankees", "Red Sox"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
       },
       {
         "prompt": "World Series Won",
         "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
-        "correctOrder": ["Dodgers", "Giants", "Red Sox", "Yankees"]
+        "correctOrder": ["Yankees", "Red Sox", "Giants", "Dodgers"],
+        "topLabel": "↑ Most Titles",
+        "bottomLabel": "↓ Fewest Titles"
       },
       {
-        "prompt": "Valuation",
+        "prompt": "Team Valuation",
         "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
-        "correctOrder": ["Giants", "Red Sox", "Dodgers", "Yankees"]
+        "correctOrder": ["Yankees", "Dodgers", "Red Sox", "Giants"],
+        "topLabel": "↑ Highest Valuation",
+        "bottomLabel": "↓ Lowest Valuation"
       }
     ],
 
@@ -1231,53 +1689,71 @@
       {
         "prompt": "Artist Name (A-Z)",
         "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
-        "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"]
+        "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Year Released",
         "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
-        "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"]
+        "correctOrder": ["Shake It Off", "Billie Jean", "Free Bird", "Imagine"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Song Length",
         "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
-        "correctOrder": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"]
+        "correctOrder": ["Free Bird", "Billie Jean", "Shake It Off", "Imagine"],
+        "topLabel": "↑ Longest Song",
+        "bottomLabel": "↓ Shortest Song"
       }
     ],
-    
+
     [
       {
-        "prompt": "Initial Release Year",
+        "prompt": "Year of Initial Release",
         "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
-        "correctOrder": ["Game Boy", "BlackBerry", "iPhone", "Apple Watch"]
+        "correctOrder": ["Apple Watch", "iPhone", "BlackBerry", "Game Boy"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Number of Physical Buttons",
         "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
-        "correctOrder": ["Apple Watch", "iPhone", "Game Boy", "BlackBerry"]
+        "correctOrder": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
+        "topLabel": "↑ Most Buttons",
+        "bottomLabel": "↓ Fewest Buttons"
       },
       {
         "prompt": "Price at Release",
         "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
-        "correctOrder": ["Game Boy", "Apple Watch", "iPhone", "BlackBerry"]
+        "correctOrder": ["BlackBerry", "iPhone", "Apple Watch", "Game Boy"],
+        "topLabel": "↑ Most Expensive",
+        "bottomLabel": "↓ Cheapest"
       }
     ], 
 
     [
       {
         "prompt": "Weight",
-        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
-        "correctOrder": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"]
+        "items": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
+        "correctOrder": ["Golden Retriever", "Border Collie", "Beagle", "Chihuahua"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Intelligence",
-        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
-        "correctOrder": ["Beagle", "Chihuahua", "Golden Retriever", "Border Collie"]
+        "items": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
+        "correctOrder": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
+        "topLabel": "↑ Most Intelligent",
+        "bottomLabel": "↓ Least Intelligent"
       },
       {
         "prompt": "Top Speed",
-        "items": ["Golden Retriever", "Border Collie", "Chihuahua", "Beagle"],
-        "correctOrder": ["Chihuahua", "Beagle", "Golden Retriever", "Border Collie"]
+        "items": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
+        "correctOrder": ["Border Collie", "Golden Retriever", "Beagle", "Chihuahua"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       }
     ],
 
@@ -1285,71 +1761,95 @@
       {
         "prompt": "Height",
         "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
-        "correctOrder": ["Prince", "Kendrick Lamar", "Michael Jackson", "Paul McCartney"]
+        "correctOrder": ["Paul McCartney", "Michael Jackson", "Kendrick Lamar", "Prince"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Year of Super Bowl Performance",
         "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
-        "correctOrder": ["Michael Jackson", "Paul McCartney", "Prince", "Kendrick Lamar"]
+        "correctOrder": ["Kendrick Lamar", "Prince", "Paul McCartney", "Michael Jackson"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Monthly Spotify Listeners",
         "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
-        "correctOrder": ["Paul McCartney", "Prince", "Michael Jackson", "Kendrick Lamar"]
+        "correctOrder": ["Kendrick Lamar", "Michael Jackson", "Prince", "Paul McCartney"],
+        "topLabel": "↑ Most Listeners",
+        "bottomLabel": "↓ Fewest Listeners"
       }
     ],
 
     [
       {
         "prompt": "Land Area",
-        "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
-        "correctOrder": ["United Kingdom", "Iraq", "Mexico", "Brazil"]
+        "items": ["Greece", "Canada", "China", "Japan"],
+        "correctOrder": ["Canada", "China", "Japan", "Greece"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Population",
-        "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
-        "correctOrder": ["Iraq", "United Kingdom", "Mexico", "Brazil"]
+        "items": ["Greece", "Canada", "China", "Japan"],
+        "correctOrder": ["China", "Japan", "Canada", "Greece"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "GDP",
-        "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
-        "correctOrder": ["Iraq", "Mexico", "Brazil", "United Kingdom"]
+        "items": ["Greece", "Canada", "China", "Japan"],
+        "correctOrder": ["China", "Japan", "Canada", "Greece"],
+        "topLabel": "↑ Highest GDP",
+        "bottomLabel": "↓ Lowest GDP"
       }
     ],
 
     [
       {
         "prompt": "Volume Level (dB)",
-        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn Mower"],
-        "correctOrder": ["Elevator", "Lawn Mower", "Chainsaw", "Fireworks"]
-      },
-      {
-        "prompt": "Injuries per Year (US)",
-        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn Mower"],
-        "correctOrder": ["Fireworks", "Elevator", "Chainsaw", "Lawn Mower"]
+        "items": ["Lawn Mower", "Fireworks", "Elevator", "Chainsaw"],
+        "correctOrder": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
+        "topLabel": "↑ Loudest",
+        "bottomLabel": "↓ Quietest"
       },
       {
         "prompt": "Year Invented",
-        "items": ["Fireworks", "Chainsaw", "Elevator", "Lawn Mower"],
-        "correctOrder": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"]
+        "items": ["Lawn Mower", "Fireworks", "Elevator", "Chainsaw"],
+        "correctOrder": ["Elevator", "Lawn Mower", "Chainsaw", "Fireworks"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Injuries per Year (US)",
+        "items": ["Lawn Mower", "Fireworks", "Elevator", "Chainsaw"],
+        "correctOrder": ["Lawn Mower", "Chainsaw", "Elevator", "Fireworks"],
+        "topLabel": "↑ Most Injuries",
+        "bottomLabel": "↓ Fewest Injuries"
       }
     ], 
 
     [
       {
         "prompt": "Age",
-        "items": ["Billy Crystal", "Whoopi Goldberg", "Elon Musk", "Seth MacFarlane"],
-        "correctOrder": ["Seth MacFarlane", "Elon Musk", "Whoopi Goldberg", "Billy Crystal"]
+        "items": ["Whoopi Goldberg", "Elon Musk", "Seth MacFarlane", "Billy Crystal"],
+        "correctOrder": ["Billy Crystal", "Whoopi Goldberg", "Elon Musk", "Seth MacFarlane"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Number of Oscars Hosted",
-        "items": ["Billy Crystal", "Whoopi Goldberg", "Elon Musk", "Seth MacFarlane"],
-        "correctOrder": ["Elon Musk", "Seth MacFarlane", "Whoopi Goldberg", "Billy Crystal"]
+        "items": ["Whoopi Goldberg", "Elon Musk", "Seth MacFarlane", "Billy Crystal"],
+        "correctOrder": ["Billy Crystal", "Whoopi Goldberg", "Seth MacFarlane", "Elon Musk"],
+        "topLabel": "↑ Most Hosted",
+        "bottomLabel": "↓ Fewest Hosted"
       },
       {
         "prompt": "Net Worth",
-        "items": ["Billy Crystal", "Whoopi Goldberg", "Elon Musk", "Seth MacFarlane"],
-        "correctOrder": ["Whoopi Goldberg", "Billy Crystal", "Seth MacFarlane", "Elon Musk"]
+        "items": ["Whoopi Goldberg", "Elon Musk", "Seth MacFarlane", "Billy Crystal"],
+        "correctOrder": ["Elon Musk", "Seth MacFarlane", "Billy Crystal", "Whoopi Goldberg"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
       }
     ],
 
@@ -1357,38 +1857,98 @@
       {
         "prompt": "Egg Size",
         "items": ["Turkey", "Ostrich", "Emperor Penguin", "Quail"],
-        "correctOrder": ["Quail", "Turkey", "Emperor Penguin", "Ostrich"]
+        "correctOrder": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
+        "topLabel": "↑ Largest Egg",
+        "bottomLabel": "↓ Smallest Egg"
       },
       {
         "prompt": "Standing Height",
         "items": ["Turkey", "Ostrich", "Emperor Penguin", "Quail"],
-        "correctOrder": ["Quail", "Turkey", "Emperor Penguin", "Ostrich"]
+        "correctOrder": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Eggs Laid per Year",
         "items": ["Turkey", "Ostrich", "Emperor Penguin", "Quail"],
-        "correctOrder": ["Emperor Penguin", "Ostrich", "Turkey", "Quail"]
+        "correctOrder": ["Quail", "Turkey", "Ostrich", "Emperor Penguin"],
+        "topLabel": "↑ Most Eggs",
+        "bottomLabel": "↓ Fewest Eggs"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Number of Store Locations",
+        "items": ["Nike", "Blockbuster", "Macy's", "Gucci"],
+        "correctOrder": ["Nike", "Macy's", "Gucci", "Blockbuster"],
+        "topLabel": "↑ Most Stores",
+        "bottomLabel": "↓ Fewest Stores"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Nike", "Blockbuster", "Macy's", "Gucci"],
+        "correctOrder": ["Blockbuster", "Nike", "Gucci", "Macy's"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Annual Revenue",
+        "items": ["Nike", "Blockbuster", "Macy's", "Gucci"],
+        "correctOrder": ["Nike", "Macy's", "Gucci", "Blockbuster"],
+        "topLabel": "↑ Highest Revenue",
+        "bottomLabel": "↓ Lowest Revenue"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Location Name Length",
+        "items": ["Bulls", "Heat", "Warriors", "Mavericks"],
+        "correctOrder": ["Warriors", "Bulls", "Mavericks", "Heat"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
+      },
+      {
+        "prompt": "NBA Championships Won",
+        "items": ["Bulls", "Heat", "Warriors", "Mavericks"],
+        "correctOrder": ["Warriors", "Bulls", "Heat", "Mavericks"],
+        "topLabel": "↑ Most Titles",
+        "bottomLabel": "↓ Fewest Titles"
+      },
+      {
+        "prompt": "Team Valuation",
+        "items": ["Bulls", "Heat", "Warriors", "Mavericks"],
+        "correctOrder": ["Warriors", "Bulls", "Mavericks", "Heat"],
+        "topLabel": "↑ Highest Valuation",
+        "bottomLabel": "↓ Lowest Valuation"
       }
     ],
     
     [
       {
         "prompt": "Number of Judges",
-        "items": ["American Idol", "Shark Tank", "The Voice", "Judge Judy"],
-        "correctOrder": ["Judge Judy", "American Idol", "The Voice", "Shark Tank"]
+        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
+        "correctOrder": ["Shark Tank", "The Voice", "American Idol", "Judge Judy"],
+        "topLabel": "↑ Most Judges",
+        "bottomLabel": "↓ Fewest Judges"
       },
       {
         "prompt": "Year Premiered",
-        "items": ["American Idol", "Shark Tank", "The Voice", "Judge Judy"],
-        "correctOrder": ["Judge Judy", "American Idol", "Shark Tank", "The Voice"]
+        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
+        "correctOrder": ["The Voice", "Shark Tank", "American Idol", "Judge Judy"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Number of Episodes",
-        "items": ["American Idol", "Shark Tank", "The Voice", "Judge Judy"],
-        "correctOrder": ["Shark Tank", "The Voice", "American Idol", "Judge Judy"]
+        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
+        "correctOrder": ["Judge Judy", "American Idol", "The Voice", "Shark Tank"],
+        "topLabel": "↑ Most Episodes",
+        "bottomLabel": "↓ Fewest Episodes"
       }
     ]
-    
+
   ]
 }
 

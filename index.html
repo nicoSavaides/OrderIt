@@ -12,13 +12,10 @@
     }
 
 
-
-
-
     body {
       font-family: "Lora", sans-serif;
       text-align: center;
-      background-color: #e9ece6;
+      background-color: #e6e8e4; /*OG   e5e7e3    */
       color: #000000;
       display: flex;
       flex-direction: column;
@@ -77,20 +74,69 @@
       font-size: 1.2rem;
       background-color: #000000;
       color: #FFFFFF;
+      border: none;           /* removes border */
+      outline: none;          /* removes focus outline */
+      box-shadow: none;       /* prevents subtle shadows */
       padding: 10px 20px;
       margin-top: 150px;
       cursor: pointer;
       border-radius: 40px;
     }
 
-    #itemList {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 150px;
-      padding: 0;
-      list-style: none;
-    }
+
+
+    button {
+  transition: background-color 0.3s ease, opacity 0.3s ease;
+}
+
+
+
+
+
+
+
+    
+  #itemListWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px; /* 120*/
+}
+
+#itemList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Or whatever you had before */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order-label {
+  text-transform: uppercase;
+  font-family: system-ui, sans-serif;
+  font-size: .93rem; /* 1rem*/
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #727272; /* 727272 */
+}
+
+#topLabel {
+  margin-top: -7px !important;
+  margin-bottom: 14px !important;
+}
+
+#bottomLabel {
+  margin-top: 14px !important;
+}
+
+
+
+
+
 
     @font-face {
       font-family: 'Order It.';
@@ -127,8 +173,8 @@
     .draggable-item {
       padding: 10px;
       margin: 5px;
-      background-color: #D8D8D8;
-      border: 1px solid #ccc;
+      background-color: #D5D6D3; /*  d3d5cf   d6d6d6    */   
+      border: 1px solid #c6c9C2 ; /*     c0c3bc   C2C9BC   */
       cursor: grab;
       font-weight: 600;
       width: 300px;
@@ -168,23 +214,19 @@
 
 
 
-
-
-
-
-
     @keyframes shake {
-  0%    { transform: translateX(0); background-color: #A8A8A8; }
-  10%   { transform: translateX(-9px); background-color: #A8A8A8; }
-  20%   { transform: translateX(9px); background-color: #A8A8A8; }
-  30%   { transform: translateX(-7px); background-color: #A8A8A8; }
-  40%   { transform: translateX(7px); background-color: #A8A8A8; }
-  50%   { transform: translateX(-5px); background-color: #A8A8A8; }
-  60%   { transform: translateX(5px); background-color: #A8A8A8; }
-  70%   { transform: translateX(0); background-color: #A8A8A8; }
-  90%   { transform: translateX(0); background-color: #A8A8A8; }
-  100%  { transform: translateX(0); background-color: #A8A8A8; }
+  0%   { transform: translateX(0);  background-color: #A7A9A4; }
+  10%  { transform: translateX(-9px); background-color: #A7A9A4; }
+  20%  { transform: translateX(9px);  background-color: #A7A9A4; }
+  30%  { transform: translateX(-7px); background-color: #A7A9A4; }
+  40%  { transform: translateX(7px);  background-color: #A7A9A4; }
+  50%  { transform: translateX(-5px); background-color: #A7A9A4; }
+  60%  { transform: translateX(5px);  background-color: #A7A9A4; }
+  70%  { transform: translateX(0);   background-color: #A7A9A4; }
+  90%  { transform: translateX(0);   background-color: #A7A9A4; }
+  100% { transform: translateX(0);   background-color: #A7A9A4; }
 }
+
 
 
 .shake li {
@@ -193,24 +235,7 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* already played already played  already played  already played  already played  already played  already played  already played  already played  */
-
-
 
 
 
@@ -297,38 +322,66 @@
 
 
 
-    @media (max-width: 480px) {
-      /* Further adjustments for smaller screens (smartphones) */
-      h1 {
-        font-size: 3.1rem !important; 
-        margin-top: 1.33rem !important; /* 1.44 */
-      }
 
-      h2 {
-      position: fixed;
-      font-size: 2.1rem !important;
-      line-height: 1.3 !important; /* 1.4 */
-      top: 48px;               /* 40 then 50  */  
-      left: 50%;               /* Position horizontally at the center */
-      transform: translateX(-50%); /* Center it exactly by moving it back by 50% of its own width */
-      text-align: center;      /* Centers text if it wraps to the next line */
-      width: 100%;             /* Make sure the width is 100% of the screen width */
-      max-width: 350px;
-      box-sizing: border-box;  /* Prevents padding/margins from affecting width */
-      padding: 0 26px;
-    }
 
-    .smaller-font {
-      font-size: 1.73rem !important; /* 1.72 is good */
-    }
+
+
+
+
+@media (max-width: 480px) {
+  /* Smartphone-specific styles */
+
+  h1 {
+    font-size: 3.1rem !important; 
+    margin-top: 1.33rem !important;
+  }
+
+  h2 {
+    position: fixed;
+    font-size: 2.15rem;
+    line-height: 1.2 !important;
+    top: 32px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    padding: 0 26px;
+  }
+
+  #promptLabel,
+  #promptText {
+    font-size: inherit !important;
+  }
+
+  #roundPrompt[data-size="small"] {
+    font-size: 1.83rem !important;
+  }
+
+  #roundPrompt[data-size="medium"] {
+    font-size: 2.09rem !important;
+  }
+
+  #roundPrompt[data-size="large"] {
+    font-size: 2.14rem !important;
+  }
+
+
+
+
+
+
+
+
 
 
 
     p {
-      margin-top: 5rem !important; /* rounded */
-      font-size: 1.03rem !important;
-      font-weight: 400 !important;
-      padding: 0 20px;
+      margin-top: 105px !important; /* 125 */
+      font-size: 1.05rem !important; /* 1.03rem  */
+      font-weight: 450 !important;
+      padding: 0 25px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -339,9 +392,9 @@
 
        
       button {
-        font-size: 1.5rem;
+        font-size: 1.8rem; /* 1.5rem */
         padding: 12px 25px;
-        margin-top: 42px;  /* 36 */
+        margin-top: 43px;  /* 85 */
       }
 
 
@@ -349,11 +402,11 @@
       will-change: transform;
       transform: translateZ(0);       /* Forces GPU layer */
       backface-visibility: hidden;    /* Avoids flickering/glitches */
-
       transform-style: preserve-3d;
-      
-      font-size: 1.30rem;
-      width: 90%;
+      font-size: 1.1rem;     /* Smaller text */
+      width: 85%;          /* Less wide */
+      padding: 10px 10px;   /* Shorter height, narrower look */
+      margin: 4px auto;    /* Tight spacing, centered */
     }
 
 
@@ -381,8 +434,8 @@
 
       #strikeCount {
         position: fixed;
-        font-size: 1.2rem !important;
-        top: 393px; /* 386 */
+        font-size: 1.15rem !important;
+        top: 385px; /* 380 */
         left: 50%;
         transform: translateX(-50%); /* Centers the element horizontally */
         white-space: nowrap; /* Prevents the text from wrapping onto the next line */
@@ -393,38 +446,21 @@
 
       #submitWrapper {
       position: fixed;
-      margin-top: 465px; /* bottom: 85px; */ 
+      margin-top: 475px; /* 429px; */ 
       left: 50%;
       transform: translateX(-50%);
       z-index: 1000; 
     }
 
       #submitWrapper button {
-        width: 109px;
-        height: 52px;
-        font-size: 1.35rem;
+        width: 90px; /* 109px; */ 
+        height: 50px; /* 50px; */ 
+        font-size: 1.2rem;
         padding: 8px 0; /* Vertical padding only if needed */
       }
 
 
 
-
-
-      .correct-order-label {
-  font-weight: 600 !important;
-  font-size: 1.5rem !important;
-  text-align: center;
-  margin-top: 18px !important; /* space above label */
-  margin-bottom: 0 !important;
-}
-
-.correct-order-tile {
-  font-weight: 650 !important;
-  position: relative;
-  top: 0px !important;  /* Move tiles up a bit if you want */
-  transition: transform 0.3s ease;
-  z-index: 1;
-}
 
 
     
@@ -462,10 +498,14 @@
 
       #thanksMessage {
       position: relative;
-      top: 11px !important; /* 9px */
+      padding: 0 40px; /* 0 25px */ 
+      margin-top: 80px !important;
       text-align: center;
-      font-size: 1.25rem !important;
+      font-size: 1.15rem !important; /* 1.25rem */
+      font-weight: 450 !important;
     }
+
+
 
 
 #shareLink,
@@ -490,9 +530,18 @@
 
 
 #shareButton {
-  margin-top: 9px;
-  font-size: 1.4rem !important;
-  padding: 10px 20px;
+  background-color: transparent;
+  color: #000000; 
+  border: 2px solid #000000;       /* black border */
+  border-radius: 30px;             /* fully rounded edges */
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: none;
+  outline: none;
+  margin-top: 75px !important;
+  font-size: 1.15em !important;
+  padding: 10px 22px;
 }
 
 
@@ -531,13 +580,22 @@
 
 #playedTodayScreen p {
   padding: 0 20px;
-  font-size: 1.25em !important;
+  font-size: 1.15em !important;
   font-weight: bold;
   margin-top: 60px !important;
 }
 
 #playedTodayScreen button {
-  font-size: 1.25em;
+  background-color: transparent;
+  color: #000000; 
+  border: 2px solid #000000;       /* black border */
+  border-radius: 30px;             /* fully rounded edges */
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: none;
+  outline: none;
+  font-size: 1.15em !important;
   padding: 10px 22px;
   position: relative;
   z-index: 1;
@@ -545,16 +603,36 @@
 }
 
 #shareScoreButton {
+  background-color: transparent;
+  color: #000000; 
+  border: 2px solid #000000;       /* black border */
+  border-radius: 30px;             /* fully rounded edges */
+  padding: 10px 25px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: none;
+  outline: none;
+
   margin: 18px auto !important;   /* centers the block element horizontally */
   display: block !important;
-  font-size: 1.25em;
+  font-size: 1.15em !important;
   padding: 10px 22px;
 }
 
+
+
 #viewStatsButton {
+  background-color: transparent;
+  color: #000000; 
+  border: 2px solid #000000;
+  border-radius: 30px;             /* fully rounded edges */
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: none;
+  outline: none;
   margin-top: 18px !important;
   display: block !important;
-  font-size: 1.25em;
+  font-size: 1.15em !important;
   padding: 10px 22px;
 }
 
@@ -593,6 +671,7 @@
 
 .round-heading {
   font-size: 1.2em;
+  font-weight: 500; /* ✅ makes it bold */
   margin-bottom: 15px;
 }
 
@@ -836,11 +915,9 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
       will-change: transform;
       transform: translateZ(0);       /* Forces GPU layer */
       backface-visibility: hidden;    /* Avoids flickering/glitches */
-
       transform-style: preserve-3d;
-      
       font-size: 1.5rem;
-      width: 90%;
+      width: 85%;
     }
 
 
@@ -870,12 +947,9 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
 
         #submitWrapper {
-      position: fixed;
       bottom: 200px;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 1000; /* Ensure it's on top */
     }
+
 
       #submitWrapper button {
         width: 109px;
@@ -884,14 +958,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
         padding: 8px 0; /* Vertical padding only if needed */
       }
 
-      .correct-order-label {
-      font-weight: 600 !important;
-      
-      font-size: 1.5rem !important;
-      text-align: center;
-      position: relative;
-      top: 120px !important; /* Use margin to position it vertically */
-      }
+
 
 
 
@@ -1087,12 +1154,9 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
 
   #submitWrapper {
-  position: fixed;
   bottom: 45px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000; /* Ensure it's on top */
   }
+
 
   #submitWrapper button {
   width: 109px;
@@ -1133,17 +1197,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
   font-family: monospace;
   font-size: 25px;
 }
-
-
-
-
-
-
-
-
 }
-
-
 
 
 
@@ -1186,9 +1240,6 @@ button.disabled {
 
 
 
-
-
-
 #maintenanceLogo {
   display: block;
   margin: -30px auto;
@@ -1222,25 +1273,9 @@ button.disabled {
 
 
 
-
-
-
-
-
-
-
-
-
-
   </style>
 </head>
 <body>
-
-
-  
-
-
-  
 
 
 
@@ -1260,8 +1295,10 @@ button.disabled {
 </div>
 
 
-<div id="statsDisplay" class="hidden" style="margin-top: 10px;"></div>
-<div id="gamesPlayedStat"></div>
+<div id="statsScreen" class="screen hidden">
+  <div id="statsDisplay" style="margin-top: 10px;"></div>
+  <div id="gamesPlayedStat"></div>
+</div>
 
 
 <div id="answersScreen" class="screen hidden">
@@ -1271,16 +1308,15 @@ button.disabled {
 <div id="welcomeScreen" class="screen hidden">
 
     <div>
-      <div id="maintenanceScreen" class="screen hidden">
+      
       <img src="fastGif.gif" alt="Moving Logo" class="mobile-logo">
 
 
 
       <h1>Order It.</h1>
-      <p>Drag the items into the correct order based on the given category. The item with the lowest value (smallest, shortest, lightest, etc.) should go at the top. 
-        The item with the highest value (largest, tallest, heaviest, etc.) should go at the bottom. 3 rounds. 2 mistakes allowed.</p>
+      <p>Drag the items into the correct order based on the given category. 3 rounds. New rounds are available daily.</p>
         
-      <button onclick="startGame()">Play</button>
+        <button id="playButton">Play</button>
     </div>
   </div>
 
@@ -1293,17 +1329,20 @@ button.disabled {
       <span id="promptLabel">Order by: </span><span id="promptText"></span>
     </h2>
     
+    
     <p id="gameStatus"></p>
 
     <div id="itemListWrapper">
+    <div id="topLabel" class="order-label"></div>
     <ul id="itemList"></ul>
+    <div id="bottomLabel" class="order-label"></div>
   </div>
     <p id="strikeCount"></p>
     
 
     <div id="submitWrapper"> 
       <div class="touch-buffer">
-        <button onclick="submitOrder()">Submit</button>
+        <button id="submitButton">Submit</button>
       </div>
     </div>
   </div>
@@ -1311,7 +1350,7 @@ button.disabled {
   <div id="endScreen" class="screen hidden">
     <p id="endGameStatus"></p>
     <p id="finalScore"></p> 
-    <p id="thanksMessage">Thanks for playing. Come back tomorrow for a new Order It!</p>
+    <p id="thanksMessage">Thanks for playing! Refresh the page to view today’s answers. Come back tomorrow for a new Order It!</p>
     <button id="shareButton">Share Your Score</button> 
     
 
@@ -1326,41 +1365,66 @@ button.disabled {
 
 
 
-
-
-
-
-  
-
-
-
   
   <script>
 
 
-    const maintenanceMode = true; // ← set to true to show maintenance screen
+const LAUNCH_DATE = new Date(2025, 6, 21); 
+const now = new Date();
+const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate())}`;
+const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+const msPerDay = 1000 * 60 * 60 * 24;
+const dayIndex = Math.floor((localToday - LAUNCH_DATE) / msPerDay);
+const currentDay = dayIndex;
 
 
 
-    if (maintenanceMode) {
-  document.addEventListener('DOMContentLoaded', () => {
+const maintenanceMode = true;
+
+document.addEventListener('DOMContentLoaded', () => {
+  if (maintenanceMode) {
     document.body.innerHTML = `
       <div id="maintenanceMessage" class="screen">
-         <img src="fastGif.gif" alt="Logo" id="maintenanceLogo" />
-        <h1> Order It is Under Maintenance</h1>
-        <p>We're making updates to improve your experience. Thank you to all our amazing playtesters for your engagement and feedback! Order It will return. </p>
+        <img src="fastGif.gif" alt="Logo" id="maintenanceLogo" />
+        <h1>Order It is Under Maintenance</h1>
+        <p>We're making updates to improve your experience. Thank you to all our amazing playtesters for your engagement and feedback! Order It will return.</p>
       </div>
     `;
-  });
-}else{
-  
+    return; // Stop further setup if in maintenance mode
+  }
+
+  // Game setup
+  console.log("alreadyPlayedToday?", alreadyPlayedToday());
+
+  const playButton = document.getElementById('playButton');
+  if (playButton) {
+    playButton.addEventListener('click', startGame);
+  }
+
+  if (alreadyPlayedToday()) {
+    fetch("rounds.json")
+      .then(res => res.json())
+      .then(data => {
+        rounds = data.days[dayIndex]; // Make sure dayIndex is declared earlier
+        showScreen('playedTodayScreen', false);
+
+        history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
+      })
+      .catch(error => {
+        console.error("Error loading rounds data for already played screen:", error);
+      });
+  } else {
+    showScreen('welcomeScreen', false);
+  }
+});
+
+
 
 
     let currentRound = 0;
     let rounds = [];
     let strikes = 0;
-    const maxStrikes = 3;
-
+    const maxStrikes = 4;
 
 
 
@@ -1369,47 +1433,47 @@ button.disabled {
 
     let currentScreenId = null;
 
-  function showScreen(screenId, push = true) {
-  console.log('showScreen called with:', screenId, 'push:', push);
-  console.log('currentScreenId before:', currentScreenId);
 
-  if (screenId === currentScreenId) {
-  console.log(`Attempted to show the current screen (${screenId}) again - skipping`);
-  return;
+
+    function showScreen(screenId, pushToHistory = true) {
+  const target = document.getElementById(screenId);
+  if (!target) return;
+
+  const isHidden = target.classList.contains('hidden');
+  if (!pushToHistory && screenId === currentScreenId && !isHidden) return;
+
+  // Hide all .screen elements
+  document.querySelectorAll('.screen').forEach(el => el.classList.add('hidden'));
+
+  // Show the screen we want
+  target.classList.remove('hidden');
+
+  // ✅ Show date only on playedTodayScreen, clear it otherwise
+  const dateEl = document.getElementById('dateAndRound');
+
+
+
+  const showDateScreens = ['welcomeScreen', 'gameScreen', 'playedTodayScreen', 'endScreen'];
+if (showDateScreens.includes(screenId)) {
+  displayDateAndRound();
+  dateEl.style.display = 'block';
+} else {
+  dateEl.textContent = '';
+  dateEl.style.display = 'none';
 }
 
 
-  currentScreenId = screenId;
 
-  // Hide all screens
-  document.querySelectorAll('.screen').forEach(screen => {
-    screen.classList.add('hidden');
-  });
 
-  // Show the target screen
-  const target = document.getElementById(screenId);
-  if (target) {
-    target.classList.remove('hidden');
-  } else {
-    console.warn('No element found with id:', screenId);
-  }
 
-  // dateAndRound logic...
-  const dateAndRound = document.getElementById('dateAndRound');
-  const showDateScreens = ['playedTodayScreen', 'welcomeScreen'];
-  if (showDateScreens.includes(screenId)) {
-    dateAndRound.style.display = 'block';
-  } else {
-    dateAndRound.style.display = 'none';
-  }
-
-  if (push) {
-    console.log('Pushing state for:', screenId);
+  if (pushToHistory) {
     history.pushState({ screenId }, '', `#${screenId}`);
   }
 
-  console.log('currentScreenId after:', currentScreenId);
+  currentScreenId = screenId;
 }
+
+
 
 
 
@@ -1427,20 +1491,13 @@ window.addEventListener('popstate', (event) => {
     return;
   }
 
+  showScreen(screenId, false);
 
 
-  showScreen(screenId, false); // false = do NOT push again
 
-  // Special logic for statsDisplay to toggle visibility if needed
-  const stats = document.getElementById('statsDisplay');
-  if (stats) {
-    if (screenId === 'statsDisplay') {
-      stats.classList.remove('hidden');
-    } else {
-      stats.classList.add('hidden');
-    }
-  }
+
 });
+
 
 
 
@@ -1455,42 +1512,6 @@ document.getElementById('showAnswersButton').addEventListener('click', () => {
   showAnswers();
   showScreen('answersScreen', true); // Push this one
 });
-
-// "My Stats" button
-document.getElementById('viewStatsButton').addEventListener('click', () => {
-  showScreen('statsDisplay', true); // Push this one
-});
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-const LAUNCH_DATE = new Date(2025, 5, 16); 
-const now = new Date();
-const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-const msPerDay = 1000 * 60 * 60 * 24;
-const dayIndex = Math.floor((localToday - LAUNCH_DATE) / msPerDay);
-
-
 
 
 
@@ -1568,17 +1589,6 @@ function startGame() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 function displayDateAndRound() {
   const now = new Date();
   const options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -1590,11 +1600,32 @@ function displayDateAndRound() {
 // Call the function
 displayDateAndRound();
 
+
+
+
+
+
+
+
+
+
+function getFontSizeForItems(items) {
+  const totalChars = items.reduce((sum, item) => sum + item.length, 0);
+
+  if (totalChars <= 50) return '1.13rem';
+  if (totalChars <= 60) return '1.03rem';
+  if (totalChars <= 70) return '0.962rem';
+  return '.95rem';  // 0.85
+}
+
+
+
+
+
+
+
+
   
-
-
-
-
 
 
     
@@ -1611,10 +1642,18 @@ function loadRound() {
     return;
   }
 
-  const { prompt, items } = rounds[currentRound];
+  const { prompt, items, topLabel, bottomLabel } = rounds[currentRound];
+
+  document.getElementById('topLabel').textContent = topLabel || '';
+  document.getElementById('bottomLabel').textContent = bottomLabel || '';
+
+
+
 
   const promptLabel = document.getElementById('promptLabel');
-  const promptText = document.getElementById('promptText');
+const promptText = document.getElementById('promptText');
+
+
 
   // Remove animation classes to restart
   promptLabel.classList.remove('fade-in-text');
@@ -1631,37 +1670,22 @@ function loadRound() {
   promptLabel.classList.add('fade-in-text');
   promptText.classList.add('fade-in-text');
 
-  if (prompt.length > 25) {
-    promptText.classList.add('smaller-font');
+
+
+
+  const roundPrompt = document.getElementById('roundPrompt');
+
+if (window.innerWidth <= 480) {
+  if (prompt.length > 24) {
+    roundPrompt.setAttribute('data-size', 'small');
+  } else if (prompt.length > 19) {
+    roundPrompt.setAttribute('data-size', 'medium');
   } else {
-    promptText.classList.remove('smaller-font');
+    roundPrompt.setAttribute('data-size', 'large');
   }
-
-  const itemList = document.getElementById('itemList');
-
-  if (itemList.children.length === 0) {
-    itemList.innerHTML = ''; // Just in case
-
-    const shouldShrinkFont = items.some(item => item.length > 29);
-
-    items.forEach(item => {
-      const li = document.createElement('li');
-      li.textContent = item;
-      li.setAttribute('draggable', true);
-      li.classList.add('draggable-item');
-
-      if (shouldShrinkFont) {
-        li.style.fontSize = '1.08rem'; // '1.05'
-      }
-
-      itemList.appendChild(li);
-    });
-
-    makeItemsDraggable(); // Only needed once, after creating the tiles
-  }
-
-  updateStrikes();
-  currentCorrectOrder = items;
+} else {
+  // Remove data-size on larger screens so desktop CSS applies cleanly
+  roundPrompt.removeAttribute('data-size');
 }
 
 
@@ -1669,7 +1693,30 @@ function loadRound() {
 
 
 
+const itemList = document.getElementById('itemList');
 
+if (itemList.children.length === 0) {
+  itemList.innerHTML = ''; // Just in case
+
+  const fontSize = getFontSizeForItems(items);
+
+  items.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = item;
+    li.setAttribute('draggable', true);
+    li.classList.add('draggable-item');
+    li.style.fontSize = fontSize;
+
+    itemList.appendChild(li); // ✅ only here, inside the loop
+  });
+
+  makeItemsDraggable(); // Only needed once, after creating the tiles
+}
+
+updateStrikes();
+currentCorrectOrder = items;
+
+}
 
 
 
@@ -1683,152 +1730,69 @@ function showPlayedTodayScreen() {
   document.getElementById('answersScreen').classList.add('hidden');
   document.getElementById('playedTodayScreen').classList.remove('hidden');
 
-  const roundsContainer = document.getElementById('playedRounds');
-  if (!roundsContainer) {
-    console.warn('Element #playedRounds not found in DOM');
-    return; // Prevent further errors
-  }
-
-  roundsContainer.innerHTML = '';
-
-  rounds.forEach((round) => {
-    const section = document.createElement('div');
-    section.classList.add('round-section');
-
-    const heading = document.createElement('h3');
-    heading.classList.add('round-heading');
-    heading.textContent = round.prompt;
-
-    const listContainer = document.createElement('div');
-    listContainer.classList.add('round-list');
-
-    round.correctOrder.forEach((item) => {
-
-
-      const itemDiv = document.createElement('div');
-      itemDiv.classList.add('round-item');
-      itemDiv.textContent = item;
-
-
-
-      listContainer.appendChild(itemDiv);
-    });
-
-    section.appendChild(heading);
-    section.appendChild(listContainer);
-    roundsContainer.appendChild(section);
-  });
 }
 
 
 
-
-
-
-
-
-
-
-
 function showAnswers() {
-
-
-
-  // Clear any previous data
   const roundsContainer = document.getElementById('playedRoundsAnswers');
   roundsContainer.innerHTML = '';
 
-  // Display the rounds data for today
   fetch("rounds.json")
     .then(res => res.json())
     .then(data => {
       const todaysRounds = data.days[dayIndex]; // Use `dayIndex` to get today's rounds
 
-
-
-
-
-
-
-
       todaysRounds.forEach((round) => {
-  const section = document.createElement('div');
-  section.classList.add('round-section');
+        const section = document.createElement('div');
+        section.classList.add('round-section');
 
-  const heading = document.createElement('h3');
-  heading.classList.add('round-heading');
-  heading.textContent = round.prompt;
+        const heading = document.createElement('h3');
+        heading.classList.add('round-heading');
+        heading.textContent = round.prompt;
 
-  const listContainer = document.createElement('div');
-  listContainer.classList.add('round-list');
-
-  // Total character count across all answers
-  const totalChars = round.correctOrder.reduce((sum, item) => sum + item.length, 0);
-
-    let fontSize;
-  if (totalChars <= 50) {
-    fontSize = '1.13rem';
-  } else if (totalChars <= 60) {
-    fontSize = '1.03rem';
-  } else if (totalChars <= 70) {
-    fontSize = '0.962rem'; // 1rem 
-  } else {
-    fontSize = '0.85rem'; // 0.85
-  }
+        const listContainer = document.createElement('div');
+        listContainer.classList.add('round-list');
 
 
-  round.correctOrder.forEach((item) => {
-    const itemDiv = document.createElement('div');
-    itemDiv.classList.add('round-item');
-    itemDiv.textContent = item;
-    itemDiv.style.fontSize = fontSize;
-    listContainer.appendChild(itemDiv);
-  });
+        
+        const totalChars = round.correctOrder.reduce((sum, item) => sum + item.length, 0);
 
-  section.appendChild(heading);
-  section.appendChild(listContainer);
-  roundsContainer.appendChild(section);
-});
+        let fontSize = '1.25rem';
+        if (totalChars > 40) fontSize = '1.2rem';
+        if (totalChars > 50) fontSize = '1.15rem';
+        if (totalChars > 65) fontSize = '1rem';
+        if (totalChars > 80) fontSize = '0.90rem';
+        if (totalChars > 95) fontSize = '0.80rem';
 
+   
+        round.correctOrder.forEach((item) => {
+          const itemDiv = document.createElement('div');
+          itemDiv.classList.add('round-item');
+          itemDiv.textContent = item;
+          itemDiv.style.fontSize = fontSize;
+          listContainer.appendChild(itemDiv);
+        });
 
-
-
-
-
-
+        section.appendChild(heading);
+        section.appendChild(listContainer);
+        roundsContainer.appendChild(section);
+      });
     })
     .catch(error => {
       console.error("Error loading rounds data for answers:", error);
     });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  console.log("alreadyPlayedToday?", alreadyPlayedToday());
-
-  if (alreadyPlayedToday()) {
-    showScreen('playedTodayScreen', false); // <-- no push
-  } else {
-    showScreen('welcomeScreen', false); // <-- no push
-  }
-});
-
-
-
-
-
-
-
-    document.addEventListener('visibilitychange', () => {
+// GPU artifact fix (unchanged)
+document.addEventListener('visibilitychange', () => {
   if (document.visibilityState === 'visible') {
-    // Force a repaint to clear GPU artifacts
     document.body.style.transform = 'translateZ(0)';
     setTimeout(() => {
       document.body.style.transform = '';
     }, 50);
   }
 });
-
-
 
 
 
@@ -1974,23 +1938,14 @@ function makeItemsDraggable() {
 
 
 
-
-
-
-
-
-
-
-
-
-
-let roundsCompleted = 0; // Track how many rounds the player has completed successfully.
+const maxRound = parseInt(localStorage.getItem('maxRoundReachedToday')) || 0;
 
 function submitOrder() {
-  const submitButton = document.querySelector("button[onclick='submitOrder()']");
+  const submitButton = document.getElementById("submitButton"); // ← Correct selector
+
   if (submitButton) {
     submitButton.disabled = true;
-    submitButton.classList.add("disabled"); // Optional styling
+    submitButton.classList.add("disabled");
   }
 
   const itemList = document.getElementById('itemList');
@@ -1998,7 +1953,6 @@ function submitOrder() {
   const correctOrder = rounds[currentRound].correctOrder;
 
   if (JSON.stringify(submittedOrder) === JSON.stringify(correctOrder)) {
-    roundsCompleted++;
     currentRound++;
     localStorage.setItem('currentRound', currentRound);
     localStorage.setItem('currentStrikes', strikes);
@@ -2012,36 +1966,21 @@ function submitOrder() {
       if (currentRound < rounds.length) {
         loadRound();
 
-        // Re-enable button only if the game continues
         if (submitButton) {
           submitButton.disabled = false;
           submitButton.textContent = "Submit";
           submitButton.classList.remove("disabled");
         }
       } else {
-        if (strikes < maxStrikes) {
-          endGame();
-          markGameAsPlayed();
-        } else {
-          document.getElementById('gameStatus').textContent = "Nice!";
-          endGame();
-          markGameAsPlayed();
-        }
+        endGame();
+        markGameAsPlayed();
       }
-    }, 1500); // 1.2s animation + 0.3s pause
+    }, 1500);
 
   } else {
     strikes++;
     localStorage.setItem('currentStrikes', strikes);
     updateStrikes();
-
-    if (strikes >= maxStrikes) {
-      const strikeCountEl = document.getElementById('strikeCount');
-      if (strikeCountEl) {
-        strikeCountEl.style.display = 'none';
-      }
-      document.getElementById("submitWrapper").style.display = "none";
-    }
 
     itemList.classList.add('shake');
 
@@ -2049,58 +1988,34 @@ function submitOrder() {
 
 
 
+    if (strikes >= maxStrikes) {
 
-    setTimeout(() => {
-      itemList.classList.remove('shake');
-
-      if (strikes >= maxStrikes) {
-        const strikeCountEl = document.getElementById('strikeCount');
-        if (strikeCountEl) {
-          strikeCountEl.style.display = 'none';
-        }
-
-        markGameAsPlayed();
-
-itemList.innerHTML = ''; // Clear wrong tiles
-
-const label = document.createElement('p');
-label.textContent = 'Correct Order';
-label.classList.add('correct-order-label');
-itemList.parentNode.insertBefore(label, itemList.nextSibling);
+      document.getElementById('strikeCount').style.display = 'none';
 
 
-correctOrder.forEach(item => {
-  const li = document.createElement('li');
-  li.textContent = item;
-  li.classList.add('draggable-item', 'correct-order-tile');
-  li.style.backgroundColor = '#62a65b';
-  li.style.fontWeight = 'bold';
-  li.style.cursor = 'default';
-  li.setAttribute('draggable', false);
-  itemList.appendChild(li);
-});
+  // Lock tiles to dark background manually
+  Array.from(itemList.children).forEach(tile => {
+    tile.style.backgroundColor = '#A8A8A8';
+  });
 
+  // Keep shake visible until final screen
+  setTimeout(() => {
+    markGameAsPlayed();
+    endGame();
+    itemList.classList.remove('shake');
+  }, 1600);
+} else {
+  // Stop shake and re-enable button for next round
+  setTimeout(() => {
+    itemList.classList.remove('shake');
+    if (submitButton) {
+      submitButton.disabled = false;
+      submitButton.textContent = "Submit";
+      submitButton.classList.remove("disabled");
+    }
+  }, 1100);
+}
 
-        if (submitButton) {
-          submitButton.disabled = true;
-          submitButton.textContent = "Submit";
-          submitButton.classList.remove("disabled");
-        }
-        document.getElementById("submitWrapper").style.display = "none";
-
-        setTimeout(() => {
-          label.remove();
-          endGame();
-        }, 4000);
-      } else {
-        // Re-enable the button after shake if still allowed to submit
-        if (submitButton) {
-          submitButton.disabled = false;
-          submitButton.textContent = "Submit";
-          submitButton.classList.remove("disabled");
-        }
-      }
-    }, 1100);
   }
 }
 
@@ -2108,11 +2023,7 @@ correctOrder.forEach(item => {
 
 
 
-
-
-
-
-
+document.getElementById('submitButton').addEventListener('click', submitOrder);
 
 
   
@@ -2181,18 +2092,21 @@ correctOrder.forEach(item => {
 
 
 
-function generateShareLink(roundsCompleted) {
+function generateShareLink() {
+  const maxRound = parseInt(localStorage.getItem('maxRoundReachedToday')) || 0;
+
   // Get the emoji score based on the rounds completed
-  const emojiScore = getEmojiScore(roundsCompleted);
+  const emojiScore = getEmojiScore(maxRound);
 
   // Create the shareable URL with the emoji score as a query parameter
-  const baseUrl = window.location.origin + window.location.pathname; // Current page URL
+  const baseUrl = window.location.origin + window.location.pathname;
   const shareUrl = `${baseUrl}?score=${emojiScore}`;
 
   // Set the inner HTML of the shareLink element to show the link with emoji score
   const shareLink = document.getElementById('shareLink');
   shareLink.innerHTML = `<a href="${shareUrl}" target="_blank">Order It ${emojiScore}</a>`;
 }
+
 
 
 
@@ -2224,7 +2138,9 @@ const shareButton = document.getElementById('shareButton');
 shareButton.addEventListener('click', () => {
   const roundNumber = dayIndex + 1;  // or however you track the current round/day
 
-  const emojiScore = getEmojiScore(roundsCompleted);
+  const maxRound = parseInt(localStorage.getItem('maxRoundReachedToday')) || 0;
+const emojiScore = getEmojiScore(maxRound);
+
   const baseUrl = window.location.origin + window.location.pathname;
   const shareUrl = baseUrl;
 
@@ -2232,7 +2148,7 @@ shareButton.addEventListener('click', () => {
   let text = `Order It  #${roundNumber}\n${emojiScore}`;
 
   // Only add mistakes if all 3 rounds were completed
-  if (roundsCompleted === 3) {
+  if (maxRound === 3) {
     text += `\nwith ${strikes} ${strikes === 1 ? 'mistake' : 'mistakes'}`;
   }
 
@@ -2250,25 +2166,6 @@ shareButton.addEventListener('click', () => {
       .catch(() => alert("Copy failed, here is your score:\n" + shareText));
   }
 });
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
 
 
 
@@ -2304,6 +2201,12 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
   // Hide all other screens
   document.getElementById('playedTodayScreen').classList.add('hidden');
   document.getElementById('answersScreen').classList.add('hidden');
+
+  // ✅ Show the stats screen
+  document.getElementById('statsScreen').classList.remove('hidden');
+history.pushState({ screenId: 'statsScreen' }, '', '#statsScreen');
+
+
 
   // Load stats and ensure all expected keys exist
   const stats = JSON.parse(localStorage.getItem("orderItStats")) || {};
@@ -2350,17 +2253,6 @@ document.getElementById('viewStatsButton').addEventListener('click', () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 function markGameAsPlayed() {
   const now = new Date();
   const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')}`;
@@ -2370,8 +2262,6 @@ function markGameAsPlayed() {
   gamesPlayed += 1;
   localStorage.setItem('gamesPlayed', gamesPlayed);
 }
-
-
 
 
 
@@ -2388,14 +2278,8 @@ function alreadyPlayedToday() {
 
 
 
-
 window.onload = () => {
-  const now = new Date();
-  const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-  const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-  const msPerDay = 1000 * 60 * 60 * 24;
-  const LAUNCH_DATE = new Date(2025, 5, 13); // Adjust if needed
-  const currentDay = Math.floor((localToday - LAUNCH_DATE) / msPerDay);
+
 
   const storedMaxRoundDay = parseInt(localStorage.getItem('maxRoundReachedDay'));
   if (isNaN(storedMaxRoundDay) || storedMaxRoundDay !== currentDay) {
@@ -2413,12 +2297,12 @@ window.onload = () => {
   fetch("rounds.json")
     .then(res => res.json())
     .then(data => {
-      rounds = data.days;
+      rounds = data.days[currentDay];
 
       // ✅ Check if already played today
       if (lastPlayedDate === todayString) {
         // ❗ If game is finished, go to already played screen immediately
-        if (isNaN(savedRound) || savedRound >= rounds[currentDay].length) {
+        if (isNaN(savedRound) || savedRound >= rounds.length) {
           showScreen('playedTodayScreen', false);
           history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
           return;
@@ -2502,61 +2386,9 @@ if (shareScoreButton) {
   });
 }
 
+
+
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-window.addEventListener('DOMContentLoaded', () => {
-  const now = new Date();
-  const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-  const lastPlayed = localStorage.getItem('lastPlayedDate');
-
-  if (lastPlayed === todayString) {
-    fetch("rounds.json")
-      .then(res => res.json())
-      .then(data => {
-        rounds = data.days[dayIndex];
-        showScreen('playedTodayScreen', false); 
-        history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen'); 
-      })
-      .catch(error => {
-        console.error("Error loading rounds data for already played screen:", error);
-      });
-  }
-});
-
-
-document.addEventListener('DOMContentLoaded', () => {
-  if (maintenanceMode) {
-    showScreen('maintenanceScreen', false); // Don’t push to history
-    return;
-  }
-
-  console.log("alreadyPlayedToday?", alreadyPlayedToday());
-
-  if (alreadyPlayedToday()) {
-    showScreen('playedTodayScreen', false);
-  } else {
-    showScreen('welcomeScreen', false);
-  }
-});
-
-
-
-}
-
-
 
   </script>
 
