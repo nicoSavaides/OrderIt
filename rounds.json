@@ -1616,21 +1616,21 @@
     [
       {
         "prompt": "Average Temperature",
-        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
+        "items": ["Sydney", "Moscow", "Cairo", "Denver"],
         "correctOrder": ["Cairo", "Sydney", "Denver", "Moscow"],
         "topLabel": "↑ Hottest",
         "bottomLabel": "↓ Coldest"
       },
       {
         "prompt": "Population",
-        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
+        "items": ["Sydney", "Moscow", "Cairo", "Denver"],
         "correctOrder": ["Cairo", "Moscow", "Sydney", "Denver"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Elevation",
-        "items": ["Cairo", "Denver", "Sydney", "Moscow"],
+        "items": ["Sydney", "Moscow", "Cairo", "Denver"],
         "correctOrder": ["Denver", "Moscow", "Sydney", "Cairo"],
         "topLabel": "↑ Highest Elevation",
         "bottomLabel": "↓ Lowest Elevation"
