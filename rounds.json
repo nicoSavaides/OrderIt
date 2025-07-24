@@ -1639,18 +1639,18 @@
 
     [
       {
-        "prompt": "Height",
-        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
-        "correctOrder": ["Alex Trebek", "Johnny Carson", "James Corden", "Oprah Winfrey"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
         "prompt": "Age When Retired from Show",
         "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
         "correctOrder": ["Alex Trebek", "Johnny Carson", "Oprah Winfrey", "James Corden"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
+        "correctOrder": ["Alex Trebek", "Johnny Carson", "James Corden", "Oprah Winfrey"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Number of Years as Host",
