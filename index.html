@@ -1440,27 +1440,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    window.addEventListener('load', () => {
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    const ratio = (height / width).toFixed(2);
-
-    const infoDiv = document.createElement('div');
-    infoDiv.style.position = 'fixed';
-    infoDiv.style.bottom = '10px';
-    infoDiv.style.left = '10px';
-    infoDiv.style.backgroundColor = 'rgba(0,0,0,0.7)';
-    infoDiv.style.color = 'white';
-    infoDiv.style.padding = '8px';
-    infoDiv.style.borderRadius = '6px';
-    infoDiv.style.fontSize = '0.9rem';
-    infoDiv.style.zIndex = '9999';
-    infoDiv.innerHTML = `Width: ${width}px<br>Height: ${height}px<br>Ratio: ${ratio}`;
-    document.body.appendChild(infoDiv);
-  });
-
-
-
 
 
 
