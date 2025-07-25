@@ -135,7 +135,7 @@
         "items": ["Earth, Wind & Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
         "correctOrder": ["Earth, Wind & Fire", "Fleetwood Mac", "The Beatles", "Nirvana"],
         "topLabel": "↑ Most Members",
-        "bottomLabel": "↓ Least Members"
+        "bottomLabel": "↓ Fewest Members"
       },
       {
         "prompt": "Number of Albums",
