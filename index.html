@@ -336,6 +336,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 480px) {
   /* Smartphone-specific styles */
 
@@ -1280,6 +1294,40 @@ button.disabled {
 
 
 
+/* === iPhone 15 Pro (393 wide) === */
+body.device-393-r3 #strikeCount {
+  top: 390px !important;
+}
+body.device-393-r3 #submitWrapper {
+  bottom: 325px !important;
+}
+
+/* === iPhone 15 Pro Max (402 wide, ratio 3.0) === */
+body.device-402-r3 #strikeCount {
+  top: 40px;
+}
+body.device-402-r3 #submitWrapper {
+  bottom: 245px;
+}
+
+/* === Pixel 8 Pro (ratio ~2.625) === */
+body.ratio-2-6 #strikeCount {
+  top: 28px;
+}
+body.ratio-2-6 #submitWrapper {
+  bottom: 205px;
+}
+
+/* === Small iPhone / SE (ratio ~1.78) === */
+body.ratio-1-8 #strikeCount {
+  top: 20px;
+}
+body.ratio-1-8 #submitWrapper {
+  bottom: 180px;
+}
+
+
+
 
 
   </style>
@@ -1388,7 +1436,7 @@ const currentDay = dayIndex;
 
 
 
-const maintenanceMode = false;
+const maintenanceMode = true;
 
 document.addEventListener('DOMContentLoaded', () => {
   if (maintenanceMode) {
@@ -2288,8 +2336,39 @@ function alreadyPlayedToday() {
 
 
 
-
 window.onload = () => {
+  const w = window.screen.width;
+  const h = window.screen.height;
+  const ratio = +(h / w).toFixed(3);
+
+  console.log("Screen Width:", w, "Height:", h, "Ratio:", ratio);
+
+  if (ratio > 2.95 && ratio < 3.05) {
+    document.body.classList.add('ratio-3');
+    if (w >= 390 && w <= 396) {
+      document.body.classList.add('device-393-r3'); // iPhone 15 Pro
+    }
+    if (w === 402) {
+      document.body.classList.add('device-402-r3'); // iPhone 15 Pro Max
+    }
+  } else if (ratio > 2.55 && ratio < 2.70) {
+    document.body.classList.add('ratio-2-6'); // Pixel 8 Pro
+  } else if (ratio > 1.6 && ratio < 1.8) {
+    document.body.classList.add('ratio-1-8'); // iPhone SE and similar
+    if (w === 393) {
+      document.body.classList.add('device-393-r3'); // fallback for iPhone 15 Pro
+    }
+  }
+
+  console.log("Classes applied:", document.body.classList);
+
+
+
+
+
+
+
+
 
 
   const storedMaxRoundDay = parseInt(localStorage.getItem('maxRoundReachedDay'));
