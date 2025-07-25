@@ -1567,6 +1567,30 @@
 
     [
       {
+        "prompt": "Artist Name (A-Z)",
+        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
+        "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
+        "correctOrder": ["Shake It Off", "Billie Jean", "Free Bird", "Imagine"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Song Length",
+        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
+        "correctOrder": ["Free Bird", "Billie Jean", "Shake It Off", "Imagine"],
+        "topLabel": "↑ Longest Song",
+        "bottomLabel": "↓ Shortest Song"
+      }
+    ],
+
+    [
+      {
         "prompt": "Birth Year",
         "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
         "correctOrder": ["Daniel Craig", "Pierce Brosnan", "George Lazenby", "Sean Connery"],
@@ -1682,30 +1706,6 @@
         "correctOrder": ["Yankees", "Dodgers", "Red Sox", "Giants"],
         "topLabel": "↑ Highest Valuation",
         "bottomLabel": "↓ Lowest Valuation"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Artist Name (A-Z)",
-        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
-        "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
-      },
-      {
-        "prompt": "Year Released",
-        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
-        "correctOrder": ["Shake It Off", "Billie Jean", "Free Bird", "Imagine"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
-      },
-      {
-        "prompt": "Song Length",
-        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
-        "correctOrder": ["Free Bird", "Billie Jean", "Shake It Off", "Imagine"],
-        "topLabel": "↑ Longest Song",
-        "bottomLabel": "↓ Shortest Song"
       }
     ],
 
@@ -1997,7 +1997,6 @@
       }
     ],
 
-
     [
       {
         "prompt": "Year",
@@ -2062,7 +2061,7 @@
         "bottomLabel": "↓ Shortest Song"
       },
       {
-        "prompt": "Artist Name (A–Z)",
+        "prompt": "Artist Name (A-Z)",
         "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
         "correctOrder": [ "Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie" ],
         "topLabel": "↑ First Alphabetically",
