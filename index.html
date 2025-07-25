@@ -117,7 +117,7 @@
 
 .order-label {
   text-transform: uppercase;
-  font-family: system-ui, sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: .93rem; /* 1rem*/
   font-weight: 600;
   text-align: center;
@@ -1371,7 +1371,7 @@ button.disabled {
   <script>
 
 
-const LAUNCH_DATE = new Date(2025, 4, 3); 
+const LAUNCH_DATE = new Date(2025, 3, 28); 
 const now = new Date();
 const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate())}`;
 const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -1381,7 +1381,7 @@ const currentDay = dayIndex;
 
 
 
-const maintenanceMode = true;
+const maintenanceMode = false;
 
 document.addEventListener('DOMContentLoaded', () => {
   if (maintenanceMode) {
