@@ -1924,102 +1924,6 @@
         "bottomLabel": "↓ Lowest Valuation"
       }
     ],
-    
-    [
-      {
-        "prompt": "Number of Judges",
-        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
-        "correctOrder": ["Shark Tank", "The Voice", "American Idol", "Judge Judy"],
-        "topLabel": "↑ Most Judges",
-        "bottomLabel": "↓ Fewest Judges"
-      },
-      {
-        "prompt": "Year Premiered",
-        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
-        "correctOrder": ["The Voice", "Shark Tank", "American Idol", "Judge Judy"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
-      },
-      {
-        "prompt": "Number of Episodes",
-        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
-        "correctOrder": ["Judge Judy", "American Idol", "The Voice", "Shark Tank"],
-        "topLabel": "↑ Most Episodes",
-        "bottomLabel": "↓ Fewest Episodes"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Population",
-        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
-        "correctOrder": ["Istanbul", "Rio de Janeiro", "Chicago", "Oslo"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Distance from Equator",
-        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
-        "correctOrder": ["Oslo", "Chicago", "Istanbul", "Rio de Janeiro"],
-        "topLabel": "↑ Farthest from Equator",
-        "bottomLabel": "↓ Closest to Equator"
-      },
-      {
-        "prompt": "Average Temperature",
-        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
-        "correctOrder": ["Rio de Janeiro", "Istanbul", "Chicago", "Oslo"],
-        "topLabel": "↑ Warmest City",
-        "bottomLabel": "↓ Coldest City"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Released",
-        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
-        "correctOrder": ["Hips Don’t Lie", "Creep", "We Will Rock You", "Stairway to Heaven"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
-      },
-      {
-        "prompt": "Song Length",
-        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
-        "correctOrder": ["Stairway to Heaven", "Creep", "Hips Don’t Lie", "We Will Rock You"],
-        "topLabel": "↑ Longest Song",
-        "bottomLabel": "↓ Shortest Song"
-      },
-      {
-        "prompt": "Artist Name (A–Z)",
-        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
-        "correctOrder": [ "Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie" ],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year",
-        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
-        "correctOrder": ["The Avengers", "Mean Girls", "The Lion King", "Home Alone"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
-      },
-      {
-        "prompt": "Box Office Gross",
-        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
-        "correctOrder": ["The Avengers", "The Lion King", "Home Alone", "Mean Girls"],
-        "topLabel": "↑ Highest Gross",
-        "bottomLabel": "↓ Lowest Gross"
-      },
-      {
-        "prompt": "Runtime",
-        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
-        "correctOrder": ["The Avengers", "Home Alone", "Mean Girls", "The Lion King"],
-        "topLabel": "↑ Longest",
-        "bottomLabel": "↓ Shortest"
-      }
-    ],
 
     [
       {
@@ -2048,24 +1952,24 @@
     [
       {
         "prompt": "Population",
-        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
-        "correctOrder": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
+        "correctOrder": ["Istanbul", "Rio de Janeiro", "Chicago", "Oslo"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
-        "prompt": "Land Area",
-        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
-        "correctOrder": ["Nevada", "Florida", "Ohio", "Rhode Island"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
+        "prompt": "Distance from Equator",
+        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
+        "correctOrder": ["Oslo", "Chicago", "Istanbul", "Rio de Janeiro"],
+        "topLabel": "↑ Farthest from Equator",
+        "bottomLabel": "↓ Closest to Equator"
       },
       {
-        "prompt": "Date of Statehood",
-        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
-        "correctOrder": ["Nevada", "Florida", "Ohio", "Rhode Island"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "prompt": "Average Temperature",
+        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
+        "correctOrder": ["Rio de Janeiro", "Istanbul", "Chicago", "Oslo"],
+        "topLabel": "↑ Warmest City",
+        "bottomLabel": "↓ Coldest City"
       }
     ],
 
@@ -2115,7 +2019,104 @@
         "topLabel": "↑ Most Sugar",
         "bottomLabel": "↓ Least Sugar"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year",
+        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
+        "correctOrder": ["The Avengers", "Mean Girls", "The Lion King", "Home Alone"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Box Office Gross",
+        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
+        "correctOrder": ["The Avengers", "The Lion King", "Home Alone", "Mean Girls"],
+        "topLabel": "↑ Highest Gross",
+        "bottomLabel": "↓ Lowest Gross"
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
+        "correctOrder": ["The Avengers", "Home Alone", "Mean Girls", "The Lion King"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "correctOrder": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "correctOrder": ["Nevada", "Florida", "Ohio", "Rhode Island"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "correctOrder": ["Nevada", "Florida", "Ohio", "Rhode Island"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      }
+    ],
+    
+    [
+      {
+        "prompt": "Year Released",
+        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
+        "correctOrder": ["Hips Don’t Lie", "Creep", "We Will Rock You", "Stairway to Heaven"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Song Length",
+        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
+        "correctOrder": ["Stairway to Heaven", "Creep", "Hips Don’t Lie", "We Will Rock You"],
+        "topLabel": "↑ Longest Song",
+        "bottomLabel": "↓ Shortest Song"
+      },
+      {
+        "prompt": "Artist Name (A–Z)",
+        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
+        "correctOrder": [ "Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie" ],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Number of Judges",
+        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
+        "correctOrder": ["Shark Tank", "The Voice", "American Idol", "Judge Judy"],
+        "topLabel": "↑ Most Judges",
+        "bottomLabel": "↓ Fewest Judges"
+      },
+      {
+        "prompt": "Year Premiered",
+        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
+        "correctOrder": ["The Voice", "Shark Tank", "American Idol", "Judge Judy"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
+        "correctOrder": ["Judge Judy", "American Idol", "The Voice", "Shark Tank"],
+        "topLabel": "↑ Most Episodes",
+        "bottomLabel": "↓ Fewest Episodes"
+      }
     ]
+
 
   ]
 }
