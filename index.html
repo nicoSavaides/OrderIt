@@ -23,7 +23,7 @@
     body {
       font-family: "Lora", sans-serif;
       text-align: center;
-      background-color: #e6e8e4; /*OG   e5e7e3    */
+      background-color: #e7e9e5; /*OG   e5e7e3    */
       color: #000000;
       display: flex;
       flex-direction: column;
@@ -60,7 +60,7 @@
 
   #gameScreen {
   opacity: 0;
-  transition: opacity 1.3s ease-in .7s;
+  transition: opacity 1.4s ease-in .6s;
   pointer-events: none;
 }
 
@@ -181,7 +181,7 @@
     .draggable-item {
       padding: 10px;
       margin: 5px;
-      background-color: #D5D6D3; /*  d3d5cf   d6d6d6    */   
+      background-color: #D3D4D1; /*  d3d5cf   d6d6d6    */   
       border: 1px solid #c6c9C2 ; /*     c0c3bc   C2C9BC   */
       cursor: grab;
       font-weight: 600;
@@ -386,7 +386,7 @@
 
 
     p {
-      margin-top: 115px !important; /* 105 */
+      margin-top: 120px !important; /* 115 */
       font-size: 1.05rem !important; /* 1.03rem  */
       font-weight: 450 !important;
       padding: 0 25px;
@@ -402,7 +402,7 @@
       button {
         font-size: 1.8rem; /* 1.5rem */
         padding: 12px 25px;
-        margin-top: 50px;  /* 43 */
+        margin-top: 47px;  /* 43 */
       }
 
 
@@ -443,7 +443,7 @@
       #strikeCount {
         position: fixed;
         font-size: 1.15rem !important;
-        top: 385px; /* 380 */
+        top: 370px; /* 380 */
         left: 50%;
         transform: translateX(-50%); /* Centers the element horizontally */
         white-space: nowrap; /* Prevents the text from wrapping onto the next line */
@@ -454,7 +454,7 @@
 
       #submitWrapper {
       position: fixed;
-      margin-top: 475px; /* 429px; */ 
+      margin-top: 470px; /* 429px; */ 
       left: 50%;
       transform: translateX(-50%);
       z-index: 1000; 
@@ -1389,7 +1389,7 @@ const currentDay = dayIndex;
 
 
 
-const maintenanceMode = true;
+const maintenanceMode = false;
 
 document.addEventListener('DOMContentLoaded', () => {
   if (maintenanceMode) {
