@@ -1947,6 +1947,174 @@
         "topLabel": "↑ Most Episodes",
         "bottomLabel": "↓ Fewest Episodes"
       }
+    ],
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
+        "correctOrder": ["Istanbul", "Rio de Janeiro", "Chicago", "Oslo"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
+        "correctOrder": ["Oslo", "Chicago", "Istanbul", "Rio de Janeiro"],
+        "topLabel": "↑ Farthest from Equator",
+        "bottomLabel": "↓ Closest to Equator"
+      },
+      {
+        "prompt": "Average Temperature",
+        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
+        "correctOrder": ["Rio de Janeiro", "Istanbul", "Chicago", "Oslo"],
+        "topLabel": "↑ Warmest City",
+        "bottomLabel": "↓ Coldest City"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Released",
+        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
+        "correctOrder": ["Hips Don’t Lie", "Creep", "We Will Rock You", "Stairway to Heaven"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Song Length",
+        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
+        "correctOrder": ["Stairway to Heaven", "Creep", "Hips Don’t Lie", "We Will Rock You"],
+        "topLabel": "↑ Longest Song",
+        "bottomLabel": "↓ Shortest Song"
+      },
+      {
+        "prompt": "Artist Name (A–Z)",
+        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
+        "correctOrder": [ "Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie" ],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year",
+        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
+        "correctOrder": ["The Avengers", "Mean Girls", "The Lion King", "Home Alone"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Box Office Gross",
+        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
+        "correctOrder": ["The Avengers", "The Lion King", "Home Alone", "Mean Girls"],
+        "topLabel": "↑ Highest Gross",
+        "bottomLabel": "↓ Lowest Gross"
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
+        "correctOrder": ["The Avengers", "Home Alone", "Mean Girls", "The Lion King"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Number of Band Members",
+        "items": ["Coldplay", "Simon & Garfunkel", "Green Day", "NSYNC"],
+        "correctOrder": ["NSYNC", "Coldplay", "Green Day", "Simon & Garfunkel"],
+        "topLabel": "↑ Most Members",
+        "bottomLabel": "↓ Fewest Members"
+      },
+      {
+        "prompt": "Year Formed",
+        "items": ["Coldplay", "Simon & Garfunkel", "Green Day", "NSYNC"],
+        "correctOrder": ["Coldplay", "NSYNC", "Green Day", "Simon & Garfunkel"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Number of Albums",
+        "items": ["Coldplay", "Simon & Garfunkel", "Green Day", "NSYNC"],
+        "correctOrder": ["Green Day", "Coldplay", "Simon & Garfunkel", "NSYNC"],
+        "topLabel": "↑ Most Albums",
+        "bottomLabel": "↓ Fewest Albums"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "correctOrder": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "correctOrder": ["Nevada", "Florida", "Ohio", "Rhode Island"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "correctOrder": ["Nevada", "Florida", "Ohio", "Rhode Island"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Zendaya", "Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet"],
+        "correctOrder": ["Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet",  "Zendaya"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Zendaya", "Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet"],
+        "correctOrder": ["Dwayne Johnson", "Jennifer Aniston", "Zendaya", "Timothée Chalamet"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
+      },
+      {
+        "prompt": "Number of Instagram Followers",
+        "items": ["Zendaya", "Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet"],
+        "correctOrder": ["Dwayne Johnson", "Zendaya", "Jennifer Aniston",  "Timothée Chalamet"],
+        "topLabel": "↑ Most Followers",
+        "bottomLabel": "↓ Fewest Followers"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Weight",
+        "items": ["Pop tart", "Oreo Cookie", "Slim jim", "Hot pocket"],
+        "correctOrder": ["Hot pocket", "Pop tart", "Slim jim", "Oreo Cookie"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Calories",
+        "items": ["Pop tart", "Oreo Cookie", "Slim jim", "Hot pocket"],
+        "correctOrder": ["Hot pocket", "Pop tart", "Slim jim", "Oreo Cookie"],
+        "topLabel": "↑ Most Calories",
+        "bottomLabel": "↓ Fewest Calories"
+      },
+      {
+        "prompt": "Sugar",
+        "items": ["Pop tart", "Oreo Cookie", "Slim jim", "Hot pocket"],
+        "correctOrder": ["Pop tart", "Oreo Cookie", "Hot pocket", "Slim jim"],
+        "topLabel": "↑ Most Sugar",
+        "bottomLabel": "↓ Least Sugar"
+      }
     ]
 
   ]
