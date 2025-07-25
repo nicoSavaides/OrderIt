@@ -2054,18 +2054,18 @@
         "bottomLabel": "↓ Earliest"
       },
       {
-        "prompt": "Song Length",
-        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
-        "correctOrder": ["Stairway to Heaven", "Creep", "Hips Don’t Lie", "We Will Rock You"],
-        "topLabel": "↑ Longest Song",
-        "bottomLabel": "↓ Shortest Song"
-      },
-      {
         "prompt": "Artist Name (A-Z)",
         "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
         "correctOrder": [ "Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie" ],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Song Length",
+        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
+        "correctOrder": ["Stairway to Heaven", "Creep", "Hips Don’t Lie", "We Will Rock You"],
+        "topLabel": "↑ Longest Song",
+        "bottomLabel": "↓ Shortest Song"
       }
     ],
 
