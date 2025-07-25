@@ -629,30 +629,6 @@
 
     [
       {
-        "prompt": "Year Built",
-        "items": ["Eiffel Tower", "Burj Khalifa", "Pyramid of Giza", "Statue of Liberty"],
-        "correctOrder": ["Burj Khalifa", "Eiffel Tower", "Statue of Liberty", "Pyramid of Giza"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
-      },
-      {
-        "prompt": "Height",
-        "items": ["Eiffel Tower", "Burj Khalifa", "Pyramid of Giza", "Statue of Liberty"],
-        "correctOrder": ["Burj Khalifa", "Eiffel Tower", "Pyramid of Giza", "Statue of Liberty"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Length of Construction",
-        "items": ["Eiffel Tower", "Burj Khalifa", "Pyramid of Giza", "Statue of Liberty"],
-        "correctOrder": ["Eiffel Tower", "Burj Khalifa", "Statue of Liberty", "Pyramid of Giza"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
-      }
-    ], 
-
-    [
-      {
         "prompt": "Max Number of Players",
         "items": ["Clue", "Monopoly", "Checkers", "Twister"],
         "correctOrder": ["Monopoly", "Clue", "Twister", "Checkers"],
@@ -912,6 +888,30 @@
         "correctOrder": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
         "topLabel": "↑ Longest Tenure",
         "bottomLabel": "↓ Shortest Tenure"
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Year Built",
+        "items": ["Eiffel Tower", "Burj Khalifa", "Pyramid of Giza", "Statue of Liberty"],
+        "correctOrder": ["Burj Khalifa", "Eiffel Tower", "Statue of Liberty", "Pyramid of Giza"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Eiffel Tower", "Burj Khalifa", "Pyramid of Giza", "Statue of Liberty"],
+        "correctOrder": ["Burj Khalifa", "Eiffel Tower", "Pyramid of Giza", "Statue of Liberty"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Length of Construction",
+        "items": ["Eiffel Tower", "Burj Khalifa", "Pyramid of Giza", "Statue of Liberty"],
+        "correctOrder": ["Eiffel Tower", "Burj Khalifa", "Statue of Liberty", "Pyramid of Giza"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       }
     ], 
 
@@ -1495,30 +1495,6 @@
 
     [
       {
-        "prompt": "Height",
-        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
-        "correctOrder": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Year Built",
-        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
-        "correctOrder": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
-      },
-      {
-        "prompt": "Length of Construction",
-        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
-        "correctOrder": ["Golden Gate Bridge", "The White House", "Taj Mahal", "Stonehenge"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
-      }
-    ],
-
-    [
-      {
         "prompt": "Average Weight",
         "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
         "correctOrder": ["Submarine", "Tank", "Helicopter", "Motorcycle"],
@@ -1660,6 +1636,30 @@
         "bottomLabel": "↓ Fewest Years"
       }
     ], 
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
+        "correctOrder": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Year Built",
+        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
+        "correctOrder": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Length of Construction",
+        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
+        "correctOrder": ["Golden Gate Bridge", "The White House", "Taj Mahal", "Stonehenge"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      }
+    ],
 
     [
       {
