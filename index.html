@@ -127,13 +127,15 @@
 
 .order-label {
   text-transform: uppercase;
-  font-family: "Segoe UI", "Open Sans", sans-serif;
+  font-family: "Open Sans", "Segoe UI", sans-serif;
   font-size: .93rem; /* 1rem*/
   font-weight: 600; /* 600*/
   text-align: center;
   margin: 0;
   padding: 0;
-  color: #727272; /* 727272 */
+  color: #868585; /* 868585    7A7A7A   */ 
+  font-weight: 700;
+
 }
 
 #topLabel {
@@ -185,7 +187,7 @@
     .draggable-item {
       padding: 10px;
       margin: 5px;
-      background-color: #D3D4D1; /*  d3d5cf   d6d6d6    */   
+      background-color: #D3D1D1; /*  d3d5cf   d6d6d6    */   
       border: 1px solid #c6c9C2 ; /*     c0c3bc   C2C9BC   */
       cursor: grab;
       font-weight: 600;
@@ -227,16 +229,16 @@
 
 
     @keyframes shake {
-  0%   { transform: translateX(0);  background-color: #A7A9A4; }
-  10%  { transform: translateX(-9px); background-color: #A7A9A4; }
-  20%  { transform: translateX(9px);  background-color: #A7A9A4; }
-  30%  { transform: translateX(-7px); background-color: #A7A9A4; }
-  40%  { transform: translateX(7px);  background-color: #A7A9A4; }
-  50%  { transform: translateX(-5px); background-color: #A7A9A4; }
-  60%  { transform: translateX(5px);  background-color: #A7A9A4; }
-  70%  { transform: translateX(0);   background-color: #A7A9A4; }
-  90%  { transform: translateX(0);   background-color: #A7A9A4; }
-  100% { transform: translateX(0);   background-color: #A7A9A4; }
+  0%   { transform: translateX(0);  background-color: #A7A6A4; }
+  10%  { transform: translateX(-9px); background-color: #A7A6A4; }
+  20%  { transform: translateX(9px);  background-color: #A7A6A4; }
+  30%  { transform: translateX(-7px); background-color: #A7A6A4; }
+  40%  { transform: translateX(7px);  background-color: #A7A6A4; }
+  50%  { transform: translateX(-5px); background-color: #A7A6A4; }
+  60%  { transform: translateX(5px);  background-color: #A7A6A4; }
+  70%  { transform: translateX(0);   background-color: #A7A6A4; }
+  90%  { transform: translateX(0);   background-color: #A7A6A4; }
+  100% { transform: translateX(0);   background-color: #A7A6A4; }
 }
 
 
@@ -364,9 +366,9 @@
 
   h2 {
     position: fixed;
-    font-size: 2.15rem;
+    font-size: 2.15rem !important;
     line-height: 1.2 !important;
-    top: 34px; /* 32 */
+    top: 34px; /* 34 */
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
@@ -374,6 +376,8 @@
     max-width: 350px;
     box-sizing: border-box;
     padding: 0 26px;
+    font-weight: 900;
+
   }
 
   #promptLabel,
@@ -1440,7 +1444,7 @@ body.device-411-r1-9 #submitWrapper {
   <script>
 
 
-const LAUNCH_DATE = new Date(2025, 6, 25); 
+const LAUNCH_DATE = new Date(2025, 5, 19); 
 const now = new Date();
 const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate())}`;
 const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -1450,7 +1454,7 @@ const currentDay = dayIndex;
 
 
 
-const maintenanceMode = true;
+const maintenanceMode = false;
 
 document.addEventListener('DOMContentLoaded', () => {
   if (maintenanceMode) {
@@ -1600,6 +1604,14 @@ function startGame() {
     history.pushState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
     return;
   }
+
+
+
+
+
+
+
+
 
   fetch("rounds.json")
     .then(res => res.json())
@@ -2220,9 +2232,9 @@ const emojiScore = getEmojiScore(maxRound);
   // Start with emoji
   let text = `Order It  #${roundNumber}\n${emojiScore}`;
 
-  // Only add mistakes if all 3 rounds were completed
+ 
   if (maxRound === 3) {
-    text += `\nwith ${strikes} ${strikes === 1 ? 'mistake' : 'mistakes'}`;
+    text += `\nwith ${strikes} ${strikes === 1 ? 'mistake made' : 'mistakes made'}`;
   }
 
   const shareText = `${text}\n${shareUrl}`;
@@ -2501,7 +2513,7 @@ if (shareScoreButton) {
 
     let text = `Order It  #${roundNumber}\n${emojiScore}`;
     if (savedScore.roundsCompleted === 3) {
-      text += `\nwith ${savedScore.strikes} ${savedScore.strikes === 1 ? 'mistake' : 'mistakes'}`;
+      text += `\nwith ${savedScore.strikes} ${savedScore.strikes === 1 ? 'mistake made' : 'mistakes made'}`;
     }
 
     const shareText = `${text}\n${shareUrl}`;
