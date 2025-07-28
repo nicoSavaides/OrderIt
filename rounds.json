@@ -1760,22 +1760,22 @@
     [
       {
         "prompt": "Weight",
-        "items": ["Pop tart", "Oreo Cookie", "Slim jim", "Hot pocket"],
-        "correctOrder": ["Hot pocket", "Pop tart", "Slim jim", "Oreo Cookie"],
+        "items": ["Pop-Tart", "Oreo Cookie", "Slim Jim", "Hot Pocket"],
+        "correctOrder": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Calories",
-        "items": ["Pop tart", "Oreo Cookie", "Slim jim", "Hot pocket"],
-        "correctOrder": ["Hot pocket", "Pop tart", "Slim jim", "Oreo Cookie"],
+        "items": ["Pop-Tart", "Oreo Cookie", "Slim Jim", "Hot Pocket"],
+        "correctOrder": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
         "topLabel": "↑ Most Calories",
         "bottomLabel": "↓ Fewest Calories"
       },
       {
-        "prompt": "Sugar",
-        "items": ["Pop tart", "Oreo Cookie", "Slim jim", "Hot pocket"],
-        "correctOrder": ["Pop tart", "Oreo Cookie", "Hot pocket", "Slim jim"],
+        "prompt": "Sugar Content",
+        "items": ["Pop-Tart", "Oreo Cookie", "Slim Jim", "Hot Pocket"],
+        "correctOrder": ["Pop-Tart", "Oreo Cookie", "Hot Pocket", "Slim Jim"],
         "topLabel": "↑ Most Sugar",
         "bottomLabel": "↓ Least Sugar"
       }
