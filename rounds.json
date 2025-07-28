@@ -774,21 +774,21 @@
     [
       {
         "prompt": "Height",
-        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "items": ["Larry Bird", "Shaq", "Michael Jordan", "Allen Iverson"],
         "correctOrder": ["Shaq", "Larry Bird", "Michael Jordan", "Allen Iverson"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Age",
-        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "items": ["Larry Bird", "Shaq", "Michael Jordan", "Allen Iverson"],
         "correctOrder": ["Larry Bird", "Michael Jordan", "Shaq", "Allen Iverson"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Number of Teams Played For",
-        "items": ["Shaq", "Michael Jordan", "Larry Bird", "Allen Iverson"],
+        "items": ["Larry Bird", "Shaq", "Michael Jordan", "Allen Iverson"],
         "correctOrder": ["Shaq", "Allen Iverson", "Michael Jordan", "Larry Bird"],
         "topLabel": "↑ Most Teams",
         "bottomLabel": "↓ Fewest Teams"
