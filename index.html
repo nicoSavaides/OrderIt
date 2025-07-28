@@ -1712,9 +1712,9 @@ displayDateAndRound();
 function getFontSizeForItems(items) {
   const totalChars = items.reduce((sum, item) => sum + item.length, 0);
 
-  if (totalChars <= 50) return '1.13rem';
-  if (totalChars <= 60) return '1.1rem';
-  if (totalChars <= 70) return '0.962rem';
+  if (totalChars <= 50) return '1.2rem';
+  if (totalChars <= 60) return '1.15rem';
+  if (totalChars <= 70) return '1rem';
   return '.95rem';  // 0.85
 }
 
