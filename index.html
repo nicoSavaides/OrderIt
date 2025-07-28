@@ -128,7 +128,7 @@
 .order-label {
   text-transform: uppercase;
   font-family: "Segoe UI", sans-serif;
-  font-size: .96rem; /* 1rem*/
+  font-size: .94rem; /* 1rem*/
   font-weight: 600; /* 600*/
   text-align: center;
   margin: 0;
@@ -1713,7 +1713,7 @@ function getFontSizeForItems(items) {
   const totalChars = items.reduce((sum, item) => sum + item.length, 0);
 
   if (totalChars <= 50) return '1.13rem';
-  if (totalChars <= 60) return '1.03rem';
+  if (totalChars <= 60) return '1.1rem';
   if (totalChars <= 70) return '0.962rem';
   return '.95rem';  // 0.85
 }
