@@ -1760,21 +1760,21 @@
     [
       {
         "prompt": "Weight",
-        "items": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
+        "items": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"],
         "correctOrder": ["Golden Retriever", "Border Collie", "Beagle", "Chihuahua"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Intelligence",
-        "items": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
+        "items": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"],
         "correctOrder": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
         "topLabel": "↑ Most Intelligent",
         "bottomLabel": "↓ Least Intelligent"
       },
       {
         "prompt": "Top Speed",
-        "items": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
+        "items": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"],
         "correctOrder": ["Border Collie", "Golden Retriever", "Beagle", "Chihuahua"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
