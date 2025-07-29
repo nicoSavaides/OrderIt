@@ -479,7 +479,7 @@
       #strikeCount {
         position: fixed;
         font-size: 1.25rem !important; /* 1.15rem  */
-        top: 391px; /* 386 */
+        top: 392px; /* 386 */
         left: 50%;
         transform: translateX(-50%); /* Centers the element horizontally */
         white-space: nowrap; /* Prevents the text from wrapping onto the next line */
@@ -1459,7 +1459,7 @@ body.device-411-r1-9 #submitWrapper {
 
 
 
-const LAUNCH_DATE = new Date(2025, 4, 5); 
+const LAUNCH_DATE = new Date(2025, 4, 16); 
 const now = new Date();
 const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate())}`;
 const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
@@ -1469,7 +1469,7 @@ const currentDay = dayIndex;
 
 
 
-const maintenanceMode = true;
+const maintenanceMode = false;
 
 document.addEventListener('DOMContentLoaded', () => {
   if (maintenanceMode) {

@@ -1735,6 +1735,30 @@
 
     [
       {
+        "prompt": "Height",
+        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
+        "correctOrder": ["Paul McCartney", "Michael Jackson", "Kendrick Lamar", "Prince"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Year of Super Bowl Performance",
+        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
+        "correctOrder": ["Kendrick Lamar", "Prince", "Paul McCartney", "Michael Jackson"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Monthly Spotify Listeners",
+        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
+        "correctOrder": ["Kendrick Lamar", "Michael Jackson", "Prince", "Paul McCartney"],
+        "topLabel": "↑ Most Listeners",
+        "bottomLabel": "↓ Fewest Listeners"
+      }
+    ],
+
+    [
+      {
         "prompt": "Weight",
         "items": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
         "correctOrder": ["Golden Retriever", "Border Collie", "Beagle", "Chihuahua"],
@@ -1778,30 +1802,6 @@
         "correctOrder": ["Pop-Tart", "Oreo Cookie", "Hot Pocket", "Slim Jim"],
         "topLabel": "↑ Most Sugar",
         "bottomLabel": "↓ Least Sugar"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Height",
-        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
-        "correctOrder": ["Paul McCartney", "Michael Jackson", "Kendrick Lamar", "Prince"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Year of Super Bowl Performance",
-        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
-        "correctOrder": ["Kendrick Lamar", "Prince", "Paul McCartney", "Michael Jackson"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
-      },
-      {
-        "prompt": "Monthly Spotify Listeners",
-        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
-        "correctOrder": ["Kendrick Lamar", "Michael Jackson", "Prince", "Paul McCartney"],
-        "topLabel": "↑ Most Listeners",
-        "bottomLabel": "↓ Fewest Listeners"
       }
     ],
 
@@ -1856,22 +1856,22 @@
     [
       {
         "prompt": "Age",
-        "items": ["Whoopi Goldberg", "Elon Musk", "Seth MacFarlane", "Billy Crystal"],
-        "correctOrder": ["Billy Crystal", "Whoopi Goldberg", "Elon Musk", "Seth MacFarlane"],
+        "items": ["Chris Rock", "Jerry Seinfeld", "Seth MacFarlane", "Billy Crystal"],
+        "correctOrder": ["Billy Crystal", "Jerry Seinfeld", "Chris Rock", "Seth MacFarlane"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Number of Oscars Hosted",
-        "items": ["Whoopi Goldberg", "Elon Musk", "Seth MacFarlane", "Billy Crystal"],
-        "correctOrder": ["Billy Crystal", "Whoopi Goldberg", "Seth MacFarlane", "Elon Musk"],
+        "items": ["Chris Rock", "Jerry Seinfeld", "Seth MacFarlane", "Billy Crystal"],
+        "correctOrder": ["Billy Crystal", "Chris Rock", "Seth MacFarlane", "Jerry Seinfeld"],
         "topLabel": "↑ Most Hosted",
         "bottomLabel": "↓ Fewest Hosted"
       },
       {
         "prompt": "Net Worth",
-        "items": ["Whoopi Goldberg", "Elon Musk", "Seth MacFarlane", "Billy Crystal"],
-        "correctOrder": ["Elon Musk", "Seth MacFarlane", "Billy Crystal", "Whoopi Goldberg"],
+        "items": ["Chris Rock", "Jerry Seinfeld", "Seth MacFarlane", "Billy Crystal"],
+        "correctOrder": ["Jerry Seinfeld", "Seth MacFarlane", "Chris Rock", "Billy Crystal"],
         "topLabel": "↑ Highest Net Worth",
         "bottomLabel": "↓ Lowest Net Worth"
       }
@@ -1927,6 +1927,13 @@
 
     [
       {
+        "prompt": "Average Temperature",
+        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
+        "correctOrder": ["Rio de Janeiro", "Istanbul", "Chicago", "Oslo"],
+        "topLabel": "↑ Warmest City",
+        "bottomLabel": "↓ Coldest City"
+      },
+      {
         "prompt": "Population",
         "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
         "correctOrder": ["Istanbul", "Rio de Janeiro", "Chicago", "Oslo"],
@@ -1939,13 +1946,6 @@
         "correctOrder": ["Oslo", "Chicago", "Istanbul", "Rio de Janeiro"],
         "topLabel": "↑ Farthest from Equator",
         "bottomLabel": "↓ Closest to Equator"
-      },
-      {
-        "prompt": "Average Temperature",
-        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
-        "correctOrder": ["Rio de Janeiro", "Istanbul", "Chicago", "Oslo"],
-        "topLabel": "↑ Warmest City",
-        "bottomLabel": "↓ Coldest City"
       }
     ],
 
