@@ -1742,7 +1742,7 @@
         "bottomLabel": "↓ Shortest"
       },
       {
-        "prompt": "Year of Super Bowl Performance",
+        "prompt": "Super Bowl Performance Year",
         "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
         "correctOrder": ["Kendrick Lamar", "Prince", "Paul McCartney", "Michael Jackson"],
         "topLabel": "↑ Most Recent",
