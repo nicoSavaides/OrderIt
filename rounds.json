@@ -2030,7 +2030,7 @@
         "bottomLabel": "↓ Fewest Letters"
       },
       {
-        "prompt": "Championships Won",
+        "prompt": "NBA Championships",
         "items": ["Bulls", "Heat", "Warriors", "Mavericks"],
         "correctOrder": ["Warriors", "Bulls", "Heat", "Mavericks"],
         "topLabel": "↑ Most Titles",
