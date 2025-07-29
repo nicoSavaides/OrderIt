@@ -2030,7 +2030,7 @@
         "bottomLabel": "↓ Fewest Letters"
       },
       {
-        "prompt": "NBA Championships Won",
+        "prompt": "Championships Won",
         "items": ["Bulls", "Heat", "Warriors", "Mavericks"],
         "correctOrder": ["Warriors", "Bulls", "Heat", "Mavericks"],
         "topLabel": "↑ Most Titles",
@@ -2071,18 +2071,18 @@
 
     [
       {
-        "prompt": "Population",
-        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
-        "correctOrder": ["Florida", "Ohio", "Nevada", "Rhode Island"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
         "prompt": "Land Area",
         "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
         "correctOrder": ["Nevada", "Florida", "Ohio", "Rhode Island"],
         "topLabel": "↑ Largest Area",
         "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "correctOrder": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Date of Statehood",
