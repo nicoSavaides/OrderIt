@@ -459,6 +459,8 @@
   20%, 100% { background-color: #62a65b; } /* stays green at the end */
 }
 
+
+
 @keyframes grow {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.06); }
@@ -469,11 +471,18 @@
 
 
 .correct-animation li {
+  display: inline-block;
   animation: 
-    flash-green 1.2s ease-in-out forwards, /* forwards to keep end style */
+    flash-green 1.2s ease-in-out forwards,
     grow 1.2s ease-in-out forwards;
-    border: none !important;
+  transform-origin: center center;
+  will-change: transform;
+  border: 1px solid #D3D1D1 !important; /* Matches tile bg */
 }
+
+
+
+
 
 
 
