@@ -365,21 +365,21 @@
     [
       {
         "prompt": "Number of Children",
-        "items": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
+        "items": ["Homer Simpson", "Iron Man", "Darth Vader", "Carol Brady"],
         "correctOrder": ["Carol Brady", "Homer Simpson", "Darth Vader", "Iron Man"],
         "topLabel": "↑ Most Children",
         "bottomLabel": "↓ Fewest Children"
       },
       {
         "prompt": "Height",
-        "items": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
+        "items": ["Homer Simpson", "Iron Man", "Darth Vader", "Carol Brady"],
         "correctOrder": ["Darth Vader", "Iron Man", "Homer Simpson", "Carol Brady"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Year of First Appearance",
-        "items": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
+        "items": ["Homer Simpson", "Iron Man", "Darth Vader", "Carol Brady"],
         "correctOrder": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
         "topLabel": "↑ Most Recent",
         "bottomLabel": "↓ Earliest"
