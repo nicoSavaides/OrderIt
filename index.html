@@ -2594,5 +2594,28 @@ if (shareScoreButton) {
 
   </script>
 
+
+
+
+  <!-- Your other game content -->
+
+  <div id="deviceInfo" style="position: fixed; top: 10px; left: 10px; background: #fff; color: #000; padding: 10px; font-size: 14px; z-index: 9999; border: 1px solid #ccc;">
+    Loading screen info...
+  </div>
+
+  <script>
+    const info = `
+      Width: ${window.innerWidth}px<br>
+      Height: ${window.innerHeight}px<br>
+      Ratio: ${window.devicePixelRatio}<br>
+      Orientation: ${window.screen.orientation?.type || 'unknown'}
+    `;
+    document.getElementById('deviceInfo').innerHTML = info;
+  </script>
+</body>
+</html>
+
+
+
 </body>
 </html>
