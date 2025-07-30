@@ -1108,29 +1108,29 @@
     ],
 
     [
-
       {
         "prompt": "Height",
-        "items": ["George Washington", "Abraham Lincoln", "John F. Kennedy", "Richard Nixon"],
-        "correctOrder": ["Abraham Lincoln", "George Washington", "John F. Kennedy", "Richard Nixon"],
+        "items": ["George H. W. Bush", "Abraham Lincoln", "Jimmy Carter", "John F. Kennedy"],
+        "correctOrder": ["Abraham Lincoln", "George H. W. Bush", "John F. Kennedy", "Jimmy Carter"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Age at Death",
-        "items": ["George Washington", "Abraham Lincoln", "John F. Kennedy", "Richard Nixon"],
-        "correctOrder": ["Richard Nixon", "George Washington", "Abraham Lincoln", "John F. Kennedy"],
+        "items": ["George H. W. Bush", "Abraham Lincoln", "Jimmy Carter", "John F. Kennedy"],
+        "correctOrder": ["Jimmy Carter", "George H. W. Bush", "Abraham Lincoln", "John F. Kennedy"],
         "topLabel": "↑ Oldest at Death",
         "bottomLabel": "↓ Youngest at Death"
       },
       {
         "prompt": "Age at Inauguration",
-        "items": ["George Washington", "Abraham Lincoln", "John F. Kennedy", "Richard Nixon"],
-        "correctOrder": ["George Washington", "Richard Nixon", "Abraham Lincoln", "John F. Kennedy"],
+        "items": ["George H. W. Bush", "Abraham Lincoln", "Jimmy Carter", "John F. Kennedy"],
+        "correctOrder": ["George H. W. Bush", "Jimmy Carter", "Abraham Lincoln", "John F. Kennedy"],
         "topLabel": "↑ Oldest at Inauguration",
         "bottomLabel": "↓ Youngest at Inauguration"
       }
     ],
+  
 
     [
       {
@@ -1159,21 +1159,21 @@
     [
       {
         "prompt": "Number of Teeth",
-        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
+        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
         "correctOrder": ["Great White Shark", "Alligator", "Human", "Snapping Turtle"],
         "topLabel": "↑ Most Teeth",
         "bottomLabel": "↓ Fewest Teeth"
       },
       {
         "prompt": "Bite Force",
-        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
+        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
         "correctOrder": ["Great White Shark", "Alligator", "Snapping Turtle", "Human"],
         "topLabel": "↑ Strongest Bite",
         "bottomLabel": "↓ Weakest Bite"
       },
       {
         "prompt": "Top Speed",
-        "items": ["Alligator", "Great White Shark", "Human", "Snapping Turtle"],
+        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
         "correctOrder": ["Great White Shark", "Human", "Alligator", "Snapping Turtle"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
@@ -1231,21 +1231,21 @@
     [
       {
         "prompt": "Year of First Film",
-        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "items": ["Alfred Hitchcock", "Steven Spielberg", "Quentin Tarantino", "Martin Scorsese"],
         "correctOrder": ["Quentin Tarantino", "Steven Spielberg", "Martin Scorsese", "Alfred Hitchcock"],
         "topLabel": "↑ Most Recent",
         "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Number of Oscars Won",
-        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "items": ["Alfred Hitchcock", "Steven Spielberg", "Quentin Tarantino", "Martin Scorsese"],
         "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
         "topLabel": "↑ Most Oscars",
         "bottomLabel": "↓ Fewest Oscars"
       },
       {
         "prompt": "Highest Grossing Movie",
-        "items": ["Quentin Tarantino", "Martin Scorsese", "Steven Spielberg", "Alfred Hitchcock"],
+        "items": ["Alfred Hitchcock", "Steven Spielberg", "Quentin Tarantino", "Martin Scorsese"],
         "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
         "topLabel": "↑ Highest Grossing",
         "bottomLabel": "↓ Lowest Grossing"
