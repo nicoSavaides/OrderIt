@@ -316,18 +316,18 @@
 
     [
       {
-        "prompt": "Number of Strings",
-        "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
-        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
-        "topLabel": "↑ Most Strings",
-        "bottomLabel": "↓ Fewest Strings"
-      },
-      {
         "prompt": "Height Standing Upright",
         "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
         "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Number of Strings",
+        "items": ["Harp", "Banjo", "Sitar", "Ukulele"],
+        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
+        "topLabel": "↑ Most Strings",
+        "bottomLabel": "↓ Fewest Strings"
       },
       {
         "prompt": "Year Invented",
