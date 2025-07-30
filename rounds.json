@@ -1013,7 +1013,7 @@
 
     [
       {
-        "prompt": "Height",
+        "prompt": "Beats Per Minute (Tempo)",
         "items": ["Palm Tree", "Redwood Tree", "Cherry Blossom", "Oak Tree"],
         "correctOrder": ["Redwood Tree", "Oak Tree", "Palm Tree", "Cherry Blossom"],
         "topLabel": "↑ Tallest",
