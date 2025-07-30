@@ -612,7 +612,7 @@
         "bottomLabel": "↓ Fewest Children"
       },
       {
-        "prompt": "Age Difference in Years",
+        "prompt": "Age Difference",
         "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
         "correctOrder": ["Brad and Angelina", "John and Yoko", "Kim and Kanye", "Barack and Michelle"],
         "topLabel": "↑ Largest Gap",
