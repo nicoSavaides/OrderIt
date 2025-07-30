@@ -1278,6 +1278,30 @@
 
     [
       {
+        "prompt": "Land Area",
+        "items": ["New York", "Ohio", "Alaska", "Idaho"],
+        "correctOrder": ["Alaska", "Idaho", "New York", "Ohio"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Population",
+        "items": ["New York", "Ohio", "Alaska", "Idaho"],
+        "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["New York", "Ohio", "Alaska", "Idaho"],
+        "correctOrder": ["Alaska", "Idaho", "Ohio", "New York"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Established",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
         "correctOrder": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
@@ -1326,30 +1350,6 @@
 
     [
       {
-        "prompt": "Land Area",
-        "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["Alaska", "Idaho", "New York", "Ohio"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Population",
-        "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Date of Statehood",
-        "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["Alaska", "Idaho", "Ohio", "New York"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
-      }
-    ],
-
-    [
-      {
         "prompt": "Weight",
         "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
         "correctOrder": ["Elephant", "Rhino", "Hippo", "Polar bear"],
@@ -1371,6 +1371,31 @@
         "bottomLabel": "↓ Shortest Pregnancy"
       }
     ],
+
+    [
+      {
+        "prompt": "Land Area",
+        "items": ["Spain", "USA", "Egypt", "India"],
+        "correctOrder": ["USA", "India", "Egypt", "Spain"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Spain", "USA", "Egypt", "India"],
+        "correctOrder": ["India", "USA", "Egypt", "Spain"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+        
+      },
+      {
+        "prompt": "GDP",
+        "items": ["Spain", "USA", "Egypt", "India"],
+        "correctOrder": ["USA", "India", "Spain", "Egypt"],
+        "topLabel": "↑ Largest GDP",
+        "bottomLabel": "↓ Smallest GDP"
+      }
+    ], 
 
     [
       {
@@ -1398,47 +1423,22 @@
 
     [
       {
-        "prompt": "Land Area",
-        "items": ["USA", "India", "Egypt", "Spain"],
-        "correctOrder": ["USA", "India", "Egypt", "Spain"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Population",
-        "items": ["USA", "India", "Egypt", "Spain"],
-        "correctOrder": ["India", "USA", "Egypt", "Spain"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-        
-      },
-      {
-        "prompt": "GDP",
-        "items": ["USA", "India", "Egypt", "Spain"],
-        "correctOrder": ["USA", "India", "Spain", "Egypt"],
-        "topLabel": "↑ Largest GDP",
-        "bottomLabel": "↓ Smallest GDP"
-      }
-    ], 
-
-    [
-      {
         "prompt": "Debut Year as Pro",
-        "items": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
+        "items": ["Tom Brady", "Stephen Curry", "Lionel Messi", "Serena Williams"],
         "correctOrder": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
         "topLabel": "↑ Most Recent Debut",
         "bottomLabel": "↓ Earliest Debut"
       },
       {
         "prompt": "Social Media Followers",
-        "items": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
+        "items": ["Tom Brady", "Stephen Curry", "Lionel Messi", "Serena Williams"],
         "correctOrder": ["Lionel Messi", "Serena Williams", "Stephen Curry", "Tom Brady"],
         "topLabel": "↑ Most Followers",
         "bottomLabel": "↓ Fewest Followers"
       },
       {
         "prompt": "Total Career Earnings",
-        "items": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
+        "items": ["Tom Brady", "Stephen Curry", "Lionel Messi", "Serena Williams"],
         "correctOrder": ["Lionel Messi", "Tom Brady", "Stephen Curry", "Serena Williams"],
         "topLabel": "↑ Most Earnings",
         "bottomLabel": "↓ Least Earnings"
@@ -1472,21 +1472,21 @@
     [
       {
         "prompt": "Year Published",
-        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
+        "items": ["The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice"],
         "correctOrder": ["Harry Potter and the Sorcerer's Stone", "Fahrenheit 451", "The Grapes of Wrath", "Pride and Prejudice"],
         "topLabel": "↑ Most Recent",
         "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Author Last Name (A-Z)",
-        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
+        "items": ["The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice"],
         "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Page Count",
-        "items": ["Harry Potter and the Sorcerer's Stone", "Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451"],
+        "items": ["The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice"],
         "correctOrder": ["The Grapes of Wrath", "Pride and Prejudice", "Harry Potter and the Sorcerer's Stone", "Fahrenheit 451"],
         "topLabel": "↑ Most Pages",
         "bottomLabel": "↓ Fewest Pages"
@@ -1526,18 +1526,18 @@
         "bottomLabel": "↓ Earliest"
       },
       {
-        "prompt": "Number of Episodes",
-        "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
-        "correctOrder": ["Friends", "The Office (US)", "Seinfeld", "Mad Men"],
-        "topLabel": "↑ Most Episodes",
-        "bottomLabel": "↓ Fewest Episodes"
-      },
-      {
         "prompt": "Number of Emmys Won",
         "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
         "correctOrder": ["Mad Men", "Seinfeld", "Friends", "The Office (US)"],
         "topLabel": "↑ Most Emmys",
         "bottomLabel": "↓ Fewest Emmys"
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
+        "correctOrder": ["Friends", "The Office (US)", "Seinfeld", "Mad Men"],
+        "topLabel": "↑ Most Episodes",
+        "bottomLabel": "↓ Fewest Episodes"
       }
     ],
 
@@ -1568,21 +1568,21 @@
     [
       {
         "prompt": "Artist Name (A-Z)",
-        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
+        "items": ["Free Bird", "Imagine", "Shake It Off", "Billie Jean"],
         "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Year Released",
-        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
+        "items": ["Free Bird", "Imagine", "Shake It Off", "Billie Jean"],
         "correctOrder": ["Shake It Off", "Billie Jean", "Free Bird", "Imagine"],
         "topLabel": "↑ Most Recent",
         "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Song Length",
-        "items": ["Imagine", "Shake It Off", "Billie Jean", "Free Bird"],
+        "items": ["Free Bird", "Imagine", "Shake It Off", "Billie Jean"],
         "correctOrder": ["Free Bird", "Billie Jean", "Shake It Off", "Imagine"],
         "topLabel": "↑ Longest Song",
         "bottomLabel": "↓ Shortest Song"
@@ -1640,21 +1640,21 @@
     [
       {
         "prompt": "Age When Retired from Show",
-        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
+        "items": ["Johnny Carson", "Oprah Winfrey", "James Corden", "Alex Trebek"],
         "correctOrder": ["Alex Trebek", "Johnny Carson", "Oprah Winfrey", "James Corden"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Height",
-        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
+        "items": ["Johnny Carson", "Oprah Winfrey", "James Corden", "Alex Trebek"],
         "correctOrder": ["Alex Trebek", "Johnny Carson", "James Corden", "Oprah Winfrey"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Number of Years as Host",
-        "items": ["Johnny Carson", "Oprah Winfrey", "Alex Trebek", "James Corden"],
+        "items": ["Johnny Carson", "Oprah Winfrey", "James Corden", "Alex Trebek"],
         "correctOrder": ["Alex Trebek", "Johnny Carson", "Oprah Winfrey", "James Corden"],
         "topLabel": "↑ Most Years",
         "bottomLabel": "↓ Fewest Years"
