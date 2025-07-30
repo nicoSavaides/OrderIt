@@ -708,7 +708,7 @@
         "bottomLabel": "↓ Earliest"
       },
       {
-        "prompt": "Beats Per Minute (Tempo)",
+        "prompt": "Song Tempo (BPM)",
         "items": ["Hey Jude", "Despacito", "All I Want for Christmas Is You", "Gangnam Style"],
         "correctOrder": ["All I Want for Christmas Is You", "Gangnam Style", "Despacito", "Hey Jude"],
         "topLabel": "↑ Fastest Tempo",
