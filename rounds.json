@@ -1712,21 +1712,21 @@
     [
       {
         "prompt": "Year of Initial Release",
-        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
+        "items": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
         "correctOrder": ["Apple Watch", "iPhone", "BlackBerry", "Game Boy"],
         "topLabel": "↑ Most Recent",
         "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Number of Physical Buttons",
-        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
+        "items": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
         "correctOrder": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
         "topLabel": "↑ Most Buttons",
         "bottomLabel": "↓ Fewest Buttons"
       },
       {
         "prompt": "Price at Release",
-        "items": ["Apple Watch", "BlackBerry", "Game Boy", "iPhone"],
+        "items": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
         "correctOrder": ["BlackBerry", "iPhone", "Apple Watch", "Game Boy"],
         "topLabel": "↑ Most Expensive",
         "bottomLabel": "↓ Cheapest"
