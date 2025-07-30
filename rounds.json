@@ -1598,7 +1598,7 @@
         "bottomLabel": "↓ Earliest"
       },
       {
-        "prompt": "Num. of Appearances as Bond",
+        "prompt": "Number of Bond Films",
         "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
         "correctOrder": ["Sean Connery", "Daniel Craig", "Pierce Brosnan", "George Lazenby"],
         "topLabel": "↑ Most Films",
