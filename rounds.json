@@ -1736,21 +1736,21 @@
     [
       {
         "prompt": "Height",
-        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
+        "items": ["Michael Jackson", "Prince", "Paul McCartney", "Kendrick Lamar"],
         "correctOrder": ["Paul McCartney", "Michael Jackson", "Kendrick Lamar", "Prince"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Super Bowl Performance Year",
-        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
+        "items": ["Michael Jackson", "Prince", "Paul McCartney", "Kendrick Lamar"],
         "correctOrder": ["Kendrick Lamar", "Prince", "Paul McCartney", "Michael Jackson"],
         "topLabel": "↑ Most Recent",
         "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Monthly Spotify Listeners",
-        "items": ["Paul McCartney", "Kendrick Lamar", "Michael Jackson", "Prince"],
+        "items": ["Michael Jackson", "Prince", "Paul McCartney", "Kendrick Lamar"],
         "correctOrder": ["Kendrick Lamar", "Michael Jackson", "Prince", "Paul McCartney"],
         "topLabel": "↑ Most Listeners",
         "bottomLabel": "↓ Fewest Listeners"
