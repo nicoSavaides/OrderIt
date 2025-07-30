@@ -702,21 +702,21 @@
     [
       {
         "prompt": "Year Released",
-        "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
+        "items": ["Hey Jude", "Despacito", "All I Want for Christmas Is You", "Gangnam Style"],
         "correctOrder": ["Despacito", "Gangnam Style", "All I Want for Christmas Is You", "Hey Jude"],
         "topLabel": "↑ Most Recent",
         "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Beats Per Minute (Tempo)",
-        "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
+        "items": ["Hey Jude", "Despacito", "All I Want for Christmas Is You", "Gangnam Style"],
         "correctOrder": ["All I Want for Christmas Is You", "Gangnam Style", "Despacito", "Hey Jude"],
         "topLabel": "↑ Fastest Tempo",
         "bottomLabel": "↓ Slowest Tempo"
       },
       {
         "prompt": "Views on YouTube",
-        "items": ["Despacito", "Hey Jude", "Gangnam Style", "All I Want for Christmas Is You"],
+        "items": ["Hey Jude", "Despacito", "All I Want for Christmas Is You", "Gangnam Style"],
         "correctOrder": ["Despacito", "Gangnam Style", "All I Want for Christmas Is You", "Hey Jude"],
         "topLabel": "↑ Most Views",
         "bottomLabel": "↓ Fewest Views"
@@ -741,7 +741,7 @@
       {
         "prompt": "Average Lifespan",
         "items": ["Cat", "Goldfish", "Dog", "Hamster"],
-        "correctOrder": ["Cat", "Goldfish", "Dog", "Hamster"],
+        "correctOrder": ["Cat", "Dog", "Goldfish", "Hamster"],
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
       }
@@ -766,8 +766,8 @@
         "prompt": "Number of Monthly Users",
         "items": ["Doordash", "Amazon", "X (Twitter)", "Tinder"],
         "correctOrder": ["X (Twitter)", "Amazon", "Tinder", "Doordash"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
+        "topLabel": "↑ Most Users",
+        "bottomLabel": "↓ Fewest Users"
       }
     ],
 
@@ -797,46 +797,46 @@
 
     [
       {
+        "prompt": "Year Premiered",
+        "items": ["Breaking Bad", "The Sopranos", "Lost", "Stranger Things"],
+        "correctOrder": ["Stranger Things", "Breaking Bad", "Lost", "The Sopranos"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
         "prompt": "Emmys Won",
-        "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
-        "correctOrder": ["The Sopranos", "Breaking Bad", "Lost", "The Walking Dead"],
+        "items": ["Breaking Bad", "The Sopranos", "Lost", "Stranger Things"],
+        "correctOrder": ["The Sopranos", "Breaking Bad", "Stranger Things", "Lost"],
         "topLabel": "↑ Most Emmys",
         "bottomLabel": "↓ Fewest Emmys"
       },
       {
-        "prompt": "Series Finale Viewership",
-        "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
-        "correctOrder": ["Lost", "The Sopranos", "Breaking Bad", "The Walking Dead"],
-        "topLabel": "↑ Most Watched",
-        "bottomLabel": "↓ Least Watched"
-      },
-      {
-        "prompt": "Year Premiered",
-        "items": ["Breaking Bad", "Lost", "The Walking Dead", "The Sopranos"],
-        "correctOrder": ["The Walking Dead", "Breaking Bad", "Lost", "The Sopranos"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "prompt": "Number of Episodes",
+        "items": ["Breaking Bad", "The Sopranos", "Lost", "Stranger Things"],
+        "correctOrder": ["Lost", "The Sopranos", "Breaking Bad", "Stranger Things"],
+        "topLabel": "↑ Most Episodes",
+        "bottomLabel": "↓ Fewest Episodes"
       }
     ],
 
     [
       {
         "prompt": "Year Started",
-        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
+        "items": ["World War II", "Vietnam War", "Korean War", "American Civil War"],
         "correctOrder": ["Vietnam War", "Korean War", "World War II", "American Civil War"],
         "topLabel": "↑ Most Recent",
         "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Length of War",
-        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
+        "items": ["World War II", "Vietnam War", "Korean War", "American Civil War"],
         "correctOrder": ["Vietnam War", "World War II", "American Civil War", "Korean War"],
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Death Toll",
-        "items": ["World War II", "American Civil War", "Vietnam War", "Korean War"],
+        "items": ["World War II", "Vietnam War", "Korean War", "American Civil War"],
         "correctOrder": ["World War II", "Korean War", "Vietnam War", "American Civil War"],
         "topLabel": "↑ Most Deaths",
         "bottomLabel": "↓ Fewest Deaths"
@@ -869,22 +869,22 @@
 
     [
       {
-        "prompt": "Height",
-        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
-        "correctOrder": ["Conan O’Brien", "David Letterman", "Jimmy Fallon", "Ellen DeGeneres"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
         "prompt": "Age",
-        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "items": ["Ellen DeGeneres", "Jimmy Fallon", "David Letterman", "Conan O’Brien"],
         "correctOrder": ["David Letterman", "Ellen DeGeneres", "Conan O’Brien", "Jimmy Fallon"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
       },
       {
+        "prompt": "Height",
+        "items": ["Ellen DeGeneres", "Jimmy Fallon", "David Letterman", "Conan O’Brien"],
+        "correctOrder": ["Conan O’Brien", "David Letterman", "Jimmy Fallon", "Ellen DeGeneres"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
         "prompt": "Years as Talk Show Host",
-        "items": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "items": ["Ellen DeGeneres", "Jimmy Fallon", "David Letterman", "Conan O’Brien"],
         "correctOrder": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
         "topLabel": "↑ Longest Tenure",
         "bottomLabel": "↓ Shortest Tenure"
@@ -966,21 +966,21 @@
     [
       {
         "prompt": "Wingspan",
-        "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
+        "items": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"],
         "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
         "topLabel": "↑ Largest Wingspan",
         "bottomLabel": "↓ Smallest Wingspan"
       },
       {
         "prompt": "Weight",
-        "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
+        "items": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"],
         "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Top Speed",
-        "items": ["Great Horned Owl", "Bald Eagle", "Peregrine Falcon", "Common Pigeon"],
+        "items": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"],
         "correctOrder": ["Peregrine Falcon", "Bald Eagle", "Common Pigeon", "Great Horned Owl"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
@@ -1014,22 +1014,22 @@
     [
       {
         "prompt": "Height",
-        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
-        "correctOrder": ["Redwood tree", "Oak tree", "Palm tree", "Cherry blossom"],
+        "items": ["Palm Tree", "Redwood Tree", "Cherry Blossom", "Oak Tree"],
+        "correctOrder": ["Redwood Tree", "Oak Tree", "Palm Tree", "Cherry Blossom"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Trunk Width",
-        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
-        "correctOrder": ["Redwood tree", "Oak tree", "Cherry blossom", "Palm tree"],
+        "items": ["Palm Tree", "Redwood Tree", "Cherry Blossom", "Oak Tree"],
+        "correctOrder": ["Redwood Tree", "Oak Tree", "Cherry Blossom", "Palm Tree"],
         "topLabel": "↑ Thickest Trunk",
         "bottomLabel": "↓ Thinnest Trunk"
       },
       {
         "prompt": "Lifespan",
-        "items": ["Palm tree", "Redwood tree", "Cherry blossom", "Oak tree"],
-        "correctOrder": ["Redwood tree", "Oak tree", "Palm tree", "Cherry blossom"],
+        "items": ["Palm Tree", "Redwood Tree", "Cherry Blossom", "Oak Tree"],
+        "correctOrder": ["Redwood Tree", "Oak Tree", "Palm Tree", "Cherry Blossom"],
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
       }
@@ -1086,21 +1086,21 @@
     [
       {
         "prompt": "Year Released",
-        "items": ["Dancing Queen", "Smells Like Teen Spirit", "Thriller", "I Want to Hold Your Hand"],
+        "items": ["Dancing Queen", "I Want to Hold Your Hand", "Smells Like Teen Spirit", "Thriller"],
         "correctOrder": ["Smells Like Teen Spirit", "Thriller", "Dancing Queen", "I Want to Hold Your Hand"],
         "topLabel": "↑ Newest Release",
         "bottomLabel": "↓ Oldest Release"
       },
       {
         "prompt": "Artist Name (A-Z)",
-        "items": ["Dancing Queen", "Smells Like Teen Spirit", "Thriller", "I Want to Hold Your Hand"],
+        "items": ["Dancing Queen", "I Want to Hold Your Hand", "Smells Like Teen Spirit", "Thriller"],
         "correctOrder": ["Dancing Queen", "I Want to Hold Your Hand", "Thriller", "Smells Like Teen Spirit"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Song Length",
-        "items": ["Dancing Queen", "Smells Like Teen Spirit", "Thriller", "I Want to Hold Your Hand"],
+        "items": ["Dancing Queen", "I Want to Hold Your Hand", "Smells Like Teen Spirit", "Thriller"],
         "correctOrder": ["Thriller", "Smells Like Teen Spirit", "Dancing Queen", "I Want to Hold Your Hand"],
         "topLabel": "↑ Longest Song",
         "bottomLabel": "↓ Shortest Song"
