@@ -5,21 +5,21 @@
     [
       {
         "prompt": "Weight",
-        "items": ["Lion", "Elephant", "Giraffe", "Kangaroo"],
+        "items": ["Kangaroo", "Elephant", "Lion", "Giraffe"],
         "correctOrder": ["Elephant", "Giraffe", "Lion", "Kangaroo"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Top Speed",
-        "items": ["Lion", "Elephant", "Giraffe", "Kangaroo"],
+        "items": ["Kangaroo", "Elephant", "Lion", "Giraffe"],
         "correctOrder": ["Lion", "Kangaroo", "Giraffe", "Elephant"],
         "topLabel": "↑ Fastest", 
         "bottomLabel": "↓ Slowest"
       },
       {
         "prompt": "Lifespan",
-        "items": ["Lion", "Elephant", "Giraffe", "Kangaroo"],
+        "items": ["Kangaroo", "Elephant", "Lion", "Giraffe"],
         "correctOrder": ["Elephant", "Giraffe", "Lion", "Kangaroo"],
         "topLabel": "↑ Longest Lifespan", 
         "bottomLabel": "↓ Shortest Lifespan"
@@ -29,21 +29,21 @@
     [
       {
         "prompt": "Population",
-        "items": ["Georgia", "Vermont", "Texas", "Wyoming"],
+        "items": ["Georgia", "Wyoming", "Texas", "Vermont"],
         "correctOrder": ["Texas", "Georgia", "Vermont", "Wyoming"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Land Area",
-        "items": ["Georgia", "Vermont", "Texas", "Wyoming"],
+        "items": ["Georgia", "Wyoming", "Texas", "Vermont"],
         "correctOrder": ["Texas", "Wyoming", "Georgia", "Vermont"],
         "topLabel": "↑ Largest Area",
         "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Date of Statehood",
-        "items": ["Georgia", "Vermont", "Texas", "Wyoming"],
+        "items": ["Georgia", "Wyoming", "Texas", "Vermont"],
         "correctOrder": ["Wyoming", "Texas", "Vermont", "Georgia"],
         "topLabel": "↑ Most Recent",
         "bottomLabel": "↓ Earliest"
@@ -53,21 +53,21 @@
     [
       {
         "prompt": "Age",
-        "items": ["Kim Kardashian", "Robert Downey Jr", "Beyoncé", "Taylor Swift"],
+        "items": ["Kim Kardashian", "Robert Downey Jr","Taylor Swift", "Beyoncé"],
         "correctOrder": ["Robert Downey Jr", "Kim Kardashian", "Beyoncé", "Taylor Swift"],
         "topLabel": "↑ Oldest", 
         "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Height",
-        "items": ["Kim Kardashian", "Robert Downey Jr", "Beyoncé", "Taylor Swift"],
+        "items": ["Kim Kardashian", "Robert Downey Jr","Taylor Swift", "Beyoncé"],
         "correctOrder": ["Taylor Swift", "Robert Downey Jr", "Beyoncé", "Kim Kardashian"],
         "topLabel": "↑ Tallest", 
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Net Worth",
-        "items": ["Kim Kardashian", "Robert Downey Jr", "Beyoncé", "Taylor Swift"],
+        "items": ["Kim Kardashian", "Robert Downey Jr","Taylor Swift", "Beyoncé"],
         "correctOrder": ["Kim Kardashian", "Taylor Swift", "Beyoncé", "Robert Downey Jr"],
         "topLabel": "↑ Highest Net Worth", 
         "bottomLabel": "↓ Lowest Net Worth"
@@ -149,21 +149,21 @@
     [
       {
         "prompt": "Distance from Sun",
-        "items": ["Jupiter", "Mars", "Uranus", "Earth"],
+        "items": ["Jupiter", "Uranus", "Earth", "Mars"],
         "correctOrder": ["Uranus", "Jupiter", "Mars", "Earth"],
         "topLabel": "↑ Farthest from Sun",
         "bottomLabel": "↓ Closest to Sun"
       },
       {
         "prompt": "Size",
-        "items": ["Jupiter", "Mars", "Uranus", "Earth"],
+        "items": ["Jupiter", "Uranus", "Earth", "Mars"],
         "correctOrder": ["Jupiter", "Uranus", "Earth", "Mars"],
         "topLabel": "↑ Largest",
         "bottomLabel": "↓ Smallest"
       },
       {
         "prompt": "Number of Moons",
-        "items": ["Jupiter", "Mars", "Uranus", "Earth"],
+        "items": ["Jupiter", "Uranus", "Earth", "Mars"],
         "correctOrder": ["Jupiter", "Uranus", "Mars", "Earth"],
         "topLabel": "↑ Most Moons",
         "bottomLabel": "↓ Fewest Moons"
@@ -221,21 +221,21 @@
     [
       {
         "prompt": "Land Area",
-        "items": ["Australia", "Colombia", "Germany", "Switzerland"],
-        "correctOrder": [ "Australia", "Colombia", "Germany", "Switzerland"],
+        "items": ["Switzerland", "Australia", "Germany", "Colombia"],
+        "correctOrder": ["Australia", "Colombia", "Germany", "Switzerland"],
         "topLabel": "↑ Largest Area",
         "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Population",
-        "items": ["Australia", "Colombia", "Germany", "Switzerland"],
+        "items": ["Switzerland", "Australia", "Germany", "Colombia"],
         "correctOrder": ["Germany", "Colombia", "Australia", "Switzerland"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "GDP",
-        "items": ["Australia", "Colombia", "Germany", "Switzerland"],
+        "items": ["Switzerland", "Australia", "Germany", "Colombia"],
         "correctOrder": ["Germany", "Australia", "Switzerland", "Colombia"],
         "topLabel": "↑ Highest GDP",
         "bottomLabel": "↓ Lowest GDP"
@@ -309,8 +309,8 @@
         "prompt": "Number of Attendees",
         "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
         "correctOrder": ["Olympics", "Masters Tournament", "Burning Man", "Super Bowl"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
+        "topLabel": "↑ Most Attendees",
+        "bottomLabel": "↓ Fewest Attendees"
       } 
     ],
 

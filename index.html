@@ -264,6 +264,31 @@
 
 
 
+@keyframes flash-green {
+  0% { background-color: transparent; }
+  20%, 100% { background-color: #62a65b; } /* stays green at the end */
+}
+
+
+@keyframes grow {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+
+
+.correct-animation li {
+  display: inline-block;
+  animation: 
+    flash-green 1.2s ease-in-out forwards,
+    grow 1.2s ease-in-out forwards;
+  transform-origin: center center;
+  will-change: transform;
+  border: 1px solid #62a65b !important; /* Matches tile bg */
+}
+
+
+
 
 /* already played already played  already played  already played  already played  already played  already played  already played  already played  */
 
@@ -456,31 +481,11 @@
     }
 
 
-    @keyframes flash-green {
-  0% { background-color: transparent; }
-  20%, 100% { background-color: #62a65b; } /* stays green at the end */
-}
-
-
-
-@keyframes grow {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.06); }
-}
 
 
 
 
 
-.correct-animation li {
-  display: inline-block;
-  animation: 
-    flash-green 1.2s ease-in-out forwards,
-    grow 1.2s ease-in-out forwards;
-  transform-origin: center center;
-  will-change: transform;
-  border: 1px solid #62a65b !important; /* Matches tile bg */
-}
 
 
 
@@ -998,7 +1003,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
       #strikeCount {
         position: fixed;
         font-size: 1.2rem !important;
-        top: 600px; /* Set how far from the top of the screen you want it */
+        top: 630px; /* Set how far from the top of the screen you want it */
         left: 50%;
         transform: translateX(-50%); /* Centers the element horizontally */
         white-space: nowrap; /* Prevents the text from wrapping onto the next line */
@@ -1007,9 +1012,13 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
       }
 
 
-        #submitWrapper {
-      bottom: 200px;
-    }
+      #submitWrapper {
+    bottom: 180px !important;
+    position: fixed !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 9999 !important;
+  }
 
 
       #submitWrapper button {
@@ -1214,8 +1223,12 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 }
 
 
-  #submitWrapper {
-  bottom: 45px;
+#submitWrapper {
+    bottom: 180px !important;
+    position: fixed !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    z-index: 9999 !important;
   }
 
 
@@ -1485,7 +1498,7 @@ const currentDay = dayIndex;
 
 
 
-const maintenanceMode = true;
+const maintenanceMode = false;
 
 document.addEventListener('DOMContentLoaded', () => {
   if (maintenanceMode) {
