@@ -2599,27 +2599,6 @@ if (shareScoreButton) {
 
 
 
-
-<div id="deviceInfo" style="position: fixed; bottom: 10px; left: 10px; background: #fff; color: #000; padding: 8px; font-size: 12px; z-index: 9999;">
-  Loading device info...
-</div>
-
-<script>
-  const w = window.innerWidth;
-  const h = window.innerHeight;
-  const ratio = h / w;
-
-  if (w === 393 && ratio > 1.66 && ratio < 1.69) {
-    document.body.classList.add('device-393-r1-67');
-  }
-
-  const info = `
-    Width: ${w}px<br>
-    Height: ${h}px<br>
-    Ratio: ${ratio.toFixed(3)}<br>
-    Classes: ${document.body.className}
-  `;
-  document.getElementById('deviceInfo').innerHTML = info;
 </script>
 
 </body>
