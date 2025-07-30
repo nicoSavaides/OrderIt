@@ -461,21 +461,21 @@
     [
       {
         "prompt": "Average Temperature",
-        "items": ["Honolulu", "Mexico City", "Dubai", "Toronto"],
+        "items": ["Dubai", "Toronto", "Honolulu", "Mexico City"],
         "correctOrder": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
         "topLabel": "↑ Hottest",
         "bottomLabel": "↓ Coldest"
       },
       {
         "prompt": "Population",
-        "items": ["Honolulu", "Mexico City", "Dubai", "Toronto"],
+        "items": ["Dubai", "Toronto", "Honolulu", "Mexico City"],
         "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Elevation",
-        "items": ["Honolulu", "Mexico City", "Dubai", "Toronto"],
+        "items": ["Dubai", "Toronto", "Honolulu", "Mexico City"],
         "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
         "topLabel": "↑ Highest Elevation",
         "bottomLabel": "↓ Lowest Elevation"
@@ -558,21 +558,21 @@
     [
       {
         "prompt": "Eye Color Frequency",
-        "items": ["Blue", "Green", "Brown", "Gray"],
+        "items": ["Green", "Brown", "Gray", "Blue"],
         "correctOrder": ["Brown", "Blue", "Green", "Gray"],
         "topLabel": "↑ Most Common",
         "bottomLabel": "↓ Least Common"
       },
       {
         "prompt": "Car Color Frequency",
-        "items": ["Blue", "Green", "Brown", "Gray"],
+        "items": ["Green", "Brown", "Gray", "Blue"],
         "correctOrder": ["Gray", "Blue", "Green", "Brown"],
         "topLabel": "↑ Most Popular",
         "bottomLabel": "↓ Least Popular"
       },
       {
         "prompt": "Flag Color Frequency",
-        "items": ["Blue", "Green", "Brown", "Gray"],
+        "items": ["Green", "Brown", "Gray", "Blue"],
         "correctOrder": ["Blue", "Green", "Brown", "Gray"],
         "topLabel": "↑ Most Common",
         "bottomLabel": "↓ Least Common"
@@ -582,22 +582,22 @@
     [
       {
         "prompt": "Population",
-        "items": ["Illinois", "California", "Wyoming", "Hawaii"],
-        "correctOrder": ["California", "Illinois", "Hawaii", "Wyoming"],
+        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
+        "correctOrder": ["Florida", "Illinois", "Arizona", "Hawaii"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Land Area",
-        "items": ["Illinois", "California", "Wyoming", "Hawaii"],
-        "correctOrder": ["California", "Wyoming", "Illinois", "Hawaii"],
+        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
+        "correctOrder": ["Arizona", "Florida", "Illinois", "Hawaii"],
         "topLabel": "↑ Largest Area",
         "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Date of Statehood",
-        "items": ["Illinois", "California", "Wyoming", "Hawaii"],
-        "correctOrder": ["Hawaii", "Wyoming", "California", "Illinois"],
+        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
+        "correctOrder": ["Hawaii", "Arizona", "Florida", "Illinois"],
         "topLabel": "↑ Most Recent",
         "bottomLabel": "↓ Earliest"
       }
@@ -678,21 +678,21 @@
     [
       {
         "prompt": "Land Area",
-        "items": ["Asia", "Africa", "South America", "Europe"],
+        "items": ["South America", "Asia", "Europe", "Africa"],
         "correctOrder": ["Asia", "Africa", "South America", "Europe"],
         "topLabel": "↑ Largest Area",
         "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Number of Countries",
-        "items": ["Asia", "Africa", "South America", "Europe"],
+        "items": ["South America", "Asia", "Europe", "Africa"],
         "correctOrder": ["Africa", "Asia", "Europe", "South America"],
         "topLabel": "↑ Most Countries",
         "bottomLabel": "↓ Fewest Countries"
       },
       {
         "prompt": "Population",
-        "items": ["Asia", "Africa", "South America", "Europe"],
+        "items": ["South America", "Asia", "Europe", "Africa"],
         "correctOrder": ["Asia", "Africa", "Europe", "South America"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
