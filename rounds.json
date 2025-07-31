@@ -260,7 +260,7 @@
       {
         "prompt": "Intelligence",
         "items": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
-        "correctOrder": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
+        "correctOrder": ["Labrador Retriever", "Great Dane", "Greyhound", "Bulldog"],
         "topLabel": "↑ Most Intelligent",
         "bottomLabel": "↓ Least Intelligent"
       } 
