@@ -520,7 +520,6 @@
         "correctOrder": ["Mein Kampf", "The Shining", "Animal Farm", "The Hobbit"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
-
       },
       {
         "prompt": "Page Count",
