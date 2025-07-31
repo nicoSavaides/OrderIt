@@ -483,6 +483,30 @@
     ], 
 
     [
+      {            
+        "prompt": "Number of Films in Series",
+        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
+        "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Lord of the Rings", "Top Gun"],
+        "topLabel": "↑ Most Films",
+        "bottomLabel": "↓ Fewest Films"
+      },
+      {
+        "prompt": "Total Oscars Won",
+        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
+        "correctOrder": ["Lord of the Rings", "Top Gun", "Pirates of the Caribbean", "Fast & Furious"],
+        "topLabel": "↑ Most Won",
+        "bottomLabel": "↓ Least Won"
+      },
+      {
+        "prompt": "Total Gross",
+        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
+        "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Lord of the Rings", "Top Gun"],
+        "topLabel": "↑ Highest Gross",
+        "bottomLabel": "↓ Lowest Gross"
+      }
+    ], 
+
+    [
       {
         "prompt": "Year Published",
         "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
@@ -504,30 +528,6 @@
         "correctOrder": ["Mein Kampf", "The Shining", "The Hobbit", "Animal Farm"],
         "topLabel": "↑ Longest Book",
         "bottomLabel": "↓ Shortest Book"
-      }
-    ], 
-
-    [
-      {            
-        "prompt": "Number of Films in Series",
-        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
-        "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Lord of the Rings", "Top Gun"],
-        "topLabel": "↑ Most Films",
-        "bottomLabel": "↓ Fewest Films"
-      },
-      {
-        "prompt": "Total Oscars Won",
-        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
-        "correctOrder": ["Lord of the Rings", "Top Gun", "Pirates of the Caribbean", "Fast & Furious"],
-        "topLabel": "↑ Most Won",
-        "bottomLabel": "↓ Least Won"
-      },
-      {
-        "prompt": "Total Gross",
-        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
-        "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Lord of the Rings", "Top Gun"],
-        "topLabel": "↑ Highest Gross",
-        "bottomLabel": "↓ Lowest Gross"
       }
     ], 
 
