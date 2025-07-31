@@ -534,24 +534,24 @@
     [
       {
         "prompt": "Top Speed",
-        "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
-        "correctOrder": ["Cheetah", "Horse", "Rabbit", "Panda"],
+        "items": ["Cow", "Horse", "Puma", "Kangaroo"],
+        "correctOrder": ["Puma", "Horse", "Kangaroo", "Cow"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
       },
       {
-        "prompt": "Weight",
-        "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
-        "correctOrder": ["Horse", "Panda", "Cheetah", "Rabbit"],
-        "topLabel": "↑ Heaviest",
-        "bottomLabel": "↓ Lightest"
+        "prompt": "Baby Name (A–Z)",
+        "items": ["Cow", "Horse", "Puma", "Kangaroo"],
+        "correctOrder": ["Cow", "Puma", "Horse", "Kangaroo"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
       },
       {
-        "prompt": "Lifespan",
-        "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
-        "correctOrder": ["Horse", "Panda", "Cheetah", "Rabbit"],
-        "topLabel": "↑ Longest Lifespan",
-        "bottomLabel": "↓ Shortest Lifespan"
+        "prompt": "Max Jumping Height",
+        "items": ["Cow", "Horse", "Puma", "Kangaroo"],
+        "correctOrder": ["Puma", "Kangaroo", "Horse", "Cow"],
+        "topLabel": "↑ Highest Jumper",
+        "bottomLabel": "↓ Lowest Jumper"
       }
     ],
 
@@ -725,25 +725,25 @@
 
     [
       {
-        "prompt": "Popularity as Pet",
-        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
-        "correctOrder": ["Dog", "Cat", "Goldfish", "Hamster"],
-        "topLabel": "↑ Most Popular",
-        "bottomLabel": "↓ Least Popular"
+        "prompt": "Wingspan",
+        "items": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"],
+        "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
+        "topLabel": "↑ Largest Wingspan",
+        "bottomLabel": "↓ Smallest Wingspan"
       },
       {
-        "prompt": "Number of Teeth",
-        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
-        "correctOrder": ["Dog", "Cat", "Hamster", "Goldfish"],
-        "topLabel": "↑ Most Teeth",
-        "bottomLabel": "↓ Fewest Teeth"
+        "prompt": "Weight",
+        "items": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"],
+        "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
       },
       {
-        "prompt": "Average Lifespan",
-        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
-        "correctOrder": ["Cat", "Dog", "Goldfish", "Hamster"],
-        "topLabel": "↑ Longest Lifespan",
-        "bottomLabel": "↓ Shortest Lifespan"
+        "prompt": "Top Speed",
+        "items": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"],
+        "correctOrder": ["Peregrine Falcon", "Bald Eagle", "Common Pigeon", "Great Horned Owl"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       }
     ],
 
@@ -965,23 +965,23 @@
 
     [
       {
-        "prompt": "Wingspan",
-        "items": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"],
-        "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
-        "topLabel": "↑ Largest Wingspan",
-        "bottomLabel": "↓ Smallest Wingspan"
+        "prompt": "Number of Teeth",
+        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
+        "correctOrder": ["Great White Shark", "Alligator", "Human", "Snapping Turtle"],
+        "topLabel": "↑ Most Teeth",
+        "bottomLabel": "↓ Fewest Teeth"
       },
       {
-        "prompt": "Weight",
-        "items": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"],
-        "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
-        "topLabel": "↑ Heaviest",
-        "bottomLabel": "↓ Lightest"
+        "prompt": "Bite Force",
+        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
+        "correctOrder": ["Great White Shark", "Alligator", "Snapping Turtle", "Human"],
+        "topLabel": "↑ Strongest Bite",
+        "bottomLabel": "↓ Weakest Bite"
       },
       {
         "prompt": "Top Speed",
-        "items": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"],
-        "correctOrder": ["Peregrine Falcon", "Bald Eagle", "Common Pigeon", "Great Horned Owl"],
+        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
+        "correctOrder": ["Great White Shark", "Human", "Alligator", "Snapping Turtle"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
       }
@@ -1158,27 +1158,27 @@
 
     [
       {
-        "prompt": "Number of Teeth",
-        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
-        "correctOrder": ["Great White Shark", "Alligator", "Human", "Snapping Turtle"],
-        "topLabel": "↑ Most Teeth",
-        "bottomLabel": "↓ Fewest Teeth"
-      },
-      {
-        "prompt": "Bite Force",
-        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
-        "correctOrder": ["Great White Shark", "Alligator", "Snapping Turtle", "Human"],
-        "topLabel": "↑ Strongest Bite",
-        "bottomLabel": "↓ Weakest Bite"
-      },
-      {
         "prompt": "Top Speed",
-        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
-        "correctOrder": ["Great White Shark", "Human", "Alligator", "Snapping Turtle"],
+        "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
+        "correctOrder": ["Cheetah", "Horse", "Rabbit", "Panda"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Weight",
+        "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
+        "correctOrder": ["Horse", "Panda", "Cheetah", "Rabbit"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
+        "correctOrder": ["Horse", "Panda", "Cheetah", "Rabbit"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
       }
-    ], 
+    ],
 
     [
       {
@@ -2000,6 +2000,30 @@
     [
       {
         "prompt": "Year",
+        "items": ["Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash", "Indian Ocean Tsunami"],
+        "correctOrder": ["Indian Ocean Tsunami", "Chernobyl Disaster", "Hindenburg Crash", "Titanic Sinking"],
+        "topLabel": "↑ Most Recent",
+        "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Death Toll",
+        "items": ["Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash", "Indian Ocean Tsunami"],
+        "correctOrder": ["Indian Ocean Tsunami", "Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash"],
+        "topLabel": "↑ Most Deaths",
+        "bottomLabel": "↓ Fewest Deaths"
+      },
+      {
+        "prompt": "Wikipedia Views",
+        "items": ["Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash", "Indian Ocean Tsunami"],
+        "correctOrder": ["Chernobyl Disaster", "Titanic Sinking", "Indian Ocean Tsunami", "Hindenburg Crash"],
+        "topLabel": "↑ Most Viewed",
+        "bottomLabel": "↓ Least Viewed"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year",
         "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
         "correctOrder": ["The Avengers", "Mean Girls", "The Lion King", "Home Alone"],
         "topLabel": "↑ Most Recent",
@@ -2018,6 +2042,30 @@
         "correctOrder": ["The Avengers", "Home Alone", "Mean Girls", "The Lion King"],
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Popularity as Pet",
+        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
+        "correctOrder": ["Dog", "Cat", "Goldfish", "Hamster"],
+        "topLabel": "↑ Most Popular",
+        "bottomLabel": "↓ Least Popular"
+      },
+      {
+        "prompt": "Number of Teeth",
+        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
+        "correctOrder": ["Dog", "Cat", "Hamster", "Goldfish"],
+        "topLabel": "↑ Most Teeth",
+        "bottomLabel": "↓ Fewest Teeth"
+      },
+      {
+        "prompt": "Average Lifespan",
+        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
+        "correctOrder": ["Cat", "Dog", "Goldfish", "Hamster"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
       }
     ],
 
@@ -2116,7 +2164,7 @@
         "bottomLabel": "↓ Fewest Episodes"
       }
     ]
-
+  
 
   ]
 }
