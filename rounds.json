@@ -485,21 +485,21 @@
     [
       {            
         "prompt": "Number of Films in Series",
-        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
+        "items": ["Lord of the Rings", "Fast & Furious", "Top Gun", "Pirates of the Caribbean"],
         "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Lord of the Rings", "Top Gun"],
         "topLabel": "↑ Most Films",
         "bottomLabel": "↓ Fewest Films"
       },
       {
         "prompt": "Total Oscars Won",
-        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
+        "items": ["Lord of the Rings", "Fast & Furious", "Top Gun", "Pirates of the Caribbean"],
         "correctOrder": ["Lord of the Rings", "Top Gun", "Pirates of the Caribbean", "Fast & Furious"],
         "topLabel": "↑ Most Won",
         "bottomLabel": "↓ Least Won"
       },
       {
         "prompt": "Total Gross",
-        "items": ["Fast & Furious", "Top Gun", "Lord of the Rings", "Pirates of the Caribbean"],
+        "items": ["Lord of the Rings", "Fast & Furious", "Top Gun", "Pirates of the Caribbean"],
         "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Lord of the Rings", "Top Gun"],
         "topLabel": "↑ Highest Gross",
         "bottomLabel": "↓ Lowest Gross"
