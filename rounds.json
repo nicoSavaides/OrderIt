@@ -1089,7 +1089,7 @@
         "items": ["Dancing Queen", "I Want to Hold Your Hand", "Smells Like Teen Spirit", "Thriller"],
         "correctOrder": ["Smells Like Teen Spirit", "Thriller", "Dancing Queen", "I Want to Hold Your Hand"],
         "topLabel": "↑ Newest Release",
-        "bottomLabel": "↓ Oldest Release"
+        "bottomLabel": "↓ Earliest Release"
       },
       {
         "prompt": "Artist Name (A-Z)",
