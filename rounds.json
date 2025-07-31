@@ -1566,18 +1566,18 @@
 
     [
       {
-        "prompt": "Artist Name (A-Z)",
-        "items": ["Free Bird", "Imagine", "Shake It Off", "Billie Jean"],
-        "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
-      },
-      {
         "prompt": "Year Released",
         "items": ["Free Bird", "Imagine", "Shake It Off", "Billie Jean"],
         "correctOrder": ["Shake It Off", "Billie Jean", "Free Bird", "Imagine"],
         "topLabel": "↑ Most Recent",
         "bottomLabel": "↓ Earliest"
+      },
+      {
+        "prompt": "Artist Name (A-Z)",
+        "items": ["Free Bird", "Imagine", "Shake It Off", "Billie Jean"],
+        "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Song Length",
