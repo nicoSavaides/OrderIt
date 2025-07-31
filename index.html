@@ -462,11 +462,23 @@
 
 
        
+        /* General button styling */
       button {
-        font-size: 1.8rem; /* 1.5rem */
+        font-size: 1.8rem;
         padding: 12px 25px;
-        margin-top: 4px;  /* 47 */
+        margin-top: 0; /* Reset to neutral */
       }
+
+      /* Play button — add your desired top margin */
+      #playButton {
+        margin-top: 60px;
+      }
+
+      /* Submit button — restore its original spacing */
+      #submitButton {
+        margin-top: 47px;  /* Or whatever value looked right before */
+      }
+
 
 
       .draggable-item {
