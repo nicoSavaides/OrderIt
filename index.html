@@ -360,10 +360,11 @@
 
 .round-list {
   display: flex;
+  flex-direction: column; /* ⬅️ Stack top-to-bottom */
   gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center; /* This centers the items horizontally */
+  align-items: center; /* Center items horizontally */
 }
+
 
 
 .round-item {
@@ -371,7 +372,6 @@
   padding: 8px 12px;
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-
 }
 
 
@@ -731,10 +731,10 @@
 
 
 #playedRoundsAnswers {
-  margin-top: 22px;
+  margin-top: 8px;
   display: flex;
   flex-direction: column;
-  gap: 26px !important; 
+  gap: 8px !important; 
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
@@ -755,20 +755,23 @@
 
 .round-list {
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center; /* This centers the items horizontally */
+  flex-direction: column; /* ⬅️ Stack top-to-bottom */
+  gap: 5px;
+  align-items: center; /* Center items horizontally */
 }
+
 
 
 .round-item {
-  font-size: .9em;
+  font-size: 1.1em !important;
   background: #D8D8D8;
-  padding: 8px 12px;
+  padding: 4px 8px;
   border-radius: 6px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-
 }
+
+
+
 
 
 
@@ -1192,10 +1195,11 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
 .round-list {
   display: flex;
+  flex-direction: column; /* ⬅️ Stack top-to-bottom */
   gap: 10px;
-  flex-wrap: wrap;
-  justify-content: center; /* This centers the items horizontally */
+  align-items: center; /* Center items horizontally */
 }
+
 
 
 .round-item {
@@ -1922,11 +1926,8 @@ function showAnswers() {
           fontSize = '1.14rem';
         }
 
-        const promptIsAlphabetical = round.prompt?.includes("A-Z") || round.prompt?.includes("A–Z");
+        const displayOrder = [...round.correctOrder];
 
-        const displayOrder = promptIsAlphabetical
-          ? [...round.correctOrder]
-          : [...round.correctOrder].reverse();
 
 
           displayOrder.forEach((item) => {
