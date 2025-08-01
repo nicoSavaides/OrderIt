@@ -76,18 +76,18 @@
 
     [
       {
-        "prompt": "Year Founded",
-        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
-        "correctOrder": ["Costco", "Walmart", "McDonald’s", "Walgreens"],
-        "topLabel": "↑ Most Recent", 
-        "bottomLabel": "↓ Earliest"
-      },
-      {
         "prompt": "Number of Locations",
         "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
         "correctOrder": ["McDonald’s", "Walmart", "Walgreens", "Costco"],
         "topLabel": "↑ Most Locations",
         "bottomLabel": "↓ Fewest Locations"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
+        "correctOrder": ["Costco", "Walmart", "McDonald’s", "Walgreens"],
+        "topLabel": "↑ Most Recent", 
+        "bottomLabel": "↓ Earliest"
       },
       {
         "prompt": "Valuation",
