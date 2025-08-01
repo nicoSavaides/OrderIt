@@ -204,14 +204,14 @@
       },
       {
         "prompt": "Box Office Gross",
-        "items": ["The Shawshank Redemption", "Avatar", "The Godfather", "Grease"],
+        "items": ["The Godfather", "Grease", "The Shawshank Redemption", "Avatar"],
         "correctOrder": ["Avatar", "Grease", "The Godfather", "The Shawshank Redemption"],
         "topLabel": "↑ Highest Gross",
         "bottomLabel": "↓ Lowest Gross"
       },
       {
         "prompt": "Runtime",
-        "items": ["The Shawshank Redemption", "Avatar", "The Godfather", "Grease"],
+        "items": ["Avatar", "Grease", "The Godfather", "The Shawshank Redemption"],
         "correctOrder": ["The Godfather", "Avatar", "The Shawshank Redemption", "Grease"],
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
@@ -228,14 +228,14 @@
       },
       {
         "prompt": "Population",
-        "items": ["Switzerland", "Australia", "Germany", "Colombia"],
+        "items": ["Australia", "Colombia", "Germany", "Switzerland"],
         "correctOrder": ["Germany", "Colombia", "Australia", "Switzerland"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "GDP",
-        "items": ["Switzerland", "Australia", "Germany", "Colombia"],
+        "items": ["Germany", "Colombia", "Australia", "Switzerland"],
         "correctOrder": ["Germany", "Australia", "Switzerland", "Colombia"],
         "topLabel": "↑ Highest GDP",
         "bottomLabel": "↓ Lowest GDP"
@@ -252,14 +252,14 @@
       },
       {
         "prompt": "Speed",
-        "items": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
+        "items": ["Great Dane", "Labrador Retriever",  "Greyhound", "Bulldog"],
         "correctOrder": ["Greyhound", "Great Dane", "Labrador Retriever", "Bulldog"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
       },
       {
         "prompt": "Intelligence",
-        "items": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
+        "items": ["Greyhound", "Great Dane", "Labrador Retriever", "Bulldog"],
         "correctOrder": ["Labrador Retriever", "Great Dane", "Greyhound", "Bulldog"],
         "topLabel": "↑ Most Intelligent",
         "bottomLabel": "↓ Least Intelligent"
@@ -276,14 +276,14 @@
       },
       {
         "prompt": "Emmys Won",
-        "items": ["Game of Thrones", "The Brady Bunch", "I Love Lucy", "The Big Bang Theory"],
+        "items": ["I Love Lucy", "The Brady Bunch", "The Big Bang Theory", "Game of Thrones"],
         "correctOrder": ["Game of Thrones", "The Big Bang Theory", "I Love Lucy", "The Brady Bunch"],
         "topLabel": "↑ Most Emmys",
         "bottomLabel": "↓ Fewest Emmys"
       },
       {
         "prompt": "Number of Episodes",
-        "items": ["Game of Thrones", "The Brady Bunch", "I Love Lucy", "The Big Bang Theory"],
+        "items": ["Game of Thrones", "The Big Bang Theory", "I Love Lucy", "The Brady Bunch"],
         "correctOrder": ["The Big Bang Theory", "I Love Lucy", "The Brady Bunch", "Game of Thrones"],
         "topLabel": "↑ Most Episodes",
         "bottomLabel": "↓ Fewest Episodes"
