@@ -132,14 +132,14 @@
       },
       {
         "prompt": "Number of Band Members",
-        "items": ["Earth, Wind & Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
+        "items": ["The Beatles", "Fleetwood Mac", "Earth, Wind & Fire", "Nirvana"],
         "correctOrder": ["Earth, Wind & Fire", "Fleetwood Mac", "The Beatles", "Nirvana"],
         "topLabel": "↑ Most Members",
         "bottomLabel": "↓ Fewest Members"
       },
       {
         "prompt": "Number of Albums",
-        "items": ["Earth, Wind & Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
+        "items": ["Earth, Wind & Fire", "Fleetwood Mac", "The Beatles", "Nirvana"],
         "correctOrder": ["Earth, Wind & Fire", "Fleetwood Mac", "The Beatles", "Nirvana"],
         "topLabel": "↑ Most Albums",
         "bottomLabel": "↓ Fewest Albums"
@@ -156,7 +156,7 @@
       },
       {
         "prompt": "Size",
-        "items": ["Jupiter", "Uranus", "Earth", "Mars"],
+        "items": ["Uranus", "Jupiter", "Mars", "Earth"],
         "correctOrder": ["Jupiter", "Uranus", "Earth", "Mars"],
         "topLabel": "↑ Largest",
         "bottomLabel": "↓ Smallest"
@@ -180,14 +180,14 @@
       },
       {
         "prompt": "Year Invented",
-        "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
+        "items": ["Football (American)", "Baseball", "Tennis", "Golf"],
         "correctOrder": ["Tennis", "Golf", "Baseball", "Football (American)"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "U.S. TV Viewership",
-        "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
+        "items": ["Tennis", "Golf", "Baseball", "Football (American)"],
         "correctOrder": ["Football (American)", "Baseball", "Golf", "Tennis"],
         "topLabel": "↑ Most Watched",
         "bottomLabel": "↓ Least Watched"
