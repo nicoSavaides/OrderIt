@@ -12,14 +12,14 @@
       },
       {
         "prompt": "Top Speed",
-        "items": ["Kangaroo", "Elephant", "Lion", "Giraffe"],
+        "items": ["Elephant", "Giraffe", "Lion", "Kangaroo"],
         "correctOrder": ["Lion", "Kangaroo", "Giraffe", "Elephant"],
         "topLabel": "↑ Fastest", 
         "bottomLabel": "↓ Slowest"
       },
       {
         "prompt": "Lifespan",
-        "items": ["Kangaroo", "Elephant", "Lion", "Giraffe"],
+        "items": ["Lion", "Kangaroo", "Giraffe", "Elephant"],
         "correctOrder": ["Elephant", "Giraffe", "Lion", "Kangaroo"],
         "topLabel": "↑ Longest Lifespan", 
         "bottomLabel": "↓ Shortest Lifespan"
@@ -60,14 +60,14 @@
       },
       {
         "prompt": "Height",
-        "items": ["Kim Kardashian", "Robert Downey Jr","Taylor Swift", "Beyoncé"],
+        "items": ["Robert Downey Jr", "Kim Kardashian", "Beyoncé", "Taylor Swift"],
         "correctOrder": ["Taylor Swift", "Robert Downey Jr", "Beyoncé", "Kim Kardashian"],
         "topLabel": "↑ Tallest", 
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Net Worth",
-        "items": ["Kim Kardashian", "Robert Downey Jr","Taylor Swift", "Beyoncé"],
+        "items": ["Taylor Swift", "Robert Downey Jr", "Beyoncé", "Kim Kardashian"],
         "correctOrder": ["Kim Kardashian", "Taylor Swift", "Beyoncé", "Robert Downey Jr"],
         "topLabel": "↑ Highest Net Worth", 
         "bottomLabel": "↓ Lowest Net Worth"
@@ -84,14 +84,14 @@
       },
       {
         "prompt": "Year Founded",
-        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
+        "items": ["McDonald’s", "Walmart", "Walgreens", "Costco"],
         "correctOrder": ["Walgreens", "McDonald’s", "Walmart", "Costco"],
         "topLabel": "↑ Earliest", 
         "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Valuation",
-        "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
+        "items": ["Walgreens", "McDonald’s", "Walmart", "Costco"],
         "correctOrder": ["Walmart", "Costco", "McDonald’s", "Walgreens"],
         "topLabel": "↑ Highest Valuation",
         "bottomLabel": "↓ Lowest Valuation"
@@ -108,14 +108,14 @@
       },
       {
         "prompt": "Year Built",
-        "items": ["Big Ben", "Colosseum", "Empire State Building", "Leaning Tower of Pisa"],
+        "items": ["Empire State Building", "Big Ben", "Leaning Tower of Pisa", "Colosseum"],
         "correctOrder": ["Colosseum", "Leaning Tower of Pisa", "Big Ben", "Empire State Building"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Length of Construction",
-        "items": ["Big Ben", "Colosseum", "Empire State Building", "Leaning Tower of Pisa"],
+        "items": ["Colosseum", "Leaning Tower of Pisa", "Big Ben", "Empire State Building"],
         "correctOrder": ["Empire State Building", "Colosseum", "Big Ben", "Leaning Tower of Pisa"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
