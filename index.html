@@ -20,6 +20,10 @@
 
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 
 
@@ -1515,7 +1519,8 @@ const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(
 const localToday = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 const msPerDay = 1000 * 60 * 60 * 24;
 const dayIndex = Math.floor((localToday - LAUNCH_DATE) / msPerDay);
-const currentDay = dayIndex;
+let currentDay = dayIndex;
+
 
 
 
@@ -1845,26 +1850,32 @@ if (window.innerWidth <= 480) {
 
 const itemList = document.getElementById('itemList');
 
-if (itemList.children.length === 0) {
-  itemList.innerHTML = ''; // Just in case
 
-  const fontSize = getFontSizeForItems(items);
 
-  items.forEach(item => {
-    const li = document.createElement('li');
-    li.textContent = item;
-    li.setAttribute('draggable', true);
-    li.classList.add('draggable-item');
-    li.style.fontSize = fontSize;
 
-    itemList.appendChild(li); // ✅ only here, inside the loop
-  });
 
-  makeItemsDraggable(); // Only needed once, after creating the tiles
-}
+itemList.innerHTML = ''; // Always clear the list for a new round
+
+const fontSize = getFontSizeForItems(items);
+
+items.forEach(item => {
+  const li = document.createElement('li');
+  li.textContent = item;
+  li.setAttribute('draggable', true);
+  li.classList.add('draggable-item');
+  li.style.fontSize = fontSize;
+  itemList.appendChild(li);
+});
+
+makeItemsDraggable(); // Rebinds events for new tiles
+
+
+
+
+
 
 updateStrikes();
-currentCorrectOrder = items;
+let currentCorrectOrder = items;
 
 }
 
@@ -2465,6 +2476,20 @@ window.onload = () => {
   const h = window.innerHeight;
   const ratio = +(h / w).toFixed(3);
 
+
+const now = new Date();
+const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+const lastPlayedDate = localStorage.getItem('lastPlayedDate');
+
+if (lastPlayedDate === todayString) {
+  showScreen('playedTodayScreen', false);
+  history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
+  return;
+}
+
+
+
+
   console.log("Screen Width:", w, "Height:", h, "Ratio:", ratio);
 
   // === Main ratio-based fallback classes
@@ -2507,20 +2532,6 @@ if (w === 393 && ratio > 1.77 && ratio < 1.79) {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   const storedMaxRoundDay = parseInt(localStorage.getItem('maxRoundReachedDay'));
   if (isNaN(storedMaxRoundDay) || storedMaxRoundDay !== currentDay) {
     localStorage.removeItem('maxRoundReachedToday');
@@ -2529,7 +2540,7 @@ if (w === 393 && ratio > 1.77 && ratio < 1.79) {
   }
 
 
-  const lastPlayedDate = localStorage.getItem('lastPlayedDate');
+  
   const savedDay = parseInt(localStorage.getItem('currentDay'));
   const savedRound = parseInt(localStorage.getItem('currentRound'));
   const savedStrikes = parseInt(localStorage.getItem('currentStrikes'));
@@ -2539,27 +2550,38 @@ if (w === 393 && ratio > 1.77 && ratio < 1.79) {
     .then(data => {
       rounds = data.days[currentDay];
 
-      // ✅ Check if already played today
-      if (lastPlayedDate === todayString) {
-        // ❗ If game is finished, go to already played screen immediately
-        if (isNaN(savedRound) || savedRound >= rounds.length) {
-          showScreen('playedTodayScreen', false);
-          history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
-          return;
-        }
 
-        // ✅ Otherwise resume game in progress
-        if (!isNaN(savedDay) && savedDay === currentDay && !isNaN(savedRound) && !isNaN(savedStrikes)) {
-          window.currentDay = savedDay;
-          window.currentRound = savedRound;
-          strikes = savedStrikes;
-          loadRound();
-          updateStrikes();
-          showScreen('gameScreen', false);
-          history.replaceState({ screenId: 'gameScreen' }, '', '#gameScreen');
-          return;
-        }
-      }
+
+      
+
+      if (!isNaN(savedDay) && savedDay === currentDay && !isNaN(savedRound) && !isNaN(savedStrikes)) {
+  if (savedRound >= rounds.length) {
+    // Game already completed today
+    showScreen('playedTodayScreen', false);
+    history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
+  } else {
+    // Game still in progress
+
+
+    currentDay = savedDay;
+    currentRound = savedRound;
+    strikes = savedStrikes;
+
+
+
+    loadRound();
+    updateStrikes();
+    showScreen('gameScreen', false);
+    history.replaceState({ screenId: 'gameScreen' }, '', '#gameScreen');
+  }
+  return;
+}
+
+
+
+
+
+
 
       // ✅ If no saved progress or new day, show welcome
       window.currentDay = currentDay;
@@ -2568,11 +2590,17 @@ if (w === 393 && ratio > 1.77 && ratio < 1.79) {
       showScreen('welcomeScreen', false);
       history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
     })
+
+
+
+    
     .catch(error => {
       console.error("Failed to load rounds data:", error);
       showScreen('welcomeScreen', false);
       history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
     });
+
+    
 
     const urlParams = new URLSearchParams(window.location.search);
   const emojiScore = urlParams.get('score');
@@ -2584,6 +2612,7 @@ if (w === 393 && ratio > 1.77 && ratio < 1.79) {
       display.classList.remove('hidden');
     }
   }
+
 
 
 
@@ -2630,16 +2659,6 @@ if (shareScoreButton) {
 
 };
 
-  </script>
-
-
-
 </script>
-
-</body>
-</html>
-
-
-
 </body>
 </html>
