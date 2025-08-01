@@ -2471,28 +2471,75 @@ function alreadyPlayedToday() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 window.onload = () => {
+  // ✅ Attach listener for the already played screen share button
+  const shareScoreButton = document.getElementById('shareScoreButton');
+  if (shareScoreButton) {
+    shareScoreButton.addEventListener('click', () => {
+      const savedScore = JSON.parse(localStorage.getItem("orderItScore"));
+
+      if (!savedScore) {
+        alert("No score found to share.");
+        return;
+      }
+
+      const emojiScore = getEmojiScore(savedScore.roundsCompleted);
+      const roundNumber = dayIndex + 1;
+
+      const baseUrl = window.location.origin + window.location.pathname;
+      const shareUrl = baseUrl;
+
+      let text = `Order It  #${roundNumber}\n${emojiScore}`;
+      if (savedScore.roundsCompleted === 3) {
+        text += `\nwith ${savedScore.strikes} ${savedScore.strikes === 1 ? 'mistake made' : 'mistakes made'}`;
+      }
+
+      const shareText = `${text}\n${shareUrl}`;
+      const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+
+      if (navigator.share && isMobile) {
+        navigator.share({
+          title: 'Order It',
+          text: shareText
+        }).catch(console.error);
+      } else {
+        navigator.clipboard.writeText(shareText)
+          .then(() => alert("Score copied to clipboard!"))
+          .catch(() => alert("Copy failed, here is your score:\n" + shareText));
+      }
+    });
+  }
+
+  // ✅ Everything else below this point stays the same
   const w = window.innerWidth;
   const h = window.innerHeight;
   const ratio = +(h / w).toFixed(3);
 
+  const now = new Date();
+  const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  const lastPlayedDate = localStorage.getItem('lastPlayedDate');
 
-const now = new Date();
-const todayString = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
-const lastPlayedDate = localStorage.getItem('lastPlayedDate');
-
-if (lastPlayedDate === todayString) {
-  showScreen('playedTodayScreen', false);
-  history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
-  return;
-}
-
-
-
+  if (lastPlayedDate === todayString) {
+    showScreen('playedTodayScreen', false);
+    history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
+    return;
+  }
 
   console.log("Screen Width:", w, "Height:", h, "Ratio:", ratio);
 
-  // === Main ratio-based fallback classes
   if (ratio > 2.95 && ratio < 3.05) {
     document.body.classList.add('ratio-3');
   } else if (ratio > 1.85 && ratio < 1.95) {
@@ -2503,34 +2550,20 @@ if (lastPlayedDate === todayString) {
     document.body.classList.add('ratio-1-8');
   }
 
-
-
-
-// iPhone 15 Pro (393px wide, ratio ~1.677)
-if (w === 393 && ratio > 1.66 && ratio < 1.69) {
-  document.body.classList.add('device-393-r1-67'); // unique class for iPhone 15 Pro
-}
-
-// iPhone SE-style (393px wide, ratio ~1.78)
-if (w === 393 && ratio > 1.77 && ratio < 1.79) {
-  document.body.classList.add('device-393-r1-78'); // separate class for SE-style screen
-}
-
+  if (w === 393 && ratio > 1.66 && ratio < 1.69) {
+    document.body.classList.add('device-393-r1-67');
+  }
+  if (w === 393 && ratio > 1.77 && ratio < 1.79) {
+    document.body.classList.add('device-393-r1-78');
+  }
   if (w === 402 && ratio > 2.95 && ratio < 3.05) {
-    document.body.classList.add('device-402-r3'); // iPhone 15 Pro Max
+    document.body.classList.add('device-402-r3');
   }
-
   if (w === 411 && ratio > 1.89 && ratio < 1.91) {
-    document.body.classList.add('device-411-r1-9'); // Pixel 8 Pro
+    document.body.classList.add('device-411-r1-9');
   }
-
-
 
   console.log(document.body.classList);
-
-
-
-
 
   const storedMaxRoundDay = parseInt(localStorage.getItem('maxRoundReachedDay'));
   if (isNaN(storedMaxRoundDay) || storedMaxRoundDay !== currentDay) {
@@ -2539,8 +2572,6 @@ if (w === 393 && ratio > 1.77 && ratio < 1.79) {
     localStorage.setItem('maxRoundReachedDay', currentDay);
   }
 
-
-  
   const savedDay = parseInt(localStorage.getItem('currentDay'));
   const savedRound = parseInt(localStorage.getItem('currentRound'));
   const savedStrikes = parseInt(localStorage.getItem('currentStrikes'));
@@ -2550,61 +2581,37 @@ if (w === 393 && ratio > 1.77 && ratio < 1.79) {
     .then(data => {
       rounds = data.days[currentDay];
 
-
-
-      
-
       if (!isNaN(savedDay) && savedDay === currentDay && !isNaN(savedRound) && !isNaN(savedStrikes)) {
-  if (savedRound >= rounds.length) {
-    // Game already completed today
-    showScreen('playedTodayScreen', false);
-    history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
-  } else {
-    // Game still in progress
+        if (savedRound >= rounds.length) {
+          showScreen('playedTodayScreen', false);
+          history.replaceState({ screenId: 'playedTodayScreen' }, '', '#playedTodayScreen');
+        } else {
+          currentDay = savedDay;
+          currentRound = savedRound;
+          strikes = savedStrikes;
 
+          loadRound();
+          updateStrikes();
+          showScreen('gameScreen', false);
+          history.replaceState({ screenId: 'gameScreen' }, '', '#gameScreen');
+        }
+        return;
+      }
 
-    currentDay = savedDay;
-    currentRound = savedRound;
-    strikes = savedStrikes;
-
-
-
-    loadRound();
-    updateStrikes();
-    showScreen('gameScreen', false);
-    history.replaceState({ screenId: 'gameScreen' }, '', '#gameScreen');
-  }
-  return;
-}
-
-
-
-
-
-
-
-      // ✅ If no saved progress or new day, show welcome
       window.currentDay = currentDay;
       window.currentRound = 0;
       strikes = 0;
       showScreen('welcomeScreen', false);
       history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
     })
-
-
-
-    
     .catch(error => {
       console.error("Failed to load rounds data:", error);
       showScreen('welcomeScreen', false);
       history.replaceState({ screenId: 'welcomeScreen' }, '', '#welcomeScreen');
     });
 
-    
-
-    const urlParams = new URLSearchParams(window.location.search);
+  const urlParams = new URLSearchParams(window.location.search);
   const emojiScore = urlParams.get('score');
-
   if (emojiScore) {
     const display = document.getElementById('sharedScoreDisplay');
     if (display) {
@@ -2612,52 +2619,8 @@ if (w === 393 && ratio > 1.77 && ratio < 1.79) {
       display.classList.remove('hidden');
     }
   }
-
-
-
-
-  
-  const shareScoreButton = document.getElementById('shareScoreButton');
-
-if (shareScoreButton) {
-  shareScoreButton.addEventListener('click', () => {
-    const savedScore = JSON.parse(localStorage.getItem("orderItScore"));
-
-    if (!savedScore) {
-      alert("No score found to share.");
-      return;
-    }
-
-    const emojiScore = getEmojiScore(savedScore.roundsCompleted);
-    const roundNumber = dayIndex + 1;
-
-    const baseUrl = window.location.origin + window.location.pathname;
-    const shareUrl = baseUrl;
-
-    let text = `Order It  #${roundNumber}\n${emojiScore}`;
-    if (savedScore.roundsCompleted === 3) {
-      text += `\nwith ${savedScore.strikes} ${savedScore.strikes === 1 ? 'mistake made' : 'mistakes made'}`;
-    }
-
-    const shareText = `${text}\n${shareUrl}`;
-    const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
-
-    if (navigator.share && isMobile) {
-      navigator.share({
-        title: 'Order It',
-        text: shareText
-      }).catch(console.error);
-    } else {
-      navigator.clipboard.writeText(shareText)
-        .then(() => alert("Score copied to clipboard!"))
-        .catch(() => alert("Copy failed, here is your score:\n" + shareText));
-    }
-  });
-}
-
-
-
 };
+
 
 </script>
 </body>
