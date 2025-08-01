@@ -36,14 +36,14 @@
       },
       {
         "prompt": "Land Area",
-        "items": ["Georgia", "Wyoming", "Texas", "Vermont"],
+        "items": ["Texas", "Georgia", "Vermont", "Wyoming"],
         "correctOrder": ["Texas", "Wyoming", "Georgia", "Vermont"],
         "topLabel": "↑ Largest Area",
         "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Date of Statehood",
-        "items": ["Georgia", "Wyoming", "Texas", "Vermont"],
+        "items": ["Texas", "Wyoming", "Georgia", "Vermont"],
         "correctOrder": ["Georgia", "Vermont", "Texas", "Wyoming"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
@@ -109,9 +109,9 @@
       {
         "prompt": "Year Built",
         "items": ["Big Ben", "Colosseum", "Empire State Building", "Leaning Tower of Pisa"],
-        "correctOrder": ["Empire State Building", "Big Ben", "Leaning Tower of Pisa", "Colosseum"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Colosseum", "Leaning Tower of Pisa", "Big Ben", "Empire State Building"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Length of Construction",
@@ -126,9 +126,9 @@
       {
       "prompt": "Year Formed",
       "items": ["Earth, Wind & Fire", "The Beatles", "Nirvana", "Fleetwood Mac"],
-      "correctOrder": ["Nirvana", "Earth, Wind & Fire", "Fleetwood Mac", "The Beatles"],
-      "topLabel": "↑ Most Recent",
-      "bottomLabel": "↓ Earliest"
+      "correctOrder": ["The Beatles", "Fleetwood Mac", "Earth, Wind & Fire", "Nirvana"],
+      "topLabel": "↑ Earliest",
+      "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Number of Band Members",
@@ -181,9 +181,9 @@
       {
         "prompt": "Year Invented",
         "items": ["Baseball", "Tennis", "Football (American)", "Golf"],
-        "correctOrder": ["Football (American)", "Baseball", "Golf", "Tennis"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Tennis", "Golf", "Baseball", "Football (American)"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "U.S. TV Viewership",
@@ -198,9 +198,9 @@
       {
         "prompt": "Year",
         "items": ["The Shawshank Redemption", "Avatar", "The Godfather", "Grease"],
-        "correctOrder": ["Avatar", "The Shawshank Redemption", "Grease", "The Godfather"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["The Godfather", "Grease", "The Shawshank Redemption", "Avatar"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Box Office Gross",
@@ -270,9 +270,9 @@
       {
         "prompt": "Year Premiered",
         "items": ["Game of Thrones", "The Brady Bunch", "I Love Lucy", "The Big Bang Theory"],
-        "correctOrder": [ "Game of Thrones", "The Big Bang Theory", "The Brady Bunch", "I Love Lucy"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["I Love Lucy", "The Brady Bunch", "The Big Bang Theory", "Game of Thrones"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Emmys Won",
