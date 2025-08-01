@@ -44,9 +44,9 @@
       {
         "prompt": "Date of Statehood",
         "items": ["Georgia", "Wyoming", "Texas", "Vermont"],
-        "correctOrder": ["Wyoming", "Texas", "Vermont", "Georgia"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Georgia", "Vermont", "Texas", "Wyoming"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       }
     ],
 
@@ -85,9 +85,9 @@
       {
         "prompt": "Year Founded",
         "items": ["Walgreens", "Costco", "Walmart", "McDonald’s"],
-        "correctOrder": ["Costco", "Walmart", "McDonald’s", "Walgreens"],
-        "topLabel": "↑ Most Recent", 
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Walgreens", "McDonald’s", "Walmart", "Costco"],
+        "topLabel": "↑ Earliest", 
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Valuation",
