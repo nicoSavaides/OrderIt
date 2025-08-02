@@ -1622,14 +1622,14 @@
       },
       {
         "prompt": "Population",
-        "items": ["Sydney", "Moscow", "Cairo", "Denver"],
+        "items": ["Cairo", "Sydney", "Denver", "Moscow"],
         "correctOrder": ["Cairo", "Moscow", "Sydney", "Denver"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Elevation",
-        "items": ["Sydney", "Moscow", "Cairo", "Denver"],
+        "items": ["Cairo", "Moscow", "Sydney", "Denver"],
         "correctOrder": ["Denver", "Moscow", "Sydney", "Cairo"],
         "topLabel": "↑ Highest Elevation",
         "bottomLabel": "↓ Lowest Elevation"
@@ -1646,14 +1646,14 @@
       },
       {
         "prompt": "Age When Retired from Show",
-        "items": ["Johnny Carson", "Oprah Winfrey", "Jay Leno", "Alex Trebek"],
+        "items": ["Jay Leno", "Johnny Carson", "Alex Trebek", "Oprah Winfrey"],
         "correctOrder": ["Alex Trebek", "Johnny Carson", "Jay Leno", "Oprah Winfrey"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Number of Years as Host",
-        "items": ["Johnny Carson", "Oprah Winfrey", "Jay Leno", "Alex Trebek"],
+        "items": ["Alex Trebek", "Johnny Carson", "Jay Leno", "Oprah Winfrey"],
         "correctOrder": ["Alex Trebek", "Johnny Carson", "Oprah Winfrey", "Jay Leno"],
         "topLabel": "↑ Most Years",
         "bottomLabel": "↓ Fewest Years"
@@ -1670,14 +1670,14 @@
       },
       {
         "prompt": "Year Built",
-        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
-        "correctOrder": ["Golden Gate Bridge", "The White House", "Taj Mahal", "Stonehenge"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
+        "correctOrder": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Length of Construction",
-        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
+        "items": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
         "correctOrder": ["Golden Gate Bridge", "The White House", "Taj Mahal", "Stonehenge"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
@@ -1694,14 +1694,14 @@
       },
       {
         "prompt": "World Series Won",
-        "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
+        "items": ["Giants", "Dodgers", "Yankees", "Red Sox"],
         "correctOrder": ["Yankees", "Red Sox", "Giants", "Dodgers"],
         "topLabel": "↑ Most Titles",
         "bottomLabel": "↓ Fewest Titles"
       },
       {
         "prompt": "Team Valuation",
-        "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
+        "items": ["Yankees", "Red Sox", "Giants", "Dodgers"],
         "correctOrder": ["Yankees", "Dodgers", "Red Sox", "Giants"],
         "topLabel": "↑ Highest Valuation",
         "bottomLabel": "↓ Lowest Valuation"
@@ -1712,13 +1712,13 @@
       {
         "prompt": "Year of Initial Release",
         "items": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
-        "correctOrder": ["Apple Watch", "iPhone", "BlackBerry", "Game Boy"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Game Boy", "BlackBerry", "iPhone", "Apple Watch"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Number of Physical Buttons",
-        "items": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
+        "items": ["Game Boy", "BlackBerry", "iPhone", "Apple Watch"],
         "correctOrder": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
         "topLabel": "↑ Most Buttons",
         "bottomLabel": "↓ Fewest Buttons"
@@ -1742,14 +1742,14 @@
       },
       {
         "prompt": "Super Bowl Performance Year",
-        "items": ["Michael Jackson", "Prince", "Paul McCartney", "Kendrick Lamar"],
-        "correctOrder": ["Kendrick Lamar", "Prince", "Paul McCartney", "Michael Jackson"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["Paul McCartney", "Michael Jackson", "Kendrick Lamar", "Prince"],
+        "correctOrder": ["Michael Jackson", "Paul McCartney", "Prince", "Kendrick Lamar"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Monthly Spotify Listeners",
-        "items": ["Michael Jackson", "Prince", "Paul McCartney", "Kendrick Lamar"],
+        "items": ["Michael Jackson", "Paul McCartney", "Prince", "Kendrick Lamar"],
         "correctOrder": ["Kendrick Lamar", "Michael Jackson", "Prince", "Paul McCartney"],
         "topLabel": "↑ Most Listeners",
         "bottomLabel": "↓ Fewest Listeners"
@@ -1766,14 +1766,14 @@
       },
       {
         "prompt": "Intelligence",
-        "items": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"],
+        "items": ["Golden Retriever", "Border Collie", "Beagle", "Chihuahua"],
         "correctOrder": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
         "topLabel": "↑ Most Intelligent",
         "bottomLabel": "↓ Least Intelligent"
       },
       {
         "prompt": "Top Speed",
-        "items": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"],
+        "items": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
         "correctOrder": ["Border Collie", "Golden Retriever", "Beagle", "Chihuahua"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
@@ -1790,14 +1790,14 @@
       },
       {
         "prompt": "Calories",
-        "items": ["Pop-Tart", "Oreo Cookie", "Slim Jim", "Hot Pocket"],
+        "items": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
         "correctOrder": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
         "topLabel": "↑ Most Calories",
         "bottomLabel": "↓ Fewest Calories"
       },
       {
         "prompt": "Sugar Content",
-        "items": ["Pop-Tart", "Oreo Cookie", "Slim Jim", "Hot Pocket"],
+        "items": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
         "correctOrder": ["Pop-Tart", "Oreo Cookie", "Hot Pocket", "Slim Jim"],
         "topLabel": "↑ Most Sugar",
         "bottomLabel": "↓ Least Sugar"
@@ -1814,14 +1814,14 @@
       },
       {
         "prompt": "Population",
-        "items": ["Greece", "Canada", "China", "Japan"],
+        "items": ["Canada", "China", "Japan", "Greece"],
         "correctOrder": ["China", "Japan", "Canada", "Greece"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "GDP",
-        "items": ["Greece", "Canada", "China", "Japan"],
+        "items": ["China", "Japan", "Canada", "Greece"],
         "correctOrder": ["China", "Japan", "Canada", "Greece"],
         "topLabel": "↑ Highest GDP",
         "bottomLabel": "↓ Lowest GDP"
@@ -1838,14 +1838,14 @@
       },
       {
         "prompt": "Year Invented",
-        "items": ["Lawn Mower", "Fireworks", "Elevator", "Chainsaw"],
-        "correctOrder": ["Elevator", "Lawn Mower", "Chainsaw", "Fireworks"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
+        "correctOrder": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Injuries per Year (US)",
-        "items": ["Lawn Mower", "Fireworks", "Elevator", "Chainsaw"],
+        "items": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
         "correctOrder": ["Lawn Mower", "Chainsaw", "Elevator", "Fireworks"],
         "topLabel": "↑ Most Injuries",
         "bottomLabel": "↓ Fewest Injuries"
@@ -1862,14 +1862,14 @@
       },
       {
         "prompt": "Number of Oscars Hosted",
-        "items": ["Chris Rock", "Jerry Seinfeld", "Seth MacFarlane", "Billy Crystal"],
+        "items": ["Billy Crystal", "Jerry Seinfeld", "Chris Rock", "Seth MacFarlane"],
         "correctOrder": ["Billy Crystal", "Chris Rock", "Seth MacFarlane", "Jerry Seinfeld"],
         "topLabel": "↑ Most Hosted",
         "bottomLabel": "↓ Fewest Hosted"
       },
       {
         "prompt": "Net Worth",
-        "items": ["Chris Rock", "Jerry Seinfeld", "Seth MacFarlane", "Billy Crystal"],
+        "items": ["Billy Crystal", "Chris Rock", "Seth MacFarlane", "Jerry Seinfeld"],
         "correctOrder": ["Jerry Seinfeld", "Seth MacFarlane", "Chris Rock", "Billy Crystal"],
         "topLabel": "↑ Highest Net Worth",
         "bottomLabel": "↓ Lowest Net Worth"
