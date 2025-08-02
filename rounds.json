@@ -438,20 +438,20 @@
       {
         "prompt": "Year Released",
         "items": ["Bohemian Rhapsody", "Don't Stop Believin'", "Yesterday", "Sweet Caroline"],
-        "correctOrder": ["Don't Stop Believin'", "Bohemian Rhapsody", "Sweet Caroline", "Yesterday"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Yesterday", "Sweet Caroline", "Bohemian Rhapsody", "Don't Stop Believin'"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Artist Name (A-Z)",
-        "items": ["Bohemian Rhapsody", "Don't Stop Believin'", "Yesterday", "Sweet Caroline"],
+        "items": ["Yesterday", "Sweet Caroline", "Bohemian Rhapsody", "Don't Stop Believin'"],
         "correctOrder": ["Yesterday", "Don't Stop Believin'", "Sweet Caroline", "Bohemian Rhapsody"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Song Length",
-        "items": ["Bohemian Rhapsody", "Don't Stop Believin'", "Yesterday", "Sweet Caroline"],
+        "items": ["Yesterday", "Don't Stop Believin'", "Sweet Caroline", "Bohemian Rhapsody"],
         "correctOrder": ["Bohemian Rhapsody", "Don't Stop Believin'", "Sweet Caroline", "Yesterday"],
         "topLabel": "↑ Longest Song",
         "bottomLabel": "↓ Shortest Song"
@@ -468,14 +468,14 @@
       },
       {
         "prompt": "Population",
-        "items": ["Dubai", "Toronto", "Honolulu", "Mexico City"],
+        "items": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
         "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Elevation",
-        "items": ["Dubai", "Toronto", "Honolulu", "Mexico City"],
+        "items": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
         "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
         "topLabel": "↑ Highest Elevation",
         "bottomLabel": "↓ Lowest Elevation"
@@ -492,14 +492,14 @@
       },
       {
         "prompt": "Total Oscars Won",
-        "items": ["Lord of the Rings", "Fast & Furious", "Top Gun", "Pirates of the Caribbean"],
+        "items": ["Fast & Furious", "Pirates of the Caribbean", "Lord of the Rings", "Top Gun"],
         "correctOrder": ["Lord of the Rings", "Top Gun", "Pirates of the Caribbean", "Fast & Furious"],
         "topLabel": "↑ Most Won",
         "bottomLabel": "↓ Least Won"
       },
       {
         "prompt": "Total Gross",
-        "items": ["Lord of the Rings", "Fast & Furious", "Top Gun", "Pirates of the Caribbean"],
+        "items": ["Lord of the Rings", "Top Gun", "Pirates of the Caribbean", "Fast & Furious"],
         "correctOrder": ["Fast & Furious", "Pirates of the Caribbean", "Lord of the Rings", "Top Gun"],
         "topLabel": "↑ Highest Gross",
         "bottomLabel": "↓ Lowest Gross"
@@ -510,20 +510,20 @@
       {
         "prompt": "Year Published",
         "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
-        "correctOrder": ["The Shining", "Animal Farm", "The Hobbit", "Mein Kampf"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Mein Kampf", "The Hobbit", "Animal Farm", "The Shining"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Author Last Name (A-Z)",
-        "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
+        "items": ["Mein Kampf", "The Hobbit", "Animal Farm", "The Shining"],
         "correctOrder": ["Mein Kampf", "The Shining", "Animal Farm", "The Hobbit"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Page Count",
-        "items": ["Animal Farm", "The Hobbit", "The Shining", "Mein Kampf"],
+        "items": ["Mein Kampf", "The Shining", "Animal Farm", "The Hobbit"],
         "correctOrder": ["Mein Kampf", "The Shining", "The Hobbit", "Animal Farm"],
         "topLabel": "↑ Longest Book",
         "bottomLabel": "↓ Shortest Book"
@@ -540,14 +540,14 @@
       },
       {
         "prompt": "Baby Name (A–Z)",
-        "items": ["Cow", "Horse", "Puma", "Kangaroo"],
+        "items": ["Puma", "Horse", "Kangaroo", "Cow"],
         "correctOrder": ["Cow", "Puma", "Horse", "Kangaroo"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Max Jumping Height",
-        "items": ["Cow", "Horse", "Puma", "Kangaroo"],
+        "items": ["Cow", "Puma", "Horse", "Kangaroo"],
         "correctOrder": ["Puma", "Kangaroo", "Horse", "Cow"],
         "topLabel": "↑ Highest Jumper",
         "bottomLabel": "↓ Lowest Jumper"
