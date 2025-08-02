@@ -1423,22 +1423,22 @@
     [
       {
         "prompt": "Debut Year as Pro",
-        "items": ["Tom Brady", "Stephen Curry", "Lionel Messi", "Serena Williams"],
-        "correctOrder": ["Serena Williams", "Tom Brady", "Lionel Messi", "Stephen Curry"],
+        "items": ["Serena Williams", "Lionel Messi", "Stephen Curry", "Joe Montana"],
+        "correctOrder": ["Joe Montana", "Serena Williams", "Lionel Messi", "Stephen Curry"],
         "topLabel": "↑ Earliest Debut",
         "bottomLabel": "↓ Most Recent Debut"
       },
       {
         "prompt": "Social Media Followers",
-        "items": ["Tom Brady", "Stephen Curry", "Lionel Messi", "Serena Williams"],
-        "correctOrder": ["Lionel Messi", "Stephen Curry", "Serena Williams", "Tom Brady"],
+        "items": ["Joe Montana", "Serena Williams", "Lionel Messi", "Stephen Curry"],
+        "correctOrder": ["Lionel Messi", "Stephen Curry", "Serena Williams", "Joe Montana"],
         "topLabel": "↑ Most Followers",
         "bottomLabel": "↓ Fewest Followers"
       },
       {
         "prompt": "Total Career Earnings",
-        "items": ["Tom Brady", "Stephen Curry", "Lionel Messi", "Serena Williams"],
-        "correctOrder": ["Lionel Messi", "Tom Brady", "Stephen Curry", "Serena Williams"],
+        "items": ["Lionel Messi", "Stephen Curry", "Serena Williams", "Joe Montana"],
+        "correctOrder": ["Lionel Messi", "Stephen Curry", "Serena Williams", "Joe Montana"],
         "topLabel": "↑ Most Earnings",
         "bottomLabel": "↓ Least Earnings"
       }
