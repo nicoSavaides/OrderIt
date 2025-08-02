@@ -390,20 +390,20 @@
       {
         "prompt": "Debut Year as Pro",
         "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
-        "correctOrder": ["Simone Biles", "Cristiano Ronaldo", "Tiger Woods", "Mike Tyson"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Social Media Followers",
-        "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
+        "items": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"],
         "correctOrder": ["Cristiano Ronaldo", "Mike Tyson", "Simone Biles", "Tiger Woods"],
         "topLabel": "↑ Most Followers",
         "bottomLabel": "↓ Fewest Followers"
       },
       {
         "prompt": "Total Career Earnings",
-        "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
+        "items": ["Cristiano Ronaldo", "Mike Tyson", "Simone Biles", "Tiger Woods"],
         "correctOrder": ["Tiger Woods", "Cristiano Ronaldo", "Mike Tyson", "Simone Biles"],
         "topLabel": "↑ Most Earnings",
         "bottomLabel": "↓ Least Earnings"
@@ -420,14 +420,14 @@
       },
       {
         "prompt": "Calories",
-        "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
+        "items": ["Russet Potato", "Avocado", "Banana", "Egg"],
         "correctOrder": ["Avocado", "Russet Potato", "Banana", "Egg"],
         "topLabel": "↑ Most Calories",
         "bottomLabel": "↓ Fewest Calories"
       },
       {
         "prompt": "Protein",
-        "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
+        "items": ["Avocado", "Russet Potato", "Banana", "Egg"],
         "correctOrder": ["Egg", "Russet Potato", "Avocado", "Banana"],
         "topLabel": "↑ Most Protein",
         "bottomLabel": "↓ Least Protein"
