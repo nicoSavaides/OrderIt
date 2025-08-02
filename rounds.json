@@ -1285,17 +1285,17 @@
       },
       {
         "prompt": "Population",
-        "items": ["New York", "Ohio", "Alaska", "Idaho"],
+        "items": ["Alaska", "Idaho", "New York", "Ohio"],
         "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Date of Statehood",
-        "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["Alaska", "Idaho", "Ohio", "New York"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["New York", "Ohio", "Idaho", "Alaska"],
+        "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       }
     ],
 
@@ -1309,14 +1309,14 @@
       },
       {
         "prompt": "Acceptance Rate",
-        "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
+        "items": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
         "correctOrder": ["Stanford", "Yale", "UC Berkeley", "Oxford"],
         "topLabel": "↑ Most Selective",
         "bottomLabel": "↓ Least Selective"
       },
       {
         "prompt": "Number of Students",
-        "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
+        "items": ["Stanford", "Yale", "UC Berkeley", "Oxford"],
         "correctOrder": ["UC Berkeley", "Oxford", "Stanford", "Yale"],
         "topLabel": "↑ Most Students",
         "bottomLabel": "↓ Fewest Students"
@@ -1333,14 +1333,14 @@
       },
       {
         "prompt": "Year Released",
-        "items": ["Coca-Cola", "Gatorade", "Coke Zero", "Mountain Dew"],
+        "items": ["Mountain Dew", "Coca-Cola", "Gatorade", "Coke Zero"],
         "correctOrder": ["Coke Zero", "Gatorade", "Mountain Dew", "Coca-Cola"],
         "topLabel": "↑ Newest",
         "bottomLabel": "↓ Oldest"
       },
       {
         "prompt": "Sales",
-        "items": ["Coca-Cola", "Gatorade", "Coke Zero", "Mountain Dew"],
+        "items": ["Coke Zero", "Gatorade", "Mountain Dew", "Coca-Cola"],
         "correctOrder": ["Coca-Cola", "Mountain Dew", "Gatorade", "Coke Zero"],
         "topLabel": "↑ Most Sold",
         "bottomLabel": "↓ Least Sold"
@@ -1350,22 +1350,22 @@
     [
       {
         "prompt": "Weight",
-        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Elephant", "Rhino", "Hippo", "Polar bear"],
+        "items": ["Rhino", "Hippo", "Polar Bear", "Elephant"],
+        "correctOrder": ["Elephant", "Rhino", "Hippo", "Polar Bear"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Population Size",
-        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Elephant", "Hippo", "Polar bear", "Rhino"],
+        "items": ["Elephant", "Rhino", "Hippo", "Polar Bear"],
+        "correctOrder": ["Elephant", "Hippo", "Polar Bear", "Rhino"],
         "topLabel": "↑ Most Abundant",
         "bottomLabel": "↓ Rarest"
       },
       {
         "prompt": "Gestation Period",
-        "items": ["Rhino", "Hippo", "Polar bear", "Elephant"],
-        "correctOrder": ["Elephant", "Rhino", "Hippo", "Polar bear"],
+        "items": ["Elephant", "Hippo", "Polar Bear", "Rhino"],
+        "correctOrder": ["Elephant", "Rhino", "Hippo", "Polar Bear"],
         "topLabel": "↑ Longest Pregnancy",
         "bottomLabel": "↓ Shortest Pregnancy"
       }
@@ -1381,7 +1381,7 @@
       },
       {
         "prompt": "Population",
-        "items": ["Spain", "USA", "Egypt", "India"],
+        "items": ["USA", "India", "Egypt", "Spain"],
         "correctOrder": ["India", "USA", "Egypt", "Spain"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
@@ -1389,7 +1389,7 @@
       },
       {
         "prompt": "GDP",
-        "items": ["Spain", "USA", "Egypt", "India"],
+        "items": ["India", "USA", "Egypt", "Spain"],
         "correctOrder": ["USA", "India", "Spain", "Egypt"],
         "topLabel": "↑ Largest GDP",
         "bottomLabel": "↓ Smallest GDP"
