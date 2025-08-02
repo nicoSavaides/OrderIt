@@ -1886,14 +1886,14 @@
       },
       {
         "prompt": "Standing Height",
-        "items": ["Turkey", "Ostrich", "Emperor Penguin", "Quail"],
+        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
         "correctOrder": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Eggs Laid per Year",
-        "items": ["Turkey", "Ostrich", "Emperor Penguin", "Quail"],
+        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
         "correctOrder": ["Quail", "Turkey", "Ostrich", "Emperor Penguin"],
         "topLabel": "↑ Most Eggs",
         "bottomLabel": "↓ Fewest Eggs"
@@ -1910,14 +1910,14 @@
       },
       {
         "prompt": "Year Formed",
-        "items": ["Coldplay", "Simon & Garfunkel", "Green Day", "NSYNC"],
-        "correctOrder": ["Coldplay", "NSYNC", "Green Day", "Simon & Garfunkel"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["NSYNC", "Coldplay", "Green Day", "Simon & Garfunkel"],
+        "correctOrder": ["Simon & Garfunkel", "Green Day", "NSYNC", "Coldplay"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Number of Albums",
-        "items": ["Coldplay", "Simon & Garfunkel", "Green Day", "NSYNC"],
+        "items": ["Simon & Garfunkel", "Green Day", "NSYNC", "Coldplay"],
         "correctOrder": ["Green Day", "Coldplay", "Simon & Garfunkel", "NSYNC"],
         "topLabel": "↑ Most Albums",
         "bottomLabel": "↓ Fewest Albums"
@@ -1934,14 +1934,14 @@
       },
       {
         "prompt": "Population",
-        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
+        "items": ["Rio de Janeiro", "Istanbul", "Chicago", "Oslo"],
         "correctOrder": ["Istanbul", "Rio de Janeiro", "Chicago", "Oslo"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Distance from Equator",
-        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
+        "items": ["Istanbul", "Rio de Janeiro", "Chicago", "Oslo"],
         "correctOrder": ["Oslo", "Chicago", "Istanbul", "Rio de Janeiro"],
         "topLabel": "↑ Farthest from Equator",
         "bottomLabel": "↓ Closest to Equator"
@@ -1958,14 +1958,14 @@
       },
       {
         "prompt": "Net Worth",
-        "items": ["Zendaya", "Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet"],
+        "items": ["Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet",  "Zendaya"],
         "correctOrder": ["Dwayne Johnson", "Jennifer Aniston", "Zendaya", "Timothée Chalamet"],
         "topLabel": "↑ Highest Net Worth",
         "bottomLabel": "↓ Lowest Net Worth"
       },
       {
         "prompt": "Number of Instagram Followers",
-        "items": ["Zendaya", "Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet"],
+        "items": ["Dwayne Johnson", "Jennifer Aniston", "Zendaya", "Timothée Chalamet"],
         "correctOrder": ["Dwayne Johnson", "Zendaya", "Jennifer Aniston",  "Timothée Chalamet"],
         "topLabel": "↑ Most Followers",
         "bottomLabel": "↓ Fewest Followers"
@@ -1982,14 +1982,14 @@
       },
       {
         "prompt": "Year Founded",
-        "items": ["Nike", "Blockbuster", "Macy's", "Gucci"],
-        "correctOrder": ["Blockbuster", "Nike", "Gucci", "Macy's"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["Nike", "Macy's", "Gucci", "Blockbuster"],
+        "correctOrder": ["Macy's", "Gucci", "Nike", "Blockbuster"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Annual Revenue",
-        "items": ["Nike", "Blockbuster", "Macy's", "Gucci"],
+        "items": ["Macy's", "Gucci", "Nike", "Blockbuster"],
         "correctOrder": ["Nike", "Macy's", "Gucci", "Blockbuster"],
         "topLabel": "↑ Highest Revenue",
         "bottomLabel": "↓ Lowest Revenue"
@@ -2000,20 +2000,20 @@
       {
         "prompt": "Year",
         "items": ["Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash", "Indian Ocean Tsunami"],
-        "correctOrder": ["Indian Ocean Tsunami", "Chernobyl Disaster", "Hindenburg Crash", "Titanic Sinking"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Titanic Sinking", "Hindenburg Crash", "Chernobyl Disaster", "Indian Ocean Tsunami"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Death Toll",
-        "items": ["Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash", "Indian Ocean Tsunami"],
+        "items": ["Titanic Sinking", "Hindenburg Crash", "Chernobyl Disaster", "Indian Ocean Tsunami"],
         "correctOrder": ["Indian Ocean Tsunami", "Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash"],
         "topLabel": "↑ Most Deaths",
         "bottomLabel": "↓ Fewest Deaths"
       },
       {
         "prompt": "Wikipedia Views",
-        "items": ["Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash", "Indian Ocean Tsunami"],
+        "items": ["Indian Ocean Tsunami", "Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash"],
         "correctOrder": ["Chernobyl Disaster", "Titanic Sinking", "Indian Ocean Tsunami", "Hindenburg Crash"],
         "topLabel": "↑ Most Viewed",
         "bottomLabel": "↓ Least Viewed"
@@ -2023,10 +2023,10 @@
     [
       {
         "prompt": "Year",
-        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
-        "correctOrder": ["The Avengers", "Mean Girls", "The Lion King", "Home Alone"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["Mean Girls", "The Avengers", "Home Alone", "The Lion King"],
+        "correctOrder": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Box Office Gross",
@@ -2037,7 +2037,7 @@
       },
       {
         "prompt": "Runtime",
-        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
+        "items": ["The Avengers", "The Lion King", "Home Alone", "Mean Girls"],
         "correctOrder": ["The Avengers", "Home Alone", "Mean Girls", "The Lion King"],
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
@@ -2054,14 +2054,14 @@
       },
       {
         "prompt": "Number of Teeth",
-        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
+        "items": ["Dog", "Cat", "Goldfish", "Hamster"],
         "correctOrder": ["Dog", "Cat", "Hamster", "Goldfish"],
         "topLabel": "↑ Most Teeth",
         "bottomLabel": "↓ Fewest Teeth"
       },
       {
         "prompt": "Average Lifespan",
-        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
+        "items": ["Dog", "Cat", "Hamster", "Goldfish"],
         "correctOrder": ["Cat", "Dog", "Goldfish", "Hamster"],
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
@@ -2078,14 +2078,14 @@
       },
       {
         "prompt": "NBA Championships",
-        "items": ["Bulls", "Heat", "Warriors", "Mavericks"],
+        "items": ["Warriors", "Bulls", "Mavericks", "Heat"],
         "correctOrder": ["Warriors", "Bulls", "Heat", "Mavericks"],
         "topLabel": "↑ Most Titles",
         "bottomLabel": "↓ Fewest Titles"
       },
       {
         "prompt": "Team Valuation",
-        "items": ["Bulls", "Heat", "Warriors", "Mavericks"],
+        "items": ["Warriors", "Bulls", "Heat", "Mavericks"],
         "correctOrder": ["Warriors", "Bulls", "Mavericks", "Heat"],
         "topLabel": "↑ Highest Valuation",
         "bottomLabel": "↓ Lowest Valuation"
@@ -2096,20 +2096,20 @@
       {
         "prompt": "Year Released",
         "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
-        "correctOrder": ["Hips Don’t Lie", "Creep", "We Will Rock You", "Stairway to Heaven"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Artist Name (A-Z)",
-        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
-        "correctOrder": [ "Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie" ],
+        "items": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
+        "correctOrder": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Song Length",
-        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
+        "items": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
         "correctOrder": ["Stairway to Heaven", "Creep", "Hips Don’t Lie", "We Will Rock You"],
         "topLabel": "↑ Longest Song",
         "bottomLabel": "↓ Shortest Song"
@@ -2126,7 +2126,7 @@
       },
       {
         "prompt": "Population",
-        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "items": ["Nevada", "Florida", "Ohio", "Rhode Island"],
         "correctOrder": ["Florida", "Ohio", "Nevada", "Rhode Island"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
@@ -2134,9 +2134,9 @@
       {
         "prompt": "Date of Statehood",
         "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
-        "correctOrder": ["Nevada", "Florida", "Ohio", "Rhode Island"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Rhode Island", "Ohio", "Florida", "Nevada"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       }
     ],
 
@@ -2150,14 +2150,14 @@
       },
       {
         "prompt": "Year Premiered",
-        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
-        "correctOrder": ["The Voice", "Shark Tank", "American Idol", "Judge Judy"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["Shark Tank", "The Voice", "American Idol", "Judge Judy"],
+        "correctOrder": ["Judge Judy", "American Idol", "Shark Tank", "The Voice"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Number of Episodes",
-        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
+        "items": ["Judge Judy", "American Idol", "Shark Tank", "The Voice"],
         "correctOrder": ["Judge Judy", "American Idol", "The Voice", "Shark Tank"],
         "topLabel": "↑ Most Episodes",
         "bottomLabel": "↓ Fewest Episodes"
