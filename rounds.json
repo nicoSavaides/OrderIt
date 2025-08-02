@@ -138,11 +138,11 @@
         "bottomLabel": "↓ Fewest Members"
       },
       {
-        "prompt": "Number of Albums",
+        "prompt": "Total Records Sold",
         "items": ["Earth, Wind & Fire", "Fleetwood Mac", "The Beatles", "Nirvana"],
-        "correctOrder": ["Earth, Wind & Fire", "Fleetwood Mac", "The Beatles", "Nirvana"],
-        "topLabel": "↑ Most Albums",
-        "bottomLabel": "↓ Fewest Albums"
+        "correctOrder": ["The Beatles", "Fleetwood Mac", "Earth, Wind & Fire", "Nirvana"],
+        "topLabel": "↑ Best-Selling Artist",
+        "bottomLabel": "↓ Least-Selling Artist"
       }
     ], 
 
