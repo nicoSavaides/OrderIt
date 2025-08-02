@@ -972,14 +972,14 @@
       },
       {
         "prompt": "Bite Force",
-        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
+        "items": ["Great White Shark", "Alligator", "Human", "Snapping Turtle"],
         "correctOrder": ["Great White Shark", "Alligator", "Snapping Turtle", "Human"],
         "topLabel": "↑ Strongest Bite",
         "bottomLabel": "↓ Weakest Bite"
       },
       {
         "prompt": "Top Speed",
-        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
+        "items": ["Great White Shark", "Alligator", "Snapping Turtle", "Human"],
         "correctOrder": ["Great White Shark", "Human", "Alligator", "Snapping Turtle"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
@@ -990,20 +990,20 @@
       {
         "prompt": "Year Published",
         "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
-        "correctOrder": ["Twilight", "1984", "The Great Gatsby", "A Tale of Two Cities"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Author Last Name (A-Z)",
-        "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
+        "items": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"],
         "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Page Count",
-        "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
+        "items": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"],
         "correctOrder": ["Twilight", "A Tale of Two Cities", "1984", "The Great Gatsby"],
         "topLabel": "↑ Longest Book",
         "bottomLabel": "↓ Shortest Book"
@@ -1020,14 +1020,14 @@
       },
       {
         "prompt": "Trunk Width",
-        "items": ["Palm Tree", "Redwood Tree", "Cherry Blossom", "Oak Tree"],
+        "items": ["Redwood Tree", "Oak Tree", "Palm Tree", "Cherry Blossom"],
         "correctOrder": ["Redwood Tree", "Oak Tree", "Cherry Blossom", "Palm Tree"],
         "topLabel": "↑ Thickest Trunk",
         "bottomLabel": "↓ Thinnest Trunk"
       },
       {
         "prompt": "Lifespan",
-        "items": ["Palm Tree", "Redwood Tree", "Cherry Blossom", "Oak Tree"],
+        "items": ["Redwood Tree", "Oak Tree", "Cherry Blossom", "Palm Tree"],
         "correctOrder": ["Redwood Tree", "Oak Tree", "Palm Tree", "Cherry Blossom"],
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
@@ -1043,18 +1043,18 @@
         "bottomLabel": "↓ Youngest"
       },
       {
-        "prompt": "Super Bowl Performance Year",
-        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
-        "correctOrder": ["Lady Gaga", "Katy Perry", "Madonna", "Janet Jackson"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
-      },
-      {
         "prompt": "Monthly Spotify Listeners",
-        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
+        "items": ["Madonna", "Janet Jackson", "Katy Perry", "Lady Gaga"],
         "correctOrder": ["Lady Gaga", "Katy Perry", "Madonna", "Janet Jackson"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Super Bowl Performance Year",
+        "items": ["Lady Gaga", "Katy Perry", "Madonna", "Janet Jackson"],
+        "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       }
     ],
 
@@ -1068,14 +1068,14 @@
       },
       {
         "prompt": "Population",
-        "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
+        "items": ["Brazil", "Mexico", "Iraq", "United Kingdom"],
         "correctOrder": ["Brazil", "Mexico", "United Kingdom", "Iraq"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "GDP",
-        "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
+        "items": ["Brazil", "Mexico", "United Kingdom", "Iraq"],
         "correctOrder": ["United Kingdom", "Brazil", "Mexico", "Iraq"],
         "topLabel": "↑ Highest GDP",
         "bottomLabel": "↓ Lowest GDP"
@@ -1086,20 +1086,20 @@
       {
         "prompt": "Year Released",
         "items": ["Dancing Queen", "I Want to Hold Your Hand", "Smells Like Teen Spirit", "Thriller"],
-        "correctOrder": ["Smells Like Teen Spirit", "Thriller", "Dancing Queen", "I Want to Hold Your Hand"],
-        "topLabel": "↑ Newest Release",
-        "bottomLabel": "↓ Earliest Release"
+        "correctOrder": ["I Want to Hold Your Hand", "Dancing Queen", "Thriller", "Smells Like Teen Spirit"],
+        "topLabel": "↑ Earliest Release",
+        "bottomLabel": "↓ Newest Release"
       },
       {
         "prompt": "Artist Name (A-Z)",
-        "items": ["Dancing Queen", "I Want to Hold Your Hand", "Smells Like Teen Spirit", "Thriller"],
+        "items": ["I Want to Hold Your Hand", "Dancing Queen", "Thriller", "Smells Like Teen Spirit"],
         "correctOrder": ["Dancing Queen", "I Want to Hold Your Hand", "Thriller", "Smells Like Teen Spirit"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Song Length",
-        "items": ["Dancing Queen", "I Want to Hold Your Hand", "Smells Like Teen Spirit", "Thriller"],
+        "items": ["Dancing Queen", "I Want to Hold Your Hand", "Thriller", "Smells Like Teen Spirit"],
         "correctOrder": ["Thriller", "Smells Like Teen Spirit", "Dancing Queen", "I Want to Hold Your Hand"],
         "topLabel": "↑ Longest Song",
         "bottomLabel": "↓ Shortest Song"
@@ -1116,14 +1116,14 @@
       },
       {
         "prompt": "Age at Death",
-        "items": ["George H. W. Bush", "Abraham Lincoln", "Jimmy Carter", "John F. Kennedy"],
+        "items": ["Abraham Lincoln", "George H. W. Bush", "John F. Kennedy", "Jimmy Carter"],
         "correctOrder": ["Jimmy Carter", "George H. W. Bush", "Abraham Lincoln", "John F. Kennedy"],
         "topLabel": "↑ Oldest at Death",
         "bottomLabel": "↓ Youngest at Death"
       },
       {
         "prompt": "Age at Inauguration",
-        "items": ["George H. W. Bush", "Abraham Lincoln", "Jimmy Carter", "John F. Kennedy"],
+        "items": ["Jimmy Carter", "George H. W. Bush", "Abraham Lincoln", "John F. Kennedy"],
         "correctOrder": ["George H. W. Bush", "Jimmy Carter", "Abraham Lincoln", "John F. Kennedy"],
         "topLabel": "↑ Oldest at Inauguration",
         "bottomLabel": "↓ Youngest at Inauguration"
