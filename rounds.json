@@ -1141,14 +1141,14 @@
       },
       {
         "prompt": "Height",
-        "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
+        "items": ["Oprah Winfrey", "Johnny Depp", "Will Smith", "Leonardo DiCaprio"],
         "correctOrder": ["Will Smith", "Leonardo DiCaprio", "Johnny Depp", "Oprah Winfrey"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Net Worth",
-        "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
+        "items": ["Will Smith", "Leonardo DiCaprio", "Johnny Depp", "Oprah Winfrey"],
         "correctOrder": ["Oprah Winfrey", "Will Smith", "Leonardo DiCaprio", "Johnny Depp"],
         "topLabel": "↑ Highest Net Worth",
         "bottomLabel": "↓ Lowest Net Worth"
@@ -1165,14 +1165,14 @@
       },
       {
         "prompt": "Weight",
-        "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
+        "items": ["Cheetah", "Horse", "Rabbit", "Panda"],
         "correctOrder": ["Horse", "Panda", "Cheetah", "Rabbit"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Lifespan",
-        "items": ["Rabbit", "Cheetah", "Panda", "Horse"],
+        "items": ["Horse", "Panda", "Cheetah", "Rabbit"],
         "correctOrder": ["Horse", "Panda", "Cheetah", "Rabbit"],
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
@@ -1189,14 +1189,14 @@
       },
       {
         "prompt": "Distance from Equator",
-        "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
+        "items": ["Tokyo", "New York City", "Los Angeles", "San Francisco"],
         "correctOrder": ["New York City", "San Francisco", "Tokyo", "Los Angeles"],
         "topLabel": "↑ Farthest from Equator",
         "bottomLabel": "↓ Closest to Equator"
       },
       {
         "prompt": "Land Area",
-        "items": ["San Francisco", "Los Angeles", "New York City", "Tokyo"],
+        "items": ["New York City", "San Francisco", "Tokyo", "Los Angeles"],
         "correctOrder": ["Tokyo", "Los Angeles", "New York City", "San Francisco"],
         "topLabel": "↑ Largest Area",
         "bottomLabel": "↓ Smallest Area"
@@ -1213,14 +1213,14 @@
       },
       {
         "prompt": "Super Bowls Won",
-        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
+        "items": ["Eagles", "Packers", "Bears", "Cowboys"],
         "correctOrder": ["Cowboys", "Packers", "Eagles", "Bears"],
         "topLabel": "↑ Most Wins",
         "bottomLabel": "↓ Fewest Wins"
       },
       {
         "prompt": "Team Valuation",
-        "items": ["Cowboys", "Bears", "Eagles", "Packers"],
+        "items": ["Cowboys", "Packers", "Eagles", "Bears"],
         "correctOrder": ["Cowboys", "Eagles", "Bears", "Packers"],
         "topLabel": "↑ Highest Valuation",
         "bottomLabel": "↓ Lowest Valuation"
@@ -1231,20 +1231,20 @@
       {
         "prompt": "Year of First Film",
         "items": ["Alfred Hitchcock", "Steven Spielberg", "Quentin Tarantino", "Martin Scorsese"],
-        "correctOrder": ["Quentin Tarantino", "Steven Spielberg", "Martin Scorsese", "Alfred Hitchcock"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Number of Oscars Won",
-        "items": ["Alfred Hitchcock", "Steven Spielberg", "Quentin Tarantino", "Martin Scorsese"],
+        "items": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"],
         "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
         "topLabel": "↑ Most Oscars",
         "bottomLabel": "↓ Fewest Oscars"
       },
       {
         "prompt": "Highest Grossing Movie",
-        "items": ["Alfred Hitchcock", "Steven Spielberg", "Quentin Tarantino", "Martin Scorsese"],
+        "items": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
         "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
         "topLabel": "↑ Highest Grossing",
         "bottomLabel": "↓ Lowest Grossing"
@@ -1261,14 +1261,14 @@
       },
       {
         "prompt": "Height",
-        "items": ["Scarlett Johansson", "Tom Hanks", "Rihanna", "Tom Cruise"],
+        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
         "correctOrder": ["Tom Hanks", "Rihanna", "Tom Cruise", "Scarlett Johansson"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Net Worth",
-        "items": ["Scarlett Johansson", "Tom Hanks", "Rihanna", "Tom Cruise"],
+        "items": ["Tom Hanks", "Rihanna", "Tom Cruise", "Scarlett Johansson"],
         "correctOrder": ["Rihanna", "Tom Cruise", "Tom Hanks", "Scarlett Johansson"],
         "topLabel": "↑ Highest Net Worth",
         "bottomLabel": "↓ Lowest Net Worth"
