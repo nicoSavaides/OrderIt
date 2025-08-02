@@ -2262,7 +2262,9 @@ document.getElementById('submitButton').addEventListener('click', submitOrder);
 
   // Set message based on the rounds completed
   let message = "";
-  if (maxRound === 3) {
+  if (maxRound === 3 && strikes === 0) {
+    message = "Perfect!";
+  } else if (maxRound === 3) {
     message = "Amazing!";
   } else if (maxRound === 2) {
     message = "Good job!";
