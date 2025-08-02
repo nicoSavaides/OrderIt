@@ -300,14 +300,14 @@
       },
       {
         "prompt": "Year Established",
-        "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
-        "correctOrder": ["Burning Man", "Super Bowl", "Masters Tournament", "Olympics"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["Olympics", "Burning Man", "Masters Tournament", "Super Bowl"],
+        "correctOrder": ["Olympics", "Masters Tournament", "Super Bowl", "Burning Man"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Number of Attendees",
-        "items": ["Masters Tournament", "Burning Man", "Olympics", "Super Bowl"],
+        "items": ["Burning Man", "Super Bowl", "Masters Tournament", "Olympics"],
         "correctOrder": ["Olympics", "Masters Tournament", "Burning Man", "Super Bowl"],
         "topLabel": "↑ Most Attendees",
         "bottomLabel": "↓ Fewest Attendees"
@@ -324,17 +324,17 @@
       },
       {
         "prompt": "Number of Strings",
-        "items": ["Harp", "Banjo", "Ukulele", "Sitar"],
+        "items": ["Harp", "Sitar", "Banjo", "Ukulele"],
         "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
         "topLabel": "↑ Most Strings",
         "bottomLabel": "↓ Fewest Strings"
       },
       {
         "prompt": "Year Invented",
-        "items": ["Harp", "Banjo", "Ukulele", "Sitar"],
-        "correctOrder": ["Ukulele", "Banjo", "Sitar", "Harp"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["Harp", "Sitar", "Banjo", "Ukulele"],
+        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       }
     ],
 
@@ -348,14 +348,14 @@
       },
       {
         "prompt": "Population",
-        "items": ["Athens", "Atlanta", "London", "Mumbai"],
+        "items": ["London", "Athens", "Atlanta", "Mumbai"],
         "correctOrder": ["Mumbai", "London", "Athens", "Atlanta"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Distance from Equator",
-        "items": ["Athens", "Atlanta", "London", "Mumbai"],
+        "items": ["Mumbai", "London", "Athens", "Atlanta"],
         "correctOrder": ["London", "Athens", "Atlanta", "Mumbai"],
         "topLabel": "↑ Farthest from Equator",
         "bottomLabel": "↓ Closest to Equator"
@@ -372,17 +372,17 @@
       },
       {
         "prompt": "Height",
-        "items": ["Homer Simpson", "Iron Man", "Darth Vader", "Carol Brady"],
+        "items": ["Carol Brady", "Homer Simpson", "Darth Vader", "Iron Man"],
         "correctOrder": ["Darth Vader", "Iron Man", "Homer Simpson", "Carol Brady"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Year of First Appearance",
-        "items": ["Homer Simpson", "Iron Man", "Darth Vader", "Carol Brady"],
-        "correctOrder": ["Homer Simpson", "Darth Vader", "Carol Brady", "Iron Man"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["Darth Vader", "Iron Man", "Homer Simpson", "Carol Brady"],
+        "correctOrder": ["Iron Man", "Carol Brady", "Darth Vader", "Homer Simpson"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       }
     ], 
  
