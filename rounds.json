@@ -53,7 +53,7 @@
     [
       {
         "prompt": "Age",
-        "items": ["Kim Kardashian", "Robert Downey Jr","Taylor Swift", "Beyoncé"],
+        "items": ["Kim Kardashian", "Robert Downey Jr", "Taylor Swift", "Beyoncé"],
         "correctOrder": ["Robert Downey Jr", "Kim Kardashian", "Beyoncé", "Taylor Swift"],
         "topLabel": "↑ Oldest", 
         "bottomLabel": "↓ Youngest"
