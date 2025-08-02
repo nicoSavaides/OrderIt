@@ -1406,14 +1406,14 @@
       },
       {
         "prompt": "Yearly Attendees",
-        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
+        "items": ["Disneyland Shanghai", "Disneyland Paris", "Walt Disney World", "Disneyland"],
         "correctOrder": ["Walt Disney World", "Disneyland", "Disneyland Shanghai", "Disneyland Paris"],
         "topLabel": "↑ Most Visitors",
         "bottomLabel": "↓ Fewest Visitors"
       },
       {
         "prompt": "Total Land Area",
-        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
+        "items": ["Walt Disney World", "Disneyland", "Disneyland Shanghai", "Disneyland Paris"],
         "correctOrder": ["Walt Disney World", "Disneyland Paris", "Disneyland Shanghai", "Disneyland"],
         "topLabel": "↑ Largest",
         "bottomLabel": "↓ Smallest"
@@ -1424,9 +1424,9 @@
       {
         "prompt": "Debut Year as Pro",
         "items": ["Tom Brady", "Stephen Curry", "Lionel Messi", "Serena Williams"],
-        "correctOrder": ["Stephen Curry", "Lionel Messi", "Tom Brady", "Serena Williams"],
-        "topLabel": "↑ Most Recent Debut",
-        "bottomLabel": "↓ Earliest Debut"
+        "correctOrder": ["Serena Williams", "Tom Brady", "Lionel Messi", "Stephen Curry"],
+        "topLabel": "↑ Earliest Debut",
+        "bottomLabel": "↓ Most Recent Debut"
       },
       {
         "prompt": "Social Media Followers",
@@ -1448,47 +1448,23 @@
       {
         "prompt": "Year",
         "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
-        "correctOrder": ["Inception", "Titanic", "Forrest Gump", "E.T."],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Oldest Film"
+        "correctOrder": ["E.T.", "Forrest Gump", "Titanic", "Inception"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Box Office Gross",
-        "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
+        "items": ["E.T.", "Forrest Gump", "Titanic", "Inception"],
         "correctOrder": ["Titanic", "Inception", "E.T.", "Forrest Gump"],
         "topLabel": "↑ Highest Gross",
         "bottomLabel": "↓ Lowest Gross"
       },
       {
         "prompt": "Runtime",
-        "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
+        "items": ["Titanic", "Inception", "E.T.", "Forrest Gump"],
         "correctOrder": ["Titanic", "Inception", "Forrest Gump", "E.T."],
         "topLabel": "↑ Longest Runtime",
         "bottomLabel": "↓ Shortest Runtime"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Published",
-        "items": ["The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice"],
-        "correctOrder": ["Harry Potter and the Sorcerer's Stone", "Fahrenheit 451", "The Grapes of Wrath", "Pride and Prejudice"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
-      },
-      {
-        "prompt": "Author Last Name (A-Z)",
-        "items": ["The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice"],
-        "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
-      },
-      {
-        "prompt": "Page Count",
-        "items": ["The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice"],
-        "correctOrder": ["The Grapes of Wrath", "Pride and Prejudice", "Harry Potter and the Sorcerer's Stone", "Fahrenheit 451"],
-        "topLabel": "↑ Most Pages",
-        "bottomLabel": "↓ Fewest Pages"
       }
     ],
 
@@ -1502,17 +1478,41 @@
       },
       {
         "prompt": "Top Recorded Speed",
-        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
+        "items": ["Submarine", "Tank", "Helicopter", "Motorcycle"],
         "correctOrder": ["Motorcycle", "Helicopter", "Submarine", "Tank"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
       },
       {
         "prompt": "Year Invented",
-        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
-        "correctOrder": ["Helicopter", "Tank", "Motorcycle", "Submarine"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "items": ["Motorcycle", "Helicopter", "Submarine", "Tank"],
+        "correctOrder": ["Submarine", "Motorcycle", "Tank", "Helicopter"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Published",
+        "items": ["The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice"],
+        "correctOrder": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Author Last Name (A-Z)",
+        "items": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"],
+        "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Page Count",
+        "items": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"],
+        "correctOrder": ["The Grapes of Wrath", "Pride and Prejudice", "Harry Potter and the Sorcerer's Stone", "Fahrenheit 451"],
+        "topLabel": "↑ Most Pages",
+        "bottomLabel": "↓ Fewest Pages"
       }
     ],
 
@@ -1520,20 +1520,20 @@
       {
         "prompt": "Year Premiered",
         "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
-        "correctOrder": ["Mad Men", "The Office (US)", "Friends", "Seinfeld"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Seinfeld", "Friends", "The Office (US)", "Mad Men"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Number of Emmys Won",
-        "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
+        "items": ["Seinfeld", "Friends", "The Office (US)", "Mad Men"],
         "correctOrder": ["Mad Men", "Seinfeld", "Friends", "The Office (US)"],
         "topLabel": "↑ Most Emmys",
         "bottomLabel": "↓ Fewest Emmys"
       },
       {
         "prompt": "Number of Episodes",
-        "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
+        "items": ["Mad Men", "Seinfeld", "Friends", "The Office (US)"],
         "correctOrder": ["Friends", "The Office (US)", "Seinfeld", "Mad Men"],
         "topLabel": "↑ Most Episodes",
         "bottomLabel": "↓ Fewest Episodes"
@@ -1550,14 +1550,14 @@
       },
       {
         "prompt": "Weight",
-        "items": ["Sheep", "Mouse", "Sloth", "Zebra"],
+        "items": ["Zebra", "Sheep", "Mouse", "Sloth"],
         "correctOrder": ["Zebra", "Sheep", "Sloth", "Mouse"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
       },
       {
         "prompt": "Lifespan",
-        "items": ["Sheep", "Mouse", "Sloth", "Zebra"],
+        "items": ["Zebra", "Sheep", "Sloth", "Mouse"],
         "correctOrder": ["Sloth", "Zebra", "Sheep", "Mouse"],
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
@@ -1568,20 +1568,20 @@
       {
         "prompt": "Year Released",
         "items": ["Free Bird", "Imagine", "Shake It Off", "Billie Jean"],
-        "correctOrder": ["Shake It Off", "Billie Jean", "Free Bird", "Imagine"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Artist Name (A-Z)",
-        "items": ["Free Bird", "Imagine", "Shake It Off", "Billie Jean"],
+        "items": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"],
         "correctOrder": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Song Length",
-        "items": ["Free Bird", "Imagine", "Shake It Off", "Billie Jean"],
+        "items": ["Imagine", "Free Bird", "Billie Jean", "Shake It Off"],
         "correctOrder": ["Free Bird", "Billie Jean", "Shake It Off", "Imagine"],
         "topLabel": "↑ Longest Song",
         "bottomLabel": "↓ Shortest Song"
@@ -1592,20 +1592,20 @@
       {
         "prompt": "Birth Year",
         "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
-        "correctOrder": ["Daniel Craig", "Pierce Brosnan", "George Lazenby", "Sean Connery"],
-        "topLabel": "↑ Most Recent",
-        "bottomLabel": "↓ Earliest"
+        "correctOrder": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Number of Bond Films",
-        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
+        "items": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"],
         "correctOrder": ["Sean Connery", "Daniel Craig", "Pierce Brosnan", "George Lazenby"],
         "topLabel": "↑ Most Films",
         "bottomLabel": "↓ Fewest Films"
       },
       {
         "prompt": "Age When First Played Bond",
-        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
+        "items": ["Sean Connery", "Daniel Craig", "Pierce Brosnan", "George Lazenby"],
         "correctOrder": ["Pierce Brosnan", "Daniel Craig", "Sean Connery", "George Lazenby"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
