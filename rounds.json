@@ -179,19 +179,19 @@
         "bottomLabel": "↓ Lightest"
       },
       {
-        "prompt": "Year Invented",
-        "items": ["Football (American)", "Baseball", "Tennis", "Golf"],
-        "correctOrder": ["Tennis", "Golf", "Baseball", "Football (American)"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
         "prompt": "U.S. TV Viewership",
         "items": ["Tennis", "Golf", "Baseball", "Football (American)"],
         "correctOrder": ["Football (American)", "Baseball", "Golf", "Tennis"],
         "topLabel": "↑ Most Watched",
         "bottomLabel": "↓ Least Watched"
-      } 
+      }, 
+      {
+        "prompt": "Year Invented",
+        "items": ["Football (American)", "Baseball", "Tennis", "Golf"],
+        "correctOrder": ["Tennis", "Golf", "Baseball", "Football (American)"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ], 
 
     [
