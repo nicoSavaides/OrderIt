@@ -957,11 +957,9 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 }
 
 #viewStatsButton {
-  margin-top: 30px !important;
   display: block !important;
   font-size: 1.4em;
   padding: 10px 22px;
- 
 }
 
   #dateAndRound {
@@ -1116,6 +1114,22 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
       bottom: -10px;
       z-index: -1; /* Invisible expanded clickable area */
     }
+
+
+
+
+
+  .button-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px; /* spacing between buttons */
+    margin-top: 120px; /* adjust as needed */
+  }
+
+  .button-stack button {
+    margin-top: 0 !important; /* override any previous vertical spacing */
+  }
 
 
 
@@ -1450,9 +1464,11 @@ body.device-411-r1-9 #submitWrapper {
   <p>You’ve already played today, but be sure to check back tomorrow!</p>
 
 
+<div class="button-stack">
 <button id="showAnswersButton">Today's Answers</button>
 <button id="shareScoreButton">Share Your Score</button>
 <button id="viewStatsButton">My Stats</button>
+</div>
 
 
 
