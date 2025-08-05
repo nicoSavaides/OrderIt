@@ -2610,6 +2610,8 @@ window.onload = () => {
     localStorage.removeItem('maxRoundReachedToday');
     localStorage.removeItem('orderItScore');
     localStorage.setItem('maxRoundReachedDay', currentDay);
+    localStorage.removeItem('currentRound');       // ⬅️ reset progress
+    localStorage.removeItem('currentStrikes');     // ⬅️ reset attempts
   }
 
   const savedDay = parseInt(localStorage.getItem('currentDay'));
