@@ -220,30 +220,6 @@
 
     [
       {
-        "prompt": "Land Area",
-        "items": ["Switzerland", "Australia", "Germany", "Colombia"],
-        "correctOrder": ["Australia", "Colombia", "Germany", "Switzerland"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Australia", "Colombia", "Germany", "Switzerland"],
-        "correctOrder": ["Germany", "Colombia", "Australia", "Switzerland"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "GDP",
-        "items": ["Germany", "Colombia", "Australia", "Switzerland"],
-        "correctOrder": ["Germany", "Australia", "Switzerland", "Colombia"],
-        "topLabel": "↑ Highest GDP",
-        "bottomLabel": "↓ Lowest GDP"
-      }
-    ],
-
-    [
-      {
         "prompt": "Weight",
         "items": ["Labrador Retriever", "Great Dane", "Bulldog", "Greyhound"],
         "correctOrder": ["Great Dane", "Labrador Retriever",  "Greyhound", "Bulldog"],
@@ -265,6 +241,30 @@
         "bottomLabel": "↓ Least Intelligent"
       } 
     ], 
+
+    [
+      {
+        "prompt": "Land Area",
+        "items": ["Switzerland", "Australia", "Germany", "Colombia"],
+        "correctOrder": ["Australia", "Colombia", "Germany", "Switzerland"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Australia", "Colombia", "Germany", "Switzerland"],
+        "correctOrder": ["Germany", "Colombia", "Australia", "Switzerland"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "GDP",
+        "items": ["Germany", "Colombia", "Australia", "Switzerland"],
+        "correctOrder": ["Germany", "Australia", "Switzerland", "Colombia"],
+        "topLabel": "↑ Highest GDP",
+        "bottomLabel": "↓ Lowest GDP"
+      }
+    ],
 
     [
       {
