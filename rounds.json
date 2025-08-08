@@ -245,22 +245,22 @@
     [
       {
         "prompt": "Land Area",
-        "items": ["Switzerland", "Australia", "Germany", "Colombia"],
-        "correctOrder": ["Australia", "Colombia", "Germany", "Switzerland"],
+        "items": ["Greece", "Canada", "China", "Japan"],
+        "correctOrder": ["Canada", "China", "Japan", "Greece"],
         "topLabel": "↑ Largest Area",
         "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Population",
-        "items": ["Australia", "Colombia", "Germany", "Switzerland"],
-        "correctOrder": ["Germany", "Colombia", "Australia", "Switzerland"],
+        "items": ["Canada", "China", "Japan", "Greece"],
+        "correctOrder": ["China", "Japan", "Canada", "Greece"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "GDP",
-        "items": ["Germany", "Colombia", "Australia", "Switzerland"],
-        "correctOrder": ["Germany", "Australia", "Switzerland", "Colombia"],
+        "items": ["China", "Japan", "Canada", "Greece"],
+        "correctOrder": ["China", "Japan", "Canada", "Greece"],
         "topLabel": "↑ Highest GDP",
         "bottomLabel": "↓ Lowest GDP"
       }
@@ -307,7 +307,7 @@
       },
       {
         "prompt": "Number of Attendees",
-        "items": ["Burning Man", "Super Bowl", "Masters Tournament", "Olympics"],
+        "items": ["Olympics", "Masters Tournament", "Super Bowl", "Burning Man"],
         "correctOrder": ["Olympics", "Masters Tournament", "Burning Man", "Super Bowl"],
         "topLabel": "↑ Most Attendees",
         "bottomLabel": "↓ Fewest Attendees"
@@ -317,7 +317,7 @@
     [
       {
         "prompt": "Height Standing Upright",
-        "items": ["Harp", "Banjo", "Ukulele", "Sitar"],
+        "items": ["Banjo", "Ukulele", "Harp", "Sitar"],
         "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
@@ -341,7 +341,7 @@
     [
       {
         "prompt": "Number of Olympics Hosted",
-        "items": ["Athens", "Atlanta", "London", "Mumbai"],
+        "items": ["Athens", "Mumbai", "Atlanta", "London"],
         "correctOrder": ["London", "Athens", "Atlanta", "Mumbai"],
         "topLabel": "↑ Most Hosted",
         "bottomLabel": "↓ Fewest Hosted"
@@ -1807,22 +1807,22 @@
     [
       {
         "prompt": "Land Area",
-        "items": ["Greece", "Canada", "China", "Japan"],
-        "correctOrder": ["Canada", "China", "Japan", "Greece"],
+        "items": ["Switzerland", "Australia", "Germany", "Colombia"],
+        "correctOrder": ["Australia", "Colombia", "Germany", "Switzerland"],
         "topLabel": "↑ Largest Area",
         "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Population",
-        "items": ["Canada", "China", "Japan", "Greece"],
-        "correctOrder": ["China", "Japan", "Canada", "Greece"],
+        "items": ["Australia", "Colombia", "Germany", "Switzerland"],
+        "correctOrder": ["Germany", "Colombia", "Australia", "Switzerland"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "GDP",
-        "items": ["China", "Japan", "Canada", "Greece"],
-        "correctOrder": ["China", "Japan", "Canada", "Greece"],
+        "items": ["Germany", "Colombia", "Australia", "Switzerland"],
+        "correctOrder": ["Germany", "Australia", "Switzerland", "Colombia"],
         "topLabel": "↑ Highest GDP",
         "bottomLabel": "↓ Lowest GDP"
       }
