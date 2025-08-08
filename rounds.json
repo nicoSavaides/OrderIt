@@ -197,22 +197,22 @@
     [
       {
         "prompt": "Year",
-        "items": ["The Shawshank Redemption", "Avatar", "The Godfather", "Grease"],
-        "correctOrder": ["The Godfather", "Grease", "The Shawshank Redemption", "Avatar"],
-        "topLabel": "↑ Earliest",
+        "items": ["Avatar", "E.T.", "Toy Story", "The Godfather"],
+        "correctOrder": ["The Godfather", "E.T.", "Toy Story", "Avatar"],
+        "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Box Office Gross",
-        "items": ["The Godfather", "Grease", "The Shawshank Redemption", "Avatar"],
-        "correctOrder": ["Avatar", "Grease", "The Godfather", "The Shawshank Redemption"],
-        "topLabel": "↑ Highest Gross",
-        "bottomLabel": "↓ Lowest Gross"
+        "items": ["The Godfather", "E.T.", "Toy Story", "Avatar"],
+        "correctOrder": ["Avatar", "E.T.", "Toy Story", "The Godfather"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
       },
       {
         "prompt": "Runtime",
-        "items": ["Avatar", "Grease", "The Godfather", "The Shawshank Redemption"],
-        "correctOrder": ["The Godfather", "Avatar", "The Shawshank Redemption", "Grease"],
+        "items": ["Avatar", "E.T.", "Toy Story", "The Godfather"],
+        "correctOrder": ["The Godfather", "Avatar", "E.T.", "Toy Story"],
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       }
