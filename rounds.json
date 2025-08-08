@@ -199,7 +199,7 @@
         "prompt": "Year",
         "items": ["Avatar", "E.T.", "Toy Story", "The Godfather"],
         "correctOrder": ["The Godfather", "E.T.", "Toy Story", "Avatar"],
-        "topLabel": "↑ Oldest",
+        "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       },
       {
