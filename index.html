@@ -600,7 +600,7 @@
       #thanksMessage {
       position: relative;
       padding: 0 40px; /* 0 25px */ 
-      margin-top: 80px !important;
+      margin-top: 70px !important;
       text-align: center;
       font-size: 1.15rem !important; /* 1.25rem */
       font-weight: 450 !important;
@@ -640,10 +640,27 @@
   font-weight: 500;
   box-shadow: none;
   outline: none;
-  margin-top: 75px !important;
+  margin-top: 45px !important;
   font-size: 1.15em !important;
   padding: 10px 22px;
 }
+
+
+
+#goHomeButton {
+  background-color: transparent;
+  color: #000000; 
+  border: 2px solid #000000;
+  border-radius: 30px;
+  padding: 10px 22px;
+  cursor: pointer;
+  font-weight: 500;
+  box-shadow: none;
+  outline: none;
+  margin-top: 20px; /* just below share button */
+  font-size: 1.15em !important;
+}
+
 
 
 
@@ -1531,8 +1548,12 @@ body.device-411-r1-9 #submitWrapper {
   <div id="endScreen" class="screen hidden">
     <p id="endGameStatus"></p>
     <p id="finalScore"></p> 
-    <p id="thanksMessage">Thanks for playing! Refresh the page to view today’s answers. Come back tomorrow for a new Order It!</p>
+    <p id="thanksMessage">Thanks for playing! Go to the home screen to view today’s answers. Come back tomorrow for a new Order It!</p>
     <button id="shareButton">Share Your Score</button> 
+    <button id="goHomeButton">Home Screen</button>
+
+
+
     
 
 
@@ -2562,6 +2583,25 @@ window.onload = () => {
       }
     });
   }
+
+
+
+
+
+
+  const goHomeButton = document.getElementById('goHomeButton');
+  if (goHomeButton) {
+    goHomeButton.addEventListener('click', () => {
+      showScreen('playedTodayScreen', true);
+    });
+  }
+
+
+
+
+
+
+
 
   // ✅ Everything else below this point stays the same
   const w = window.innerWidth;
