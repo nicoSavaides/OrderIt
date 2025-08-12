@@ -316,66 +316,18 @@
 
     [
       {
-        "prompt": "Height Standing Upright",
-        "items": ["Banjo", "Ukulele", "Harp", "Sitar"],
-        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
+        "prompt": "Height",
+        "items": ["Carol Brady", "Homer Simpson", "Darth Vader", "Iron Man"],
+        "correctOrder": ["Darth Vader", "Iron Man", "Homer Simpson", "Carol Brady"],
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
-      {
-        "prompt": "Number of Strings",
-        "items": ["Harp", "Sitar", "Banjo", "Ukulele"],
-        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
-        "topLabel": "↑ Most Strings",
-        "bottomLabel": "↓ Fewest Strings"
-      },
-      {
-        "prompt": "Year Invented",
-        "items": ["Harp", "Sitar", "Banjo", "Ukulele"],
-        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Number of Olympics Hosted",
-        "items": ["Athens", "Mumbai", "Atlanta", "London"],
-        "correctOrder": ["London", "Athens", "Atlanta", "Mumbai"],
-        "topLabel": "↑ Most Hosted",
-        "bottomLabel": "↓ Fewest Hosted"
-      },
-      {
-        "prompt": "Population",
-        "items": ["London", "Athens", "Atlanta", "Mumbai"],
-        "correctOrder": ["Mumbai", "London", "Athens", "Atlanta"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Distance from Equator",
-        "items": ["Mumbai", "London", "Athens", "Atlanta"],
-        "correctOrder": ["London", "Athens", "Atlanta", "Mumbai"],
-        "topLabel": "↑ Farthest from Equator",
-        "bottomLabel": "↓ Closest to Equator"
-      }
-    ],
-
-    [
       {
         "prompt": "Number of Children",
         "items": ["Homer Simpson", "Iron Man", "Darth Vader", "Carol Brady"],
         "correctOrder": ["Carol Brady", "Homer Simpson", "Darth Vader", "Iron Man"],
         "topLabel": "↑ Most Children",
         "bottomLabel": "↓ Fewest Children"
-      },
-      {
-        "prompt": "Height",
-        "items": ["Carol Brady", "Homer Simpson", "Darth Vader", "Iron Man"],
-        "correctOrder": ["Darth Vader", "Iron Man", "Homer Simpson", "Carol Brady"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Year of First Appearance",
@@ -385,26 +337,26 @@
         "bottomLabel": "↓ Most Recent"
       }
     ], 
- 
+
     [
       {
         "prompt": "Debut Year as Pro",
-        "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
-        "correctOrder": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
+        "items": ["Serena Williams", "Lionel Messi", "Stephen Curry", "Joe Montana"],
+        "correctOrder": ["Joe Montana", "Serena Williams", "Lionel Messi", "Stephen Curry"],
+        "topLabel": "↑ Earliest Debut",
+        "bottomLabel": "↓ Most Recent Debut"
       },
       {
         "prompt": "Social Media Followers",
-        "items": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"],
-        "correctOrder": ["Cristiano Ronaldo", "Mike Tyson", "Simone Biles", "Tiger Woods"],
+        "items": ["Joe Montana", "Serena Williams", "Lionel Messi", "Stephen Curry"],
+        "correctOrder": ["Lionel Messi", "Stephen Curry", "Serena Williams", "Joe Montana"],
         "topLabel": "↑ Most Followers",
         "bottomLabel": "↓ Fewest Followers"
       },
       {
         "prompt": "Total Career Earnings",
-        "items": ["Cristiano Ronaldo", "Mike Tyson", "Simone Biles", "Tiger Woods"],
-        "correctOrder": ["Tiger Woods", "Cristiano Ronaldo", "Mike Tyson", "Simone Biles"],
+        "items": ["Lionel Messi", "Stephen Curry", "Serena Williams", "Joe Montana"],
+        "correctOrder": ["Lionel Messi", "Stephen Curry", "Serena Williams", "Joe Montana"],
         "topLabel": "↑ Most Earnings",
         "bottomLabel": "↓ Least Earnings"
       }
@@ -457,6 +409,54 @@
         "bottomLabel": "↓ Shortest Song"
       }
     ], 
+
+    [
+      {
+        "prompt": "Number of Olympics Hosted",
+        "items": ["Athens", "Mumbai", "Atlanta", "London"],
+        "correctOrder": ["London", "Athens", "Atlanta", "Mumbai"],
+        "topLabel": "↑ Most Hosted",
+        "bottomLabel": "↓ Fewest Hosted"
+      },
+      {
+        "prompt": "Population",
+        "items": ["London", "Athens", "Atlanta", "Mumbai"],
+        "correctOrder": ["Mumbai", "London", "Athens", "Atlanta"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Mumbai", "London", "Athens", "Atlanta"],
+        "correctOrder": ["London", "Athens", "Atlanta", "Mumbai"],
+        "topLabel": "↑ Farthest from Equator",
+        "bottomLabel": "↓ Closest to Equator"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Height Standing Upright",
+        "items": ["Banjo", "Ukulele", "Harp", "Sitar"],
+        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Number of Strings",
+        "items": ["Harp", "Sitar", "Banjo", "Ukulele"],
+        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
+        "topLabel": "↑ Most Strings",
+        "bottomLabel": "↓ Fewest Strings"
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Harp", "Sitar", "Banjo", "Ukulele"],
+        "correctOrder": ["Harp", "Sitar", "Banjo", "Ukulele"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
 
     [
       {
@@ -1423,22 +1423,22 @@
     [
       {
         "prompt": "Debut Year as Pro",
-        "items": ["Serena Williams", "Lionel Messi", "Stephen Curry", "Joe Montana"],
-        "correctOrder": ["Joe Montana", "Serena Williams", "Lionel Messi", "Stephen Curry"],
-        "topLabel": "↑ Earliest Debut",
-        "bottomLabel": "↓ Most Recent Debut"
+        "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
+        "correctOrder": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Social Media Followers",
-        "items": ["Joe Montana", "Serena Williams", "Lionel Messi", "Stephen Curry"],
-        "correctOrder": ["Lionel Messi", "Stephen Curry", "Serena Williams", "Joe Montana"],
+        "items": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"],
+        "correctOrder": ["Cristiano Ronaldo", "Mike Tyson", "Simone Biles", "Tiger Woods"],
         "topLabel": "↑ Most Followers",
         "bottomLabel": "↓ Fewest Followers"
       },
       {
         "prompt": "Total Career Earnings",
-        "items": ["Lionel Messi", "Stephen Curry", "Serena Williams", "Joe Montana"],
-        "correctOrder": ["Lionel Messi", "Stephen Curry", "Serena Williams", "Joe Montana"],
+        "items": ["Cristiano Ronaldo", "Mike Tyson", "Simone Biles", "Tiger Woods"],
+        "correctOrder": ["Tiger Woods", "Cristiano Ronaldo", "Mike Tyson", "Simone Biles"],
         "topLabel": "↑ Most Earnings",
         "bottomLabel": "↓ Least Earnings"
       }
