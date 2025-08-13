@@ -316,6 +316,30 @@
 
     [
       {
+        "prompt": "Weight",
+        "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
+        "correctOrder": ["Russet Potato", "Avocado", "Banana", "Egg"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Calories",
+        "items": ["Russet Potato", "Avocado", "Banana", "Egg"],
+        "correctOrder": ["Avocado", "Russet Potato", "Banana", "Egg"],
+        "topLabel": "↑ Most Calories",
+        "bottomLabel": "↓ Fewest Calories"
+      },
+      {
+        "prompt": "Protein",
+        "items": ["Avocado", "Russet Potato", "Banana", "Egg"],
+        "correctOrder": ["Egg", "Russet Potato", "Avocado", "Banana"],
+        "topLabel": "↑ Most Protein",
+        "bottomLabel": "↓ Least Protein"
+      }
+    ],
+
+    [
+      {
         "prompt": "Height",
         "items": ["Carol Brady", "Homer Simpson", "Darth Vader", "Iron Man"],
         "correctOrder": ["Darth Vader", "Iron Man", "Homer Simpson", "Carol Brady"],
@@ -359,30 +383,6 @@
         "correctOrder": ["Lionel Messi", "Stephen Curry", "Serena Williams", "Joe Montana"],
         "topLabel": "↑ Most Earnings",
         "bottomLabel": "↓ Least Earnings"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Weight",
-        "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
-        "correctOrder": ["Russet Potato", "Avocado", "Banana", "Egg"],
-        "topLabel": "↑ Heaviest",
-        "bottomLabel": "↓ Lightest"
-      },
-      {
-        "prompt": "Calories",
-        "items": ["Russet Potato", "Avocado", "Banana", "Egg"],
-        "correctOrder": ["Avocado", "Russet Potato", "Banana", "Egg"],
-        "topLabel": "↑ Most Calories",
-        "bottomLabel": "↓ Fewest Calories"
-      },
-      {
-        "prompt": "Protein",
-        "items": ["Avocado", "Russet Potato", "Banana", "Egg"],
-        "correctOrder": ["Egg", "Russet Potato", "Avocado", "Banana"],
-        "topLabel": "↑ Most Protein",
-        "bottomLabel": "↓ Least Protein"
       }
     ],
 
