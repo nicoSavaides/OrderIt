@@ -317,7 +317,7 @@
     [
       {
         "prompt": "Weight",
-        "items": ["Banana", "Russet Potato", "Avocado", "Egg"],
+        "items": ["Banana", "Avocado", "Egg", "Russet Potato"],
         "correctOrder": ["Russet Potato", "Avocado", "Banana", "Egg"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
