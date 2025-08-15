@@ -459,30 +459,6 @@
     ],
 
     [
-      {
-        "prompt": "Average Temperature",
-        "items": ["Dubai", "Toronto", "Honolulu", "Mexico City"],
-        "correctOrder": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
-        "topLabel": "↑ Hottest",
-        "bottomLabel": "↓ Coldest"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
-        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Elevation",
-        "items": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
-        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
-        "topLabel": "↑ Highest Elevation",
-        "bottomLabel": "↓ Lowest Elevation"
-      }
-    ], 
-
-    [
       {            
         "prompt": "Number of Films in Series",
         "items": ["Lord of the Rings", "Fast & Furious", "Top Gun", "Pirates of the Caribbean"],
@@ -543,7 +519,7 @@
         "items": ["Puma", "Horse", "Kangaroo", "Cow"],
         "correctOrder": ["Cow", "Puma", "Horse", "Kangaroo"],
         "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
+        "bottomLabel": "↓ Last Alphabetically" 
       },
       {
         "prompt": "Max Jumping Height",
@@ -553,6 +529,30 @@
         "bottomLabel": "↓ Lowest Jumper"
       }
     ],
+
+    [
+      {
+        "prompt": "Average Temperature",
+        "items": ["Dubai", "Toronto", "Honolulu", "Mexico City"],
+        "correctOrder": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
+        "topLabel": "↑ Hottest",
+        "bottomLabel": "↓ Coldest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
+        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Elevation",
+        "items": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
+        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
+        "topLabel": "↑ Highest Elevation",
+        "bottomLabel": "↓ Lowest Elevation"
+      }
+    ], 
 
     [
       {
