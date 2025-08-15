@@ -580,30 +580,6 @@
 
     [
       {
-        "prompt": "Population",
-        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
-        "correctOrder": ["Florida", "Illinois", "Arizona", "Hawaii"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Land Area",
-        "items": ["Florida", "Illinois", "Arizona", "Hawaii"],
-        "correctOrder": ["Arizona", "Florida", "Illinois", "Hawaii"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Date of Statehood",
-        "items": ["Arizona", "Florida", "Illinois", "Hawaii"],
-        "correctOrder": ["Illinois", "Florida", "Arizona", "Hawaii"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      }
-    ], 
-
-    [
-      {
         "prompt": "Number of Children",
         "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
         "correctOrder": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
@@ -625,6 +601,30 @@
         "bottomLabel": "↓ Shortest Marriage"
       }
     ],
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
+        "correctOrder": ["Florida", "Illinois", "Arizona", "Hawaii"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["Florida", "Illinois", "Arizona", "Hawaii"],
+        "correctOrder": ["Arizona", "Florida", "Illinois", "Hawaii"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["Arizona", "Florida", "Illinois", "Hawaii"],
+        "correctOrder": ["Illinois", "Florida", "Arizona", "Hawaii"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ], 
 
     [
       {
