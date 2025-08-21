@@ -604,30 +604,6 @@
 
     [
       {
-        "prompt": "Land Area",
-        "items": ["South America", "Asia", "Europe", "Africa"],
-        "correctOrder": ["Asia", "Africa", "South America", "Europe"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Number of Countries",
-        "items": ["Asia", "Africa", "South America", "Europe"],
-        "correctOrder": ["Africa", "Asia", "Europe", "South America"],
-        "topLabel": "↑ Most Countries",
-        "bottomLabel": "↓ Fewest Countries"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Africa", "Asia", "Europe", "South America"],
-        "correctOrder": ["Asia", "Africa", "Europe", "South America"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      }
-    ], 
-
-    [
-      {
         "prompt": "Number of Children",
         "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
         "correctOrder": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
@@ -649,6 +625,30 @@
         "bottomLabel": "↓ Shortest Marriage"
       }
     ],
+
+    [
+      {
+        "prompt": "Land Area",
+        "items": ["South America", "Asia", "Europe", "Africa"],
+        "correctOrder": ["Asia", "Africa", "South America", "Europe"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Number of Countries",
+        "items": ["Asia", "Africa", "South America", "Europe"],
+        "correctOrder": ["Africa", "Asia", "Europe", "South America"],
+        "topLabel": "↑ Most Countries",
+        "bottomLabel": "↓ Fewest Countries"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Africa", "Asia", "Europe", "South America"],
+        "correctOrder": ["Asia", "Africa", "Europe", "South America"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      }
+    ], 
 
     [
       {
