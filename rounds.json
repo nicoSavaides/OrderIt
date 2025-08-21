@@ -563,18 +563,42 @@
         "bottomLabel": "↓ Fewest Players"
       },
       {
-        "prompt": "Average Game Length",
-        "items": ["Monopoly", "Clue", "Twister", "Checkers"],
-        "correctOrder": ["Monopoly", "Clue", "Checkers", "Twister"],
-        "topLabel": "↑ Longest Game",
-        "bottomLabel": "↓ Shortest Game"
-      },
-      {
         "prompt": "Year Released",
-        "items": ["Monopoly", "Clue", "Checkers", "Twister"],
+        "items": ["Monopoly", "Clue", "Twister", "Checkers"],
         "correctOrder": ["Checkers", "Monopoly", "Clue", "Twister"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Average Game Length",
+        "items": ["Checkers", "Monopoly", "Clue", "Twister"],
+        "correctOrder": ["Monopoly", "Clue", "Checkers", "Twister"],
+        "topLabel": "↑ Longest Game",
+        "bottomLabel": "↓ Shortest Game"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Eye Color Frequency",
+        "items": ["Green", "Brown", "Gray", "Blue"],
+        "correctOrder": ["Brown", "Blue", "Green", "Gray"],
+        "topLabel": "↑ Most Common",
+        "bottomLabel": "↓ Least Common"
+      },
+      {
+        "prompt": "Car Color Frequency",
+        "items": ["Brown", "Blue", "Green", "Gray"],
+        "correctOrder": ["Gray", "Blue", "Green", "Brown"],
+        "topLabel": "↑ Most Popular",
+        "bottomLabel": "↓ Least Popular"
+      },
+      {
+        "prompt": "Flag Color Frequency",
+        "items": ["Gray", "Blue", "Green", "Brown"],
+        "correctOrder": ["Blue", "Green", "Brown", "Gray"],
+        "topLabel": "↑ Most Common",
+        "bottomLabel": "↓ Least Common"
       }
     ],
 
@@ -604,54 +628,6 @@
 
     [
       {
-        "prompt": "Population",
-        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
-        "correctOrder": ["Florida", "Illinois", "Arizona", "Hawaii"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Land Area",
-        "items": ["Florida", "Illinois", "Arizona", "Hawaii"],
-        "correctOrder": ["Arizona", "Florida", "Illinois", "Hawaii"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Date of Statehood",
-        "items": ["Arizona", "Florida", "Illinois", "Hawaii"],
-        "correctOrder": ["Illinois", "Florida", "Arizona", "Hawaii"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      }
-    ], 
-
-    [
-      {
-        "prompt": "Eye Color Frequency",
-        "items": ["Green", "Brown", "Gray", "Blue"],
-        "correctOrder": ["Brown", "Blue", "Green", "Gray"],
-        "topLabel": "↑ Most Common",
-        "bottomLabel": "↓ Least Common"
-      },
-      {
-        "prompt": "Car Color Frequency",
-        "items": ["Brown", "Blue", "Green", "Gray"],
-        "correctOrder": ["Gray", "Blue", "Green", "Brown"],
-        "topLabel": "↑ Most Popular",
-        "bottomLabel": "↓ Least Popular"
-      },
-      {
-        "prompt": "Flag Color Frequency",
-        "items": ["Gray", "Blue", "Green", "Brown"],
-        "correctOrder": ["Blue", "Green", "Brown", "Gray"],
-        "topLabel": "↑ Most Common",
-        "bottomLabel": "↓ Least Common"
-      }
-    ],
-
-    [
-      {
         "prompt": "Number of Children",
         "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
         "correctOrder": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
@@ -673,6 +649,30 @@
         "bottomLabel": "↓ Shortest Marriage"
       }
     ],
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
+        "correctOrder": ["Florida", "Illinois", "Arizona", "Hawaii"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["Florida", "Illinois", "Arizona", "Hawaii"],
+        "correctOrder": ["Arizona", "Florida", "Illinois", "Hawaii"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["Arizona", "Florida", "Illinois", "Hawaii"],
+        "correctOrder": ["Illinois", "Florida", "Arizona", "Hawaii"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ], 
 
     [
       {
