@@ -508,6 +508,30 @@
 
     [
       {
+        "prompt": "Average Temperature",
+        "items": ["Sydney", "Moscow", "Cairo", "Denver"],
+        "correctOrder": ["Cairo", "Sydney", "Denver", "Moscow"],
+        "topLabel": "↑ Hottest",
+        "bottomLabel": "↓ Coldest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Cairo", "Sydney", "Denver", "Moscow"],
+        "correctOrder": ["Cairo", "Moscow", "Sydney", "Denver"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Elevation",
+        "items": ["Cairo", "Moscow", "Sydney", "Denver"],
+        "correctOrder": ["Denver", "Moscow", "Sydney", "Cairo"],
+        "topLabel": "↑ Highest Elevation",
+        "bottomLabel": "↓ Lowest Elevation"
+      }
+    ],
+
+    [
+      {
         "prompt": "Top Speed",
         "items": ["Cow", "Horse", "Puma", "Kangaroo"],
         "correctOrder": ["Puma", "Horse", "Kangaroo", "Cow"],
@@ -532,25 +556,73 @@
 
     [
       {
-        "prompt": "Average Temperature",
-        "items": ["Dubai", "Toronto", "Honolulu", "Mexico City"],
-        "correctOrder": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
-        "topLabel": "↑ Hottest",
-        "bottomLabel": "↓ Coldest"
+        "prompt": "Max Number of Players",
+        "items": ["Clue", "Monopoly", "Checkers", "Twister"],
+        "correctOrder": ["Monopoly", "Clue", "Twister", "Checkers"],
+        "topLabel": "↑ Most Players",
+        "bottomLabel": "↓ Fewest Players"
+      },
+      {
+        "prompt": "Average Game Length",
+        "items": ["Monopoly", "Clue", "Twister", "Checkers"],
+        "correctOrder": ["Monopoly", "Clue", "Checkers", "Twister"],
+        "topLabel": "↑ Longest Game",
+        "bottomLabel": "↓ Shortest Game"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Monopoly", "Clue", "Checkers", "Twister"],
+        "correctOrder": ["Checkers", "Monopoly", "Clue", "Twister"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Land Area",
+        "items": ["South America", "Asia", "Europe", "Africa"],
+        "correctOrder": ["Asia", "Africa", "South America", "Europe"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Number of Countries",
+        "items": ["Asia", "Africa", "South America", "Europe"],
+        "correctOrder": ["Africa", "Asia", "Europe", "South America"],
+        "topLabel": "↑ Most Countries",
+        "bottomLabel": "↓ Fewest Countries"
       },
       {
         "prompt": "Population",
-        "items": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
-        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
+        "items": ["Africa", "Asia", "Europe", "South America"],
+        "correctOrder": ["Asia", "Africa", "Europe", "South America"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      }
+    ], 
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
+        "correctOrder": ["Florida", "Illinois", "Arizona", "Hawaii"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
-        "prompt": "Elevation",
-        "items": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
-        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
-        "topLabel": "↑ Highest Elevation",
-        "bottomLabel": "↓ Lowest Elevation"
+        "prompt": "Land Area",
+        "items": ["Florida", "Illinois", "Arizona", "Hawaii"],
+        "correctOrder": ["Arizona", "Florida", "Illinois", "Hawaii"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["Arizona", "Florida", "Illinois", "Hawaii"],
+        "correctOrder": ["Illinois", "Florida", "Arizona", "Hawaii"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       }
     ], 
 
@@ -604,54 +676,6 @@
 
     [
       {
-        "prompt": "Population",
-        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
-        "correctOrder": ["Florida", "Illinois", "Arizona", "Hawaii"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Land Area",
-        "items": ["Florida", "Illinois", "Arizona", "Hawaii"],
-        "correctOrder": ["Arizona", "Florida", "Illinois", "Hawaii"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Date of Statehood",
-        "items": ["Arizona", "Florida", "Illinois", "Hawaii"],
-        "correctOrder": ["Illinois", "Florida", "Arizona", "Hawaii"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      }
-    ], 
-
-    [
-      {
-        "prompt": "Max Number of Players",
-        "items": ["Clue", "Monopoly", "Checkers", "Twister"],
-        "correctOrder": ["Monopoly", "Clue", "Twister", "Checkers"],
-        "topLabel": "↑ Most Players",
-        "bottomLabel": "↓ Fewest Players"
-      },
-      {
-        "prompt": "Average Game Length",
-        "items": ["Monopoly", "Clue", "Twister", "Checkers"],
-        "correctOrder": ["Monopoly", "Clue", "Checkers", "Twister"],
-        "topLabel": "↑ Longest Game",
-        "bottomLabel": "↓ Shortest Game"
-      },
-      {
-        "prompt": "Year Released",
-        "items": ["Monopoly", "Clue", "Checkers", "Twister"],
-        "correctOrder": ["Checkers", "Monopoly", "Clue", "Twister"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      }
-    ],
-
-    [
-      {
         "prompt": "Age Rating",
         "items": ["The Hunger Games", "Willy Wonka & the Chocolate Factory", "The Silence of the Lambs", "Back to the Future"],
         "correctOrder": ["The Silence of the Lambs", "The Hunger Games", "Back to the Future", "Willy Wonka & the Chocolate Factory"],
@@ -673,30 +697,6 @@
         "bottomLabel": "↓ Fewest Nominations"
       }
     ],
-
-    [
-      {
-        "prompt": "Land Area",
-        "items": ["South America", "Asia", "Europe", "Africa"],
-        "correctOrder": ["Asia", "Africa", "South America", "Europe"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Number of Countries",
-        "items": ["Asia", "Africa", "South America", "Europe"],
-        "correctOrder": ["Africa", "Asia", "Europe", "South America"],
-        "topLabel": "↑ Most Countries",
-        "bottomLabel": "↓ Fewest Countries"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Africa", "Asia", "Europe", "South America"],
-        "correctOrder": ["Asia", "Africa", "Europe", "South America"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      }
-    ], 
 
     [
       {
@@ -1615,26 +1615,26 @@
     [
       {
         "prompt": "Average Temperature",
-        "items": ["Sydney", "Moscow", "Cairo", "Denver"],
-        "correctOrder": ["Cairo", "Sydney", "Denver", "Moscow"],
+        "items": ["Dubai", "Toronto", "Honolulu", "Mexico City"],
+        "correctOrder": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
         "topLabel": "↑ Hottest",
         "bottomLabel": "↓ Coldest"
       },
       {
         "prompt": "Population",
-        "items": ["Cairo", "Sydney", "Denver", "Moscow"],
-        "correctOrder": ["Cairo", "Moscow", "Sydney", "Denver"],
+        "items": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
+        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Elevation",
-        "items": ["Cairo", "Moscow", "Sydney", "Denver"],
-        "correctOrder": ["Denver", "Moscow", "Sydney", "Cairo"],
+        "items": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
+        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
         "topLabel": "↑ Highest Elevation",
         "bottomLabel": "↓ Lowest Elevation"
       }
-    ],
+    ], 
 
     [
       {
