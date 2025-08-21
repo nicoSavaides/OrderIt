@@ -532,30 +532,6 @@
 
     [
       {
-        "prompt": "Top Speed",
-        "items": ["Cow", "Horse", "Puma", "Kangaroo"],
-        "correctOrder": ["Puma", "Horse", "Kangaroo", "Cow"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
-      },
-      {
-        "prompt": "Baby Name (A–Z)",
-        "items": ["Puma", "Horse", "Kangaroo", "Cow"],
-        "correctOrder": ["Cow", "Puma", "Horse", "Kangaroo"],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically" 
-      },
-      {
-        "prompt": "Max Jumping Height",
-        "items": ["Cow", "Puma", "Horse", "Kangaroo"],
-        "correctOrder": ["Puma", "Kangaroo", "Horse", "Cow"],
-        "topLabel": "↑ Highest Jumper",
-        "bottomLabel": "↓ Lowest Jumper"
-      }
-    ],
-
-    [
-      {
         "prompt": "Max Number of Players",
         "items": ["Clue", "Monopoly", "Checkers", "Twister"],
         "correctOrder": ["Monopoly", "Clue", "Twister", "Checkers"],
@@ -575,6 +551,30 @@
         "correctOrder": ["Monopoly", "Clue", "Checkers", "Twister"],
         "topLabel": "↑ Longest Game",
         "bottomLabel": "↓ Shortest Game"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Top Speed",
+        "items": ["Cow", "Horse", "Puma", "Kangaroo"],
+        "correctOrder": ["Puma", "Horse", "Kangaroo", "Cow"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Baby Name (A–Z)",
+        "items": ["Puma", "Horse", "Kangaroo", "Cow"],
+        "correctOrder": ["Cow", "Puma", "Horse", "Kangaroo"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically" 
+      },
+      {
+        "prompt": "Max Jumping Height",
+        "items": ["Cow", "Puma", "Horse", "Kangaroo"],
+        "correctOrder": ["Puma", "Kangaroo", "Horse", "Cow"],
+        "topLabel": "↑ Highest Jumper",
+        "bottomLabel": "↓ Lowest Jumper"
       }
     ],
 
