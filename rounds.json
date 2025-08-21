@@ -652,30 +652,6 @@
 
     [
       {
-        "prompt": "Population",
-        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
-        "correctOrder": ["Florida", "Illinois", "Arizona", "Hawaii"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Land Area",
-        "items": ["Florida", "Illinois", "Arizona", "Hawaii"],
-        "correctOrder": ["Arizona", "Florida", "Illinois", "Hawaii"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Date of Statehood",
-        "items": ["Arizona", "Florida", "Illinois", "Hawaii"],
-        "correctOrder": ["Illinois", "Florida", "Arizona", "Hawaii"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      }
-    ], 
-
-    [
-      {
         "prompt": "Age Rating",
         "items": ["The Hunger Games", "Willy Wonka & the Chocolate Factory", "The Silence of the Lambs", "Back to the Future"],
         "correctOrder": ["The Silence of the Lambs", "The Hunger Games", "Back to the Future", "Willy Wonka & the Chocolate Factory"],
@@ -697,6 +673,30 @@
         "bottomLabel": "↓ Fewest Nominations"
       }
     ],
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
+        "correctOrder": ["Florida", "Illinois", "Arizona", "Hawaii"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["Florida", "Illinois", "Arizona", "Hawaii"],
+        "correctOrder": ["Arizona", "Florida", "Illinois", "Hawaii"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["Arizona", "Florida", "Illinois", "Hawaii"],
+        "correctOrder": ["Illinois", "Florida", "Arizona", "Hawaii"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ], 
 
     [
       {
