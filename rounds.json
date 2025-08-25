@@ -604,30 +604,6 @@
 
     [
       {
-        "prompt": "Number of Children",
-        "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
-        "correctOrder": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
-        "topLabel": "↑ Most Children",
-        "bottomLabel": "↓ Fewest Children"
-      },
-      {
-        "prompt": "Age Difference",
-        "items": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
-        "correctOrder": ["Brad and Angelina", "John and Yoko", "Kim and Kanye", "Barack and Michelle"],
-        "topLabel": "↑ Largest Gap",
-        "bottomLabel": "↓ Smallest Gap"
-      },
-      {
-        "prompt": "Years Married",
-        "items": ["Brad and Angelina", "John and Yoko", "Kim and Kanye", "Barack and Michelle"],
-        "correctOrder": ["Barack and Michelle", "John and Yoko", "Kim and Kanye", "Brad and Angelina"],
-        "topLabel": "↑ Longest Marriage",
-        "bottomLabel": "↓ Shortest Marriage"
-      }
-    ],
-
-    [
-      {
         "prompt": "Land Area",
         "items": ["South America", "Asia", "Europe", "Africa"],
         "correctOrder": ["Asia", "Africa", "South America", "Europe"],
@@ -649,6 +625,30 @@
         "bottomLabel": "↓ Least Populated"
       }
     ], 
+
+    [
+      {
+        "prompt": "Number of Children",
+        "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
+        "correctOrder": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
+        "topLabel": "↑ Most Children",
+        "bottomLabel": "↓ Fewest Children"
+      },
+      {
+        "prompt": "Age Difference",
+        "items": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
+        "correctOrder": ["Brad and Angelina", "John and Yoko", "Kim and Kanye", "Barack and Michelle"],
+        "topLabel": "↑ Largest Gap",
+        "bottomLabel": "↓ Smallest Gap"
+      },
+      {
+        "prompt": "Years Married",
+        "items": ["Brad and Angelina", "John and Yoko", "Kim and Kanye", "Barack and Michelle"],
+        "correctOrder": ["Barack and Michelle", "John and Yoko", "Kim and Kanye", "Brad and Angelina"],
+        "topLabel": "↑ Longest Marriage",
+        "bottomLabel": "↓ Shortest Marriage"
+      }
+    ],
 
     [
       {
