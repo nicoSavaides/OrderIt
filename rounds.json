@@ -628,28 +628,28 @@
 
     [
       {
-        "prompt": "Number of Children",
-        "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
-        "correctOrder": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
-        "topLabel": "↑ Most Children",
-        "bottomLabel": "↓ Fewest Children"
+        "prompt": "Wingspan",
+        "items": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"],
+        "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
+        "topLabel": "↑ Longest Wingspan",
+        "bottomLabel": "↓ Shortest Wingspan"
       },
       {
-        "prompt": "Age Difference",
-        "items": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
-        "correctOrder": ["Brad and Angelina", "John and Yoko", "Kim and Kanye", "Barack and Michelle"],
-        "topLabel": "↑ Largest Gap",
-        "bottomLabel": "↓ Smallest Gap"
+        "prompt": "Weight",
+        "items": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
+        "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
       },
       {
-        "prompt": "Years Married",
-        "items": ["Brad and Angelina", "John and Yoko", "Kim and Kanye", "Barack and Michelle"],
-        "correctOrder": ["Barack and Michelle", "John and Yoko", "Kim and Kanye", "Brad and Angelina"],
-        "topLabel": "↑ Longest Marriage",
-        "bottomLabel": "↓ Shortest Marriage"
+        "prompt": "Top Speed",
+        "items": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
+        "correctOrder": ["Peregrine Falcon", "Bald Eagle", "Common Pigeon", "Great Horned Owl"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       }
     ],
-
+    
     [
       {
         "prompt": "Age Rating",
@@ -676,12 +676,29 @@
 
     [
       {
-        "prompt": "Population",
-        "items": ["Illinois", "Florida", "Arizona", "Hawaii"],
-        "correctOrder": ["Florida", "Illinois", "Arizona", "Hawaii"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
+        "prompt": "Height",
+        "items": ["Michael Jordan", "Shaquille O'Neal", "Allen Iverson", "Larry Bird"],
+        "correctOrder": ["Shaquille O'Neal", "Larry Bird", "Michael Jordan", "Allen Iverson"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
       },
+      {
+        "prompt": "Age",
+        "items": ["Shaquille O'Neal", "Larry Bird", "Michael Jordan", "Allen Iverson"],
+        "correctOrder": ["Larry Bird", "Michael Jordan", "Shaquille O'Neal", "Allen Iverson"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Number of Teams Played For",
+        "items": ["Larry Bird", "Michael Jordan", "Shaquille O'Neal", "Allen Iverson"],
+        "correctOrder": ["Shaquille O'Neal", "Allen Iverson", "Michael Jordan", "Larry Bird"],
+        "topLabel": "↑ Most Teams",
+        "bottomLabel": "↓ Fewest Teams"
+      }
+    ],
+
+    [
       {
         "prompt": "Land Area",
         "items": ["Florida", "Illinois", "Arizona", "Hawaii"],
@@ -690,13 +707,44 @@
         "bottomLabel": "↓ Smallest Area"
       },
       {
-        "prompt": "Date of Statehood",
+        "prompt": "Population",
         "items": ["Arizona", "Florida", "Illinois", "Hawaii"],
+        "correctOrder": ["Florida", "Illinois", "Arizona", "Hawaii"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["Florida", "Illinois", "Arizona", "Hawaii"],
         "correctOrder": ["Illinois", "Florida", "Arizona", "Hawaii"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
     ], 
+
+    [
+      {
+        "prompt": "Year Founded",
+        "items": ["Doordash", "Amazon", "X (Twitter)", "Tinder"],
+        "correctOrder": ["Amazon", "X (Twitter)", "Tinder", "Doordash"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Employees",
+        "items": ["Amazon", "X (Twitter)", "Tinder", "Doordash"],
+        "correctOrder": ["Amazon", "Doordash", "X (Twitter)", "Tinder"],
+        "topLabel": "↑ Most Employees",
+        "bottomLabel": "↓ Fewest Employees"
+      },
+      {
+        "prompt": "Number of Monthly Users",
+        "items": ["Amazon", "Doordash", "X (Twitter)", "Tinder"],
+        "correctOrder": ["X (Twitter)", "Amazon", "Tinder", "Doordash"],
+        "topLabel": "↑ Most Users",
+        "bottomLabel": "↓ Fewest Users"
+      }
+    ],
 
     [
       {
@@ -724,123 +772,27 @@
 
     [
       {
-        "prompt": "Wingspan",
-        "items": ["Great Horned Owl", "Common Pigeon", "Bald Eagle", "Peregrine Falcon"],
-        "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
-        "topLabel": "↑ Largest Wingspan",
-        "bottomLabel": "↓ Smallest Wingspan"
-      },
-      {
-        "prompt": "Weight",
-        "items": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
-        "correctOrder": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
-        "topLabel": "↑ Heaviest",
-        "bottomLabel": "↓ Lightest"
-      },
-      {
-        "prompt": "Top Speed",
-        "items": ["Bald Eagle", "Great Horned Owl", "Peregrine Falcon", "Common Pigeon"],
-        "correctOrder": ["Peregrine Falcon", "Bald Eagle", "Common Pigeon", "Great Horned Owl"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Founded",
-        "items": ["Doordash", "Amazon", "X (Twitter)", "Tinder"],
-        "correctOrder": ["Amazon", "X (Twitter)", "Tinder", "Doordash"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Number of Employees",
-        "items": ["Doordash", "Tinder", "X (Twitter)", "Amazon"],
-        "correctOrder": ["Amazon", "Doordash", "X (Twitter)", "Tinder"],
-        "topLabel": "↑ Most Employees",
-        "bottomLabel": "↓ Fewest Employees"
-      },
-      {
-        "prompt": "Number of Monthly Users",
-        "items": ["Amazon", "Doordash", "X (Twitter)", "Tinder"],
-        "correctOrder": ["X (Twitter)", "Amazon", "Tinder", "Doordash"],
-        "topLabel": "↑ Most Users",
-        "bottomLabel": "↓ Fewest Users"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Height",
-        "items": ["Larry Bird", "Shaq", "Michael Jordan", "Allen Iverson"],
-        "correctOrder": ["Shaq", "Larry Bird", "Michael Jordan", "Allen Iverson"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
         "prompt": "Age",
-        "items": ["Shaq", "Larry Bird", "Michael Jordan", "Allen Iverson"],
-        "correctOrder": ["Larry Bird", "Michael Jordan", "Shaq", "Allen Iverson"],
+        "items": ["Ellen DeGeneres", "Jimmy Fallon", "David Letterman", "Conan O’Brien"],
+        "correctOrder": ["David Letterman", "Ellen DeGeneres", "Conan O’Brien", "Jimmy Fallon"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
       },
       {
-        "prompt": "Number of Teams Played For",
-        "items": ["Larry Bird", "Michael Jordan", "Shaq", "Allen Iverson"],
-        "correctOrder": ["Shaq", "Allen Iverson", "Michael Jordan", "Larry Bird"],
-        "topLabel": "↑ Most Teams",
-        "bottomLabel": "↓ Fewest Teams"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Premiered",
-        "items": ["Breaking Bad", "The Sopranos", "Lost", "Stranger Things"],
-        "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Emmys Won",
-        "items": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
-        "correctOrder": ["The Sopranos", "Breaking Bad", "Stranger Things", "Lost"],
-        "topLabel": "↑ Most Emmys",
-        "bottomLabel": "↓ Fewest Emmys"
-      },
-      {
-        "prompt": "Number of Episodes",
-        "items": ["The Sopranos", "Breaking Bad", "Stranger Things", "Lost"],
-        "correctOrder": ["Lost", "The Sopranos", "Breaking Bad", "Stranger Things"],
-        "topLabel": "↑ Most Episodes",
-        "bottomLabel": "↓ Fewest Episodes"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Started",
-        "items": ["World War II", "Vietnam War", "Korean War", "American Civil War"],
-        "correctOrder": ["American Civil War", "World War II", "Korean War", "Vietnam War"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Length of War",
-        "items": ["American Civil War", "World War II", "Korean War", "Vietnam War"],
-        "correctOrder": ["Vietnam War", "World War II", "American Civil War", "Korean War"],
-        "topLabel": "↑ Longest",
+        "prompt": "Height",
+        "items": ["David Letterman", "Ellen DeGeneres", "Conan O’Brien", "Jimmy Fallon"],
+        "correctOrder": ["Conan O’Brien", "David Letterman", "Jimmy Fallon", "Ellen DeGeneres"],
+        "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       },
       {
-        "prompt": "Death Toll",
-        "items": ["Vietnam War", "World War II", "American Civil War", "Korean War"],
-        "correctOrder": ["World War II", "Korean War", "Vietnam War", "American Civil War"],
-        "topLabel": "↑ Most Deaths",
-        "bottomLabel": "↓ Fewest Deaths"
+        "prompt": "Years as Talk Show Host",
+        "items": ["Conan O’Brien", "David Letterman", "Jimmy Fallon", "Ellen DeGeneres"],
+        "correctOrder": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
+        "topLabel": "↑ Longest Tenure",
+        "bottomLabel": "↓ Shortest Tenure"
       }
-    ],
+    ], 
 
     [
       {
@@ -868,27 +820,75 @@
 
     [
       {
-        "prompt": "Age",
-        "items": ["Ellen DeGeneres", "Jimmy Fallon", "David Letterman", "Conan O’Brien"],
-        "correctOrder": ["David Letterman", "Ellen DeGeneres", "Conan O’Brien", "Jimmy Fallon"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
+        "prompt": "Number of Children",
+        "items": ["Barack and Michelle", "Kim and Kanye", "John and Yoko", "Brad and Angelina"],
+        "correctOrder": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
+        "topLabel": "↑ Most Children",
+        "bottomLabel": "↓ Fewest Children"
       },
       {
-        "prompt": "Height",
-        "items": ["David Letterman", "Ellen DeGeneres", "Conan O’Brien", "Jimmy Fallon"],
-        "correctOrder": ["Conan O’Brien", "David Letterman", "Jimmy Fallon", "Ellen DeGeneres"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
+        "prompt": "Age Difference",
+        "items": ["Brad and Angelina", "Kim and Kanye", "Barack and Michelle", "John and Yoko"],
+        "correctOrder": ["Brad and Angelina", "John and Yoko", "Kim and Kanye", "Barack and Michelle"],
+        "topLabel": "↑ Largest Gap",
+        "bottomLabel": "↓ Smallest Gap"
       },
       {
-        "prompt": "Years as Talk Show Host",
-        "items": ["Conan O’Brien", "David Letterman", "Jimmy Fallon", "Ellen DeGeneres"],
-        "correctOrder": ["David Letterman", "Conan O’Brien", "Ellen DeGeneres", "Jimmy Fallon"],
-        "topLabel": "↑ Longest Tenure",
-        "bottomLabel": "↓ Shortest Tenure"
+        "prompt": "Years Married",
+        "items": ["Brad and Angelina", "John and Yoko", "Kim and Kanye", "Barack and Michelle"],
+        "correctOrder": ["Barack and Michelle", "John and Yoko", "Kim and Kanye", "Brad and Angelina"],
+        "topLabel": "↑ Longest Marriage",
+        "bottomLabel": "↓ Shortest Marriage"
       }
-    ], 
+    ],
+
+    [
+      {
+        "prompt": "Year Started",
+        "items": ["World War II", "Vietnam War", "Korean War", "American Civil War"],
+        "correctOrder": ["American Civil War", "World War II", "Korean War", "Vietnam War"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Death Toll",
+        "items": ["Vietnam War", "World War II", "American Civil War", "Korean War"],
+        "correctOrder": ["World War II", "Korean War", "Vietnam War", "American Civil War"],
+        "topLabel": "↑ Most Deaths",
+        "bottomLabel": "↓ Fewest Deaths"
+      },
+      {
+        "prompt": "Length of War",
+        "items": ["American Civil War", "World War II", "Korean War", "Vietnam War"],
+        "correctOrder": ["Vietnam War", "World War II", "American Civil War", "Korean War"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Premiered",
+        "items": ["Breaking Bad", "The Sopranos", "Lost", "Stranger Things"],
+        "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Emmys Won",
+        "items": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
+        "correctOrder": ["The Sopranos", "Breaking Bad", "Stranger Things", "Lost"],
+        "topLabel": "↑ Most Emmys",
+        "bottomLabel": "↓ Fewest Emmys"
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["The Sopranos", "Breaking Bad", "Stranger Things", "Lost"],
+        "correctOrder": ["Lost", "The Sopranos", "Breaking Bad", "Stranger Things"],
+        "topLabel": "↑ Most Episodes",
+        "bottomLabel": "↓ Fewest Episodes"
+      }
+    ],
 
     [
       {
