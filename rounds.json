@@ -725,22 +725,22 @@
     [
       {
         "prompt": "Year Founded",
-        "items": ["Doordash", "Amazon", "X (Twitter)", "Tinder"],
-        "correctOrder": ["Amazon", "X (Twitter)", "Tinder", "Doordash"],
+        "items": ["DoorDash", "Amazon", "X (Twitter)", "Tinder"],
+        "correctOrder": ["Amazon", "X (Twitter)", "Tinder", "DoorDash"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Number of Employees",
-        "items": ["Amazon", "X (Twitter)", "Tinder", "Doordash"],
-        "correctOrder": ["Amazon", "Doordash", "X (Twitter)", "Tinder"],
+        "items": ["Amazon", "X (Twitter)", "Tinder", "DoorDash"],
+        "correctOrder": ["Amazon", "DoorDash", "X (Twitter)", "Tinder"],
         "topLabel": "↑ Most Employees",
         "bottomLabel": "↓ Fewest Employees"
       },
       {
         "prompt": "Number of Monthly Users",
-        "items": ["Amazon", "Doordash", "X (Twitter)", "Tinder"],
-        "correctOrder": ["X (Twitter)", "Amazon", "Tinder", "Doordash"],
+        "items": ["Amazon", "DoorDash", "X (Twitter)", "Tinder"],
+        "correctOrder": ["X (Twitter)", "Amazon", "Tinder", "DoorDash"],
         "topLabel": "↑ Most Users",
         "bottomLabel": "↓ Fewest Users"
       }
