@@ -852,14 +852,14 @@
       },
       {
         "prompt": "Death Toll",
-        "items": ["Vietnam War", "World War II", "American Civil War", "Korean War"],
+        "items": ["American Civil War", "World War II", "Korean War", "Vietnam War"],
         "correctOrder": ["World War II", "Korean War", "Vietnam War", "American Civil War"],
         "topLabel": "↑ Most Deaths",
         "bottomLabel": "↓ Fewest Deaths"
       },
       {
         "prompt": "Length of War",
-        "items": ["American Civil War", "World War II", "Korean War", "Vietnam War"],
+        "items": ["World War II", "Korean War", "Vietnam War", "American Civil War"],
         "correctOrder": ["Vietnam War", "World War II", "American Civil War", "Korean War"],
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
