@@ -892,30 +892,6 @@
 
     [
       {
-        "prompt": "Year Premiered",
-        "items": ["Breaking Bad", "The Sopranos", "Lost", "Stranger Things"],
-        "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Emmys Won",
-        "items": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
-        "correctOrder": ["The Sopranos", "Breaking Bad", "Stranger Things", "Lost"],
-        "topLabel": "↑ Most Emmys",
-        "bottomLabel": "↓ Fewest Emmys"
-      },
-      {
-        "prompt": "Number of Episodes",
-        "items": ["The Sopranos", "Breaking Bad", "Stranger Things", "Lost"],
-        "correctOrder": ["Lost", "The Sopranos", "Breaking Bad", "Stranger Things"],
-        "topLabel": "↑ Most Episodes",
-        "bottomLabel": "↓ Fewest Episodes"
-      }
-    ],
-
-    [
-      {
         "prompt": "Distance from Sun",
         "items": ["Neptune", "Venus", "Saturn", "Mars"],
         "correctOrder": ["Neptune", "Saturn", "Mars", "Venus"],
@@ -935,6 +911,30 @@
         "correctOrder": ["Saturn", "Neptune", "Mars", "Venus"],
         "topLabel": "↑ Most Moons",
         "bottomLabel": "↓ Fewest Moons"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Premiered",
+        "items": ["Breaking Bad", "The Sopranos", "Lost", "Stranger Things"],
+        "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Emmys Won",
+        "items": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
+        "correctOrder": ["The Sopranos", "Breaking Bad", "Stranger Things", "Lost"],
+        "topLabel": "↑ Most Emmys",
+        "bottomLabel": "↓ Fewest Emmys"
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["The Sopranos", "Breaking Bad", "Stranger Things", "Lost"],
+        "correctOrder": ["Lost", "The Sopranos", "Breaking Bad", "Stranger Things"],
+        "topLabel": "↑ Most Episodes",
+        "bottomLabel": "↓ Fewest Episodes"
       }
     ],
 
