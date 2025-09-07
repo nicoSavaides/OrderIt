@@ -916,6 +916,30 @@
 
     [
       {
+        "prompt": "Number of Teeth",
+        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
+        "correctOrder": ["Great White Shark", "Alligator", "Human", "Snapping Turtle"],
+        "topLabel": "↑ Most Teeth",
+        "bottomLabel": "↓ Fewest Teeth"
+      },
+      {
+        "prompt": "Bite Force",
+        "items": ["Great White Shark", "Alligator", "Human", "Snapping Turtle"],
+        "correctOrder": ["Great White Shark", "Alligator", "Snapping Turtle", "Human"],
+        "topLabel": "↑ Strongest Bite",
+        "bottomLabel": "↓ Weakest Bite"
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Great White Shark", "Alligator", "Snapping Turtle", "Human"],
+        "correctOrder": ["Great White Shark", "Human", "Alligator", "Snapping Turtle"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Premiered",
         "items": ["Breaking Bad", "The Sopranos", "Lost", "Stranger Things"],
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
@@ -959,30 +983,6 @@
         "correctOrder": ["Jurassic Park", "Jaws", "Napoleon Dynamite", "Toy Story"],
         "topLabel": "↑ Longest Runtime",
         "bottomLabel": "↓ Shortest Runtime"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Number of Teeth",
-        "items": ["Alligator", "Snapping Turtle", "Human", "Great White Shark"],
-        "correctOrder": ["Great White Shark", "Alligator", "Human", "Snapping Turtle"],
-        "topLabel": "↑ Most Teeth",
-        "bottomLabel": "↓ Fewest Teeth"
-      },
-      {
-        "prompt": "Bite Force",
-        "items": ["Great White Shark", "Alligator", "Human", "Snapping Turtle"],
-        "correctOrder": ["Great White Shark", "Alligator", "Snapping Turtle", "Human"],
-        "topLabel": "↑ Strongest Bite",
-        "bottomLabel": "↓ Weakest Bite"
-      },
-      {
-        "prompt": "Top Speed",
-        "items": ["Great White Shark", "Alligator", "Snapping Turtle", "Human"],
-        "correctOrder": ["Great White Shark", "Human", "Alligator", "Snapping Turtle"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
       }
     ],
 
