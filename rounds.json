@@ -940,8 +940,32 @@
 
     [
       {
+        "prompt": "Height",
+        "items": ["Palm Tree", "Redwood Tree", "Cherry Blossom", "Oak Tree"],
+        "correctOrder": ["Redwood Tree", "Oak Tree", "Palm Tree", "Cherry Blossom"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Trunk Width",
+        "items": ["Redwood Tree", "Oak Tree", "Palm Tree", "Cherry Blossom"],
+        "correctOrder": ["Redwood Tree", "Oak Tree", "Cherry Blossom", "Palm Tree"],
+        "topLabel": "↑ Thickest Trunk",
+        "bottomLabel": "↓ Thinnest Trunk"
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Redwood Tree", "Oak Tree", "Cherry Blossom", "Palm Tree"],
+        "correctOrder": ["Redwood Tree", "Oak Tree", "Palm Tree", "Cherry Blossom"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Premiered",
-        "items": ["Breaking Bad", "The Sopranos", "Lost", "Stranger Things"],
+        "items": ["Breaking Bad", "Stranger Things", "The Sopranos", "Lost"],
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
@@ -1007,30 +1031,6 @@
         "correctOrder": ["Twilight", "A Tale of Two Cities", "1984", "The Great Gatsby"],
         "topLabel": "↑ Longest Book",
         "bottomLabel": "↓ Shortest Book"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Height",
-        "items": ["Palm Tree", "Redwood Tree", "Cherry Blossom", "Oak Tree"],
-        "correctOrder": ["Redwood Tree", "Oak Tree", "Palm Tree", "Cherry Blossom"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Trunk Width",
-        "items": ["Redwood Tree", "Oak Tree", "Palm Tree", "Cherry Blossom"],
-        "correctOrder": ["Redwood Tree", "Oak Tree", "Cherry Blossom", "Palm Tree"],
-        "topLabel": "↑ Thickest Trunk",
-        "bottomLabel": "↓ Thinnest Trunk"
-      },
-      {
-        "prompt": "Lifespan",
-        "items": ["Redwood Tree", "Oak Tree", "Cherry Blossom", "Palm Tree"],
-        "correctOrder": ["Redwood Tree", "Oak Tree", "Palm Tree", "Cherry Blossom"],
-        "topLabel": "↑ Longest Lifespan",
-        "bottomLabel": "↓ Shortest Lifespan"
       }
     ],
 
