@@ -964,6 +964,30 @@
 
     [
       {
+        "prompt": "Age",
+        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
+        "correctOrder": ["Madonna", "Janet Jackson", "Katy Perry", "Lady Gaga"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Monthly Spotify Listeners",
+        "items": ["Madonna", "Janet Jackson", "Katy Perry", "Lady Gaga"],
+        "correctOrder": ["Lady Gaga", "Katy Perry", "Madonna", "Janet Jackson"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Super Bowl Performance Year",
+        "items": ["Lady Gaga", "Katy Perry", "Madonna", "Janet Jackson"],
+        "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Premiered",
         "items": ["Breaking Bad", "Stranger Things", "The Sopranos", "Lost"],
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
@@ -1031,30 +1055,6 @@
         "correctOrder": ["Twilight", "A Tale of Two Cities", "1984", "The Great Gatsby"],
         "topLabel": "↑ Longest Book",
         "bottomLabel": "↓ Shortest Book"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Age",
-        "items": ["Janet Jackson", "Katy Perry", "Lady Gaga", "Madonna"],
-        "correctOrder": ["Madonna", "Janet Jackson", "Katy Perry", "Lady Gaga"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
-      },
-      {
-        "prompt": "Monthly Spotify Listeners",
-        "items": ["Madonna", "Janet Jackson", "Katy Perry", "Lady Gaga"],
-        "correctOrder": ["Lady Gaga", "Katy Perry", "Madonna", "Janet Jackson"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
-        "prompt": "Super Bowl Performance Year",
-        "items": ["Lady Gaga", "Katy Perry", "Madonna", "Janet Jackson"],
-        "correctOrder": ["Janet Jackson", "Madonna", "Katy Perry", "Lady Gaga"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
       }
     ],
 
