@@ -988,6 +988,30 @@
 
     [
       {
+        "prompt": "Year Published",
+        "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
+        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Author Last Name (A-Z)",
+        "items": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"],
+        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Page Count",
+        "items": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"],
+        "correctOrder": ["Twilight", "A Tale of Two Cities", "1984", "The Great Gatsby"],
+        "topLabel": "↑ Longest Book",
+        "bottomLabel": "↓ Shortest Book"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Premiered",
         "items": ["Breaking Bad", "Stranger Things", "The Sopranos", "Lost"],
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
@@ -1031,30 +1055,6 @@
         "correctOrder": ["Jurassic Park", "Jaws", "Napoleon Dynamite", "Toy Story"],
         "topLabel": "↑ Longest Runtime",
         "bottomLabel": "↓ Shortest Runtime"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Published",
-        "items": ["The Great Gatsby", "Twilight", "A Tale of Two Cities", "1984"],
-        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Author Last Name (A-Z)",
-        "items": ["A Tale of Two Cities", "The Great Gatsby", "1984", "Twilight"],
-        "correctOrder": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
-      },
-      {
-        "prompt": "Page Count",
-        "items": ["A Tale of Two Cities", "The Great Gatsby", "Twilight", "1984"],
-        "correctOrder": ["Twilight", "A Tale of Two Cities", "1984", "The Great Gatsby"],
-        "topLabel": "↑ Longest Book",
-        "bottomLabel": "↓ Shortest Book"
       }
     ],
 
