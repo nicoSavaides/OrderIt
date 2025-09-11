@@ -1012,6 +1012,30 @@
 
     [
       {
+        "prompt": "Grams of Sugar",
+        "items": ["Coca-Cola", "Gatorade", "Coke Zero", "Mountain Dew"],
+        "correctOrder": ["Mountain Dew", "Coca-Cola", "Gatorade", "Coke Zero"],
+        "topLabel": "↑ Most Sugar",
+        "bottomLabel": "↓ Least Sugar"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Mountain Dew", "Coca-Cola", "Gatorade", "Coke Zero"],
+        "correctOrder": ["Coca-Cola", "Mountain Dew", "Gatorade", "Coke Zero"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Sales",
+        "items": ["Coca-Cola", "Mountain Dew", "Gatorade", "Coke Zero"],
+        "correctOrder": ["Coca-Cola", "Mountain Dew", "Gatorade", "Coke Zero"],
+        "topLabel": "↑ Most Sold",
+        "bottomLabel": "↓ Least Sold"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Premiered",
         "items": ["Breaking Bad", "Stranger Things", "The Sopranos", "Lost"],
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
@@ -1320,30 +1344,6 @@
         "correctOrder": ["UC Berkeley", "Oxford", "Stanford", "Yale"],
         "topLabel": "↑ Most Students",
         "bottomLabel": "↓ Fewest Students"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Grams of Sugar",
-        "items": ["Coca-Cola", "Gatorade", "Coke Zero", "Mountain Dew"],
-        "correctOrder": ["Mountain Dew", "Coca-Cola", "Gatorade", "Coke Zero"],
-        "topLabel": "↑ Most Sugar",
-        "bottomLabel": "↓ Least Sugar"
-      },
-      {
-        "prompt": "Year Released",
-        "items": ["Mountain Dew", "Coca-Cola", "Gatorade", "Coke Zero"],
-        "correctOrder": ["Coke Zero", "Gatorade", "Mountain Dew", "Coca-Cola"],
-        "topLabel": "↑ Newest",
-        "bottomLabel": "↓ Oldest"
-      },
-      {
-        "prompt": "Sales",
-        "items": ["Coke Zero", "Gatorade", "Mountain Dew", "Coca-Cola"],
-        "correctOrder": ["Coca-Cola", "Mountain Dew", "Gatorade", "Coke Zero"],
-        "topLabel": "↑ Most Sold",
-        "bottomLabel": "↓ Least Sold"
       }
     ],
 
