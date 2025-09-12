@@ -1036,6 +1036,30 @@
 
     [
       {
+        "prompt": "Year Released",
+        "items": ["Dancing Queen", "I Want to Hold Your Hand", "Smells Like Teen Spirit", "Thriller"],
+        "correctOrder": ["I Want to Hold Your Hand", "Dancing Queen", "Thriller", "Smells Like Teen Spirit"],
+        "topLabel": "↑ Earliest Release",
+        "bottomLabel": "↓ Newest Release"
+      },
+      {
+        "prompt": "Artist Name (A-Z)",
+        "items": ["I Want to Hold Your Hand", "Dancing Queen", "Thriller", "Smells Like Teen Spirit"],
+        "correctOrder": ["Dancing Queen", "I Want to Hold Your Hand", "Thriller", "Smells Like Teen Spirit"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Song Length",
+        "items": ["Dancing Queen", "I Want to Hold Your Hand", "Thriller", "Smells Like Teen Spirit"],
+        "correctOrder": ["Thriller", "Smells Like Teen Spirit", "Dancing Queen", "I Want to Hold Your Hand"],
+        "topLabel": "↑ Longest Song",
+        "bottomLabel": "↓ Shortest Song"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Premiered",
         "items": ["Breaking Bad", "Stranger Things", "The Sopranos", "Lost"],
         "correctOrder": ["The Sopranos", "Lost", "Breaking Bad", "Stranger Things"],
@@ -1103,30 +1127,6 @@
         "correctOrder": ["United Kingdom", "Brazil", "Mexico", "Iraq"],
         "topLabel": "↑ Highest GDP",
         "bottomLabel": "↓ Lowest GDP"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Released",
-        "items": ["Dancing Queen", "I Want to Hold Your Hand", "Smells Like Teen Spirit", "Thriller"],
-        "correctOrder": ["I Want to Hold Your Hand", "Dancing Queen", "Thriller", "Smells Like Teen Spirit"],
-        "topLabel": "↑ Earliest Release",
-        "bottomLabel": "↓ Newest Release"
-      },
-      {
-        "prompt": "Artist Name (A-Z)",
-        "items": ["I Want to Hold Your Hand", "Dancing Queen", "Thriller", "Smells Like Teen Spirit"],
-        "correctOrder": ["Dancing Queen", "I Want to Hold Your Hand", "Thriller", "Smells Like Teen Spirit"],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
-      },
-      {
-        "prompt": "Song Length",
-        "items": ["Dancing Queen", "I Want to Hold Your Hand", "Thriller", "Smells Like Teen Spirit"],
-        "correctOrder": ["Thriller", "Smells Like Teen Spirit", "Dancing Queen", "I Want to Hold Your Hand"],
-        "topLabel": "↑ Longest Song",
-        "bottomLabel": "↓ Shortest Song"
       }
     ],
 
