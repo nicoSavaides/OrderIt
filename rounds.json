@@ -1084,30 +1084,6 @@
 
     [
       {
-        "prompt": "Year",
-        "items": ["Toy Story", "Jaws", "Napoleon Dynamite", "Jurassic Park"],
-        "correctOrder": ["Jaws", "Jurassic Park", "Toy Story", "Napoleon Dynamite"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Box Office Gross",
-        "items": ["Jaws", "Jurassic Park", "Toy Story", "Napoleon Dynamite"],
-        "correctOrder": ["Jurassic Park", "Jaws", "Toy Story", "Napoleon Dynamite"],
-        "topLabel": "↑ Highest Grossing",
-        "bottomLabel": "↓ Lowest Grossing"
-      },
-      {
-        "prompt": "Runtime",
-        "items": ["Jurassic Park", "Jaws", "Toy Story", "Napoleon Dynamite"],
-        "correctOrder": ["Jurassic Park", "Jaws", "Napoleon Dynamite", "Toy Story"],
-        "topLabel": "↑ Longest Runtime",
-        "bottomLabel": "↓ Shortest Runtime"
-      }
-    ],
-
-    [
-      {
         "prompt": "Land Area",
         "items": ["Mexico", "Brazil", "United Kingdom", "Iraq"],
         "correctOrder": ["Brazil", "Mexico", "Iraq", "United Kingdom"],
@@ -1127,6 +1103,30 @@
         "correctOrder": ["United Kingdom", "Brazil", "Mexico", "Iraq"],
         "topLabel": "↑ Highest GDP",
         "bottomLabel": "↓ Lowest GDP"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year",
+        "items": ["Toy Story", "Jaws", "Napoleon Dynamite", "Jurassic Park"],
+        "correctOrder": ["Jaws", "Jurassic Park", "Toy Story", "Napoleon Dynamite"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Box Office Gross",
+        "items": ["Jaws", "Jurassic Park", "Toy Story", "Napoleon Dynamite"],
+        "correctOrder": ["Jurassic Park", "Jaws", "Toy Story", "Napoleon Dynamite"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["Jurassic Park", "Jaws", "Toy Story", "Napoleon Dynamite"],
+        "correctOrder": ["Jurassic Park", "Jaws", "Napoleon Dynamite", "Toy Story"],
+        "topLabel": "↑ Longest Runtime",
+        "bottomLabel": "↓ Shortest Runtime"
       }
     ],
 
