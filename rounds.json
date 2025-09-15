@@ -1108,6 +1108,54 @@
 
     [
       {
+        "prompt": "Age",
+        "items": ["Scarlett Johansson", "Tom Hanks", "Rihanna", "Tom Cruise"],
+        "correctOrder": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
+        "correctOrder": ["Tom Hanks", "Rihanna", "Tom Cruise", "Scarlett Johansson"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Tom Hanks", "Rihanna", "Tom Cruise", "Scarlett Johansson"],
+        "correctOrder": ["Rihanna", "Tom Cruise", "Tom Hanks", "Scarlett Johansson"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Tokyo", "New York City", "Los Angeles", "San Francisco"],
+        "correctOrder": ["New York City", "San Francisco", "Tokyo", "Los Angeles"],
+        "topLabel": "↑ Farthest from Equator",
+        "bottomLabel": "↓ Closest to Equator"
+      },
+      {
+        "prompt": "Population",
+        "items": ["New York City", "San Francisco", "Tokyo", "Los Angeles"],
+        "correctOrder": ["Tokyo", "New York City", "Los Angeles", "San Francisco"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["Tokyo", "New York City", "Los Angeles", "San Francisco"],
+        "correctOrder": ["Tokyo", "Los Angeles", "New York City", "San Francisco"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year",
         "items": ["Toy Story", "Jaws", "Napoleon Dynamite", "Jurassic Park"],
         "correctOrder": ["Jaws", "Jurassic Park", "Toy Story", "Napoleon Dynamite"],
@@ -1127,6 +1175,54 @@
         "correctOrder": ["Jurassic Park", "Jaws", "Napoleon Dynamite", "Toy Story"],
         "topLabel": "↑ Longest Runtime",
         "bottomLabel": "↓ Shortest Runtime"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Location Name Length",
+        "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
+        "correctOrder": ["Giants", "Dodgers", "Yankees", "Red Sox"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
+      },
+      {
+        "prompt": "World Series Won",
+        "items": ["Giants", "Dodgers", "Yankees", "Red Sox"],
+        "correctOrder": ["Yankees", "Red Sox", "Giants", "Dodgers"],
+        "topLabel": "↑ Most Titles",
+        "bottomLabel": "↓ Fewest Titles"
+      },
+      {
+        "prompt": "Team Valuation",
+        "items": ["Yankees", "Red Sox", "Giants", "Dodgers"],
+        "correctOrder": ["Yankees", "Dodgers", "Red Sox", "Giants"],
+        "topLabel": "↑ Highest Valuation",
+        "bottomLabel": "↓ Lowest Valuation"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
+        "correctOrder": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Year Built",
+        "items": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
+        "correctOrder": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Length of Construction",
+        "items": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
+        "correctOrder": ["Golden Gate Bridge", "The White House", "Taj Mahal", "Stonehenge"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
       }
     ],
 
@@ -1154,7 +1250,6 @@
       }
     ],
   
-
     [
       {
         "prompt": "Age",
@@ -1205,30 +1300,6 @@
 
     [
       {
-        "prompt": "Population",
-        "items": ["San Francisco", "Tokyo", "New York City", "Los Angeles"],
-        "correctOrder": ["Tokyo", "New York City", "Los Angeles", "San Francisco"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Distance from Equator",
-        "items": ["Tokyo", "New York City", "Los Angeles", "San Francisco"],
-        "correctOrder": ["New York City", "San Francisco", "Tokyo", "Los Angeles"],
-        "topLabel": "↑ Farthest from Equator",
-        "bottomLabel": "↓ Closest to Equator"
-      },
-      {
-        "prompt": "Land Area",
-        "items": ["New York City", "San Francisco", "Tokyo", "Los Angeles"],
-        "correctOrder": ["Tokyo", "Los Angeles", "New York City", "San Francisco"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      }
-    ],
-
-    [
-      {
         "prompt": "Location Name Length",
         "items": ["Cowboys", "Bears", "Eagles", "Packers"],
         "correctOrder": ["Eagles", "Packers", "Bears", "Cowboys"],
@@ -1272,30 +1343,6 @@
         "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
         "topLabel": "↑ Highest Grossing",
         "bottomLabel": "↓ Lowest Grossing"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Age",
-        "items": ["Scarlett Johansson", "Tom Hanks", "Rihanna", "Tom Cruise"],
-        "correctOrder": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
-      },
-      {
-        "prompt": "Height",
-        "items": ["Tom Hanks", "Tom Cruise", "Scarlett Johansson", "Rihanna"],
-        "correctOrder": ["Tom Hanks", "Rihanna", "Tom Cruise", "Scarlett Johansson"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Net Worth",
-        "items": ["Tom Hanks", "Rihanna", "Tom Cruise", "Scarlett Johansson"],
-        "correctOrder": ["Rihanna", "Tom Cruise", "Tom Hanks", "Scarlett Johansson"],
-        "topLabel": "↑ Highest Net Worth",
-        "bottomLabel": "↓ Lowest Net Worth"
       }
     ],
 
@@ -1659,54 +1706,6 @@
         "bottomLabel": "↓ Fewest Years"
       }
     ], 
-
-    [
-      {
-        "prompt": "Height",
-        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
-        "correctOrder": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Year Built",
-        "items": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
-        "correctOrder": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Length of Construction",
-        "items": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
-        "correctOrder": ["Golden Gate Bridge", "The White House", "Taj Mahal", "Stonehenge"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Location Name Length",
-        "items": ["Yankees", "Giants", "Dodgers", "Red Sox"],
-        "correctOrder": ["Giants", "Dodgers", "Yankees", "Red Sox"],
-        "topLabel": "↑ Most Letters",
-        "bottomLabel": "↓ Fewest Letters"
-      },
-      {
-        "prompt": "World Series Won",
-        "items": ["Giants", "Dodgers", "Yankees", "Red Sox"],
-        "correctOrder": ["Yankees", "Red Sox", "Giants", "Dodgers"],
-        "topLabel": "↑ Most Titles",
-        "bottomLabel": "↓ Fewest Titles"
-      },
-      {
-        "prompt": "Team Valuation",
-        "items": ["Yankees", "Red Sox", "Giants", "Dodgers"],
-        "correctOrder": ["Yankees", "Dodgers", "Red Sox", "Giants"],
-        "topLabel": "↑ Highest Valuation",
-        "bottomLabel": "↓ Lowest Valuation"
-      }
-    ],
 
     [
       {
