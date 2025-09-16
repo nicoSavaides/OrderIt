@@ -1132,6 +1132,30 @@
 
     [
       {
+        "prompt": "Height",
+        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
+        "correctOrder": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Year Built",
+        "items": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
+        "correctOrder": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Length of Construction",
+        "items": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
+        "correctOrder": ["Golden Gate Bridge", "The White House", "Taj Mahal", "Stonehenge"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Distance from Equator",
         "items": ["Tokyo", "New York City", "Los Angeles", "San Francisco"],
         "correctOrder": ["New York City", "San Francisco", "Tokyo", "Los Angeles"],
@@ -1199,30 +1223,6 @@
         "correctOrder": ["Yankees", "Dodgers", "Red Sox", "Giants"],
         "topLabel": "↑ Highest Valuation",
         "bottomLabel": "↓ Lowest Valuation"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Height",
-        "items": ["Golden Gate Bridge", "Taj Mahal", "Stonehenge", "The White House"],
-        "correctOrder": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Year Built",
-        "items": ["Golden Gate Bridge", "Taj Mahal", "The White House", "Stonehenge"],
-        "correctOrder": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Length of Construction",
-        "items": ["Stonehenge", "Taj Mahal", "The White House", "Golden Gate Bridge"],
-        "correctOrder": ["Golden Gate Bridge", "The White House", "Taj Mahal", "Stonehenge"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
       }
     ],
 
