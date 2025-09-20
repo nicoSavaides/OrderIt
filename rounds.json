@@ -1262,15 +1262,15 @@
         "prompt": "Age at Death",
         "items": ["Abraham Lincoln", "George H. W. Bush", "John F. Kennedy", "Jimmy Carter"],
         "correctOrder": ["Jimmy Carter", "George H. W. Bush", "Abraham Lincoln", "John F. Kennedy"],
-        "topLabel": "↑ Oldest at Death",
-        "bottomLabel": "↓ Youngest at Death"
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Age at Inauguration",
         "items": ["Jimmy Carter", "George H. W. Bush", "Abraham Lincoln", "John F. Kennedy"],
         "correctOrder": ["George H. W. Bush", "Jimmy Carter", "Abraham Lincoln", "John F. Kennedy"],
-        "topLabel": "↑ Oldest at Inauguration",
-        "bottomLabel": "↓ Youngest at Inauguration"
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       }
     ],
   
