@@ -1228,6 +1228,30 @@
 
     [
       {
+        "prompt": "Average Weight",
+        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
+        "correctOrder": ["Submarine", "Tank", "Helicopter", "Motorcycle"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Top Recorded Speed",
+        "items": ["Submarine", "Tank", "Helicopter", "Motorcycle"],
+        "correctOrder": ["Motorcycle", "Helicopter", "Submarine", "Tank"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Motorcycle", "Helicopter", "Submarine", "Tank"],
+        "correctOrder": ["Submarine", "Motorcycle", "Tank", "Helicopter"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
         "prompt": "Height",
         "items": ["George H. W. Bush", "Abraham Lincoln", "Jimmy Carter", "John F. Kennedy"],
         "correctOrder": ["Abraham Lincoln", "George H. W. Bush", "John F. Kennedy", "Jimmy Carter"],
@@ -1512,30 +1536,6 @@
         "correctOrder": ["Titanic", "Inception", "Forrest Gump", "E.T."],
         "topLabel": "↑ Longest Runtime",
         "bottomLabel": "↓ Shortest Runtime"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Average Weight",
-        "items": ["Tank", "Submarine", "Motorcycle", "Helicopter"],
-        "correctOrder": ["Submarine", "Tank", "Helicopter", "Motorcycle"],
-        "topLabel": "↑ Heaviest",
-        "bottomLabel": "↓ Lightest"
-      },
-      {
-        "prompt": "Top Recorded Speed",
-        "items": ["Submarine", "Tank", "Helicopter", "Motorcycle"],
-        "correctOrder": ["Motorcycle", "Helicopter", "Submarine", "Tank"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
-      },
-      {
-        "prompt": "Year Invented",
-        "items": ["Motorcycle", "Helicopter", "Submarine", "Tank"],
-        "correctOrder": ["Submarine", "Motorcycle", "Tank", "Helicopter"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
       }
     ],
 
