@@ -1273,30 +1273,6 @@
         "bottomLabel": "↓ Youngest"
       }
     ],
-  
-    [
-      {
-        "prompt": "Age",
-        "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
-        "correctOrder": ["Oprah Winfrey", "Johnny Depp", "Will Smith", "Leonardo DiCaprio"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
-      },
-      {
-        "prompt": "Height",
-        "items": ["Oprah Winfrey", "Johnny Depp", "Will Smith", "Leonardo DiCaprio"],
-        "correctOrder": ["Will Smith", "Leonardo DiCaprio", "Johnny Depp", "Oprah Winfrey"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Net Worth",
-        "items": ["Will Smith", "Leonardo DiCaprio", "Johnny Depp", "Oprah Winfrey"],
-        "correctOrder": ["Oprah Winfrey", "Will Smith", "Leonardo DiCaprio", "Johnny Depp"],
-        "topLabel": "↑ Highest Net Worth",
-        "bottomLabel": "↓ Lowest Net Worth"
-      }
-    ],
 
     [
       {
@@ -1319,6 +1295,30 @@
         "correctOrder": ["Horse", "Panda", "Cheetah", "Rabbit"],
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Will Smith", "Oprah Winfrey", "Leonardo DiCaprio", "Johnny Depp"],
+        "correctOrder": ["Oprah Winfrey", "Johnny Depp", "Will Smith", "Leonardo DiCaprio"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Oprah Winfrey", "Johnny Depp", "Will Smith", "Leonardo DiCaprio"],
+        "correctOrder": ["Will Smith", "Leonardo DiCaprio", "Johnny Depp", "Oprah Winfrey"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Will Smith", "Leonardo DiCaprio", "Johnny Depp", "Oprah Winfrey"],
+        "correctOrder": ["Oprah Winfrey", "Will Smith", "Leonardo DiCaprio", "Johnny Depp"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
       }
     ],
 
@@ -1456,7 +1456,6 @@
         "correctOrder": ["India", "USA", "Egypt", "Spain"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
-        
       },
       {
         "prompt": "GDP",
