@@ -1324,6 +1324,78 @@
 
     [
       {
+        "prompt": "Land Area",
+        "items": ["New York", "Ohio", "Alaska", "Idaho"],
+        "correctOrder": ["Alaska", "Idaho", "New York", "Ohio"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Alaska", "Idaho", "New York", "Ohio"],
+        "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["New York", "Ohio", "Idaho", "Alaska"],
+        "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Debut Year as Pro",
+        "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
+        "correctOrder": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Social Media Followers",
+        "items": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"],
+        "correctOrder": ["Cristiano Ronaldo", "Mike Tyson", "Simone Biles", "Tiger Woods"],
+        "topLabel": "↑ Most Followers",
+        "bottomLabel": "↓ Fewest Followers"
+      },
+      {
+        "prompt": "Total Career Earnings",
+        "items": ["Cristiano Ronaldo", "Mike Tyson", "Simone Biles", "Tiger Woods"],
+        "correctOrder": ["Tiger Woods", "Cristiano Ronaldo", "Mike Tyson", "Simone Biles"],
+        "topLabel": "↑ Most Earnings",
+        "bottomLabel": "↓ Least Earnings"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Land Area",
+        "items": ["Spain", "USA", "Egypt", "India"],
+        "correctOrder": ["USA", "India", "Egypt", "Spain"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Population",
+        "items": ["USA", "India", "Egypt", "Spain"],
+        "correctOrder": ["India", "USA", "Egypt", "Spain"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "GDP",
+        "items": ["India", "USA", "Egypt", "Spain"],
+        "correctOrder": ["USA", "India", "Spain", "Egypt"],
+        "topLabel": "↑ Largest GDP",
+        "bottomLabel": "↓ Smallest GDP"
+      }
+    ], 
+
+    [
+      {
         "prompt": "Location Name Length",
         "items": ["Cowboys", "Bears", "Eagles", "Packers"],
         "correctOrder": ["Eagles", "Packers", "Bears", "Cowboys"],
@@ -1367,30 +1439,6 @@
         "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
         "topLabel": "↑ Highest Grossing",
         "bottomLabel": "↓ Lowest Grossing"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Land Area",
-        "items": ["New York", "Ohio", "Alaska", "Idaho"],
-        "correctOrder": ["Alaska", "Idaho", "New York", "Ohio"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Alaska", "Idaho", "New York", "Ohio"],
-        "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Date of Statehood",
-        "items": ["New York", "Ohio", "Idaho", "Alaska"],
-        "correctOrder": ["New York", "Ohio", "Idaho", "Alaska"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
       }
     ],
 
@@ -1444,30 +1492,6 @@
 
     [
       {
-        "prompt": "Land Area",
-        "items": ["Spain", "USA", "Egypt", "India"],
-        "correctOrder": ["USA", "India", "Egypt", "Spain"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Population",
-        "items": ["USA", "India", "Egypt", "Spain"],
-        "correctOrder": ["India", "USA", "Egypt", "Spain"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "GDP",
-        "items": ["India", "USA", "Egypt", "Spain"],
-        "correctOrder": ["USA", "India", "Spain", "Egypt"],
-        "topLabel": "↑ Largest GDP",
-        "bottomLabel": "↓ Smallest GDP"
-      }
-    ], 
-
-    [
-      {
         "prompt": "Year Opened",
         "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
         "correctOrder": ["Disneyland Shanghai", "Disneyland Paris", "Walt Disney World", "Disneyland"],
@@ -1489,30 +1513,6 @@
         "bottomLabel": "↓ Smallest"
       }
     ], 
-
-    [
-      {
-        "prompt": "Debut Year as Pro",
-        "items": ["Tiger Woods", "Simone Biles", "Cristiano Ronaldo", "Mike Tyson"],
-        "correctOrder": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Social Media Followers",
-        "items": ["Mike Tyson", "Tiger Woods", "Cristiano Ronaldo", "Simone Biles"],
-        "correctOrder": ["Cristiano Ronaldo", "Mike Tyson", "Simone Biles", "Tiger Woods"],
-        "topLabel": "↑ Most Followers",
-        "bottomLabel": "↓ Fewest Followers"
-      },
-      {
-        "prompt": "Total Career Earnings",
-        "items": ["Cristiano Ronaldo", "Mike Tyson", "Simone Biles", "Tiger Woods"],
-        "correctOrder": ["Tiger Woods", "Cristiano Ronaldo", "Mike Tyson", "Simone Biles"],
-        "topLabel": "↑ Most Earnings",
-        "bottomLabel": "↓ Least Earnings"
-      }
-    ],
 
     [
       {
