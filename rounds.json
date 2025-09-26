@@ -1372,6 +1372,30 @@
 
     [
       {
+        "prompt": "Year of First Film",
+        "items": ["Alfred Hitchcock", "Steven Spielberg", "Quentin Tarantino", "Martin Scorsese"],
+        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Oscars Won",
+        "items": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"],
+        "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
+        "topLabel": "↑ Most Oscars",
+        "bottomLabel": "↓ Fewest Oscars"
+      },
+      {
+        "prompt": "Highest Grossing Movie",
+        "items": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
+        "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      }
+    ],
+
+    [
+      {
         "prompt": "Land Area",
         "items": ["Spain", "USA", "Egypt", "India"],
         "correctOrder": ["USA", "India", "Egypt", "Spain"],
@@ -1392,8 +1416,8 @@
         "topLabel": "↑ Largest GDP",
         "bottomLabel": "↓ Smallest GDP"
       }
-    ], 
-
+    ],
+    
     [
       {
         "prompt": "Location Name Length",
@@ -1415,30 +1439,6 @@
         "correctOrder": ["Cowboys", "Eagles", "Bears", "Packers"],
         "topLabel": "↑ Highest Valuation",
         "bottomLabel": "↓ Lowest Valuation"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year of First Film",
-        "items": ["Alfred Hitchcock", "Steven Spielberg", "Quentin Tarantino", "Martin Scorsese"],
-        "correctOrder": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Number of Oscars Won",
-        "items": ["Alfred Hitchcock", "Martin Scorsese", "Steven Spielberg", "Quentin Tarantino"],
-        "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
-        "topLabel": "↑ Most Oscars",
-        "bottomLabel": "↓ Fewest Oscars"
-      },
-      {
-        "prompt": "Highest Grossing Movie",
-        "items": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
-        "correctOrder": ["Steven Spielberg", "Quentin Tarantino", "Martin Scorsese", "Alfred Hitchcock"],
-        "topLabel": "↑ Highest Grossing",
-        "bottomLabel": "↓ Lowest Grossing"
       }
     ],
 
