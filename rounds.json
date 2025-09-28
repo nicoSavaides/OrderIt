@@ -1417,6 +1417,30 @@
         "bottomLabel": "↓ Smallest GDP"
       }
     ],
+
+    [
+      {
+        "prompt": "Popularity as Pet",
+        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
+        "correctOrder": ["Dog", "Cat", "Goldfish", "Hamster"],
+        "topLabel": "↑ Most Popular",
+        "bottomLabel": "↓ Least Popular"
+      },
+      {
+        "prompt": "Number of Teeth",
+        "items": ["Dog", "Cat", "Goldfish", "Hamster"],
+        "correctOrder": ["Dog", "Cat", "Hamster", "Goldfish"],
+        "topLabel": "↑ Most Teeth",
+        "bottomLabel": "↓ Fewest Teeth"
+      },
+      {
+        "prompt": "Average Lifespan",
+        "items": ["Dog", "Cat", "Hamster", "Goldfish"],
+        "correctOrder": ["Cat", "Dog", "Goldfish", "Hamster"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
+      }
+    ],
     
     [
       {
@@ -1473,7 +1497,7 @@
         "correctOrder": ["Elephant", "Rhino", "Hippo", "Polar Bear"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
-      },
+      }, 
       {
         "prompt": "Population Size",
         "items": ["Elephant", "Rhino", "Hippo", "Polar Bear"],
@@ -2039,30 +2063,6 @@
         "correctOrder": ["The Avengers", "Home Alone", "Mean Girls", "The Lion King"],
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Popularity as Pet",
-        "items": ["Cat", "Goldfish", "Dog", "Hamster"],
-        "correctOrder": ["Dog", "Cat", "Goldfish", "Hamster"],
-        "topLabel": "↑ Most Popular",
-        "bottomLabel": "↓ Least Popular"
-      },
-      {
-        "prompt": "Number of Teeth",
-        "items": ["Dog", "Cat", "Goldfish", "Hamster"],
-        "correctOrder": ["Dog", "Cat", "Hamster", "Goldfish"],
-        "topLabel": "↑ Most Teeth",
-        "bottomLabel": "↓ Fewest Teeth"
-      },
-      {
-        "prompt": "Average Lifespan",
-        "items": ["Dog", "Cat", "Hamster", "Goldfish"],
-        "correctOrder": ["Cat", "Dog", "Goldfish", "Hamster"],
-        "topLabel": "↑ Longest Lifespan",
-        "bottomLabel": "↓ Shortest Lifespan"
       }
     ],
 
