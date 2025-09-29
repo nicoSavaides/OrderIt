@@ -1441,6 +1441,30 @@
         "bottomLabel": "↓ Shortest Lifespan"
       }
     ],
+
+    [
+      {
+        "prompt": "Year Opened",
+        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
+        "correctOrder": ["Disneyland Shanghai", "Disneyland Paris", "Walt Disney World", "Disneyland"],
+        "topLabel": "↑ Newest Park",
+        "bottomLabel": "↓ Oldest Park"
+      },
+      {
+        "prompt": "Yearly Attendees",
+        "items": ["Disneyland Shanghai", "Disneyland Paris", "Walt Disney World", "Disneyland"],
+        "correctOrder": ["Walt Disney World", "Disneyland", "Disneyland Shanghai", "Disneyland Paris"],
+        "topLabel": "↑ Most Visitors",
+        "bottomLabel": "↓ Fewest Visitors"
+      },
+      {
+        "prompt": "Total Land Area",
+        "items": ["Walt Disney World", "Disneyland", "Disneyland Shanghai", "Disneyland Paris"],
+        "correctOrder": ["Walt Disney World", "Disneyland Paris", "Disneyland Shanghai", "Disneyland"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      }
+    ], 
     
     [
       {
@@ -1513,30 +1537,6 @@
         "bottomLabel": "↓ Shortest Pregnancy"
       }
     ],
-
-    [
-      {
-        "prompt": "Year Opened",
-        "items": ["Disneyland Paris", "Disneyland", "Disneyland Shanghai", "Walt Disney World"],
-        "correctOrder": ["Disneyland Shanghai", "Disneyland Paris", "Walt Disney World", "Disneyland"],
-        "topLabel": "↑ Newest Park",
-        "bottomLabel": "↓ Oldest Park"
-      },
-      {
-        "prompt": "Yearly Attendees",
-        "items": ["Disneyland Shanghai", "Disneyland Paris", "Walt Disney World", "Disneyland"],
-        "correctOrder": ["Walt Disney World", "Disneyland", "Disneyland Shanghai", "Disneyland Paris"],
-        "topLabel": "↑ Most Visitors",
-        "bottomLabel": "↓ Fewest Visitors"
-      },
-      {
-        "prompt": "Total Land Area",
-        "items": ["Walt Disney World", "Disneyland", "Disneyland Shanghai", "Disneyland Paris"],
-        "correctOrder": ["Walt Disney World", "Disneyland Paris", "Disneyland Shanghai", "Disneyland"],
-        "topLabel": "↑ Largest",
-        "bottomLabel": "↓ Smallest"
-      }
-    ], 
 
     [
       {
