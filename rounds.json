@@ -1465,6 +1465,30 @@
         "bottomLabel": "↓ Smallest"
       }
     ], 
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Michael Jackson", "Prince", "Paul McCartney", "Kendrick Lamar"],
+        "correctOrder": ["Paul McCartney", "Michael Jackson", "Kendrick Lamar", "Prince"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Monthly Spotify Listeners",
+        "items": ["Paul McCartney", "Michael Jackson", "Kendrick Lamar", "Prince"],
+        "correctOrder": ["Kendrick Lamar", "Michael Jackson", "Prince", "Paul McCartney"],
+        "topLabel": "↑ Most Listeners",
+        "bottomLabel": "↓ Fewest Listeners"
+      },
+      {
+        "prompt": "Super Bowl Performance Year",
+        "items": ["Kendrick Lamar", "Michael Jackson", "Prince", "Paul McCartney"],
+        "correctOrder": ["Michael Jackson", "Paul McCartney", "Prince", "Kendrick Lamar"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
     
     [
       {
@@ -1753,30 +1777,6 @@
         "bottomLabel": "↓ Cheapest"
       }
     ], 
-
-    [
-      {
-        "prompt": "Height",
-        "items": ["Michael Jackson", "Prince", "Paul McCartney", "Kendrick Lamar"],
-        "correctOrder": ["Paul McCartney", "Michael Jackson", "Kendrick Lamar", "Prince"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Super Bowl Performance Year",
-        "items": ["Paul McCartney", "Michael Jackson", "Kendrick Lamar", "Prince"],
-        "correctOrder": ["Michael Jackson", "Paul McCartney", "Prince", "Kendrick Lamar"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Monthly Spotify Listeners",
-        "items": ["Michael Jackson", "Paul McCartney", "Prince", "Kendrick Lamar"],
-        "correctOrder": ["Kendrick Lamar", "Michael Jackson", "Prince", "Paul McCartney"],
-        "topLabel": "↑ Most Listeners",
-        "bottomLabel": "↓ Fewest Listeners"
-      }
-    ],
 
     [
       {
