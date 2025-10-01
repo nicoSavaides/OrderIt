@@ -1516,6 +1516,30 @@
 
     [
       {
+        "prompt": "Year",
+        "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
+        "correctOrder": ["E.T.", "Forrest Gump", "Titanic", "Inception"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Box Office Gross",
+        "items": ["E.T.", "Forrest Gump", "Titanic", "Inception"],
+        "correctOrder": ["Titanic", "Inception", "E.T.", "Forrest Gump"],
+        "topLabel": "↑ Highest Gross",
+        "bottomLabel": "↓ Lowest Gross"
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["Titanic", "Inception", "E.T.", "Forrest Gump"],
+        "correctOrder": ["Titanic", "Inception", "Forrest Gump", "E.T."],
+        "topLabel": "↑ Longest Runtime",
+        "bottomLabel": "↓ Shortest Runtime"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Established",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
         "correctOrder": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
@@ -1559,30 +1583,6 @@
         "correctOrder": ["Elephant", "Rhino", "Hippo", "Polar Bear"],
         "topLabel": "↑ Longest Pregnancy",
         "bottomLabel": "↓ Shortest Pregnancy"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year",
-        "items": ["Inception", "E.T.", "Titanic", "Forrest Gump"],
-        "correctOrder": ["E.T.", "Forrest Gump", "Titanic", "Inception"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Box Office Gross",
-        "items": ["E.T.", "Forrest Gump", "Titanic", "Inception"],
-        "correctOrder": ["Titanic", "Inception", "E.T.", "Forrest Gump"],
-        "topLabel": "↑ Highest Gross",
-        "bottomLabel": "↓ Lowest Gross"
-      },
-      {
-        "prompt": "Runtime",
-        "items": ["Titanic", "Inception", "E.T.", "Forrest Gump"],
-        "correctOrder": ["Titanic", "Inception", "Forrest Gump", "E.T."],
-        "topLabel": "↑ Longest Runtime",
-        "bottomLabel": "↓ Shortest Runtime"
       }
     ],
 
