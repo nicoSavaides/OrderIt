@@ -1540,6 +1540,30 @@
 
     [
       {
+        "prompt": "Volume Level (dB)",
+        "items": ["Lawn Mower", "Fireworks", "Elevator", "Chainsaw"],
+        "correctOrder": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
+        "topLabel": "↑ Loudest",
+        "bottomLabel": "↓ Quietest"
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
+        "correctOrder": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Injuries per Year (US)",
+        "items": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
+        "correctOrder": ["Lawn Mower", "Chainsaw", "Elevator", "Fireworks"],
+        "topLabel": "↑ Most Injuries",
+        "bottomLabel": "↓ Fewest Injuries"
+      }
+    ], 
+
+    [
+      {
         "prompt": "Year Established",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
         "correctOrder": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
@@ -1849,30 +1873,6 @@
         "bottomLabel": "↓ Lowest GDP"
       }
     ],
-
-    [
-      {
-        "prompt": "Volume Level (dB)",
-        "items": ["Lawn Mower", "Fireworks", "Elevator", "Chainsaw"],
-        "correctOrder": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
-        "topLabel": "↑ Loudest",
-        "bottomLabel": "↓ Quietest"
-      },
-      {
-        "prompt": "Year Invented",
-        "items": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
-        "correctOrder": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Injuries per Year (US)",
-        "items": ["Fireworks", "Chainsaw", "Lawn Mower", "Elevator"],
-        "correctOrder": ["Lawn Mower", "Chainsaw", "Elevator", "Fireworks"],
-        "topLabel": "↑ Most Injuries",
-        "bottomLabel": "↓ Fewest Injuries"
-      }
-    ], 
 
     [
       {
