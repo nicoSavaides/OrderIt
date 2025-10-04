@@ -1581,8 +1581,8 @@
         "prompt": "Distance from Equator",
         "items": ["Istanbul", "Rio de Janeiro", "Chicago", "Oslo"],
         "correctOrder": ["Oslo", "Chicago", "Istanbul", "Rio de Janeiro"],
-        "topLabel": "↑ Farthest from Equator",
-        "bottomLabel": "↓ Closest to Equator"
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
       }
     ],
 
