@@ -1564,6 +1564,30 @@
 
     [
       {
+        "prompt": "Average Temperature",
+        "items": ["Istanbul", "Oslo", "Rio de Janeiro", "Chicago"],
+        "correctOrder": ["Rio de Janeiro", "Istanbul", "Chicago", "Oslo"],
+        "topLabel": "↑ Warmest",
+        "bottomLabel": "↓ Coldest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Rio de Janeiro", "Istanbul", "Chicago", "Oslo"],
+        "correctOrder": ["Istanbul", "Rio de Janeiro", "Chicago", "Oslo"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Istanbul", "Rio de Janeiro", "Chicago", "Oslo"],
+        "correctOrder": ["Oslo", "Chicago", "Istanbul", "Rio de Janeiro"],
+        "topLabel": "↑ Farthest from Equator",
+        "bottomLabel": "↓ Closest to Equator"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Established",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
         "correctOrder": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
@@ -1943,30 +1967,6 @@
         "correctOrder": ["Green Day", "Coldplay", "Simon & Garfunkel", "NSYNC"],
         "topLabel": "↑ Most Albums",
         "bottomLabel": "↓ Fewest Albums"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Average Temperature",
-        "items": ["Rio de Janeiro", "Chicago", "Istanbul", "Oslo"],
-        "correctOrder": ["Rio de Janeiro", "Istanbul", "Chicago", "Oslo"],
-        "topLabel": "↑ Warmest City",
-        "bottomLabel": "↓ Coldest City"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Rio de Janeiro", "Istanbul", "Chicago", "Oslo"],
-        "correctOrder": ["Istanbul", "Rio de Janeiro", "Chicago", "Oslo"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Distance from Equator",
-        "items": ["Istanbul", "Rio de Janeiro", "Chicago", "Oslo"],
-        "correctOrder": ["Oslo", "Chicago", "Istanbul", "Rio de Janeiro"],
-        "topLabel": "↑ Farthest from Equator",
-        "bottomLabel": "↓ Closest to Equator"
       }
     ],
 
