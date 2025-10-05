@@ -1588,6 +1588,30 @@
 
     [
       {
+        "prompt": "Year Released",
+        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
+        "correctOrder": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Artist Name (A-Z)",
+        "items": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
+        "correctOrder": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Song Length",
+        "items": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
+        "correctOrder": ["Stairway to Heaven", "Creep", "Hips Don’t Lie", "We Will Rock You"],
+        "topLabel": "↑ Longest Song",
+        "bottomLabel": "↓ Shortest Song"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Established",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
         "correctOrder": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
@@ -2087,30 +2111,6 @@
         "correctOrder": ["Warriors", "Bulls", "Mavericks", "Heat"],
         "topLabel": "↑ Highest Valuation",
         "bottomLabel": "↓ Lowest Valuation"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Released",
-        "items": ["Creep", "Hips Don’t Lie", "We Will Rock You", "Stairway to Heaven"],
-        "correctOrder": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Artist Name (A-Z)",
-        "items": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
-        "correctOrder": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
-      },
-      {
-        "prompt": "Song Length",
-        "items": ["Stairway to Heaven", "We Will Rock You", "Creep", "Hips Don’t Lie"],
-        "correctOrder": ["Stairway to Heaven", "Creep", "Hips Don’t Lie", "We Will Rock You"],
-        "topLabel": "↑ Longest Song",
-        "bottomLabel": "↓ Shortest Song"
       }
     ],
 
