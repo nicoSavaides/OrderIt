@@ -1612,6 +1612,30 @@
 
     [
       {
+        "prompt": "Egg Size",
+        "items": ["Emperor Penguin", "Quail", "Turkey", "Ostrich"],
+        "correctOrder": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
+        "topLabel": "↑ Largest Egg",
+        "bottomLabel": "↓ Smallest Egg"
+      },
+      {
+        "prompt": "Standing Height",
+        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
+        "correctOrder": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Eggs Laid per Year",
+        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
+        "correctOrder": ["Quail", "Turkey", "Ostrich", "Emperor Penguin"],
+        "topLabel": "↑ Most Eggs",
+        "bottomLabel": "↓ Fewest Eggs"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Established",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
         "correctOrder": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
@@ -1943,30 +1967,6 @@
         "correctOrder": ["Jerry Seinfeld", "Seth MacFarlane", "Chris Rock", "Billy Crystal"],
         "topLabel": "↑ Highest Net Worth",
         "bottomLabel": "↓ Lowest Net Worth"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Egg Size",
-        "items": ["Turkey", "Ostrich", "Emperor Penguin", "Quail"],
-        "correctOrder": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
-        "topLabel": "↑ Largest Egg",
-        "bottomLabel": "↓ Smallest Egg"
-      },
-      {
-        "prompt": "Standing Height",
-        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
-        "correctOrder": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Eggs Laid per Year",
-        "items": ["Ostrich", "Emperor Penguin", "Turkey", "Quail"],
-        "correctOrder": ["Quail", "Turkey", "Ostrich", "Emperor Penguin"],
-        "topLabel": "↑ Most Eggs",
-        "bottomLabel": "↓ Fewest Eggs"
       }
     ],
 
