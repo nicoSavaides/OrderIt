@@ -1636,6 +1636,30 @@
 
     [
       {
+        "prompt": "Birth Year",
+        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
+        "correctOrder": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Bond Films",
+        "items": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"],
+        "correctOrder": ["Sean Connery", "Daniel Craig", "Pierce Brosnan", "George Lazenby"],
+        "topLabel": "↑ Most Films",
+        "bottomLabel": "↓ Fewest Films"
+      },
+      {
+        "prompt": "Age When First Played Bond",
+        "items": ["Sean Connery", "Daniel Craig", "Pierce Brosnan", "George Lazenby"],
+        "correctOrder": ["Pierce Brosnan", "Daniel Craig", "Sean Connery", "George Lazenby"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Established",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
         "correctOrder": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
@@ -1775,30 +1799,6 @@
         "correctOrder": ["Free Bird", "Billie Jean", "Shake It Off", "Imagine"],
         "topLabel": "↑ Longest Song",
         "bottomLabel": "↓ Shortest Song"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Birth Year",
-        "items": ["Daniel Craig", "Sean Connery", "Pierce Brosnan", "George Lazenby"],
-        "correctOrder": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Number of Bond Films",
-        "items": ["Sean Connery", "George Lazenby", "Pierce Brosnan", "Daniel Craig"],
-        "correctOrder": ["Sean Connery", "Daniel Craig", "Pierce Brosnan", "George Lazenby"],
-        "topLabel": "↑ Most Films",
-        "bottomLabel": "↓ Fewest Films"
-      },
-      {
-        "prompt": "Age When First Played Bond",
-        "items": ["Sean Connery", "Daniel Craig", "Pierce Brosnan", "George Lazenby"],
-        "correctOrder": ["Pierce Brosnan", "Daniel Craig", "Sean Connery", "George Lazenby"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
       }
     ],
 
