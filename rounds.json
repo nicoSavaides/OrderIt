@@ -1660,6 +1660,30 @@
 
     [
       {
+        "prompt": "Year Published",
+        "items": ["The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice"],
+        "correctOrder": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Author Last Name (A-Z)",
+        "items": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"],
+        "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Page Count",
+        "items": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"],
+        "correctOrder": ["The Grapes of Wrath", "Pride and Prejudice", "Harry Potter and the Sorcerer's Stone", "Fahrenheit 451"],
+        "topLabel": "↑ Most Pages",
+        "bottomLabel": "↓ Fewest Pages"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Established",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
         "correctOrder": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
@@ -1703,30 +1727,6 @@
         "correctOrder": ["Elephant", "Rhino", "Hippo", "Polar Bear"],
         "topLabel": "↑ Longest Pregnancy",
         "bottomLabel": "↓ Shortest Pregnancy"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Published",
-        "items": ["The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "Pride and Prejudice"],
-        "correctOrder": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Author Last Name (A-Z)",
-        "items": ["Pride and Prejudice", "The Grapes of Wrath", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone"],
-        "correctOrder": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
-      },
-      {
-        "prompt": "Page Count",
-        "items": ["Pride and Prejudice", "Fahrenheit 451", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"],
-        "correctOrder": ["The Grapes of Wrath", "Pride and Prejudice", "Harry Potter and the Sorcerer's Stone", "Fahrenheit 451"],
-        "topLabel": "↑ Most Pages",
-        "bottomLabel": "↓ Fewest Pages"
       }
     ],
 
