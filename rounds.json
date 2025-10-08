@@ -1684,6 +1684,150 @@
 
     [
       {
+        "prompt": "Weight",
+        "items": ["Pop-Tart", "Oreo Cookie", "Slim Jim", "Hot Pocket"],
+        "correctOrder": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Calories",
+        "items": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
+        "correctOrder": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
+        "topLabel": "↑ Most Calories",
+        "bottomLabel": "↓ Fewest Calories"
+      },
+      {
+        "prompt": "Sugar Content",
+        "items": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
+        "correctOrder": ["Pop-Tart", "Oreo Cookie", "Hot Pocket", "Slim Jim"],
+        "topLabel": "↑ Most Sugar",
+        "bottomLabel": "↓ Least Sugar"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Number of Band Members",
+        "items": ["Coldplay", "Simon & Garfunkel", "Green Day", "NSYNC"],
+        "correctOrder": ["NSYNC", "Coldplay", "Green Day", "Simon & Garfunkel"],
+        "topLabel": "↑ Most Members",
+        "bottomLabel": "↓ Fewest Members"
+      },
+      {
+        "prompt": "Year Formed",
+        "items": ["NSYNC", "Coldplay", "Green Day", "Simon & Garfunkel"],
+        "correctOrder": ["Simon & Garfunkel", "Green Day", "NSYNC", "Coldplay"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Albums",
+        "items": ["Simon & Garfunkel", "Green Day", "NSYNC", "Coldplay"],
+        "correctOrder": ["Green Day", "Coldplay", "Simon & Garfunkel", "NSYNC"],
+        "topLabel": "↑ Most Albums",
+        "bottomLabel": "↓ Fewest Albums"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Location Name Length",
+        "items": ["Bulls", "Heat", "Warriors", "Mavericks"],
+        "correctOrder": ["Warriors", "Bulls", "Mavericks", "Heat"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
+      },
+      {
+        "prompt": "NBA Championships",
+        "items": ["Warriors", "Bulls", "Mavericks", "Heat"],
+        "correctOrder": ["Warriors", "Bulls", "Heat", "Mavericks"],
+        "topLabel": "↑ Most Titles",
+        "bottomLabel": "↓ Fewest Titles"
+      },
+      {
+        "prompt": "Team Valuation",
+        "items": ["Warriors", "Bulls", "Heat", "Mavericks"],
+        "correctOrder": ["Warriors", "Bulls", "Mavericks", "Heat"],
+        "topLabel": "↑ Highest Valuation",
+        "bottomLabel": "↓ Lowest Valuation"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Number of Judges",
+        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
+        "correctOrder": ["Shark Tank", "The Voice", "American Idol", "Judge Judy"],
+        "topLabel": "↑ Most Judges",
+        "bottomLabel": "↓ Fewest Judges"
+      },
+      {
+        "prompt": "Year Premiered",
+        "items": ["Shark Tank", "The Voice", "American Idol", "Judge Judy"],
+        "correctOrder": ["Judge Judy", "American Idol", "Shark Tank", "The Voice"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["Judge Judy", "American Idol", "Shark Tank", "The Voice"],
+        "correctOrder": ["Judge Judy", "American Idol", "The Voice", "Shark Tank"],
+        "topLabel": "↑ Most Episodes",
+        "bottomLabel": "↓ Fewest Episodes"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Land Area",
+        "items": ["Nevada", "Florida", "Ohio", "Rhode Island"],
+        "correctOrder": ["Nevada", "Florida", "Ohio", "Rhode Island"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Nevada", "Florida", "Ohio", "Rhode Island"],
+        "correctOrder": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
+        "correctOrder": ["Rhode Island", "Ohio", "Florida", "Nevada"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year",
+        "items": ["Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash", "Indian Ocean Tsunami"],
+        "correctOrder": ["Titanic Sinking", "Hindenburg Crash", "Chernobyl Disaster", "Indian Ocean Tsunami"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Death Toll",
+        "items": ["Titanic Sinking", "Hindenburg Crash", "Chernobyl Disaster", "Indian Ocean Tsunami"],
+        "correctOrder": ["Indian Ocean Tsunami", "Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash"],
+        "topLabel": "↑ Most Deaths",
+        "bottomLabel": "↓ Fewest Deaths"
+      },
+      {
+        "prompt": "Wikipedia Views",
+        "items": ["Indian Ocean Tsunami", "Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash"],
+        "correctOrder": ["Chernobyl Disaster", "Titanic Sinking", "Indian Ocean Tsunami", "Hindenburg Crash"],
+        "topLabel": "↑ Most Viewed",
+        "bottomLabel": "↓ Least Viewed"
+      }
+    ],
+ 
+    [
+      {
         "prompt": "Year Established",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
         "correctOrder": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
@@ -1900,30 +2044,6 @@
 
     [
       {
-        "prompt": "Weight",
-        "items": ["Pop-Tart", "Oreo Cookie", "Slim Jim", "Hot Pocket"],
-        "correctOrder": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
-        "topLabel": "↑ Heaviest",
-        "bottomLabel": "↓ Lightest"
-      },
-      {
-        "prompt": "Calories",
-        "items": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
-        "correctOrder": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
-        "topLabel": "↑ Most Calories",
-        "bottomLabel": "↓ Fewest Calories"
-      },
-      {
-        "prompt": "Sugar Content",
-        "items": ["Hot Pocket", "Pop-Tart", "Slim Jim", "Oreo Cookie"],
-        "correctOrder": ["Pop-Tart", "Oreo Cookie", "Hot Pocket", "Slim Jim"],
-        "topLabel": "↑ Most Sugar",
-        "bottomLabel": "↓ Least Sugar"
-      }
-    ],
-
-    [
-      {
         "prompt": "Land Area",
         "items": ["Switzerland", "Australia", "Germany", "Colombia"],
         "correctOrder": ["Australia", "Colombia", "Germany", "Switzerland"],
@@ -1967,30 +2087,6 @@
         "correctOrder": ["Jerry Seinfeld", "Seth MacFarlane", "Chris Rock", "Billy Crystal"],
         "topLabel": "↑ Highest Net Worth",
         "bottomLabel": "↓ Lowest Net Worth"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Number of Band Members",
-        "items": ["Coldplay", "Simon & Garfunkel", "Green Day", "NSYNC"],
-        "correctOrder": ["NSYNC", "Coldplay", "Green Day", "Simon & Garfunkel"],
-        "topLabel": "↑ Most Members",
-        "bottomLabel": "↓ Fewest Members"
-      },
-      {
-        "prompt": "Year Formed",
-        "items": ["NSYNC", "Coldplay", "Green Day", "Simon & Garfunkel"],
-        "correctOrder": ["Simon & Garfunkel", "Green Day", "NSYNC", "Coldplay"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Number of Albums",
-        "items": ["Simon & Garfunkel", "Green Day", "NSYNC", "Coldplay"],
-        "correctOrder": ["Green Day", "Coldplay", "Simon & Garfunkel", "NSYNC"],
-        "topLabel": "↑ Most Albums",
-        "bottomLabel": "↓ Fewest Albums"
       }
     ],
 
@@ -2045,30 +2141,6 @@
     [
       {
         "prompt": "Year",
-        "items": ["Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash", "Indian Ocean Tsunami"],
-        "correctOrder": ["Titanic Sinking", "Hindenburg Crash", "Chernobyl Disaster", "Indian Ocean Tsunami"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Death Toll",
-        "items": ["Titanic Sinking", "Hindenburg Crash", "Chernobyl Disaster", "Indian Ocean Tsunami"],
-        "correctOrder": ["Indian Ocean Tsunami", "Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash"],
-        "topLabel": "↑ Most Deaths",
-        "bottomLabel": "↓ Fewest Deaths"
-      },
-      {
-        "prompt": "Wikipedia Views",
-        "items": ["Indian Ocean Tsunami", "Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash"],
-        "correctOrder": ["Chernobyl Disaster", "Titanic Sinking", "Indian Ocean Tsunami", "Hindenburg Crash"],
-        "topLabel": "↑ Most Viewed",
-        "bottomLabel": "↓ Least Viewed"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year",
         "items": ["Mean Girls", "The Avengers", "Home Alone", "The Lion King"],
         "correctOrder": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
         "topLabel": "↑ Earliest",
@@ -2087,78 +2159,6 @@
         "correctOrder": ["The Avengers", "Home Alone", "Mean Girls", "The Lion King"],
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Location Name Length",
-        "items": ["Bulls", "Heat", "Warriors", "Mavericks"],
-        "correctOrder": ["Warriors", "Bulls", "Mavericks", "Heat"],
-        "topLabel": "↑ Most Letters",
-        "bottomLabel": "↓ Fewest Letters"
-      },
-      {
-        "prompt": "NBA Championships",
-        "items": ["Warriors", "Bulls", "Mavericks", "Heat"],
-        "correctOrder": ["Warriors", "Bulls", "Heat", "Mavericks"],
-        "topLabel": "↑ Most Titles",
-        "bottomLabel": "↓ Fewest Titles"
-      },
-      {
-        "prompt": "Team Valuation",
-        "items": ["Warriors", "Bulls", "Heat", "Mavericks"],
-        "correctOrder": ["Warriors", "Bulls", "Mavericks", "Heat"],
-        "topLabel": "↑ Highest Valuation",
-        "bottomLabel": "↓ Lowest Valuation"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Land Area",
-        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
-        "correctOrder": ["Nevada", "Florida", "Ohio", "Rhode Island"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Nevada", "Florida", "Ohio", "Rhode Island"],
-        "correctOrder": ["Florida", "Ohio", "Nevada", "Rhode Island"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Date of Statehood",
-        "items": ["Florida", "Ohio", "Nevada", "Rhode Island"],
-        "correctOrder": ["Rhode Island", "Ohio", "Florida", "Nevada"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Number of Judges",
-        "items": ["American Idol", "Shark Tank", "Judge Judy", "The Voice"],
-        "correctOrder": ["Shark Tank", "The Voice", "American Idol", "Judge Judy"],
-        "topLabel": "↑ Most Judges",
-        "bottomLabel": "↓ Fewest Judges"
-      },
-      {
-        "prompt": "Year Premiered",
-        "items": ["Shark Tank", "The Voice", "American Idol", "Judge Judy"],
-        "correctOrder": ["Judge Judy", "American Idol", "Shark Tank", "The Voice"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Number of Episodes",
-        "items": ["Judge Judy", "American Idol", "Shark Tank", "The Voice"],
-        "correctOrder": ["Judge Judy", "American Idol", "The Voice", "Shark Tank"],
-        "topLabel": "↑ Most Episodes",
-        "bottomLabel": "↓ Fewest Episodes"
       }
     ]
 
