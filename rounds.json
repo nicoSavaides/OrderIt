@@ -1804,6 +1804,30 @@
 
     [
       {
+        "prompt": "Weight",
+        "items": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"],
+        "correctOrder": ["Golden Retriever", "Border Collie", "Beagle", "Chihuahua"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Intelligence",
+        "items": ["Golden Retriever", "Border Collie", "Beagle", "Chihuahua"],
+        "correctOrder": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
+        "topLabel": "↑ Most Intelligent",
+        "bottomLabel": "↓ Least Intelligent"
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
+        "correctOrder": ["Border Collie", "Golden Retriever", "Beagle", "Chihuahua"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year",
         "items": ["Chernobyl Disaster", "Titanic Sinking", "Hindenburg Crash", "Indian Ocean Tsunami"],
         "correctOrder": ["Titanic Sinking", "Hindenburg Crash", "Chernobyl Disaster", "Indian Ocean Tsunami"],
@@ -2017,30 +2041,6 @@
         "bottomLabel": "↓ Cheapest"
       }
     ], 
-
-    [
-      {
-        "prompt": "Weight",
-        "items": ["Chihuahua", "Beagle", "Border Collie", "Golden Retriever"],
-        "correctOrder": ["Golden Retriever", "Border Collie", "Beagle", "Chihuahua"],
-        "topLabel": "↑ Heaviest",
-        "bottomLabel": "↓ Lightest"
-      },
-      {
-        "prompt": "Intelligence",
-        "items": ["Golden Retriever", "Border Collie", "Beagle", "Chihuahua"],
-        "correctOrder": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
-        "topLabel": "↑ Most Intelligent",
-        "bottomLabel": "↓ Least Intelligent"
-      },
-      {
-        "prompt": "Top Speed",
-        "items": ["Border Collie", "Golden Retriever", "Chihuahua", "Beagle"],
-        "correctOrder": ["Border Collie", "Golden Retriever", "Beagle", "Chihuahua"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
-      }
-    ],
 
     [
       {
