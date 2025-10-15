@@ -1830,13 +1830,13 @@
       {
         "prompt": "Year Established",
         "items": ["Oxford", "UC Berkeley", "Stanford", "Yale"],
-        "correctOrder": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
-        "topLabel": "↑ Newest",
-        "bottomLabel": "↓ Oldest"
+        "correctOrder": ["Oxford", "Yale", "UC Berkeley", "Stanford"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Acceptance Rate",
-        "items": ["Stanford", "UC Berkeley", "Yale", "Oxford"],
+        "items": ["Oxford", "Yale", "UC Berkeley", "Stanford"],
         "correctOrder": ["Stanford", "Yale", "UC Berkeley", "Oxford"],
         "topLabel": "↑ Most Selective",
         "bottomLabel": "↓ Least Selective"
