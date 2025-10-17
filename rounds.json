@@ -1873,6 +1873,30 @@
         "bottomLabel": "↓ Least Viewed"
       }
     ],
+
+    [
+      {
+        "prompt": "Top Speed",
+        "items": ["Sheep", "Mouse", "Sloth", "Zebra"],
+        "correctOrder": ["Zebra", "Sheep", "Mouse", "Sloth"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Weight",
+        "items": ["Zebra", "Sheep", "Mouse", "Sloth"],
+        "correctOrder": ["Zebra", "Sheep", "Sloth", "Mouse"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Zebra", "Sheep", "Sloth", "Mouse"],
+        "correctOrder": ["Sloth", "Zebra", "Sheep", "Mouse"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
+      }
+    ],
  
     [
       {
@@ -1919,30 +1943,6 @@
         "correctOrder": ["Friends", "The Office (US)", "Seinfeld", "Mad Men"],
         "topLabel": "↑ Most Episodes",
         "bottomLabel": "↓ Fewest Episodes"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Top Speed",
-        "items": ["Sheep", "Mouse", "Sloth", "Zebra"],
-        "correctOrder": ["Zebra", "Sheep", "Mouse", "Sloth"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
-      },
-      {
-        "prompt": "Weight",
-        "items": ["Zebra", "Sheep", "Mouse", "Sloth"],
-        "correctOrder": ["Zebra", "Sheep", "Sloth", "Mouse"],
-        "topLabel": "↑ Heaviest",
-        "bottomLabel": "↓ Lightest"
-      },
-      {
-        "prompt": "Lifespan",
-        "items": ["Zebra", "Sheep", "Sloth", "Mouse"],
-        "correctOrder": ["Sloth", "Zebra", "Sheep", "Mouse"],
-        "topLabel": "↑ Longest Lifespan",
-        "bottomLabel": "↓ Shortest Lifespan"
       }
     ],
 
