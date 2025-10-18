@@ -1916,7 +1916,7 @@
       {
         "prompt": "Price at Release",
         "items": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
-        "correctOrder": ["BlackBerry", "iPhone", "Apple Watch", "Game Boy"],
+        "correctOrder": ["iPhone", "BlackBerry", "Apple Watch", "Game Boy"],
         "topLabel": "↑ Most Expensive",
         "bottomLabel": "↓ Cheapest"
       }
