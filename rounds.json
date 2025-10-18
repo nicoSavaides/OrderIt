@@ -1897,6 +1897,30 @@
         "bottomLabel": "↓ Shortest Lifespan"
       }
     ],
+
+    [
+      {
+        "prompt": "Year of Initial Release",
+        "items": ["BlackBerry", "Game Boy", "Apple Watch", "iPhone"],
+        "correctOrder": ["Game Boy", "BlackBerry", "iPhone", "Apple Watch"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Physical Buttons",
+        "items": ["Game Boy", "BlackBerry", "iPhone", "Apple Watch"],
+        "correctOrder": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
+        "topLabel": "↑ Most Buttons",
+        "bottomLabel": "↓ Fewest Buttons"
+      },
+      {
+        "prompt": "Price at Release",
+        "items": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
+        "correctOrder": ["BlackBerry", "iPhone", "Apple Watch", "Game Boy"],
+        "topLabel": "↑ Most Expensive",
+        "bottomLabel": "↓ Cheapest"
+      }
+    ], 
  
     [
       {
@@ -2015,30 +2039,6 @@
         "correctOrder": ["Alex Trebek", "Johnny Carson", "Oprah Winfrey", "Jay Leno"],
         "topLabel": "↑ Most Years",
         "bottomLabel": "↓ Fewest Years"
-      }
-    ], 
-
-    [
-      {
-        "prompt": "Year of Initial Release",
-        "items": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
-        "correctOrder": ["Game Boy", "BlackBerry", "iPhone", "Apple Watch"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Number of Physical Buttons",
-        "items": ["Game Boy", "BlackBerry", "iPhone", "Apple Watch"],
-        "correctOrder": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
-        "topLabel": "↑ Most Buttons",
-        "bottomLabel": "↓ Fewest Buttons"
-      },
-      {
-        "prompt": "Price at Release",
-        "items": ["BlackBerry", "Game Boy", "iPhone", "Apple Watch"],
-        "correctOrder": ["BlackBerry", "iPhone", "Apple Watch", "Game Boy"],
-        "topLabel": "↑ Most Expensive",
-        "bottomLabel": "↓ Cheapest"
       }
     ], 
 
