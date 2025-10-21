@@ -1972,6 +1972,30 @@
 
     [
       {
+        "prompt": "Year",
+        "items": ["Mean Girls", "The Avengers", "Home Alone", "The Lion King"],
+        "correctOrder": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Box Office Gross",
+        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
+        "correctOrder": ["The Avengers", "The Lion King", "Home Alone", "Mean Girls"],
+        "topLabel": "↑ Highest Gross",
+        "bottomLabel": "↓ Lowest Gross"
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["The Avengers", "The Lion King", "Home Alone", "Mean Girls"],
+        "correctOrder": ["The Avengers", "Home Alone", "Mean Girls", "The Lion King"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Premiered",
         "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
         "correctOrder": ["Seinfeld", "Friends", "The Office (US)", "Mad Men"],
@@ -2135,30 +2159,6 @@
         "correctOrder": ["Nike", "Macy's", "Gucci", "Blockbuster"],
         "topLabel": "↑ Highest Revenue",
         "bottomLabel": "↓ Lowest Revenue"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year",
-        "items": ["Mean Girls", "The Avengers", "Home Alone", "The Lion King"],
-        "correctOrder": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Box Office Gross",
-        "items": ["Home Alone", "The Lion King", "Mean Girls", "The Avengers"],
-        "correctOrder": ["The Avengers", "The Lion King", "Home Alone", "Mean Girls"],
-        "topLabel": "↑ Highest Gross",
-        "bottomLabel": "↓ Lowest Gross"
-      },
-      {
-        "prompt": "Runtime",
-        "items": ["The Avengers", "The Lion King", "Home Alone", "Mean Girls"],
-        "correctOrder": ["The Avengers", "Home Alone", "Mean Girls", "The Lion King"],
-        "topLabel": "↑ Longest",
-        "bottomLabel": "↓ Shortest"
       }
     ]
 
