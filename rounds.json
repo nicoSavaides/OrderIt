@@ -1996,6 +1996,30 @@
 
     [
       {
+        "prompt": "Number of Store Locations",
+        "items": ["Nike", "Blockbuster", "Macy's", "Gucci"],
+        "correctOrder": ["Nike", "Macy's", "Gucci", "Blockbuster"],
+        "topLabel": "↑ Most Stores",
+        "bottomLabel": "↓ Fewest Stores"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Nike", "Macy's", "Gucci", "Blockbuster"],
+        "correctOrder": ["Macy's", "Gucci", "Nike", "Blockbuster"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Annual Revenue",
+        "items": ["Macy's", "Gucci", "Nike", "Blockbuster"],
+        "correctOrder": ["Nike", "Macy's", "Gucci", "Blockbuster"],
+        "topLabel": "↑ Highest Revenue",
+        "bottomLabel": "↓ Lowest Revenue"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Premiered",
         "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
         "correctOrder": ["Seinfeld", "Friends", "The Office (US)", "Mad Men"],
@@ -2135,30 +2159,6 @@
         "correctOrder": ["Dwayne Johnson", "Zendaya", "Jennifer Aniston",  "Timothée Chalamet"],
         "topLabel": "↑ Most Followers",
         "bottomLabel": "↓ Fewest Followers"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Number of Store Locations",
-        "items": ["Nike", "Blockbuster", "Macy's", "Gucci"],
-        "correctOrder": ["Nike", "Macy's", "Gucci", "Blockbuster"],
-        "topLabel": "↑ Most Stores",
-        "bottomLabel": "↓ Fewest Stores"
-      },
-      {
-        "prompt": "Year Founded",
-        "items": ["Nike", "Macy's", "Gucci", "Blockbuster"],
-        "correctOrder": ["Macy's", "Gucci", "Nike", "Blockbuster"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Annual Revenue",
-        "items": ["Macy's", "Gucci", "Nike", "Blockbuster"],
-        "correctOrder": ["Nike", "Macy's", "Gucci", "Blockbuster"],
-        "topLabel": "↑ Highest Revenue",
-        "bottomLabel": "↓ Lowest Revenue"
       }
     ]
 
