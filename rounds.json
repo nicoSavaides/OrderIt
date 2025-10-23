@@ -2022,13 +2022,13 @@
       {
         "prompt": "Age",
         "items": ["Zendaya", "Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet"],
-        "correctOrder": ["Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet",  "Zendaya"],
+        "correctOrder": ["Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet", "Zendaya"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Net Worth",
-        "items": ["Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet",  "Zendaya"],
+        "items": ["Jennifer Aniston", "Dwayne Johnson", "Timothée Chalamet", "Zendaya"],
         "correctOrder": ["Dwayne Johnson", "Jennifer Aniston", "Zendaya", "Timothée Chalamet"],
         "topLabel": "↑ Highest Net Worth",
         "bottomLabel": "↓ Lowest Net Worth"
@@ -2036,7 +2036,7 @@
       {
         "prompt": "Number of Instagram Followers",
         "items": ["Dwayne Johnson", "Jennifer Aniston", "Zendaya", "Timothée Chalamet"],
-        "correctOrder": ["Dwayne Johnson", "Zendaya", "Jennifer Aniston",  "Timothée Chalamet"],
+        "correctOrder": ["Dwayne Johnson", "Zendaya", "Jennifer Aniston", "Timothée Chalamet"],
         "topLabel": "↑ Most Followers",
         "bottomLabel": "↓ Fewest Followers"
       }
