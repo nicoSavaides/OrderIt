@@ -2044,6 +2044,30 @@
 
     [
       {
+        "prompt": "Average Temperature",
+        "items": ["Dubai", "Toronto", "Honolulu", "Mexico City"],
+        "correctOrder": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
+        "topLabel": "↑ Hottest",
+        "bottomLabel": "↓ Coldest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
+        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Elevation",
+        "items": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
+        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
+        "topLabel": "↑ Highest Elevation",
+        "bottomLabel": "↓ Lowest Elevation"
+      }
+    ], 
+
+    [ 
+      {
         "prompt": "Year Premiered",
         "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
         "correctOrder": ["Seinfeld", "Friends", "The Office (US)", "Mad Men"],
@@ -2089,30 +2113,6 @@
         "bottomLabel": "↓ Shortest Song"
       }
     ],
-
-    [
-      {
-        "prompt": "Average Temperature",
-        "items": ["Dubai", "Toronto", "Honolulu", "Mexico City"],
-        "correctOrder": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
-        "topLabel": "↑ Hottest",
-        "bottomLabel": "↓ Coldest"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Dubai", "Honolulu", "Mexico City", "Toronto"],
-        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Elevation",
-        "items": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
-        "correctOrder": ["Mexico City", "Toronto", "Dubai", "Honolulu"],
-        "topLabel": "↑ Highest Elevation",
-        "bottomLabel": "↓ Lowest Elevation"
-      }
-    ], 
 
     [
       {
