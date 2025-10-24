@@ -2066,30 +2066,6 @@
       }
     ], 
 
-    [ 
-      {
-        "prompt": "Year Premiered",
-        "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
-        "correctOrder": ["Seinfeld", "Friends", "The Office (US)", "Mad Men"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Number of Emmys Won",
-        "items": ["Seinfeld", "Friends", "The Office (US)", "Mad Men"],
-        "correctOrder": ["Mad Men", "Seinfeld", "Friends", "The Office (US)"],
-        "topLabel": "↑ Most Emmys",
-        "bottomLabel": "↓ Fewest Emmys"
-      },
-      {
-        "prompt": "Number of Episodes",
-        "items": ["Mad Men", "Seinfeld", "Friends", "The Office (US)"],
-        "correctOrder": ["Friends", "The Office (US)", "Seinfeld", "Mad Men"],
-        "topLabel": "↑ Most Episodes",
-        "bottomLabel": "↓ Fewest Episodes"
-      }
-    ],
-
     [
       {
         "prompt": "Year Released",
@@ -2111,6 +2087,30 @@
         "correctOrder": ["Free Bird", "Billie Jean", "Shake It Off", "Imagine"],
         "topLabel": "↑ Longest Song",
         "bottomLabel": "↓ Shortest Song"
+      }
+    ],
+
+    [ 
+      {
+        "prompt": "Year Premiered",
+        "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
+        "correctOrder": ["Seinfeld", "Friends", "The Office (US)", "Mad Men"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Emmys Won",
+        "items": ["Seinfeld", "Friends", "The Office (US)", "Mad Men"],
+        "correctOrder": ["Mad Men", "Seinfeld", "Friends", "The Office (US)"],
+        "topLabel": "↑ Most Emmys",
+        "bottomLabel": "↓ Fewest Emmys"
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["Mad Men", "Seinfeld", "Friends", "The Office (US)"],
+        "correctOrder": ["Friends", "The Office (US)", "Seinfeld", "Mad Men"],
+        "topLabel": "↑ Most Episodes",
+        "bottomLabel": "↓ Fewest Episodes"
       }
     ],
 
