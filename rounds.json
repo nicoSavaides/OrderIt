@@ -2090,7 +2090,7 @@
       }
     ],
 
-    [ 
+    [  
       {
         "prompt": "Year Premiered",
         "items": ["Seinfeld", "The Office (US)", "Mad Men", "Friends"],
@@ -2111,6 +2111,185 @@
         "correctOrder": ["Friends", "The Office (US)", "Seinfeld", "Mad Men"],
         "topLabel": "↑ Most Episodes",
         "bottomLabel": "↓ Fewest Episodes"
+      }
+    ],
+
+
+
+
+
+
+
+
+
+
+
+
+    [
+      {
+        "prompt": "Value",
+        "items": ["7", "25", "10", "75"],
+        "correctOrder": ["75", "25", "10", "7"],
+        "topLabel": "↑ Greatest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Number of Syllables",
+        "items": ["75", "25", "10", "7"],
+        "correctOrder": ["75", "25", "7", "10"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Number of Factors",
+        "items": ["75", "25", "7", "10"],
+        "correctOrder": ["75", "10", "25", "7"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }   
+    ],
+
+    [
+      {
+        "prompt": "Coastline Length",
+        "items": ["Cuba", "Sicily", "Greenland", "Hawaii (Big Island)"],
+        "correctOrder": ["Greenland", "Cuba", "Sicily", "Hawaii (Big Island)"],
+        "topLabel": "↑ Longest Coastline",
+        "bottomLabel": "↓ Shortest Coastline"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Greenland", "Cuba", "Sicily", "Hawaii (Big Island)"],
+        "correctOrder": ["Cuba", "Sicily", "Hawaii (Big Island)", "Greenland"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Number of Tourists",
+        "items": ["Cuba", "Sicily", "Hawaii (Big Island)", "Greenland"],
+        "correctOrder": ["Sicily", "Cuba", "Hawaii (Big Island)", "Greenland"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Mark Zuckerberg", "George Clooney", "Miley Cyrus", "Clint Eastwood"],
+        "correctOrder": ["Clint Eastwood", "George Clooney", "Mark Zuckerberg", "Miley Cyrus"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Mark Zuckerberg", "George Clooney", "Miley Cyrus", "Clint Eastwood"],
+        "correctOrder": ["Mark Zuckerberg", "George Clooney", "Clint Eastwood", "Miley Cyrus"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
+      },
+      {
+        "prompt": "Number of Children",
+        "items": ["Mark Zuckerberg", "George Clooney", "Miley Cyrus", "Clint Eastwood"],
+        "correctOrder": ["Clint Eastwood", "Mark Zuckerberg", "George Clooney", "Miley Cyrus"],
+        "topLabel": "↑ Most Children",
+        "bottomLabel": "↓ Fewest Children"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Size",
+        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
+        "correctOrder": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Estimated Lifespan",
+        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
+        "correctOrder": ["Woolly Mammoth", "Megalodon", "Saber-Tooth Cat", "Dodo"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
+      },
+      {
+        "prompt": "Extinction Date",
+        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
+        "correctOrder": ["Megalodon", "Saber-Tooth Cat", "Woolly Mammoth", "Dodo"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Area (sq mi)",
+        "items": ["Alaska", "Rhode Island", "Louisiana", "Colorado"],
+        "correctOrder": ["Alaska", "Colorado", "Louisiana", "Rhode Island"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Number of Bordering States",
+        "items": ["Alaska", "Rhode Island", "Louisiana", "Colorado"],
+        "correctOrder": ["Colorado", "Louisiana", "Rhode Island", "Alaska"],
+        "topLabel": "↑ Most Borders",
+        "bottomLabel": "↓ Fewest Borders"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Alaska", "Rhode Island", "Louisiana", "Colorado"],
+        "correctOrder": ["Alaska", "Colorado", "Rhode Island", "Louisiana"],
+        "topLabel": "↑ Farthest North",
+        "bottomLabel": "↓ Closest to Equator"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Birth Year",
+        "items": ["Michael Jackson", "Amy Winehouse", "Elvis Presley", "Frank Sinatra"],
+        "correctOrder": ["Frank Sinatra", "Elvis Presley", "Michael Jackson", "Amy Winehouse"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Death Year",
+        "items": ["Frank Sinatra", "Elvis Presley", "Michael Jackson", "Amy Winehouse"],
+        "correctOrder": ["Elvis Presley", "Frank Sinatra", "Michael Jackson", "Amy Winehouse"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Age at Death",
+        "items": ["Elvis Presley", "Frank Sinatra", "Michael Jackson", "Amy Winehouse"],
+        "correctOrder": ["Frank Sinatra", "Michael Jackson", "Elvis Presley", "Amy Winehouse"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Constructed",
+        "items": ["The Sphere", "Madison Square Garden", "Hollywood Bowl", "The Colosseum"],
+        "correctOrder": ["The Colosseum", "Hollywood Bowl", "Madison Square Garden", "The Sphere"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Cost to Build",
+        "items": ["The Sphere", "Madison Square Garden", "Hollywood Bowl", "The Colosseum"],
+        "correctOrder": ["The Sphere", "Madison Square Garden", "Hollywood Bowl", "The Colosseum"],
+        "topLabel": "↑ Most Expensive",
+        "bottomLabel": "↓ Least Expensive"
+      },
+      {
+        "prompt": "Occupancy",
+        "items": ["The Sphere", "Madison Square Garden", "Hollywood Bowl", "The Colosseum"],
+        "correctOrder": ["The Colosseum", "Madison Square Garden", "Hollywood Bowl", "The Sphere"],
+        "topLabel": "↑ Largest Capacity",
+        "bottomLabel": "↓ Smallest Capacity"
       }
     ],
 
@@ -2137,6 +2316,198 @@
         "bottomLabel": "↓ Fewest Years"
       }
     ], 
+
+    [
+      {
+        "prompt": "First Premiered",
+        "items": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
+        "correctOrder": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
+        "topLabel": "↑ Earliest Premiere",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Emmys Won",
+        "items": ["The Simpsons", "The Flintstones", "South Park", "Family Guy"],
+        "correctOrder": ["The Simpsons", "Family Guy", "South Park", "The Flintstones"],
+        "topLabel": "↑ Most Emmys",
+        "bottomLabel": "↓ Fewest Emmys"
+      },
+      {
+        "prompt": "Main Character Age",
+        "items": ["Family Guy", "The Flintstones", "The Simpsons", "South Park"],
+        "correctOrder": ["Family Guy", "The Flintstones", "The Simpsons", "South Park"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Speed",
+        "items": ["Giraffe", "Ostrich", "Pig", "Cow"],
+        "correctOrder": ["Ostrich", "Giraffe", "Cow", "Pig"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Giraffe", "Ostrich", "Pig", "Cow"],
+        "correctOrder": ["Giraffe", "Ostrich", "Cow", "Pig"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Giraffe", "Ostrich", "Pig", "Cow"],
+        "correctOrder": ["Ostrich", "Giraffe", "Cow", "Pig"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
+        "correctOrder": ["Jack Nicholson", "Johnny Depp", "Matthew McConaughey", "Ariana Grande"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Number of Children",
+        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
+        "correctOrder": ["Jack Nicholson", "Matthew McConaughey", "Johnny Depp", "Ariana Grande"],
+        "topLabel": "↑ Most Children",
+        "bottomLabel": "↓ Fewest Children"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
+        "correctOrder": ["Jack Nicholson", "Ariana Grande", "Matthew McConaughey", "Johnny Depp"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Area (sq mi)",
+        "items": ["Montana", "Nebraska", "California", "Hawaii"],
+        "correctOrder": ["California", "Montana", "Nebraska", "Hawaii"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Number of Bordering States",
+        "items": ["Montana", "Nebraska", "California", "Hawaii"],
+        "correctOrder": ["Nebraska", "Montana", "California", "Hawaii"],
+        "topLabel": "↑ Most Borders",
+        "bottomLabel": "↓ Fewest Borders"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Montana", "Nebraska", "California", "Hawaii"],
+        "correctOrder": ["Montana", "Nebraska", "California", "Hawaii"],
+        "topLabel": "↑ Farthest North",
+        "bottomLabel": "↓ Closest to Equator"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Valuation",
+        "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
+        "correctOrder": ["Apple", "Walmart", "Chipotle", "Burger King"],
+        "topLabel": "↑ Highest Value",
+        "bottomLabel": "↓ Lowest Value"
+      },
+      {
+        "prompt": "Number of Locations",
+        "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
+        "correctOrder": ["Walmart", "Burger King", "Chipotle", "Apple"],
+        "topLabel": "↑ Most Locations",
+        "bottomLabel": "↓ Fewest Locations"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
+        "correctOrder": ["Burger King", "Walmart", "Apple", "Chipotle"],
+        "topLabel": "↑ Earliest Founded",
+        "bottomLabel": "↓ Most Recently Founded"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Adam Sandler", "Kanye West", "Margot Robbie", "Sydney Sweeney"],
+        "correctOrder": ["Adam Sandler", "Kanye West", "Margot Robbie", "Sydney Sweeney"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Adam Sandler", "Kanye West", "Margot Robbie", "Sydney Sweeney"],
+        "correctOrder": ["Kanye West", "Adam Sandler", "Margot Robbie", "Sydney Sweeney"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
+      },
+      {
+        "prompt": "Number of Children",
+        "items": ["Adam Sandler", "Kanye West", "Margot Robbie", "Sydney Sweeney"],
+        "correctOrder": ["Kanye West", "Adam Sandler", "Margot Robbie", "Sydney Sweeney"],
+        "topLabel": "↑ Most Children",
+        "bottomLabel": "↓ Fewest Children"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Country (A–Z)",
+        "items": ["Sydney Opera House", "The Louvre", "Taj Mahal", "Parthenon"],
+        "correctOrder": ["The Louvre", "Parthenon", "Taj Mahal", "Sydney Opera House"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Year Built",
+        "items": ["The Louvre", "Parthenon", "Taj Mahal", "Sydney Opera House"],
+        "correctOrder": ["Parthenon", "Taj Mahal", "The Louvre", "Sydney Opera House"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Annual Visitors",
+        "items": ["Parthenon", "Taj Mahal", "The Louvre", "Sydney Opera House"],
+        "correctOrder": ["Sydney Opera House", "The Louvre", "Taj Mahal", "Parthenon"],
+        "topLabel": "↑ Most Visitors",
+        "bottomLabel": "↓ Fewest Visitors"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Texas", "Alabama", "Michigan", "Tennessee"],
+        "correctOrder": ["Michigan", "Tennessee", "Alabama", "Texas"],
+        "topLabel": "↑ Farthest North",
+        "bottomLabel": "↓ Closest to Equator"
+      },
+      {
+        "prompt": "Area (sq mi)",
+        "items": ["Texas", "Alabama", "Michigan", "Tennessee"],
+        "correctOrder": ["Texas", "Michigan", "Alabama", "Tennessee"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Texas", "Alabama", "Michigan", "Tennessee"],
+        "correctOrder": ["Texas", "Michigan", "Tennessee", "Alabama"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      }
+    ],
 
     [
       {
