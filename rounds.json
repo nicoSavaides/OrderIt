@@ -2188,6 +2188,30 @@
 
     [
       {
+        "prompt": "Placement in Series",
+        "items": ["Mission: Impossible – Fallout", "The Bourne Identity", "Twilight: Eclipse", "Top Gun: Maverick"],
+        "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
+        "topLabel": "↑ Earliest in Series",
+        "bottomLabel": "↓ Latest in Series"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
+        "correctOrder": ["The Bourne Identity", "Twilight: Eclipse", "Mission: Impossible – Fallout", "Top Gun: Maverick"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Gross",
+        "items": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
+        "correctOrder": ["Top Gun: Maverick", "Mission: Impossible – Fallout", "Twilight: Eclipse", "The Bourne Identity"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      }
+    ],
+
+    [
+      {
         "prompt": "Age",
         "items": ["Mark Zuckerberg", "George Clooney", "Miley Cyrus", "Clint Eastwood"],
         "correctOrder": ["Clint Eastwood", "George Clooney", "Mark Zuckerberg", "Miley Cyrus"],
@@ -2279,6 +2303,30 @@
         "correctOrder": ["Poker Face", "Livin’ on a Prayer", "…Baby One More Time", "Roxanne"],
         "topLabel": "↑ Most Views",
         "bottomLabel": "↓ Fewest Views"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Released",
+        "items": ["Oppenheimer", "Parasite", "Shrek", "The Mask"],
+        "correctOrder": ["The Mask", "Shrek", "Parasite", "Oppenheimer"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Oscars Won",
+        "items": ["The Mask", "Shrek", "Parasite", "Oppenheimer"],
+        "correctOrder": ["Oppenheimer", "Parasite", "Shrek", "The Mask"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["Oppenheimer", "Parasite", "Shrek", "The Mask"],
+        "correctOrder": ["Oppenheimer", "Parasite", "The Mask", "Shrek"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
       }
     ],
 
@@ -2404,6 +2452,30 @@
 
     [
       {
+        "prompt": "Year It Takes Place",
+        "items": ["The Wolf of Wall Street", "300", "Braveheart", "Ben-Hur"],
+        "correctOrder": ["300", "Ben-Hur", "Braveheart", "The Wolf of Wall Street"],
+        "topLabel": "↑ Earliest Setting",
+        "bottomLabel": "↓ Most Recent Setting"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["The Wolf of Wall Street", "300", "Braveheart", "Ben-Hur"],
+        "correctOrder": ["Ben-Hur", "Braveheart", "300", "The Wolf of Wall Street"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Oscar Nominations",
+        "items": ["The Wolf of Wall Street", "300", "Braveheart", "Ben-Hur"],
+        "correctOrder": ["Ben-Hur", "Braveheart", "The Wolf of Wall Street", "300"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Height",
         "items": ["Johnny Carson", "Oprah Winfrey", "Jay Leno", "Alex Trebek"],
         "correctOrder": ["Jay Leno", "Johnny Carson", "Alex Trebek", "Oprah Winfrey"],
@@ -2498,6 +2570,29 @@
       }
     ],
 
+    [
+      {
+        "prompt": "Year",
+        "items": ["Up", "The Shawshank Redemption", "The Shining", "The Wizard of Oz"],
+        "correctOrder": ["The Wizard of Oz", "The Shining", "The Shawshank Redemption", "Up"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Budget",
+        "items": ["The Wizard of Oz", "The Shining", "The Shawshank Redemption", "Up"],
+        "correctOrder": ["Up", "The Shawshank Redemption", "The Shining", "The Wizard of Oz"],
+        "topLabel": "↑ Biggest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Gross",
+        "items": ["Up", "The Shawshank Redemption", "The Shining", "The Wizard of Oz"],
+        "correctOrder": ["Up", "The Shining", "The Shawshank Redemption", "The Wizard of Oz"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      }
+    ],
 
     [
       {
@@ -2621,6 +2716,30 @@
 
     [
       {
+        "prompt": "Year",
+        "items": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
+        "correctOrder": ["The Breakfast Club", "Cast Away", "The Dark Knight", "The Social Network"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Budget",
+        "items": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
+        "correctOrder": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
+        "topLabel": "↑ Biggest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Gross",
+        "items": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
+        "correctOrder": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      }
+    ],
+
+    [
+      {
         "prompt": "Valuation",
         "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
         "correctOrder": ["Apple", "Walmart", "Chipotle", "Burger King"],
@@ -2693,6 +2812,30 @@
 
     [
       {
+        "prompt": "Year It Takes Place",
+        "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
+        "correctOrder": ["Django Unchained", "Saving Private Ryan", "Back to the Future Part II", "Wall-E"],
+        "topLabel": "↑ Set Longest Ago",
+        "bottomLabel": "↓ Set Farthest in Future"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
+        "correctOrder": ["Back to the Future Part II", "Saving Private Ryan", "Wall-E", "Django Unchained"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Oscar Wins",
+        "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
+        "correctOrder": ["Saving Private Ryan", "Django Unchained", "Wall-E", "Back to the Future Part II"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Bordering Countries",
         "items": ["New Zealand", "South Korea", "Mexico", "Russia"],
         "correctOrder": ["Russia", "Mexico", "South Korea", "New Zealand"],
@@ -2760,6 +2903,30 @@
         "correctOrder": ["Hotel California", "Hey Ya!", "Old Town Road", "Respect"],
         "topLabel": "↑ Most Views",
         "bottomLabel": "↓ Fewest Views"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year",
+        "items": ["Titanic", "Joker", "My Big Fat Greek Wedding", "When Harry Met Sally"],
+        "correctOrder": ["When Harry Met Sally", "Titanic", "My Big Fat Greek Wedding", "Joker"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Budget",
+        "items": ["When Harry Met Sally", "Titanic", "My Big Fat Greek Wedding", "Joker"],
+        "correctOrder": ["Titanic", "Joker", "When Harry Met Sally", "My Big Fat Greek Wedding"],
+        "topLabel": "↑ Biggest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Gross",
+        "items": ["Titanic", "Joker", "When Harry Met Sally", "My Big Fat Greek Wedding"],
+        "correctOrder": ["Titanic", "Joker", "My Big Fat Greek Wedding", "When Harry Met Sally"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
       }
     ],
 
