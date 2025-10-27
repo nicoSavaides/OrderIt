@@ -2114,16 +2114,29 @@
       }
     ],
 
-
-
-
-
-
-
-
-
-
-
+    [
+      {
+        "prompt": "Weight",
+        "items": ["Strip of Bacon", "Pineapple", "Chicken Breast", "Apple"],
+        "correctOrder": ["Pineapple", "Apple", "Chicken Breast", "Strip of Bacon"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Calories",
+        "items": ["Pineapple", "Apple", "Chicken Breast", "Strip of Bacon"],
+        "correctOrder": ["Pineapple", "Chicken Breast", "Strip of Bacon", "Apple"],
+        "topLabel": "↑ Most Calories",
+        "bottomLabel": "↓ Fewest Calories"
+      },
+      {
+        "prompt": "Protein",
+        "items": ["Pineapple", "Chicken Breast", "Strip of Bacon", "Apple"],
+        "correctOrder": ["Chicken Breast", "Pineapple", "Strip of Bacon", "Apple"],
+        "topLabel": "↑ Most Protein",
+        "bottomLabel": "↓ Least Protein"
+      }
+    ],
 
     [
       {
