@@ -2236,6 +2236,30 @@
 
     [
       {
+        "prompt": "Year Released",
+        "items": ["Livin’ on a Prayer", "…Baby One More Time", "Poker Face", "Roxanne"],
+        "correctOrder": ["Roxanne", "Livin’ on a Prayer", "…Baby One More Time", "Poker Face"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Artist Name (A–Z)",
+        "items": ["Roxanne", "Livin’ on a Prayer", "…Baby One More Time", "Poker Face"],
+        "correctOrder": ["…Baby One More Time", "Livin’ on a Prayer", "Poker Face", "Roxanne"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "YouTube Views",
+        "items": ["…Baby One More Time", "Livin’ on a Prayer", "Poker Face", "Roxanne"],
+        "correctOrder": ["Poker Face", "Livin’ on a Prayer", "…Baby One More Time", "Roxanne"],
+        "topLabel": "↑ Most Views",
+        "bottomLabel": "↓ Fewest Views"
+      }
+    ],
+
+    [
+      {
         "prompt": "Area (sq mi)",
         "items": ["Alaska", "Rhode Island", "Louisiana", "Colorado"],
         "correctOrder": ["Alaska", "Colorado", "Louisiana", "Rhode Island"],
@@ -2279,6 +2303,30 @@
         "correctOrder": ["Frank Sinatra", "Michael Jackson", "Elvis Presley", "Amy Winehouse"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Formed",
+        "items": ["Daft Punk", "Nirvana", "Imagine Dragons", "The Rolling Stones"],
+        "correctOrder": ["The Rolling Stones", "Nirvana", "Daft Punk", "Imagine Dragons"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Members",
+        "items": ["Daft Punk", "Nirvana", "Imagine Dragons", "The Rolling Stones"],
+        "correctOrder": ["The Rolling Stones", "Imagine Dragons", "Nirvana", "Daft Punk"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Years Together",
+        "items": ["Daft Punk", "Nirvana", "Imagine Dragons", "The Rolling Stones"],
+        "correctOrder": ["The Rolling Stones", "Daft Punk", "Imagine Dragons", "Nirvana"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       }
     ],
 
@@ -2356,6 +2404,31 @@
 
     [
       {
+        "prompt": "Song Tempo (BPM)",
+        "items": ["The Sound of Silence", "Blinding Lights", "Every Breath You Take", "Mr. Brightside"],
+        "correctOrder": ["Blinding Lights", "Mr. Brightside", "Every Breath You Take", "The Sound of Silence"],
+        "topLabel": "↑ Fastest Tempo",
+        "bottomLabel": "↓ Slowest Tempo"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Blinding Lights", "Mr. Brightside", "Every Breath You Take", "The Sound of Silence"],
+        "correctOrder": ["The Sound of Silence", "Every Breath You Take", "Mr. Brightside", "Blinding Lights"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Spotify Plays",
+        "items": ["The Sound of Silence", "Every Breath You Take", "Mr. Brightside", "Blinding Lights"],
+        "correctOrder": ["Blinding Lights", "Every Breath You Take", "Mr. Brightside", "The Sound of Silence"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+
+    [
+      {
         "prompt": "Speed",
         "items": ["Giraffe", "Ostrich", "Pig", "Cow"],
         "correctOrder": ["Ostrich", "Giraffe", "Cow", "Pig"],
@@ -2375,6 +2448,30 @@
         "correctOrder": ["Ostrich", "Giraffe", "Cow", "Pig"],
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Formed",
+        "items": ["Blink-182", "The Beatles", "One Direction", "Foo Fighters"],
+        "correctOrder": ["The Beatles", "Blink-182", "Foo Fighters", "One Direction"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Members",
+        "items": ["Blink-182", "The Beatles", "One Direction", "Foo Fighters"],
+        "correctOrder": ["Foo Fighters", "One Direction", "The Beatles", "Blink-182"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Years Together",
+        "items": ["Blink-182", "The Beatles", "One Direction", "Foo Fighters"],
+        "correctOrder": ["Foo Fighters", "Blink-182", "The Beatles", "One Direction"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       }
     ],
 
@@ -2495,6 +2592,54 @@
         "correctOrder": ["Sydney Opera House", "The Louvre", "Taj Mahal", "Parthenon"],
         "topLabel": "↑ Most Visitors",
         "bottomLabel": "↓ Fewest Visitors"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Formed",
+        "items": ["Green Day", "Maroon 5", "BTS", "ABBA"],
+        "correctOrder": ["ABBA", "Green Day", "Maroon 5", "BTS"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Members",
+        "items": ["ABBA", "Green Day", "Maroon 5", "BTS"],
+        "correctOrder": ["BTS", "Maroon 5", "ABBA", "Green Day"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Years Together",
+        "items": ["BTS", "Maroon 5", "ABBA", "Green Day"],
+        "correctOrder": ["Green Day", "Maroon 5", "ABBA", "BTS"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Tempo (BPM)",
+        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
+        "correctOrder": ["Hey Ya!", "Hotel California", "Old Town Road", "Respect"],
+        "topLabel": "↑ Fastest Tempo",
+        "bottomLabel": "↓ Slowest Tempo"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
+        "correctOrder": ["Respect", "Hotel California", "Hey Ya!", "Old Town Road"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Spotify Plays",
+        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
+        "correctOrder": ["Hotel California", "Hey Ya!", "Old Town Road", "Respect"],
+        "topLabel": "↑ Most Views",
+        "bottomLabel": "↓ Fewest Views"
       }
     ],
 
