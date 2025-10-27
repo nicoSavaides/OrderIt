@@ -2236,6 +2236,30 @@
 
     [
       {
+        "prompt": "Number of Bordering Countries",
+        "items": ["Cyprus", "Sweden", "France", "Brazil"],
+        "correctOrder": ["Brazil", "France", "Sweden", "Cyprus"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Brazil", "France", "Sweden", "Cyprus"],
+        "correctOrder": ["Brazil", "France", "Sweden", "Cyprus"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Brazil", "France", "Sweden", "Cyprus"],
+        "correctOrder": ["Sweden", "France", "Cyprus", "Brazil"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Released",
         "items": ["Livin’ on a Prayer", "…Baby One More Time", "Poker Face", "Roxanne"],
         "correctOrder": ["Roxanne", "Livin’ on a Prayer", "…Baby One More Time", "Poker Face"],
@@ -2356,6 +2380,30 @@
 
     [
       {
+        "prompt": "Number of Bordering Countries",
+        "items": ["Sweden", "France", "Japan", "South Africa"],
+        "correctOrder": ["France", "South Africa", "Sweden", "Japan"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Sweden", "France", "Japan", "South Africa"],
+        "correctOrder": ["Japan", "France", "South Africa", "Sweden"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Sweden", "France", "Japan", "South Africa"],
+        "correctOrder": ["Sweden", "France", "Japan", "South Africa"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Height",
         "items": ["Johnny Carson", "Oprah Winfrey", "Jay Leno", "Alex Trebek"],
         "correctOrder": ["Jay Leno", "Johnny Carson", "Alex Trebek", "Oprah Winfrey"],
@@ -2399,6 +2447,30 @@
         "correctOrder": ["Family Guy", "The Flintstones", "The Simpsons", "South Park"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Vietnam", "Greece", "Ukraine", "South Africa"],
+        "correctOrder": ["Ukraine", "Greece", "South Africa", "Vietnam"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Ukraine", "Greece", "South Africa", "Vietnam"],
+        "correctOrder": ["Vietnam", "South Africa", "Ukraine", "Greece"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Number of Bordering Countries",
+        "items": ["Vietnam", "South Africa", "Ukraine", "Greece"],
+        "correctOrder": ["Ukraine", "South Africa", "Greece", "Vietnam"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       }
     ],
 
@@ -2448,6 +2520,30 @@
         "correctOrder": ["Ostrich", "Giraffe", "Cow", "Pig"],
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Number of Bordering Countries",
+        "items": ["Japan", "Canada", "Israel", "India"],
+        "correctOrder": ["India", "Israel", "Canada", "Japan"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["India", "Israel", "Canada", "Japan"],
+        "correctOrder": ["India", "Japan", "Canada", "Israel"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["India", "Japan", "Canada", "Israel"],
+        "correctOrder": ["Canada", "Japan", "Israel", "India"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
       }
     ],
 
@@ -2592,6 +2688,30 @@
         "correctOrder": ["Sydney Opera House", "The Louvre", "Taj Mahal", "Parthenon"],
         "topLabel": "↑ Most Visitors",
         "bottomLabel": "↓ Fewest Visitors"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Number of Bordering Countries",
+        "items": ["New Zealand", "South Korea", "Mexico", "Russia"],
+        "correctOrder": ["Russia", "Mexico", "South Korea", "New Zealand"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Russia", "Mexico", "South Korea", "New Zealand"],
+        "correctOrder": ["Russia", "Mexico", "South Korea", "New Zealand"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Russia", "Mexico", "South Korea", "New Zealand"],
+        "correctOrder": ["Russia", "New Zealand", "South Korea", "Mexico"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
       }
     ],
 
