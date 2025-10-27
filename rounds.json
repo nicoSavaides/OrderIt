@@ -2133,8 +2133,8 @@
         "prompt": "Protein",
         "items": ["Pineapple", "Chicken Breast", "Strip of Bacon", "Apple"],
         "correctOrder": ["Chicken Breast", "Pineapple", "Strip of Bacon", "Apple"],
-        "topLabel": "↑ Most Protein",
-        "bottomLabel": "↓ Least Protein"
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Least"
       }
     ],
 
