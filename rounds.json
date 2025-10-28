@@ -2140,30 +2140,6 @@
 
     [
       {
-        "prompt": "Value",
-        "items": ["7", "25", "10", "75"],
-        "correctOrder": ["75", "25", "10", "7"],
-        "topLabel": "↑ Greatest",
-        "bottomLabel": "↓ Smallest"
-      },
-      {
-        "prompt": "Number of Syllables",
-        "items": ["75", "25", "10", "7"],
-        "correctOrder": ["75", "25", "7", "10"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
-        "prompt": "Number of Factors",
-        "items": ["75", "25", "7", "10"],
-        "correctOrder": ["75", "10", "25", "7"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      }   
-    ],
-
-    [
-      {
         "prompt": "Coastline Length",
         "items": ["Cuba", "Sicily", "Greenland", "Hawaii (Big Island)"],
         "correctOrder": ["Greenland", "Cuba", "Sicily", "Hawaii (Big Island)"],
@@ -2184,6 +2160,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Value",
+        "items": ["7", "25", "10", "75"],
+        "correctOrder": ["75", "25", "10", "7"],
+        "topLabel": "↑ Greatest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Number of Syllables",
+        "items": ["75", "25", "10", "7"],
+        "correctOrder": ["75", "25", "7", "10"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Number of Factors",
+        "items": ["75", "25", "7", "10"],
+        "correctOrder": ["75", "10", "25", "7"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }   
     ],
 
     [
