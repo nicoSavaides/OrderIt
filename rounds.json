@@ -2118,7 +2118,7 @@
       {
         "prompt": "Weight",
         "items": ["Strip of Bacon", "Pineapple", "Chicken Breast", "Apple"],
-        "correctOrder": ["Pineapple", "Apple", "Chicken Breast", "Strip of Bacon"],
+        "correctOrder": ["Pineapple", "Chicken Breast", "Apple", "Strip of Bacon"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
       },
