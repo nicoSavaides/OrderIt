@@ -2143,8 +2143,8 @@
         "prompt": "Coastline Length",
         "items": ["Cuba", "Sicily", "Greenland", "Hawaii (Big Island)"],
         "correctOrder": ["Greenland", "Cuba", "Sicily", "Hawaii (Big Island)"],
-        "topLabel": "↑ Longest Coastline",
-        "bottomLabel": "↓ Shortest Coastline"
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Population",
