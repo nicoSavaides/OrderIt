@@ -2164,6 +2164,30 @@
 
     [
       {
+        "prompt": "Age",
+        "items": ["Mark Zuckerberg", "George Clooney", "Miley Cyrus", "Clint Eastwood"],
+        "correctOrder": ["Clint Eastwood", "George Clooney", "Mark Zuckerberg", "Miley Cyrus"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Clint Eastwood", "George Clooney", "Mark Zuckerberg", "Miley Cyrus"],
+        "correctOrder": ["Mark Zuckerberg", "George Clooney", "Clint Eastwood", "Miley Cyrus"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
+      },
+      {
+        "prompt": "Number of Children",
+        "items": ["Mark Zuckerberg", "George Clooney", "Clint Eastwood", "Miley Cyrus"],
+        "correctOrder": ["Clint Eastwood", "Mark Zuckerberg", "George Clooney", "Miley Cyrus"],
+        "topLabel": "↑ Most Children",
+        "bottomLabel": "↓ Fewest Children"
+      }
+    ],
+
+    [
+      {
         "prompt": "Value",
         "items": ["7", "25", "10", "75"],
         "correctOrder": ["75", "25", "10", "7"],
@@ -2207,30 +2231,6 @@
         "correctOrder": ["Top Gun: Maverick", "Mission: Impossible – Fallout", "Twilight: Eclipse", "The Bourne Identity"],
         "topLabel": "↑ Highest Grossing",
         "bottomLabel": "↓ Lowest Grossing"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Age",
-        "items": ["Mark Zuckerberg", "George Clooney", "Miley Cyrus", "Clint Eastwood"],
-        "correctOrder": ["Clint Eastwood", "George Clooney", "Mark Zuckerberg", "Miley Cyrus"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
-      },
-      {
-        "prompt": "Net Worth",
-        "items": ["Mark Zuckerberg", "George Clooney", "Miley Cyrus", "Clint Eastwood"],
-        "correctOrder": ["Mark Zuckerberg", "George Clooney", "Clint Eastwood", "Miley Cyrus"],
-        "topLabel": "↑ Highest Net Worth",
-        "bottomLabel": "↓ Lowest Net Worth"
-      },
-      {
-        "prompt": "Number of Children",
-        "items": ["Mark Zuckerberg", "George Clooney", "Miley Cyrus", "Clint Eastwood"],
-        "correctOrder": ["Clint Eastwood", "Mark Zuckerberg", "George Clooney", "Miley Cyrus"],
-        "topLabel": "↑ Most Children",
-        "bottomLabel": "↓ Fewest Children"
       }
     ],
 
