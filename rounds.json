@@ -2192,7 +2192,7 @@
         "items": ["7", "25", "10", "75"],
         "correctOrder": ["75", "25", "10", "7"],
         "topLabel": "↑ Greatest",
-        "bottomLabel": "↓ Smallest"
+        "bottomLabel": "↓ Least"
       },
       {
         "prompt": "Number of Syllables",
