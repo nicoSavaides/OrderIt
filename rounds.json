@@ -2212,6 +2212,30 @@
 
     [
       {
+        "prompt": "Country (A–Z)",
+        "items": ["Louvre", "Sydney Opera House", "Taj Mahal", "Parthenon"],
+        "correctOrder": ["Sydney Opera House", "Louvre", "Parthenon", "Taj Mahal"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Year Built",
+        "items": ["Sydney Opera House", "Louvre", "Parthenon", "Taj Mahal"],
+        "correctOrder": ["Parthenon", "Taj Mahal", "Louvre", "Sydney Opera House"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Annual Visitors",
+        "items": ["Parthenon", "Taj Mahal", "Louvre", "Sydney Opera House"],
+        "correctOrder": ["Sydney Opera House", "Louvre", "Taj Mahal", "Parthenon"],
+        "topLabel": "↑ Most Visitors",
+        "bottomLabel": "↓ Fewest Visitors"
+      }
+    ],
+
+    [
+      {
         "prompt": "Placement in Series",
         "items": ["Mission: Impossible – Fallout", "The Bourne Identity", "Twilight: Eclipse", "Top Gun: Maverick"],
         "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
@@ -2783,30 +2807,6 @@
         "correctOrder": ["Kanye West", "Adam Sandler", "Margot Robbie", "Sydney Sweeney"],
         "topLabel": "↑ Most Children",
         "bottomLabel": "↓ Fewest Children"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Country (A–Z)",
-        "items": ["Sydney Opera House", "The Louvre", "Taj Mahal", "Parthenon"],
-        "correctOrder": ["The Louvre", "Parthenon", "Taj Mahal", "Sydney Opera House"],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
-      },
-      {
-        "prompt": "Year Built",
-        "items": ["The Louvre", "Parthenon", "Taj Mahal", "Sydney Opera House"],
-        "correctOrder": ["Parthenon", "Taj Mahal", "The Louvre", "Sydney Opera House"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Annual Visitors",
-        "items": ["Parthenon", "Taj Mahal", "The Louvre", "Sydney Opera House"],
-        "correctOrder": ["Sydney Opera House", "The Louvre", "Taj Mahal", "Parthenon"],
-        "topLabel": "↑ Most Visitors",
-        "bottomLabel": "↓ Fewest Visitors"
       }
     ],
 
