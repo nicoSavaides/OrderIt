@@ -2236,6 +2236,30 @@
 
     [
       {
+        "prompt": "Year",
+        "items": ["Titanic", "Joker", "My Big Fat Greek Wedding", "When Harry Met Sally"],
+        "correctOrder": ["When Harry Met Sally", "Titanic", "My Big Fat Greek Wedding", "Joker"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Budget",
+        "items": ["When Harry Met Sally", "Titanic", "My Big Fat Greek Wedding", "Joker"],
+        "correctOrder": ["Titanic", "Joker", "When Harry Met Sally", "My Big Fat Greek Wedding"],
+        "topLabel": "↑ Biggest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Gross",
+        "items": ["Titanic", "Joker", "When Harry Met Sally", "My Big Fat Greek Wedding"],
+        "correctOrder": ["Titanic", "Joker", "My Big Fat Greek Wedding", "When Harry Met Sally"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      }
+    ],
+
+    [
+      {
         "prompt": "Placement in Series",
         "items": ["Mission: Impossible – Fallout", "The Bourne Identity", "Twilight: Eclipse", "Top Gun: Maverick"],
         "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
@@ -2903,30 +2927,6 @@
         "correctOrder": ["Hotel California", "Hey Ya!", "Old Town Road", "Respect"],
         "topLabel": "↑ Most Views",
         "bottomLabel": "↓ Fewest Views"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year",
-        "items": ["Titanic", "Joker", "My Big Fat Greek Wedding", "When Harry Met Sally"],
-        "correctOrder": ["When Harry Met Sally", "Titanic", "My Big Fat Greek Wedding", "Joker"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Budget",
-        "items": ["When Harry Met Sally", "Titanic", "My Big Fat Greek Wedding", "Joker"],
-        "correctOrder": ["Titanic", "Joker", "When Harry Met Sally", "My Big Fat Greek Wedding"],
-        "topLabel": "↑ Biggest",
-        "bottomLabel": "↓ Smallest"
-      },
-      {
-        "prompt": "Gross",
-        "items": ["Titanic", "Joker", "When Harry Met Sally", "My Big Fat Greek Wedding"],
-        "correctOrder": ["Titanic", "Joker", "My Big Fat Greek Wedding", "When Harry Met Sally"],
-        "topLabel": "↑ Highest Grossing",
-        "bottomLabel": "↓ Lowest Grossing"
       }
     ],
 
