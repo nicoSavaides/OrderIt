@@ -2237,7 +2237,7 @@
     [
       {
         "prompt": "Year",
-        "items": ["Titanic", "Joker", "My Big Fat Greek Wedding", "When Harry Met Sally"],
+        "items": ["My Big Fat Greek Wedding", "Titanic", "Joker", "When Harry Met Sally"],
         "correctOrder": ["When Harry Met Sally", "Titanic", "My Big Fat Greek Wedding", "Joker"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
@@ -2254,7 +2254,7 @@
         "items": ["Titanic", "Joker", "When Harry Met Sally", "My Big Fat Greek Wedding"],
         "correctOrder": ["Titanic", "Joker", "My Big Fat Greek Wedding", "When Harry Met Sally"],
         "topLabel": "↑ Highest Grossing",
-        "bottomLabel": "↓ Lowest Grossing"
+        "bottomLabel": "↓ Lowest Grossing" 
       }
     ],
 
