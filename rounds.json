@@ -2260,6 +2260,30 @@
 
     [
       {
+        "prompt": "Year Released",
+        "items": ["Livin’ on a Prayer", "…Baby One More Time", "Poker Face", "Roxanne"],
+        "correctOrder": ["Roxanne", "Livin’ on a Prayer", "…Baby One More Time", "Poker Face"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Artist Name (A–Z)",
+        "items": ["Roxanne", "Livin’ on a Prayer", "…Baby One More Time", "Poker Face"],
+        "correctOrder": ["…Baby One More Time", "Livin’ on a Prayer", "Poker Face", "Roxanne"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "YouTube Views",
+        "items": ["…Baby One More Time", "Livin’ on a Prayer", "Poker Face", "Roxanne"],
+        "correctOrder": ["Poker Face", "Livin’ on a Prayer", "…Baby One More Time", "Roxanne"],
+        "topLabel": "↑ Most Views",
+        "bottomLabel": "↓ Fewest Views"
+      }
+    ],
+
+    [
+      {
         "prompt": "Placement in Series",
         "items": ["Mission: Impossible – Fallout", "The Bourne Identity", "Twilight: Eclipse", "Top Gun: Maverick"],
         "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
@@ -2327,30 +2351,6 @@
         "correctOrder": ["Sweden", "France", "Cyprus", "Brazil"],
         "topLabel": "↑ Farthest",
         "bottomLabel": "↓ Closest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Released",
-        "items": ["Livin’ on a Prayer", "…Baby One More Time", "Poker Face", "Roxanne"],
-        "correctOrder": ["Roxanne", "Livin’ on a Prayer", "…Baby One More Time", "Poker Face"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Artist Name (A–Z)",
-        "items": ["Roxanne", "Livin’ on a Prayer", "…Baby One More Time", "Poker Face"],
-        "correctOrder": ["…Baby One More Time", "Livin’ on a Prayer", "Poker Face", "Roxanne"],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
-      },
-      {
-        "prompt": "YouTube Views",
-        "items": ["…Baby One More Time", "Livin’ on a Prayer", "Poker Face", "Roxanne"],
-        "correctOrder": ["Poker Face", "Livin’ on a Prayer", "…Baby One More Time", "Roxanne"],
-        "topLabel": "↑ Most Views",
-        "bottomLabel": "↓ Fewest Views"
       }
     ],
 
