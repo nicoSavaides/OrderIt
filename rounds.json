@@ -2291,7 +2291,7 @@
         "bottomLabel": "↓ Least Populated"
       },
       {
-        "prompt": "Bordering Countries",
+        "prompt": "Number of Bordering Countries",
         "items": ["Brazil", "France", "Sweden", "Cyprus"],
         "correctOrder": ["Brazil", "France", "Sweden", "Cyprus"],
         "topLabel": "↑ Most",
