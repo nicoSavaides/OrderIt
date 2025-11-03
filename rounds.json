@@ -2284,18 +2284,18 @@
 
     [
       {
-        "prompt": "Bordering Countries",
-        "items": ["Cyprus", "Sweden", "France", "Brazil"],
-        "correctOrder": ["Brazil", "France", "Sweden", "Cyprus"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
         "prompt": "Population",
-        "items": ["Brazil", "France", "Sweden", "Cyprus"],
+        "items": ["France", "Cyprus", "Brazil", "Sweden"],
         "correctOrder": ["Brazil", "France", "Sweden", "Cyprus"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Bordering Countries",
+        "items": ["Brazil", "France", "Sweden", "Cyprus"],
+        "correctOrder": ["Brazil", "France", "Sweden", "Cyprus"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       },
       {
         "prompt": "Distance from Equator",
