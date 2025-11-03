@@ -2284,6 +2284,30 @@
 
     [
       {
+        "prompt": "Bordering Countries",
+        "items": ["Cyprus", "Sweden", "France", "Brazil"],
+        "correctOrder": ["Brazil", "France", "Sweden", "Cyprus"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Brazil", "France", "Sweden", "Cyprus"],
+        "correctOrder": ["Brazil", "France", "Sweden", "Cyprus"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Brazil", "France", "Sweden", "Cyprus"],
+        "correctOrder": ["Sweden", "France", "Cyprus", "Brazil"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Placement in Series",
         "items": ["Mission: Impossible – Fallout", "The Bourne Identity", "Twilight: Eclipse", "Top Gun: Maverick"],
         "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
@@ -2327,30 +2351,6 @@
         "correctOrder": ["Megalodon", "Saber-Tooth Cat", "Woolly Mammoth", "Dodo"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Number of Bordering Countries",
-        "items": ["Cyprus", "Sweden", "France", "Brazil"],
-        "correctOrder": ["Brazil", "France", "Sweden", "Cyprus"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Brazil", "France", "Sweden", "Cyprus"],
-        "correctOrder": ["Brazil", "France", "Sweden", "Cyprus"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Distance from Equator",
-        "items": ["Brazil", "France", "Sweden", "Cyprus"],
-        "correctOrder": ["Sweden", "France", "Cyprus", "Brazil"],
-        "topLabel": "↑ Farthest",
-        "bottomLabel": "↓ Closest"
       }
     ],
 
