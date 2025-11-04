@@ -2308,6 +2308,55 @@
 
     [
       {
+        "prompt": "Height",
+        "items": ["Ostrich", "Pig", "Giraffe", "Cow"],
+        "correctOrder": ["Giraffe", "Ostrich", "Cow", "Pig"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Weight ",
+        "items": ["Giraffe", "Ostrich", "Cow", "Pig"],
+        "correctOrder": ["Giraffe", "Cow", "Pig", "Ostrich"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Speed",
+        "items": ["Giraffe", "Cow", "Ostrich", "Pig"],
+        "correctOrder": ["Ostrich", "Giraffe", "Cow", "Pig"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Number of Locations",
+        "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
+        "correctOrder": ["Walmart", "Burger King", "Chipotle", "Apple"],
+        "topLabel": "↑ Most Locations",
+        "bottomLabel": "↓ Fewest Locations"
+      },
+      {
+        "prompt": "Valuation",
+        "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
+        "correctOrder": ["Apple", "Walmart", "Chipotle", "Burger King"],
+        "topLabel": "↑ Highest Value",
+        "bottomLabel": "↓ Lowest Value"
+      },
+
+      {
+        "prompt": "Year Founded",
+        "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
+        "correctOrder": ["Burger King", "Walmart", "Apple", "Chipotle"],
+        "topLabel": "↑ Earliest Founded",
+        "bottomLabel": "↓ Most Recently Founded"
+      }
+    ],
+
+    [
+      {
         "prompt": "Placement in Series",
         "items": ["Mission: Impossible – Fallout", "The Bourne Identity", "Twilight: Eclipse", "Top Gun: Maverick"],
         "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
@@ -2644,30 +2693,6 @@
 
     [
       {
-        "prompt": "Speed",
-        "items": ["Giraffe", "Ostrich", "Pig", "Cow"],
-        "correctOrder": ["Ostrich", "Giraffe", "Cow", "Pig"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
-      },
-      {
-        "prompt": "Height",
-        "items": ["Giraffe", "Ostrich", "Pig", "Cow"],
-        "correctOrder": ["Giraffe", "Ostrich", "Cow", "Pig"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Lifespan",
-        "items": ["Giraffe", "Ostrich", "Pig", "Cow"],
-        "correctOrder": ["Ostrich", "Giraffe", "Cow", "Pig"],
-        "topLabel": "↑ Longest Lifespan",
-        "bottomLabel": "↓ Shortest Lifespan"
-      }
-    ],
-
-    [
-      {
         "prompt": "Number of Bordering Countries",
         "items": ["Japan", "Canada", "Israel", "India"],
         "correctOrder": ["India", "Israel", "Canada", "Japan"],
@@ -2783,30 +2808,6 @@
         "correctOrder": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
         "topLabel": "↑ Highest Grossing",
         "bottomLabel": "↓ Lowest Grossing"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Valuation",
-        "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
-        "correctOrder": ["Apple", "Walmart", "Chipotle", "Burger King"],
-        "topLabel": "↑ Highest Value",
-        "bottomLabel": "↓ Lowest Value"
-      },
-      {
-        "prompt": "Number of Locations",
-        "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
-        "correctOrder": ["Walmart", "Burger King", "Chipotle", "Apple"],
-        "topLabel": "↑ Most Locations",
-        "bottomLabel": "↓ Fewest Locations"
-      },
-      {
-        "prompt": "Year Founded",
-        "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
-        "correctOrder": ["Burger King", "Walmart", "Apple", "Chipotle"],
-        "topLabel": "↑ Earliest Founded",
-        "bottomLabel": "↓ Most Recently Founded"
       }
     ],
 
