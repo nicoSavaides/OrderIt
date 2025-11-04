@@ -2323,7 +2323,7 @@
       },
       {
         "prompt": "Speed",
-        "items": ["Giraffe", "Cow", "Ostrich", "Pig"],
+        "items": ["Giraffe", "Cow", "Pig", "Ostrich"],
         "correctOrder": ["Ostrich", "Giraffe", "Cow", "Pig"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
