@@ -2318,7 +2318,7 @@
         "prompt": "Weight ",
         "items": ["Giraffe", "Ostrich", "Cow", "Pig"],
         "correctOrder": ["Giraffe", "Cow", "Pig", "Ostrich"],
-        "topLabel": "↑ Heaviest",
+        "topLabel": "↑ Heaviest", 
         "bottomLabel": "↓ Lightest"
       },
       {
@@ -2327,6 +2327,30 @@
         "correctOrder": ["Ostrich", "Giraffe", "Cow", "Pig"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Chris Rock", "Jerry Seinfeld", "Seth MacFarlane", "Billy Crystal"],
+        "correctOrder": ["Billy Crystal", "Jerry Seinfeld", "Chris Rock", "Seth MacFarlane"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Number of Oscars Hosted",
+        "items": ["Billy Crystal", "Jerry Seinfeld", "Chris Rock", "Seth MacFarlane"],
+        "correctOrder": ["Billy Crystal", "Chris Rock", "Seth MacFarlane", "Jerry Seinfeld"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Billy Crystal", "Chris Rock", "Seth MacFarlane", "Jerry Seinfeld"],
+        "correctOrder": ["Jerry Seinfeld", "Seth MacFarlane", "Chris Rock", "Billy Crystal"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
       }
     ],
 
@@ -2952,30 +2976,6 @@
         "correctOrder": ["Texas", "Michigan", "Tennessee", "Alabama"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Age",
-        "items": ["Chris Rock", "Jerry Seinfeld", "Seth MacFarlane", "Billy Crystal"],
-        "correctOrder": ["Billy Crystal", "Jerry Seinfeld", "Chris Rock", "Seth MacFarlane"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
-      },
-      {
-        "prompt": "Number of Oscars Hosted",
-        "items": ["Billy Crystal", "Jerry Seinfeld", "Chris Rock", "Seth MacFarlane"],
-        "correctOrder": ["Billy Crystal", "Chris Rock", "Seth MacFarlane", "Jerry Seinfeld"],
-        "topLabel": "↑ Most Hosted",
-        "bottomLabel": "↓ Fewest Hosted"
-      },
-      {
-        "prompt": "Net Worth",
-        "items": ["Billy Crystal", "Chris Rock", "Seth MacFarlane", "Jerry Seinfeld"],
-        "correctOrder": ["Jerry Seinfeld", "Seth MacFarlane", "Chris Rock", "Billy Crystal"],
-        "topLabel": "↑ Highest Net Worth",
-        "bottomLabel": "↓ Lowest Net Worth"
       }
     ]
 
