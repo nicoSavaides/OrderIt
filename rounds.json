@@ -2453,7 +2453,7 @@
 
     [
       {
-        "prompt": "Area (sq mi)",
+        "prompt": "Area",
         "items": ["Alaska", "Rhode Island", "Louisiana", "Colorado"],
         "correctOrder": ["Alaska", "Colorado", "Louisiana", "Rhode Island"],
         "topLabel": "↑ Largest Area",
