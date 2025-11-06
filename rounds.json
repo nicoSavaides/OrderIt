@@ -2358,13 +2358,13 @@
       {
         "prompt": "Number of Locations",
         "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
-        "correctOrder": ["Walmart", "Burger King", "Chipotle", "Apple"],
+        "correctOrder": ["Burger King", "Walmart", "Chipotle", "Apple"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       },
       {
         "prompt": "Valuation",
-        "items": ["Walmart", "Burger King", "Chipotle", "Apple"],
+        "items": ["Burger King", "Walmart", "Chipotle", "Apple"],
         "correctOrder": ["Apple", "Walmart", "Chipotle", "Burger King"],
         "topLabel": "↑ Highest Value",
         "bottomLabel": "↓ Lowest Value"
