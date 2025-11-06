@@ -2381,6 +2381,30 @@
 
     [
       {
+        "prompt": "First Premiered",
+        "items": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
+        "correctOrder": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Main Character Age",
+        "items": ["Family Guy", "The Flintstones", "The Simpsons", "South Park"],
+        "correctOrder": ["Family Guy", "The Flintstones", "The Simpsons", "South Park"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Emmys Won",
+        "items": ["The Simpsons", "The Flintstones", "South Park", "Family Guy"],
+        "correctOrder": ["The Simpsons", "Family Guy", "South Park", "The Flintstones"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Placement in Series",
         "items": ["Mission: Impossible – Fallout", "The Bourne Identity", "Twilight: Eclipse", "Top Gun: Maverick"],
         "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
@@ -2618,30 +2642,6 @@
         "bottomLabel": "↓ Fewest Years"
       }
     ], 
-
-    [
-      {
-        "prompt": "First Premiered",
-        "items": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
-        "correctOrder": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
-        "topLabel": "↑ Earliest Premiere",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Emmys Won",
-        "items": ["The Simpsons", "The Flintstones", "South Park", "Family Guy"],
-        "correctOrder": ["The Simpsons", "Family Guy", "South Park", "The Flintstones"],
-        "topLabel": "↑ Most Emmys",
-        "bottomLabel": "↓ Fewest Emmys"
-      },
-      {
-        "prompt": "Main Character Age",
-        "items": ["Family Guy", "The Flintstones", "The Simpsons", "South Park"],
-        "correctOrder": ["Family Guy", "The Flintstones", "The Simpsons", "South Park"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
-      }
-    ],
 
     [
       {
