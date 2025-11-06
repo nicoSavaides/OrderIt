@@ -2359,12 +2359,12 @@
         "prompt": "Number of Locations",
         "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
         "correctOrder": ["Walmart", "Burger King", "Chipotle", "Apple"],
-        "topLabel": "↑ Most Locations",
-        "bottomLabel": "↓ Fewest Locations"
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       },
       {
         "prompt": "Valuation",
-        "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
+        "items": ["Walmart", "Burger King", "Chipotle", "Apple"],
         "correctOrder": ["Apple", "Walmart", "Chipotle", "Burger King"],
         "topLabel": "↑ Highest Value",
         "bottomLabel": "↓ Lowest Value"
@@ -2374,8 +2374,8 @@
         "prompt": "Year Founded",
         "items": ["Apple", "Walmart", "Chipotle", "Burger King"],
         "correctOrder": ["Burger King", "Walmart", "Apple", "Chipotle"],
-        "topLabel": "↑ Earliest Founded",
-        "bottomLabel": "↓ Most Recently Founded"
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       }
     ],
 
