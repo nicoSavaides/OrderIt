@@ -2364,7 +2364,7 @@
       },
       {
         "prompt": "Valuation",
-        "items": ["Burger King", "Walmart", "Chipotle", "Apple"],
+        "items": ["Burger King", "Walmart", "Chipotle", "Apple"], 
         "correctOrder": ["Apple", "Walmart", "Chipotle", "Burger King"],
         "topLabel": "↑ Highest Value",
         "bottomLabel": "↓ Lowest Value"
@@ -2376,6 +2376,30 @@
         "correctOrder": ["Burger King", "Walmart", "Apple", "Chipotle"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Formed",
+        "items": ["Daft Punk", "Nirvana", "Imagine Dragons", "The Rolling Stones"],
+        "correctOrder": ["The Rolling Stones", "Nirvana", "Daft Punk", "Imagine Dragons"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Members",
+        "items": ["Daft Punk", "Nirvana", "Imagine Dragons", "The Rolling Stones"],
+        "correctOrder": ["The Rolling Stones", "Imagine Dragons", "Nirvana", "Daft Punk"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Years Together",
+        "items": ["Daft Punk", "Nirvana", "Imagine Dragons", "The Rolling Stones"],
+        "correctOrder": ["The Rolling Stones", "Daft Punk", "Imagine Dragons", "Nirvana"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       }
     ],
 
@@ -2520,30 +2544,6 @@
         "correctOrder": ["Frank Sinatra", "Michael Jackson", "Elvis Presley", "Amy Winehouse"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Formed",
-        "items": ["Daft Punk", "Nirvana", "Imagine Dragons", "The Rolling Stones"],
-        "correctOrder": ["The Rolling Stones", "Nirvana", "Daft Punk", "Imagine Dragons"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Number of Members",
-        "items": ["Daft Punk", "Nirvana", "Imagine Dragons", "The Rolling Stones"],
-        "correctOrder": ["The Rolling Stones", "Imagine Dragons", "Nirvana", "Daft Punk"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
-        "prompt": "Years Together",
-        "items": ["Daft Punk", "Nirvana", "Imagine Dragons", "The Rolling Stones"],
-        "correctOrder": ["The Rolling Stones", "Daft Punk", "Imagine Dragons", "Nirvana"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
       }
     ],
 
