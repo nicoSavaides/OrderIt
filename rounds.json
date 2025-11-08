@@ -2393,13 +2393,37 @@
         "correctOrder": ["The Rolling Stones", "Imagine Dragons", "Nirvana", "Daft Punk"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
-      },
+      }, 
       {
         "prompt": "Years Together",
         "items": ["The Rolling Stones", "Imagine Dragons", "Nirvana", "Daft Punk"],
         "correctOrder": ["The Rolling Stones", "Daft Punk", "Imagine Dragons", "Nirvana"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Area",
+        "items": ["Rhode Island", "Florida", "Alaska", "Colorado"],
+        "correctOrder": ["Alaska", "Colorado", "Florida", "Rhode Island"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Number of Bordering States",
+        "items": ["Alaska", "Colorado", "Florida", "Rhode Island"],
+        "correctOrder": ["Colorado", "Rhode Island", "Florida", "Alaska"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Colorado", "Rhode Island", "Florida", "Alaska"],
+        "correctOrder": ["Alaska", "Rhode Island", "Colorado", "Florida"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
       }
     ],
 
@@ -2496,30 +2520,6 @@
         "correctOrder": ["Oppenheimer", "Parasite", "The Mask", "Shrek"],
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Area",
-        "items": ["Alaska", "Rhode Island", "Louisiana", "Colorado"],
-        "correctOrder": ["Alaska", "Colorado", "Louisiana", "Rhode Island"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Number of Bordering States",
-        "items": ["Alaska", "Rhode Island", "Louisiana", "Colorado"],
-        "correctOrder": ["Colorado", "Louisiana", "Rhode Island", "Alaska"],
-        "topLabel": "↑ Most Borders",
-        "bottomLabel": "↓ Fewest Borders"
-      },
-      {
-        "prompt": "Distance from Equator",
-        "items": ["Alaska", "Rhode Island", "Louisiana", "Colorado"],
-        "correctOrder": ["Alaska", "Colorado", "Rhode Island", "Louisiana"],
-        "topLabel": "↑ Farthest North",
-        "bottomLabel": "↓ Closest to Equator"
       }
     ],
 
