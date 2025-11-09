@@ -2429,6 +2429,30 @@
 
     [
       {
+        "prompt": "Year Released",
+        "items": ["Oppenheimer", "Parasite", "Shrek", "The Mask"],
+        "correctOrder": ["The Mask", "Shrek", "Parasite", "Oppenheimer"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Oscars Won",
+        "items": ["The Mask", "Shrek", "Parasite", "Oppenheimer"],
+        "correctOrder": ["Oppenheimer", "Parasite", "Shrek", "The Mask"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["Oppenheimer", "Parasite", "Shrek", "The Mask"],
+        "correctOrder": ["Oppenheimer", "Parasite", "The Mask", "Shrek"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
+    ],
+
+    [
+      {
         "prompt": "First Premiered",
         "items": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
         "correctOrder": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
@@ -2496,30 +2520,6 @@
         "correctOrder": ["Megalodon", "Saber-Tooth Cat", "Woolly Mammoth", "Dodo"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Released",
-        "items": ["Oppenheimer", "Parasite", "Shrek", "The Mask"],
-        "correctOrder": ["The Mask", "Shrek", "Parasite", "Oppenheimer"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Oscars Won",
-        "items": ["The Mask", "Shrek", "Parasite", "Oppenheimer"],
-        "correctOrder": ["Oppenheimer", "Parasite", "Shrek", "The Mask"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
-        "prompt": "Runtime",
-        "items": ["Oppenheimer", "Parasite", "Shrek", "The Mask"],
-        "correctOrder": ["Oppenheimer", "Parasite", "The Mask", "Shrek"],
-        "topLabel": "↑ Longest",
-        "bottomLabel": "↓ Shortest"
       }
     ],
 
