@@ -2453,6 +2453,102 @@
 
     [
       {
+        "prompt": "Year Constructed",
+        "items": ["The Sphere", "Madison Square Garden", "Hollywood Bowl", "The Colosseum"],
+        "correctOrder": ["The Colosseum", "Hollywood Bowl", "Madison Square Garden", "The Sphere"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Longitude",
+        "items": ["The Colosseum", "Hollywood Bowl", "Madison Square Garden", "The Sphere"],
+        "correctOrder": ["Hollywood Bowl", "The Sphere", "Madison Square Garden", "The Colosseum"],
+        "topLabel": "↑ Most Western",
+        "bottomLabel": "↓ Most Eastern"
+      },
+      {
+        "prompt": "Occupancy",
+        "items": ["Hollywood Bowl", "The Sphere", "Madison Square Garden", "The Colosseum"],
+        "correctOrder": ["The Colosseum", "The Sphere", "Madison Square Garden", "Hollywood Bowl"],
+        "topLabel": "↑ Largest Capacity",
+        "bottomLabel": "↓ Smallest Capacity"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Tempo (BPM)",
+        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
+        "correctOrder": ["Hey Ya!", "Hotel California", "Old Town Road", "Respect"],
+        "topLabel": "↑ Fastest Tempo",
+        "bottomLabel": "↓ Slowest Tempo"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
+        "correctOrder": ["Respect", "Hotel California", "Hey Ya!", "Old Town Road"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Spotify Plays",
+        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
+        "correctOrder": ["Hotel California", "Hey Ya!", "Old Town Road", "Respect"],
+        "topLabel": "↑ Most Views",
+        "bottomLabel": "↓ Fewest Views"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Size",
+        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
+        "correctOrder": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Estimated Lifespan",
+        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
+        "correctOrder": ["Woolly Mammoth", "Megalodon", "Saber-Tooth Cat", "Dodo"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
+      },
+      {
+        "prompt": "Extinction Date",
+        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
+        "correctOrder": ["Megalodon", "Saber-Tooth Cat", "Woolly Mammoth", "Dodo"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
+        "correctOrder": ["Jack Nicholson", "Johnny Depp", "Matthew McConaughey", "Ariana Grande"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Number of Children",
+        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
+        "correctOrder": ["Jack Nicholson", "Matthew McConaughey", "Johnny Depp", "Ariana Grande"],
+        "topLabel": "↑ Most Children",
+        "bottomLabel": "↓ Fewest Children"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
+        "correctOrder": ["Jack Nicholson", "Ariana Grande", "Matthew McConaughey", "Johnny Depp"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
+      }
+    ],
+
+    [
+      {
         "prompt": "First Premiered",
         "items": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
         "correctOrder": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
@@ -2501,30 +2597,6 @@
 
     [
       {
-        "prompt": "Size",
-        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
-        "correctOrder": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
-        "topLabel": "↑ Largest",
-        "bottomLabel": "↓ Smallest"
-      },
-      {
-        "prompt": "Estimated Lifespan",
-        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
-        "correctOrder": ["Woolly Mammoth", "Megalodon", "Saber-Tooth Cat", "Dodo"],
-        "topLabel": "↑ Longest Lifespan",
-        "bottomLabel": "↓ Shortest Lifespan"
-      },
-      {
-        "prompt": "Extinction Date",
-        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
-        "correctOrder": ["Megalodon", "Saber-Tooth Cat", "Woolly Mammoth", "Dodo"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      }
-    ],
-
-    [
-      {
         "prompt": "Birth Year",
         "items": ["Michael Jackson", "Amy Winehouse", "Elvis Presley", "Frank Sinatra"],
         "correctOrder": ["Frank Sinatra", "Elvis Presley", "Michael Jackson", "Amy Winehouse"],
@@ -2544,30 +2616,6 @@
         "correctOrder": ["Frank Sinatra", "Michael Jackson", "Elvis Presley", "Amy Winehouse"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Constructed",
-        "items": ["The Sphere", "Madison Square Garden", "Hollywood Bowl", "The Colosseum"],
-        "correctOrder": ["The Colosseum", "Hollywood Bowl", "Madison Square Garden", "The Sphere"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Cost to Build",
-        "items": ["The Sphere", "Madison Square Garden", "Hollywood Bowl", "The Colosseum"],
-        "correctOrder": ["The Sphere", "Madison Square Garden", "Hollywood Bowl", "The Colosseum"],
-        "topLabel": "↑ Most Expensive",
-        "bottomLabel": "↓ Least Expensive"
-      },
-      {
-        "prompt": "Occupancy",
-        "items": ["The Sphere", "Madison Square Garden", "Hollywood Bowl", "The Colosseum"],
-        "correctOrder": ["The Colosseum", "Madison Square Garden", "Hollywood Bowl", "The Sphere"],
-        "topLabel": "↑ Largest Capacity",
-        "bottomLabel": "↓ Smallest Capacity"
       }
     ],
 
@@ -2765,30 +2813,6 @@
 
     [
       {
-        "prompt": "Age",
-        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
-        "correctOrder": ["Jack Nicholson", "Johnny Depp", "Matthew McConaughey", "Ariana Grande"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
-      },
-      {
-        "prompt": "Number of Children",
-        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
-        "correctOrder": ["Jack Nicholson", "Matthew McConaughey", "Johnny Depp", "Ariana Grande"],
-        "topLabel": "↑ Most Children",
-        "bottomLabel": "↓ Fewest Children"
-      },
-      {
-        "prompt": "Net Worth",
-        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
-        "correctOrder": ["Jack Nicholson", "Ariana Grande", "Matthew McConaughey", "Johnny Depp"],
-        "topLabel": "↑ Highest Net Worth",
-        "bottomLabel": "↓ Lowest Net Worth"
-      }
-    ],
-
-    [
-      {
         "prompt": "Area",
         "items": ["Montana", "Nebraska", "California", "Hawaii"],
         "correctOrder": ["California", "Montana", "Nebraska", "Hawaii"],
@@ -2928,30 +2952,6 @@
         "correctOrder": ["Green Day", "Maroon 5", "ABBA", "BTS"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Tempo (BPM)",
-        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
-        "correctOrder": ["Hey Ya!", "Hotel California", "Old Town Road", "Respect"],
-        "topLabel": "↑ Fastest Tempo",
-        "bottomLabel": "↓ Slowest Tempo"
-      },
-      {
-        "prompt": "Year Released",
-        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
-        "correctOrder": ["Respect", "Hotel California", "Hey Ya!", "Old Town Road"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Spotify Plays",
-        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
-        "correctOrder": ["Hotel California", "Hey Ya!", "Old Town Road", "Respect"],
-        "topLabel": "↑ Most Views",
-        "bottomLabel": "↓ Fewest Views"
       }
     ],
 
