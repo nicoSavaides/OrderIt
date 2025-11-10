@@ -2467,7 +2467,7 @@
         "bottomLabel": "↓ Most Eastern"
       },
       {
-        "prompt": "Seated Capacity",
+        "prompt": "Seating Capacity",
         "items": ["Hollywood Bowl", "The Sphere", "Madison Square Garden", "The Colosseum"],
         "correctOrder": ["The Colosseum", "Madison Square Garden", "The Sphere", "Hollywood Bowl"],
         "topLabel": "↑ Largest",
