@@ -2477,12 +2477,29 @@
 
     [
       {
-        "prompt": "Tempo (BPM)",
-        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
-        "correctOrder": ["Hey Ya!", "Hotel California", "Old Town Road", "Respect"],
-        "topLabel": "↑ Fastest Tempo",
-        "bottomLabel": "↓ Slowest Tempo"
+        "prompt": "Year Released",
+        "items": ["Mr. Brightside", "Blinding Lights", "Every Breath You Take", "The Sound of Silence"],
+        "correctOrder": ["The Sound of Silence", "Every Breath You Take", "Mr. Brightside", "Blinding Lights"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
       },
+      {
+        "prompt": "Song Tempo (BPM)",
+        "items": ["The Sound of Silence", "Every Breath You Take", "Mr. Brightside", "Blinding Lights"],
+        "correctOrder": ["Blinding Lights", "Mr. Brightside", "Every Breath You Take", "The Sound of Silence"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Spotify Plays",
+        "items": ["Blinding Lights", "Mr. Brightside", "Every Breath You Take", "The Sound of Silence"],
+        "correctOrder": ["Blinding Lights", "Every Breath You Take", "Mr. Brightside", "The Sound of Silence"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
       {
         "prompt": "Year Released",
         "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
@@ -2491,11 +2508,18 @@
         "bottomLabel": "↓ Most Recent"
       },
       {
+        "prompt": "Tempo (BPM)",
+        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
+        "correctOrder": ["Hey Ya!", "Hotel California", "Old Town Road", "Respect"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
         "prompt": "Spotify Plays",
         "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
         "correctOrder": ["Hotel California", "Hey Ya!", "Old Town Road", "Respect"],
-        "topLabel": "↑ Most Views",
-        "bottomLabel": "↓ Fewest Views"
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       }
     ],
 
@@ -2710,30 +2734,6 @@
         "prompt": "Number of Bordering Countries",
         "items": ["Vietnam", "South Africa", "Ukraine", "Greece"],
         "correctOrder": ["Ukraine", "South Africa", "Greece", "Vietnam"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Song Tempo (BPM)",
-        "items": ["The Sound of Silence", "Blinding Lights", "Every Breath You Take", "Mr. Brightside"],
-        "correctOrder": ["Blinding Lights", "Mr. Brightside", "Every Breath You Take", "The Sound of Silence"],
-        "topLabel": "↑ Fastest Tempo",
-        "bottomLabel": "↓ Slowest Tempo"
-      },
-      {
-        "prompt": "Year Released",
-        "items": ["Blinding Lights", "Mr. Brightside", "Every Breath You Take", "The Sound of Silence"],
-        "correctOrder": ["The Sound of Silence", "Every Breath You Take", "Mr. Brightside", "Blinding Lights"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Spotify Plays",
-        "items": ["The Sound of Silence", "Every Breath You Take", "Mr. Brightside", "Blinding Lights"],
-        "correctOrder": ["Blinding Lights", "Every Breath You Take", "Mr. Brightside", "The Sound of Silence"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
