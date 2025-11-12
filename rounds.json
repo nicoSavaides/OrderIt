@@ -2494,8 +2494,32 @@
         "prompt": "Spotify Plays",
         "items": ["Blinding Lights", "Mr. Brightside", "Every Breath You Take", "The Sound of Silence"],
         "correctOrder": ["Blinding Lights", "Every Breath You Take", "Mr. Brightside", "The Sound of Silence"],
+        "topLabel": "↑ Most", 
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
+        "correctOrder": ["Jack Nicholson", "Johnny Depp", "Matthew McConaughey", "Ariana Grande"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Number of Children",
+        "items": ["Jack Nicholson", "Johnny Depp", "Matthew McConaughey", "Ariana Grande"],
+        "correctOrder": ["Jack Nicholson", "Matthew McConaughey", "Johnny Depp", "Ariana Grande"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Jack Nicholson", "Matthew McConaughey", "Johnny Depp", "Ariana Grande"],
+        "correctOrder": ["Jack Nicholson", "Ariana Grande", "Matthew McConaughey", "Johnny Depp"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
       }
     ],
 
@@ -2544,30 +2568,6 @@
         "correctOrder": ["Megalodon", "Saber-Tooth Cat", "Woolly Mammoth", "Dodo"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Age",
-        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
-        "correctOrder": ["Jack Nicholson", "Johnny Depp", "Matthew McConaughey", "Ariana Grande"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
-      },
-      {
-        "prompt": "Number of Children",
-        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
-        "correctOrder": ["Jack Nicholson", "Matthew McConaughey", "Johnny Depp", "Ariana Grande"],
-        "topLabel": "↑ Most Children",
-        "bottomLabel": "↓ Fewest Children"
-      },
-      {
-        "prompt": "Net Worth",
-        "items": ["Johnny Depp", "Ariana Grande", "Matthew McConaughey", "Jack Nicholson"],
-        "correctOrder": ["Jack Nicholson", "Ariana Grande", "Matthew McConaughey", "Johnny Depp"],
-        "topLabel": "↑ Highest Net Worth",
-        "bottomLabel": "↓ Lowest Net Worth"
       }
     ],
 
