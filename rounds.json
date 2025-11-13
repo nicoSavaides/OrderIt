@@ -2525,6 +2525,30 @@
 
     [
       {
+        "prompt": "Year It Takes Place",
+        "items": ["The Wolf of Wall Street", "300", "Braveheart", "Ben-Hur"],
+        "correctOrder": ["300", "Ben-Hur", "Braveheart", "The Wolf of Wall Street"],
+        "topLabel": "↑ Earliest Setting",
+        "bottomLabel": "↓ Most Recent Setting"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["300", "Ben-Hur", "Braveheart", "The Wolf of Wall Street"],
+        "correctOrder": ["Ben-Hur", "Braveheart", "300", "The Wolf of Wall Street"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Oscar Nominations",
+        "items": ["Ben-Hur", "Braveheart", "300", "The Wolf of Wall Street"],
+        "correctOrder": ["Ben-Hur", "Braveheart", "The Wolf of Wall Street", "300"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Released",
         "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
         "correctOrder": ["Respect", "Hotel California", "Hey Ya!", "Old Town Road"],
@@ -2664,30 +2688,6 @@
         "correctOrder": ["Sweden", "France", "Japan", "South Africa"],
         "topLabel": "↑ Farthest",
         "bottomLabel": "↓ Closest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year It Takes Place",
-        "items": ["The Wolf of Wall Street", "300", "Braveheart", "Ben-Hur"],
-        "correctOrder": ["300", "Ben-Hur", "Braveheart", "The Wolf of Wall Street"],
-        "topLabel": "↑ Earliest Setting",
-        "bottomLabel": "↓ Most Recent Setting"
-      },
-      {
-        "prompt": "Year Released",
-        "items": ["The Wolf of Wall Street", "300", "Braveheart", "Ben-Hur"],
-        "correctOrder": ["Ben-Hur", "Braveheart", "300", "The Wolf of Wall Street"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Oscar Nominations",
-        "items": ["The Wolf of Wall Street", "300", "Braveheart", "Ben-Hur"],
-        "correctOrder": ["Ben-Hur", "Braveheart", "The Wolf of Wall Street", "300"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
       }
     ],
 
