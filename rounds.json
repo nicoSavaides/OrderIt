@@ -2556,18 +2556,18 @@
         "bottomLabel": "↓ Smallest"
       },
       {
-        "prompt": "Estimated Lifespan",
-        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
-        "correctOrder": ["Woolly Mammoth", "Megalodon", "Saber-Tooth Cat", "Dodo"],
-        "topLabel": "↑ Longest",
-        "bottomLabel": "↓ Shortest"
-      },
-      {
         "prompt": "Extinction Date",
-        "items": ["Woolly Mammoth", "Megalodon", "Saber-Tooth Cat", "Dodo"],
+        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
         "correctOrder": ["Megalodon", "Saber-Tooth Cat", "Woolly Mammoth", "Dodo"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Estimated Lifespan",
+        "items": ["Megalodon", "Saber-Tooth Cat", "Woolly Mammoth", "Dodo"],
+        "correctOrder": ["Woolly Mammoth", "Megalodon", "Saber-Tooth Cat", "Dodo"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
       }
     ],
 
