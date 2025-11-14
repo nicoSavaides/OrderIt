@@ -2549,6 +2549,30 @@
 
     [
       {
+        "prompt": "Size",
+        "items": ["Megalodon", "Saber-Tooth Cat", "Dodo", "Woolly Mammoth"],
+        "correctOrder": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Estimated Lifespan",
+        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
+        "correctOrder": ["Woolly Mammoth", "Megalodon", "Saber-Tooth Cat", "Dodo"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
+      },
+      {
+        "prompt": "Extinction Date",
+        "items": ["Woolly Mammoth", "Megalodon", "Saber-Tooth Cat", "Dodo"],
+        "correctOrder": ["Megalodon", "Saber-Tooth Cat", "Woolly Mammoth", "Dodo"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Released",
         "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
         "correctOrder": ["Respect", "Hotel California", "Hey Ya!", "Old Town Road"],
@@ -2568,30 +2592,6 @@
         "correctOrder": ["Hotel California", "Hey Ya!", "Old Town Road", "Respect"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Size",
-        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
-        "correctOrder": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
-        "topLabel": "↑ Largest",
-        "bottomLabel": "↓ Smallest"
-      },
-      {
-        "prompt": "Estimated Lifespan",
-        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
-        "correctOrder": ["Woolly Mammoth", "Megalodon", "Saber-Tooth Cat", "Dodo"],
-        "topLabel": "↑ Longest Lifespan",
-        "bottomLabel": "↓ Shortest Lifespan"
-      },
-      {
-        "prompt": "Extinction Date",
-        "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
-        "correctOrder": ["Megalodon", "Saber-Tooth Cat", "Woolly Mammoth", "Dodo"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
       }
     ],
 
