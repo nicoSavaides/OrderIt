@@ -2559,8 +2559,8 @@
         "prompt": "Estimated Lifespan",
         "items": ["Megalodon", "Woolly Mammoth", "Saber-Tooth Cat", "Dodo"],
         "correctOrder": ["Woolly Mammoth", "Megalodon", "Saber-Tooth Cat", "Dodo"],
-        "topLabel": "↑ Longest Lifespan",
-        "bottomLabel": "↓ Shortest Lifespan"
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
       },
       {
         "prompt": "Extinction Date",
