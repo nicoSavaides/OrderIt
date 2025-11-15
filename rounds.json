@@ -2573,6 +2573,30 @@
 
     [
       {
+        "prompt": "Area",
+        "items": ["Montana", "Nebraska", "California", "Hawaii"],
+        "correctOrder": ["California", "Montana", "Nebraska", "Hawaii"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Number of Bordering States",
+        "items": ["California", "Montana", "Nebraska", "Hawaii"],
+        "correctOrder": ["Nebraska", "Montana", "California", "Hawaii"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Nebraska", "Montana", "California", "Hawaii"],
+        "correctOrder": ["Montana", "Nebraska", "California", "Hawaii"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Released",
         "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
         "correctOrder": ["Respect", "Hotel California", "Hey Ya!", "Old Town Road"],
@@ -2808,30 +2832,6 @@
         "correctOrder": ["Foo Fighters", "Blink-182", "The Beatles", "One Direction"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Area",
-        "items": ["Montana", "Nebraska", "California", "Hawaii"],
-        "correctOrder": ["California", "Montana", "Nebraska", "Hawaii"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Number of Bordering States",
-        "items": ["California", "Montana", "Nebraska", "Hawaii"],
-        "correctOrder": ["Nebraska", "Montana", "California", "Hawaii"],
-        "topLabel": "↑ Most Borders",
-        "bottomLabel": "↓ Fewest Borders"
-      },
-      {
-        "prompt": "Distance from Equator",
-        "items": ["Nebraska", "Montana", "California", "Hawaii"],
-        "correctOrder": ["Montana", "Nebraska", "California", "Hawaii"],
-        "topLabel": "↑ Farthest North",
-        "bottomLabel": "↓ Closest to Equator"
       }
     ],
 
