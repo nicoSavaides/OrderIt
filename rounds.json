@@ -2574,24 +2574,24 @@
     [
       {
         "prompt": "Area",
-        "items": ["Montana", "Nebraska", "California", "Hawaii"],
+        "items": ["Montana", "Nebraska", "Hawaii", "California"],
         "correctOrder": ["California", "Montana", "Nebraska", "Hawaii"],
         "topLabel": "↑ Largest",
         "bottomLabel": "↓ Smallest"
       },
       {
-        "prompt": "Number of Bordering States",
-        "items": ["California", "Montana", "Nebraska", "Hawaii"],
-        "correctOrder": ["Nebraska", "Montana", "California", "Hawaii"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
         "prompt": "Distance from Equator",
-        "items": ["Nebraska", "Montana", "California", "Hawaii"],
+        "items": ["California", "Montana", "Nebraska", "Hawaii"],
         "correctOrder": ["Montana", "Nebraska", "California", "Hawaii"],
         "topLabel": "↑ Farthest",
         "bottomLabel": "↓ Closest"
+      },
+      {
+        "prompt": "Number of Bordering States",
+        "items": ["Montana", "Nebraska", "California", "Hawaii"],
+        "correctOrder": ["Nebraska", "Montana", "California", "Hawaii"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       }
     ],
 
