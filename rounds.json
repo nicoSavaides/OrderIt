@@ -2597,6 +2597,30 @@
 
     [
       {
+        "prompt": "Number of Family Members",
+        "items": ["The Flintstones", "The Sopranos", "The Simpsons", "Keeping Up with the Kardashians"],
+        "correctOrder": ["Keeping Up with the Kardashians", "The Simpsons", "The Sopranos", "The Flintstones"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Year Premiered",
+        "items": ["The Flintstones", "The Sopranos", "The Simpsons", "Keeping Up with the Kardashians"],
+        "correctOrder": ["The Flintstones", "The Simpsons", "The Sopranos", "Keeping Up with the Kardashians"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["The Flintstones", "The Sopranos", "The Simpsons", "Keeping Up with the Kardashians"],
+        "correctOrder": ["The Simpsons", "Keeping Up with the Kardashians", "The Flintstones", "The Sopranos"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Released",
         "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
         "correctOrder": ["Respect", "Hotel California", "Hey Ya!", "Old Town Road"],
@@ -2614,30 +2638,6 @@
         "prompt": "Spotify Plays",
         "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
         "correctOrder": ["Hotel California", "Hey Ya!", "Old Town Road", "Respect"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "First Premiered",
-        "items": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
-        "correctOrder": ["The Flintstones", "The Simpsons", "South Park", "Family Guy"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Main Character Age",
-        "items": ["Family Guy", "The Flintstones", "The Simpsons", "South Park"],
-        "correctOrder": ["Family Guy", "The Flintstones", "The Simpsons", "South Park"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
-      },
-      {
-        "prompt": "Emmys Won",
-        "items": ["The Simpsons", "The Flintstones", "South Park", "Family Guy"],
-        "correctOrder": ["The Simpsons", "Family Guy", "South Park", "The Flintstones"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
