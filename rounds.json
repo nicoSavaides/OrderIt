@@ -2597,22 +2597,22 @@
 
     [
       {
-        "prompt": "Number of Family Members",
-        "items": ["The Flintstones", "The Sopranos", "The Simpsons", "Keeping Up with the Kardashians"],
-        "correctOrder": ["Keeping Up with the Kardashians", "The Simpsons", "The Sopranos", "The Flintstones"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
         "prompt": "Year Premiered",
-        "items": ["Keeping Up with the Kardashians", "The Simpsons", "The Sopranos", "The Flintstones"],
+        "items": ["The Simpsons", "Keeping Up with the Kardashians", "The Sopranos", "The Flintstones"],
         "correctOrder": ["The Flintstones", "The Simpsons", "The Sopranos", "Keeping Up with the Kardashians"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       },
       {
-        "prompt": "Number of Episodes",
+        "prompt": "Number of Family Members",
         "items": ["The Flintstones", "The Simpsons", "The Sopranos", "Keeping Up with the Kardashians"],
+        "correctOrder": ["Keeping Up with the Kardashians", "The Simpsons", "The Sopranos", "The Flintstones"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Number of Episodes",
+        "items": ["Keeping Up with the Kardashians", "The Simpsons", "The Sopranos", "The Flintstones"],
         "correctOrder": ["The Simpsons", "Keeping Up with the Kardashians", "The Flintstones", "The Sopranos"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
