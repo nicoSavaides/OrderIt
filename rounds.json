@@ -2605,14 +2605,14 @@
       },
       {
         "prompt": "Year Premiered",
-        "items": ["The Flintstones", "The Sopranos", "The Simpsons", "Keeping Up with the Kardashians"],
+        "items": ["Keeping Up with the Kardashians", "The Simpsons", "The Sopranos", "The Flintstones"],
         "correctOrder": ["The Flintstones", "The Simpsons", "The Sopranos", "Keeping Up with the Kardashians"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Number of Episodes",
-        "items": ["The Flintstones", "The Sopranos", "The Simpsons", "Keeping Up with the Kardashians"],
+        "items": ["The Flintstones", "The Simpsons", "The Sopranos", "Keeping Up with the Kardashians"],
         "correctOrder": ["The Simpsons", "Keeping Up with the Kardashians", "The Flintstones", "The Sopranos"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
