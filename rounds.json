@@ -2635,7 +2635,7 @@
         "bottomLabel": "↓ Fewest"
       },
       {
-        "prompt": "Years Together",
+        "prompt": "Years Active",
         "items": ["Foo Fighters", "One Direction", "The Beatles", "Blink-182"],
         "correctOrder": ["Foo Fighters", "Blink-182", "The Beatles", "One Direction"],
         "topLabel": "↑ Most",
