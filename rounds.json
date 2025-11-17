@@ -2621,6 +2621,30 @@
 
     [
       {
+        "prompt": "Year Formed",
+        "items": ["Blink-182", "The Beatles", "One Direction", "Foo Fighters"],
+        "correctOrder": ["The Beatles", "Blink-182", "Foo Fighters", "One Direction"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Members",
+        "items": ["Blink-182", "The Beatles", "One Direction", "Foo Fighters"],
+        "correctOrder": ["Foo Fighters", "One Direction", "The Beatles", "Blink-182"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Years Together",
+        "items": ["Blink-182", "The Beatles", "One Direction", "Foo Fighters"],
+        "correctOrder": ["Foo Fighters", "Blink-182", "The Beatles", "One Direction"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year Released",
         "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
         "correctOrder": ["Respect", "Hotel California", "Hey Ya!", "Old Town Road"],
@@ -2808,30 +2832,6 @@
         "correctOrder": ["Canada", "Japan", "Israel", "India"],
         "topLabel": "↑ Farthest",
         "bottomLabel": "↓ Closest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Formed",
-        "items": ["Blink-182", "The Beatles", "One Direction", "Foo Fighters"],
-        "correctOrder": ["The Beatles", "Blink-182", "Foo Fighters", "One Direction"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Number of Members",
-        "items": ["Blink-182", "The Beatles", "One Direction", "Foo Fighters"],
-        "correctOrder": ["Foo Fighters", "One Direction", "The Beatles", "Blink-182"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
-        "prompt": "Years Together",
-        "items": ["Blink-182", "The Beatles", "One Direction", "Foo Fighters"],
-        "correctOrder": ["Foo Fighters", "Blink-182", "The Beatles", "One Direction"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
       }
     ],
 
