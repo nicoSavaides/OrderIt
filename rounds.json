@@ -2629,14 +2629,14 @@
       },
       {
         "prompt": "Number of Members",
-        "items": ["Blink-182", "The Beatles", "One Direction", "Foo Fighters"],
+        "items": ["The Beatles", "Blink-182", "Foo Fighters", "One Direction"],
         "correctOrder": ["Foo Fighters", "One Direction", "The Beatles", "Blink-182"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       },
       {
         "prompt": "Years Together",
-        "items": ["Blink-182", "The Beatles", "One Direction", "Foo Fighters"],
+        "items": ["Foo Fighters", "One Direction", "The Beatles", "Blink-182"],
         "correctOrder": ["Foo Fighters", "Blink-182", "The Beatles", "One Direction"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
