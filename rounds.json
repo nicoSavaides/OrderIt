@@ -2669,6 +2669,30 @@
 
     [
       {
+        "prompt": "Distance from Equator",
+        "items": ["Sweden", "France", "Japan", "South Africa"],
+        "correctOrder": ["Sweden", "France", "Japan", "South Africa"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
+      },
+      {
+        "prompt": "Number of Bordering Countries",
+        "items": ["Sweden", "France", "Japan", "South Africa"],
+        "correctOrder": ["France", "South Africa", "Sweden", "Japan"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["France", "South Africa", "Sweden", "Japan"],
+        "correctOrder": ["Japan", "France", "South Africa", "Sweden"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Bordering Countries",
         "items": ["New Zealand", "South Korea", "Mexico", "Russia"],
         "correctOrder": ["Russia", "Mexico", "South Korea", "New Zealand"],
@@ -2784,30 +2808,6 @@
         "correctOrder": ["Frank Sinatra", "Michael Jackson", "Elvis Presley", "Amy Winehouse"],
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Number of Bordering Countries",
-        "items": ["Sweden", "France", "Japan", "South Africa"],
-        "correctOrder": ["France", "South Africa", "Sweden", "Japan"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Sweden", "France", "Japan", "South Africa"],
-        "correctOrder": ["Japan", "France", "South Africa", "Sweden"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Distance from Equator",
-        "items": ["Sweden", "France", "Japan", "South Africa"],
-        "correctOrder": ["Sweden", "France", "Japan", "South Africa"],
-        "topLabel": "↑ Farthest",
-        "bottomLabel": "↓ Closest"
       }
     ],
 
