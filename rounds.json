@@ -2655,15 +2655,15 @@
         "prompt": "Number of Children",
         "items": ["Adam Sandler", "Kanye West", "Margot Robbie", "Sydney Sweeney"],
         "correctOrder": ["Kanye West", "Adam Sandler", "Margot Robbie", "Sydney Sweeney"],
-        "topLabel": "↑ Most Children",
-        "bottomLabel": "↓ Fewest Children"
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       }
       {
         "prompt": "Net Worth",
         "items": ["Kanye West", "Adam Sandler", "Margot Robbie", "Sydney Sweeney"],
         "correctOrder": ["Kanye West", "Adam Sandler", "Margot Robbie", "Sydney Sweeney"],
-        "topLabel": "↑ Highest Net Worth",
-        "bottomLabel": "↓ Lowest Net Worth"
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
       }
     ],
 
