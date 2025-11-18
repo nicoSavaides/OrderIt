@@ -2669,6 +2669,30 @@
 
     [
       {
+        "prompt": "Number of Bordering Countries",
+        "items": ["New Zealand", "South Korea", "Mexico", "Russia"],
+        "correctOrder": ["Russia", "Mexico", "South Korea", "New Zealand"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Russia", "Mexico", "South Korea", "New Zealand"],
+        "correctOrder": ["Russia", "Mexico", "South Korea", "New Zealand"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Russia", "Mexico", "South Korea", "New Zealand"],
+        "correctOrder": ["Russia", "New Zealand", "South Korea", "Mexico"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Height",
         "items": ["Johnny Carson", "Oprah Winfrey", "Jay Leno", "Alex Trebek"],
         "correctOrder": ["Jay Leno", "Johnny Carson", "Alex Trebek", "Oprah Winfrey"],
@@ -2904,30 +2928,6 @@
         "correctOrder": ["Saving Private Ryan", "Django Unchained", "Wall-E", "Back to the Future Part II"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Number of Bordering Countries",
-        "items": ["New Zealand", "South Korea", "Mexico", "Russia"],
-        "correctOrder": ["Russia", "Mexico", "South Korea", "New Zealand"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Russia", "Mexico", "South Korea", "New Zealand"],
-        "correctOrder": ["Russia", "Mexico", "South Korea", "New Zealand"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Distance from Equator",
-        "items": ["Russia", "Mexico", "South Korea", "New Zealand"],
-        "correctOrder": ["Russia", "New Zealand", "South Korea", "Mexico"],
-        "topLabel": "↑ Farthest",
-        "bottomLabel": "↓ Closest"
       }
     ],
 
