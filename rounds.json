@@ -2657,7 +2657,7 @@
         "correctOrder": ["Kanye West", "Adam Sandler", "Margot Robbie", "Sydney Sweeney"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
-      }
+      },
       {
         "prompt": "Net Worth",
         "items": ["Kanye West", "Adam Sandler", "Margot Robbie", "Sydney Sweeney"],
