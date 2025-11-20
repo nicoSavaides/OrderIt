@@ -2703,8 +2703,8 @@
         "prompt": "Number in Series",
         "items": ["The Bourne Identity", "Twilight: Eclipse", "Mission: Impossible – Fallout", "Top Gun: Maverick"],
         "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
-        "topLabel": "↑ Earliest in Series",
-        "bottomLabel": "↓ Latest in Series"
+        "topLabel": "↑ Lowest Number Placement",
+        "bottomLabel": "↓ Highest Number Placement"
       },
       {
         "prompt": "Gross",
