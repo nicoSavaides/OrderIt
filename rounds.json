@@ -2700,7 +2700,7 @@
         "bottomLabel": "↓ Most Recent"
       },
       {
-        "prompt": "Placement in Series",
+        "prompt": "Movie Number in Franchise",
         "items": ["The Bourne Identity", "Twilight: Eclipse", "Mission: Impossible – Fallout", "Top Gun: Maverick"],
         "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
         "topLabel": "↑ Lowest Number Placement",
