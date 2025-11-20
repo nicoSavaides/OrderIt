@@ -2702,13 +2702,13 @@
       {
         "prompt": "Movie Number in Series",
         "items": ["The Bourne Identity", "Twilight: Eclipse", "Mission: Impossible – Fallout", "Top Gun: Maverick"],
-        "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
-        "topLabel": "↑ Lowest Number Placement",
-        "bottomLabel": "↓ Highest Number Placement"
+        "correctOrder": ["Mission: Impossible – Fallout", "Twilight: Eclipse", "Top Gun: Maverick", "The Bourne Identity"],
+        "topLabel": "↑ Highest Number Placement",
+        "bottomLabel": "↓ Lowest Number Placement"
       },
       {
         "prompt": "Gross",
-        "items": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
+        "items": ["Mission: Impossible – Fallout", "Twilight: Eclipse", "Top Gun: Maverick", "The Bourne Identity"],
         "correctOrder": ["Top Gun: Maverick", "Mission: Impossible – Fallout", "Twilight: Eclipse", "The Bourne Identity"],
         "topLabel": "↑ Highest Grossing",
         "bottomLabel": "↓ Lowest Grossing"
