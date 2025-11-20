@@ -2693,6 +2693,30 @@
 
     [
       {
+        "prompt": "Year Released",
+        "items": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
+        "correctOrder": ["The Bourne Identity", "Twilight: Eclipse", "Mission: Impossible – Fallout", "Top Gun: Maverick"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number in Series",
+        "items": ["The Bourne Identity", "Twilight: Eclipse", "Mission: Impossible – Fallout", "Top Gun: Maverick"],
+        "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
+        "topLabel": "↑ Earliest in Series",
+        "bottomLabel": "↓ Latest in Series"
+      },
+      {
+        "prompt": "Gross",
+        "items": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
+        "correctOrder": ["Top Gun: Maverick", "Mission: Impossible – Fallout", "Twilight: Eclipse", "The Bourne Identity"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Bordering Countries",
         "items": ["New Zealand", "South Korea", "Mexico", "Russia"],
         "correctOrder": ["Russia", "Mexico", "South Korea", "New Zealand"],
@@ -2760,30 +2784,6 @@
         "correctOrder": ["Hotel California", "Hey Ya!", "Old Town Road", "Respect"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Placement in Series",
-        "items": ["Mission: Impossible – Fallout", "The Bourne Identity", "Twilight: Eclipse", "Top Gun: Maverick"],
-        "correctOrder": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
-        "topLabel": "↑ Earliest in Series",
-        "bottomLabel": "↓ Latest in Series"
-      },
-      {
-        "prompt": "Year Released",
-        "items": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
-        "correctOrder": ["The Bourne Identity", "Twilight: Eclipse", "Mission: Impossible – Fallout", "Top Gun: Maverick"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Gross",
-        "items": ["The Bourne Identity", "Top Gun: Maverick", "Twilight: Eclipse", "Mission: Impossible – Fallout"],
-        "correctOrder": ["Top Gun: Maverick", "Mission: Impossible – Fallout", "Twilight: Eclipse", "The Bourne Identity"],
-        "topLabel": "↑ Highest Grossing",
-        "bottomLabel": "↓ Lowest Grossing"
       }
     ],
 
