@@ -2731,7 +2731,7 @@
         "bottomLabel": "↓ Fewest"
       },
       {
-        "prompt": "Years Together",
+        "prompt": "Years Active",
         "items": ["BTS", "Maroon 5", "ABBA", "Green Day"],
         "correctOrder": ["Green Day", "Maroon 5", "ABBA", "BTS"],
         "topLabel": "↑ Most",
