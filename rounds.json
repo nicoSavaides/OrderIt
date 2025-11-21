@@ -2717,6 +2717,30 @@
 
     [
       {
+        "prompt": "Year Formed",
+        "items": ["Green Day", "Maroon 5", "BTS", "ABBA"],
+        "correctOrder": ["ABBA", "Green Day", "Maroon 5", "BTS"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Members",
+        "items": ["ABBA", "Green Day", "Maroon 5", "BTS"],
+        "correctOrder": ["BTS", "Maroon 5", "ABBA", "Green Day"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Years Together",
+        "items": ["BTS", "Maroon 5", "ABBA", "Green Day"],
+        "correctOrder": ["Green Day", "Maroon 5", "ABBA", "BTS"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Bordering Countries",
         "items": ["New Zealand", "South Korea", "Mexico", "Russia"],
         "correctOrder": ["Russia", "Mexico", "South Korea", "New Zealand"],
@@ -2926,30 +2950,6 @@
         "prompt": "Oscar Wins",
         "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
         "correctOrder": ["Saving Private Ryan", "Django Unchained", "Wall-E", "Back to the Future Part II"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year Formed",
-        "items": ["Green Day", "Maroon 5", "BTS", "ABBA"],
-        "correctOrder": ["ABBA", "Green Day", "Maroon 5", "BTS"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Number of Members",
-        "items": ["ABBA", "Green Day", "Maroon 5", "BTS"],
-        "correctOrder": ["BTS", "Maroon 5", "ABBA", "Green Day"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
-        "prompt": "Years Together",
-        "items": ["BTS", "Maroon 5", "ABBA", "Green Day"],
-        "correctOrder": ["Green Day", "Maroon 5", "ABBA", "BTS"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
