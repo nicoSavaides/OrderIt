@@ -2741,6 +2741,54 @@
 
     [
       {
+        "prompt": "Value",
+        "items": ["27", "4", "70", "16"],
+        "correctOrder": ["70", "27", "16", "4"],
+        "topLabel": "↑ Greatest",
+        "bottomLabel": "↓ Least"
+      },
+      {
+        "prompt": "Number of Syllables",
+        "items": ["70", "27", "16", "4"],
+        "correctOrder": ["27", "70", "16", "4"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Number of Factors",
+        "items": ["27", "70", "16", "4"],
+        "correctOrder": ["70", "16", "27", "4"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Number of Colors in Logo",
+        "items": ["Pepsi", "McDonald's", "Target", "Google"],
+        "correctOrder": ["Google", "Pepsi", "McDonald's", "Target"],
+        "topLabel": "↑ Most Colors",
+        "bottomLabel": "↓ Fewest Colors"
+      },
+      {
+        "prompt": "Company Valuation (Market Cap)",
+        "items": ["Pepsi", "McDonald's", "Target", "Google"],
+        "correctOrder": ["Google", "McDonald's", "Pepsi", "Target"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["McDonald's", "Target", "Pepsi", "Google"],
+        "correctOrder": ["Pepsi", "Target", "McDonald's", "Google"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Newest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Age When Retired from Show",
         "items": ["Jay Leno", "Johnny Carson", "Alex Trebek", "Oprah Winfrey"],
         "correctOrder": ["Alex Trebek", "Johnny Carson", "Jay Leno", "Oprah Winfrey"],
