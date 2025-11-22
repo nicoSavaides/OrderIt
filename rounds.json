@@ -2748,15 +2748,15 @@
         "bottomLabel": "↓ Youngest"
       },
       {
-        "prompt": "Height",
+        "prompt": "Number of Emmys Won",
         "items": ["Alex Trebek", "Johnny Carson", "Jay Leno", "Oprah Winfrey"],
-        "correctOrder": ["Jay Leno", "Johnny Carson", "Alex Trebek", "Oprah Winfrey"],
-        "topLabel": "↑ Tallest",
-        "bottomLabel": "↓ Shortest"
+        "correctOrder": ["Oprah Winfrey", "Alex Trebek", "Johnny Carson", "Jay Leno"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       },
       {
         "prompt": "Number of Years as Host",
-        "items": ["Jay Leno", "Johnny Carson", "Alex Trebek", "Oprah Winfrey"],
+        "items": ["Oprah Winfrey", "Alex Trebek", "Johnny Carson", "Jay Leno"],
         "correctOrder": ["Alex Trebek", "Johnny Carson", "Oprah Winfrey", "Jay Leno"],
         "topLabel": "↑ Most Years",
         "bottomLabel": "↓ Fewest Years"
