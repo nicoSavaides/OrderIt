@@ -2773,7 +2773,7 @@
       },
       {
         "prompt": "Speed",
-        "items": ["Brown Bear", "Red Deer", "Wolf", "Red Fox"],
+        "items": ["Brown Bear", "Red Deer", "Gray Wolf", "Red Fox"],
         "correctOrder": ["Red Deer", "Gray Wolf", "Brown Bear", "Red Fox"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
