@@ -2767,7 +2767,7 @@
       {
         "prompt": "Weight",
         "items": ["Red Deer", "Red Fox", "Gray Wolf", "Brown Bear"],
-        "correctOrder": ["Brown Bear", "Red Deer", "Wolf", "Red Fox"],
+        "correctOrder": ["Brown Bear", "Red Deer", "Gray Wolf", "Red Fox"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
       },
