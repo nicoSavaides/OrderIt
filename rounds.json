@@ -2765,6 +2765,30 @@
 
     [
       {
+        "prompt": "Weight",
+        "items": ["Red Deer", "Red Fox", "Gray Wolf", "Brown Bear"],
+        "correctOrder": ["Brown Bear", "Red Deer", "Wolf", "Red Fox"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Speed",
+        "items": ["Brown Bear", "Red Deer", "Wolf", "Red Fox"],
+        "correctOrder": ["Red Deer", "Gray Wolf", "Brown Bear", "Red Fox"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Lifespan in the Wild",
+        "items": ["Red Deer", "Gray Wolf", "Brown Bear", "Red Fox"],
+        "correctOrder": ["Brown Bear", "Gray Wolf", "Red Deer", "Red Fox"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Colors in Logo",
         "items": ["Pepsi", "McDonald's", "Target", "Google"],
         "correctOrder": ["Google", "Pepsi", "McDonald's", "Target"],
