@@ -2803,7 +2803,7 @@
         "bottomLabel": "↓ Least Expensive"
       },
       {
-        "prompt": "0–60 Acceleration",
+        "prompt": "Acceleration",
         "items": ["Porsche Boxster", "Chevrolet Suburban", "MINI Hardtop 2-Door", "Honda Civic"],
         "correctOrder": ["Porsche Boxster", "Chevrolet Suburban", "MINI Hardtop 2-Door", "Honda Civic"],
         "topLabel": "↑ Quickest",
