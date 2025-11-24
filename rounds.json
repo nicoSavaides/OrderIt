@@ -2813,25 +2813,25 @@
 
     [
       {
-        "prompt": "City of Service (A-Z)",
-        "items": ["LAS", "ORD", "JFK", "SFO"],
-        "correctOrder": ["Chicago (ORD)", "Las Vegas (LAS)", "New York (JFK)", "San Francisco (SFO)"],
-        "topLabel": "↑ A to Z",
-        "bottomLabel": "↓ Z to A"
+        "prompt": "City (A-Z)",
+        "items": ["SFO", "LAS", "ORD", "JFK"],
+        "correctOrder": ["ORD", "LAS", "JFK", "SFO"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Latitude",
+        "items": ["ORD", "LAS", "JFK", "SFO"],
+        "correctOrder": ["ORD", "JFK", "SFO", "LAS"],
+        "topLabel": "↑ Most Northern",
+        "bottomLabel": "↓ Most Southern"
       },
       {
         "prompt": "Annual Passenger Traffic",
-        "items": ["ORD", "JFK", "LAS", "SFO"],
-        "correctOrder": ["Chicago O'Hare (ORD)", "New York JFK (JFK)", "Las Vegas (LAS)", "San Francisco (SFO)"],
-        "topLabel": "↑ Most Passengers",
-        "bottomLabel": "↓ Fewest Passengers"
-      },
-      {
-        "prompt": "Latitude (North to South)",
         "items": ["ORD", "JFK", "SFO", "LAS"],
-        "correctOrder": ["Chicago O'Hare (ORD)", "New York JFK (JFK)", "San Francisco (SFO)", "Las Vegas (LAS)"],
-        "topLabel": "↑ North",
-        "bottomLabel": "↓ South"
+        "correctOrder": ["ORD", "JFK", "LAS", "SFO"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       }
     ],
 
