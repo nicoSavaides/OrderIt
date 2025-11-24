@@ -2796,7 +2796,7 @@
         "bottomLabel": "↓ Fewest"
       },
       {
-        "prompt": "Price",
+        "prompt": "Price (Base Model)",
         "items": ["Chevrolet Suburban", "Honda Civic", "MINI Hardtop 2-Door", "Porsche Boxster"],
         "correctOrder": ["Porsche Boxster", "Chevrolet Suburban", "MINI Hardtop 2-Door", "Honda Civic"],
         "topLabel": "↑ Most Expensive",
