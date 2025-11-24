@@ -2789,6 +2789,30 @@
 
     [
       {
+        "prompt": "Number of Seats",
+        "items": ["Honda Civic", "Chevrolet Suburban", "Porsche Boxster", "MINI Hardtop 2-Door"],
+        "correctOrder": ["Chevrolet Suburban", "Honda Civic", "MINI Hardtop 2-Door", "Porsche Boxster"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Price",
+        "items": ["Chevrolet Suburban", "Honda Civic", "MINI Hardtop 2-Door", "Porsche Boxster"],
+        "correctOrder": ["Porsche Boxster", "Chevrolet Suburban", "MINI Hardtop 2-Door", "Honda Civic"],
+        "topLabel": "↑ Most Expensive",
+        "bottomLabel": "↓ Least Expensive"
+      },
+      {
+        "prompt": "0–60 Acceleration",
+        "items": ["Porsche Boxster", "Chevrolet Suburban", "MINI Hardtop 2-Door", "Honda Civic"],
+        "correctOrder": ["Porsche Boxster", "Chevrolet Suburban", "MINI Hardtop 2-Door", "Honda Civic"],
+        "topLabel": "↑ Quickest",
+        "bottomLabel": "↓ Slowest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Colors in Logo",
         "items": ["Pepsi", "McDonald's", "Target", "Google"],
         "correctOrder": ["Google", "Pepsi", "McDonald's", "Target"],
