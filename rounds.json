@@ -2813,6 +2813,30 @@
 
     [
       {
+        "prompt": "City of Service (A-Z)",
+        "items": ["LAS", "ORD", "JFK", "SFO"],
+        "correctOrder": ["Chicago (ORD)", "Las Vegas (LAS)", "New York (JFK)", "San Francisco (SFO)"],
+        "topLabel": "↑ A to Z",
+        "bottomLabel": "↓ Z to A"
+      },
+      {
+        "prompt": "Annual Passenger Traffic",
+        "items": ["ORD", "JFK", "LAS", "SFO"],
+        "correctOrder": ["Chicago O'Hare (ORD)", "New York JFK (JFK)", "Las Vegas (LAS)", "San Francisco (SFO)"],
+        "topLabel": "↑ Most Passengers",
+        "bottomLabel": "↓ Fewest Passengers"
+      },
+      {
+        "prompt": "Latitude (North to South)",
+        "items": ["ORD", "JFK", "SFO", "LAS"],
+        "correctOrder": ["Chicago O'Hare (ORD)", "New York JFK (JFK)", "San Francisco (SFO)", "Las Vegas (LAS)"],
+        "topLabel": "↑ North",
+        "bottomLabel": "↓ South"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Colors in Logo",
         "items": ["Pepsi", "McDonald's", "Target", "Google"],
         "correctOrder": ["Google", "Pepsi", "McDonald's", "Target"],
