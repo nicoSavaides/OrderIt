@@ -2813,7 +2813,7 @@
 
     [
       {
-        "prompt": "City (A-Z)",
+        "prompt": "City Name (A-Z)",
         "items": ["SFO", "LAS", "ORD", "JFK"],
         "correctOrder": ["ORD", "LAS", "JFK", "SFO"],
         "topLabel": "↑ First Alphabetically",
