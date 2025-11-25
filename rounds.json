@@ -2831,7 +2831,7 @@
         "items": ["ORD", "JFK", "SFO", "LAS"],
         "correctOrder": ["ORD", "JFK", "LAS", "SFO"],
         "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
+        "bottomLabel": "↓ Least"
       }
     ],
 
