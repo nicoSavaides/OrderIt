@@ -2837,6 +2837,30 @@
 
     [
       {
+        "prompt": "Birth Year",
+        "items": ["Michael Jackson", "Amy Winehouse", "Elvis Presley", "Frank Sinatra"],
+        "correctOrder": ["Frank Sinatra", "Elvis Presley", "Michael Jackson", "Amy Winehouse"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Death Year",
+        "items": ["Frank Sinatra", "Elvis Presley", "Michael Jackson", "Amy Winehouse"],
+        "correctOrder": ["Elvis Presley", "Frank Sinatra", "Michael Jackson", "Amy Winehouse"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Age at Death",
+        "items": ["Elvis Presley", "Frank Sinatra", "Michael Jackson", "Amy Winehouse"],
+        "correctOrder": ["Frank Sinatra", "Michael Jackson", "Elvis Presley", "Amy Winehouse"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Colors in Logo",
         "items": ["Pepsi", "McDonald's", "Target", "Google"],
         "correctOrder": ["Google", "Pepsi", "McDonald's", "Target"],
@@ -2928,30 +2952,6 @@
         "correctOrder": ["Hotel California", "Hey Ya!", "Old Town Road", "Respect"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Birth Year",
-        "items": ["Michael Jackson", "Amy Winehouse", "Elvis Presley", "Frank Sinatra"],
-        "correctOrder": ["Frank Sinatra", "Elvis Presley", "Michael Jackson", "Amy Winehouse"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Death Year",
-        "items": ["Frank Sinatra", "Elvis Presley", "Michael Jackson", "Amy Winehouse"],
-        "correctOrder": ["Elvis Presley", "Frank Sinatra", "Michael Jackson", "Amy Winehouse"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Age at Death",
-        "items": ["Elvis Presley", "Frank Sinatra", "Michael Jackson", "Amy Winehouse"],
-        "correctOrder": ["Frank Sinatra", "Michael Jackson", "Elvis Presley", "Amy Winehouse"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
       }
     ],
 

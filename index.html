@@ -129,7 +129,7 @@
       outline: none;          /* removes focus outline */
       box-shadow: none;       /* prevents subtle shadows */
       padding: 10px 20px;
-      margin-top: 150px;
+      margin-top: 0; 
       cursor: pointer;
       border-radius: 40px;
     }
@@ -928,15 +928,24 @@
 
 
 
-
-
-
-
-
-
 #gameStatus {
   display: block !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -958,470 +967,375 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
 @media (min-width: 768px) {
 
+  .mobile-logo {
+  margin-top: 250px;  /* adjust to move the logo down */
+  /* width/height optional — you can omit them */
+}
 
+
+  /* Less vertical padding on desktop so everything fits */
+  body {
+    padding: 0 40px;          /* no top/bottom padding, keep some side padding */
+    box-sizing: border-box;
+  }
+
+  /* Let gameScreen stack everything vertically */
+  #gameScreen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #roundPrompt {
+    order: 1;
+  }
+
+  #itemListWrapper {
+    order: 2;
+  }
+
+  /* Show Attempts under the labels */
+  #strikeCount {
+    order: 3;
+  }
+
+  /* Submit under Attempts */
+  #submitWrapper {
+    order: 4;
+  }
+
+  /* Date at the very bottom */
+  #dateAndRound {
+    order: 5;
+  }
+
+  /* Round prompt: normal flow, not fixed */
+  #roundPrompt {
+    position: static !important;
+    margin-top: 100px;          /* was 60px */
+    margin-bottom: 30px;       /* was 40px */
+    transform: none !important;
+    width: 100%;
+    max-width: 800px;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
 
   #playedTodayScreen h1 {
-  font-size: 4rem !important; 
-  margin-top: 5px !important;
+    font-size: 4rem !important; 
+    margin-top: 5px !important;
   }
 
+  #playedTodayScreen p {
+    padding: 0 20px;
+    font-size: 1.3em !important;
+    font-weight: lighter;
+    margin-top: 120px !important;
+  }
 
-#playedTodayScreen p {
-  padding: 0 20px;
-  font-size: 1.3em !important;
-  font-weight: lighter;
-  margin-top: 120px !important;
-}
+  #playedTodayScreen button {
+    font-size: 1.4em;
+    padding: 10px 22px;
+    position: relative;
+    z-index: 1;
+    margin-top: 200px;
+  }
 
-#playedTodayScreen button {
-  font-size: 1.4em;
-  padding: 10px 22px;
-  position: relative;
-  z-index: 1;
-  margin-top: 200px;
-}
-
-#viewStatsButton {
-  display: block !important;
-  font-size: 1.4em;
-  padding: 10px 22px;
-}
+  #viewStatsButton {
+    display: block !important;
+    font-size: 1.4em;
+    padding: 10px 22px;
+  }
 
   #dateAndRound {
-  position: fixed; 
-  bottom: 20px !important; /* Lower value pushes it closer to the bottom */
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 1rem !important; 
-}
-
-
-
-
-
-
-
-      h1 {
-        font-size: 4rem !important; 
-        margin-top: 34px !important
-      }
-
-      h2 {
-      position: fixed;
-      font-size: 3rem !important;
-      line-height: 1.4 !important;
-      top: 36px;               /* Adjust to set how far from the top of the screen */
-      left: 50%;               /* Position horizontally at the center */
-      transform: translateX(-50%); /* Center it exactly by moving it back by 50% of its own width */
-      text-align: center;      /* Centers text if it wraps to the next line */
-      width: 100%;             /* Make sure the width is 100% of the screen width */
-      box-sizing: border-box;  /* Prevents padding/margins from affecting width */
-      padding: 0 23px;
-      font-weight: 900;
-    }
-
-      #welcomeScreen p {
-        padding-top: 90px !important;
-        font-size: 1.5rem !important;
-        font-weight: 400 !important;
-        padding: 0 400px;
-        
-
-       }
-
-       
-      button {
-        font-size: 1.5rem;
-        padding: 12px 25px;
-        margin-top: 150px;
-      }  
-
-
-
-
-
-      
-      .draggable-item {
-      will-change: transform;
-      transform: translateZ(0);       /* Forces GPU layer */
-      backface-visibility: hidden;    /* Avoids flickering/glitches */
-      transform-style: preserve-3d;
-      font-size: 1.5rem;
-      width: 85%;
-    }
-
-
-       
-    #itemListWrapper {
-    position: absolute;  /* Use absolute positioning to ensure it is centered */
-    top: 100px;
+    position: fixed; 
+    bottom: 10px !important;   /* was 20px – tuck it closer to the edge */
     left: 50%;
-    transform: translateX(-50%);  /* Center the element */
-    width: 90%;  /* Ensure it doesn't stretch beyond the screen width */
-    z-index: 10;  /* Ensure it's above other content */
-    box-sizing: border-box;  /* Prevent padding/margins from affecting width */
-    will-change: transform; /* Optimize for mobile */
+    transform: translateX(-50%);
+    font-size: 1rem !important; 
   }
 
-
-      #strikeCount {
-        position: fixed;
-        font-size: 1.2rem !important;
-        top: 630px; /* Set how far from the top of the screen you want it */
-        left: 50%;
-        transform: translateX(-50%); /* Centers the element horizontally */
-        white-space: nowrap; /* Prevents the text from wrapping onto the next line */
-        min-width: 200px; 
-        
-      }
-
-
-      #submitWrapper {
-    bottom: 180px !important;
-    position: fixed !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    z-index: 9999 !important;
+  h1 {
+    font-size: 4rem !important; 
+    margin-top: 34px !important;
   }
 
+  h2 {
+    position: fixed;
+    font-size: 3rem !important;
+    line-height: 1.4 !important;
+    top: 36px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 23px;
+    font-weight: 900;
+  }
 
-      #submitWrapper button {
-        width: 109px;
-        height: 52px;
-        font-size: 1.35rem;
-        padding: 8px 0; /* Vertical padding only if needed */
-      }
+  #welcomeScreen p {
+   padding-top: 60px !important;   /* instead of 90px */
+    padding-left: 80px !important;  /* instead of 400px */
+    padding-right: 80px !important; /* instead of 400px */
+    font-size: 1.4rem !important;
+    line-height: 1.4 !important;
+    max-width: 700px;               /* fixes narrow column */
+    margin: 0 auto;                 /* centers it */
+  }
 
+  button {
+    font-size: 1.5rem;
+    padding: 12px 25px;
+    margin-top: 0;   /* keep this at 0 so buttons don't push layout down */
+  }
 
+  .draggable-item {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    font-size: 1.5rem;
+    width: 85%;
+  }
 
+  #endGameStatus {
+    font-size: 5rem !important; 
+    font-family: 'second' !important;
+    color: #000;
+    text-align: center;
+    margin-top: 85px !important;
+  }
 
+  #finalScore {
+    font-size: 1.2rem !important;
+    margin-top: 20px !important;
+    text-align: center;
+  }
 
-      
+  #thanksMessage {
+    font-size: 1.2rem !important;
+    margin-top: 60px !important;
+    text-align: center;
+  }
 
+  #shareLink,
+  #shareButton {
+    position: relative;
+    z-index: 1;
+    margin-top: 100px !important;
+  }
 
-
-      #endGameStatus {
-      font-size: 5rem !important; 
-      font-family: 'second' !important;
-      color: #000;
-      text-align: center;
-      margin-top: 85px !important; /* Use margin, not top */
-    }
-
-    #finalScore {
-      font-size: 1.2rem !important;
-      margin-top: 20px !important; /* Adjust as needed */
-      text-align: center;
-    }
-
-    #thanksMessage {
-      font-size: 1.2rem !important;
-      margin-top: 60px !important; /* Adjust spacing */
-      text-align: center;
-    }
-
-
-
-      #shareLink,
-      #shareButton {
-      position: relative;
-      z-index: 1;
-      margin-top: 100px !important; /* Keep your margin-top */
-    }
-
-      #shareLink::after,
-      #shareButton::after {
-      content: '';
-      position: absolute;
-      top: -10px; /* Adjust to expand clickable area vertically */
-      left: -10px; /* Adjust to expand clickable area horizontally */
-      right: -10px;
-      bottom: -10px;
-      z-index: -1; /* Invisible expanded clickable area */
-    }
-
-
-
-
+  #shareLink::after,
+  #shareButton::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: -1;
+  }
 
   .button-stack {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px; /* spacing between buttons */
-    margin-top: 120px; /* adjust as needed */
+    gap: 30px;
+    margin-top: 120px;
   }
 
   .button-stack button {
-    margin-top: 0 !important; /* override any previous vertical spacing */
+    margin-top: 0 !important;
   }
-
-
-
-
-
-
-
 
   .stats-container {
-  font-family: sans-serif;
-  color: #111;
-  max-width: 320px;
-  margin: auto;
-}
-
-.stats-title {
-  margin-top: 20px !important;
-  font-size: 60px !important;
-  font-family: 'second', sans-serif;
-  text-align: center;
-  margin: 0 0 60px 0;
-}
-
-.games-played {
-  
-  margin-top: 130px !important;
-  margin-bottom: 5px;
-  font-size: 20px !important;
-  text-align: center;
-}
-
-.games-played-number {
-  font-family: monospace;
-  font-size: 25px;
-}
-
-
-.stats-table {
-  margin-top: 25px !important;
-  width: 100%;
-  border-spacing: 0 10px;
-  font-family: 'Lora', serif;
-}
-
-.rounds-completed-label {
-  font-size: 20px;
-  text-align: left;
-}
-
-.count-label {
-  font-size: 20px;
-  text-align: right;
-}
-
-.round-label {
-  font-size: 20px;
-  text-align: left;
-}
-
-.count {
-  font-size: 20px;
-  text-align: right; 
-  position: relative; 
-  right: 45px !important; 
-}
-
-.stats-table thead th {
-  border-bottom: 2px solid #858585;
-  padding-top: 18px;  
-  padding-bottom: 18px;  
-}
-
-.count-number {
-  font-family: monospace;
-  font-size: 25px;
-}
-
-
-
-
-
-#playedRoundsAnswers {
-  margin-top: 22px;
-  display: flex;
-  flex-direction: column;
-  gap: 50px !important; 
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.round-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-
-.round-heading {
-  font-size: 1.3em;
-  margin-bottom: 15px;
-}
-
-.round-list {
-  display: flex;
-  flex-direction: column; /* ⬅️ Stack top-to-bottom */
-  gap: 10px;
-  align-items: center; /* Center items horizontally */
-}
-
-
-
-.round-item {
-  font-size: 1.2em;
-  background: #D8D8D8;
-  padding: 8px 12px;
-  border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-
-}
-}
-
-
-
-@media (min-width: 1300px) and (max-width: 1450px) { /* laptop */
-  
-  p {
-    position: relative !important;
-    top: -30px !important;
-    margin: 0 !important;
-    padding: 0 100px !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+    font-family: sans-serif;
+    color: #111;
+    max-width: 320px;
+    margin: auto;
   }
 
-  body, html {
-    margin: 0 !important;
-    padding: 0 !important;
+  .stats-title {
+    margin-top: 20px !important;
+    font-size: 60px !important;
+    font-family: 'second', sans-serif;
+    text-align: center;
+    margin: 0 0 60px 0;
   }
 
-  button {
-  position: relative !important;
-  top: -80px !important;
-  font-size: 1.5rem;
-  padding: 12px 25px;
-  
-}
-
-
-#submitWrapper {
-    bottom: 180px !important;
-    position: fixed !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    z-index: 9999 !important;
+  .games-played {
+    margin-top: 130px !important;
+    margin-bottom: 5px;
+    font-size: 20px !important;
+    text-align: center;
   }
 
-
-  #submitWrapper button {
-  width: 109px;
-  height: 52px;
-  font-size: 1.35rem;
-  padding: 8px 0; /* Vertical padding only if needed */
+  .games-played-number {
+    font-family: monospace;
+    font-size: 25px;
   }
 
+  .stats-table {
+    margin-top: 25px !important;
+    width: 100%;
+    border-spacing: 0 10px;
+    font-family: 'Lora', serif;
+  }
+
+  .rounds-completed-label {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .count-label {
+    font-size: 20px;
+    text-align: right;
+  }
+
+  .round-label {
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .count {
+    font-size: 20px;
+    text-align: right; 
+    position: relative; 
+    right: 45px !important; 
+  }
+
+  .stats-table thead th {
+    border-bottom: 2px solid #858585;
+    padding-top: 18px;  
+    padding-bottom: 18px;  
+  }
+
+  .count-number {
+    font-family: monospace;
+    font-size: 25px;
+  }
+
+  #playedRoundsAnswers {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px !important; 
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .round-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .round-heading {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+  }
+
+  .round-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .round-item {
+    font-size: 1.2em;
+    background: #D8D8D8;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+
+  /* MAIN DESKTOP TWEAKS FOR GAME LAYOUT */
+  #itemListWrapper {
+    position: static;
+    margin-top: 80px;          /* was 110px – pull list up more */
+    width: 100%;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: none !important;
+  }
+
+  #bottomLabel {
+    margin-bottom: 10px !important;  /* was 18px – tighter under labels */
+  }
 
   #strikeCount {
-    position: fixed !important;
-    top: 520px !important;
-        
-      }
-
-     
-
-  #dateAndRound {
-  position: fixed !important;
-  top: auto !important;
-  bottom: 20px !important;
-  left: 50% !important;
-  transform: translateX(-50%) !important;
-  font-size: 0.9rem !important;
-  z-index: 9999 !important;
-}
-
-
-.games-played {
-  
-  margin-top: 180px !important;
-  margin-bottom: 5px;
-  font-size: 20px !important;
-  text-align: center;
-}
-
-.games-played-number {
-  font-family: monospace;
-  font-size: 25px;
-}
-}
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 1366px) { /* ipad */
-  p {
-
-  max-width: none !important;
-  font-size: 105px !important;
-  width: 100% !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
-}
-
-  h1 {
-    font-size: 70px !important;
-  }
-  h2 {
-    font-size: 28px !important;
+    position: static;
+    margin-top: 100px;           /* was 6px */
+    transform: none !important;
+    white-space: nowrap;
   }
 
-  
-  button {
-        font-size: 1.5rem;
-        padding: 12px 25px;
-        margin-top: 10px;
-      }
+  #submitWrapper {
+    position: static;
+    margin-top: 30px;          /* was 18px */
+    transform: none !important;
+    bottom: auto !important;
+    left: auto !important;
+  }
 
+  #submitWrapper button {
+    width: 109px;
+    height: 52px;
+    font-size: 1.35rem;
+    padding: 8px 0;
+  }
 
+  @media (min-width: 768px) {
+  #playButton {
+    margin-top: 90px !important; /* change this number as needed */
+  }
+}
 
 }
 
 
-button.disabled {
-  opacity: 0.6;
-  pointer-events: none;
-  transition: opacity 0.3s;
-}
 
 
 
-#maintenanceLogo {
-  display: block;
-  margin: -30px auto;
-  max-width: 200px;
-  height: auto;
-}
 
 
 
-#maintenanceMessage {
-  text-align: center;
-  padding: 20px;
-  font-family: Lora, serif;  /* paragraph default font */
-  margin-top: 70px;
-}
 
-#maintenanceMessage h1 {
-  font-family: 'second', sans-serif; /* replace with your actual second font */
-  font-size: 2.3rem !important;
-  margin-top: 35px !important;
-}
 
-#maintenanceMessage p {
-  font-size: 1.17rem !important;
-  margin: 50px 0 !important;   /* probably 100px margin is too big? Adjust as you want */
-  line-height: 1.4;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1468,6 +1382,11 @@ body.device-411-r1-9 #strikeCount {
 body.device-411-r1-9 #submitWrapper {
   bottom: 160px !important;
 }
+
+
+
+
+
 
 
 
