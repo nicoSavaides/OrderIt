@@ -1011,7 +1011,13 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
   /* Round prompt: normal flow, not fixed */
   #roundPrompt {
+    min-height: 130px;   /* lock the prompt height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* keeps text vertically centered */
     position: static !important;
+    font-size: 3.5rem !important;  /* adjust up or down */
+    line-height: 1.3;
     margin-top: 100px;          /* was 60px */
     margin-bottom: 30px;       /* was 40px */
     transform: none !important;
@@ -1269,9 +1275,11 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
   #strikeCount {
     position: static;
+    font-size: 1.5rem;
     margin-top: 100px;           /* was 6px */
     transform: none !important;
     white-space: nowrap;
+    min-height: 1.5em;   
   }
 
   #submitWrapper {
@@ -1289,13 +1297,29 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
     padding: 8px 0;
   }
 
-  @media (min-width: 768px) {
+  /* Desktop-only: move PLAY button lower on welcome screen */
   #playButton {
-    margin-top: 90px !important; /* change this number as needed */
+    margin-top: 90px !important;  /* tweak this as needed */
   }
-}
 
-}
+  /* Desktop-only: stack end buttons vertically on end screen */
+  #endButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;          /* spacing between buttons */
+    margin-top: 60px;   /* distance from text above */
+  }
+
+  #strikeCount.hidden {
+    display: block !important;
+    visibility: hidden !important;
+    height: 1.5em;
+    /* no margin-top here */
+  }
+
+} /* <-- this closes @media (min-width: 768px) */
+
 
 
 
@@ -2157,7 +2181,8 @@ function submitOrder() {
 
     if (strikes >= maxStrikes) {
 
-      document.getElementById('strikeCount').style.display = 'none';
+        const strikeEl = document.getElementById('strikeCount');
+    strikeEl.style.visibility = 'hidden';   // ⬅️ was display = 'none'
 
 
   // Lock tiles to dark background manually
