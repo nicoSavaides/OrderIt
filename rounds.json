@@ -2861,6 +2861,30 @@
 
     [
       {
+        "prompt": "Year",
+        "items": ["Up", "The Shawshank Redemption", "The Shining", "The Wizard of Oz"],
+        "correctOrder": ["The Wizard of Oz", "The Shining", "The Shawshank Redemption", "Up"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Budget",
+        "items": ["The Wizard of Oz", "The Shining", "The Shawshank Redemption", "Up"],
+        "correctOrder": ["Up", "The Shawshank Redemption", "The Shining", "The Wizard of Oz"],
+        "topLabel": "↑ Biggest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Gross",
+        "items": ["Up", "The Shawshank Redemption", "The Shining", "The Wizard of Oz"],
+        "correctOrder": ["Up", "The Shining", "The Shawshank Redemption", "The Wizard of Oz"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Least Grossing"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Colors in Logo",
         "items": ["Pepsi", "McDonald's", "Target", "Google"],
         "correctOrder": ["Google", "Pepsi", "McDonald's", "Target"],
@@ -2976,30 +3000,6 @@
         "correctOrder": ["Ukraine", "South Africa", "Greece", "Vietnam"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year",
-        "items": ["Up", "The Shawshank Redemption", "The Shining", "The Wizard of Oz"],
-        "correctOrder": ["The Wizard of Oz", "The Shining", "The Shawshank Redemption", "Up"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Budget",
-        "items": ["The Wizard of Oz", "The Shining", "The Shawshank Redemption", "Up"],
-        "correctOrder": ["Up", "The Shawshank Redemption", "The Shining", "The Wizard of Oz"],
-        "topLabel": "↑ Biggest",
-        "bottomLabel": "↓ Smallest"
-      },
-      {
-        "prompt": "Gross",
-        "items": ["Up", "The Shawshank Redemption", "The Shining", "The Wizard of Oz"],
-        "correctOrder": ["Up", "The Shining", "The Shawshank Redemption", "The Wizard of Oz"],
-        "topLabel": "↑ Highest Grossing",
-        "bottomLabel": "↓ Lowest Grossing"
       }
     ],
 
