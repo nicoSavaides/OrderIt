@@ -2885,6 +2885,30 @@
 
     [
       {
+        "prompt": "Distance from Equator",
+        "items": ["Texas", "South Carolina", "Michigan", "Tennessee"],
+        "correctOrder": ["Michigan", "Tennessee", "South Carolina", "Texas"],
+        "topLabel": "↑ Farthest North",
+        "bottomLabel": "↓ Closest to Equator"
+      },
+      {
+        "prompt": "Area",
+        "items": ["Michigan", "Tennessee", "South Carolina", "Texas"],
+        "correctOrder": ["Texas", "Michigan", "Tennessee", "South Carolina"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Texas", "Michigan", "Tennessee", "South Carolina"],
+        "correctOrder": ["Texas", "Michigan", "Tennessee", "South Carolina"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Colors in Logo",
         "items": ["Pepsi", "McDonald's", "Target", "Google"],
         "correctOrder": ["Google", "Pepsi", "McDonald's", "Target"],
@@ -3072,30 +3096,6 @@
         "correctOrder": ["Saving Private Ryan", "Django Unchained", "Wall-E", "Back to the Future Part II"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Distance from Equator",
-        "items": ["Texas", "South Carolina", "Michigan", "Tennessee"],
-        "correctOrder": ["Michigan", "Tennessee", "South Carolina", "Texas"],
-        "topLabel": "↑ Farthest North",
-        "bottomLabel": "↓ Closest to Equator"
-      },
-      {
-        "prompt": "Area",
-        "items": ["Michigan", "Tennessee", "South Carolina", "Texas"],
-        "correctOrder": ["Texas", "Michigan", "Tennessee", "South Carolina"],
-        "topLabel": "↑ Largest Area",
-        "bottomLabel": "↓ Smallest Area"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Texas", "Michigan", "Tennessee", "South Carolina"],
-        "correctOrder": ["Texas", "Michigan", "Tennessee", "South Carolina"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
       }
     ]
 
