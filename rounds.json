@@ -3078,22 +3078,22 @@
     [
       {
         "prompt": "Distance from Equator",
-        "items": ["Texas", "Alabama", "Michigan", "Tennessee"],
-        "correctOrder": ["Michigan", "Tennessee", "Alabama", "Texas"],
+        "items": ["Texas", "South Carolina", "Michigan", "Tennessee"],
+        "correctOrder": ["Michigan", "Tennessee", "South Carolina", "Texas"],
         "topLabel": "↑ Farthest North",
         "bottomLabel": "↓ Closest to Equator"
       },
       {
-        "prompt": "Area (sq mi)",
-        "items": ["Texas", "Alabama", "Michigan", "Tennessee"],
-        "correctOrder": ["Texas", "Michigan", "Alabama", "Tennessee"],
+        "prompt": "Area",
+        "items": ["Michigan", "Tennessee", "South Carolina", "Texas"],
+        "correctOrder": ["Texas", "Michigan", "Tennessee", "South Carolina"],
         "topLabel": "↑ Largest Area",
         "bottomLabel": "↓ Smallest Area"
       },
       {
         "prompt": "Population",
-        "items": ["Texas", "Alabama", "Michigan", "Tennessee"],
-        "correctOrder": ["Texas", "Michigan", "Tennessee", "Alabama"],
+        "items": ["Texas", "Michigan", "Tennessee", "South Carolina"],
+        "correctOrder": ["Texas", "Michigan", "Tennessee", "South Carolina"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       }
