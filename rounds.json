@@ -2909,6 +2909,30 @@
 
     [
       {
+        "prompt": "Height",
+        "items": ["Hollywood Sign", "The Bean (Cloud Gate)", "Washington Monument", "Disneyland Castle"],
+        "correctOrder": ["Washington Monument", "Disneyland Castle", "Hollywood Sign", "The Bean (Cloud Gate)"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Location",
+        "items": ["Washington Monument", "Disneyland Castle", "Hollywood Sign", "The Bean (Cloud Gate)"],
+        "correctOrder": ["Hollywood Sign", "Disneyland Castle", "The Bean (Cloud Gate)", "Washington Monument"],
+        "topLabel": "↑ Most West",
+        "bottomLabel": "↓ Most East"
+      },
+      {
+        "prompt": "Year Built",
+        "items": ["Hollywood Sign", "Disneyland Castle", "The Bean (Cloud Gate)", "Washington Monument"],
+        "correctOrder": ["Washington Monument", "Hollywood Sign", "Disneyland Castle", "The Bean (Cloud Gate)"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Colors in Logo",
         "items": ["Pepsi", "McDonald's", "Target", "Google"],
         "correctOrder": ["Google", "Pepsi", "McDonald's", "Target"],
