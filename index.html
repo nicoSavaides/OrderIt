@@ -968,7 +968,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 @media (min-width: 768px) {
 
   .mobile-logo {
-  margin-top: 250px;  /* adjust to move the logo down */
+  margin-top: 200px;  /* adjust to move the logo down */
   /* width/height optional — you can omit them */
 }
 
@@ -1012,11 +1012,9 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
   /* Round prompt: normal flow, not fixed */
   #roundPrompt {
     min-height: 130px;   /* lock the prompt height */
-    display: flex;
-    flex-direction: column;
     justify-content: center; /* keeps text vertically centered */
     position: static !important;
-    font-size: 3.5rem !important;  /* adjust up or down */
+    font-size: 3rem !important;  /* adjust up or down */
     line-height: 1.3;
     margin-top: 100px;          /* was 60px */
     margin-bottom: 30px;       /* was 40px */
@@ -1036,7 +1034,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
     padding: 0 20px;
     font-size: 1.3em !important;
     font-weight: lighter;
-    margin-top: 120px !important;
+    margin-top: 80px !important;
   }
 
   #playedTodayScreen button {
@@ -1058,7 +1056,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
     bottom: 15px !important;   /* was 20px – tuck it closer to the edge */
     left: 50%;
     transform: translateX(-50%);
-    font-size: 1.4rem !important; 
+    font-size: 1.2rem !important; 
   }
 
   h1 {
@@ -1091,7 +1089,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
   }
 
   button {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 12px 25px;
     margin-top: 0;   /* keep this at 0 so buttons don't push layout down */
   }
@@ -1101,8 +1099,10 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
     transform: translateZ(0);
     backface-visibility: hidden;
     transform-style: preserve-3d;
-    font-size: 1.5rem;
-    width: 85%;
+    font-size: 2rem;
+    padding: 14px 0;     /* adds vertical size */
+    width: 90%;          /* tile becomes wider */
+    margin-bottom: 10px; /* more space between tiles */
   }
 
   #endGameStatus {
@@ -1114,26 +1114,31 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
   }
 
   #finalScore {
-    font-size: 1.2rem !important;
-    margin-top: 20px !important;
+    font-size: 1.4rem !important;
+    margin-top: -60px !important;
     text-align: center;
   }
 
   #thanksMessage {
-    font-size: 1.2rem !important;
-    margin-top: 60px !important;
+    font-size: 1.4rem !important;
+    margin-top: 120px !important;
     text-align: center;
+    margin-bottom: 150px !important;
   }
 
-  #shareLink,
-  #shareButton {
+#shareButton,
+#goHomeButton {
     position: relative;
     z-index: 1;
-    margin-top: 100px !important;
-  }
 
-  #shareLink::after,
-  #shareButton::after {
+    font-size: 1.35rem !important;  /* bigger */
+    padding: 10px 26px !important;  /* bigger */
+    margin-top: 0 !important;       /* prevent stacking issues */
+}
+
+
+  #shareButton::after,
+  #goHomeButton::after {
     content: '';
     position: absolute;
     top: -10px;
@@ -1147,8 +1152,8 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
-    margin-top: 120px;
+    gap: 25px;
+    margin-top: 80px;
   }
 
   .button-stack button {
@@ -1261,7 +1266,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
   /* MAIN DESKTOP TWEAKS FOR GAME LAYOUT */
   #itemListWrapper {
     position: static;
-    margin-top: 80px;          /* was 110px – pull list up more */
+    margin-top: 40px;          /* was 110px – pull list up more */
     width: 100%;
     max-width: 620px;
     margin-left: auto;
@@ -1275,8 +1280,8 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
   #strikeCount {
     position: static;
-    font-size: 1.5rem;
-    margin-top: 100px;           /* was 6px */
+    font-size: 1.2rem;
+    margin-top: 60px;           /* was 6px */
     transform: none !important;
     white-space: nowrap;
     min-height: 1.5em;   
@@ -1284,7 +1289,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
   #submitWrapper {
     position: static;
-    margin-top: 30px;          /* was 18px */
+    margin-top: 15px;          /* was 18px */
     transform: none !important;
     bottom: auto !important;
     left: auto !important;
@@ -1317,6 +1322,14 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
     height: 1.5em;
     /* no margin-top here */
   }
+
+  .end-button-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;         /* smaller gap */
+    margin-top: 50px; /* controls gap above buttons */
+}
 
 } /* <-- this closes @media (min-width: 768px) */
 
@@ -1502,7 +1515,7 @@ body.device-411-r1-9 #submitWrapper {
     <p id="thanksMessage">Thanks for playing! Go to the home screen to view today’s answers. Come back tomorrow for a new Order It!</p>
 
 
-<div id="endButtons">
+<div id="endButtons" class="end-button-stack">
   <button id="shareButton">Share Your Score</button>
   <button id="goHomeButton">Home Screen</button>
 </div>
