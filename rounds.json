@@ -2933,6 +2933,30 @@
 
     [
       {
+        "prompt": "Age When Retired from Show",
+        "items": ["Jay Leno", "Johnny Carson", "Alex Trebek", "Oprah Winfrey"],
+        "correctOrder": ["Alex Trebek", "Johnny Carson", "Jay Leno", "Oprah Winfrey"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Number of Years as Host",
+        "items": ["Alex Trebek", "Johnny Carson", "Jay Leno", "Oprah Winfrey"],
+        "correctOrder": ["Alex Trebek", "Johnny Carson", "Oprah Winfrey", "Jay Leno"],
+        "topLabel": "↑ Most Years",
+        "bottomLabel": "↓ Fewest Years"
+      },
+      {
+        "prompt": "Number of Emmys Won",
+        "items": ["Alex Trebek", "Johnny Carson", "Oprah Winfrey", "Jay Leno"],
+        "correctOrder": ["Oprah Winfrey", "Alex Trebek", "Johnny Carson", "Jay Leno"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ], 
+
+    [
+      {
         "prompt": "Number of Colors in Logo",
         "items": ["Pepsi", "McDonald's", "Target", "Google"],
         "correctOrder": ["Google", "Pepsi", "McDonald's", "Target"],
@@ -2954,30 +2978,6 @@
         "bottomLabel": "↓ Newest"
       }
     ],
-
-    [
-      {
-        "prompt": "Age When Retired from Show",
-        "items": ["Jay Leno", "Johnny Carson", "Alex Trebek", "Oprah Winfrey"],
-        "correctOrder": ["Alex Trebek", "Johnny Carson", "Jay Leno", "Oprah Winfrey"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
-      },
-      {
-        "prompt": "Number of Emmys Won",
-        "items": ["Alex Trebek", "Johnny Carson", "Jay Leno", "Oprah Winfrey"],
-        "correctOrder": ["Oprah Winfrey", "Alex Trebek", "Johnny Carson", "Jay Leno"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
-        "prompt": "Number of Years as Host",
-        "items": ["Oprah Winfrey", "Alex Trebek", "Johnny Carson", "Jay Leno"],
-        "correctOrder": ["Alex Trebek", "Johnny Carson", "Oprah Winfrey", "Jay Leno"],
-        "topLabel": "↑ Most Years",
-        "bottomLabel": "↓ Fewest Years"
-      }
-    ], 
 
     [
       {
