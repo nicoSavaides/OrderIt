@@ -2957,6 +2957,54 @@
 
     [
       {
+        "prompt": "First Name Number of Letters",
+        "items": ["Obama", "Truman", "Roosevelt", "Lincoln"],
+        "correctOrder": ["Roosevelt", "Lincoln", "Obama", "Truman"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
+      },
+      {
+        "prompt": "Presidency Date",
+        "items": ["Roosevelt", "Lincoln", "Obama", "Truman"],
+        "correctOrder": ["Lincoln", "Roosevelt", "Truman", "Obama"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Lincoln", "Roosevelt", "Truman", "Obama"],
+        "correctOrder": ["Lincoln", "Obama", "Roosevelt", "Truman"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year Drafted",
+        "items": ["Luka Dončić", "Kyrie Irving", "Hakeem Olajuwon", "LeBron James"],
+        "correctOrder": ["Hakeem Olajuwon", "LeBron James", "Kyrie Irving", "Luka Dončić"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Hakeem Olajuwon", "LeBron James", "Kyrie Irving", "Luka Dončić"],
+        "correctOrder": ["Hakeem Olajuwon", "LeBron James", "Luka Dončić", "Kyrie Irving"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "NBA Career Points",
+        "items": ["Hakeem Olajuwon", "LeBron James", "Luka Dončić", "Kyrie Irving"],
+        "correctOrder": ["LeBron James", "Hakeem Olajuwon", "Kyrie Irving", "Luka Dončić"],
+        "topLabel": "↑ Most Points",
+        "bottomLabel": "↓ Fewest Points"
+      }
+    ],
+
+    [
+      {
         "prompt": "Number of Colors in Logo",
         "items": ["Pepsi", "McDonald's", "Target", "Google"],
         "correctOrder": ["Google", "Pepsi", "McDonald's", "Target"],
