@@ -2957,6 +2957,30 @@
 
     [
       {
+        "prompt": "Number of Colors in Logo",
+        "items": ["Pepsi", "Starbucks", "Nike", "Google"],
+        "correctOrder": ["Google", "Pepsi", "Starbucks", "Nike"],
+        "topLabel": "↑ Most Colors",
+        "bottomLabel": "↓ Fewest Colors"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Google", "Pepsi", "Starbucks", "Nike"],
+        "correctOrder": ["Pepsi", "Nike", "Starbucks", "Google"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Company Valuation",
+        "items": ["Pepsi", "Nike", "Starbucks", "Google"],
+        "correctOrder": ["Google", "Pepsi", "Starbucks", "Nike"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
+    ],
+
+    [
+      {
         "prompt": "First Name Number of Letters",
         "items": ["Obama", "Truman", "Roosevelt", "Lincoln"],
         "correctOrder": ["Roosevelt", "Lincoln", "Obama", "Truman"],
@@ -3000,30 +3024,6 @@
         "correctOrder": ["LeBron James", "Hakeem Olajuwon", "Kyrie Irving", "Luka Dončić"],
         "topLabel": "↑ Most Points",
         "bottomLabel": "↓ Fewest Points"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Number of Colors in Logo",
-        "items": ["Pepsi", "Starbucks", "Nike", "Google"],
-        "correctOrder": ["Google", "Pepsi", "Starbucks", "Nike"],
-        "topLabel": "↑ Most Colors",
-        "bottomLabel": "↓ Fewest Colors"
-      },
-      {
-        "prompt": "Year Founded",
-        "items": ["Google", "Pepsi", "Starbucks", "Nike"],
-        "correctOrder": ["Pepsi", "Nike", "Starbucks", "Google"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Company Valuation",
-        "items": ["Pepsi", "Nike", "Starbucks", "Google"],
-        "correctOrder": ["Google", "Pepsi", "Starbucks", "Nike"],
-        "topLabel": "↑ Highest",
-        "bottomLabel": "↓ Lowest"
       }
     ],
 
