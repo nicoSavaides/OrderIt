@@ -2981,6 +2981,30 @@
 
     [
       {
+        "prompt": "Year It Takes Place",
+        "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
+        "correctOrder": ["Django Unchained", "Saving Private Ryan", "Back to the Future Part II", "Wall-E"],
+        "topLabel": "↑ Set Longest Ago",
+        "bottomLabel": "↓ Set Farthest in Future"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
+        "correctOrder": ["Back to the Future Part II", "Saving Private Ryan", "Wall-E", "Django Unchained"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Oscar Wins",
+        "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
+        "correctOrder": ["Saving Private Ryan", "Django Unchained", "Wall-E", "Back to the Future Part II"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "First Name Number of Letters",
         "items": ["Obama", "Truman", "Roosevelt", "Lincoln"],
         "correctOrder": ["Roosevelt", "Lincoln", "Obama", "Truman"],
@@ -3168,30 +3192,6 @@
         "correctOrder": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
         "topLabel": "↑ Highest Grossing",
         "bottomLabel": "↓ Lowest Grossing"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year It Takes Place",
-        "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
-        "correctOrder": ["Django Unchained", "Saving Private Ryan", "Back to the Future Part II", "Wall-E"],
-        "topLabel": "↑ Set Longest Ago",
-        "bottomLabel": "↓ Set Farthest in Future"
-      },
-      {
-        "prompt": "Year Released",
-        "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
-        "correctOrder": ["Back to the Future Part II", "Saving Private Ryan", "Wall-E", "Django Unchained"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Oscar Wins",
-        "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
-        "correctOrder": ["Saving Private Ryan", "Django Unchained", "Wall-E", "Back to the Future Part II"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
       }
     ]
 
