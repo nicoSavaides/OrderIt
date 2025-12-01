@@ -3053,30 +3053,6 @@
 
     [
       {
-        "prompt": "Number of Colors in Logo",
-        "items": ["Pepsi", "McDonald's", "Target", "Google"],
-        "correctOrder": ["Google", "Pepsi", "McDonald's", "Target"],
-        "topLabel": "↑ Most Colors",
-        "bottomLabel": "↓ Fewest Colors"
-      },
-      {
-        "prompt": "Company Valuation (Market Cap)",
-        "items": ["Pepsi", "McDonald's", "Target", "Google"],
-        "correctOrder": ["Google", "McDonald's", "Pepsi", "Target"],
-        "topLabel": "↑ Highest",
-        "bottomLabel": "↓ Lowest"
-      },
-      {
-        "prompt": "Year Founded",
-        "items": ["McDonald's", "Target", "Pepsi", "Google"],
-        "correctOrder": ["Pepsi", "Target", "McDonald's", "Google"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Newest"
-      }
-    ],
-
-    [
-      {
         "prompt": "Number of Bordering Countries",
         "items": ["New Zealand", "South Korea", "Mexico", "Russia"],
         "correctOrder": ["Russia", "Mexico", "South Korea", "New Zealand"],
