@@ -2989,14 +2989,14 @@
       },
       {
         "prompt": "Year Released",
-        "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
+        "items": ["Django Unchained", "Saving Private Ryan", "Back to the Future Part II", "Wall-E"],
         "correctOrder": ["Back to the Future Part II", "Saving Private Ryan", "Wall-E", "Django Unchained"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Oscar Wins",
-        "items": ["Django Unchained", "Wall-E", "Back to the Future Part II", "Saving Private Ryan"],
+        "items": ["Back to the Future Part II", "Saving Private Ryan", "Wall-E", "Django Unchained"],
         "correctOrder": ["Saving Private Ryan", "Django Unchained", "Wall-E", "Back to the Future Part II"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
