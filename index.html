@@ -1037,6 +1037,25 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
     margin-top: 60px !important;
   }
 
+
+
+/* Already-played screen: even spacing between buttons on desktop */
+#playedTodayScreen .button-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;              /* exact spacing between buttons */
+  margin-top: 80px;       /* space above the first button – tweak if you like */
+}
+
+/* Remove extra margins on the buttons themselves */
+#playedTodayScreen .button-stack button,
+#playedTodayScreen #shareScoreButton,
+#playedTodayScreen #viewStatsButton {
+  margin: 0 !important;
+}
+
+
   /*
   #playedTodayScreen button {
     font-size: 1.4em;
@@ -1048,7 +1067,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
 
   */
 
-  
+
   #viewStatsButton {
     display: block !important;
     font-size: 1.4em;
