@@ -3101,6 +3101,30 @@
 
     [
       {
+        "prompt": "Land Area",
+        "items": ["Grand Canyon", "Central Park", "Lake Tahoe", "Yosemite National Park"],
+        "correctOrder": ["Grand Canyon", "Yosemite National Park", "Lake Tahoe", "Central Park"],
+        "topLabel": "↑ Largest Area",
+        "bottomLabel": "↓ Smallest Area"
+      },
+      {
+        "prompt": "Location",
+        "items": ["Grand Canyon", "Yosemite National Park", "Lake Tahoe", "Central Park"],
+        "correctOrder": ["Lake Tahoe", "Yosemite National Park", "Grand Canyon", "Central Park"],
+        "topLabel": "↑ Most Western",
+        "bottomLabel": "↓ Most Eastern"
+      },
+      {
+        "prompt": "Annual Visitors",
+        "items": ["Lake Tahoe", "Yosemite National Park", "Grand Canyon", "Central Park"],
+        "correctOrder": ["Central Park", "Grand Canyon", "Yosemite National Park", "Lake Tahoe"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Distance from Equator",
         "items": ["Vietnam", "Greece", "Ukraine", "South Africa"],
         "correctOrder": ["Ukraine", "Greece", "South Africa", "Vietnam"],
