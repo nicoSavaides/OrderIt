@@ -3125,6 +3125,30 @@
 
     [
       {
+        "prompt": "Year",
+        "items": ["The Dark Knight", "The Breakfast Club", "Cast Away", "The Social Network"],
+        "correctOrder": ["The Breakfast Club", "Cast Away", "The Dark Knight", "The Social Network"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Budget",
+        "items": ["The Breakfast Club", "Cast Away", "The Dark Knight", "The Social Network"],
+        "correctOrder": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Gross",
+        "items": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
+        "correctOrder": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      }
+    ],
+
+    [
+      {
         "prompt": "Distance from Equator",
         "items": ["Vietnam", "Greece", "Ukraine", "South Africa"],
         "correctOrder": ["Ukraine", "Greece", "South Africa", "Vietnam"],
@@ -3168,30 +3192,6 @@
         "correctOrder": ["Canada", "Japan", "Israel", "India"],
         "topLabel": "↑ Farthest",
         "bottomLabel": "↓ Closest"
-      }
-    ],
-
-    [
-      {
-        "prompt": "Year",
-        "items": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
-        "correctOrder": ["The Breakfast Club", "Cast Away", "The Dark Knight", "The Social Network"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Budget",
-        "items": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
-        "correctOrder": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
-        "topLabel": "↑ Biggest",
-        "bottomLabel": "↓ Smallest"
-      },
-      {
-        "prompt": "Gross",
-        "items": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
-        "correctOrder": ["The Dark Knight", "Cast Away", "The Social Network", "The Breakfast Club"],
-        "topLabel": "↑ Highest Grossing",
-        "bottomLabel": "↓ Lowest Grossing"
       }
     ]
 
