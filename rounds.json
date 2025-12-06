@@ -3102,7 +3102,7 @@
     [
       {
         "prompt": "Land Area",
-        "items": ["Grand Canyon", "Central Park", "Lake Tahoe", "Yosemite National Park"],
+        "items": ["Central Park", "Grand Canyon", "Lake Tahoe", "Yosemite National Park"],
         "correctOrder": ["Grand Canyon", "Yosemite National Park", "Lake Tahoe", "Central Park"],
         "topLabel": "↑ Largest Area",
         "bottomLabel": "↓ Smallest Area"
