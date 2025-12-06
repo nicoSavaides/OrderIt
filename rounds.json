@@ -3101,6 +3101,30 @@
 
     [
       {
+        "prompt": "Average Price",
+        "items": ["Burger King Whopper", "Costco Hot Dog", "Domino’s Medium Cheese Pizza", "Chick-fil-A Nuggets (8-count)"],
+        "correctOrder": ["Domino’s Medium Cheese Pizza", "Burger King Whopper", "Chick-fil-A Nuggets (8-count)", "Costco Hot Dog"],
+        "topLabel": "↑ Most Expensive",
+        "bottomLabel": "↓ Cheapest"
+      },
+      {
+        "prompt": "Calories",
+        "items": ["Domino’s Medium Cheese Pizza", "Burger King Whopper", "Chick-fil-A Nuggets (8-count)", "Costco Hot Dog"],
+        "correctOrder": ["Domino’s Medium Cheese Pizza", "Burger King Whopper", "Costco Hot Dog", "Chick-fil-A Nuggets (8-count)"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Inception Date",
+        "items": ["Domino’s Medium Cheese Pizza", "Burger King Whopper", "Costco Hot Dog", "Chick-fil-A Nuggets (8-count)"],
+        "correctOrder": ["Burger King Whopper", "Domino’s Medium Cheese Pizza", "Chick-fil-A Nuggets (8-count)", "Costco Hot Dog"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
         "prompt": "Land Area",
         "items": ["Central Park", "Grand Canyon", "Lake Tahoe", "Yosemite National Park"],
         "correctOrder": ["Grand Canyon", "Yosemite National Park", "Lake Tahoe", "Central Park"],
