@@ -3050,7 +3050,7 @@
         "bottomLabel": "↓ Fewest Points"
       }
     ],
-    
+
     [
       {
         "prompt": "Number of Bordering Countries",
@@ -3085,14 +3085,14 @@
       },
       {
         "prompt": "Tempo (BPM)",
-        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
+        "items": ["Respect", "Hotel California", "Hey Ya!", "Old Town Road"],
         "correctOrder": ["Hey Ya!", "Hotel California", "Old Town Road", "Respect"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
       },
       {
         "prompt": "Spotify Plays",
-        "items": ["Respect", "Old Town Road", "Hotel California", "Hey Ya!"],
+        "items": ["Hey Ya!", "Hotel California", "Old Town Road", "Respect"],
         "correctOrder": ["Hotel California", "Hey Ya!", "Old Town Road", "Respect"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
