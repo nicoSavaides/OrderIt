@@ -3115,7 +3115,7 @@
         "bottomLabel": "↓ Fewest"
       },
       {
-        "prompt": "Inception Date",
+        "prompt": "Year Introduced",
         "items": ["Domino’s Medium Cheese Pizza", "Burger King Whopper", "Costco Hot Dog", "Chick-fil-A Nuggets (8-count)"],
         "correctOrder": ["Burger King Whopper", "Domino’s Medium Cheese Pizza", "Chick-fil-A Nuggets (8-count)", "Costco Hot Dog"],
         "topLabel": "↑ Earliest",
