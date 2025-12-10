@@ -3173,30 +3173,6 @@
 
     [
       {
-        "prompt": "Distance from Equator",
-        "items": ["Vietnam", "Greece", "Ukraine", "South Africa"],
-        "correctOrder": ["Ukraine", "Greece", "South Africa", "Vietnam"],
-        "topLabel": "↑ Farthest",
-        "bottomLabel": "↓ Closest"
-      },
-      {
-        "prompt": "Population",
-        "items": ["Ukraine", "Greece", "South Africa", "Vietnam"],
-        "correctOrder": ["Vietnam", "South Africa", "Ukraine", "Greece"],
-        "topLabel": "↑ Most Populated",
-        "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Number of Bordering Countries",
-        "items": ["Vietnam", "South Africa", "Ukraine", "Greece"],
-        "correctOrder": ["Ukraine", "South Africa", "Greece", "Vietnam"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
         "prompt": "Number of Bordering Countries",
         "items": ["Japan", "Canada", "Israel", "India"],
         "correctOrder": ["India", "Israel", "Canada", "Japan"],
@@ -3216,6 +3192,30 @@
         "correctOrder": ["Canada", "Japan", "Israel", "India"],
         "topLabel": "↑ Farthest",
         "bottomLabel": "↓ Closest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Distance from Equator",
+        "items": ["Vietnam", "Greece", "Ukraine", "South Africa"],
+        "correctOrder": ["Ukraine", "Greece", "South Africa", "Vietnam"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Ukraine", "Greece", "South Africa", "Vietnam"],
+        "correctOrder": ["Vietnam", "South Africa", "Ukraine", "Greece"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Number of Bordering Countries",
+        "items": ["Vietnam", "South Africa", "Ukraine", "Greece"],
+        "correctOrder": ["Ukraine", "South Africa", "Greece", "Vietnam"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
       }
     ]
 
