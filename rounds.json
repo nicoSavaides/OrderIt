@@ -3221,6 +3221,30 @@
 
     [
       {
+        "prompt": "Year Released",
+        "items": ["2001: A Space Odyssey", "La La Land", "Interstellar", "Schindler's List"],
+        "correctOrder": ["2001: A Space Odyssey", "Schindler's List", "Interstellar", "La La Land"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Year it Takes Place",
+        "items": ["2001: A Space Odyssey", "Schindler's List", "Interstellar", "La La Land"],
+        "correctOrder": ["Schindler's List", "2001: A Space Odyssey", "La La Land", "Interstellar"],
+        "topLabel": "↑ Earliest Setting",
+        "bottomLabel": "↓ Latest Setting"
+      },
+      {
+        "prompt": "Oscar Nominations",
+        "items": ["Schindler's List", "2001: A Space Odyssey", "La La Land", "Interstellar"],
+        "correctOrder": ["La La Land", "Schindler's List", "Interstellar", "2001: A Space Odyssey"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Distance from Equator",
         "items": ["Vietnam", "Greece", "Ukraine", "South Africa"],
         "correctOrder": ["Ukraine", "Greece", "South Africa", "Vietnam"],
