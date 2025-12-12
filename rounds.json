@@ -3245,6 +3245,30 @@
 
     [
       {
+        "prompt": "Total U.S. Sales",
+        "items": ["Ferrari", "Ford", "Honda", "BMW"],
+        "correctOrder": ["Ford", "Honda", "BMW", "Ferrari"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Country of Origin (A–Z)",
+        "items": ["Ford", "Honda", "BMW", "Ferrari"],
+        "correctOrder": ["BMW", "Ferrari", "Honda", "Ford"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["BMW", "Ferrari", "Honda", "Ford"],
+        "correctOrder": ["Ford", "BMW", "Ferrari", "Honda"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
         "prompt": "Distance from Equator",
         "items": ["Vietnam", "Greece", "Ukraine", "South Africa"],
         "correctOrder": ["Ukraine", "Greece", "South Africa", "Vietnam"],
