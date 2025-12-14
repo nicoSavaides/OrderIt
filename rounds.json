@@ -3276,7 +3276,7 @@
         "bottomLabel": "↓ Youngest"
       },
       {
-        "prompt": "Total Box Office Gross",
+        "prompt": "Box Office Gross (Career)",
         "items": ["Harrison Ford", "Will Smith", "Ryan Gosling", "Anne Hathaway"],
         "correctOrder": ["Will Smith", "Harrison Ford", "Ryan Gosling", "Anne Hathaway"],
         "topLabel": "↑ Highest",
