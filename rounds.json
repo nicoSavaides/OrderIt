@@ -3269,6 +3269,30 @@
 
     [
       {
+        "prompt": "Age",
+        "items": ["Anne Hathaway", "Will Smith", "Harrison Ford", "Ryan Gosling"],
+        "correctOrder": ["Harrison Ford", "Will Smith", "Ryan Gosling", "Anne Hathaway"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Total Box Office Gross",
+        "items": ["Harrison Ford", "Will Smith", "Ryan Gosling", "Anne Hathaway"],
+        "correctOrder": ["Will Smith", "Harrison Ford", "Ryan Gosling", "Anne Hathaway"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      },
+      {
+        "prompt": "Oscar Nominations",
+        "items": ["Will Smith", "Harrison Ford", "Ryan Gosling", "Anne Hathaway"],
+        "correctOrder": ["Will Smith", "Ryan Gosling", "Anne Hathaway", "Harrison Ford"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Distance from Equator",
         "items": ["Vietnam", "Greece", "Ukraine", "South Africa"],
         "correctOrder": ["Ukraine", "Greece", "South Africa", "Vietnam"],
