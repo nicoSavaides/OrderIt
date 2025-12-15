@@ -3293,6 +3293,30 @@
 
     [
       {
+        "prompt": "Year",
+        "items": ["Hurricane Katrina", "9/11 Attacks", "Hindenburg Crash", "Challenger Explosion"],
+        "correctOrder": ["Hindenburg Crash", "Challenger Explosion", "9/11 Attacks", "Hurricane Katrina"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Death Count",
+        "items": ["Hindenburg Crash", "Challenger Explosion", "9/11 Attacks", "Hurricane Katrina"],
+        "correctOrder": ["9/11 Attacks", "Hurricane Katrina", "Hindenburg Crash", "Challenger Explosion"],
+        "topLabel": "↑ Most Deaths",
+        "bottomLabel": "↓ Fewest Deaths"
+      },
+      {
+        "prompt": "Economic Damage",
+        "items": ["9/11 Attacks", "Hurricane Katrina", "Hindenburg Crash", "Challenger Explosion"],
+        "correctOrder": ["Hurricane Katrina", "9/11 Attacks", "Challenger Explosion", "Hindenburg Crash"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Least"
+      }
+    ],
+
+    [
+      {
         "prompt": "Distance from Equator",
         "items": ["Vietnam", "Greece", "Ukraine", "South Africa"],
         "correctOrder": ["Ukraine", "Greece", "South Africa", "Vietnam"],
