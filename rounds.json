@@ -3317,6 +3317,30 @@
 
     [
       {
+        "prompt": "Year Founded",
+        "items": ["Facebook", "Nvidia", "Coca-Cola", "Google"],
+        "correctOrder": ["Coca-Cola", "Nvidia", "Google", "Facebook"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Stock Ticker (A–Z)",
+        "items": ["Coca-Cola", "Nvidia", "Google", "Facebook"],
+        "correctOrder": ["Google", "Coca-Cola", "Facebook", "Nvidia"],
+        "topLabel": "↑ A",
+        "bottomLabel": "↓ Z"
+      },
+      {
+        "prompt": "Current Valuation",
+        "items": ["Google", "Coca-Cola", "Facebook", "Nvidia"],
+        "correctOrder": ["Nvidia", "Google", "Facebook", "Coca-Cola"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Distance from Equator",
         "items": ["Vietnam", "Greece", "Ukraine", "South Africa"],
         "correctOrder": ["Ukraine", "Greece", "South Africa", "Vietnam"],
