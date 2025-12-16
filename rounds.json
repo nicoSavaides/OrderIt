@@ -3327,8 +3327,8 @@
         "prompt": "Stock Ticker (A–Z)",
         "items": ["Coca-Cola", "Nvidia", "Google", "Facebook"],
         "correctOrder": ["Google", "Coca-Cola", "Facebook", "Nvidia"],
-        "topLabel": "↑ A",
-        "bottomLabel": "↓ Z"
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Current Valuation",
