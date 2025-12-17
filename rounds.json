@@ -3348,18 +3348,18 @@
         "bottomLabel": "↓ Closest"
       },
       {
-        "prompt": "Population",
+        "prompt": "Number of Bordering Countries",
         "items": ["Ukraine", "Greece", "South Africa", "Vietnam"],
+        "correctOrder": ["Ukraine", "South Africa", "Greece", "Vietnam"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest" 
+      },
+      {
+        "prompt": "Population",
+        "items": ["Ukraine", "South Africa", "Greece", "Vietnam"],
         "correctOrder": ["Vietnam", "South Africa", "Ukraine", "Greece"],
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
-      },
-      {
-        "prompt": "Number of Bordering Countries",
-        "items": ["Vietnam", "South Africa", "Ukraine", "Greece"],
-        "correctOrder": ["Ukraine", "South Africa", "Greece", "Vietnam"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
       }
     ]
 
