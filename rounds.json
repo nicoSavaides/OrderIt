@@ -3365,8 +3365,15 @@
 
     [
       {
+        "prompt": "Ride Speed",
+        "items": ["Indiana Jones Adventure", "Disneyland Railroad", "Pirates of the Caribbean", "The Incredicoaster"],
+        "correctOrder": ["The Incredicoaster", "Indiana Jones Adventure", "Disneyland Railroad", "Pirates of the Caribbean"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
         "prompt": "Opening Date",
-        "items": ["Pirates of the Caribbean", "Disneyland Railroad", "The Incredicoaster", "Indiana Jones Adventure"],
+        "items": ["The Incredicoaster", "Indiana Jones Adventure", "Disneyland Railroad", "Pirates of the Caribbean"],
         "correctOrder": ["Disneyland Railroad", "Pirates of the Caribbean", "Indiana Jones Adventure", "The Incredicoaster"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
@@ -3377,13 +3384,6 @@
         "correctOrder": ["Disneyland Railroad", "Pirates of the Caribbean", "Indiana Jones Adventure", "The Incredicoaster"],
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
-      },
-      {
-        "prompt": "Speed",
-        "items": ["Disneyland Railroad", "Pirates of the Caribbean", "Indiana Jones Adventure", "The Incredicoaster"],
-        "correctOrder": ["The Incredicoaster", "Indiana Jones Adventure", "Disneyland Railroad", "Pirates of the Caribbean"],
-        "topLabel": "↑ Fastest",
-        "bottomLabel": "↓ Slowest"
       }
     ]
 
