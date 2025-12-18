@@ -3365,7 +3365,7 @@
 
     [
       {
-        "prompt": "Opening Year",
+        "prompt": "Opening Date",
         "items": ["Pirates of the Caribbean", "Disneyland Railroad", "The Incredicoaster", "Indiana Jones Adventure"],
         "correctOrder": ["Disneyland Railroad", "Pirates of the Caribbean", "Indiana Jones Adventure", "The Incredicoaster"],
         "topLabel": "↑ Earliest",
