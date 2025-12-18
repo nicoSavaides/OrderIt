@@ -3361,6 +3361,30 @@
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       }
+    ],
+
+    [
+      {
+        "prompt": "Opening Year",
+        "items": ["Pirates of the Caribbean", "Disneyland Railroad", "The Incredicoaster", "Indiana Jones Adventure"],
+        "correctOrder": ["Disneyland Railroad", "Pirates of the Caribbean", "Indiana Jones Adventure", "The Incredicoaster"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Ride Duration",
+        "items": ["Disneyland Railroad", "Pirates of the Caribbean", "Indiana Jones Adventure", "The Incredicoaster"],
+        "correctOrder": ["Disneyland Railroad", "Pirates of the Caribbean", "Indiana Jones Adventure", "The Incredicoaster"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Speed",
+        "items": ["Disneyland Railroad", "Pirates of the Caribbean", "Indiana Jones Adventure", "The Incredicoaster"],
+        "correctOrder": ["The Incredicoaster", "Indiana Jones Adventure", "Disneyland Railroad", "Pirates of the Caribbean"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      }
     ]
 
   ]
