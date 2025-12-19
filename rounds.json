@@ -3396,7 +3396,7 @@
         "bottomLabel": "↓ Most Recent"
       },
       {
-        "prompt": "Group Act Name (A–Z)",
+        "prompt": "Musical Group (A–Z)",
         "items": ["Michael Jackson", "Justin Timberlake", "Beyoncé", "Harry Styles"],
         "correctOrder": ["Beyoncé", "Michael Jackson", "Justin Timberlake", "Harry Styles"],
         "topLabel": "↑ First Alphabetically",
