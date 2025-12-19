@@ -3385,6 +3385,30 @@
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Birth Year",
+        "items": ["Beyoncé", "Justin Timberlake", "Michael Jackson", "Harry Styles"],
+        "correctOrder": ["Michael Jackson", "Justin Timberlake", "Beyoncé", "Harry Styles"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Group Act Name (A–Z)",
+        "items": ["Michael Jackson", "Justin Timberlake", "Beyoncé", "Harry Styles"],
+        "correctOrder": ["Beyoncé", "Michael Jackson", "Justin Timberlake", "Harry Styles"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Grammy Wins",
+        "items": ["Beyoncé", "Michael Jackson", "Justin Timberlake", "Harry Styles"],
+        "correctOrder": ["Beyoncé", "Michael Jackson", "Justin Timberlake", "Harry Styles"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
