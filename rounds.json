@@ -3420,7 +3420,7 @@
         "bottomLabel": "↓ Most Eastern"
       },
       {
-        "prompt": "Nobel Prize Winners",
+        "prompt": "Nobel Prize Laureates",
         "items": ["Texas A&M", "Duke", "NYU", "Yale"],
         "correctOrder": ["Yale", "NYU", "Duke", "Texas A&M"],
         "topLabel": "↑ Most",
