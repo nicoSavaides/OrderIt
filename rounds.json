@@ -3409,6 +3409,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Location",
+        "items": ["NYU", "Duke", "Yale", "Texas A&M"],
+        "correctOrder": ["Texas A&M", "Duke", "NYU", "Yale"],
+        "topLabel": "↑ Most Western",
+        "bottomLabel": "↓ Most Eastern"
+      },
+      {
+        "prompt": "Nobel Prize Winners",
+        "items": ["Texas A&M", "Duke", "NYU", "Yale"],
+        "correctOrder": ["Yale", "NYU", "Duke", "Texas A&M"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Yale", "NYU", "Duke", "Texas A&M"],
+        "correctOrder": ["Yale", "NYU", "Duke", "Texas A&M"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
   ]
