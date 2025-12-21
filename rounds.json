@@ -3433,7 +3433,32 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ], 
+
+    [
+      {
+        "prompt": "Latitude",
+        "items": ["Dallas/Fort Worth Airport", "Frankfurt Airport", "London Heathrow Airport", "Los Angeles Airport"],
+        "correctOrder": ["London Heathrow Airport", "Frankfurt Airport", "Los Angeles Airport", "Dallas/Fort Worth Airport"],
+        "topLabel": "↑ Most Northern",
+        "bottomLabel": "↓ Most Southern"
+      },
+      {
+        "prompt": "Passenger Traffic (2024)",
+        "items": ["London Heathrow Airport", "Frankfurt Airport", "Los Angeles Airport", "Dallas/Fort Worth Airport"],
+        "correctOrder": ["Dallas/Fort Worth Airport", "London Heathrow Airport", "Los Angeles Airport", "Frankfurt Airport"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Airport Size",
+        "items": ["Dallas/Fort Worth Airport", "London Heathrow Airport", "Los Angeles Airport", "Frankfurt Airport"],
+        "correctOrder": ["Dallas/Fort Worth Airport", "Frankfurt Airport", "Los Angeles Airport", "London Heathrow Airport"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      }
     ]
+
 
   ]
 }
