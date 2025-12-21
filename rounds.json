@@ -3444,7 +3444,7 @@
         "bottomLabel": "↓ Most Southern"
       },
       {
-        "prompt": "Passenger Traffic (2024)",
+        "prompt": "Passenger Traffic",
         "items": ["London Heathrow Airport", "Frankfurt Airport", "Los Angeles Airport", "Dallas/Fort Worth Airport"],
         "correctOrder": ["Dallas/Fort Worth Airport", "London Heathrow Airport", "Los Angeles Airport", "Frankfurt Airport"],
         "topLabel": "↑ Most",
