@@ -3457,8 +3457,55 @@
         "topLabel": "↑ Largest",
         "bottomLabel": "↓ Smallest"
       }
-    ]
+    ],
 
+    [
+      {
+        "prompt": "Value",
+        "items": ["1", "8", "9", "30"],
+        "correctOrder": ["30", "9", "8", "1"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Spelled Alphabetically (A–Z)",
+        "items": ["30", "9", "8", "1"],
+        "correctOrder": ["8", "9", "1", "30"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Roman Numeral Length",
+        "items": ["8", "9", "1", "30"],
+        "correctOrder": ["8", "30", "9", "1"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year",
+        "items": ["Jaws", "Edward Scissorhands", "Goodfellas", "The Sixth Sense"],
+        "correctOrder": ["Jaws", "Edward Scissorhands", "Goodfellas", "The Sixth Sense"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Director Last Name (A–Z)",
+        "items": ["Jaws", "Edward Scissorhands", "Goodfellas", "The Sixth Sense"],
+        "correctOrder": ["Edward Scissorhands", "Goodfellas", "The Sixth Sense", "Jaws"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Oscars Won",
+        "items": ["Jaws", "Edward Scissorhands", "Goodfellas", "The Sixth Sense"],
+        "correctOrder": ["Jaws", "Goodfellas", "The Sixth Sense", "Edward Scissorhands"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ]
 
   ]
 }
