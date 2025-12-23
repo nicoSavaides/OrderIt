@@ -3485,25 +3485,25 @@
 
     [
       {
-        "prompt": "Year",
-        "items": ["Jaws", "Edward Scissorhands", "Goodfellas", "The Sixth Sense"],
-        "correctOrder": ["Jaws", "Edward Scissorhands", "Goodfellas", "The Sixth Sense"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
+        "prompt": "Latitude",
+        "items": ["United States", "Canada", "Mexico", "Brazil"],
+        "correctOrder": ["Canada", "United States", "Mexico", "Brazil"],
+        "topLabel": "↑ Most Northern",
+        "bottomLabel": "↓ Most Southern"
       },
       {
-        "prompt": "Director Last Name (A–Z)",
-        "items": ["Jaws", "Edward Scissorhands", "Goodfellas", "The Sixth Sense"],
-        "correctOrder": ["Edward Scissorhands", "Goodfellas", "The Sixth Sense", "Jaws"],
-        "topLabel": "↑ First Alphabetically",
-        "bottomLabel": "↓ Last Alphabetically"
+        "prompt": "Population",
+        "items": ["Canada", "United States", "Mexico", "Brazil"],
+        "correctOrder": ["United States", "Brazil", "Mexico", "Canada"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
-        "prompt": "Oscars Won",
-        "items": ["Jaws", "Edward Scissorhands", "Goodfellas", "The Sixth Sense"],
-        "correctOrder": ["Jaws", "Goodfellas", "The Sixth Sense", "Edward Scissorhands"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
+        "prompt": "Land Area",
+        "items": ["United States", "Brazil", "Mexico", "Canada"],
+        "correctOrder": ["Canada", "United States", "Brazil", "Mexico"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
       }
     ],
 
@@ -3530,6 +3530,7 @@
         "bottomLabel": "↓ Last Alphabetically"
       }
     ]
+
 
   ]
 }
