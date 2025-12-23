@@ -3505,6 +3505,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year",
+        "items": ["Transformers", "Goodfellas", "2001: A Space Odyssey", "Jaws"],
+        "correctOrder": ["2001: A Space Odyssey", "Jaws", "Goodfellas", "Transformers"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Age Rating",
+        "items": ["2001: A Space Odyssey", "Jaws", "Goodfellas", "Transformers"],
+        "correctOrder": ["Goodfellas", "Transformers", "Jaws", "2001: A Space Odyssey"],
+        "topLabel": "↑ Most Mature",
+        "bottomLabel": "↓ Most Family-Friendly"
+      },
+      {
+        "prompt": "Director Last Name (A–Z)",
+        "items": ["Goodfellas", "Transformers", "Jaws", "2001: A Space Odyssey"],
+        "correctOrder": ["Transformers", "2001: A Space Odyssey", "Goodfellas", "Jaws"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
     ]
 
   ]
