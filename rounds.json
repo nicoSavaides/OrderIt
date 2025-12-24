@@ -3509,6 +3509,30 @@
 
     [
       {
+        "prompt": "Calendar Order",
+        "items": ["December 25", "July 4", "February 14", "January 1"],
+        "correctOrder": ["January 1", "February 14", "July 4", "December 25"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Latest"
+      },
+      {
+        "prompt": "Holiday Name (A–Z)",
+        "items": ["January 1", "February 14", "July 4", "December 25"],
+        "correctOrder": ["December 25", "July 4", "January 1", "February 14"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Year of Origin",
+        "items": ["December 25", "July 4", "January 1", "February 14"],
+        "correctOrder": ["January 1", "February 14", "December 25", "July 4"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year",
         "items": ["Transformers", "Goodfellas", "2001: A Space Odyssey", "Jaws"],
         "correctOrder": ["2001: A Space Odyssey", "Jaws", "Goodfellas", "Transformers"],
