@@ -3534,6 +3534,30 @@
     [
       {
         "prompt": "Year",
+        "items": ["Elf", "A Christmas Story", "It's a Wonderful Life", "Home Alone"],
+        "correctOrder": ["It's a Wonderful Life", "A Christmas Story", "Home Alone", "Elf"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Main Character Age",
+        "items": ["It's a Wonderful Life", "A Christmas Story", "Home Alone", "Elf"],
+        "correctOrder": ["It's a Wonderful Life", "Elf", "A Christmas Story", "Home Alone"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Rotten Tomatoes Score",
+        "items": ["It's a Wonderful Life", "Elf", "A Christmas Story", "Home Alone"],
+        "correctOrder": ["It's a Wonderful Life", "A Christmas Story", "Elf", "Home Alone"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year",
         "items": ["Transformers", "Goodfellas", "2001: A Space Odyssey", "Jaws"],
         "correctOrder": ["2001: A Space Odyssey", "Jaws", "Goodfellas", "Transformers"],
         "topLabel": "↑ Earliest",
