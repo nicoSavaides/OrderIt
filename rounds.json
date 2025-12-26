@@ -3557,6 +3557,30 @@
 
     [
       {
+        "prompt": "Latitude",
+        "items": ["Cairo", "Amsterdam", "Vatican City", "Reykjavík"],
+        "correctOrder": ["Reykjavík", "Amsterdam", "Vatican City", "Cairo"],
+        "topLabel": "↑ Most Northern",
+        "bottomLabel": "↓ Most Southern"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Reykjavík", "Amsterdam", "Vatican City", "Cairo"],
+        "correctOrder": ["Cairo", "Amsterdam", "Reykjavík", "Vatican City"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Cairo", "Amsterdam", "Reykjavík", "Vatican City"],
+        "correctOrder": ["Cairo", "Amsterdam", "Reykjavík", "Vatican City"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year",
         "items": ["Transformers", "Goodfellas", "2001: A Space Odyssey", "Jaws"],
         "correctOrder": ["2001: A Space Odyssey", "Jaws", "Goodfellas", "Transformers"],
