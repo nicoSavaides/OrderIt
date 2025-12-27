@@ -3581,6 +3581,54 @@
 
     [
       {
+        "prompt": "Age",
+        "items": ["Samuel L. Jackson", "Morgan Freeman", "Emma Stone", "Daniel Day-Lewis"],
+        "correctOrder": ["Morgan Freeman", "Samuel L. Jackson", "Daniel Day-Lewis", "Emma Stone"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Oscars Won",
+        "items": ["Morgan Freeman", "Samuel L. Jackson", "Daniel Day-Lewis", "Emma Stone"],
+        "correctOrder": ["Daniel Day-Lewis", "Emma Stone", "Morgan Freeman", "Samuel L. Jackson"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Acting Credits",
+        "items": ["Daniel Day-Lewis", "Emma Stone", "Morgan Freeman", "Samuel L. Jackson"],
+        "correctOrder": ["Samuel L. Jackson", "Morgan Freeman", "Emma Stone", "Daniel Day-Lewis"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Birth Year",
+        "items": ["Ted Bundy", "John Wayne Gacy", "Jeffrey Dahmer", "John Wilkes Booth"],
+        "correctOrder": ["John Wilkes Booth", "John Wayne Gacy", "Ted Bundy", "Jeffrey Dahmer"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Latest"
+      },
+      {
+        "prompt": "Year of Death",
+        "items": ["Ted Bundy", "John Wayne Gacy", "Jeffrey Dahmer", "John Wilkes Booth"],
+        "correctOrder": ["John Wilkes Booth", "Ted Bundy", "John Wayne Gacy", "Jeffrey Dahmer"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Latest"
+      },
+      {
+        "prompt": "Victim Count",
+        "items": ["Ted Bundy", "John Wayne Gacy", "Jeffrey Dahmer", "John Wilkes Booth"],
+        "correctOrder": ["John Wayne Gacy", "Ted Bundy", "Jeffrey Dahmer", "John Wilkes Booth"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Least"
+      }
+    ],
+
+    [
+      {
         "prompt": "Year",
         "items": ["Transformers", "Goodfellas", "2001: A Space Odyssey", "Jaws"],
         "correctOrder": ["2001: A Space Odyssey", "Jaws", "Goodfellas", "Transformers"],
