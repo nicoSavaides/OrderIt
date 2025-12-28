@@ -3605,14 +3605,14 @@
 
     [
       {
-        "prompt": "Team Name (A–Z)",
+        "prompt": "Team City (A–Z)",
         "items": ["49ers", "Bears", "Dolphins", "Packers"],
         "correctOrder": ["Bears", "Packers", "Dolphins", "49ers"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
-        "prompt": "Location",
+        "prompt": "Team Location",
         "items": ["Bears", "Packers", "Dolphins", "49ers"],
         "correctOrder": ["49ers", "Packers", "Bears", "Dolphins"],
         "topLabel": "↑ Most Western",
