@@ -3605,6 +3605,30 @@
 
     [
       {
+        "prompt": "Team Name (A–Z)",
+        "items": ["49ers", "Bears", "Dolphins", "Packers"],
+        "correctOrder": ["Bears", "Packers", "Dolphins", "49ers"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Location",
+        "items": ["Bears", "Packers", "Dolphins", "49ers"],
+        "correctOrder": ["49ers", "Packers", "Bears", "Dolphins"],
+        "topLabel": "↑ Most Western",
+        "bottomLabel": "↓ Most Eastern"
+      },
+      {
+        "prompt": "Super Bowl Wins",
+        "items": ["49ers", "Packers", "Bears", "Dolphins"],
+        "correctOrder": ["49ers", "Packers", "Dolphins", "Bears"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
         "prompt": "Birth Year",
         "items": ["Ted Bundy", "John Wayne Gacy", "Jeffrey Dahmer", "John Wilkes Booth"],
         "correctOrder": ["John Wilkes Booth", "John Wayne Gacy", "Ted Bundy", "Jeffrey Dahmer"],
