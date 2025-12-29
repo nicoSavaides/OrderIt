@@ -3630,22 +3630,22 @@
     [
       {
         "prompt": "Birth Year",
-        "items": ["Ted Bundy", "John Wayne Gacy", "Jeffrey Dahmer", "John Wilkes Booth"],
-        "correctOrder": ["John Wilkes Booth", "John Wayne Gacy", "Ted Bundy", "Jeffrey Dahmer"],
+        "items": ["Ted Bundy", "Charles Manson", "Jeffrey Dahmer", "John Wilkes Booth"],
+        "correctOrder": ["John Wilkes Booth", "Charles Manson", "Ted Bundy", "Jeffrey Dahmer"],
         "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Latest"
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Year of Death",
-        "items": ["Ted Bundy", "John Wayne Gacy", "Jeffrey Dahmer", "John Wilkes Booth"],
-        "correctOrder": ["John Wilkes Booth", "Ted Bundy", "John Wayne Gacy", "Jeffrey Dahmer"],
+        "items": ["John Wilkes Booth", "Charles Manson", "Ted Bundy", "Jeffrey Dahmer"],
+        "correctOrder": ["John Wilkes Booth", "Ted Bundy", "Jeffrey Dahmer", "Charles Manson"],
         "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Latest"
+        "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Victim Count",
-        "items": ["Ted Bundy", "John Wayne Gacy", "Jeffrey Dahmer", "John Wilkes Booth"],
-        "correctOrder": ["John Wayne Gacy", "Ted Bundy", "Jeffrey Dahmer", "John Wilkes Booth"],
+        "items": ["John Wilkes Booth", "Ted Bundy", "Jeffrey Dahmer", "Charles Manson"],
+        "correctOrder": ["Ted Bundy", "Jeffrey Dahmer", "Charles Manson", "John Wilkes Booth"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Least"
       }
