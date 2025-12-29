@@ -3647,7 +3647,7 @@
         "items": ["John Wilkes Booth", "Ted Bundy", "Jeffrey Dahmer", "Charles Manson"],
         "correctOrder": ["Ted Bundy", "Jeffrey Dahmer", "Charles Manson", "John Wilkes Booth"],
         "topLabel": "↑ Most",
-        "bottomLabel": "↓ Least"
+        "bottomLabel": "↓ Fewest"
       }
     ],
 
