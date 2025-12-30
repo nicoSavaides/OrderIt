@@ -3661,14 +3661,14 @@
       },
       {
         "prompt": "Grammys Won",
-        "items": ["Eminem", "Drake", "Kanye West", "Post Malone"],
+        "items": ["Eminem", "Kanye West", "Drake", "Post Malone"],
         "correctOrder": ["Kanye West", "Eminem", "Drake", "Post Malone"],
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       },
       {
         "prompt": "Real First Name (A–Z)",
-        "items": ["Eminem", "Drake", "Kanye West", "Post Malone"],
+        "items": ["Kanye West", "Eminem", "Drake", "Post Malone"],
         "correctOrder": ["Drake", "Post Malone", "Kanye West", "Eminem"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
