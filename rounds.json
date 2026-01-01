@@ -3717,7 +3717,7 @@
       {
         "prompt": "Heart Rate",
         "items": ["Dolphin", "Rat", "Horse", "Giant Panda"],
-        "correctOrder": ["Dolphin", "Rat", "Horse", "Giant Panda"],
+        "correctOrder": ["Rat", "Dolphin", "Horse", "Giant Panda"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
       }
