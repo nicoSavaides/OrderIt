@@ -3697,7 +3697,32 @@
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       }
+    ],
+
+    [
+      {
+        "prompt": "Top Speed",
+        "items": ["Dolphin", "Rat", "Horse", "Giant Panda"],
+        "correctOrder": ["Horse", "Dolphin", "Giant Panda", "Rat"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Intelligence",
+        "items": ["Horse", "Dolphin", "Giant Panda", "Rat"],
+        "correctOrder": ["Dolphin", "Rat", "Horse", "Giant Panda"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      },
+      {
+        "prompt": "Heart Rate",
+        "items": ["Dolphin", "Rat", "Horse", "Giant Panda"],
+        "correctOrder": ["Dolphin", "Rat", "Horse", "Giant Panda"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      }
     ]
+
 
   ]
 }
