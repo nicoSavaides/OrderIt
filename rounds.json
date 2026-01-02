@@ -3721,8 +3721,31 @@
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
       }
-    ]
+    ],
 
+    [
+      {
+        "prompt": "Pro Sports Teams",
+        "items": ["Boise", "Detroit", "Charlotte", "Los Angeles"],
+        "correctOrder": ["Los Angeles", "Detroit", "Charlotte", "Boise"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Los Angeles", "Detroit", "Charlotte", "Boise"],
+        "correctOrder": ["Los Angeles", "Charlotte", "Detroit", "Boise"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "State Name (A–Z)",
+        "items": ["Los Angeles", "Charlotte", "Detroit", "Boise"],
+        "correctOrder": ["Los Angeles", "Boise", "Detroit", "Charlotte"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
+    ]
 
   ]
 }
