@@ -3745,7 +3745,58 @@
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       }
+    ],
+
+    [
+      {
+        "prompt": "Total Global Sales",
+        "items": [ "Toyota", "Volkswagen", "Lamborghini", "Tesla"],
+        "correctOrder": ["Toyota", "Volkswagen", "Tesla", "Lamborghini"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Country of Origin (A–Z)",
+        "items": ["Toyota", "Volkswagen", "Tesla", "Lamborghini"],
+        "correctOrder": ["Volkswagen", "Lamborghini", "Toyota", "Tesla"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Volkswagen", "Lamborghini", "Toyota", "Tesla"],
+        "correctOrder": ["Volkswagen", "Toyota", "Lamborghini", "Tesla"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Sport (A–Z)",
+        "items": ["LeBron James", "Tom Brady", "Lionel Messi", "Tiger Woods"],
+        "correctOrder": ["LeBron James", "Tom Brady", "Tiger Woods", "Lionel Messi"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["LeBron James", "Tom Brady", "Lionel Messi", "Tiger Woods"],
+        "correctOrder": ["Tiger Woods", "LeBron James", "Lionel Messi", "Tom Brady"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      },
+      {
+        "prompt": "Jersey Number",
+        "items": ["LeBron James", "Tom Brady", "Lionel Messi", "Tiger Woods"],
+        "correctOrder": ["Lionel Messi", "Tiger Woods", "Tom Brady", "LeBron James"],
+        "topLabel": "↑ Lowest",
+        "bottomLabel": "↓ Highest"
+      }
     ]
+
+
+
 
   ]
 }
