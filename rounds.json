@@ -3773,27 +3773,28 @@
 
     [
       {
-        "prompt": "Sport (A–Z)",
-        "items": ["LeBron James", "Tom Brady", "Lionel Messi", "Tiger Woods"],
-        "correctOrder": ["LeBron James", "Tom Brady", "Tiger Woods", "Lionel Messi"],
+        "prompt": "Sport Name (A–Z)",
+        "items": ["LeBron James", "Tom Brady", "Lionel Messi", "Shohei Ohtani"],
+        "correctOrder": ["Shohei Ohtani", "LeBron James", "Tom Brady", "Lionel Messi"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
-        "prompt": "Net Worth",
-        "items": ["LeBron James", "Tom Brady", "Lionel Messi", "Tiger Woods"],
-        "correctOrder": ["Tiger Woods", "LeBron James", "Lionel Messi", "Tom Brady"],
-        "topLabel": "↑ Highest",
-        "bottomLabel": "↓ Lowest"
+        "prompt": "Age",
+        "items": ["Shohei Ohtani", "LeBron James", "Tom Brady", "Lionel Messi"],
+        "correctOrder": ["Tom Brady", "LeBron James", "Lionel Messi", "Shohei Ohtani"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Jersey Number",
-        "items": ["LeBron James", "Tom Brady", "Lionel Messi", "Tiger Woods"],
-        "correctOrder": ["Lionel Messi", "Tiger Woods", "Tom Brady", "LeBron James"],
-        "topLabel": "↑ Lowest",
-        "bottomLabel": "↓ Highest"
+        "items": ["Tom Brady", "LeBron James", "Lionel Messi", "Shohei Ohtani"],
+        "correctOrder": ["LeBron James", "Shohei Ohtani", "Tom Brady", "Lionel Messi"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
       }
     ]
+
 
 
 
