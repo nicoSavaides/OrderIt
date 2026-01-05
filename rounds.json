@@ -3817,6 +3817,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Egypt", "Japan", "Greece", "United States"],
+        "correctOrder": ["United States", "Japan", "Egypt", "Greece"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Capital City (A–Z)",
+        "items": ["United States", "Japan", "Egypt", "Greece"],
+        "correctOrder": ["Greece", "Egypt", "Japan", "United States"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Olympics Hosted",
+        "items": ["Greece", "Egypt", "Japan", "United States"],
+        "correctOrder": ["United States", "Japan", "Greece", "Egypt"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
