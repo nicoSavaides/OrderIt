@@ -3793,11 +3793,31 @@
         "topLabel": "↑ Highest",
         "bottomLabel": "↓ Lowest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Value",
+        "items": ["16", "10", "13", "20"],
+        "correctOrder": ["20", "16", "13", "10"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Roman Numeral Length",
+        "items": ["20", "16", "13", "10"],
+        "correctOrder": ["13", "16", "20", "10"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Number of Factors",
+        "items": ["13", "16", "20", "10"],
+        "correctOrder": ["20", "16", "10", "13"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
-
-
-
-
 
   ]
 }
