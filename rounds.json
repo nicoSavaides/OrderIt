@@ -3824,8 +3824,8 @@
         "prompt": "Population",
         "items": ["Egypt", "Japan", "Greece", "United States"],
         "correctOrder": ["United States", "Japan", "Egypt", "Greece"],
-        "topLabel": "↑ Largest",
-        "bottomLabel": "↓ Smallest"
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
       },
       {
         "prompt": "Capital City (A–Z)",
