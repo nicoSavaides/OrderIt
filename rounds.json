@@ -3841,7 +3841,32 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Timothée Chalamet", "Denzel Washington", "Meryl Streep", "Natalie Portman"],
+        "correctOrder": ["Meryl Streep", "Denzel Washington", "Natalie Portman", "Timothée Chalamet"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Meryl Streep", "Denzel Washington", "Natalie Portman", "Timothée Chalamet"],
+        "correctOrder": ["Denzel Washington", "Timothée Chalamet", "Meryl Streep", "Natalie Portman"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Oscar Wins",
+        "items": ["Denzel Washington", "Timothée Chalamet", "Meryl Streep", "Natalie Portman"],
+        "correctOrder": ["Meryl Streep", "Denzel Washington", "Natalie Portman", "Timothée Chalamet"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
+
 
   ]
 }
