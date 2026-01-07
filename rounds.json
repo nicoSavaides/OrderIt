@@ -3865,8 +3865,55 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
-    ]
+    ],
 
+    [
+      {
+        "prompt": "Height",
+        "items": ["Great Wall of China", "Sears Tower", "Parthenon", "Buckingham Palace"],
+        "correctOrder": ["Sears Tower", "Buckingham Palace", "Parthenon", "Great Wall of China"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Country (A–Z)",
+        "items": ["Sears Tower", "Buckingham Palace", "Parthenon", "Great Wall of China"],
+        "correctOrder": ["Great Wall of China", "Parthenon", "Buckingham Palace", "Sears Tower"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Year Built",
+        "items": ["Great Wall of China", "Parthenon", "Buckingham Palace", "Sears Tower"],
+        "correctOrder": ["Parthenon", "Great Wall of China", "Buckingham Palace", "Sears Tower"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Year",
+        "items": ["Shape of You", "Sweet Child o' Mine", "Uptown Funk", "Fix You"],
+        "correctOrder": ["Sweet Child o' Mine", "Fix You", "Uptown Funk", "Shape of You"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "BPM",
+        "items": ["Sweet Child o' Mine", "Fix You", "Uptown Funk", "Shape of You"],
+        "correctOrder": ["Sweet Child o' Mine", "Uptown Funk", "Shape of You", "Fix You"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Artist (A–Z)",
+        "items": ["Sweet Child o' Mine", "Uptown Funk", "Shape of You", "Fix You"],
+        "correctOrder": ["Fix You", "Shape of You", "Sweet Child o' Mine", "Uptown Funk"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
+    ]
 
   ]
 }
