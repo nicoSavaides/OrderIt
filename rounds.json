@@ -3913,7 +3913,32 @@
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       }
+    ],
+
+    [
+      {
+        "prompt": "Release Year",
+        "items": ["Halo: Combat Evolved", "Minecraft", "Grand Theft Auto V", "Super Mario Bros."],
+        "correctOrder": ["Super Mario Bros.", "Halo: Combat Evolved", "Minecraft", "Grand Theft Auto V"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Total Copies Sold",
+        "items": ["Super Mario Bros.", "Halo: Combat Evolved", "Minecraft", "Grand Theft Auto V"],
+        "correctOrder": ["Minecraft", "Grand Theft Auto V", "Super Mario Bros.", "Halo: Combat Evolved"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Number of Games in Series",
+        "items": ["Minecraft", "Grand Theft Auto V", "Super Mario Bros.", "Halo: Combat Evolved"],
+        "correctOrder": ["Super Mario Bros.", "Grand Theft Auto V", "Halo: Combat Evolved", "Minecraft"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
+
 
   ]
 }
