@@ -3937,8 +3937,31 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
-    ]
+    ],
 
+    [
+      {
+        "prompt": "Year",
+        "items": ["West Side Story", "Dallas Buyers Club", "Titanic", "Argo"],
+        "correctOrder": ["West Side Story", "Titanic", "Argo", "Dallas Buyers Club"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Year it Takes Place",
+        "items": ["West Side Story", "Titanic", "Argo", "Dallas Buyers Club"],
+        "correctOrder": ["Titanic", "West Side Story", "Argo", "Dallas Buyers Club"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Oscar Nominations",
+        "items": ["Titanic", "West Side Story", "Argo", "Dallas Buyers Club"],
+        "correctOrder": ["Titanic", "West Side Story", "Argo", "Dallas Buyers Club"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ]
 
   ]
 }
