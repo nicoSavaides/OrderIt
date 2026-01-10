@@ -3931,7 +3931,7 @@
         "bottomLabel": "↓ Fewest"
       },
       {
-        "prompt": "Number of Games in Series",
+        "prompt": "Games in Series",
         "items": ["Minecraft", "Grand Theft Auto V", "Super Mario Bros.", "Halo: Combat Evolved"],
         "correctOrder": ["Super Mario Bros.", "Grand Theft Auto V", "Halo: Combat Evolved", "Minecraft"],
         "topLabel": "↑ Most",
