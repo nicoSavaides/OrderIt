@@ -3961,7 +3961,34 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Size",
+        "items": ["Great White Shark", "Sperm Whale", "Sea Turtle", "Bottlenose Dolphin"],
+        "correctOrder": ["Sperm Whale", "Great White Shark", "Bottlenose Dolphin", "Sea Turtle"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Number of Teeth",
+        "items": ["Sperm Whale", "Great White Shark", "Bottlenose Dolphin", "Sea Turtle"],
+        "correctOrder": ["Great White Shark", "Bottlenose Dolphin", "Sperm Whale", "Sea Turtle"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Average Diving Depth",
+        "items": ["Great White Shark", "Bottlenose Dolphin", "Sperm Whale", "Sea Turtle"],
+        "correctOrder": ["Bottlenose Dolphin", "Sea Turtle", "Great White Shark", "Sperm Whale"],
+        "topLabel": "↑ Shallowest",
+        "bottomLabel": "↓ Deepest"
+      }
+  
     ]
+
+
 
   ]
 }
