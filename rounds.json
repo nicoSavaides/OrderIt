@@ -3984,11 +3984,8 @@
         "correctOrder": ["Bottlenose Dolphin", "Sea Turtle", "Great White Shark", "Sperm Whale"],
         "topLabel": "↑ Shallowest",
         "bottomLabel": "↓ Deepest"
-      }
-  
+      }  
     ]
-
-
 
   ]
 }
