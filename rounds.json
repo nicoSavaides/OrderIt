@@ -3985,6 +3985,30 @@
         "topLabel": "↑ Shallowest",
         "bottomLabel": "↓ Deepest"
       }  
+    ],
+
+    [
+      {
+        "prompt": "Founder First Name (A–Z)",
+        "items": ["Apple", "Microsoft", "Amazon", "Tesla"],
+        "correctOrder": ["Microsoft", "Tesla", "Amazon", "Apple"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Microsoft", "Tesla", "Amazon", "Apple"],
+        "correctOrder": ["Microsoft", "Apple", "Amazon", "Tesla"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Market Cap",
+        "items": ["Microsoft", "Apple", "Amazon", "Tesla"],
+        "correctOrder": ["Apple", "Microsoft", "Amazon", "Tesla"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
     ]
 
   ]
