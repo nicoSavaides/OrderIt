@@ -4009,7 +4009,32 @@
         "topLabel": "↑ Highest",
         "bottomLabel": "↓ Lowest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Latitude",
+        "items": ["Denver", "Miami", "Mexico City", "Amsterdam"],
+        "correctOrder": ["Amsterdam", "Denver", "Miami", "Mexico City"],
+        "topLabel": "↑ Farthest North",
+        "bottomLabel": "↓ Farthest South"
+      },
+      {
+        "prompt": "Elevation",
+        "items": ["Amsterdam", "Denver", "Miami", "Mexico City"],
+        "correctOrder": ["Mexico City", "Denver", "Amsterdam", "Miami"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Mexico City", "Denver", "Amsterdam", "Miami"],
+        "correctOrder": ["Amsterdam", "Mexico City", "Denver", "Miami"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
+
 
   ]
 }
