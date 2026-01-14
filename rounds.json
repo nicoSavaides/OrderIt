@@ -4033,6 +4033,30 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Roster Size",
+        "items": ["Los Angeles Lakers", "Dallas Cowboys", "New York Yankees", "Manchester United"],
+        "correctOrder": ["Dallas Cowboys", "New York Yankees", "Manchester United", "Los Angeles Lakers"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Games Played per Season",
+        "items": ["Dallas Cowboys", "New York Yankees", "Manchester United", "Los Angeles Lakers"],
+        "correctOrder": ["New York Yankees", "Los Angeles Lakers", "Manchester United", "Dallas Cowboys"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Championships Won",
+        "items": ["New York Yankees", "Los Angeles Lakers", "Manchester United", "Dallas Cowboys"],
+        "correctOrder": ["New York Yankees", "Manchester United", "Los Angeles Lakers", "Dallas Cowboys"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
 
