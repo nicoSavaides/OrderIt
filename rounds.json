@@ -4057,6 +4057,29 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+    [
+      {
+        "prompt": "Real Identity (A–Z)",
+        "items": ["Spider-Man", "Iron Man", "Batman", "Superman"],
+        "correctOrder": ["Batman", "Superman", "Spider-Man", "Iron Man"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Live-Action Standalone Films",
+        "items": ["Batman", "Superman", "Spider-Man", "Iron Man"],
+        "correctOrder": ["Batman", "Spider-Man", "Superman", "Iron Man"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "First Comic Appearance",
+        "items": ["Batman", "Spider-Man", "Superman", "Iron Man"],
+        "correctOrder": ["Superman", "Batman", "Spider-Man", "Iron Man"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
 
