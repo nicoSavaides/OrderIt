@@ -4080,8 +4080,31 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
-    ]
+    ],
 
+    [
+      {
+        "prompt": "Films in Series",
+        "items": ["Jaws", "Star Wars", "The Matrix", "Jurassic Park"],
+        "correctOrder": ["Star Wars", "Jurassic Park", "The Matrix", "Jaws"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "First Movie Release Year",
+        "items": ["Star Wars", "Jurassic Park", "The Matrix", "Jaws"],
+        "correctOrder": ["Jaws", "Star Wars", "Jurassic Park", "The Matrix"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Total Box Office",
+        "items": ["Jaws", "Star Wars", "Jurassic Park", "The Matrix"],
+        "correctOrder": ["Star Wars", "Jurassic Park", "The Matrix", "Jaws"],
+        "topLabel": "↑ Highest Gross",
+        "bottomLabel": "↓ Lowest Gross"
+      }
+    ]
 
   ]
 }
