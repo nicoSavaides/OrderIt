@@ -4060,7 +4060,7 @@
     ],
     [
       {
-        "prompt": "Real Identity (A–Z)",
+        "prompt": "First Name (A–Z)",
         "items": ["Spider-Man", "Iron Man", "Batman", "Superman"],
         "correctOrder": ["Batman", "Superman", "Spider-Man", "Iron Man"],
         "topLabel": "↑ First Alphabetically",
