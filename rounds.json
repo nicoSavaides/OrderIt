@@ -4104,6 +4104,30 @@
         "topLabel": "↑ Highest Gross",
         "bottomLabel": "↓ Lowest Gross"
       }
+    ],
+
+    [
+      {
+        "prompt": "Average Temperature",
+        "items": ["Spain", "Egypt", "Canada", "Germany"],
+        "correctOrder": ["Egypt", "Spain", "Germany", "Canada"],
+        "topLabel": "↑ Warmest",
+        "bottomLabel": "↓ Coldest"
+      },
+      {
+        "prompt": "Capital City (A–Z)",
+        "items": ["Egypt", "Spain", "Germany", "Canada"],
+        "correctOrder": ["Germany", "Egypt", "Spain", "Canada"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "GDP",
+        "items": ["Germany", "Egypt", "Spain", "Canada"],
+        "correctOrder": ["Germany", "Canada", "Spain", "Egypt"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
     ]
 
   ]
