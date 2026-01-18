@@ -4128,6 +4128,30 @@
         "topLabel": "↑ Highest",
         "bottomLabel": "↓ Lowest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Alphabetical Order",
+        "items": ["Netflix", "Amazon Prime", "Disney+", "Hulu"],
+        "correctOrder": ["Amazon Prime", "Disney+", "Hulu", "Netflix"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Launch Year",
+        "items": ["Amazon Prime", "Disney+", "Hulu", "Netflix"],
+        "correctOrder": ["Netflix", "Hulu", "Amazon Prime", "Disney+"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Monthly Active Users",
+        "items": ["Netflix", "Hulu", "Amazon Prime", "Disney+"],
+        "correctOrder": ["Netflix", "Amazon Prime", "Disney+", "Hulu"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
