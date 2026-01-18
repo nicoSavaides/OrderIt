@@ -4146,7 +4146,7 @@
         "bottomLabel": "↓ Most Recent"
       },
       {
-        "prompt": "Monthly Active Users",
+        "prompt": "Users",
         "items": ["Netflix", "Hulu", "Amazon Prime", "Disney+"],
         "correctOrder": ["Netflix", "Amazon Prime", "Disney+", "Hulu"],
         "topLabel": "↑ Most",
