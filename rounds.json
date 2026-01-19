@@ -4152,6 +4152,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Main Character Age",
+        "items": ["The Queen's Gambit", "Breaking Bad", "Curb Your Enthusiasm", "Mad Men"],
+        "correctOrder": ["Curb Your Enthusiasm", "Breaking Bad", "Mad Men", "The Queen's Gambit"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Year Premiered",
+        "items": ["Curb Your Enthusiasm", "Breaking Bad", "Mad Men", "The Queen's Gambit"],
+        "correctOrder": ["Curb Your Enthusiasm", "Mad Men", "Breaking Bad", "The Queen's Gambit"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Emmy Nominations",
+        "items": ["Curb Your Enthusiasm", "Mad Men", "Breaking Bad", "The Queen's Gambit"],
+        "correctOrder": ["Mad Men", "Breaking Bad", "Curb Your Enthusiasm", "The Queen's Gambit"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
