@@ -4176,6 +4176,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Musical Artist (A–Z)",
+        "items": ["Thriller", "Abbey Road", "The Dark Side of the Moon", "Back in Black"],
+        "correctOrder": ["Back in Black", "Abbey Road", "Thriller", "The Dark Side of the Moon"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Album Release Year",
+        "items": ["Back in Black", "Abbey Road", "Thriller", "The Dark Side of the Moon"],
+        "correctOrder": ["Abbey Road", "The Dark Side of the Moon", "Back in Black", "Thriller"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Copies Sold",
+        "items": ["Abbey Road", "The Dark Side of the Moon", "Back in Black", "Thriller"],
+        "correctOrder": ["Thriller", "Back in Black", "The Dark Side of the Moon", "Abbey Road"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
