@@ -4187,11 +4187,11 @@
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
-        "prompt": "Album Release Year",
+        "prompt": "Release Year",
         "items": ["Back in Black", "Abbey Road", "Thriller", "The Dark Side of the Moon"],
         "correctOrder": ["Abbey Road", "The Dark Side of the Moon", "Back in Black", "Thriller"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
+        "topLabel": "↑ Earliest Album",
+        "bottomLabel": "↓ Most Recent Album"
       },
       {
         "prompt": "Copies Sold",
