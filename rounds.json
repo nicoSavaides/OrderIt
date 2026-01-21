@@ -4200,6 +4200,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year Retired",
+        "items": ["Tom Brady", "Peyton Manning", "Jerry Rice", "Rob Gronkowski"],
+        "correctOrder": ["Jerry Rice", "Peyton Manning", "Rob Gronkowski", "Tom Brady"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Super Bowl Rings",
+        "items": ["Jerry Rice", "Peyton Manning", "Rob Gronkowski", "Tom Brady"],
+        "correctOrder": ["Tom Brady", "Rob Gronkowski", "Jerry Rice", "Peyton Manning"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Tom Brady", "Rob Gronkowski", "Jerry Rice", "Peyton Manning"],
+        "correctOrder": ["Rob Gronkowski", "Peyton Manning", "Tom Brady", "Jerry Rice"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      }
     ]
 
   ]
