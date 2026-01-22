@@ -4224,6 +4224,30 @@
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Olympic Gold Medals",
+        "items": ["United Kingdom", "Sweden", "Pakistan", "United States"],
+        "correctOrder": ["United States", "United Kingdom", "Sweden", "Pakistan"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Nuclear Warheads",
+        "items": ["United States", "United Kingdom", "Sweden", "Pakistan"],
+        "correctOrder": ["United States", "United Kingdom", "Pakistan", "Sweden"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["United States", "United Kingdom", "Pakistan", "Sweden"],
+        "correctOrder": ["United States", "Pakistan", "United Kingdom", "Sweden"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      }
     ]
 
   ]
