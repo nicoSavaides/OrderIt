@@ -4248,7 +4248,32 @@
         "topLabel": "↑ Most Populated",
         "bottomLabel": "↓ Least Populated"
       }
+    ],
+
+    [
+      {
+        "prompt": "Continent (A–Z)",
+        "items": ["Nile River", "Amazon River", "Mississippi River", "Yangtze River"],
+        "correctOrder": ["Nile River", "Yangtze River", "Mississippi River", "Amazon River"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Latitude of Source",
+        "items": ["Nile River", "Yangtze River", "Mississippi River", "Amazon River"],
+        "correctOrder": ["Mississippi River", "Yangtze River", "Nile River", "Amazon River"],
+        "topLabel": "↑ Most Northern",
+        "bottomLabel": "↓ Most Southern"
+      },
+      {
+        "prompt": "Length",
+        "items": ["Mississippi River", "Yangtze River", "Nile River", "Amazon River"],
+        "correctOrder": ["Nile River", "Amazon River", "Yangtze River", "Mississippi River"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
     ]
+
 
   ]
 }
