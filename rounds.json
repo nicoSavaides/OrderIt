@@ -4272,6 +4272,30 @@
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "First Released",
+        "items": ["Bugatti Veyron", "Lamborghini Countach", "Ford Model T", "Ferrari F40"],
+        "correctOrder": ["Ford Model T", "Lamborghini Countach", "Ferrari F40", "Bugatti Veyron"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Ford Model T", "Lamborghini Countach", "Ferrari F40", "Bugatti Veyron"],
+        "correctOrder": ["Bugatti Veyron", "Ferrari F40", "Lamborghini Countach", "Ford Model T"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Engine Cylinders",
+        "items": ["Bugatti Veyron", "Ferrari F40", "Lamborghini Countach", "Ford Model T"],
+        "correctOrder": ["Bugatti Veyron", "Lamborghini Countach", "Ferrari F40", "Ford Model T"],
+        "topLabel": "↑ Most Cylinders",
+        "bottomLabel": "↓ Fewest Cylinders"
+      }
     ]
 
 
