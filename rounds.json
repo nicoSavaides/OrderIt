@@ -4296,8 +4296,31 @@
         "topLabel": "↑ Most Cylinders",
         "bottomLabel": "↓ Fewest Cylinders"
       }
-    ]
+    ],
 
+    [
+      {
+        "prompt": "Distance from the Sun",
+        "items": ["Earth", "Mars", "Jupiter", "Saturn"],
+        "correctOrder": ["Earth", "Mars", "Jupiter", "Saturn"],
+        "topLabel": "↑ Closest",
+        "bottomLabel": "↓ Furthest"
+      },
+      {
+        "prompt": "Planet Diameter",
+        "items": ["Earth", "Mars", "Jupiter", "Saturn"],
+        "correctOrder": ["Jupiter", "Saturn", "Earth", "Mars"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Number of Moons",
+        "items": ["Jupiter", "Saturn", "Earth", "Mars"],
+        "correctOrder": ["Saturn", "Jupiter", "Mars", "Earth"],
+        "topLabel": "↑ Most Moons",
+        "bottomLabel": "↓ Fewest Moons"
+      }
+    ]
 
   ]
 }
