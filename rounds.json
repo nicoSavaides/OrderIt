@@ -4300,7 +4300,7 @@
 
     [
       {
-        "prompt": "Distance from the Sun",
+        "prompt": "Distance from Sun",
         "items": ["Earth", "Mars", "Jupiter", "Saturn"],
         "correctOrder": ["Earth", "Mars", "Jupiter", "Saturn"],
         "topLabel": "↑ Closest",
