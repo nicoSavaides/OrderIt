@@ -4320,7 +4320,32 @@
         "topLabel": "↑ Most Moons",
         "bottomLabel": "↓ Fewest Moons"
       }
+    ],
+
+    [
+      {
+        "prompt": "Height Above Sea Level",
+        "items": ["Denali", "Mount Everest", "Mount St. Helens", "K2"],
+        "correctOrder": ["Mount Everest", "K2", "Denali", "Mount St. Helens"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Latitude",
+        "items": ["Mount Everest", "K2", "Denali", "Mount St. Helens"],
+        "correctOrder": ["Denali", "Mount St. Helens", "K2", "Mount Everest"],
+        "topLabel": "↑ Furthest North",
+        "bottomLabel": "↓ Furthest South"
+      },
+      {
+        "prompt": "Year First Summited",
+        "items": ["Denali", "Mount St. Helens", "K2", "Mount Everest"],
+        "correctOrder": ["Mount St. Helens", "Denali", "Mount Everest", "K2"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
+
 
   ]
 }
