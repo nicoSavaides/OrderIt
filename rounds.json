@@ -4344,6 +4344,30 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Egg Size",
+        "items": ["Emu", "Kiwi", "Chicken", "Ostrich"],
+        "correctOrder": ["Ostrich", "Emu", "Kiwi", "Chicken"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Adult Height",
+        "items": ["Ostrich", "Emu", "Kiwi", "Chicken"],
+        "correctOrder": ["Ostrich", "Emu", "Chicken", "Kiwi"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Eggs Laid Per Year",
+        "items": ["Ostrich", "Emu", "Chicken", "Kiwi"],
+        "correctOrder": ["Chicken", "Ostrich", "Emu", "Kiwi"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
 
