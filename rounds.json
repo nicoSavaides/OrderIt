@@ -4368,8 +4368,31 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
-    ]
+    ],
 
+    [
+      {
+        "prompt": "First Name (A–Z)",
+        "items": ["The Greek Freak", "King James", "Black Mamba", "MJ"],
+        "correctOrder": ["Black Mamba", "MJ", "King James", "The Greek Freak"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Birth Year",
+        "items": ["Black Mamba", "MJ", "King James", "The Greek Freak"],
+        "correctOrder": ["MJ", "Black Mamba", "King James", "The Greek Freak"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "NBA Seasons Played",
+        "items": ["MJ", "Black Mamba", "King James", "The Greek Freak"],
+        "correctOrder": ["King James", "Black Mamba", "MJ", "The Greek Freak"],
+        "topLabel": "↑ Most Seasons",
+        "bottomLabel": "↓ Fewest Seasons"
+      }
+    ]
 
   ]
 }
