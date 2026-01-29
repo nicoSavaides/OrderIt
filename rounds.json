@@ -4373,14 +4373,14 @@
     [
       {
         "prompt": "First Name (A–Z)",
-        "items": ["The Greek Freak", "King James", "Black Mamba", "MJ"],
-        "correctOrder": ["Black Mamba", "MJ", "King James", "The Greek Freak"],
+        "items": ["King James", "MJ", "Black Mamba", "The Greek Freak"],
+        "correctOrder": ["The Greek Freak", "Black Mamba", "King James", "MJ"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Birth Year",
-        "items": ["Black Mamba", "MJ", "King James", "The Greek Freak"],
+        "items": ["The Greek Freak", "Black Mamba", "King James", "MJ"],
         "correctOrder": ["MJ", "Black Mamba", "King James", "The Greek Freak"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
