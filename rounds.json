@@ -4396,7 +4396,7 @@
 
     [
       {
-        "prompt": "Year First Released",
+        "prompt": "Year Premiered",
         "items": ["Survivor", "The Oprah Winfrey Show", "Deal or No Deal", "The Apprentice"],
         "correctOrder": ["The Oprah Winfrey Show", "Survivor", "The Apprentice", "Deal or No Deal"],
         "topLabel": "↑ Earliest",
