@@ -4392,7 +4392,34 @@
         "topLabel": "↑ Most Seasons",
         "bottomLabel": "↓ Fewest Seasons"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year First Released",
+        "items": ["Survivor", "The Oprah Winfrey Show", "Deal or No Deal", "The Apprentice"],
+        "correctOrder": ["The Oprah Winfrey Show", "Survivor", "The Apprentice", "Deal or No Deal"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Host's First Name (A–Z)",
+        "items": ["The Oprah Winfrey Show", "Survivor", "The Apprentice", "Deal or No Deal"],
+        "correctOrder": ["The Apprentice", "Deal or No Deal", "Survivor", "The Oprah Winfrey Show"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Number of Seasons",
+        "items": ["The Apprentice", "Deal or No Deal", "Survivor", "The Oprah Winfrey Show"],
+        "correctOrder": ["Survivor", "The Oprah Winfrey Show", "The Apprentice", "Deal or No Deal"],
+        "topLabel": "↑ Most Seasons",
+        "bottomLabel": "↓ Fewest Seasons"
+      }
     ]
+
+
+
 
   ]
 }
