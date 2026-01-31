@@ -4416,7 +4416,32 @@
         "topLabel": "↑ Most Seasons",
         "bottomLabel": "↓ Fewest Seasons"
       }
+    ],
+
+    [
+      {
+        "prompt": "Number of Letters",
+        "items": ["Minnesota", "Mississippi", "Montana", "Missouri"],
+        "correctOrder": ["Mississippi", "Minnesota", "Missouri", "Montana"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
+      },
+      {
+        "prompt": "Alphabetical Order (A–Z)",
+        "items": ["Mississippi", "Minnesota", "Missouri", "Montana"],
+        "correctOrder": ["Minnesota", "Mississippi", "Missouri", "Montana"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Number of Unique Letters",
+        "items": ["Minnesota", "Mississippi", "Missouri", "Montana"],
+        "correctOrder": ["Minnesota", "Missouri", "Montana", "Mississippi"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
+
 
 
 
