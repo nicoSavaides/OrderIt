@@ -4427,7 +4427,7 @@
         "bottomLabel": "↓ Fewest Letters"
       },
       {
-        "prompt": "Alphabetical Order (A–Z)",
+        "prompt": "Alphabetical Order",
         "items": ["Mississippi", "Minnesota", "Missouri", "Montana"],
         "correctOrder": ["Minnesota", "Mississippi", "Missouri", "Montana"],
         "topLabel": "↑ First Alphabetically",
