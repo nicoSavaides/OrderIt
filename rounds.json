@@ -4440,12 +4440,31 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Artist (A–Z)",
+        "items": ["Hotel California", "California Dreamin'", "Californication", "California Gurls"],
+        "correctOrder": ["Hotel California", "California Gurls", "California Dreamin'", "Californication"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Hotel California", "California Gurls", "California Dreamin'", "Californication"],
+        "correctOrder": ["California Dreamin'", "Hotel California", "Californication", "California Gurls"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Song Length",
+        "items": ["California Dreamin'", "Hotel California", "Californication", "California Gurls"],
+        "correctOrder": ["Hotel California", "Californication", "California Gurls", "California Dreamin'"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
     ]
-
-
-
-
-
   ]
 }
 
