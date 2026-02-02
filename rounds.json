@@ -4464,7 +4464,33 @@
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Birth Year",
+        "items": ["James Cameron", "Jordan Peele", "Ridley Scott", "Christopher Nolan"],
+        "correctOrder": ["Ridley Scott", "James Cameron", "Christopher Nolan", "Jordan Peele"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Feature Films Directed",
+        "items": ["Ridley Scott", "James Cameron", "Christopher Nolan", "Jordan Peele"],
+        "correctOrder": ["Ridley Scott", "Christopher Nolan", "James Cameron", "Jordan Peele"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Oscars Won",
+        "items": ["Ridley Scott", "Christopher Nolan", "James Cameron", "Jordan Peele"],
+        "correctOrder": ["James Cameron", "Christopher Nolan", "Jordan Peele", "Ridley Scott"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+
     ]
+
   ]
 }
 
