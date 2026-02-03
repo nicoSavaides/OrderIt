@@ -4488,8 +4488,32 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
 
+    [
+      {
+        "prompt": "Average Weight",
+        "items": ["Leafcutter Ant", "Swan", "Dolphin", "Tiger"],
+        "correctOrder": ["Tiger", "Dolphin", "Swan", "Leafcutter Ant"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Typical Group Size",
+        "items": ["Tiger", "Dolphin", "Swan", "Leafcutter Ant"],
+        "correctOrder": ["Leafcutter Ant", "Dolphin", "Swan", "Tiger"],
+        "topLabel": "↑ Largest Groups",
+        "bottomLabel": "↓ Smallest Groups"
+      },
+      {
+        "prompt": "Average Lifespan",
+        "items": ["Leafcutter Ant", "Dolphin", "Swan", "Tiger"],
+        "correctOrder": ["Dolphin", "Swan", "Tiger", "Leafcutter Ant"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
+      }
     ]
+
 
   ]
 }
