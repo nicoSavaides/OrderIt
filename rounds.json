@@ -4512,8 +4512,31 @@
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
       }
-    ]
+    ],
 
+    [
+      {
+        "prompt": "Weight",
+        "items": ["Trumpet", "Piccolo", "Tuba", "Flute"],
+        "correctOrder": ["Tuba", "Trumpet", "Flute", "Piccolo"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Pitch Range",
+        "items": ["Tuba", "Trumpet", "Flute", "Piccolo"],
+        "correctOrder": ["Piccolo", "Flute", "Trumpet", "Tuba"],
+        "topLabel": "↑ Highest Range",
+        "bottomLabel": "↓ Lowest Range"
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Piccolo", "Flute", "Trumpet", "Tuba"],
+        "correctOrder": ["Flute", "Trumpet", "Piccolo", "Tuba"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
+    ]
 
   ]
 }
