@@ -4523,11 +4523,11 @@
         "bottomLabel": "↓ Lightest"
       },
       {
-        "prompt": "Pitch Range",
+        "prompt": "Pitch",
         "items": ["Tuba", "Trumpet", "Flute", "Piccolo"],
         "correctOrder": ["Piccolo", "Flute", "Trumpet", "Tuba"],
-        "topLabel": "↑ Highest Range",
-        "bottomLabel": "↓ Lowest Range"
+        "topLabel": "↑ Highest Pitch",
+        "bottomLabel": "↓ Lowest Pitch"
       },
       {
         "prompt": "Year Invented",
