@@ -4540,7 +4540,7 @@
 
     [
       {
-        "prompt": "Bordering Countries",
+        "prompt": "Number of Bordering Countries",
         "items": ["Canada", "United States", "Brazil", "South Africa"],
         "correctOrder": ["Brazil", "South Africa", "United States", "Canada"],
         "topLabel": "↑ Most",
