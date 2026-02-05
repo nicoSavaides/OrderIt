@@ -4536,7 +4536,32 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Bordering Countries",
+        "items": ["Canada", "United States", "Brazil", "South Africa"],
+        "correctOrder": ["Brazil", "South Africa", "United States", "Canada"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Colors on the Flag",
+        "items": ["Brazil", "South Africa", "United States", "Canada"],
+        "correctOrder": ["South Africa", "Brazil", "United States", "Canada"],
+        "topLabel": "↑ Most Colors",
+        "bottomLabel": "↓ Fewest Colors"
+      },
+      {
+        "prompt": "Life Expectancy",
+        "items": ["South Africa", "Brazil", "United States", "Canada"],
+        "correctOrder": ["Canada", "United States", "Brazil", "South Africa"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
     ]
+
 
   ]
 }
