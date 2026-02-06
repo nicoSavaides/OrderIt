@@ -4560,7 +4560,32 @@
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year Released",
+        "items": ["Jaws", "Jerry Maguire", "Parasite", "Stand by Me"],
+        "correctOrder": ["Jaws", "Stand by Me", "Jerry Maguire", "Parasite"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Oscar Wins",
+        "items": ["Jaws", "Stand by Me", "Jerry Maguire", "Parasite"],
+        "correctOrder": ["Parasite", "Jaws", "Jerry Maguire", "Stand by Me"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Director Last Name (A–Z)",
+        "items": ["Parasite", "Jaws", "Jerry Maguire", "Stand by Me"],
+        "correctOrder": ["Parasite", "Jerry Maguire", "Stand by Me", "Jaws"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
     ]
+
 
 
   ]
