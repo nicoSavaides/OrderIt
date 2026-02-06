@@ -4584,7 +4584,32 @@
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       }
+    ],
+
+    [
+      {
+        "prompt": "Depth",
+        "items": ["Crust", "Mantle", "Outer Core", "Inner Core"],
+        "correctOrder": ["Inner Core", "Outer Core", "Mantle", "Crust"],
+        "topLabel": "↑ Deepest",
+        "bottomLabel": "↓ Shallowest"
+      },
+      {
+        "prompt": "Average Temperature",
+        "items": ["Inner Core", "Outer Core", "Mantle", "Crust"],
+        "correctOrder": ["Inner Core", "Outer Core", "Mantle", "Crust"],
+        "topLabel": "↑ Hottest",
+        "bottomLabel": "↓ Coolest"
+      },
+      {
+        "prompt": "Density",
+        "items": ["Inner Core", "Outer Core", "Mantle", "Crust"],
+        "correctOrder": ["Inner Core", "Outer Core", "Mantle", "Crust"],
+        "topLabel": "↑ Densest",
+        "bottomLabel": "↓ Least Dense"
+      }
     ]
+
 
 
 
