@@ -4589,14 +4589,14 @@
     [
       {
         "prompt": "Depth",
-        "items": ["Crust", "Mantle", "Outer Core", "Inner Core"],
-        "correctOrder": ["Inner Core", "Outer Core", "Mantle", "Crust"],
-        "topLabel": "↑ Deepest",
-        "bottomLabel": "↓ Shallowest"
+        "items": ["Mantle", "Crust", "Inner Core", "Outer Core"],
+        "correctOrder": ["Crust", "Mantle", "Outer Core", "Inner Core"],
+        "topLabel": "↑ Shallowest",
+        "bottomLabel": "↓ Deepest"
       },
       {
         "prompt": "Average Temperature",
-        "items": ["Inner Core", "Outer Core", "Mantle", "Crust"],
+        "items": ["Crust", "Mantle", "Outer Core", "Inner Core"],
         "correctOrder": ["Inner Core", "Outer Core", "Mantle", "Crust"],
         "topLabel": "↑ Hottest",
         "bottomLabel": "↓ Coolest"
