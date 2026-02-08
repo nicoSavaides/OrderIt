@@ -4608,10 +4608,31 @@
         "topLabel": "↑ Densest",
         "bottomLabel": "↓ Least Dense"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year Released",
+        "items": ["Wii", "Game Boy", "Atari 2600", "PlayStation 2"],
+        "correctOrder": ["Atari 2600", "Game Boy", "PlayStation 2", "Wii"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Units Sold",
+        "items": ["Atari 2600", "Game Boy", "PlayStation 2", "Wii"],
+        "correctOrder": ["PlayStation 2", "Game Boy", "Wii", "Atari 2600"],
+        "topLabel": "↑ Most Sold",
+        "bottomLabel": "↓ Fewest Sold"
+      },
+      {
+        "prompt": "Launch Price",
+        "items": ["PlayStation 2", "Game Boy", "Wii", "Atari 2600"],
+        "correctOrder": ["PlayStation 2", "Wii", "Atari 2600", "Game Boy"],
+        "topLabel": "↑ Most Expensive",
+        "bottomLabel": "↓ Least Expensive"
+      }
     ]
-
-
-
 
   ]
 }
