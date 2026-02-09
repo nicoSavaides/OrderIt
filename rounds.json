@@ -4632,6 +4632,30 @@
         "topLabel": "↑ Most Expensive",
         "bottomLabel": "↓ Least Expensive"
       }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Taipei 101", "Arc de Triomphe", "One World Trade Center", "White House"],
+        "correctOrder": ["One World Trade Center", "Taipei 101", "Arc de Triomphe", "White House"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Number of Floors",
+        "items": ["One World Trade Center", "Taipei 101", "Arc de Triomphe", "White House"],
+        "correctOrder": ["One World Trade Center", "Taipei 101", "White House", "Arc de Triomphe"],
+        "topLabel": "↑ Most Floors",
+        "bottomLabel": "↓ Fewest Floors"
+      },
+      {
+        "prompt": "Year Built",
+        "items": ["One World Trade Center", "Taipei 101", "White House", "Arc de Triomphe"],
+        "correctOrder": ["White House", "Arc de Triomphe", "Taipei 101", "One World Trade Center"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
   ]
