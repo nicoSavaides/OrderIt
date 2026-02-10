@@ -4656,6 +4656,30 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year of First Film",
+        "items": ["Star Wars", "Harry Potter", "James Bond", "Marvel Cinematic Universe"],
+        "correctOrder": ["James Bond", "Star Wars", "Harry Potter", "Marvel Cinematic Universe"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Films",
+        "items": ["James Bond", "Star Wars", "Harry Potter", "Marvel Cinematic Universe"],
+        "correctOrder": ["Marvel Cinematic Universe", "James Bond", "Star Wars", "Harry Potter"],
+        "topLabel": "↑ Most Films",
+        "bottomLabel": "↓ Fewest Films"
+      },
+      {
+        "prompt": "Total Box Office",
+        "items": ["Marvel Cinematic Universe", "James Bond", "Star Wars", "Harry Potter"],
+        "correctOrder": ["Marvel Cinematic Universe", "Star Wars", "James Bond", "Harry Potter"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      }
     ]
 
   ]
