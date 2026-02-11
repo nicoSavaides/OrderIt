@@ -4680,7 +4680,32 @@
         "topLabel": "↑ Highest Grossing",
         "bottomLabel": "↓ Lowest Grossing"
       }
+    ],
+
+    [
+      {
+        "prompt": "Primary Color (A-Z)",
+        "items": ["Barney", "Shrek", "Pikachu", "Elmo"],
+        "correctOrder": ["Shrek", "Barney", "Elmo", "Pikachu"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Shrek", "Barney", "Elmo", "Pikachu"],
+        "correctOrder": ["Shrek", "Barney", "Elmo", "Pikachu"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Screen Appearance",
+        "items": ["Shrek", "Barney", "Elmo", "Pikachu"],
+        "correctOrder": ["Elmo", "Barney", "Pikachu", "Shrek"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
+
 
   ]
 }
