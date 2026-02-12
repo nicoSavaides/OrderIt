@@ -4704,7 +4704,32 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["LeBron James", "Ariana Grande", "Dwayne Johnson", "Taylor Swift"],
+        "correctOrder": ["Dwayne Johnson", "LeBron James", "Taylor Swift", "Ariana Grande"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Dwayne Johnson", "LeBron James", "Taylor Swift", "Ariana Grande"],
+        "correctOrder": ["LeBron James", "Dwayne Johnson", "Taylor Swift", "Ariana Grande"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["LeBron James", "Dwayne Johnson", "Taylor Swift", "Ariana Grande"],
+        "correctOrder": ["Taylor Swift", "LeBron James", "Dwayne Johnson", "Ariana Grande"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
+      }
     ]
+
 
 
   ]
