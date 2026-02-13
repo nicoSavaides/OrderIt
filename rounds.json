@@ -4728,7 +4728,56 @@
         "topLabel": "↑ Highest Net Worth",
         "bottomLabel": "↓ Lowest Net Worth"
       }
+    ],
+
+    [
+      {
+        "prompt": "Latitude",
+        "items": ["New Guinea", "Greenland", "Australia", "Madagascar"],
+        "correctOrder": ["Greenland", "New Guinea", "Madagascar", "Australia"],
+        "topLabel": "↑ Farthest North",
+        "bottomLabel": "↓ Farthest South"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["Greenland", "New Guinea", "Madagascar", "Australia"],
+        "correctOrder": ["Australia", "Greenland", "New Guinea", "Madagascar"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Australia", "Greenland", "New Guinea", "Madagascar"],
+        "correctOrder": ["Madagascar", "Australia", "New Guinea", "Greenland"],
+        "topLabel": "↑ Most Populous",
+        "bottomLabel": "↓ Least Populous"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Jeff Bezos", "Kylie Jenner", "Elon Musk", "Mark Zuckerberg"],
+        "correctOrder": ["Jeff Bezos", "Elon Musk", "Mark Zuckerberg", "Kylie Jenner"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Age When Became Billionaire",
+        "items": ["Jeff Bezos", "Elon Musk", "Mark Zuckerberg", "Kylie Jenner"],
+        "correctOrder": ["Elon Musk", "Jeff Bezos", "Mark Zuckerberg", "Kylie Jenner"],
+        "topLabel": "↑ Oldest at $1B",
+        "bottomLabel": "↓ Youngest at $1B"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Elon Musk", "Jeff Bezos", "Mark Zuckerberg", "Kylie Jenner"],
+        "correctOrder": ["Elon Musk", "Jeff Bezos", "Mark Zuckerberg", "Kylie Jenner"],
+        "topLabel": "↑ Highest Net Worth",
+        "bottomLabel": "↓ Lowest Net Worth"
+      }
     ]
+
 
 
 
