@@ -4776,7 +4776,33 @@
         "topLabel": "↑ Highest Net Worth",
         "bottomLabel": "↓ Lowest Net Worth"
       }
+    ],
+
+    [
+      {
+        "prompt": "Latitude",
+        "items": ["Lake Michigan", "Lake Tahoe", "Lake Como", "Caspian Sea"],
+        "correctOrder": ["Lake Como", "Lake Michigan", "Caspian Sea", "Lake Tahoe"],
+        "topLabel": "↑ Farthest North",
+        "bottomLabel": "↓ Farthest South"
+      },
+      {
+        "prompt": "Surface Area",
+        "items": ["Lake Como", "Lake Michigan", "Caspian Sea", "Lake Tahoe"],
+        "correctOrder": ["Caspian Sea", "Lake Michigan", "Lake Tahoe", "Lake Como"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Depth",
+        "items": ["Caspian Sea", "Lake Michigan", "Lake Tahoe", "Lake Como"],
+        "correctOrder": ["Lake Michigan", "Lake Como", "Lake Tahoe", "Caspian Sea"],
+        "topLabel": "↑ Shallowest",
+        "bottomLabel": "↓ Deepest"
+      }
     ]
+
+
 
 
 
