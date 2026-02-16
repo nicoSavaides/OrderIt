@@ -4800,12 +4800,31 @@
         "topLabel": "↑ Shallowest",
         "bottomLabel": "↓ Deepest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year",
+        "items": ["The Dark Knight", "Batman", "Batman & Robin", "The Batman"],
+        "correctOrder": ["Batman", "Batman & Robin", "The Dark Knight", "The Batman"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Actor Last Name (A–Z)",
+        "items": ["Batman", "Batman & Robin", "The Dark Knight", "The Batman"],
+        "correctOrder": ["The Dark Knight", "Batman & Robin", "Batman", "The Batman"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Box Office",
+        "items": ["The Dark Knight", "Batman & Robin", "Batman", "The Batman"],
+        "correctOrder": ["The Dark Knight", "The Batman", "Batman", "Batman & Robin"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      }
     ]
-
-
-
-
-
 
   ]
 }
