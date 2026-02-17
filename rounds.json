@@ -4828,7 +4828,7 @@
 
     [
       {
-        "prompt": "First Olympics Appearance",
+        "prompt": "First Olympic Appearance",
         "items": ["Usain Bolt", "Michael Phelps", "Simone Biles", "Shaun White"],
         "correctOrder": ["Michael Phelps", "Usain Bolt", "Shaun White", "Simone Biles"],
         "topLabel": "↑ Earliest",
