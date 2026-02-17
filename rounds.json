@@ -4824,7 +4824,32 @@
         "topLabel": "↑ Highest Grossing",
         "bottomLabel": "↓ Lowest Grossing"
       }
+    ],
+
+    [
+      {
+        "prompt": "First Olympics Appearance",
+        "items": ["Usain Bolt", "Michael Phelps", "Simone Biles", "Shaun White"],
+        "correctOrder": ["Michael Phelps", "Usain Bolt", "Shaun White", "Simone Biles"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Total Olympic Medals",
+        "items": ["Michael Phelps", "Usain Bolt", "Shaun White", "Simone Biles"],
+        "correctOrder": ["Michael Phelps", "Simone Biles", "Usain Bolt", "Shaun White"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Gold Medals",
+        "items": ["Michael Phelps", "Simone Biles", "Usain Bolt", "Shaun White"],
+        "correctOrder": ["Michael Phelps", "Usain Bolt", "Simone Biles", "Shaun White"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
+
 
   ]
 }
