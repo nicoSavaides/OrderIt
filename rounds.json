@@ -4848,6 +4848,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Last Name (A–Z)",
+        "items": ["Winston", "Julius", "Genghis", "Napoleon"],
+        "correctOrder": ["Napoleon", "Julius", "Winston", "Genghis"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Birth Year",
+        "items": ["Napoleon", "Julius", "Winston", "Genghis"],
+        "correctOrder": ["Julius", "Genghis", "Napoleon", "Winston"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Age at Death",
+        "items": ["Julius", "Genghis", "Napoleon", "Winston"],
+        "correctOrder": ["Winston", "Genghis", "Julius", "Napoleon"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      }
     ]
 
 
