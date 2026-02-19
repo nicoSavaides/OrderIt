@@ -4872,6 +4872,30 @@
         "topLabel": "↑ Oldest",
         "bottomLabel": "↓ Youngest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Number of Legs",
+        "items": ["Chicken", "Tarantula", "Lobster", "Centipede"],
+        "correctOrder": ["Centipede", "Lobster", "Tarantula", "Chicken"],
+        "topLabel": "↑ Most Legs",
+        "bottomLabel": "↓ Fewest Legs"
+      },
+      {
+        "prompt": "Average Weight",
+        "items": ["Centipede", "Lobster", "Tarantula", "Chicken"],
+        "correctOrder": ["Chicken", "Lobster", "Tarantula", "Centipede"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Average Lifespan",
+        "items": ["Chicken", "Lobster", "Tarantula", "Centipede"],
+        "correctOrder": ["Lobster", "Tarantula", "Chicken", "Centipede"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
+      }
     ]
 
 
