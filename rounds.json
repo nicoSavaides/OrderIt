@@ -4920,6 +4920,30 @@
         "topLabel": "↑ Leftmost Key",
         "bottomLabel": "↓ Rightmost Key"
       }
+    ],
+
+    [
+      {
+        "prompt": "State (A–Z)",
+        "items": ["New York City", "Chicago", "Phoenix", "Anchorage"],
+        "correctOrder": ["Anchorage", "Phoenix", "Chicago", "New York City"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Average Temperature",
+        "items": ["Anchorage", "Phoenix", "Chicago", "New York City"],
+        "correctOrder": ["Phoenix", "New York City", "Chicago", "Anchorage"],
+        "topLabel": "↑ Warmest",
+        "bottomLabel": "↓ Coldest"
+      },
+      {
+        "prompt": "Pro Sports Teams",
+        "items": ["Phoenix", "New York City", "Chicago", "Anchorage"],
+        "correctOrder": ["New York City", "Chicago", "Phoenix", "Anchorage"],
+        "topLabel": "↑ Most Teams",
+        "bottomLabel": "↓ Fewest Teams"
+      }
     ]
 
 
