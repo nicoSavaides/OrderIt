@@ -4896,6 +4896,30 @@
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
       }
+    ],
+
+    [
+      {
+        "prompt": "Alphabet Position",
+        "items": ["E", "Q", "B", "J"],
+        "correctOrder": ["B", "E", "J", "Q"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Scrabble Letter Value",
+        "items": ["B", "E", "J", "Q"],
+        "correctOrder": ["Q", "J", "B", "E"],
+        "topLabel": "↑ Highest Value",
+        "bottomLabel": "↓ Lowest Value"
+      },
+      {
+        "prompt": "Keyboard Position",
+        "items": ["Q", "J", "B", "E"],
+        "correctOrder": ["Q", "E", "B", "J"],
+        "topLabel": "↑ Leftmost Key",
+        "bottomLabel": "↓ Rightmost Key"
+      }
     ]
 
 
