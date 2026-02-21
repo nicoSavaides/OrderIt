@@ -4944,8 +4944,31 @@
         "topLabel": "↑ Most Teams",
         "bottomLabel": "↓ Fewest Teams"
       }
-    ]
+    ],
 
+    [
+      {
+        "prompt": "Sales",
+        "items": ["Twix", "Almond Joy", "Hershey’s", "Kit Kat"],
+        "correctOrder": ["Hershey’s", "Kit Kat", "Twix", "Almond Joy"],
+        "topLabel": "↑ Best-Selling",
+        "bottomLabel": "↓ Lowest Sales"
+      },
+      {
+        "prompt": "Year Introduced",
+        "items": ["Hershey’s", "Kit Kat", "Twix", "Almond Joy"],
+        "correctOrder": ["Hershey’s", "Kit Kat", "Almond Joy", "Twix"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Sugar Content",
+        "items": ["Hershey’s", "Kit Kat", "Almond Joy", "Twix"],
+        "correctOrder": ["Twix", "Hershey’s", "Kit Kat", "Almond Joy"],
+        "topLabel": "↑ Most Sugar",
+        "bottomLabel": "↓ Least Sugar"
+      }
+    ]
 
   ]
 }
