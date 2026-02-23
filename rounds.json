@@ -4968,6 +4968,30 @@
         "topLabel": "↑ Most Sugar",
         "bottomLabel": "↓ Least Sugar"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year the Story Takes Place",
+        "items": ["Moby-Dick", "1984", "To Kill a Mockingbird", "The Great Gatsby"],
+        "correctOrder": ["Moby-Dick", "The Great Gatsby", "To Kill a Mockingbird", "1984"],
+        "topLabel": "↑ Earliest Setting",
+        "bottomLabel": "↓ Latest Setting"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Moby-Dick", "The Great Gatsby", "To Kill a Mockingbird", "1984"],
+        "correctOrder": ["Moby-Dick", "The Great Gatsby", "1984", "To Kill a Mockingbird"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Page Count",
+        "items": ["Moby-Dick", "The Great Gatsby", "1984", "To Kill a Mockingbird"],
+        "correctOrder": ["Moby-Dick", "1984", "To Kill a Mockingbird", "The Great Gatsby"],
+        "topLabel": "↑ Most Pages",
+        "bottomLabel": "↓ Fewest Pages"
+      }
     ]
 
   ]
