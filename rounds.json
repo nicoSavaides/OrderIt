@@ -4992,6 +4992,30 @@
         "topLabel": "↑ Most Pages",
         "bottomLabel": "↓ Fewest Pages"
       }
+    ],
+
+    [
+      {
+        "prompt": "Average Weight",
+        "items": ["Wolf", "Crocodile", "House Cat", "Lion"],
+        "correctOrder": ["Crocodile", "Lion", "Wolf", "House Cat"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Bite Force",
+        "items": ["Crocodile", "Lion", "Wolf", "House Cat"],
+        "correctOrder": ["Crocodile", "Lion", "Wolf", "House Cat"],
+        "topLabel": "↑ Strongest Bite",
+        "bottomLabel": "↓ Weakest Bite"
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Crocodile", "Lion", "Wolf", "House Cat"],
+        "correctOrder": ["Lion", "Wolf", "House Cat", "Crocodile"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      }
     ]
 
   ]
