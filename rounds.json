@@ -5016,6 +5016,30 @@
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
       }
+    ],
+
+    [
+      {
+        "prompt": "State Name (A–Z)",
+        "items": ["MA", "AR", "MD", "AZ"],
+        "correctOrder": ["AZ", "AR", "MD", "MA"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["AZ", "AR", "MD", "MA"],
+        "correctOrder": ["AZ", "AR", "MD", "MA"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Date of Statehood",
+        "items": ["AZ", "AR", "MD", "MA"],
+        "correctOrder": ["MA", "MD", "AR", "AZ"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
   ]
