@@ -5044,7 +5044,7 @@
 
     [
       {
-        "prompt": "Animal (A–Z)",
+        "prompt": "Main Animal (A–Z)",
         "items": ["The Lion King", "Babe", "Ratatouille", "Kung Fu Panda"],
         "correctOrder": ["The Lion King", "Kung Fu Panda", "Babe", "Ratatouille"],
         "topLabel": "↑ First Alphabetically",
