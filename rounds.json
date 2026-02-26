@@ -5040,6 +5040,30 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Animal (A–Z)",
+        "items": ["The Lion King", "Babe", "Ratatouille", "Kung Fu Panda"],
+        "correctOrder": ["The Lion King", "Kung Fu Panda", "Babe", "Ratatouille"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Films in Franchise",
+        "items": ["The Lion King", "Kung Fu Panda", "Babe", "Ratatouille"],
+        "correctOrder": ["The Lion King", "Kung Fu Panda", "Babe", "Ratatouille"],
+        "topLabel": "↑ Most Films",
+        "bottomLabel": "↓ Fewest Films"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["The Lion King", "Kung Fu Panda", "Babe", "Ratatouille"],
+        "correctOrder": ["The Lion King", "Babe", "Ratatouille", "Kung Fu Panda"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
   ]
