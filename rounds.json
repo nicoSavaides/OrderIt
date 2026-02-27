@@ -5064,7 +5064,39 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Birth Country (A–Z)",
+        "items": ["George Washington", "Albert Einstein", "Mahatma Gandhi", "Nelson Mandela"],
+        "correctOrder": ["Albert Einstein", "Mahatma Gandhi", "Nelson Mandela", "George Washington"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Birth Year",
+        "items": ["Albert Einstein", "Mahatma Gandhi", "Nelson Mandela", "George Washington"],
+        "correctOrder": ["George Washington", "Mahatma Gandhi", "Albert Einstein", "Nelson Mandela"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Years Lived",
+        "items": ["George Washington", "Mahatma Gandhi", "Albert Einstein", "Nelson Mandela"],
+        "correctOrder": ["Nelson Mandela", "Mahatma Gandhi", "Albert Einstein", "George Washington"],
+        "topLabel": "↑ Longest Life",
+        "bottomLabel": "↓ Shortest Life"
+      }
     ]
+
+
+
+
+
+
+
+
 
   ]
 }
