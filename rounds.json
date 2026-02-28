@@ -5088,6 +5088,30 @@
         "topLabel": "↑ Longest Life",
         "bottomLabel": "↓ Shortest Life"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year Released",
+        "items": ["Viva La Vida", "Shape of You", "Hotel California", "Wonderwall"],
+        "correctOrder": ["Hotel California", "Wonderwall", "Viva La Vida", "Shape of You"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Artist (A–Z)",
+        "items": ["Hotel California", "Wonderwall", "Viva La Vida", "Shape of You"],
+        "correctOrder": ["Viva La Vida", "Hotel California", "Shape of You", "Wonderwall"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Song Length",
+        "items": ["Viva La Vida", "Hotel California", "Shape of You", "Wonderwall"],
+        "correctOrder": ["Hotel California", "Wonderwall", "Viva La Vida", "Shape of You"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
     ]
 
 
