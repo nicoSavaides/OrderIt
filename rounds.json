@@ -5130,7 +5130,7 @@
         "bottomLabel": "↓ Bottom of Rainbow"
       },
       {
-        "prompt": "Billiards Ball Value",
+        "prompt": "Pool Ball Number",
         "items": ["Red", "Yellow", "Green", "Blue"],
         "correctOrder": ["Green", "Red", "Blue", "Yellow"],
         "topLabel": "↑ Greatest",
