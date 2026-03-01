@@ -5132,7 +5132,7 @@
       {
         "prompt": "Billiards Ball Value",
         "items": ["Red", "Yellow", "Green", "Blue"],
-        "correctOrder": ["Yellow", "Blue", "Red", "Green"],
+        "correctOrder": ["Green", "Red", "Blue", "Yellow"],
         "topLabel": "↑ Greatest",
         "bottomLabel": "↓ Least"
       }
