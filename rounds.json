@@ -5112,7 +5112,33 @@
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Alphabetical Order",
+        "items": ["Red", "Yellow", "Blue", "Green"],
+        "correctOrder": ["Blue", "Green", "Red", "Yellow"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Rainbow Order",
+        "items": ["Blue", "Green", "Red", "Yellow"],
+        "correctOrder": ["Red", "Yellow", "Green", "Blue"],
+        "topLabel": "↑ Top of Rainbow",
+        "bottomLabel": "↓ Bottom of Rainbow"
+      },
+      {
+        "prompt": "Billiards Ball Value",
+        "items": ["Red", "Yellow", "Green", "Blue"],
+        "correctOrder": ["Yellow", "Blue", "Red", "Green"],
+        "topLabel": "↑ Greatest",
+        "bottomLabel": "↓ Least"
+      }
     ]
+
+
 
 
 
