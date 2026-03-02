@@ -5140,15 +5140,15 @@
 
     [
       {
-        "prompt": "Size",
+        "prompt": "Distance from Sun",
         "items": ["Venus", "Neptune", "Mars", "Earth"],
-        "correctOrder": ["Neptune", "Earth", "Venus", "Mars"],
-        "topLabel": "↑ Largest",
-        "bottomLabel": "↓ Smallest"
+        "correctOrder": ["Venus", "Earth", "Mars", "Neptune"],
+        "topLabel": "↑ Closest",
+        "bottomLabel": "↓ Furthest"
       },
       {
         "prompt": "Greek Name (A–Z)",
-        "items": ["Neptune", "Earth", "Venus", "Mars"],
+        "items": ["Venus", "Earth", "Mars", "Neptune"],
         "correctOrder": ["Venus", "Mars", "Earth", "Neptune"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
