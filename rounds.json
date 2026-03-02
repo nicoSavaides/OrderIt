@@ -5136,16 +5136,31 @@
         "topLabel": "↑ Greatest",
         "bottomLabel": "↓ Least"
       }
+    ],
+
+    [
+      {
+        "prompt": "Size",
+        "items": ["Venus", "Neptune", "Mars", "Earth"],
+        "correctOrder": ["Neptune", "Earth", "Venus", "Mars"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Greek Name (A–Z)",
+        "items": ["Neptune", "Earth", "Venus", "Mars"],
+        "correctOrder": ["Venus", "Mars", "Earth", "Neptune"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Orbital Period",
+        "items": ["Venus", "Mars", "Earth", "Neptune"],
+        "correctOrder": ["Neptune", "Mars", "Earth", "Venus"],
+        "topLabel": "↑ Longest Year",
+        "bottomLabel": "↓ Shortest Year"
+      }
     ]
-
-
-
-
-
-
-
-
-
 
 
   ]
