@@ -5160,6 +5160,30 @@
         "topLabel": "↑ Longest Year",
         "bottomLabel": "↓ Shortest Year"
       }
+    ],
+
+    [
+      {
+        "prompt": "GDP",
+        "items": ["Nigeria", "Japan", "United States", "India"],
+        "correctOrder": ["United States", "Japan", "India", "Nigeria"],
+        "topLabel": "↑ Highest GDP",
+        "bottomLabel": "↓ Lowest GDP"
+      },
+      {
+        "prompt": "Median Age",
+        "items": ["United States", "Japan", "India", "Nigeria"],
+        "correctOrder": ["Japan", "United States", "India", "Nigeria"],
+        "topLabel": "↑ Oldest Population",
+        "bottomLabel": "↓ Youngest Population"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Japan", "United States", "India", "Nigeria"],
+        "correctOrder": ["India", "United States", "Nigeria", "Japan"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      }
     ]
 
 
