@@ -5184,6 +5184,30 @@
         "topLabel": "↑ Largest",
         "bottomLabel": "↓ Smallest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Latitude",
+        "items": ["Yellowstone", "Arches", "Joshua Tree", "Yosemite"],
+        "correctOrder": ["Yellowstone", "Arches", "Yosemite", "Joshua Tree"],
+        "topLabel": "↑ Furthest North",
+        "bottomLabel": "↓ Furthest South"
+      },
+      {
+        "prompt": "Annual Visitors",
+        "items": ["Yellowstone", "Arches", "Yosemite", "Joshua Tree"],
+        "correctOrder": ["Yellowstone", "Yosemite", "Joshua Tree", "Arches"],
+        "topLabel": "↑ Most Visitors",
+        "bottomLabel": "↓ Fewest Visitors"
+      },
+      {
+        "prompt": "Park Area",
+        "items": ["Yellowstone", "Yosemite", "Joshua Tree", "Arches"],
+        "correctOrder": ["Yellowstone", "Joshua Tree", "Yosemite", "Arches"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      }
     ]
 
 
