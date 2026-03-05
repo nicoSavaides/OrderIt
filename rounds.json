@@ -5208,6 +5208,30 @@
         "topLabel": "↑ Largest",
         "bottomLabel": "↓ Smallest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Average Weight",
+        "items": ["Grape", "Strawberry", "Apple", "Banana"],
+        "correctOrder": ["Apple", "Banana", "Strawberry", "Grape"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Sugar Content",
+        "items": ["Apple", "Banana", "Strawberry", "Grape"],
+        "correctOrder": ["Apple", "Banana", "Strawberry", "Grape"],
+        "topLabel": "↑ Most Sugar",
+        "bottomLabel": "↓ Least Sugar"
+      },
+      {
+        "prompt": "Calories",
+        "items": ["Apple", "Banana", "Strawberry", "Grape"],
+        "correctOrder": ["Banana", "Apple", "Strawberry", "Grape"],
+        "topLabel": "↑ Most Calories",
+        "bottomLabel": "↓ Fewest Calories"
+      }
     ]
 
 
