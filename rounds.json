@@ -5256,6 +5256,30 @@
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Films in Franchise",
+        "items": ["Up", "Toy Story", "Finding Nemo", "Cars"],
+        "correctOrder": ["Toy Story", "Cars", "Finding Nemo", "Up"],
+        "topLabel": "↑ Most Films",
+        "bottomLabel": "↓ Fewest Films"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Toy Story", "Cars", "Finding Nemo", "Up"],
+        "correctOrder": ["Toy Story", "Finding Nemo", "Cars", "Up"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Box Office",
+        "items": ["Toy Story", "Finding Nemo", "Cars", "Up"],
+        "correctOrder": ["Finding Nemo", "Up", "Cars", "Toy Story"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      }
     ]
 
 
