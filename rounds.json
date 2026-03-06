@@ -5232,6 +5232,30 @@
         "topLabel": "↑ Most Calories",
         "bottomLabel": "↓ Fewest Calories"
       }
+    ],
+
+    [
+      {
+        "prompt": "First Name Length",
+        "items": ["Reagan", "Clinton", "Nixon", "Carter"],
+        "correctOrder": ["Nixon", "Reagan", "Carter", "Clinton"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
+      },
+      {
+        "prompt": "Presidency Date",
+        "items": ["Nixon", "Reagan", "Carter", "Clinton"],
+        "correctOrder": ["Nixon", "Carter", "Reagan", "Clinton"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Nixon", "Carter", "Reagan", "Clinton"],
+        "correctOrder": ["Clinton", "Reagan", "Nixon", "Carter"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      }
     ]
 
 
