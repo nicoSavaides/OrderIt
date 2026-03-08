@@ -5280,6 +5280,30 @@
         "topLabel": "↑ Highest Grossing",
         "bottomLabel": "↓ Lowest Grossing"
       }
+    ],
+
+    [
+      {
+        "prompt": "Location",
+        "items": ["University of Michigan", "Harvard", "Stanford", "University of Texas"],
+        "correctOrder": ["Stanford", "University of Texas", "University of Michigan", "Harvard"],
+        "topLabel": "↑ Most Western",
+        "bottomLabel": "↓ Most Eastern"
+      },
+      {
+        "prompt": "State (A–Z)",
+        "items": ["Stanford", "University of Texas", "University of Michigan", "Harvard"],
+        "correctOrder": ["Stanford", "Harvard", "University of Michigan", "University of Texas"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Stanford", "Harvard", "University of Michigan", "University of Texas"],
+        "correctOrder": ["Harvard", "University of Michigan", "University of Texas", "Stanford"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
 
