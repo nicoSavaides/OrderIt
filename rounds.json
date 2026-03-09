@@ -5304,6 +5304,30 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "City (A–Z)",
+        "items": ["Lakers", "Bulls", "Raptors", "Heat"],
+        "correctOrder": ["Bulls", "Lakers", "Heat", "Raptors"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Championships",
+        "items": ["Bulls", "Lakers", "Heat", "Raptors"],
+        "correctOrder": ["Lakers", "Bulls", "Heat", "Raptors"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Lakers", "Bulls", "Heat", "Raptors"],
+        "correctOrder": ["Lakers", "Bulls", "Heat", "Raptors"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
 
