@@ -5328,6 +5328,30 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Area",
+        "items": ["California", "Texas", "Florida", "New York"],
+        "correctOrder": ["Texas", "California", "Florida", "New York"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Capital City (A–Z)",
+        "items": ["Texas", "California", "Florida", "New York"],
+        "correctOrder": ["New York", "Texas", "California", "Florida"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Bordering States",
+        "items": ["New York", "Texas", "California", "Florida"],
+        "correctOrder": ["New York", "Texas", "California", "Florida"],
+        "topLabel": "↑ Most Borders",
+        "bottomLabel": "↓ Fewest Borders"
+      }
     ]
 
 
