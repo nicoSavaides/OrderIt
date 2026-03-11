@@ -5352,6 +5352,30 @@
         "topLabel": "↑ Most Borders",
         "bottomLabel": "↓ Fewest Borders"
       }
+    ],
+
+    [
+      {
+        "prompt": "Value",
+        "items": ["Penny", "Nickel", "Dime", "Quarter"],
+        "correctOrder": ["Quarter", "Dime", "Nickel", "Penny"],
+        "topLabel": "↑ Highest Value",
+        "bottomLabel": "↓ Lowest Value"
+      },
+      {
+        "prompt": "Weight",
+        "items": ["Quarter", "Dime", "Nickel", "Penny"],
+        "correctOrder": ["Quarter", "Nickel", "Penny", "Dime"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Thickness",
+        "items": ["Quarter", "Nickel", "Penny", "Dime"],
+        "correctOrder": ["Nickel", "Quarter", "Penny", "Dime"],
+        "topLabel": "↑ Thickest",
+        "bottomLabel": "↓ Thinnest"
+      }
     ]
 
 
