@@ -5376,6 +5376,30 @@
         "topLabel": "↑ Thickest",
         "bottomLabel": "↓ Thinnest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Release Year",
+        "items": ["The Force Awakens", "The Empire Strikes Back", "A New Hope", "The Phantom Menace"],
+        "correctOrder": ["A New Hope", "The Empire Strikes Back", "The Phantom Menace", "The Force Awakens"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Box Office",
+        "items": ["A New Hope", "The Empire Strikes Back", "The Phantom Menace", "The Force Awakens"],
+        "correctOrder": ["The Force Awakens", "The Phantom Menace", "A New Hope", "The Empire Strikes Back"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["The Force Awakens", "The Phantom Menace", "A New Hope", "The Empire Strikes Back"],
+        "correctOrder": ["The Force Awakens", "The Phantom Menace", "The Empire Strikes Back", "A New Hope"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
     ]
 
 
