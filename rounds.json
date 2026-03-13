@@ -5400,6 +5400,30 @@
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Number of Colors",
+        "items": ["Starburst", "Froot Loops", "Gatorade", "Skittles"],
+        "correctOrder": ["Gatorade", "Froot Loops", "Skittles", "Starburst"],
+        "topLabel": "↑ Most Colors",
+        "bottomLabel": "↓ Fewest Colors"
+      },
+      {
+        "prompt": "Sugar (per 100g)",
+        "items": ["Gatorade", "Froot Loops", "Skittles", "Starburst"],
+        "correctOrder": ["Skittles", "Starburst", "Froot Loops", "Gatorade"],
+        "topLabel": "↑ Most Sugar",
+        "bottomLabel": "↓ Least Sugar"
+      },
+      {
+        "prompt": "Year Released",
+        "items": ["Skittles", "Starburst", "Froot Loops", "Gatorade"],
+        "correctOrder": ["Starburst", "Froot Loops", "Gatorade", "Skittles"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
 
