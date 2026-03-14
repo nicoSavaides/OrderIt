@@ -5424,6 +5424,30 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Danny DeVito", "Tom Cruise", "Sabrina Carpenter", "Jacob Elordi"],
+        "correctOrder": ["Jacob Elordi", "Tom Cruise", "Sabrina Carpenter", "Danny DeVito"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Age",
+        "items": ["Jacob Elordi", "Tom Cruise", "Sabrina Carpenter", "Danny DeVito"],
+        "correctOrder": ["Danny DeVito", "Tom Cruise", "Jacob Elordi", "Sabrina Carpenter"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Net Worth",
+        "items": ["Danny DeVito", "Tom Cruise", "Jacob Elordi", "Sabrina Carpenter"],
+        "correctOrder": ["Tom Cruise", "Danny DeVito", "Sabrina Carpenter", "Jacob Elordi"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
     ]
 
 
