@@ -5448,6 +5448,30 @@
         "topLabel": "↑ Highest",
         "bottomLabel": "↓ Lowest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year it Takes Place",
+        "items": ["Sinners", "One Battle After Another", "Hamnet", "Marty Supreme"],
+        "correctOrder": ["Hamnet", "Sinners", "Marty Supreme", "One Battle After Another"],
+        "topLabel": "↑ Earliest Setting",
+        "bottomLabel": "↓ Most Recent Setting"
+      },
+      {
+        "prompt": "Oscar Nominations",
+        "items": ["Hamnet", "Sinners", "Marty Supreme", "One Battle After Another"],
+        "correctOrder": ["Sinners", "One Battle After Another", "Marty Supreme", "Hamnet"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Box Office",
+        "items": ["Sinners", "One Battle After Another", "Marty Supreme", "Hamnet"],
+        "correctOrder": ["Sinners", "One Battle After Another", "Marty Supreme", "Hamnet"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
     ]
 
 
