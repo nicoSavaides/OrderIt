@@ -5496,6 +5496,30 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Age",
+        "items": ["Potter", "Snape", "Dumbledore", "Hagrid"],
+        "correctOrder": ["Dumbledore", "Hagrid", "Snape", "Potter"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Number of Book Mentions",
+        "items": ["Dumbledore", "Hagrid", "Snape", "Potter"],
+        "correctOrder": ["Potter", "Dumbledore", "Hagrid", "Snape"],
+        "topLabel": "↑ Most Mentions",
+        "bottomLabel": "↓ Fewest Mentions"
+      },
+      {
+        "prompt": "First Name (A–Z)",
+        "items": ["Potter", "Dumbledore", "Hagrid", "Snape"],
+        "correctOrder": ["Dumbledore", "Potter", "Hagrid", "Snape"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
     ]
 
 
