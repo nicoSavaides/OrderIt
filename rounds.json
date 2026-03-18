@@ -5520,6 +5520,30 @@
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       }
+    ],
+
+    [
+      {
+        "prompt": "First Name (A–Z)",
+        "items": ["Washington", "Jefferson", "Roosevelt", "Lincoln"],
+        "correctOrder": ["Lincoln", "Washington", "Roosevelt", "Jefferson"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Presidency Year",
+        "items": ["Lincoln", "Washington", "Roosevelt", "Jefferson"],
+        "correctOrder": ["Washington", "Jefferson", "Lincoln", "Roosevelt"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Mount Rushmore Position",
+        "items": ["Washington", "Jefferson", "Lincoln", "Roosevelt"],
+        "correctOrder": ["Washington", "Jefferson", "Roosevelt", "Lincoln"],
+        "topLabel": "↑ Leftmost",
+        "bottomLabel": "↓ Rightmost"
+      }
     ]
 
 
