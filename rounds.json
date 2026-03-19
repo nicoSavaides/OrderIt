@@ -5544,6 +5544,30 @@
         "topLabel": "↑ Leftmost",
         "bottomLabel": "↓ Rightmost"
       }
+    ],
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Russia", "Australia", "United States", "India"],
+        "correctOrder": ["India", "United States", "Russia", "Australia"],
+        "topLabel": "↑ Most People",
+        "bottomLabel": "↓ Fewest People"
+      },
+      {
+        "prompt": "Number of Time Zones",
+        "items": ["India", "United States", "Russia", "Australia"],
+        "correctOrder": ["Russia", "United States", "Australia", "India"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Nobel Laureates",
+        "items": ["Russia", "United States", "Australia", "India"],
+        "correctOrder": ["United States", "Russia", "Australia", "India"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
 
