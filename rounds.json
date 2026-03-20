@@ -5568,7 +5568,80 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Super Bowl Performance Year",
+        "items": ["Bad Bunny", "Rihanna", "Kendrick Lamar", "Justin Timberlake"],
+        "correctOrder": ["Justin Timberlake", "Rihanna", "Kendrick Lamar", "Bad Bunny"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Age",
+        "items": ["Justin Timberlake", "Rihanna", "Kendrick Lamar", "Bad Bunny"],
+        "correctOrder": ["Justin Timberlake", "Kendrick Lamar", "Rihanna", "Bad Bunny"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Justin Timberlake", "Kendrick Lamar", "Rihanna", "Bad Bunny"],
+        "correctOrder": ["Justin Timberlake", "Bad Bunny", "Rihanna", "Kendrick Lamar"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Release Year",
+        "items": ["Avengers: Age of Ultron", "Avengers: Infinity War", "The Avengers", "Avengers: Endgame"],
+        "correctOrder": ["The Avengers", "Avengers: Age of Ultron", "Avengers: Infinity War", "Avengers: Endgame"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Box Office",
+        "items": ["The Avengers", "Avengers: Age of Ultron", "Avengers: Infinity War", "Avengers: Endgame"],
+        "correctOrder": ["Avengers: Endgame", "Avengers: Infinity War", "The Avengers", "Avengers: Age of Ultron"],
+        "topLabel": "↑ Highest Grossing",
+        "bottomLabel": "↓ Lowest Grossing"
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["Avengers: Endgame", "Avengers: Infinity War", "The Avengers", "Avengers: Age of Ultron"],
+        "correctOrder": ["Avengers: Endgame", "Avengers: Infinity War", "The Avengers", "Avengers: Age of Ultron"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Latitude",
+        "items": ["Coachella", "Outside Lands", "Lollapalooza", "Burning Man"],
+        "correctOrder": ["Lollapalooza", "Burning Man", "Outside Lands", "Coachella"],
+        "topLabel": "↑ Most Northern",
+        "bottomLabel": "↓ Most Southern"
+      },
+      {
+        "prompt": "Total Festival Days",
+        "items": ["Lollapalooza", "Burning Man", "Outside Lands", "Coachella"],
+        "correctOrder": ["Burning Man", "Coachella", "Lollapalooza", "Outside Lands"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Year Started",
+        "items": ["Burning Man", "Coachella", "Lollapalooza", "Outside Lands"],
+        "correctOrder": ["Burning Man", "Lollapalooza", "Coachella", "Outside Lands"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
+
 
 
   ]
