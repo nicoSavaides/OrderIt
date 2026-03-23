@@ -5640,9 +5640,31 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Number of Digits",
+        "items": ["7", "24", "125", "1000"],
+        "correctOrder": ["1000", "125", "24", "7"],
+        "topLabel": "↑ Most Digits",
+        "bottomLabel": "↓ Fewest Digits"
+      },
+      {
+        "prompt": "Number of Factors",
+        "items": ["1000", "125", "24", "7"],
+        "correctOrder": ["1000", "24", "125", "7"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Roman Numeral (A-Z)",
+        "items": ["1000", "24", "125", "7"],
+        "correctOrder": ["125", "1000", "7", "24"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
     ]
-
-
 
   ]
 }
