@@ -5645,7 +5645,7 @@
     [
       {
         "prompt": "Number of Digits",
-        "items": ["7", "24", "125", "1000"],
+        "items": ["125", "7", "24", "1000"],
         "correctOrder": ["1000", "125", "24", "7"],
         "topLabel": "↑ Most Digits",
         "bottomLabel": "↓ Fewest Digits"
@@ -5665,7 +5665,7 @@
         "bottomLabel": "↓ Last Alphabetically"
       }
     ]
-    
+
   ]
 }
 
