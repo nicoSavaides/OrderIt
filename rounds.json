@@ -5664,6 +5664,30 @@
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       }
+    ],
+
+    [
+      {
+        "prompt": "Release Year",
+        "items": ["Levitating", "HUMBLE.", "Chandelier", "BIRDS OF A FEATHER"],
+        "correctOrder": ["Chandelier", "HUMBLE.", "Levitating", "BIRDS OF A FEATHER"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Artist (A-Z)",
+        "items": ["Chandelier", "HUMBLE.", "Levitating", "BIRDS OF A FEATHER"],
+        "correctOrder": ["BIRDS OF A FEATHER", "Levitating", "HUMBLE.", "Chandelier"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Spotify Streams",
+        "items": ["BIRDS OF A FEATHER", "Levitating", "HUMBLE.", "Chandelier"],
+        "correctOrder": ["BIRDS OF A FEATHER", "HUMBLE.", "Chandelier", "Levitating"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
