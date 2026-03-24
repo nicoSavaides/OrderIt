@@ -5668,7 +5668,7 @@
 
     [
       {
-        "prompt": "Release Year",
+        "prompt": "Year",
         "items": ["Levitating", "HUMBLE.", "Chandelier", "BIRDS OF A FEATHER"],
         "correctOrder": ["Chandelier", "HUMBLE.", "Levitating", "BIRDS OF A FEATHER"],
         "topLabel": "↑ Earliest",
