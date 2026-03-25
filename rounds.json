@@ -5688,6 +5688,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Netherlands", "Guatemala", "USA", "China"],
+        "correctOrder": ["China", "USA", "Guatemala", "Netherlands"],
+        "topLabel": "↑ Most Populated",
+        "bottomLabel": "↓ Least Populated"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["China", "USA", "Guatemala", "Netherlands"],
+        "correctOrder": ["China", "USA", "Guatemala", "Netherlands"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Average Male Height",
+        "items": ["China", "USA", "Guatemala", "Netherlands"],
+        "correctOrder": ["Netherlands", "USA", "China", "Guatemala"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      }
     ]
 
   ]
