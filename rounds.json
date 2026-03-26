@@ -5712,6 +5712,30 @@
         "topLabel": "↑ Tallest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Kevin Durant", "Stephen Curry", "LeBron James", "Nikola Jokic"],
+        "correctOrder": ["Nikola Jokic", "Kevin Durant", "LeBron James", "Stephen Curry"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Weight",
+        "items": ["Nikola Jokic", "Kevin Durant", "LeBron James", "Stephen Curry"],
+        "correctOrder": ["Nikola Jokic", "LeBron James", "Kevin Durant", "Stephen Curry"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "MVP Awards",
+        "items": ["Nikola Jokic", "LeBron James", "Kevin Durant", "Stephen Curry"],
+        "correctOrder": ["LeBron James", "Nikola Jokic", "Stephen Curry", "Kevin Durant"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
