@@ -5736,6 +5736,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Number of Logo Colors",
+        "items": ["LEGO", "KFC", "Apple", "IKEA"],
+        "correctOrder": ["LEGO", "KFC", "IKEA", "Apple"],
+        "topLabel": "↑ Most Colors",
+        "bottomLabel": "↓ Fewest Colors"
+      },
+      {
+        "prompt": "Revenue (Annual)",
+        "items": ["LEGO", "KFC", "IKEA", "Apple"],
+        "correctOrder": ["Apple", "IKEA", "LEGO", "KFC"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Least"
+      },
+      {
+        "prompt": "Year Founded",
+        "items": ["Apple", "IKEA", "LEGO", "KFC"],
+        "correctOrder": ["KFC", "LEGO", "IKEA", "Apple"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
   ]
