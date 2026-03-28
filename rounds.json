@@ -5760,6 +5760,31 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Jimmy Kimmel", "Kevin Hart", "Anne Hathaway", "Chris Rock"],
+        "correctOrder": ["Jimmy Kimmel", "Chris Rock", "Anne Hathaway", "Kevin Hart"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Age",
+        "items": ["Jimmy Kimmel", "Chris Rock", "Anne Hathaway", "Kevin Hart"],
+        "correctOrder": ["Chris Rock", "Jimmy Kimmel", "Kevin Hart", "Anne Hathaway"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Oscars Hosted",
+        "items": ["Chris Rock", "Jimmy Kimmel", "Kevin Hart", "Anne Hathaway"],
+        "correctOrder": ["Jimmy Kimmel", "Chris Rock", "Anne Hathaway", "Kevin Hart"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+
     ]
 
   ]
