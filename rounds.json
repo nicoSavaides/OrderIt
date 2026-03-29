@@ -5784,7 +5784,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
 
+    [
+      {
+        "prompt": "Calories",
+        "items": ["Coca-Cola", "Black Coffee", "Orange Juice", "Milk (Whole)"],
+        "correctOrder": ["Milk (Whole)", "Orange Juice", "Coca-Cola", "Black Coffee"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Sugar",
+        "items": ["Milk (Whole)", "Orange Juice", "Coca-Cola", "Black Coffee"],
+        "correctOrder": ["Coca-Cola", "Orange Juice", "Milk (Whole)", "Black Coffee"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Least"
+      },
+      {
+        "prompt": "Protein",
+        "items": ["Coca-Cola", "Orange Juice", "Milk (Whole)", "Black Coffee"],
+        "correctOrder": ["Milk (Whole)", "Orange Juice", "Black Coffee", "Coca-Cola"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Least"
+      }
     ]
 
   ]
