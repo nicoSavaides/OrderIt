@@ -5808,6 +5808,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Least"
       }
+    ],
+
+    [
+      {
+        "prompt": "Premiere Date",
+        "items": ["Friends", "Breaking Bad", "Game of Thrones", "The Office (US)"],
+        "correctOrder": ["Friends", "The Office (US)", "Breaking Bad", "Game of Thrones"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Series Finale Date",
+        "items": ["Friends", "The Office (US)", "Breaking Bad", "Game of Thrones"],
+        "correctOrder": ["Friends", "The Office (US)", "Breaking Bad", "Game of Thrones"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Intro Theme Length",
+        "items": ["Friends", "The Office (US)", "Breaking Bad", "Game of Thrones"],
+        "correctOrder": ["Game of Thrones", "Friends", "The Office (US)", "Breaking Bad"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
     ]
 
   ]
