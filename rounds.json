@@ -5832,6 +5832,30 @@
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Russia", "USA", "Ukraine", "France"],
+        "correctOrder": ["USA", "Russia", "France", "Ukraine"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["USA", "Russia", "France", "Ukraine"],
+        "correctOrder": ["Russia", "USA", "France", "Ukraine"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "President's Age",
+        "items": ["Russia", "USA", "France", "Ukraine"],
+        "correctOrder": ["USA", "Russia", "France", "Ukraine"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      }
     ]
 
   ]
