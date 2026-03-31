@@ -5836,11 +5836,11 @@
 
     [
       {
-        "prompt": "Population",
+        "prompt": "President's Age",
         "items": ["Russia", "USA", "Ukraine", "France"],
         "correctOrder": ["USA", "Russia", "France", "Ukraine"],
-        "topLabel": "↑ Largest",
-        "bottomLabel": "↓ Smallest"
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
       },
       {
         "prompt": "Land Area",
@@ -5850,12 +5850,14 @@
         "bottomLabel": "↓ Smallest"
       },
       {
-        "prompt": "President's Age",
+        "prompt": "Population",
         "items": ["Russia", "USA", "France", "Ukraine"],
         "correctOrder": ["USA", "Russia", "France", "Ukraine"],
-        "topLabel": "↑ Oldest",
-        "bottomLabel": "↓ Youngest"
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
       }
+
+
     ]
 
   ]
