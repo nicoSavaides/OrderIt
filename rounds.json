@@ -5856,6 +5856,30 @@
         "topLabel": "↑ Largest",
         "bottomLabel": "↓ Smallest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Location in Body",
+        "items": ["Kidney", "Heart", "Brain", "Liver"],
+        "correctOrder": ["Brain", "Heart", "Liver", "Kidney"],
+        "topLabel": "↑ Closest to Head",
+        "bottomLabel": "↓ Closest to Feet"
+      },
+      {
+        "prompt": "Average Weight",
+        "items": ["Brain", "Heart", "Liver", "Kidney"],
+        "correctOrder": ["Liver", "Brain", "Kidney", "Heart"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Blood Flow",
+        "items": ["Liver", "Brain", "Kidney", "Heart"],
+        "correctOrder": ["Liver", "Kidney", "Brain", "Heart"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Least"
+      }
     ]
 
   ]
