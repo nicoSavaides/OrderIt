@@ -5880,6 +5880,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Least"
       }
+    ],
+
+    [
+      {
+        "prompt": "Full Title Letter Count",
+        "items": ["Terminator 2", "Top Gun 2", "Pirates of the Caribbean 1", "Harry Potter 2"],
+        "correctOrder": ["Pirates of the Caribbean 1", "Harry Potter 2", "Terminator 2", "Top Gun 2"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
+      },
+      {
+        "prompt": "Release Year",
+        "items": ["Pirates of the Caribbean 1", "Harry Potter 2", "Terminator 2", "Top Gun 2"],
+        "correctOrder": ["Terminator 2", "Harry Potter 2", "Pirates of the Caribbean 1", "Top Gun 2"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Box Office",
+        "items": ["Terminator 2", "Harry Potter 2", "Pirates of the Caribbean 1", "Top Gun 2"],
+        "correctOrder": ["Top Gun 2", "Harry Potter 2", "Pirates of the Caribbean 1", "Terminator 2"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
     ]
 
   ]
