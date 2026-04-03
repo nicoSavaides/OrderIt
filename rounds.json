@@ -5904,6 +5904,30 @@
         "topLabel": "↑ Highest",
         "bottomLabel": "↓ Lowest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Average Weight",
+        "items": ["Dolphin", "Human", "Cat", "Cow"],
+        "correctOrder": ["Cow", "Dolphin", "Human", "Cat"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Relative Brain Size",
+        "items": ["Cow", "Dolphin", "Human", "Cat"],
+        "correctOrder": ["Human", "Dolphin", "Cat", "Cow"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Human", "Dolphin", "Cat", "Cow"],
+        "correctOrder": ["Dolphin", "Cat", "Human", "Cow"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      }
     ]
 
   ]
