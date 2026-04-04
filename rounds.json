@@ -5928,6 +5928,30 @@
         "topLabel": "↑ Largest",
         "bottomLabel": "↓ Smallest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Viscosity",
+        "items": ["Honey", "Milk", "Water", "Olive Oil"],
+        "correctOrder": ["Honey", "Olive Oil", "Milk", "Water"],
+        "topLabel": "↑ Thickest",
+        "bottomLabel": "↓ Thinnest"
+      },
+      {
+        "prompt": "Calories (per tbsp)",
+        "items": ["Honey", "Olive Oil", "Milk", "Water"],
+        "correctOrder": ["Olive Oil", "Honey", "Milk", "Water"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Density",
+        "items": ["Olive Oil", "Honey", "Milk", "Water"],
+        "correctOrder": ["Honey", "Milk", "Water", "Olive Oil"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
     ]
 
   ]
