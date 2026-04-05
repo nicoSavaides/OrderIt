@@ -5952,6 +5952,30 @@
         "topLabel": "↑ Highest",
         "bottomLabel": "↓ Lowest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Release Year",
+        "items": ["iPhone X", "iPhone 3G", "iPhone 6", "iPhone 13"],
+        "correctOrder": ["iPhone 3G", "iPhone 6", "iPhone X", "iPhone 13"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Screen Size",
+        "items": ["iPhone 3G", "iPhone 6", "iPhone X", "iPhone 13"],
+        "correctOrder": ["iPhone 13", "iPhone X", "iPhone 6", "iPhone 3G"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Launch Price (MSRP)",
+        "items": ["iPhone 13", "iPhone X", "iPhone 6", "iPhone 3G"],
+        "correctOrder": ["iPhone X", "iPhone 13", "iPhone 6", "iPhone 3G"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
     ]
 
   ]
