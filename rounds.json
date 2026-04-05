@@ -5976,6 +5976,30 @@
         "topLabel": "↑ Highest",
         "bottomLabel": "↓ Lowest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Location in Body",
+        "items": ["Radius", "Clavicle", "Femur", "Humerus"],
+        "correctOrder": ["Clavicle", "Humerus", "Radius", "Femur"],
+        "topLabel": "↑ Closest to Head",
+        "bottomLabel": "↓ Closest to Feet"
+      },
+      {
+        "prompt": "Length",
+        "items": ["Clavicle", "Humerus", "Radius", "Femur"],
+        "correctOrder": ["Femur", "Humerus", "Radius", "Clavicle"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Fracture Frequency",
+        "items": ["Femur", "Humerus", "Radius", "Clavicle"],
+        "correctOrder": ["Clavicle", "Radius", "Humerus", "Femur"],
+        "topLabel": "↑ Most Common",
+        "bottomLabel": "↓ Least Common"
+      }
     ]
 
   ]
