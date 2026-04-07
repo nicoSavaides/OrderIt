@@ -6000,6 +6000,30 @@
         "topLabel": "↑ Most Common",
         "bottomLabel": "↓ Least Common"
       }
+    ],
+
+    [
+      {
+        "prompt": "First Book Release Year",
+        "items": ["Dune", "Harry Potter", "Lord of the Rings", "Twilight"],
+        "correctOrder": ["Lord of the Rings", "Dune", "Harry Potter", "Twilight"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Books in Series",
+        "items": ["Lord of the Rings", "Dune", "Harry Potter", "Twilight"],
+        "correctOrder": ["Harry Potter", "Dune", "Twilight", "Lord of the Rings"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Total Pages",
+        "items": ["Harry Potter", "Dune", "Twilight", "Lord of the Rings"],
+        "correctOrder": ["Harry Potter", "Dune", "Twilight", "Lord of the Rings"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
