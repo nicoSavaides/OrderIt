@@ -6024,6 +6024,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Latitude",
+        "items": ["Houston", "New York", "San Francisco", "Chicago"],
+        "correctOrder": ["Chicago", "New York", "San Francisco", "Houston"],
+        "topLabel": "↑ Most Northern",
+        "bottomLabel": "↓ Most Southern"
+      },
+      {
+        "prompt": "Median Home Price",
+        "items": ["Chicago", "New York", "San Francisco", "Houston"],
+        "correctOrder": ["San Francisco", "New York", "Chicago", "Houston"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      },
+      {
+        "prompt": "Population (city proper)",
+        "items": ["San Francisco", "New York", "Chicago", "Houston"],
+        "correctOrder": ["New York", "Chicago", "Houston", "San Francisco"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      }
     ]
 
   ]
