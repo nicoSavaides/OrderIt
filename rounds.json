@@ -6048,6 +6048,30 @@
         "topLabel": "↑ Largest",
         "bottomLabel": "↓ Smallest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Biggest Song Release Year",
+        "items": ["Carly Rae Jepsen", "Psy", "Vanilla Ice", "Smash Mouth"],
+        "correctOrder": ["Vanilla Ice", "Smash Mouth", "Carly Rae Jepsen", "Psy"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Biggest Song (A-Z)",
+        "items": ["Vanilla Ice", "Smash Mouth", "Carly Rae Jepsen", "Psy"],
+        "correctOrder": ["Smash Mouth", "Carly Rae Jepsen", "Psy", "Vanilla Ice"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Biggest Song Title Length",
+        "items": ["Smash Mouth", "Carly Rae Jepsen", "Psy", "Vanilla Ice"],
+        "correctOrder": ["Psy", "Carly Rae Jepsen", "Vanilla Ice", "Smash Mouth"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
+      }
     ]
 
   ]
