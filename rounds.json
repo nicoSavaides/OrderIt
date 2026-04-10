@@ -6072,6 +6072,30 @@
         "topLabel": "↑ Most Letters",
         "bottomLabel": "↓ Fewest Letters"
       }
+    ],
+
+    [
+      {
+        "prompt": "Release Year",
+        "items": ["Minecraft", "Tomb Raider", "The Legend of Zelda", "Halo: Combat Evolved"],
+        "correctOrder": ["The Legend of Zelda", "Tomb Raider", "Halo: Combat Evolved", "Minecraft"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Main Character Name (A-Z)",
+        "items": ["The Legend of Zelda", "Tomb Raider", "Halo: Combat Evolved", "Minecraft"],
+        "correctOrder": ["Tomb Raider", "The Legend of Zelda", "Halo: Combat Evolved", "Minecraft"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Number of Games in Series",
+        "items": ["Tomb Raider", "The Legend of Zelda", "Halo: Combat Evolved", "Minecraft"],
+        "correctOrder": ["The Legend of Zelda", "Tomb Raider", "Halo: Combat Evolved", "Minecraft"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
