@@ -6096,6 +6096,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Word Length",
+        "items": ["Red", "Yellow", "White", "Blue"],
+        "correctOrder": ["Yellow", "White", "Blue", "Red"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
+      },
+      {
+        "prompt": "Flag Color Frequency",
+        "items": ["Yellow", "White", "Blue", "Red"],
+        "correctOrder": ["Red", "White", "Blue", "Yellow"],
+        "topLabel": "↑ Most Common",
+        "bottomLabel": "↓ Least Common"
+      },
+      {
+        "prompt": "Flame Temperature",
+        "items": ["Red", "White", "Blue", "Yellow"],
+        "correctOrder": ["Blue", "White", "Yellow", "Red"],
+        "topLabel": "↑ Hottest",
+        "bottomLabel": "↓ Coolest"
+      }
     ]
 
   ]
