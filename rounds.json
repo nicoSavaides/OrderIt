@@ -6120,6 +6120,30 @@
         "topLabel": "↑ Hottest",
         "bottomLabel": "↓ Coolest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Wingspan",
+        "items": ["Victor Wembanyama", "Michael Jordan", "Stephen Curry", "Tim Duncan"],
+        "correctOrder": ["Victor Wembanyama", "Tim Duncan", "Michael Jordan", "Stephen Curry"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Championships Won",
+        "items": ["Victor Wembanyama", "Tim Duncan", "Michael Jordan", "Stephen Curry"],
+        "correctOrder": ["Michael Jordan", "Tim Duncan", "Stephen Curry", "Victor Wembanyama"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Number of Kids",
+        "items": ["Michael Jordan", "Tim Duncan", "Stephen Curry", "Victor Wembanyama"],
+        "correctOrder": ["Michael Jordan", "Stephen Curry", "Tim Duncan", "Victor Wembanyama"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
