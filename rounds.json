@@ -6144,6 +6144,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Gollum", "Thanos", "The Joker", "Darth Vader"],
+        "correctOrder": ["Thanos", "Darth Vader", "The Joker", "Gollum"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "First Film Appearance",
+        "items": ["Thanos", "Darth Vader", "The Joker", "Gollum"],
+        "correctOrder": ["The Joker", "Darth Vader", "Gollum", "Thanos"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Universe (A-Z)",
+        "items": ["The Joker", "Darth Vader", "Gollum", "Thanos"],
+        "correctOrder": ["The Joker", "Gollum", "Thanos", "Darth Vader"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
     ]
 
   ]
