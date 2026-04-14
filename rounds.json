@@ -6168,6 +6168,30 @@
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       }
+    ],
+
+    [
+      {
+        "prompt": "Number of Letters",
+        "items": ["iPhone", "Airplane", "Printing Press", "Light Bulb"],
+        "correctOrder": ["Printing Press", "Light Bulb", "Airplane", "iPhone"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Year Invented",
+        "items": ["Printing Press", "Light Bulb", "Airplane", "iPhone"],
+        "correctOrder": ["Printing Press", "Light Bulb", "Airplane", "iPhone"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Inventor Last Name (A-Z)",
+        "items": ["Printing Press", "Light Bulb", "Airplane", "iPhone"],
+        "correctOrder": ["Light Bulb", "Printing Press", "iPhone", "Airplane"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
     ]
 
   ]
