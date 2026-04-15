@@ -6192,6 +6192,30 @@
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       }
+    ],
+
+    [
+      {
+        "prompt": "Latitude",
+        "items": ["Hoover Dam", "Alcatraz Island", "Space Needle", "Washington Monument"],
+        "correctOrder": ["Space Needle", "Washington Monument", "Alcatraz Island", "Hoover Dam"],
+        "topLabel": "↑ Most Northern",
+        "bottomLabel": "↓ Most Southern"
+      },
+      {
+        "prompt": "Height",
+        "items": ["Space Needle", "Washington Monument", "Alcatraz Island", "Hoover Dam"],
+        "correctOrder": ["Hoover Dam", "Space Needle", "Washington Monument", "Alcatraz Island"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Completion Year",
+        "items": ["Hoover Dam", "Space Needle", "Washington Monument", "Alcatraz Island"],
+        "correctOrder": ["Washington Monument", "Alcatraz Island", "Hoover Dam", "Space Needle"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
   ]
