@@ -6216,6 +6216,30 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "First Name Length",
+        "items": ["Travolta", "Cruise", "Hopkins", "Streep"],
+        "correctOrder": ["Hopkins", "Streep", "Travolta", "Cruise"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
+      },
+      {
+        "prompt": "Age",
+        "items": ["Hopkins", "Streep", "Travolta", "Cruise"],
+        "correctOrder": ["Hopkins", "Streep", "Travolta", "Cruise"],
+        "topLabel": "↑ Oldest",
+        "bottomLabel": "↓ Youngest"
+      },
+      {
+        "prompt": "Oscar Nominations",
+        "items": ["Hopkins", "Streep", "Travolta", "Cruise"],
+        "correctOrder": ["Streep", "Hopkins", "Cruise", "Travolta"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
