@@ -6240,6 +6240,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Body Weight",
+        "items": ["Elephant", "Blue Whale", "Mouse", "Dog"],
+        "correctOrder": ["Blue Whale", "Elephant", "Dog", "Mouse"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Blue Whale", "Elephant", "Dog", "Mouse"],
+        "correctOrder": ["Blue Whale", "Elephant", "Dog", "Mouse"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Heart Rate",
+        "items": ["Blue Whale", "Elephant", "Dog", "Mouse"],
+        "correctOrder": ["Mouse", "Dog", "Elephant", "Blue Whale"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      }
     ]
 
   ]
