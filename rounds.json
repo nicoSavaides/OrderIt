@@ -6264,8 +6264,31 @@
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
       }
-    ]
+    ],
 
+    [
+      {
+        "prompt": "Hardness",
+        "items": ["Wood", "Diamond", "Glass", "Gold"],
+        "correctOrder": ["Diamond", "Glass", "Gold", "Wood"],
+        "topLabel": "↑ Hardest",
+        "bottomLabel": "↓ Softest"
+      },
+      {
+        "prompt": "Heat Resistance",
+        "items": ["Diamond", "Glass", "Gold", "Wood"],
+        "correctOrder": ["Diamond", "Glass", "Gold", "Wood"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      },
+      {
+        "prompt": "Density",
+        "items": ["Diamond", "Glass", "Gold", "Wood"],
+        "correctOrder": ["Gold", "Diamond", "Glass", "Wood"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
+    ]
   ]
 }
 
