@@ -6288,7 +6288,32 @@
         "topLabel": "↑ Highest",
         "bottomLabel": "↓ Lowest"
       }
+    ],
+
+    [
+      {
+        "prompt": "First Aired",
+        "items": ["The Boys", "Ozark", "The Bachelor", "Chernobyl"],
+        "correctOrder": ["The Bachelor", "Ozark", "Chernobyl", "The Boys"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Number of Seasons",
+        "items": ["The Bachelor", "Ozark", "Chernobyl", "The Boys"],
+        "correctOrder": ["The Bachelor", "The Boys", "Ozark", "Chernobyl"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Total Episodes",
+        "items": ["The Bachelor", "The Boys", "Ozark", "Chernobyl"],
+        "correctOrder": ["The Bachelor", "Ozark", "The Boys", "Chernobyl"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
+
   ]
 }
 
