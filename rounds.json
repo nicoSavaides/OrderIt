@@ -6312,6 +6312,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Year Released",
+        "items": ["Baby - Justin Bieber", "Crazy in Love - Beyoncé", "Pump It - Black Eyed Peas", "Stay With Me - Sam Smith"],
+        "correctOrder": ["Crazy in Love - Beyoncé", "Pump It - Black Eyed Peas", "Baby - Justin Bieber", "Stay With Me - Sam Smith"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "BPM",
+        "items": ["Crazy in Love - Beyoncé", "Pump It - Black Eyed Peas", "Baby - Justin Bieber", "Stay With Me - Sam Smith"],
+        "correctOrder": ["Pump It - Black Eyed Peas", "Baby - Justin Bieber", "Crazy in Love - Beyoncé", "Stay With Me - Sam Smith"],
+        "topLabel": "↑ Fastest Tempo",
+        "bottomLabel": "↓ Slowest Tempo"
+      },
+      {
+        "prompt": "Music Video Views",
+        "items": ["Pump It - Black Eyed Peas", "Baby - Justin Bieber", "Crazy in Love - Beyoncé", "Stay With Me - Sam Smith"],
+        "correctOrder": ["Baby - Justin Bieber", "Stay With Me - Sam Smith", "Pump It - Black Eyed Peas", "Crazy in Love - Beyoncé"],
+        "topLabel": "↑ Most Views",
+        "bottomLabel": "↓ Fewest Views"
+      }
     ]
 
   ]
