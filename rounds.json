@@ -6336,6 +6336,30 @@
         "topLabel": "↑ Most Views",
         "bottomLabel": "↓ Fewest Views"
       }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Sears Tower", "Great Wall of China", "Taipei 101", "Colosseum"],
+        "correctOrder": ["Taipei 101", "Sears Tower", "Colosseum", "Great Wall of China"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Country (A–Z)",
+        "items": ["Taipei 101", "Sears Tower", "Colosseum", "Great Wall of China"],
+        "correctOrder": ["Great Wall of China", "Colosseum", "Taipei 101", "Sears Tower"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Year Built",
+        "items": ["Great Wall of China", "Colosseum", "Taipei 101", "Sears Tower"],
+        "correctOrder": ["Colosseum", "Great Wall of China", "Sears Tower", "Taipei 101"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
   ]
