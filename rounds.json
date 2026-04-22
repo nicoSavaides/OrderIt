@@ -6360,6 +6360,30 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "Land Area",
+        "items": ["United States", "Taiwan", "Italy", "China"],
+        "correctOrder": ["United States", "China", "Italy", "Taiwan"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Tallest Building Height",
+        "items": ["United States", "China", "Italy", "Taiwan"],
+        "correctOrder": ["China", "United States", "Taiwan", "Italy"],
+        "topLabel": "↑ Tallest building",
+        "bottomLabel": "↓ Shortest building"
+      },
+      {
+        "prompt": "GDP",
+        "items": ["China", "United States", "Taiwan", "Italy"],
+        "correctOrder": ["United States", "China", "Italy", "Taiwan"],
+        "topLabel": "↑ Highest GDP",
+        "bottomLabel": "↓ Lowest GDP"
+      }
     ]
 
   ]
