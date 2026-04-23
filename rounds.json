@@ -6384,6 +6384,54 @@
         "topLabel": "↑ Highest GDP",
         "bottomLabel": "↓ Lowest GDP"
       }
+    ],
+
+    [
+      {
+        "prompt": "Latitude",
+        "items": ["Broncos", "Packers", "Saints", "Patriots"],
+        "correctOrder": ["Packers", "Patriots", "Broncos", "Saints"],
+        "topLabel": "↑ Most North",
+        "bottomLabel": "↓ Most South"
+      },
+      {
+        "prompt": "Super Bowl Wins",
+        "items": ["Packers", "Patriots", "Broncos", "Saints"],
+        "correctOrder": ["Patriots", "Packers", "Broncos", "Saints"],
+        "topLabel": "↑ Most Wins",
+        "bottomLabel": "↓ Fewest Wins"
+      },
+      {
+        "prompt": "Playoff Appearances",
+        "items": ["Patriots", "Packers", "Broncos", "Saints"],
+        "correctOrder": ["Packers", "Patriots", "Broncos", "Saints"],
+        "topLabel": "↑ Most Appearances",
+        "bottomLabel": "↓ Fewest Appearances"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Top Speed",
+        "items": ["Cheetah", "Elephant", "Peregrine Falcon", "Horse"],
+        "correctOrder": ["Peregrine Falcon", "Cheetah", "Horse", "Elephant"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Weight",
+        "items": ["Peregrine Falcon", "Cheetah", "Horse", "Elephant"],
+        "correctOrder": ["Elephant", "Horse", "Cheetah", "Peregrine Falcon"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Elephant", "Horse", "Cheetah", "Peregrine Falcon"],
+        "correctOrder": ["Elephant", "Horse", "Peregrine Falcon", "Cheetah"],
+        "topLabel": "↑ Longest lifespan",
+        "bottomLabel": "↓ Shortest lifespan"
+      }
     ]
 
   ]
