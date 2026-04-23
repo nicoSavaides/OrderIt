@@ -6388,7 +6388,7 @@
 
     [
       {
-        "prompt": "Latitude",
+        "prompt": "City Latitude",
         "items": ["Broncos", "Packers", "Saints", "Patriots"],
         "correctOrder": ["Packers", "Patriots", "Broncos", "Saints"],
         "topLabel": "↑ Most North",
