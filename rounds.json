@@ -6432,6 +6432,30 @@
         "topLabel": "↑ Longest lifespan",
         "bottomLabel": "↓ Shortest lifespan"
       }
+    ],
+
+    [
+      {
+        "prompt": "Area",
+        "items": ["Nepal", "Spain", "Switzerland", "Ireland"],
+        "correctOrder": ["Spain", "Nepal", "Ireland", "Switzerland"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Average Elevation",
+        "items": ["Spain", "Nepal", "Ireland", "Switzerland"],
+        "correctOrder": ["Nepal", "Switzerland", "Spain", "Ireland"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      },
+      {
+        "prompt": "Population",
+        "items": ["Nepal", "Switzerland", "Spain", "Ireland"],
+        "correctOrder": ["Spain", "Nepal", "Switzerland", "Ireland"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      }
     ]
 
   ]
