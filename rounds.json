@@ -6456,6 +6456,30 @@
         "topLabel": "↑ Largest",
         "bottomLabel": "↓ Smallest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Alphabetical Order",
+        "items": ["McDonald's", "Burger King", "Subway", "Taco Bell"],
+        "correctOrder": ["Burger King", "McDonald's", "Subway", "Taco Bell"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Locations Worldwide",
+        "items": ["Burger King", "McDonald's", "Subway", "Taco Bell"],
+        "correctOrder": ["McDonald's", "Subway", "Burger King", "Taco Bell"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Founded Year",
+        "items": ["McDonald's", "Subway", "Burger King", "Taco Bell"],
+        "correctOrder": ["McDonald's", "Burger King", "Taco Bell", "Subway"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      }
     ]
 
   ]
