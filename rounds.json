@@ -6480,6 +6480,30 @@
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       }
+    ],
+
+    [
+      {
+        "prompt": "State Size",
+        "items": ["Colorado", "Florida", "Alaska", "California"],
+        "correctOrder": ["Alaska", "California", "Colorado", "Florida"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "National Parks",
+        "items": ["Alaska", "California", "Colorado", "Florida"],
+        "correctOrder": ["California", "Alaska", "Colorado", "Florida"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Capital City (A-Z)",
+        "items": ["California", "Alaska", "Colorado", "Florida"],
+        "correctOrder": ["Colorado", "Alaska", "California", "Florida"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
     ]
 
   ]
