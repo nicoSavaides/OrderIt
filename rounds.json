@@ -6504,6 +6504,30 @@
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       }
+    ],
+
+    [
+      {
+        "prompt": "Release Year",
+        "items": ["Shrek", "Moana", "Toy Story", "Frozen"],
+        "correctOrder": ["Toy Story", "Shrek", "Frozen", "Moana"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Worldwide Box Office",
+        "items": ["Toy Story", "Shrek", "Frozen", "Moana"],
+        "correctOrder": ["Frozen", "Moana", "Shrek", "Toy Story"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      },
+      {
+        "prompt": "Runtime",
+        "items": ["Frozen", "Moana", "Shrek", "Toy Story"],
+        "correctOrder": ["Moana", "Frozen", "Shrek", "Toy Story"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
     ]
 
   ]
