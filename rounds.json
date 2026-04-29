@@ -6533,22 +6533,22 @@
     [
       {
         "prompt": "Weight",
-        "items": ["Blue Whale", "Octopus", "Great White Shark", "Dolphin"],
-        "correctOrder": ["Blue Whale", "Great White Shark", "Dolphin", "Octopus"],
+        "items": ["Blue Whale", "Octopus", "Great White Shark", "Common Dolphin"],
+        "correctOrder": ["Blue Whale", "Great White Shark", "Common Dolphin", "Octopus"],
         "topLabel": "↑ Heaviest",
         "bottomLabel": "↓ Lightest"
       },
       {
-        "prompt": "Top Speed",
-        "items": ["Blue Whale", "Great White Shark", "Dolphin", "Octopus"],
-        "correctOrder": ["Dolphin", "Great White Shark", "Blue Whale", "Octopus"],
+        "prompt": "Typical Swimming Speed",
+        "items": ["Blue Whale", "Great White Shark", "Common Dolphin", "Octopus"],
+        "correctOrder": ["Common Dolphin", "Great White Shark", "Blue Whale", "Octopus"],
         "topLabel": "↑ Fastest",
         "bottomLabel": "↓ Slowest"
       },
       {
         "prompt": "Lifespan",
-        "items": ["Dolphin", "Great White Shark", "Blue Whale", "Octopus"],
-        "correctOrder": ["Blue Whale", "Great White Shark", "Dolphin", "Octopus"],
+        "items": ["Common Dolphin", "Great White Shark", "Blue Whale", "Octopus"],
+        "correctOrder": ["Blue Whale", "Great White Shark", "Common Dolphin", "Octopus"],
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       }
@@ -6557,7 +6557,7 @@
     [
       {
         "prompt": "First Film Appearance",
-        "items": ["Indiana Jones", "Jason Bourne", "Jack Sparrow", "John Wick"],
+        "items": ["Jack Sparrow", "Indiana Jones", "John Wick", "Jason Bourne"],
         "correctOrder": ["Indiana Jones", "Jason Bourne", "Jack Sparrow", "John Wick"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
@@ -6581,21 +6581,21 @@
     [
       {
         "prompt": "Instrument Known For (A-Z)",
-        "items": ["Louis Armstrong", "Ray Charles", "Ringo Starr", "Slash"],
+        "items": ["Louis Armstrong", "Ringo Starr", "Slash", "Ray Charles"],
         "correctOrder": ["Ringo Starr", "Slash", "Ray Charles", "Louis Armstrong"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       },
       {
         "prompt": "Birth Year",
-        "items": ["Louis Armstrong", "Ray Charles", "Ringo Starr", "Slash"],
+        "items": ["Ringo Starr", "Slash", "Ray Charles", "Louis Armstrong"],
         "correctOrder": ["Louis Armstrong", "Ray Charles", "Ringo Starr", "Slash"],
         "topLabel": "↑ Earliest",
         "bottomLabel": "↓ Most Recent"
       },
       {
         "prompt": "Last Name (A–Z)",
-        "items": ["Ringo Starr", "Slash", "Ray Charles", "Louis Armstrong"],
+        "items": ["Louis Armstrong", "Ray Charles", "Ringo Starr", "Slash"],
         "correctOrder": ["Louis Armstrong", "Ray Charles", "Slash", "Ringo Starr"],
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
