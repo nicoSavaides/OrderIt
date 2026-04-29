@@ -6600,6 +6600,78 @@
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       }
+    ],
+
+    [
+      {
+        "prompt": "Alphabetical Order",
+        "items": ["Ruby", "Emerald", "Sapphire", "Amethyst"],
+        "correctOrder": ["Amethyst", "Emerald", "Ruby", "Sapphire"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Color (A-Z)",
+        "items": ["Amethyst", "Emerald", "Ruby", "Sapphire"],
+        "correctOrder": ["Sapphire", "Emerald", "Amethyst", "Ruby"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Birthstone Month",
+        "items": ["Sapphire", "Emerald", "Amethyst", "Ruby"],
+        "correctOrder": ["Amethyst", "Emerald", "Ruby", "Sapphire"],
+        "topLabel": "↑ Earliest in Year",
+        "bottomLabel": "↓ Latest in Year"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Average Annual Temperature",
+        "items": ["Canada", "Kenya", "Norway", "New Zealand"],
+        "correctOrder": ["Kenya", "New Zealand", "Norway", "Canada"],
+        "topLabel": "↑ Warmest",
+        "bottomLabel": "↓ Coldest"
+      },
+      {
+        "prompt": "Winter Olympic Gold Medals",
+        "items": ["Kenya", "New Zealand", "Norway", "Canada"],
+        "correctOrder": ["Norway", "Canada", "New Zealand", "Kenya"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["Norway", "Canada", "New Zealand", "Kenya"],
+        "correctOrder": ["Canada", "Kenya", "Norway", "New Zealand"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Alphabetical Order",
+        "items": ["E", "B", "V", "C"],
+        "correctOrder": ["B", "C", "E", "V"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "English Letter Frequency",
+        "items": ["B", "C", "E", "V"],
+        "correctOrder": ["E", "C", "B", "V"],
+        "topLabel": "↑ Most Common",
+        "bottomLabel": "↓ Least Common"
+      },
+      {
+        "prompt": "NATO Phonetic Word Length",
+        "items": ["E", "C", "B", "V"],
+        "correctOrder": ["C", "V", "B", "E"],
+        "topLabel": "↑ Most Letters",
+        "bottomLabel": "↓ Fewest Letters"
+      }
     ]
 
   ]
