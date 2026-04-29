@@ -6528,6 +6528,30 @@
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Weight",
+        "items": ["Blue Whale", "Octopus", "Great White Shark", "Dolphin"],
+        "correctOrder": ["Blue Whale", "Great White Shark", "Dolphin", "Octopus"],
+        "topLabel": "↑ Heaviest",
+        "bottomLabel": "↓ Lightest"
+      },
+      {
+        "prompt": "Top Speed",
+        "items": ["Blue Whale", "Great White Shark", "Dolphin", "Octopus"],
+        "correctOrder": ["Dolphin", "Great White Shark", "Blue Whale", "Octopus"],
+        "topLabel": "↑ Fastest",
+        "bottomLabel": "↓ Slowest"
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Dolphin", "Great White Shark", "Blue Whale", "Octopus"],
+        "correctOrder": ["Blue Whale", "Great White Shark", "Dolphin", "Octopus"],
+        "topLabel": "↑ Longest",
+        "bottomLabel": "↓ Shortest"
+      }
     ]
 
   ]
