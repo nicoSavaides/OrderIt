@@ -6552,6 +6552,54 @@
         "topLabel": "↑ Longest",
         "bottomLabel": "↓ Shortest"
       }
+    ],
+
+    [
+      {
+        "prompt": "First Film Appearance",
+        "items": ["Indiana Jones", "Jason Bourne", "Jack Sparrow", "John Wick"],
+        "correctOrder": ["Indiana Jones", "Jason Bourne", "Jack Sparrow", "John Wick"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Actor First Name (A-Z)",
+        "items": ["Indiana Jones", "Jason Bourne", "Jack Sparrow", "John Wick"],
+        "correctOrder": ["Indiana Jones", "Jack Sparrow", "John Wick", "Jason Bourne"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Franchise Box Office",
+        "items": ["Indiana Jones", "Jack Sparrow", "John Wick", "Jason Bourne"],
+        "correctOrder": ["Jack Sparrow", "Indiana Jones", "Jason Bourne", "John Wick"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Instrument Known For (A-Z)",
+        "items": ["Louis Armstrong", "Ray Charles", "Ringo Starr", "Slash"],
+        "correctOrder": ["Ringo Starr", "Slash", "Ray Charles", "Louis Armstrong"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Birth Year",
+        "items": ["Louis Armstrong", "Ray Charles", "Ringo Starr", "Slash"],
+        "correctOrder": ["Louis Armstrong", "Ray Charles", "Ringo Starr", "Slash"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Last Name (A–Z)",
+        "items": ["Ringo Starr", "Slash", "Ray Charles", "Louis Armstrong"],
+        "correctOrder": ["Louis Armstrong", "Ray Charles", "Slash", "Ringo Starr"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
     ]
 
   ]
