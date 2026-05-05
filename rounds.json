@@ -6672,6 +6672,54 @@
         "topLabel": "↑ Most Letters",
         "bottomLabel": "↓ Fewest Letters"
       }
+    ],
+
+    [
+      {
+        "prompt": "Launch Year",
+        "items": ["Apollo 11", "Voyager 1", "James Webb Space Telescope", "Artemis II"],
+        "correctOrder": ["Apollo 11", "Voyager 1", "James Webb Space Telescope", "Artemis II"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Distance from Earth at Peak",
+        "items": ["Apollo 11", "Voyager 1", "James Webb Space Telescope", "Artemis II"],
+        "correctOrder": ["Voyager 1", "James Webb Space Telescope", "Artemis II", "Apollo 11"],
+        "topLabel": "↑ Farthest",
+        "bottomLabel": "↓ Closest"
+      },
+      {
+        "prompt": "Crew Size",
+        "items": ["Voyager 1", "James Webb Space Telescope", "Apollo 11", "Artemis II"],
+        "correctOrder": ["Artemis II", "Apollo 11", "Voyager 1", "James Webb Space Telescope"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
+    ],
+
+    [
+      {
+        "prompt": "Height",
+        "items": ["Olive Tree", "Giant Sequoia", "Coast Redwood", "Birch Tree"],
+        "correctOrder": ["Coast Redwood", "Giant Sequoia", "Birch Tree", "Olive Tree"],
+        "topLabel": "↑ Tallest",
+        "bottomLabel": "↓ Shortest"
+      },
+      {
+        "prompt": "Trunk Diameter",
+        "items": ["Coast Redwood", "Giant Sequoia", "Birch Tree", "Olive Tree"],
+        "correctOrder": ["Giant Sequoia", "Coast Redwood", "Olive Tree", "Birch Tree"],
+        "topLabel": "↑ Thickest Trunk",
+        "bottomLabel": "↓ Thinnest Trunk"
+      },
+      {
+        "prompt": "Lifespan",
+        "items": ["Giant Sequoia", "Coast Redwood", "Olive Tree", "Birch Tree"],
+        "correctOrder": ["Giant Sequoia", "Coast Redwood", "Olive Tree", "Birch Tree"],
+        "topLabel": "↑ Longest Lifespan",
+        "bottomLabel": "↓ Shortest Lifespan"
+      }
     ]
 
   ]
