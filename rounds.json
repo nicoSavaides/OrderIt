@@ -6720,6 +6720,30 @@
         "topLabel": "↑ Longest Lifespan",
         "bottomLabel": "↓ Shortest Lifespan"
       }
+    ],
+
+    [
+      {
+        "prompt": "Formation Year",
+        "items": ["Nirvana", "Coldplay", "U2", "Queen"],
+        "correctOrder": ["Queen", "U2", "Nirvana", "Coldplay"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Lead Singer First Name (A-Z)",
+        "items": ["Queen", "U2", "Nirvana", "Coldplay"],
+        "correctOrder": ["U2", "Coldplay", "Queen", "Nirvana"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      },
+      {
+        "prompt": "Worldwide Album Sales",
+        "items": ["U2", "Coldplay", "Queen", "Nirvana"],
+        "correctOrder": ["Queen", "U2", "Coldplay", "Nirvana"],
+        "topLabel": "↑ Highest",
+        "bottomLabel": "↓ Lowest"
+      }
     ]
 
   ]
