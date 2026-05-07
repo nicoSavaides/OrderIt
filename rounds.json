@@ -6744,6 +6744,30 @@
         "topLabel": "↑ Highest",
         "bottomLabel": "↓ Lowest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Launch Year",
+        "items": ["Snapchat", "TikTok", "Order It", "Spotify"],
+        "correctOrder": ["Spotify", "Snapchat", "TikTok", "Order It"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Monthly Active Users",
+        "items": ["Spotify", "Snapchat", "TikTok", "Order It"],
+        "correctOrder": ["TikTok", "Snapchat", "Spotify", "Order It"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Company Employees",
+        "items": ["TikTok", "Snapchat", "Spotify", "Order It"],
+        "correctOrder": ["TikTok", "Spotify", "Snapchat", "Order It"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
 
   ]
