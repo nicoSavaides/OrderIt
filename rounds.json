@@ -6748,30 +6748,6 @@
 
     [
       {
-        "prompt": "Launch Year",
-        "items": ["Snapchat", "TikTok", "Order It", "Spotify"],
-        "correctOrder": ["Spotify", "Snapchat", "TikTok", "Order It"],
-        "topLabel": "↑ Earliest",
-        "bottomLabel": "↓ Most Recent"
-      },
-      {
-        "prompt": "Monthly Active Users",
-        "items": ["Spotify", "Snapchat", "TikTok", "Order It"],
-        "correctOrder": ["TikTok", "Snapchat", "Spotify", "Order It"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      },
-      {
-        "prompt": "Company Employees",
-        "items": ["TikTok", "Snapchat", "Spotify", "Order It"],
-        "correctOrder": ["TikTok", "Spotify", "Snapchat", "Order It"],
-        "topLabel": "↑ Most",
-        "bottomLabel": "↓ Fewest"
-      }
-    ],
-
-    [
-      {
         "prompt": "Population",
         "items": ["Massachusetts", "New Mexico", "New York", "Ohio"],
         "correctOrder": ["New York", "Ohio", "Massachusetts", "New Mexico"],
@@ -6792,7 +6768,32 @@
         "topLabel": "↑ First Alphabetically",
         "bottomLabel": "↓ Last Alphabetically"
       }
+    ],
+
+    [
+      {
+        "prompt": "Launch Year",
+        "items": ["Snapchat", "TikTok", "Order It", "Spotify"],
+        "correctOrder": ["Spotify", "Snapchat", "TikTok", "Order It"],
+        "topLabel": "↑ Earliest",
+        "bottomLabel": "↓ Most Recent"
+      },
+      {
+        "prompt": "Monthly Active Users",
+        "items": ["Spotify", "Snapchat", "TikTok", "Order It"],
+        "correctOrder": ["TikTok", "Snapchat", "Spotify", "Order It"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      },
+      {
+        "prompt": "Company Employees",
+        "items": ["TikTok", "Snapchat", "Spotify", "Order It"],
+        "correctOrder": ["TikTok", "Spotify", "Snapchat", "Order It"],
+        "topLabel": "↑ Most",
+        "bottomLabel": "↓ Fewest"
+      }
     ]
+
 
   ]
 }
