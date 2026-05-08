@@ -6768,6 +6768,30 @@
         "topLabel": "↑ Most",
         "bottomLabel": "↓ Fewest"
       }
+    ],
+
+    [
+      {
+        "prompt": "Population",
+        "items": ["Massachusetts", "New Mexico", "New York", "Ohio"],
+        "correctOrder": ["New York", "Ohio", "Massachusetts", "New Mexico"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Land Area",
+        "items": ["New York", "Ohio", "Massachusetts", "New Mexico"],
+        "correctOrder": ["New Mexico", "New York", "Ohio", "Massachusetts"],
+        "topLabel": "↑ Largest",
+        "bottomLabel": "↓ Smallest"
+      },
+      {
+        "prompt": "Capital City (A-Z)",
+        "items": ["New Mexico", "New York", "Ohio", "Massachusetts"],
+        "correctOrder": ["New York", "Massachusetts", "Ohio", "New Mexico"],
+        "topLabel": "↑ First Alphabetically",
+        "bottomLabel": "↓ Last Alphabetically"
+      }
     ]
 
   ]
