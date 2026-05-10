@@ -474,7 +474,32 @@
 
 
 
+#farewellMessage {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 40px 24px;
+  box-sizing: border-box;
+}
 
+#farewellLogo {
+  width: 190px;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: -14px;
+}
+
+
+#farewellMessage p {
+  font-size: 1.2rem !important;
+  line-height: 1.6 !important;
+  margin: 30px 0 0 0 !important;
+  padding: 0 28px !important;
+  max-width: 420px;
+}
 
 
 
@@ -1354,6 +1379,7 @@ desktop desktop desktop desktop desktop desktop desktop desktop desktop desktop 
     margin-top: 50px; /* controls gap above buttons */
 }
 
+
 } /* <-- this closes @media (min-width: 768px) */
 
 
@@ -1575,19 +1601,25 @@ let currentDay = dayIndex;
 
 
 
-const maintenanceMode = false;
+const farewellMode = true;
 
 document.addEventListener('DOMContentLoaded', () => {
-  if (maintenanceMode) {
-    document.body.innerHTML = `
-      <div id="maintenanceMessage" class="screen">
-        <img src="fastGif.gif" alt="Logo" id="maintenanceLogo" />
-        <h1>Order It is Under Maintenance</h1>
-        <p>We're making updates to improve your experience. Thank you to all our amazing playtesters for your engagement and feedback! Order It will return.</p>
-      </div>
-    `;
-    return; // Stop further setup if in maintenance mode
+  if (farewellMode) {
+      document.body.innerHTML = `
+        <div id="farewellMessage" class="screen">
+          <img src="fastGif.gif" alt="Order It logo" id="farewellLogo" />
+          <h1>Order It.</h1>
+
+          <p>
+            Order It has come to an end.
+            Someday soon, it will begin again from Day 1. <br>
+            Thanks for playing Order It.
+          </p>
+        </div>
+      `;
+    return;
   }
+
 
   // Game setup
   console.log("alreadyPlayedToday?", alreadyPlayedToday());
